@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.7216459">
+  <test-suite type="TestSuite" id="1124" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="101" result="Failed" site="Child" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.721646" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1118" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="101" result="Failed" site="Child" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.656797" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1119" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="101" result="Failed" site="Child" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.652472" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1053" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="101" result="Failed" site="Child" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.646045" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1031" name="CombatPolishTests" fullname="IronRequiem.Tests.CombatPolishTests" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:45:03Z" duration="19.628570" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1039" name="BigBotDeathVisualSequence" fullname="IronRequiem.Tests.CombatPolishTests.BigBotDeathVisualSequence" methodname="BigBotDeathVisualSequence" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" seed="1150463434" result="Passed" start-time="2026-11-02 04:44:43Z" end-time="2026-11-02 04:44:49Z" duration="5.770795" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1038" name="MovementAndStolenWeaponRegression" fullname="IronRequiem.Tests.CombatPolishTests.MovementAndStolenWeaponRegression" methodname="MovementAndStolenWeaponRegression" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" seed="1323401672" result="Failed" start-time="2026-11-02 04:44:49Z" end-time="2026-11-02 04:45:03Z" duration="13.812161" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: same as <CannonModule_Visual (IronRequiem.StolenCannon)>
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatPolishTests+<MovementAndStolenWeaponRegression>d__21.MoveNext () [0x0067d] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatPolishTests.cs:110
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

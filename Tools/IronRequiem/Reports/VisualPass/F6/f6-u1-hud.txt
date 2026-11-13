@@ -1,0 +1,10 @@
+VP_AmmoCounter: dark slots, orange fill, frame
+VP_NotificationToast: dark plate, uppercase
+WeaponHUDManager -> VP_AmmoCounter (GameManager/GameHUD)
+WeaponHUDManager -> VP_AmmoCounter (GameHUD)
+NotificationHUDManager -> VP_NotificationToast
+NotificationHUDManager -> VP_NotificationToast
+Health: frame + label + HudHealthTint (GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth)
+Health: frame + label + HudHealthTint (GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth)
+Banner before: a=(0.50, 1.00)-(0.50, 1.00) pos=(0.00, -25.00) size=(1100.00, 90.00) fs=28
+Banner: top-center y-72 under compass, plate + punch (ArenaMessages/Message)

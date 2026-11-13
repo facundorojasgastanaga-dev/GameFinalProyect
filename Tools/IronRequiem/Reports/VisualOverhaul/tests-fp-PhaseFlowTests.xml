@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.6436088">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.643609" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.587484" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.577105" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.568194" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1154" name="PhaseFlowTests" fullname="IronRequiem.Tests.PhaseFlowTests" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:07:14Z" duration="40.545027" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1155" name="BaselineLegacyPrefabsCannotExecute" fullname="IronRequiem.Tests.PhaseFlowTests.BaselineLegacyPrefabsCannotExecute" methodname="BaselineLegacyPrefabsCannotExecute" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" seed="833945667" result="Passed" start-time="2026-11-08 07:06:34Z" end-time="2026-11-08 07:06:38Z" duration="4.090107" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1157" name="BigBotExecutionAndNormalDeathNoDrop" fullname="IronRequiem.Tests.PhaseFlowTests.BigBotExecutionAndNormalDeathNoDrop" methodname="BigBotExecutionAndNormalDeathNoDrop" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" seed="1172236428" result="Passed" start-time="2026-11-08 07:06:38Z" end-time="2026-11-08 07:06:45Z" duration="7.272590" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1158" name="FlatRoomsCullAndConnectToCorridor" fullname="IronRequiem.Tests.PhaseFlowTests.FlatRoomsCullAndConnectToCorridor" methodname="FlatRoomsCullAndConnectToCorridor" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" seed="1390692444" result="Passed" start-time="2026-11-08 07:06:45Z" end-time="2026-11-08 07:06:58Z" duration="12.522227" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1159" name="StackedVisibilityAndMenuDuringPreload" fullname="IronRequiem.Tests.PhaseFlowTests.StackedVisibilityAndMenuDuringPreload" methodname="StackedVisibilityAndMenuDuringPreload" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" seed="57780803" result="Passed" start-time="2026-11-08 07:06:58Z" end-time="2026-11-08 07:07:08Z" duration="10.163066" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1156" name="T07ExecutionThresholdWallDistanceAndSingleDelivery" fullname="IronRequiem.Tests.PhaseFlowTests.T07ExecutionThresholdWallDistanceAndSingleDelivery" methodname="T07ExecutionThresholdWallDistanceAndSingleDelivery" classname="IronRequiem.Tests.PhaseFlowTests" runstate="Runnable" seed="719713123" result="Passed" start-time="2026-11-08 07:07:08Z" end-time="2026-11-08 07:07:14Z" duration="6.425410" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

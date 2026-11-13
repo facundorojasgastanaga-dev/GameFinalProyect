@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.7445328">
+  <test-suite type="TestSuite" id="1256" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.744533" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1250" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.726366" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1251" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.720352" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1110" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.713838" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1246" name="TwoFloorGapTests" fullname="IronRequiem.Tests.TwoFloorGapTests" classname="IronRequiem.Tests.TwoFloorGapTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:18:06Z" duration="15.697026" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1249" name="ExistingWavesOpenStairGateAndUpperEncounterStartsAfterJump" fullname="IronRequiem.Tests.TwoFloorGapTests.ExistingWavesOpenStairGateAndUpperEncounterStartsAfterJump" methodname="ExistingWavesOpenStairGateAndUpperEncounterStartsAfterJump" classname="IronRequiem.Tests.TwoFloorGapTests" runstate="Runnable" seed="985336244" result="Passed" start-time="2026-11-07 23:17:50Z" end-time="2026-11-07 23:17:58Z" duration="8.093484" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+]]></output>
+            </test-case>
+            <test-case id="1248" name="JumpSuccessAndFallsRecoverOnTheirTakeoffBank" fullname="IronRequiem.Tests.TwoFloorGapTests.JumpSuccessAndFallsRecoverOnTheirTakeoffBank" methodname="JumpSuccessAndFallsRecoverOnTheirTakeoffBank" classname="IronRequiem.Tests.TwoFloorGapTests" runstate="Runnable" seed="509399444" result="Passed" start-time="2026-11-07 23:17:58Z" end-time="2026-11-07 23:18:04Z" duration="5.993125" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1247" name="StairsNavigateAndPlayerActuallyWalksUp" fullname="IronRequiem.Tests.TwoFloorGapTests.StairsNavigateAndPlayerActuallyWalksUp" methodname="StairsNavigateAndPlayerActuallyWalksUp" classname="IronRequiem.Tests.TwoFloorGapTests" runstate="Runnable" seed="2123016220" result="Failed" start-time="2026-11-07 23:18:04Z" end-time="2026-11-07 23:18:06Z" duration="1.575839" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: PathComplete
+  But was:  PathPartial
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.TwoFloorGapTests+<StairsNavigateAndPlayerActuallyWalksUp>d__17.MoveNext () [0x00082] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\TwoFloorGapTests.cs:57
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

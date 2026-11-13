@@ -1,0 +1,93 @@
+{
+  "baseline_files": 1969,
+  "changed_preexisting": [
+    "Assets/IronRequiem/Prefabs/Weapons/Weapon_T07_Temporary_Optimized.prefab",
+    "Assets/IronRequiem/Scripts/Weapons/CannonChargePresentation.cs",
+    "Assets/IronRequiem/Scripts/Weapons/CannonChargeShot.cs",
+    "Assets/IronRequiem/Tests/PlayMode/MechanicsBehaviorTests.cs",
+    "Assets/IronRequiem/Tests/PlayMode/T07AnimationBehaviorTests.cs"
+  ],
+  "unexpected_changes": [],
+  "new_assets": [
+    "Assets/IronRequiem/Editor/CannonChargeUpgrade.cs",
+    "Assets/IronRequiem/Editor/CannonChargeUpgrade.cs.meta",
+    "Assets/IronRequiem/Editor/CannonChargeVerification.cs",
+    "Assets/IronRequiem/Editor/CannonChargeVerification.cs.meta",
+    "Assets/IronRequiem/VFX/CannonCharge.meta",
+    "Assets/IronRequiem/Prefabs/VFX/CannonCharge_Magenta.prefab",
+    "Assets/IronRequiem/Prefabs/VFX/CannonCharge_Magenta.prefab.meta",
+    "Assets/IronRequiem/Prefabs/Weapons/Projectile_T07_Magenta.prefab",
+    "Assets/IronRequiem/Prefabs/Weapons/Projectile_T07_Magenta.prefab.meta",
+    "Assets/IronRequiem/Scripts/Weapons/ProjectileMuzzleOrigin.cs",
+    "Assets/IronRequiem/Scripts/Weapons/ProjectileMuzzleOrigin.cs.meta",
+    "Assets/IronRequiem/Tests/EditMode/CannonChargeAssetTests.cs",
+    "Assets/IronRequiem/Tests/EditMode/CannonChargeAssetTests.cs.meta",
+    "Assets/IronRequiem/Tests/PlayMode/CannonChargeBehaviorTests.cs",
+    "Assets/IronRequiem/Tests/PlayMode/CannonChargeBehaviorTests.cs.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/AngularFrame.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/AngularFrame.asset.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/CoreQuad.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/CoreQuad.asset.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyCore.mat",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyCore.mat.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyFrame.mat",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyFrame.mat.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyRays.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyRays.asset.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergySparks.mat",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergySparks.mat.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergySpindle.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergySpindle.asset.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyStripe.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/EnergyStripe.asset.meta",
+    "Assets/IronRequiem/VFX/CannonCharge/MagentaCore.asset",
+    "Assets/IronRequiem/VFX/CannonCharge/MagentaCore.asset.meta"
+  ],
+  "missing_meta": [],
+  "original_meta_unchanged": true,
+  "all_scenes_unchanged": true,
+  "packages_and_project_settings_unchanged": true,
+  "fps_production_scripts_unchanged": true,
+  "enemy_and_world_cannon_unchanged": true,
+  "audit_utc": "2026-10-30T11:50:37.1750539Z",
+  "playing": false,
+  "scene_states": [
+    {
+      "path": "Assets/IronRequiem/Scenes/CharacterLab.unity",
+      "dirty": false,
+      "missingScripts": 0
+    }
+  ],
+  "compilation_errors": [],
+  "tests": {
+    "regression-play": {
+      "result": "Passed",
+      "passed": 31,
+      "failed": 0,
+      "start": "2026-10-30 11:45:33Z",
+      "end": "2026-10-30 11:48:34Z"
+    },
+    "regression-edit": {
+      "result": "Passed",
+      "passed": 14,
+      "failed": 0,
+      "start": "2026-10-30 11:48:43Z",
+      "end": "2026-10-30 11:48:45Z"
+    },
+    "play": {
+      "result": "Passed",
+      "passed": 3,
+      "failed": 0,
+      "start": "2026-10-30 11:41:40Z",
+      "end": "2026-10-30 11:42:05Z"
+    },
+    "edit": {
+      "result": "Passed",
+      "passed": 2,
+      "failed": 0,
+      "start": "2026-10-30 11:42:09Z",
+      "end": "2026-10-30 11:42:09Z"
+    }
+  },
+  "all_checks_pass": true
+}

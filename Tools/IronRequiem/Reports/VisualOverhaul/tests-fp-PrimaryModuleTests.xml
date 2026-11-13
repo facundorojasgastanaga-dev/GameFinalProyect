@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.2353614">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.235361" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.180101" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.166167" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.152923" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1160" name="PrimaryModuleTests" fullname="IronRequiem.Tests.PrimaryModuleTests" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:09:32Z" duration="112.121836" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1162" name="BigBotTimeToKill" fullname="IronRequiem.Tests.PrimaryModuleTests.BigBotTimeToKill" methodname="BigBotTimeToKill" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="1722056872" result="Passed" start-time="2026-11-08 07:07:40Z" end-time="2026-11-08 07:08:20Z" duration="40.248324" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1164" name="CapsulesBigBotTimeToKill" fullname="IronRequiem.Tests.PrimaryModuleTests.CapsulesBigBotTimeToKill" methodname="CapsulesBigBotTimeToKill" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="700379698" result="Passed" start-time="2026-11-08 07:08:20Z" end-time="2026-11-08 07:09:05Z" duration="44.585707" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1163" name="CapsulesCommonTimeToKill" fullname="IronRequiem.Tests.PrimaryModuleTests.CapsulesCommonTimeToKill" methodname="CapsulesCommonTimeToKill" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="1142076473" result="Passed" start-time="2026-11-08 07:09:05Z" end-time="2026-11-08 07:09:10Z" duration="4.902517" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1165" name="CapsulesMountAndAutomatic" fullname="IronRequiem.Tests.PrimaryModuleTests.CapsulesMountAndAutomatic" methodname="CapsulesMountAndAutomatic" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="1665675329" result="Passed" start-time="2026-11-08 07:09:10Z" end-time="2026-11-08 07:09:19Z" duration="8.660997" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1161" name="CommonEnemyTimeToKill" fullname="IronRequiem.Tests.PrimaryModuleTests.CommonEnemyTimeToKill" methodname="CommonEnemyTimeToKill" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="1130847970" result="Passed" start-time="2026-11-08 07:09:19Z" end-time="2026-11-08 07:09:23Z" duration="4.156344" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1166" name="IntegratedMount" fullname="IronRequiem.Tests.PrimaryModuleTests.IntegratedMount" methodname="IntegratedMount" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="414075557" result="Failed" start-time="2026-11-08 07:09:23Z" end-time="2026-11-08 07:09:25Z" duration="2.141040" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 4
+  But was:  8
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.PrimaryModuleTests+<MountAndPresentation>d__23.MoveNext () [0x0012f] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\PrimaryModuleTests.cs:46
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1167" name="MountAndPresentation" fullname="IronRequiem.Tests.PrimaryModuleTests.MountAndPresentation" methodname="MountAndPresentation" classname="IronRequiem.Tests.PrimaryModuleTests" runstate="Runnable" seed="1895626112" result="Passed" start-time="2026-11-08 07:09:25Z" end-time="2026-11-08 07:09:32Z" duration="7.364874" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,912 @@
+Assets/IronRequiem/Prefabs/Enemies/T07_HitFeedback_v04.prefab health=160 charge=0 visual=
+gun=Weapon_EyeLazers muzzle=(0.30, 1.09, 0.65) scale=(1.00, 1.00, 1.00) projectile=Assets/FPS/Prefabs/Projectiles/Projectile_Hoverbot.prefab
+joint Thigh_L p=(0.15, 0.87, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Shin_L p=(0.17, 0.46, 0.01) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Foot_L p=(0.17, 0.05, 0.02) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Thigh_R p=(-0.15, 0.87, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Shin_R p=(-0.17, 0.46, 0.01) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Foot_R p=(-0.17, 0.05, 0.02) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootPlacementRig p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Leg_L p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootTarget_L p=(0.17, 0.12, 0.02) local=(0.17, 0.12, 0.02) scale=(1.00, 1.00, 1.00) active=True
+joint Leg_R p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootTarget_R p=(-0.17, 0.12, 0.02) local=(-0.17, 0.12, 0.02) scale=(1.00, 1.00, 1.00) active=True
+skin=Bottom active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=1584 bounds=Center: (0.00, -0.09, -0.01), Extents: (0.32, 0.27, 0.26) bones=Bot_Cap_C_Jnt,Bot_L_Wing01_Jnt,Bot_L_Wing02_Jnt,Bot_L_Wing03_Jnt_End,Bot_R_Wing01_Jnt,Bot_R_Wing02_Jnt,Bot_R_Wing03_Jnt_End
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 0.99, -0.01), Extents: (0.32, 0.27, 0.26)
+ baked legs L=48 R=48 bounds=Center: (0.00, 0.22, -0.01), Extents: (0.32, 0.27, 0.26)
+  Bot_Cap_C_Jnt weighted=1392
+  Bot_L_Wing01_Jnt weighted=0
+  Bot_L_Wing02_Jnt weighted=0
+  Bot_L_Wing03_Jnt_End weighted=96
+  Bot_R_Wing01_Jnt weighted=0
+  Bot_R_Wing02_Jnt weighted=0
+  Bot_R_Wing03_Jnt_End weighted=96
+skin=EyeBall active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=618 bounds=Center: (0.00, 0.00, -0.02), Extents: (0.17, 0.17, 0.15) bones=Robot_Root_C_Jnt,Robot_FKRoot_C_Jnt,EyeBall_C_Jnt,IrisBlade_C_Jnt
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 1.37, -0.02), Extents: (0.17, 0.17, 0.15)
+ baked legs L=0 R=0 bounds=Center: (0.00, 0.60, -0.02), Extents: (0.17, 0.17, 0.15)
+  Robot_Root_C_Jnt weighted=0
+  Robot_FKRoot_C_Jnt weighted=0
+  EyeBall_C_Jnt weighted=610
+  IrisBlade_C_Jnt weighted=8
+skin=Top active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=2625 bounds=Center: (0.00, -0.03, 0.02), Extents: (0.33, 0.15, 0.34) bones=Top_Cap_C_Jnt,Front_Panel_C_Jnt,Front_Panel_C_Jnt_End,Top_R_Ear01_Jnt,Top_L_Ear01_Jnt,Top_R_Ear02_Jnt,Top_L_Ear02_Jnt
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 1.59, 0.02), Extents: (0.33, 0.15, 0.34)
+ baked legs L=0 R=0 bounds=Center: (0.00, 0.82, 0.02), Extents: (0.33, 0.15, 0.34)
+  Top_Cap_C_Jnt weighted=1423
+  Front_Panel_C_Jnt weighted=0
+  Front_Panel_C_Jnt_End weighted=346
+  Top_R_Ear01_Jnt weighted=0
+  Top_L_Ear01_Jnt weighted=0
+  Top_R_Ear02_Jnt weighted=428
+  Top_L_Ear02_Jnt weighted=428
+skin=Body_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=10595 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.96, 0.00), Extents: (1.23, 1.91, 1.07)
+ raw rest world=Center: (0.00, 1.02, -0.01), Extents: (0.39, 1.02, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=76 R=62 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.24, 1.09)
+  Root weighted=0
+  Hips weighted=1631
+  Spine weighted=1668
+  Chest weighted=2892
+  Head weighted=807
+  UpperArm_L weighted=994
+  Forearm_L weighted=183
+  Hand_L weighted=0
+  UpperArm_R weighted=71
+  Forearm_R weighted=20
+  Hand_R weighted=5
+  Thigh_L weighted=975
+  Shin_L weighted=841
+  Foot_L weighted=607
+  Thigh_R weighted=959
+  Shin_R weighted=847
+  Foot_R weighted=636
+skin=Body_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=6686 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.96, 0.00), Extents: (1.23, 1.91, 1.06)
+ raw rest world=Center: (0.00, 1.02, -0.02), Extents: (0.39, 1.02, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=61 R=48 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.24, 1.09)
+  Root weighted=0
+  Hips weighted=1013
+  Spine weighted=1018
+  Chest weighted=1850
+  Head weighted=439
+  UpperArm_L weighted=652
+  Forearm_L weighted=129
+  Hand_L weighted=0
+  UpperArm_R weighted=75
+  Forearm_R weighted=17
+  Hand_R weighted=7
+  Thigh_L weighted=625
+  Shin_L weighted=504
+  Foot_L weighted=384
+  Thigh_R weighted=616
+  Shin_R weighted=509
+  Foot_R weighted=412
+skin=Body_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=3620 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.97, 0.00), Extents: (1.23, 1.91, 1.06)
+ raw rest world=Center: (0.00, 1.03, -0.02), Extents: (0.39, 1.03, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=31 R=18 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.23, 1.09)
+  Root weighted=0
+  Hips weighted=542
+  Spine weighted=612
+  Chest weighted=1011
+  Head weighted=224
+  UpperArm_L weighted=375
+  Forearm_L weighted=78
+  Hand_L weighted=0
+  UpperArm_R weighted=57
+  Forearm_R weighted=13
+  Hand_R weighted=10
+  Thigh_L weighted=332
+  Shin_L weighted=258
+  Foot_L weighted=199
+  Thigh_R weighted=310
+  Shin_R weighted=236
+  Foot_R weighted=204
+skin=Armor_Pectoral_L_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=250 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.13, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.13, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=250
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_L_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=177 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.13, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.13, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=177
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_L_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=110 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.12, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.12, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=110
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=638 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.40, -0.03), Extents: (0.11, 0.10, 0.15)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=638
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=401 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.41, -0.03), Extents: (0.11, 0.11, 0.15)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=401
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=230 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.40, -0.03), Extents: (0.10, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=230
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=238 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=238
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=163 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=163
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=94 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=94
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=525 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.31, 1.48, -0.03), Extents: (0.22, 0.24, 0.28)
+ baked legs L=0 R=0 bounds=Center: (0.31, 1.40, -0.03), Extents: (0.09, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=525
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=329 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.31, 1.48, -0.03), Extents: (0.22, 0.23, 0.28)
+ baked legs L=0 R=0 bounds=Center: (0.31, 1.40, -0.03), Extents: (0.09, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=329
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=184 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.30, 1.47, -0.03), Extents: (0.21, 0.23, 0.27)
+ baked legs L=0 R=0 bounds=Center: (0.30, 1.40, -0.03), Extents: (0.08, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=184
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD0.asset count=5210 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.33, 1.11, -0.01), Extents: (0.53, 0.84, 0.56)
+ baked legs L=1759 R=0 bounds=Center: (-0.33, 1.04, -0.01), Extents: (0.16, 0.47, 0.19)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=97
+  Chest weighted=495
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=2922
+  Forearm_R weighted=2394
+  Hand_R weighted=604
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=43
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD1.asset count=3181 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.14, -0.03), Extents: (0.54, 0.86, 0.55)
+ baked legs L=1003 R=0 bounds=Center: (-0.34, 1.06, -0.03), Extents: (0.16, 0.49, 0.17)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=50
+  Chest weighted=280
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=1864
+  Forearm_R weighted=1377
+  Hand_R weighted=354
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=24
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD2.asset count=1639 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.35, 1.12, 0.07), Extents: (0.55, 0.87, 0.66)
+ baked legs L=554 R=0 bounds=Center: (-0.35, 1.04, 0.07), Extents: (0.15, 0.47, 0.26)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=16
+  Chest weighted=109
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=967
+  Forearm_R weighted=728
+  Hand_R weighted=180
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=25
+  Shin_R weighted=0
+  Foot_R weighted=0
+LOD=CannonModule_Visual levels=CannonModule_Visual / LOD1 / LOD2
+LOD=Body levels=Body_LOD0,Armor_Pectoral_L_LOD0,Armor_Shoulder_R_LOD0,Armor_Pectoral_R_LOD0,Armor_Shoulder_L_LOD0,Arm_R_LOD0,PowerIndicator / Body_LOD1,Armor_Pectoral_L_LOD1,Armor_Shoulder_R_LOD1,Armor_Pectoral_R_LOD1,Armor_Shoulder_L_LOD1,Arm_R_LOD1,PowerIndicator / Body_LOD2,Armor_Pectoral_L_LOD2,Armor_Shoulder_R_LOD2,Armor_Pectoral_R_LOD2,Armor_Shoulder_L_LOD2,Arm_R_LOD2,PowerIndicator
+Assets/IronRequiem/Prefabs/CombatFollowup/T07_HitFeedback_v04.prefab health=128 charge=1.2 visual=T07_HitFeedback_v04 (IronRequiem.EnemyCannonChargePresentation)
+gun=Weapon_EyeLazers muzzle=(0.30, 1.09, 0.65) scale=(1.00, 1.00, 1.00) projectile=Assets/IronRequiem/Prefabs/CombatFollowup/T07_ChargedProjectile.prefab
+joint Thigh_L p=(0.15, 0.87, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Shin_L p=(0.17, 0.46, 0.01) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Foot_L p=(0.17, 0.05, 0.02) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Thigh_R p=(-0.15, 0.87, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Shin_R p=(-0.17, 0.46, 0.01) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Foot_R p=(-0.17, 0.05, 0.02) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootPlacementRig p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint Leg_L p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootTarget_L p=(0.17, 0.12, 0.02) local=(0.17, 0.12, 0.02) scale=(1.00, 1.00, 1.00) active=True
+joint Leg_R p=(0.00, 0.00, 0.00) local=(0.00, 0.00, 0.00) scale=(1.00, 1.00, 1.00) active=True
+joint FootTarget_R p=(-0.17, 0.12, 0.02) local=(-0.17, 0.12, 0.02) scale=(1.00, 1.00, 1.00) active=True
+skin=Bottom active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=1584 bounds=Center: (0.00, -0.09, -0.01), Extents: (0.32, 0.27, 0.26) bones=Bot_Cap_C_Jnt,Bot_L_Wing01_Jnt,Bot_L_Wing02_Jnt,Bot_L_Wing03_Jnt_End,Bot_R_Wing01_Jnt,Bot_R_Wing02_Jnt,Bot_R_Wing03_Jnt_End
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 0.99, -0.01), Extents: (0.32, 0.27, 0.26)
+ baked legs L=48 R=48 bounds=Center: (0.00, 0.22, -0.01), Extents: (0.32, 0.27, 0.26)
+  Bot_Cap_C_Jnt weighted=1392
+  Bot_L_Wing01_Jnt weighted=0
+  Bot_L_Wing02_Jnt weighted=0
+  Bot_L_Wing03_Jnt_End weighted=96
+  Bot_R_Wing01_Jnt weighted=0
+  Bot_R_Wing02_Jnt weighted=0
+  Bot_R_Wing03_Jnt_End weighted=96
+skin=EyeBall active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=618 bounds=Center: (0.00, 0.00, -0.02), Extents: (0.17, 0.17, 0.15) bones=Robot_Root_C_Jnt,Robot_FKRoot_C_Jnt,EyeBall_C_Jnt,IrisBlade_C_Jnt
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 1.37, -0.02), Extents: (0.17, 0.17, 0.15)
+ baked legs L=0 R=0 bounds=Center: (0.00, 0.60, -0.02), Extents: (0.17, 0.17, 0.15)
+  Robot_Root_C_Jnt weighted=0
+  Robot_FKRoot_C_Jnt weighted=0
+  EyeBall_C_Jnt weighted=610
+  IrisBlade_C_Jnt weighted=8
+skin=Top active=True enabled=False mesh=Assets/FPS/Animation/Rigs/HoverBot.fbx count=2625 bounds=Center: (0.00, -0.03, 0.02), Extents: (0.33, 0.15, 0.34) bones=Top_Cap_C_Jnt,Front_Panel_C_Jnt,Front_Panel_C_Jnt_End,Top_R_Ear01_Jnt,Top_L_Ear01_Jnt,Top_R_Ear02_Jnt,Top_L_Ear02_Jnt
+ rendererTransform=(0.00, 0.77, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.00, 1.59, 0.02), Extents: (0.33, 0.15, 0.34)
+ baked legs L=0 R=0 bounds=Center: (0.00, 0.82, 0.02), Extents: (0.33, 0.15, 0.34)
+  Top_Cap_C_Jnt weighted=1423
+  Front_Panel_C_Jnt weighted=0
+  Front_Panel_C_Jnt_End weighted=346
+  Top_R_Ear01_Jnt weighted=0
+  Top_L_Ear01_Jnt weighted=0
+  Top_R_Ear02_Jnt weighted=428
+  Top_L_Ear02_Jnt weighted=428
+skin=Body_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=10595 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.96, 0.00), Extents: (1.23, 1.91, 1.07)
+ raw rest world=Center: (0.00, 1.02, -0.01), Extents: (0.39, 1.02, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=76 R=62 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.24, 1.09)
+  Root weighted=0
+  Hips weighted=1631
+  Spine weighted=1668
+  Chest weighted=2892
+  Head weighted=807
+  UpperArm_L weighted=994
+  Forearm_L weighted=183
+  Hand_L weighted=0
+  UpperArm_R weighted=71
+  Forearm_R weighted=20
+  Hand_R weighted=5
+  Thigh_L weighted=975
+  Shin_L weighted=841
+  Foot_L weighted=607
+  Thigh_R weighted=959
+  Shin_R weighted=847
+  Foot_R weighted=636
+skin=Body_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=6686 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.96, 0.00), Extents: (1.23, 1.91, 1.06)
+ raw rest world=Center: (0.00, 1.02, -0.02), Extents: (0.39, 1.02, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=61 R=48 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.24, 1.09)
+  Root weighted=0
+  Hips weighted=1013
+  Spine weighted=1018
+  Chest weighted=1850
+  Head weighted=439
+  UpperArm_L weighted=652
+  Forearm_L weighted=129
+  Hand_L weighted=0
+  UpperArm_R weighted=75
+  Forearm_R weighted=17
+  Hand_R weighted=7
+  Thigh_L weighted=625
+  Shin_L weighted=504
+  Foot_L weighted=384
+  Thigh_R weighted=616
+  Shin_R weighted=509
+  Foot_R weighted=412
+skin=Body_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_SeverableArm.fbx count=3620 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.02, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(270.02, 0.00, 0.00):(100.00, 100.00, 100.00) worldBounds=Center: (0.01, 0.97, 0.00), Extents: (1.23, 1.91, 1.06)
+ raw rest world=Center: (0.00, 1.03, -0.02), Extents: (0.39, 1.03, 0.22)
+ bindDelta Root=2.980232E-07
+ bindDelta Hips=0.0007499997
+ bindDelta Spine=0.0007500006
+ bindDelta Chest=0.0007500006
+ bindDelta Head=0.0007499997
+ bindDelta UpperArm_L=0.000748463
+ bindDelta Forearm_L=0.0007483782
+ bindDelta Hand_L=0.0007492229
+ bindDelta UpperArm_R=0.000748463
+ bindDelta Forearm_R=0.0007483782
+ bindDelta Hand_R=0.0007492229
+ bindDelta Thigh_L=0.0007490749
+ bindDelta Shin_L=0.0007497268
+ bindDelta Foot_L=0.0007041559
+ bindDelta Thigh_R=0.0007490749
+ bindDelta Shin_R=0.0007497268
+ bindDelta Foot_R=0.0007041559
+ baked legs L=31 R=18 bounds=Center: (0.01, 0.00, 0.89), Extents: (0.40, 0.23, 1.09)
+  Root weighted=0
+  Hips weighted=542
+  Spine weighted=612
+  Chest weighted=1011
+  Head weighted=224
+  UpperArm_L weighted=375
+  Forearm_L weighted=78
+  Hand_L weighted=0
+  UpperArm_R weighted=57
+  Forearm_R weighted=13
+  Hand_R weighted=10
+  Thigh_L weighted=332
+  Shin_L weighted=258
+  Foot_L weighted=199
+  Thigh_R weighted=310
+  Shin_R weighted=236
+  Foot_R weighted=204
+skin=Armor_Pectoral_L_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=250 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.13, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.13, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=250
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_L_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=177 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.13, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.13, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=177
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_L_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=110 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.12, 1.41, 0.15), Extents: (0.20, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (0.12, 1.34, 0.15), Extents: (0.10, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=110
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=638 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.40, -0.03), Extents: (0.11, 0.10, 0.15)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=638
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=401 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.41, -0.03), Extents: (0.11, 0.11, 0.15)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=401
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=230 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.48, -0.03), Extents: (0.25, 0.25, 0.29)
+ baked legs L=0 R=0 bounds=Center: (-0.34, 1.40, -0.03), Extents: (0.10, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=230
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=238 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=238
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=163 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=163
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Pectoral_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=94 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.12, 1.41, 0.15), Extents: (0.19, 0.20, 0.14)
+ baked legs L=0 R=0 bounds=Center: (-0.12, 1.34, 0.15), Extents: (0.09, 0.10, 0.04)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=94
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=525 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.31, 1.48, -0.03), Extents: (0.22, 0.24, 0.28)
+ baked legs L=0 R=0 bounds=Center: (0.31, 1.40, -0.03), Extents: (0.09, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=525
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=329 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.31, 1.48, -0.03), Extents: (0.22, 0.23, 0.28)
+ baked legs L=0 R=0 bounds=Center: (0.31, 1.40, -0.03), Extents: (0.09, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=329
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Armor_Shoulder_L_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_ArmorRig.fbx count=184 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.00, 0.00, 0.00) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (0.30, 1.47, -0.03), Extents: (0.21, 0.23, 0.27)
+ baked legs L=0 R=0 bounds=Center: (0.30, 1.40, -0.03), Extents: (0.08, 0.10, 0.14)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=0
+  Chest weighted=0
+  Head weighted=0
+  UpperArm_L weighted=184
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=0
+  Forearm_R weighted=0
+  Hand_R weighted=0
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=0
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD0 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD0.asset count=5210 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.33, 1.11, -0.01), Extents: (0.53, 0.84, 0.56)
+ baked legs L=1759 R=0 bounds=Center: (-0.33, 1.04, -0.01), Extents: (0.16, 0.47, 0.19)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=97
+  Chest weighted=495
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=2922
+  Forearm_R weighted=2394
+  Hand_R weighted=604
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=43
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD1 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD1.asset count=3181 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.34, 1.14, -0.03), Extents: (0.54, 0.86, 0.55)
+ baked legs L=1003 R=0 bounds=Center: (-0.34, 1.06, -0.03), Extents: (0.16, 0.49, 0.17)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=50
+  Chest weighted=280
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=1864
+  Forearm_R weighted=1377
+  Hand_R weighted=354
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=24
+  Shin_R weighted=0
+  Foot_R weighted=0
+skin=Arm_R_LOD2 active=True enabled=True mesh=Assets/IronRequiem/Art/Enemies/T07Destructible/T07_Arm_R_LOD2.asset count=1639 bounds=Center: (0.00, 0.01, 0.00), Extents: (0.01, 0.01, 0.01) bones=Root,Hips,Spine,Chest,Head,UpperArm_L,Forearm_L,Hand_L,UpperArm_R,Forearm_R,Hand_R,Thigh_L,Shin_L,Foot_L,Thigh_R,Shin_R,Foot_R
+ rendererTransform=(0.00, 0.00, 0.00):(0.00, 0.00, 0.00):(1.00, 1.00, 1.00) worldBounds=Center: (-0.35, 1.12, 0.07), Extents: (0.55, 0.87, 0.66)
+ baked legs L=554 R=0 bounds=Center: (-0.35, 1.04, 0.07), Extents: (0.15, 0.47, 0.26)
+  Root weighted=0
+  Hips weighted=0
+  Spine weighted=16
+  Chest weighted=109
+  Head weighted=0
+  UpperArm_L weighted=0
+  Forearm_L weighted=0
+  Hand_L weighted=0
+  UpperArm_R weighted=967
+  Forearm_R weighted=728
+  Hand_R weighted=180
+  Thigh_L weighted=0
+  Shin_L weighted=0
+  Foot_L weighted=0
+  Thigh_R weighted=25
+  Shin_R weighted=0
+  Foot_R weighted=0
+LOD=CannonModule_Visual levels=CannonModule_Visual / LOD1 / LOD2
+LOD=Body levels=Body_LOD0,Armor_Pectoral_L_LOD0,Armor_Shoulder_R_LOD0,Armor_Pectoral_R_LOD0,Armor_Shoulder_L_LOD0,Arm_R_LOD0,PowerIndicator / Body_LOD1,Armor_Pectoral_L_LOD1,Armor_Shoulder_R_LOD1,Armor_Pectoral_R_LOD1,Armor_Shoulder_L_LOD1,Arm_R_LOD1,PowerIndicator / Body_LOD2,Armor_Pectoral_L_LOD2,Armor_Shoulder_R_LOD2,Armor_Pectoral_R_LOD2,Armor_Shoulder_L_LOD2,Arm_R_LOD2,PowerIndicator

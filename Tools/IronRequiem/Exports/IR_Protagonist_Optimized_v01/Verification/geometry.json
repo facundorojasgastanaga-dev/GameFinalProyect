@@ -1,0 +1,292 @@
+{
+  "sources": {
+    "C:\\Users\\gehbd\\OneDrive\\Escritorio\\Juegos GJ\\PrincipalBot\\71443cd84dd6034935129fc02c5facfa.fbx": "e660e769705ac33b710e43ea32eadafda311fb090301e9628d4071ef4aec7375"
+  },
+  "source_triangles": 50000,
+  "source_rig": false,
+  "source_animations": 0,
+  "output_rig": false,
+  "height_m": 1.8,
+  "scale_from_source": 1.5782011031682819,
+  "blender_forward": "-Y",
+  "blender_up": "+Z",
+  "normalization_offset_source": [
+    0.001976504921913147,
+    -0.017125453799962997,
+    -8.187898359324208e-09
+  ],
+  "selection_method": "Measured elbow/wrist planes; bisect first, then partition; all cuts capped with shared atlas material",
+  "reduction_mode": {
+    "mode": "inverted",
+    "factor": 1000,
+    "triangles": 19000,
+    "hand_triangles": 4130
+  },
+  "landmarks": {
+    "R": {
+      "elbow": [
+        -0.34085434675216675,
+        0.06648243963718414,
+        1.2546699047088623
+      ],
+      "wrist": [
+        -0.41976436972618103,
+        0.00019798986613750458,
+        0.9974231123924255
+      ],
+      "sign": -1,
+      "normal": [
+        -0.2847488224506378,
+        -0.23918910324573517,
+        -0.9282815456390381
+      ]
+    },
+    "L": {
+      "elbow": [
+        0.34092849493026733,
+        0.06648243963718414,
+        1.2546699047088623
+      ],
+      "wrist": [
+        0.4198386073112488,
+        0.00019798986613750458,
+        0.9974231123924255
+      ],
+      "sign": 1,
+      "normal": [
+        0.2847491204738617,
+        -0.23918908834457397,
+        -0.9282814860343933
+      ]
+    }
+  },
+  "lods": [
+    {
+      "level": 0,
+      "mode": "inverted",
+      "parts": [
+        {
+          "name": "Body_LOD0",
+          "vertices": 7505,
+          "triangles": 15038,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_L_LOD0",
+          "vertices": 431,
+          "triangles": 858,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.34092849493026733,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_R_LOD0",
+          "vertices": 438,
+          "triangles": 872,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.34085434675216675,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Hand_L_LOD0",
+          "vertices": 1071,
+          "triangles": 2142,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.4198386073112488,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 1065,
+            "p95_m": 3.725290298461914e-09,
+            "max_m": 0.000758853682782501
+          }
+        },
+        {
+          "name": "Hand_R_LOD0",
+          "vertices": 1095,
+          "triangles": 2198,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.41976436972618103,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 1095,
+            "p95_m": 3.725290298461914e-09,
+            "max_m": 0.00048132313531823456
+          }
+        }
+      ],
+      "triangles": 21108
+    },
+    {
+      "level": 1,
+      "mode": "none",
+      "parts": [
+        {
+          "name": "Body_LOD1",
+          "vertices": 4699,
+          "triangles": 9426,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_L_LOD1",
+          "vertices": 273,
+          "triangles": 542,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.34092849493026733,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_R_LOD1",
+          "vertices": 287,
+          "triangles": 570,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.34085434675216675,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Hand_L_LOD1",
+          "vertices": 266,
+          "triangles": 528,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.4198386073112488,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 266,
+            "p95_m": 0.0018375698709860444,
+            "max_m": 0.002650277456268668
+          }
+        },
+        {
+          "name": "Hand_R_LOD1",
+          "vertices": 277,
+          "triangles": 562,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.41976436972618103,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 277,
+            "p95_m": 0.0017640728037804365,
+            "max_m": 0.003751934738829732
+          }
+        }
+      ],
+      "triangles": 11628
+    },
+    {
+      "level": 2,
+      "mode": "none",
+      "parts": [
+        {
+          "name": "Body_LOD2",
+          "vertices": 2467,
+          "triangles": 4962,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_L_LOD2",
+          "vertices": 157,
+          "triangles": 310,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.34092849493026733,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Forearm_R_LOD2",
+          "vertices": 162,
+          "triangles": 320,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.34085434675216675,
+            0.06648243963718414,
+            1.2546699047088623
+          ],
+          "hand_surface_error": null
+        },
+        {
+          "name": "Hand_L_LOD2",
+          "vertices": 126,
+          "triangles": 252,
+          "materials": 1,
+          "pivot_blender_m": [
+            0.4198386073112488,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 126,
+            "p95_m": 0.00289175845682621,
+            "max_m": 0.0036414177156984806
+          }
+        },
+        {
+          "name": "Hand_R_LOD2",
+          "vertices": 135,
+          "triangles": 278,
+          "materials": 1,
+          "pivot_blender_m": [
+            -0.41976436972618103,
+            0.00019798986613750458,
+            0.9974231123924255
+          ],
+          "hand_surface_error": {
+            "samples": 135,
+            "p95_m": 0.0033767411950975657,
+            "max_m": 0.004820123314857483
+          }
+        }
+      ],
+      "triangles": 6122
+    }
+  ],
+  "fps_triangles": 6070,
+  "socket_axis": "Empty local +Z follows elbow-to-wrist direction; root remains in normalized Blender axes"
+}

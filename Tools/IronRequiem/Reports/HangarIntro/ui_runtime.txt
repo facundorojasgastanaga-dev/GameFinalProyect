@@ -1,0 +1,144 @@
+runtime UI 11/13/2026 3:58:23 AM
+InGameMenuManager InGameMenu scene=RequiemCampaign active=False industrial=False root=InGameMenu/Canvas
+InGameMenuManager GameManager/InGameMenu scene=RequiemCampaign active=True industrial=True root=GameManager/InGameMenu/Canvas
+=== GameHUD/FeedbackFlashCanvas scene=RequiemCampaign mode=ScreenSpaceOverlay sort=0 enabled=True scaler=ConstantPixelSize ref=(800.00, 600.00)
+  FeedbackFlashCanvas
+    FlashImage [alpha 0.00]
+    VP_OverdriveEdge
+=== GameManager/GameHUD/FeedbackFlashCanvas scene=RequiemCampaign mode=ScreenSpaceOverlay sort=0 enabled=True scaler=ConstantPixelSize ref=(800.00, 600.00)
+  FeedbackFlashCanvas
+    FlashImage [alpha 0.00]
+    VP_OverdriveEdge
+=== GameHUD/HUD scene=RequiemCampaign mode=ScreenSpaceOverlay sort=1 enabled=True scaler=ScaleWithScreenSize ref=(960.00, 540.00)
+  HUD
+    WeaponHUDManager
+    Crosshair
+      V
+    Compass [alpha 1.00]
+      CompassBackground
+        LineImage
+      Directions
+        North
+        NorthEast
+        East
+        SouthEast
+        South
+        SouthWest
+        West
+        NorthWest
+    NotificationsRect
+    ObjectivesRect
+    DisplayMessageRect
+    BottomLeftcorner
+      HorizontalContent
+        PlayerHealth [alpha 1.00]
+          VP_Frame
+          BackgroundImage
+          FillImageHealth
+          HealthIcon
+          VP_Label [TMP 'INTEGRIDAD' LiberationSans SDF 9 #FF9933FF]
+        Stance
+          StanceIcon
+    PauseMenuInfo
+      TABImage
+        Text [TMP 'Tab' LiberationSans SDF 10 #FF9933FF]
+      Text (TMP) [TMP 'PAUSA / OPCIONES' LiberationSans SDF 10 #E0F0F0CC]
+    VP_DamageDirection
+      VP_DamageArc0
+      VP_DamageArc1
+      VP_DamageArc2
+      VP_DamageArc3
+=== GameManager/GameHUD/HUD scene=RequiemCampaign mode=ScreenSpaceOverlay sort=1 enabled=True scaler=ScaleWithScreenSize ref=(960.00, 540.00)
+  HUD
+    V4_SlideGuardEdge
+    WeaponHUDManager
+    Crosshair
+      V
+    Compass [alpha 1.00]
+      CompassBackground
+        LineImage
+      Directions
+        North
+        NorthEast
+        East
+        SouthEast
+        South
+        SouthWest
+        West
+        NorthWest
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP 'W' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP 'S' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP 'E' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP 'N' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP 'W' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP 'S' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP 'E' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 0.00]
+        Text (TMP) [TMP '' Roboto-Black SDF 22 #FFFFFFFF]
+      CompassMarkerDirection(Clone) [alpha 1.00]
+        Text (TMP) [TMP 'N' Roboto-Black SDF 22 #FFFFFFFF]
+    NotificationsRect
+    ObjectivesRect
+    DisplayMessageRect
+    BottomLeftcorner
+      HorizontalContent
+        PlayerHealth [alpha 1.00]
+          VP_Frame
+          BackgroundImage
+          FillImageHealth
+          HealthIcon
+          VP_Label [TMP 'INTEGRIDAD' LiberationSans SDF 9 #FF9933FF]
+        Stance
+          StanceIcon
+    PauseMenuInfo
+      TABImage
+        Text [TMP 'Esc' LiberationSans SDF 12 #FF9933FF]
+      Text (TMP) [TMP 'PAUSA / OPCIONES' LiberationSans SDF 10 #E0F0F0CC]
+    WeaponHeatHUD
+    VP_DamageDirection
+      VP_DamageArc0
+      VP_DamageArc1
+      VP_DamageArc2
+      VP_DamageArc3
+    V4_FistChargeHud [alpha 0.00]
+      Track
+      Fill
+      FullFlash
+      Label [TMP 'CARGA' Roboto-Black SDF 13 #1FD1E8FF]
+=== ArenaMessages scene=RequiemCampaign mode=ScreenSpaceOverlay sort=30 enabled=True scaler=ScaleWithScreenSize ref=(1920.00, 1080.00)
+  ArenaMessages
+    VP_BannerPlate
+    Message [TMP 'HANGAR C-04 · SAL POR LA ESCLUSA' Roboto-Black SDF 26 #E0F0F0FF]
+      TMP SubMeshUI [Roboto-Black SDF Material + LiberationSans SDF Atlas]
+=== WakeUpCinematic/CinematicUI scene=Room00_Hangar mode=ScreenSpaceOverlay sort=140 enabled=True scaler=ScaleWithScreenSize ref=(1920.00, 1080.00)
+  CinematicUI
+    LetterboxTop
+    LetterboxBottom
+    SkipPrompt [alpha 0.00]
+      IR_PromptPlate
+      Label [TMP 'MANTÉN  E / ESPACIO  PARA SALTAR' LiberationSans SDF 22 #E0F0F0FF]
+      Ring
+        Fill
+=== CombatLabMenu scene=RequiemCampaign mode=ScreenSpaceOverlay sort=200 enabled=True scaler=ScaleWithScreenSize ref=(1920.00, 1080.00)
+  CombatLabMenu

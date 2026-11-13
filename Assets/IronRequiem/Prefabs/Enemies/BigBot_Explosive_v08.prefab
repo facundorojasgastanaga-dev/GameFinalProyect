@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4189559887611849718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 842533186259920093, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 62506824932115322, guid: 7804e7c3b6b2df749960ae942f925efb,
+        type: 3}
+    - target: {fileID: 1960207218185450713, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: AttackRange
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960207218185450713, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: DetectionRange
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045066637503006804, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: collectibleCannonPrefab
+      value: 
+      objectReference: {fileID: 7461566351598786032, guid: af0d3adba3f398a4ab8b28ab9a021c25,
+        type: 3}
+    - target: {fileID: 3540002829184921424, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 62506824932115322, guid: 7804e7c3b6b2df749960ae942f925efb,
+        type: 3}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: shotInterval
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: attackDistance
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: explosiveShots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: emergencyBursts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: projectileRange
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: projectileSpeed
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883761408725340174, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: detectionDistance
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665850108126250248, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBot_Explosive_v08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005185590108599618, guid: b58a8e661db60af4284ee66804987fb6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b58a8e661db60af4284ee66804987fb6, type: 3}

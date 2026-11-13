@@ -1,0 +1,107 @@
+{
+  "utc": "2026-10-29T07:40:47.7582416Z",
+  "baselineFiles": 1790,
+  "changes": [
+    {
+      "path": "Assets/FPS/InputSystem_Actions.inputactions",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/FPS/Scripts/AI/EnemyController.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/FPS/Scripts/Game/Shared/WeaponController.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/FPS/Scripts/Gameplay/PlayerCharacterController.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/FPS/Scripts/Gameplay/Managers/PlayerWeaponsManager.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/FPS/Scripts/UI/WeaponHUDManager.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Editor/CharacterVerificationRunner.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Editor/IronRequiem.Editor.asmdef",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Prefabs/Enemies/T07_IR_v01.prefab",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Prefabs/Player/Player_IR_v01.prefab",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scenes/CharacterLab.unity",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scripts/IronRequiem.Runtime.asmdef",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scripts/Enemies/DetachableCannon.cs",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Tests/EditMode/IronRequiem.EditModeTests.asmdef",
+      "state": "changed",
+      "expected": true
+    },
+    {
+      "path": "Assets/IronRequiem/Tests/PlayMode/IronRequiem.PlayModeTests.asmdef",
+      "state": "changed",
+      "expected": true
+    }
+  ],
+  "unexpectedChanges": [],
+  "originalInputActionsAndBindingsPreserved": true,
+  "tests": [
+    {
+      "mode": "play",
+      "result": "Passed",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "originalPassed": 3,
+      "report": "Tools/IronRequiem/Reports/character-play-visible.xml"
+    },
+    {
+      "mode": "edit",
+      "result": "Passed",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "originalPassed": 3,
+      "report": "Tools/IronRequiem/Reports/character-edit-visible.xml"
+    }
+  ],
+  "missingMetas": [],
+  "compilationErrors": [],
+  "playing": false,
+  "allChecksPass": true
+}

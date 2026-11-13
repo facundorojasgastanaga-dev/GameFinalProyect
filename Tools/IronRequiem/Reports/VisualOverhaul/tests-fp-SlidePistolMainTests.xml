@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.5536002">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.553600" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.480529" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.460541" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.442513" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1231" name="SlidePistolMainTests" fullname="IronRequiem.Tests.SlidePistolMainTests" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:47Z" duration="21.405265" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1232" name="OriginalPistolModelShootsThroughNativeInput" fullname="IronRequiem.Tests.SlidePistolMainTests.OriginalPistolModelShootsThroughNativeInput" methodname="OriginalPistolModelShootsThroughNativeInput" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="272496472" result="Passed" start-time="2026-11-08 07:19:25Z" end-time="2026-11-08 07:19:30Z" duration="4.767666" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1233" name="PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" fullname="IronRequiem.Tests.SlidePistolMainTests.PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" methodname="PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="432912808" result="Passed" start-time="2026-11-08 07:19:30Z" end-time="2026-11-08 07:19:36Z" duration="5.815286" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1235" name="ShiftAndCStartsSlideMovesAndReturnsToStanding" fullname="IronRequiem.Tests.SlidePistolMainTests.ShiftAndCStartsSlideMovesAndReturnsToStanding" methodname="ShiftAndCStartsSlideMovesAndReturnsToStanding" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="1602268635" result="Passed" start-time="2026-11-08 07:19:36Z" end-time="2026-11-08 07:19:39Z" duration="3.323797" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1234" name="SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" fullname="IronRequiem.Tests.SlidePistolMainTests.SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" methodname="SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="1034216669" result="Passed" start-time="2026-11-08 07:19:39Z" end-time="2026-11-08 07:19:44Z" duration="5.303165" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1236" name="StationaryCrouchAndJumpDuringSlideKeepNativeControls" fullname="IronRequiem.Tests.SlidePistolMainTests.StationaryCrouchAndJumpDuringSlideKeepNativeControls" methodname="StationaryCrouchAndJumpDuringSlideKeepNativeControls" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="1078497026" result="Passed" start-time="2026-11-08 07:19:44Z" end-time="2026-11-08 07:19:47Z" duration="2.126378" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

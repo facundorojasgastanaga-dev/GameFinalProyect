@@ -1,0 +1,89 @@
+SCENE Assets/FPS/Scenes/MainScene.unity lighting=none fog=False ambient=Flat RGBA(0.455, 0.686, 0.745, 1.000) sky=Skybox
+ROOT ===== GENERAL ===== active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform
+ROOT GameManager active=True prefab=Assets/FPS/Prefabs/GameManager.prefab renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,GameFlowManager,EnemyManager,ActorsManager,ObjectiveManager,AudioManager,AudioSource
+ROOT ObjectiveKillEnemies active=True prefab=Assets/FPS/Prefabs/ObjectiveKillEnemies.prefab renderers=0 bounds=(18.8, 1.0, 24.5)/(0.0, 0.0, 0.0) comps=Transform,ObjectiveKillEnemies,DisplayMessage
+ROOT NavMeshSurface active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,NavMeshSurface,SceneObjectGuid
+ROOT EventSystem active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,EventSystem,InputSystemUIInputModule
+ROOT ===== PLAYER ===== active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform
+ROOT Player active=True prefab=Assets/FPS/Prefabs/Player.prefab renderers=3 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,SceneObjectGuid,MechanicInput,StolenWeaponCarrier,AdvancedPlayerMovement,SlideContactEffects
+ROOT ===== ENEMIES ===== active=True prefab=- renderers=0 bounds=(18.8, 1.0, 24.5)/(0.0, 0.0, 0.0) comps=Transform
+ROOT Enemy_Turret active=True prefab=Assets/FPS/Prefabs/Enemies/Enemy_Turret.prefab renderers=9 bounds=(28.2, -3.9, 9.4)/(56.5, 7.8, 18.7) comps=Transform,EnemyController,Health,WorldspaceHealthBar,EnemyTurret,Actor,CompassElement,NavMeshAgent
+ROOT T07_Common_Destructible active=True prefab=Assets/IronRequiem/Prefabs/Enemies/T07_Common_Destructible.prefab renderers=40 bounds=(3.9, 1.5, 0.0)/(7.7, 3.8, 2.1) comps=Transform,EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,CapsuleCollider,Damageable,NavigationModule,Animator,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression
+ROOT ===== PATHS ===== active=True prefab=- renderers=0 bounds=(18.8, 1.0, 24.5)/(0.0, 0.0, 0.0) comps=Transform
+ROOT Patrol active=True prefab=- renderers=0 bounds=(7.8, 1.5, 3.3)/(0.0, 0.0, 0.0) comps=Transform,PatrolPath
+ROOT ===== PICKUPS ===== active=True prefab=- renderers=0 bounds=(18.8, 1.0, 24.5)/(0.0, 0.0, 0.0) comps=Transform
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(35.9, -3.6, -0.7)/(71.8, 7.1, 1.4) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(18.5, -3.6, 17.1)/(37.1, 7.1, 34.2) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT ===== LEVEL ===== active=True prefab=- renderers=0 bounds=(18.8, 1.0, 24.5)/(0.0, 0.0, 0.0) comps=Transform
+ROOT Directional Light active=True prefab=Assets/FPS/Prefabs/VFX/Directional Light.prefab renderers=1 bounds=(-154.5, 104.9, -67.2)/(3.4, 6.4, 6.8) comps=Transform,Light,UniversalAdditionalLightData
+ROOT HighStep active=True prefab=Assets/FPS/Prefabs/Level/Steps/HighStep.prefab renderers=5 bounds=(-11.5, 2.1, 10.5)/(3.5, 4.3, 3.5) comps=Transform,SceneObjectGuid
+ROOT VFX_Dust active=True prefab=Assets/FPS/Prefabs/VFX/VFX_Dust.prefab renderers=1 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,ParticleSystem,ParticleSystemRenderer
+ROOT VFX_Lava active=True prefab=Assets/FPS/Prefabs/VFX/VFX_Lava.prefab renderers=1 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,ParticleSystem,ParticleSystemRenderer
+ROOT Level active=True prefab=- renderers=1982 bounds=(-8.4, -0.1, 39.0)/(171.3, 16.3, 162.0) comps=Transform,MeshCombiner
+ROOT T07_Common_Destructible (1) active=True prefab=Assets/IronRequiem/Prefabs/Enemies/T07_Common_Destructible.prefab renderers=40 bounds=(3.2, 1.2, 2.0)/(6.5, 3.8, 4.1) comps=Transform,EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,CapsuleCollider,Damageable,NavigationModule,Animator,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression
+ROOT CombatMusic active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,CombatMusic
+MAT Floor_DarkGrey x1666 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Floor_DarkGrey.mat
+MAT Floor_Grey x1666 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Floor_Grey.mat
+MAT Wall_DarkGrey x311 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Wall_DarkGrey.mat
+MAT Wall_Grey x305 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Wall_Grey.mat
+MAT T07_URP x50 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Enemies/T07New/Materials/T07_URP.mat
+MAT ExposedMechanism x36 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Enemies/T07Destructible/ExposedMechanism.mat
+MAT Spark x12 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/Spark.mat
+MAT HoverBot_Body x6 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/HoverBot_Body.mat
+MAT SmokeAngry x5 shader=Universal Render Pipeline/Particles/Lit path=Assets/FPS/Art/Materials/VFX/SmokeAngry.mat
+MAT Sign_Green_Transparent x4 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Sign_Green_Transparent.mat
+MAT Sign_Orange_Transparent x3 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Sign_Orange_Transparent.mat
+MAT ExclamationMark x3 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/ExclamationMark.mat
+MAT MuzzleFlash x3 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/MuzzleFlash.mat
+MAT MechanicParticles x3 shader=Universal Render Pipeline/Particles/Unlit path=Assets/IronRequiem/VFX/Mechanics/MechanicParticles.mat
+MAT Turret_Body x3 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/Turret_Body.mat
+MAT M_HealthPickup x2 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/VFX/M_HealthPickup.mat
+MAT RescueOrange x2 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/Prototype/RescueOrange.mat
+MAT ResidualSmoke x2 shader=Universal Render Pipeline/Particles/Unlit path=Assets/IronRequiem/VFX/CannonExplosion/ResidualSmoke.mat
+MAT WarmEnergy x2 shader=Universal Render Pipeline/Particles/Unlit path=Assets/IronRequiem/VFX/CannonExplosion/WarmEnergy.mat
+MAT ParticlesUnlit x2 shader=Universal Render Pipeline/Particles/Unlit path=Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+MAT HealthCube x2 shader=Universal Render Pipeline/Particles/Lit path=Assets/FPS/Art/Materials/VFX/HealthCube.mat
+MAT JetPackTrail x2 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/JetPackTrail.mat
+MAT HoverBot_Glass x2 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/HoverBot_Glass.mat
+MAT HoverBot_Eye x2 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/HoverBot_Eye.mat
+MAT Sign_Blue_Transparent x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Sign_Blue_Transparent.mat
+MAT Sun x1 shader=Universal Render Pipeline/2D/Sprite-Lit-Default path=Assets/FPS/Art/Materials/VFX/Sun.mat
+MAT Sign_Green x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Sign_Green.mat
+MAT Sign_Orange x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Sign_Orange.mat
+MAT Ramp_Blue x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Level/Ramp_Blue.mat
+MAT Dust x1 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/Dust.mat
+MAT Turret_Glass x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/Turret_Glass.mat
+MAT Turret_Eye x1 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/Enemies/Turret_Eye.mat
+LIGHT Directional Light Directional Realtime int=0.55 range=10 col=RGBA(1.000, 0.373, 0.000, 1.000) shadows=Soft pos=(0.0, 0.0, 0.0)
+CAMERA Player/Main Camera/WeaponCamera clear=Nothing far=10
+CAMERA Player/Main Camera clear=Skybox far=300
+VOLUME Main Camera global=True profile=Assets/IronRequiem/Art/Rendering/CombatClarity.asset [Bloom,Vignette,Tonemapping,MotionBlur-off,FilmGrain]
+ENEMY T07_Common_Destructible (1) src=Assets/IronRequiem/Prefabs/Enemies/T07_Common_Destructible.prefab pos=(5.2, 0.3, 3.0)
+ENEMY T07_Common_Destructible src=Assets/IronRequiem/Prefabs/Enemies/T07_Common_Destructible.prefab pos=(6.5, 0.5, 0.0)
+ENEMY Enemy_Turret src=Assets/FPS/Prefabs/Enemies/Enemy_Turret.prefab pos=(54.5, -7.8, 16.8)
+PLAYER Player weapons=Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol_Thermal.prefab delay=0.2 smooth=False pos=(-28.5, -0.2, -7.3)
+IR StolenCannon x2
+IR ThermalGaugeGraphic x1
+IR T07CannonSocket x2
+IR CannonExplosion x2
+IR RequiemMenuView x1
+IR IndustrialPanelGraphic x6
+IR StolenWeaponCarrier x1
+IR MechanicInput x1
+IR CannonAmmo x2
+IR DetachableCannon x2
+IR RobotArmorPiece x8
+IR DisarmedEnemyRetreat x2
+IR T07FootPlacement x2
+IR RobotDamageProgression x2
+IR CannonOverdrive x2
+IR CombatMusic x1
+IR AdvancedPlayerMovement x1
+IR T07AnimationDriver x2
+IR MechanicHud x1
+IR RobotDetachedArm x2
+IR SlideContactEffects x1
+IR WeaponHeatHud x1
+NAVMESH verts=363
+NAVBOUNDS (-8.7, -1.7, 39.0)/(169.7, 12.0, 161.0)
+NAVSURFACE NavMeshSurface data=Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset collect=All geom=RenderMeshes agent=0

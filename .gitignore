@@ -1,0 +1,54 @@
+# ---- Unity generated data ----
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/ProfilerCaptures/
+
+# ---- IDE / OS ----
+/.vs/
+/.idea/
+.DS_Store
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ---- Builds and packages ----
+*.apk
+*.aab
+*.unitypackage
+crashlytics-build.properties
+
+# ---- Iron Requiem local tooling (heavy or private) ----
+# Local setup backups may contain private configuration; never commit them.
+/Tools/IronRequiem/Backups/
+/Tools/IronRequiem/Quarantine/
+/Tools/IronRequiem/Builds/
+/Tools/IronRequiem/Bridge/
+/Tools/IronRequiem/Downloads/
+/Tools/IronRequiem/Requests/
+**/__pycache__/
+
+# ---- Temporary Codex review output ----
+/Docs/IronRequiem/codex_review.md
+
+# ---- Heavy local artifacts (exceed GitHub limits; regenerable) ----
+/Tools/IronRequiem/Reports/**/*.raw
+/Tools/IronRequiem/Reports/**/*.log
+/Tools/IronRequiem/Exports/*.zip
+
+# ---- Unrelated project kept outside this repository ----
+/farmacia-inventario/

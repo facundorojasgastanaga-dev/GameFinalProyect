@@ -1,0 +1,220 @@
+{
+  "lods": [
+    {
+      "name": "Body_LOD0",
+      "vertices": 5139,
+      "triangles": 10225,
+      "uv_layers": 1,
+      "groups": [
+        "Root",
+        "Hips",
+        "Spine",
+        "Chest",
+        "Head",
+        "UpperArm_L",
+        "Forearm_L",
+        "Hand_L",
+        "Thigh_L",
+        "Shin_L",
+        "Foot_L",
+        "UpperArm_R",
+        "Forearm_R",
+        "Hand_R",
+        "Thigh_R",
+        "Shin_R",
+        "Foot_R"
+      ],
+      "bounds": [
+        [
+          -0.3914959132671356,
+          0.4690377712249756
+        ],
+        [
+          -0.2062564641237259,
+          0.23620709776878357
+        ],
+        [
+          0.00013807292270939797,
+          2.0490949153900146
+        ]
+      ],
+      "candidate_vertices": {
+        "Pectoral_L": 28,
+        "Shoulder_R": 25,
+        "Pectoral_R": 35,
+        "Shoulder_L": 17
+      }
+    },
+    {
+      "name": "Body_LOD1",
+      "vertices": 2576,
+      "triangles": 5111,
+      "uv_layers": 1,
+      "groups": [
+        "Root",
+        "Hips",
+        "Spine",
+        "Chest",
+        "Head",
+        "UpperArm_L",
+        "Forearm_L",
+        "Hand_L",
+        "Thigh_L",
+        "Shin_L",
+        "Foot_L",
+        "UpperArm_R",
+        "Forearm_R",
+        "Hand_R",
+        "Thigh_R",
+        "Shin_R",
+        "Foot_R"
+      ],
+      "bounds": [
+        [
+          -0.3939928710460663,
+          0.4690377712249756
+        ],
+        [
+          -0.20517925918102264,
+          0.23584438860416412
+        ],
+        [
+          -7.608058513142169e-05,
+          2.0494418144226074
+        ]
+      ],
+      "candidate_vertices": {
+        "Pectoral_L": 14,
+        "Shoulder_R": 11,
+        "Pectoral_R": 19,
+        "Shoulder_L": 7
+      }
+    },
+    {
+      "name": "Body_LOD2",
+      "vertices": 1074,
+      "triangles": 2128,
+      "uv_layers": 1,
+      "groups": [
+        "Root",
+        "Hips",
+        "Spine",
+        "Chest",
+        "Head",
+        "UpperArm_L",
+        "Forearm_L",
+        "Hand_L",
+        "Thigh_L",
+        "Shin_L",
+        "Foot_L",
+        "UpperArm_R",
+        "Forearm_R",
+        "Hand_R",
+        "Thigh_R",
+        "Shin_R",
+        "Foot_R"
+      ],
+      "bounds": [
+        [
+          -0.38722625374794006,
+          0.472709596157074
+        ],
+        [
+          -0.20135526359081268,
+          0.23452067375183105
+        ],
+        [
+          0.0006545035867020488,
+          2.0508556365966797
+        ]
+      ],
+      "candidate_vertices": {
+        "Pectoral_L": 7,
+        "Shoulder_R": 6,
+        "Pectoral_R": 7,
+        "Shoulder_L": 3
+      }
+    }
+  ],
+  "bones": [
+    "Root",
+    "Hips",
+    "Spine",
+    "Chest",
+    "Head",
+    "UpperArm_L",
+    "Forearm_L",
+    "Hand_L",
+    "UpperArm_R",
+    "Forearm_R",
+    "Hand_R",
+    "Thigh_L",
+    "Shin_L",
+    "Foot_L",
+    "Thigh_R",
+    "Shin_R",
+    "Foot_R"
+  ],
+  "plate_candidates": [
+    {
+      "name": "Pectoral_L",
+      "min": [
+        -0.225,
+        -0.24,
+        1.31
+      ],
+      "max": [
+        -0.025,
+        -0.105,
+        1.51
+      ],
+      "bone": "Chest",
+      "stage": 1
+    },
+    {
+      "name": "Shoulder_R",
+      "min": [
+        0.245,
+        -0.16,
+        1.52
+      ],
+      "max": [
+        0.48,
+        0.16,
+        1.68
+      ],
+      "bone": "UpperArm_R",
+      "stage": 1
+    },
+    {
+      "name": "Pectoral_R",
+      "min": [
+        0.025,
+        -0.24,
+        1.31
+      ],
+      "max": [
+        0.225,
+        -0.105,
+        1.51
+      ],
+      "bone": "Chest",
+      "stage": 2
+    },
+    {
+      "name": "Shoulder_L",
+      "min": [
+        -0.48,
+        -0.16,
+        1.52
+      ],
+      "max": [
+        -0.245,
+        0.16,
+        1.68
+      ],
+      "bone": "UpperArm_L",
+      "stage": 2
+    }
+  ]
+}

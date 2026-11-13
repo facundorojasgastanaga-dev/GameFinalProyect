@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Failed(Child)" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.733527">
+  <test-suite type="TestSuite" id="1085" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.733527" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1079" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.713523" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1080" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.704764" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1021" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.699401" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1041" name="ProtagonistActionsTests" fullname="IronRequiem.Tests.ProtagonistActionsTests" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:29:43Z" duration="57.678439" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1045" name="ECollectsFOnlyPunchesAndSimultaneousKeysPreferPickup" fullname="IronRequiem.Tests.ProtagonistActionsTests.ECollectsFOnlyPunchesAndSimultaneousKeysPreferPickup" methodname="ECollectsFOnlyPunchesAndSimultaneousKeysPreferPickup" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1160704079" result="Passed" start-time="2026-10-31 23:28:45Z" end-time="2026-10-31 23:28:57Z" duration="12.351904" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1043" name="FArticulatesFistHitsOneHealthOnceAndRecovers" fullname="IronRequiem.Tests.ProtagonistActionsTests.FArticulatesFistHitsOneHealthOnceAndRecovers" methodname="FArticulatesFistHitsOneHealthOnceAndRecovers" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1043453598" result="Passed" start-time="2026-10-31 23:28:57Z" end-time="2026-10-31 23:29:01Z" duration="3.812718" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="MeleeRespectsWallRangeHoldAndRecovery" fullname="IronRequiem.Tests.ProtagonistActionsTests.MeleeRespectsWallRangeHoldAndRecovery" methodname="MeleeRespectsWallRangeHoldAndRecovery" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="38494275" result="Passed" start-time="2026-10-31 23:29:01Z" end-time="2026-10-31 23:29:07Z" duration="5.403255" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="MountStaysCoaxialDuringMovementAdsRecoilAndFire" fullname="IronRequiem.Tests.ProtagonistActionsTests.MountStaysCoaxialDuringMovementAdsRecoilAndFire" methodname="MountStaysCoaxialDuringMovementAdsRecoilAndFire" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="993276" result="Passed" start-time="2026-10-31 23:29:07Z" end-time="2026-10-31 23:29:11Z" duration="3.844632" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="PauseDeathAndWeaponChangesLeaveNoPresentationResidue" fullname="IronRequiem.Tests.ProtagonistActionsTests.PauseDeathAndWeaponChangesLeaveNoPresentationResidue" methodname="PauseDeathAndWeaponChangesLeaveNoPresentationResidue" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="602051067" result="Failed" start-time="2026-10-31 23:29:11Z" end-time="2026-10-31 23:29:17Z" duration="6.090199" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistActionsTests+<PauseDeathAndWeaponChangesLeaveNoPresentationResidue>d__30.MoveNext () [0x00201] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistActionsTests.cs:111
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1046" name="SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" methodname="SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="516204723" result="Passed" start-time="2026-10-31 23:29:17Z" end-time="2026-10-31 23:29:20Z" duration="3.608577" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" methodname="SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1381125241" result="Passed" start-time="2026-10-31 23:29:20Z" end-time="2026-10-31 23:29:25Z" duration="4.600444" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="StolenCannonChargeSwitchThrowAndExhaustionRemainFunctional" fullname="IronRequiem.Tests.ProtagonistActionsTests.StolenCannonChargeSwitchThrowAndExhaustionRemainFunctional" methodname="StolenCannonChargeSwitchThrowAndExhaustionRemainFunctional" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1469150485" result="Passed" start-time="2026-10-31 23:29:25Z" end-time="2026-10-31 23:29:43Z" duration="17.935907" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

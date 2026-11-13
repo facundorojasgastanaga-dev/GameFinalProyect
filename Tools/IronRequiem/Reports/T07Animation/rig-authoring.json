@@ -1,0 +1,336 @@
+{
+  "sources": {
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Enemies\\T07Optimized\\T07_LOD0.fbx": "71501c6c1b3a99ecebca8518922025ccef4239ddb811e1a6fd5bb490de4da5c3",
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Enemies\\T07Optimized\\T07_LOD1.fbx": "e8ac618dcee66c0abf28e5c029ae74bb5d0cc50c8860460695eb3f67f6814b6c",
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Enemies\\T07Optimized\\T07_LOD2.fbx": "9212594f305f613e9773d61de3d2e2bdf2053d2093a315752e3e2a62c0e6a770"
+  },
+  "method": "hybrid rigid plates with short two-bone joint blends",
+  "bones": [
+    {
+      "name": "Root",
+      "parent": null,
+      "head_blender": [
+        0,
+        0,
+        0
+      ],
+      "tail_blender": [
+        0,
+        0,
+        0.2
+      ]
+    },
+    {
+      "name": "Hips",
+      "parent": "Root",
+      "head_blender": [
+        0,
+        0,
+        0.96
+      ],
+      "tail_blender": [
+        0,
+        0,
+        1.2
+      ]
+    },
+    {
+      "name": "Spine",
+      "parent": "Hips",
+      "head_blender": [
+        0,
+        0,
+        1.2
+      ],
+      "tail_blender": [
+        0,
+        0,
+        1.44
+      ]
+    },
+    {
+      "name": "Chest",
+      "parent": "Spine",
+      "head_blender": [
+        0,
+        0,
+        1.44
+      ],
+      "tail_blender": [
+        0,
+        0,
+        1.65
+      ]
+    },
+    {
+      "name": "Head",
+      "parent": "Chest",
+      "head_blender": [
+        0,
+        0,
+        1.7
+      ],
+      "tail_blender": [
+        0,
+        0,
+        1.97
+      ]
+    },
+    {
+      "name": "UpperArm_L",
+      "parent": "Chest",
+      "head_blender": [
+        -0.3,
+        0,
+        1.49
+      ],
+      "tail_blender": [
+        -0.32,
+        -0.015,
+        1.1
+      ]
+    },
+    {
+      "name": "Forearm_L",
+      "parent": "UpperArm_L",
+      "head_blender": [
+        -0.32,
+        -0.015,
+        1.1
+      ],
+      "tail_blender": [
+        -0.34,
+        -0.025,
+        0.76
+      ]
+    },
+    {
+      "name": "Hand_L",
+      "parent": "Forearm_L",
+      "head_blender": [
+        -0.34,
+        -0.025,
+        0.76
+      ],
+      "tail_blender": [
+        -0.34,
+        -0.03,
+        0.65
+      ]
+    },
+    {
+      "name": "Thigh_L",
+      "parent": "Hips",
+      "head_blender": [
+        -0.145,
+        0,
+        0.95
+      ],
+      "tail_blender": [
+        -0.165,
+        -0.005,
+        0.535
+      ]
+    },
+    {
+      "name": "Shin_L",
+      "parent": "Thigh_L",
+      "head_blender": [
+        -0.165,
+        -0.005,
+        0.535
+      ],
+      "tail_blender": [
+        -0.17,
+        -0.015,
+        0.12
+      ]
+    },
+    {
+      "name": "Foot_L",
+      "parent": "Shin_L",
+      "head_blender": [
+        -0.17,
+        -0.015,
+        0.12
+      ],
+      "tail_blender": [
+        -0.17,
+        -0.165,
+        0.065
+      ]
+    },
+    {
+      "name": "UpperArm_R",
+      "parent": "Chest",
+      "head_blender": [
+        0.3,
+        0,
+        1.49
+      ],
+      "tail_blender": [
+        0.32,
+        -0.015,
+        1.1
+      ]
+    },
+    {
+      "name": "Forearm_R",
+      "parent": "UpperArm_R",
+      "head_blender": [
+        0.32,
+        -0.015,
+        1.1
+      ],
+      "tail_blender": [
+        0.34,
+        -0.025,
+        0.76
+      ]
+    },
+    {
+      "name": "Hand_R",
+      "parent": "Forearm_R",
+      "head_blender": [
+        0.34,
+        -0.025,
+        0.76
+      ],
+      "tail_blender": [
+        0.34,
+        -0.03,
+        0.65
+      ]
+    },
+    {
+      "name": "Thigh_R",
+      "parent": "Hips",
+      "head_blender": [
+        0.145,
+        0,
+        0.95
+      ],
+      "tail_blender": [
+        0.165,
+        -0.005,
+        0.535
+      ]
+    },
+    {
+      "name": "Shin_R",
+      "parent": "Thigh_R",
+      "head_blender": [
+        0.165,
+        -0.005,
+        0.535
+      ],
+      "tail_blender": [
+        0.17,
+        -0.015,
+        0.12
+      ]
+    },
+    {
+      "name": "Foot_R",
+      "parent": "Shin_R",
+      "head_blender": [
+        0.17,
+        -0.015,
+        0.12
+      ],
+      "tail_blender": [
+        0.17,
+        -0.165,
+        0.065
+      ]
+    }
+  ],
+  "lods": [
+    {
+      "name": "Body_LOD0",
+      "vertices": 5139,
+      "triangles": 10225,
+      "uv_layers": 1,
+      "weighted_vertices": 5139,
+      "mixed_joint_vertices": 2129,
+      "maximum_influences": 2,
+      "vertices_per_bone": {
+        "Root": 0,
+        "Hips": 897,
+        "Spine": 873,
+        "Chest": 1088,
+        "Head": 364,
+        "UpperArm_L": 337,
+        "Forearm_L": 86,
+        "Hand_L": 0,
+        "Thigh_L": 507,
+        "Shin_L": 422,
+        "Foot_L": 283,
+        "UpperArm_R": 551,
+        "Forearm_R": 522,
+        "Hand_R": 122,
+        "Thigh_R": 495,
+        "Shin_R": 437,
+        "Foot_R": 284
+      }
+    },
+    {
+      "name": "Body_LOD1",
+      "vertices": 2576,
+      "triangles": 5111,
+      "uv_layers": 1,
+      "weighted_vertices": 2576,
+      "mixed_joint_vertices": 1062,
+      "maximum_influences": 2,
+      "vertices_per_bone": {
+        "Root": 0,
+        "Hips": 454,
+        "Spine": 419,
+        "Chest": 552,
+        "Head": 168,
+        "UpperArm_L": 167,
+        "Forearm_L": 44,
+        "Hand_L": 0,
+        "Thigh_L": 274,
+        "Shin_L": 212,
+        "Foot_L": 148,
+        "UpperArm_R": 269,
+        "Forearm_R": 243,
+        "Hand_R": 60,
+        "Thigh_R": 256,
+        "Shin_R": 217,
+        "Foot_R": 155
+      }
+    },
+    {
+      "name": "Body_LOD2",
+      "vertices": 1074,
+      "triangles": 2128,
+      "uv_layers": 1,
+      "weighted_vertices": 1074,
+      "mixed_joint_vertices": 429,
+      "maximum_influences": 2,
+      "vertices_per_bone": {
+        "Root": 0,
+        "Hips": 193,
+        "Spine": 174,
+        "Chest": 228,
+        "Head": 70,
+        "UpperArm_L": 72,
+        "Forearm_L": 26,
+        "Hand_L": 0,
+        "Thigh_L": 117,
+        "Shin_L": 90,
+        "Foot_L": 63,
+        "UpperArm_R": 106,
+        "Forearm_R": 99,
+        "Hand_R": 25,
+        "Thigh_R": 99,
+        "Shin_R": 80,
+        "Foot_R": 61
+      }
+    }
+  ],
+  "cannon": "original independent static LODs, excluded from skin",
+  "source_hashes_preserved": true
+}

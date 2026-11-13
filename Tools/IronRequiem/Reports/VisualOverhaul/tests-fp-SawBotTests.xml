@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Failed(Child)" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="23.0120754">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="23.012075" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="22.917626" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="22.900334" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="22.886017" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1204" name="SawBotTests" fullname="IronRequiem.Tests.SawBotTests" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:41Z" duration="22.851419" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1210" name="BunkerWaveContainsOneSawBotAndTracksDeath" fullname="IronRequiem.Tests.SawBotTests.BunkerWaveContainsOneSawBotAndTracksDeath" methodname="BunkerWaveContainsOneSawBotAndTracksDeath" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="1179932543" result="Failed" start-time="2026-11-08 07:15:18Z" end-time="2026-11-08 07:15:25Z" duration="6.890517" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.SawBotTests+<BunkerWaveContainsOneSawBotAndTracksDeath>d__22.MoveNext () [0x00172] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\SawBotTests.cs:54
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1209" name="PlayerBulletsMeleeFeedbackAndCorpse" fullname="IronRequiem.Tests.SawBotTests.PlayerBulletsMeleeFeedbackAndCorpse" methodname="PlayerBulletsMeleeFeedbackAndCorpse" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="144865830" result="Passed" start-time="2026-11-08 07:15:25Z" end-time="2026-11-08 07:15:30Z" duration="4.958177" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1206" name="PursuitTurningAndWheelTravel" fullname="IronRequiem.Tests.SawBotTests.PursuitTurningAndWheelTravel" methodname="PursuitTurningAndWheelTravel" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="419353557" result="Passed" start-time="2026-11-08 07:15:30Z" end-time="2026-11-08 07:15:32Z" duration="2.086441" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1205" name="SharedRigLodsAndAnimations" fullname="IronRequiem.Tests.SawBotTests.SharedRigLodsAndAnimations" methodname="SharedRigLodsAndAnimations" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="934556355" result="Passed" start-time="2026-11-08 07:15:32Z" end-time="2026-11-08 07:15:34Z" duration="1.756908" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1207" name="TelegraphSingleImpactAndDeathDuringAttack" fullname="IronRequiem.Tests.SawBotTests.TelegraphSingleImpactAndDeathDuringAttack" methodname="TelegraphSingleImpactAndDeathDuringAttack" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="1949541133" result="Passed" start-time="2026-11-08 07:15:34Z" end-time="2026-11-08 07:15:37Z" duration="3.000355" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1208" name="WallCancelsAndNavigationRecovers" fullname="IronRequiem.Tests.SawBotTests.WallCancelsAndNavigationRecovers" methodname="WallCancelsAndNavigationRecovers" classname="IronRequiem.Tests.SawBotTests" runstate="Runnable" seed="1003605511" result="Passed" start-time="2026-11-08 07:15:37Z" end-time="2026-11-08 07:15:41Z" duration="4.070751" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

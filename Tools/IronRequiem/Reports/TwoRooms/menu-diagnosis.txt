@@ -1,0 +1,25 @@
+Play=True time=1 resolution=1001x508
+Canvas FeedbackFlashCanvas active=True sort=0 scale=(1.00, 1.00, 1.00) rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00)
+Canvas ArenaMessages active=True sort=30 scale=(1.00, 1.00, 1.00) rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00)
+Canvas HUD active=True sort=1 scale=(1.04, 1.04, 1.04) rect=(x:-480.00, y:-243.60, width:960.00, height:487.19)
+Canvas Canvas active=True sort=2 scale=(1.25, 1.25, 1.25) rect=(x:-400.00, y:-203.00, width:800.00, height:405.99)
+Canvas EndGameFadeCanvas active=False sort=100 scale=(0.00, 0.00, 0.00) rect=(x:0.00, y:0.00, width:0.00, height:0.00)
+Canvas FeedbackFlashCanvas active=True sort=0 scale=(1.00, 1.00, 1.00) rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00)
+Canvas Canvas active=False sort=2 scale=(0.00, 0.00, 0.00) rect=(x:0.00, y:0.00, width:0.00, height:0.00)
+Canvas HUD active=True sort=1 scale=(1.04, 1.04, 1.04) rect=(x:-480.00, y:-243.60, width:960.00, height:487.19)
+Canvas CombatLabMenu active=True sort=200 scale=(0.50, 0.50, 0.50) rect=(x:-1010.69, y:-512.92, width:2021.38, height:1025.84)
+Graphic MenuButton active=False pos=(500.50, 214.38, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-190.00, y:-32.00, width:380.00, height:64.00) cull=False depth=-1
+Graphic MainPanel active=False pos=(500.50, 254.00, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-1010.69, y:-512.92, width:2021.38, height:1025.84) cull=False depth=0
+Graphic PlayButton active=False pos=(500.50, 236.67, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-190.00, y:-32.00, width:380.00, height:64.00) cull=False depth=3
+Graphic Subtitle active=False pos=(500.50, 298.57, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=2
+Graphic Title active=False pos=(500.50, 338.19, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=1
+Graphic Caption active=False pos=(500.50, 214.38, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=-1
+Graphic Caption active=False pos=(500.50, 258.95, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=-1
+Graphic DeathPanel active=False pos=(500.50, 254.00, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-1010.69, y:-512.92, width:2021.38, height:1025.84) cull=False depth=-1
+Graphic RestartButton active=False pos=(500.50, 258.95, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-190.00, y:-32.00, width:380.00, height:64.00) cull=False depth=-1
+Graphic Caption active=False pos=(500.50, 236.67, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=4
+Graphic Title active=False pos=(500.50, 328.28, 0.00) scale=(0.50, 0.50, 0.50) rect=(x:-425.00, y:-55.00, width:850.00, height:110.00) cull=False depth=-1
+EventSystem EventSystem module=
+Point=True click=True
+Old menu manager=False root=Canvas rootActive=True
+Old menu manager=False root=Canvas rootActive=False

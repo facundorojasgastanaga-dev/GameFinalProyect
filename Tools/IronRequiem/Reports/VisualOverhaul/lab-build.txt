@@ -1,0 +1,13 @@
+player: Player_ModularArm_v07 (from BunkerLab, sleeves on) at (-28.5, -0.2, -7.3); weapon refs remapped 4; starting weapons Weapon_IR_ArmCannon_VO, Weapon_Shotgun_ArmModule_VO
+enemy instances replaced 3
+level renderers re-materialed 1973
+nav bounds (-8.7, -1.7, 39.0)/(169.7, 12.0, 161.0); floor samples 900; wall hits 285; ceiling median 1.78 m; open sky 99 %; fixtures at y=7.70
+ceiling added (render only) at 8.05
+ceiling fixtures 68 (2 shadowed, 3 flickering)
+emergency 10, pipe runs 22x3, vents 10, cable bundles 10
+decals 24 (2 hazard signs)
+light probes 1737, reflection probes 16, fog exp2 0.009
+light budget before split: max additional lights on one renderer 6; renderers over 4: 17
+splitting tested (6-8 m tiles): it did not lower the count (walls next to an emergency light), so renderers stay whole; URP keeps the 4 most important lights per object on the listed ones.
+navmesh NavMeshSurface: rebaked -> Assets/IronRequiem/Scenes/VisualOverhaul/MainScene_VisualLab_NavMesh.asset (previous Assets/FPS/Scenes/MainScene/NavMesh-NavMeshSurface.asset untouched), 407 verts
+

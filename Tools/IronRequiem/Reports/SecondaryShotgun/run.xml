@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.69815">
+  <test-suite type="TestSuite" id="1207" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="170" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.698150" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1201" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="170" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.651616" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="37364" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1202" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="170" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.634932" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1106" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="170" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.619810" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1171" name="SecondaryShotgunTests" fullname="IronRequiem.Tests.SecondaryShotgunTests" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:18:36Z" duration="71.595094" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1178" name="CaptureAnimationPoses" fullname="IronRequiem.Tests.SecondaryShotgunTests.CaptureAnimationPoses" methodname="CaptureAnimationPoses" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="256105165" result="Passed" start-time="2026-11-06 14:17:25Z" end-time="2026-11-06 14:17:41Z" duration="16.793702" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1176" name="ExecutionRequiresStrictlyBelow75PercentBigBot" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentBigBot" methodname="ExecutionRequiresStrictlyBelow75PercentBigBot" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1498465405" result="Passed" start-time="2026-11-06 14:17:41Z" end-time="2026-11-06 14:17:47Z" duration="5.376916" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1175" name="ExecutionRequiresStrictlyBelow75PercentT07" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentT07" methodname="ExecutionRequiresStrictlyBelow75PercentT07" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="64329869" result="Passed" start-time="2026-11-06 14:17:47Z" end-time="2026-11-06 14:17:51Z" duration="4.495297" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1173" name="ShotgunDamageFallsOffWithDistanceAndRange" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunDamageFallsOffWithDistanceAndRange" methodname="ShotgunDamageFallsOffWithDistanceAndRange" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1918959572" result="Passed" start-time="2026-11-06 14:17:51Z" end-time="2026-11-06 14:18:17Z" duration="25.378227" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1172" name="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunIsSecondaryAndCoexistsWithStolenWeapon" methodname="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1114611194" result="Passed" start-time="2026-11-06 14:18:17Z" end-time="2026-11-06 14:18:23Z" duration="6.136205" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1174" name="SlideCooldownStartsAtEndAndNeedsNewPress" fullname="IronRequiem.Tests.SecondaryShotgunTests.SlideCooldownStartsAtEndAndNeedsNewPress" methodname="SlideCooldownStartsAtEndAndNeedsNewPress" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1237403579" result="Passed" start-time="2026-11-06 14:18:23Z" end-time="2026-11-06 14:18:33Z" duration="10.113863" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1177" name="ThrottledNavigationStillPursuesMovingPlayer" fullname="IronRequiem.Tests.SecondaryShotgunTests.ThrottledNavigationStillPursuesMovingPlayer" methodname="ThrottledNavigationStillPursuesMovingPlayer" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="2141724208" result="Passed" start-time="2026-11-06 14:18:33Z" end-time="2026-11-06 14:18:36Z" duration="3.260705" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

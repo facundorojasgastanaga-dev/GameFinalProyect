@@ -1,0 +1,171 @@
+PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_IR_ArmCannon_VO.prefab
+  WeaponController.WeaponMuzzle (Weapon_IR_ArmCannon_VO) -> GunMuzzle Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_IR_ArmCannon_VO.prefab
+  WeaponController.ProjectilePrefab (Weapon_IR_ArmCannon_VO) -> Projectile_IR_Integrated_v05 Assets/IronRequiem/Prefabs/Weapons/Projectile_IR_Integrated_v05.prefab
+  WeaponController.MuzzleFlashPrefab (Weapon_IR_ArmCannon_VO) -> VFX_MuzzleFlashGreen Assets/FPS/Prefabs/VFX/VFX_MuzzleFlashGreen.prefab
+  OverheatBehavior.SteamVfx (Weapon_IR_ArmCannon_VO) -> VFX_OverheatPrimary Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_IR_ArmCannon_VO.prefab
+  PSR VFX_GunCylinder mat=GunCylinders maxSize=0.5 mode=Billboard
+  PSR VFX_GunCylinder mat=GunCylinders maxSize=0.5 mode=Billboard
+  PSR VFX_GunCylinder mat=GunCylinders maxSize=0.5 mode=Billboard
+  PSR VFX_GunCylinder mat=GunCylinders maxSize=0.5 mode=Billboard
+  PSR VFX_OverheatPrimary mat=SmokeOverheat maxSize=0.5 mode=Billboard
+  PSR VO_PortSteam mat=SmokeAngry maxSize=2 mode=Billboard
+PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_Shotgun_ArmModule_VO.prefab
+  WeaponController.WeaponMuzzle (Weapon_Shotgun_ArmModule_VO) -> GunMuzzle Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_Shotgun_ArmModule_VO.prefab
+  WeaponController.ProjectilePrefab (Weapon_Shotgun_ArmModule_VO) -> Projectile_Shotgun_Secondary Assets/IronRequiem/Prefabs/SecondaryShotgun/Projectile_Shotgun_Secondary.prefab
+  WeaponController.MuzzleFlashPrefab (Weapon_Shotgun_ArmModule_VO) -> MuzzleFlash_Shotgun_Secondary Assets/IronRequiem/Prefabs/SecondaryShotgun/MuzzleFlash_Shotgun_Secondary.prefab
+  PSR ReloadSteam mat=SmokeAngry maxSize=2 mode=Billboard
+  PSR VO_PortSteam mat=SmokeAngry maxSize=2 mode=Billboard
+PREFAB Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  EnemyController.DeathVfx (T07_Current_Repaired) -> VFX_HoverBot_Explosion Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab
+  EnemyController.DeathVfxSpawnPoint (T07_Current_Repaired) -> AimPoint Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  RobotDamageProgression.sparks (T07_Current_Repaired) -> DamageSparks Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  RobotDamageProgression.smoke (T07_Current_Repaired) -> BodyDamageSmoke Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  RobotDamageProgression.deathBurstPrefab (T07_Current_Repaired) -> RobotBodyBurst_CombatPolish_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab
+  RobotHitFeedback.sparks (T07_Current_Repaired) -> RobotLocalizedHitSparks Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  PSR VFX_HitSparks (2) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (3) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_Alert mat=ExclamationMark maxSize=2 mode=Billboard
+  PSR VFX_EnemyMuzzleFlash mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PSR VFX_AngrySteam mat=SmokeAngry maxSize=2 mode=Billboard
+  PSR VFX_AngrySteam mat=SmokeAngry maxSize=2 mode=Billboard
+  PSR VFX_HitSparks mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (1) mat=Spark maxSize=0.04 mode=Billboard
+  WeaponController.WeaponMuzzle (Weapon_EyeLazers) -> Muzzle Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  WeaponController.ProjectilePrefab (Weapon_EyeLazers) -> T07_ChargedProjectile_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/T07_ChargedProjectile_VO_VO_VO.prefab
+  WeaponController.MuzzleFlashPrefab (Weapon_EyeLazers) -> T07_MuzzleFlash_Bounded Assets/IronRequiem/Art/VisualRepair/T07_MuzzleFlash_Bounded.prefab
+  PSR ConvergingSparks mat=EnergySparks maxSize=0.04 mode=Billboard
+  CannonOverdrive.smoke (CannonModule_Visual) -> CriticalSmoke Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  CannonExplosion.impactEffect (CannonModule_Visual) -> CannonExplosion_IR Assets/IronRequiem/Prefabs/VFX/CannonExplosion_IR.prefab
+  PSR CriticalSmoke mat=MechanicParticles maxSize=0.1 mode=Billboard
+  PSR DamageSparks mat=WarmEnergy maxSize=0.035 mode=Billboard
+  PSR BodyDamageSmoke mat=ResidualSmoke maxSize=0.035 mode=Billboard
+  PSR RobotLocalizedHitSparks mat=Spark maxSize=0.04 mode=Billboard
+PREFAB Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  EnemyController.DeathVfxSpawnPoint (BigBot_Current) -> BigBotDetectionSource Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  BigBotDestruction.sparks (BigBot_Current) -> DamageElectrical Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  BigBotDestruction.smoke (BigBot_Current) -> LocalizedSmoke Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  BigBotDestruction.breakSparks (BigBot_Current) -> CannonBreak Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  BigBotDestruction.deathBurstAnchor (BigBot_Current) -> Torso Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  RobotHitFeedback.sparks (BigBot_Current) -> RobotLocalizedHitSparks Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  NewRobotAnimationPresentation.muzzle (Presentation) -> WeaponMuzzle_R Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  WeaponController.WeaponMuzzle (BigBotCannon_L) -> BigBotCannon_L Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  WeaponController.ProjectilePrefab (BigBotCannon_L) -> EnemyProjectile_1_VO_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab
+  WeaponController.MuzzleFlashPrefab (BigBotCannon_L) -> BigBot_BurstMuzzle_v10_VO_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/BigBot_BurstMuzzle_v10_VO_VO_VO_VO.prefab
+  PSR CannonPreparation mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  WeaponController.WeaponMuzzle (BigBotCannon_R) -> BigBotCannon_R Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  WeaponController.ProjectilePrefab (BigBotCannon_R) -> EnemyProjectile_1_VO_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab
+  WeaponController.MuzzleFlashPrefab (BigBotCannon_R) -> BigBot_BurstMuzzle_v10_VO_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/BigBot_BurstMuzzle_v10_VO_VO_VO_VO.prefab
+  PSR CannonPreparation mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PSR CannonBreak mat=WarmEnergy maxSize=0.05 mode=Stretch
+  PSR DamageElectrical mat=WarmEnergy maxSize=0.05 mode=Stretch
+  PSR LocalizedSmoke mat=ResidualSmoke maxSize=0.5 mode=Billboard
+  PSR RobotLocalizedHitSparks mat=Spark maxSize=0.04 mode=Billboard
+PREFAB Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab
+  RobotHitFeedback.sparks (SawBot_Current) -> HitSparks Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab
+  SawBotCombat.impactSparks (SawBot_Current) -> HitSparks Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab
+  SawBotCombat.impactSound (SawBot_Current) -> Damage_Tick2 Assets/FPS/Audio/SFX/Player/Damage_Tick2.mp3
+  PSR SawMotorSmoke mat=ResidualSmoke maxSize=0.5 mode=Billboard
+  PSR SawMotorSmoke mat=ResidualSmoke maxSize=0.5 mode=Billboard
+  PSR HitSparks mat=Spark maxSize=0.04 mode=Billboard
+PREFAB Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab
+  EnemyController.DeathVfx (HoverBot_Current) -> VFX_HoverBot_Explosion Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab
+  EnemyController.DeathVfxSpawnPoint (HoverBot_Current) -> HitBox Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab
+  PSR VFX_HitSparks (2) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (3) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_Alert mat=ExclamationMark maxSize=2 mode=Billboard
+  PSR VFX_EnemyMuzzleFlash mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PSR VFX_AngrySteam mat=SmokeAngry maxSize=2 mode=Billboard
+  PSR VFX_AngrySteam mat=SmokeAngry maxSize=2 mode=Billboard
+  PSR VFX_HitSparks mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (1) mat=Spark maxSize=0.04 mode=Billboard
+  WeaponController.WeaponMuzzle (Weapon_EyeLazers) -> GunMuzzle Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab
+  WeaponController.ProjectilePrefab (Weapon_EyeLazers) -> EnemyProjectile_0 Assets/IronRequiem/Prefabs/FastCombat/EnemyProjectile_0.prefab
+  WeaponController.MuzzleFlashPrefab (Weapon_EyeLazers) -> VFX_EnemyMuzzleFlash Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab
+PREFAB Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab
+  EnemyController.DeathVfx (Turret_Current) -> VFX_Explosion Assets/FPS/Prefabs/VFX/VFX_Explosion.prefab
+  EnemyController.DeathVfxSpawnPoint (Turret_Current) -> Turret_Pivot_C_Jnt Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab
+  WeaponController.WeaponMuzzle (Weapon_MachineGun) -> GunMuzzle Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab
+  WeaponController.ProjectilePrefab (Weapon_MachineGun) -> EnemyProjectile_2 Assets/IronRequiem/Prefabs/FastCombat/EnemyProjectile_2.prefab
+  WeaponController.MuzzleFlashPrefab (Weapon_MachineGun) -> VFX_EnemyMuzzleFlash Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab
+  PSR VFX_EnemyMuzzleFlash mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PSR VFX_HitSparks mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (1) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_HitSparks (2) mat=Spark maxSize=0.04 mode=Billboard
+  PSR VFX_Alert mat=ExclamationMark maxSize=2 mode=Billboard
+  PSR VFX_AngrySteamTurret mat=SmokeAngry maxSize=2 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/Weapons/Projectile_IR_Integrated_v05.prefab
+    ProjectileStandard.ImpactVfx (Projectile_IR_Integrated_v05) -> VFX_LazerSparksGreen Assets/FPS/Prefabs/VFX/VFX_LazerSparksGreen.prefab
+  PREFAB Assets/FPS/Prefabs/VFX/VFX_MuzzleFlashGreen.prefab
+    PSR VFX_MuzzleFlashGreen mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/SecondaryShotgun/Projectile_Shotgun_Secondary.prefab
+    ProjectileStandard.ImpactVfx (Projectile_Shotgun_Secondary) -> VFX_LazerSparksBlue Assets/FPS/Prefabs/VFX/VFX_LazerSparksBlue.prefab
+  PREFAB Assets/IronRequiem/Prefabs/SecondaryShotgun/MuzzleFlash_Shotgun_Secondary.prefab
+    PSR MuzzleFlash_Shotgun_Secondary mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PREFAB Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab
+    PSR VFX_HoverBot_Explosion mat=TrailDeath maxSize=0.5 mode=Billboard
+    PSR VFX_ImpactRing mat=DiskExplosion maxSize=0.5 mode=Mesh
+    PSR VFX_ActionLines mat=SpeedLine maxSize=2 mode=Stretch
+    PSR VFX_ImpactFlare mat=ImpactFlare maxSize=0.5 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab
+    PSR RobotBodyBurst_CombatPolish_VO_VO_VO mat=TrailDeath maxSize=0.3 mode=Billboard
+    BurstFlashLight.flash (RobotBodyBurst_CombatPolish_VO_VO_VO) -> VO_Flash Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab
+    PSR VFX_ImpactRing mat=DiskExplosion maxSize=0.3 mode=Mesh
+    PSR VFX_ActionLines mat=SpeedLine maxSize=0.3 mode=Stretch
+    PSR VFX_ImpactFlare mat=ImpactFlare maxSize=0.3 mode=Billboard
+    PSR InitialFlash mat=HotFlash maxSize=0.3 mode=Billboard
+    PSR ExpandingCore mat=WarmEnergy maxSize=0.3 mode=Billboard
+    PSR HotSparks mat=WarmEnergy maxSize=0.3 mode=Stretch
+    PSR VisualFragments mat=WarmEnergy maxSize=0.3 mode=Mesh
+    PSR ResidualSmoke mat=ResidualSmoke maxSize=0.3 mode=Billboard
+    PSR BodyOverload mat=WarmEnergy maxSize=0.035 mode=Billboard
+    LIGHT VO_Flash Point i=0 enabled=False
+  PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/T07_ChargedProjectile_VO_VO_VO.prefab
+    ProjectileStandard.ImpactVfx (T07_ChargedProjectile_VO_VO_VO) -> VFX_LazerSparksGreen Assets/FPS/Prefabs/VFX/VFX_LazerSparksGreen.prefab
+    ChargedProjectileDamage.energyTrail (T07_ChargedProjectile_VO_VO_VO) -> T07_ChargedProjectile_VO_VO_VO Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/T07_ChargedProjectile_VO_VO_VO.prefab
+    TRAIL T07_ChargedProjectile_VO_VO_VO time=0.045 width=0.08
+    TRAIL VO_Trail time=0.1 width=0.09
+  PREFAB Assets/IronRequiem/Art/VisualRepair/T07_MuzzleFlash_Bounded.prefab
+    PSR T07_MuzzleFlash_Bounded mat=MuzzleFlash maxSize=0.12 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/VFX/CannonExplosion_IR.prefab
+    PSR CannonExplosion_IR mat=TrailDeath maxSize=0.5 mode=Billboard
+    CannonExplosionPresentation.flash (CannonExplosion_IR) -> BriefLight Assets/IronRequiem/Prefabs/VFX/CannonExplosion_IR.prefab
+    PSR VFX_ImpactRing mat=DiskExplosion maxSize=0.5 mode=Mesh
+    PSR VFX_ActionLines mat=SpeedLine maxSize=2 mode=Stretch
+    PSR VFX_ImpactFlare mat=ImpactFlare maxSize=0.5 mode=Billboard
+    PSR InitialFlash mat=HotFlash maxSize=0.33 mode=Billboard
+    PSR ExpandingCore mat=WarmEnergy maxSize=0.33 mode=Billboard
+    PSR HotSparks mat=WarmEnergy maxSize=0.33 mode=Stretch
+    PSR VisualFragments mat=WarmEnergy maxSize=0.33 mode=Mesh
+    PSR ResidualSmoke mat=ResidualSmoke maxSize=0.33 mode=Billboard
+    LIGHT BriefLight Point i=7 enabled=False
+  PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab
+    ProjectileStandard.ImpactVfx (EnemyProjectile_1_VO_VO_VO_VO) -> BigBot_ProjectileImpact_v08 Assets/IronRequiem/Prefabs/VFX/BigBot_ProjectileImpact_v08.prefab
+    TRAIL VO_Trail time=0.1 width=0.09
+  PREFAB Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/BigBot_BurstMuzzle_v10_VO_VO_VO_VO.prefab
+    PSR BigBot_BurstMuzzle_v10_VO_VO_VO_VO mat=MuzzleFlash maxSize=0.5 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/FastCombat/EnemyProjectile_0.prefab
+    ProjectileStandard.ImpactVfx (EnemyProjectile_0) -> VFX_LazerSparksRed Assets/FPS/Prefabs/VFX/VFX_LazerSparksRed.prefab
+  PREFAB Assets/FPS/Prefabs/VFX/VFX_Explosion.prefab
+    PSR VFX_Explosion mat=TrailDeath maxSize=0.5 mode=Billboard
+    PSR VFX_ImpactRing mat=DiskExplosion maxSize=0.5 mode=Mesh
+    PSR VFX_ActionLines mat=SpeedLine maxSize=2 mode=Stretch
+    PSR VFX_ImpactFlare mat=ImpactFlare maxSize=0.5 mode=Billboard
+  PREFAB Assets/IronRequiem/Prefabs/FastCombat/EnemyProjectile_2.prefab
+    ProjectileStandard.ImpactVfx (EnemyProjectile_2) -> VFX_LazerSparksRed Assets/FPS/Prefabs/VFX/VFX_LazerSparksRed.prefab
+    PREFAB Assets/FPS/Prefabs/VFX/VFX_LazerSparksGreen.prefab
+      PSR VFX_LazerSparksGreen mat=Lazer_Green maxSize=0.5 mode=Billboard
+    PREFAB Assets/FPS/Prefabs/VFX/VFX_LazerSparksBlue.prefab
+      PSR VFX_LazerSparksBlue mat=Lazer_Blue maxSize=0.5 mode=Billboard
+    PREFAB Assets/IronRequiem/Prefabs/VFX/BigBot_ProjectileImpact_v08.prefab
+      PSR BigBot_ProjectileImpact_v08 mat=TrailDeath maxSize=0.5 mode=Billboard
+      PSR VFX_ImpactRing mat=DiskExplosion maxSize=0.5 mode=Mesh
+      PSR VFX_ActionLines mat=SpeedLine maxSize=2 mode=Stretch
+      PSR VFX_ImpactFlare mat=ImpactFlare maxSize=0.5 mode=Billboard
+      PSR InitialFlash mat=HotFlash maxSize=0.33 mode=Billboard
+      PSR ExpandingCore mat=WarmEnergy maxSize=0.33 mode=Billboard
+      PSR HotSparks mat=WarmEnergy maxSize=0.33 mode=Stretch
+      PSR VisualFragments mat=WarmEnergy maxSize=0.33 mode=Mesh
+      PSR ResidualSmoke mat=ResidualSmoke maxSize=0.33 mode=Billboard
+      LIGHT BriefLight Point i=7 enabled=False
+    PREFAB Assets/FPS/Prefabs/VFX/VFX_LazerSparksRed.prefab
+      PSR VFX_LazerSparksRed mat=Lazer_Red maxSize=0.5 mode=Billboard

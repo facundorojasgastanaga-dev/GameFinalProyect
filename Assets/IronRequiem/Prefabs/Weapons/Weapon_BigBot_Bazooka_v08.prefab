@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5434912555925745123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4778805107920892849}
+  m_Layer: 0
+  m_Name: BazookaMuzzleReference
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4778805107920892849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5434912555925745123}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6647560063895749770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &9108687229727609125
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7637414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974489424961803815, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: ProjectilePrefab
+      value: 
+      objectReference: {fileID: 5850549700693845688, guid: cb4d5e5cf485fdf469c5a4e7f5820354,
+        type: 3}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948940, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505805323093948943, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_Name
+      value: Weapon_BigBot_Bazooka_v08
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128215610836453085, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7637414
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4778805107920892849}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6505805323093948943, guid: a0fab151f45a9e542a04738ff8fc68ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9147359242826603069}
+  m_SourcePrefab: {fileID: 100100000, guid: a0fab151f45a9e542a04738ff8fc68ca, type: 3}
+--- !u!4 &2054781152471816184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7128215610836453085, guid: a0fab151f45a9e542a04738ff8fc68ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 9108687229727609125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2603588276980886314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6505805323093948943, guid: a0fab151f45a9e542a04738ff8fc68ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 9108687229727609125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9147359242826603069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603588276980886314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede36d6db485ceb4d909ebac5d12a65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.StolenChargeAnchor
+  shell: {fileID: 6479313556595592112}
+  muzzle: {fileID: 2054781152471816184}
+  forwardOffset: 0.015
+  vibration: 0.0035
+  swell: 0.05
+  recoilDistance: 0.045
+  recoilSeconds: 0.14
+--- !u!4 &6479313556595592112 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2847308090348264085, guid: a0fab151f45a9e542a04738ff8fc68ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 9108687229727609125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6647560063895749770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2461338619069683119, guid: a0fab151f45a9e542a04738ff8fc68ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 9108687229727609125}
+  m_PrefabAsset: {fileID: 0}

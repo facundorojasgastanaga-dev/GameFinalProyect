@@ -1,0 +1,14 @@
+listenerPause=False listenerVolume=1 timeScale=1
+lab CombatLabMenu playing=True main=False fromMenu=True
+RequiemCampaign:Player_ModularArm_v07 clip=Jetpack_Use playing=False vol=1.00 en=True ignorePause=False group=Jetpack load=Loaded
+   mixer MasterVolume=0
+RequiemCampaign:LabMenuMusic clip=IR_Menu01_Loop playing=False vol=0.00 en=True ignorePause=True group=Music load=Unloaded
+   mixer MasterVolume=0
+RequiemCampaign:GameManager clip=Wind Ambience playing=True vol=1.00 en=True ignorePause=False group=Ambient load=Loaded
+   mixer MasterVolume=0
+RequiemCampaign:Player_ModularArm_v07 clip=Jetpack_Use playing=False vol=1.00 en=True ignorePause=False group=PlayerMovement load=Loaded
+   mixer MasterVolume=0
+RequiemCampaign:CampaignMusic clip=IR_Combat01_Loop playing=True vol=0.00 en=True ignorePause=True group=Music load=Loaded
+   mixer MasterVolume=0
+RequiemCampaign:CampaignMusic clip=IR_Combat01_Explore playing=True vol=0.80 en=True ignorePause=True group=Music load=Loaded
+   mixer MasterVolume=0

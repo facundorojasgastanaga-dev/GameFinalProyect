@@ -1,0 +1,1211 @@
+{
+    "environment": "Editor CPU Profiler, stationary MainScene camera, capture overhead included; no Player measurement",
+    "resolution": "886x118",
+    "quality": "Default",
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "frames": 240,
+    "over33ms": 16,
+    "over50ms": 6,
+    "over100ms": 2,
+    "meanMs": 23.031064943472545,
+    "fps": 43.41961617729795,
+    "p95Ms": 33.893699645996097,
+    "p99Ms": 74.21759796142578,
+    "maxMs": 186.16769409179688,
+    "markers": [
+        {
+            "name": "EditorLoop",
+            "selfMs": 1575.1577943786979,
+            "totalMs": 1575.1577943786979,
+            "maxSelfMs": 72.64830017089844,
+            "calls": 960
+        },
+        {
+            "name": "SRPBatcher.Flush",
+            "selfMs": 255.3836989706615,
+            "totalMs": 255.3836989706615,
+            "maxSelfMs": 0.8485000133514404,
+            "calls": 7281
+        },
+        {
+            "name": "Inl_On Record Render Graph",
+            "selfMs": 184.98660010483582,
+            "totalMs": 195.4703000485897,
+            "maxSelfMs": 1.5899999598041177,
+            "calls": 480
+        },
+        {
+            "name": "LogStringToConsole",
+            "selfMs": 178.2570992410183,
+            "totalMs": 182.22799924016,
+            "maxSelfMs": 1.6030999422073365,
+            "calls": 964
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+            "selfMs": 155.33859964212025,
+            "totalMs": 160.88019951060415,
+            "maxSelfMs": 1.1008999934711028,
+            "calls": 960
+        },
+        {
+            "name": "Profiler.FlushMemoryCounters",
+            "selfMs": 154.05259954929353,
+            "totalMs": 154.05259954929353,
+            "maxSelfMs": 2.1238999366760256,
+            "calls": 240
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "selfMs": 152.5256993496514,
+            "totalMs": 344.37229875213236,
+            "maxSelfMs": 0.6371000195504166,
+            "calls": 7304
+        },
+        {
+            "name": "RenderLoop.DrawSRPBatcher",
+            "selfMs": 103.29939994274173,
+            "totalMs": 420.16769852442669,
+            "maxSelfMs": 0.7390000000596047,
+            "calls": 5121
+        },
+        {
+            "name": "UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",
+            "selfMs": 97.33560248419963,
+            "totalMs": 112.81200255290605,
+            "maxSelfMs": 45.764001526833457,
+            "calls": 240
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "selfMs": 88.0792997404933,
+            "totalMs": 88.0792997404933,
+            "maxSelfMs": 0.8557999730110169,
+            "calls": 652
+        },
+        {
+            "name": "SRPBRender.ApplyShader",
+            "selfMs": 87.3151995613589,
+            "totalMs": 90.31289951060899,
+            "maxSelfMs": 0.3351999887090642,
+            "calls": 6321
+        },
+        {
+            "name": "BehaviourUpdate",
+            "selfMs": 71.01420102914563,
+            "totalMs": 657.4072988033295,
+            "maxSelfMs": 0.7959000350092538,
+            "calls": 240
+        },
+        {
+            "name": "StdRender.ApplyShader",
+            "selfMs": 68.57559967229463,
+            "totalMs": 72.53039962321054,
+            "maxSelfMs": 0.5357000110670924,
+            "calls": 6240
+        },
+        {
+            "name": "fps.AI.dll!Unity.FPS.AI::EnemyController.Update() [Invoke]",
+            "selfMs": 62.00199972428527,
+            "totalMs": 68.89749968796969,
+            "maxSelfMs": 0.8649999773697346,
+            "calls": 720
+        },
+        {
+            "name": "RenderLoop.CleanupNodeQueue",
+            "selfMs": 58.97149981496477,
+            "totalMs": 58.97149981496477,
+            "maxSelfMs": 1.273300051689148,
+            "calls": 2640
+        },
+        {
+            "name": "Inl_RenderCameraStack",
+            "selfMs": 56.188904752751117,
+            "totalMs": 2180.9137980793603,
+            "maxSelfMs": 0.46970001304725886,
+            "calls": 480
+        },
+        {
+            "name": "RenderLoop.ScheduleDraw",
+            "selfMs": 56.00110088387737,
+            "totalMs": 1235.7256969268783,
+            "maxSelfMs": 1.113500103354454,
+            "calls": 3840
+        },
+        {
+            "name": "Inl_ScriptableRenderContext.Submit",
+            "selfMs": 52.69419821066549,
+            "totalMs": 1153.5774969756603,
+            "maxSelfMs": 0.7084999324288219,
+            "calls": 480
+        },
+        {
+            "name": "ExecuteRenderGraph",
+            "selfMs": 50.86999860555079,
+            "totalMs": 939.113497108221,
+            "maxSelfMs": 0.5688001060116221,
+            "calls": 480
+        },
+        {
+            "name": "PxScene.simulate",
+            "selfMs": 44.180899944898559,
+            "totalMs": 95.40399976074696,
+            "maxSelfMs": 0.567300009453902,
+            "calls": 274
+        },
+        {
+            "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera",
+            "selfMs": 43.47840007732157,
+            "totalMs": 571.9535989761353,
+            "maxSelfMs": 0.8767999187111855,
+            "calls": 240
+        },
+        {
+            "name": "RenderLoop.Draw",
+            "selfMs": 42.04609996543877,
+            "totalMs": 140.79339941125364,
+            "maxSelfMs": 0.23359999991953374,
+            "calls": 3201
+        },
+        {
+            "name": "Unaccounted time between: Profiler.SessionMetadata and PlayerLoop",
+            "selfMs": 39.68000030517578,
+            "totalMs": 39.68000030517578,
+            "maxSelfMs": 39.68000030517578,
+            "calls": 1
+        },
+        {
+            "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: WeaponCamera",
+            "selfMs": 38.02939919225173,
+            "totalMs": 326.826497733593,
+            "maxSelfMs": 0.602400032337755,
+            "calls": 240
+        },
+        {
+            "name": "UpdateScene",
+            "selfMs": 35.49700891390239,
+            "totalMs": 1407.6793990135193,
+            "maxSelfMs": 0.8048995196877513,
+            "calls": 240
+        },
+        {
+            "name": "EndRenderQueueExtraction",
+            "selfMs": 33.30639999684354,
+            "totalMs": 210.91199953109027,
+            "maxSelfMs": 0.4556000158190727,
+            "calls": 720
+        },
+        {
+            "name": "Inl_NRPRGComp_ExecuteBeginRenderpassCommand",
+            "selfMs": 31.41369984904304,
+            "totalMs": 31.41369984904304,
+            "maxSelfMs": 0.3801000118255615,
+            "calls": 4800
+        },
+        {
+            "name": "TransformChangeSystem",
+            "selfMs": 29.83499983134243,
+            "totalMs": 43.47849974084966,
+            "maxSelfMs": 0.26030001044273379,
+            "calls": 9203
+        },
+        {
+            "name": "Idle",
+            "selfMs": 27.505399954883616,
+            "totalMs": 27.505399954883616,
+            "maxSelfMs": 0.6851000189781189,
+            "calls": 360
+        },
+        {
+            "name": "fps.Gameplay.dll!Unity.FPS.Gameplay::PlayerCharacterController.Update() [Invoke]",
+            "selfMs": 24.57109992019832,
+            "totalMs": 34.97409991174936,
+            "maxSelfMs": 0.8884000331163406,
+            "calls": 240
+        },
+        {
+            "name": "VolumeManager.Update",
+            "selfMs": 24.416599868796767,
+            "totalMs": 29.7936998475343,
+            "maxSelfMs": 0.33399999514222147,
+            "calls": 480
+        },
+        {
+            "name": "Material.SetPassFast",
+            "selfMs": 22.28849990486924,
+            "totalMs": 23.01449989224784,
+            "maxSelfMs": 0.11800000241055386,
+            "calls": 3120
+        },
+        {
+            "name": "QueuePrepareIntegrateMainThreadObjects",
+            "selfMs": 21.482099887696678,
+            "totalMs": 21.482099887696678,
+            "maxSelfMs": 0.5245999693870544,
+            "calls": 720
+        },
+        {
+            "name": "SSAO",
+            "selfMs": 21.204499912564644,
+            "totalMs": 22.55799989166553,
+            "maxSelfMs": 0.16559999773744495,
+            "calls": 2400
+        },
+        {
+            "name": "ParticleSystem.ScheduleGeometryJobs",
+            "selfMs": 20.41579990941682,
+            "totalMs": 25.779699889943005,
+            "maxSelfMs": 0.22180000494699926,
+            "calls": 480
+        },
+        {
+            "name": "Inl_ExecuteRenderGraph",
+            "selfMs": 20.294399987571525,
+            "totalMs": 239.49729898571969,
+            "maxSelfMs": 0.8510000445967307,
+            "calls": 480
+        },
+        {
+            "name": "Inl_Setup Light Constants",
+            "selfMs": 19.910899869166316,
+            "totalMs": 23.42499984614551,
+            "maxSelfMs": 0.29299999959766867,
+            "calls": 480
+        },
+        {
+            "name": "Inl_SSAO",
+            "selfMs": 19.708399885566906,
+            "totalMs": 19.708399885566906,
+            "maxSelfMs": 0.21729999780654908,
+            "calls": 2400
+        },
+        {
+            "name": "Inl_ColorGradingLUT",
+            "selfMs": 19.635199934244157,
+            "totalMs": 19.635199934244157,
+            "maxSelfMs": 0.3630000054836273,
+            "calls": 240
+        },
+        {
+            "name": "RenderPlayModeViewCameras",
+            "selfMs": 19.539705255869195,
+            "totalMs": 2294.0522994995117,
+            "maxSelfMs": 0.22789951515733265,
+            "calls": 240
+        }
+    ],
+    "slowest": [
+        {
+            "index": 0,
+            "ms": 186.16769409179688,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 113.49630057811737,
+                    "totalMs": 113.49630057811737,
+                    "maxSelfMs": 72.64830017089844,
+                    "calls": 4
+                },
+                {
+                    "name": "Unaccounted time between: Profiler.SessionMetadata and PlayerLoop",
+                    "selfMs": 39.68000030517578,
+                    "totalMs": 39.68000030517578,
+                    "maxSelfMs": 39.68000030517578,
+                    "calls": 1
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",
+                    "selfMs": 5.577599718788406,
+                    "totalMs": 13.240699768066407,
+                    "maxSelfMs": 5.577599718788406,
+                    "calls": 1
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+                    "selfMs": 3.0128000036929736,
+                    "totalMs": 3.0187000036239626,
+                    "maxSelfMs": 1.0597000226844103,
+                    "calls": 3
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 2.6783000007271768,
+                    "totalMs": 5.697000004351139,
+                    "maxSelfMs": 0.9759000539779663,
+                    "calls": 7
+                },
+                {
+                    "name": "Mono.JIT",
+                    "selfMs": 2.3502000509761276,
+                    "totalMs": 2.3516000509262087,
+                    "maxSelfMs": 1.0428000160391094,
+                    "calls": 3
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 1.487900058971718,
+                    "totalMs": 1.533400058746338,
+                    "maxSelfMs": 1.2297000524122269,
+                    "calls": 2
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.0902000025380403,
+                    "totalMs": 1.0902000025380403,
+                    "maxSelfMs": 0.11240000277757645,
+                    "calls": 30
+                },
+                {
+                    "name": "ExecuteRenderQueueJob",
+                    "selfMs": 0.7654000092297792,
+                    "totalMs": 0.7654000092297792,
+                    "maxSelfMs": 0.3950999975204468,
+                    "calls": 3
+                },
+                {
+                    "name": "PxScene.simulate",
+                    "selfMs": 0.6569000133313239,
+                    "totalMs": 1.3410000056028367,
+                    "maxSelfMs": 0.16090000183612575,
+                    "calls": 5
+                }
+            ]
+        },
+        {
+            "index": 2,
+            "ms": 132.4608917236328,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 74.77749907970429,
+                    "totalMs": 74.77749907970429,
+                    "maxSelfMs": 50.75859832763672,
+                    "calls": 4
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",
+                    "selfMs": 39.17400108896982,
+                    "totalMs": 39.25080108642578,
+                    "maxSelfMs": 39.17400108896982,
+                    "calls": 1
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 2.2344999817432837,
+                    "totalMs": 2.3299999833106996,
+                    "maxSelfMs": 1.5899999598041177,
+                    "calls": 2
+                },
+                {
+                    "name": "PxScene.simulate",
+                    "selfMs": 1.005599965363217,
+                    "totalMs": 1.9276999533176423,
+                    "maxSelfMs": 0.385599982306303,
+                    "calls": 3
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.8995999991893768,
+                    "totalMs": 0.8995999991893768,
+                    "maxSelfMs": 0.5214999914169312,
+                    "calls": 4
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.7949999877309892,
+                    "totalMs": 0.8332999870181084,
+                    "maxSelfMs": 0.44839999402029209,
+                    "calls": 4
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.6108999981734087,
+                    "totalMs": 1.3678999915719033,
+                    "maxSelfMs": 0.050900005793664607,
+                    "calls": 32
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 0.5714999932097271,
+                    "totalMs": 0.5714999932097271,
+                    "maxSelfMs": 0.05139999836683273,
+                    "calls": 30
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.43959999084472659,
+                    "totalMs": 0.43959999084472659,
+                    "maxSelfMs": 0.43959999084472659,
+                    "calls": 1
+                },
+                {
+                    "name": "ExecuteRenderQueueJob",
+                    "selfMs": 0.40209998562932017,
+                    "totalMs": 0.40209998562932017,
+                    "maxSelfMs": 0.21089999377727509,
+                    "calls": 3
+                }
+            ]
+        },
+        {
+            "index": 52,
+            "ms": 87.16009521484375,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 69.4812000989914,
+                    "totalMs": 69.4812000989914,
+                    "maxSelfMs": 67.85260009765625,
+                    "calls": 4
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 1.6195000272709877,
+                    "totalMs": 1.6936000287532807,
+                    "maxSelfMs": 1.3353000171482564,
+                    "calls": 2
+                },
+                {
+                    "name": "Inl_ExecuteRenderGraph",
+                    "selfMs": 0.8883000548448763,
+                    "totalMs": 3.539600044488907,
+                    "maxSelfMs": 0.8510000445967307,
+                    "calls": 2
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 0.7811999919940718,
+                    "totalMs": 0.7811999919940718,
+                    "maxSelfMs": 0.09139999747276306,
+                    "calls": 30
+                },
+                {
+                    "name": "Inl_ScriptableRenderer.SetPerCameraShaderVariables",
+                    "selfMs": 0.7340000164695084,
+                    "totalMs": 0.7340000164695084,
+                    "maxSelfMs": 0.6991000175476074,
+                    "calls": 4
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.6307999938726425,
+                    "totalMs": 0.6307999938726425,
+                    "maxSelfMs": 0.1898999959230423,
+                    "calls": 4
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.5686000105415587,
+                    "totalMs": 0.5895000100135803,
+                    "maxSelfMs": 0.17729999338916969,
+                    "calls": 4
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.5152999758720398,
+                    "totalMs": 0.5152999758720398,
+                    "maxSelfMs": 0.5152999758720398,
+                    "calls": 1
+                },
+                {
+                    "name": "ExecuteRenderQueueJob",
+                    "selfMs": 0.5012999884784222,
+                    "totalMs": 0.5012999884784222,
+                    "maxSelfMs": 0.32339999079704287,
+                    "calls": 3
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.49900000226625709,
+                    "totalMs": 1.2241999878897332,
+                    "maxSelfMs": 0.0557999925877084,
+                    "calls": 30
+                }
+            ]
+        },
+        {
+            "index": 12,
+            "ms": 74.21759796142578,
+            "expensive": [
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",
+                    "selfMs": 45.764001526833457,
+                    "totalMs": 45.837501525878909,
+                    "maxSelfMs": 45.764001526833457,
+                    "calls": 1
+                },
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 11.72980035841465,
+                    "totalMs": 11.72980035841465,
+                    "maxSelfMs": 10.23270034790039,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 2.3681000215001406,
+                    "totalMs": 2.3681000215001406,
+                    "maxSelfMs": 0.5026000142097473,
+                    "calls": 30
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.8920999348629266,
+                    "totalMs": 3.703699953854084,
+                    "maxSelfMs": 0.22799999825656415,
+                    "calls": 21
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.7153999880465563,
+                    "totalMs": 1.6600999747170136,
+                    "maxSelfMs": 0.27010000025620686,
+                    "calls": 29
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.6440999954938889,
+                    "totalMs": 0.6440999954938889,
+                    "maxSelfMs": 0.22789999842643739,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.5818999991170131,
+                    "totalMs": 0.5973999986890703,
+                    "maxSelfMs": 0.09040000155800954,
+                    "calls": 26
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.5328000067020184,
+                    "totalMs": 0.5545000061392784,
+                    "maxSelfMs": 0.2187000026824535,
+                    "calls": 4
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.4687999933375977,
+                    "totalMs": 0.4951999932527542,
+                    "maxSelfMs": 0.27719999419059607,
+                    "calls": 2
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.4643000066280365,
+                    "totalMs": 0.4643000066280365,
+                    "maxSelfMs": 0.4643000066280365,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "index": 1,
+            "ms": 59.66740036010742,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 26.682799518108369,
+                    "totalMs": 26.682799518108369,
+                    "maxSelfMs": 14.44219970703125,
+                    "calls": 4
+                },
+                {
+                    "name": "Mono.JIT",
+                    "selfMs": 6.089400054253929,
+                    "totalMs": 6.095200054347515,
+                    "maxSelfMs": 2.683900033189275,
+                    "calls": 11
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]",
+                    "selfMs": 3.123500160894764,
+                    "totalMs": 10.738900184631348,
+                    "maxSelfMs": 3.123500160894764,
+                    "calls": 1
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 1.8981999903917313,
+                    "totalMs": 2.850399985909462,
+                    "maxSelfMs": 0.6680999994277954,
+                    "calls": 5
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.5978000015602448,
+                    "totalMs": 1.5978000015602448,
+                    "maxSelfMs": 0.3255000114440918,
+                    "calls": 30
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 1.1161999909672887,
+                    "totalMs": 1.1640999913215638,
+                    "maxSelfMs": 0.5653999849455431,
+                    "calls": 2
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.9953999774370459,
+                    "totalMs": 1.0302999764680863,
+                    "maxSelfMs": 0.347799994298839,
+                    "calls": 4
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStackTrace() [Invoke]",
+                    "selfMs": 0.9506999955046922,
+                    "totalMs": 0.9521999955177307,
+                    "maxSelfMs": 0.9506999955046922,
+                    "calls": 1
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.6886000205631717,
+                    "totalMs": 1.5522000202909113,
+                    "maxSelfMs": 0.0777000022935681,
+                    "calls": 30
+                },
+                {
+                    "name": "BehaviourUpdate",
+                    "selfMs": 0.6285997875675093,
+                    "totalMs": 5.160999774932861,
+                    "maxSelfMs": 0.6285997875675093,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "index": 10,
+            "ms": 51.223201751708987,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 36.150298953056338,
+                    "totalMs": 36.150298953056338,
+                    "maxSelfMs": 33.36159896850586,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 0.8496999925118871,
+                    "totalMs": 0.8496999925118871,
+                    "maxSelfMs": 0.08900000154972077,
+                    "calls": 30
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.7850000262260437,
+                    "totalMs": 0.7850000262260437,
+                    "maxSelfMs": 0.7850000262260437,
+                    "calls": 1
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.6100999936461449,
+                    "totalMs": 0.6100999936461449,
+                    "maxSelfMs": 0.23279999196529389,
+                    "calls": 4
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.5945000187493861,
+                    "totalMs": 0.6305000185966492,
+                    "maxSelfMs": 0.3393000103533268,
+                    "calls": 2
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.5047000061313156,
+                    "totalMs": 0.5241000056266785,
+                    "maxSelfMs": 0.18700000045646449,
+                    "calls": 4
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.427900003225659,
+                    "totalMs": 0.9822000123094767,
+                    "maxSelfMs": 0.06220000213943422,
+                    "calls": 29
+                },
+                {
+                    "name": "StdRender.ApplyShader",
+                    "selfMs": 0.39909999512019569,
+                    "totalMs": 0.4219999946653843,
+                    "maxSelfMs": 0.11250000074505806,
+                    "calls": 26
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.37560000171652066,
+                    "totalMs": 1.4635999938473106,
+                    "maxSelfMs": 0.04489999823272228,
+                    "calls": 21
+                },
+                {
+                    "name": "RenderLoop.CleanupNodeQueue",
+                    "selfMs": 0.3433999961707741,
+                    "totalMs": 0.3433999961707741,
+                    "maxSelfMs": 0.23589999973773957,
+                    "calls": 11
+                }
+            ]
+        },
+        {
+            "index": 220,
+            "ms": 40.757301330566409,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 24.50399922579527,
+                    "totalMs": 24.50399922579527,
+                    "maxSelfMs": 23.367399215698243,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.129499991191551,
+                    "totalMs": 1.129499991191551,
+                    "maxSelfMs": 0.24289999902248383,
+                    "calls": 31
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.9470000130822882,
+                    "totalMs": 0.9999000132083893,
+                    "maxSelfMs": 0.6552999992854893,
+                    "calls": 2
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.7541000065684784,
+                    "totalMs": 1.6128999929642305,
+                    "maxSelfMs": 0.11759999667992816,
+                    "calls": 29
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.5542999991739634,
+                    "totalMs": 0.5679999988060445,
+                    "maxSelfMs": 0.13010000201757067,
+                    "calls": 27
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.5331999822010403,
+                    "totalMs": 0.5490999817848206,
+                    "maxSelfMs": 0.262499992546509,
+                    "calls": 4
+                },
+                {
+                    "name": "ExecuteRenderQueueJob",
+                    "selfMs": 0.43890000879764559,
+                    "totalMs": 0.43890000879764559,
+                    "maxSelfMs": 0.16120000183582307,
+                    "calls": 3
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.39959999918937685,
+                    "totalMs": 0.39959999918937685,
+                    "maxSelfMs": 0.39959999918937685,
+                    "calls": 1
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.39549999637529256,
+                    "totalMs": 2.005099986679852,
+                    "maxSelfMs": 0.0617000013589859,
+                    "calls": 22
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.393499992787838,
+                    "totalMs": 0.393499992787838,
+                    "maxSelfMs": 0.14970000088214875,
+                    "calls": 4
+                }
+            ]
+        },
+        {
+            "index": 123,
+            "ms": 40.44599914550781,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 22.001800775527955,
+                    "totalMs": 22.001800775527955,
+                    "maxSelfMs": 20.318700790405275,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.688299989385996,
+                    "totalMs": 1.688299989385996,
+                    "maxSelfMs": 0.2328999936580658,
+                    "calls": 30
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.9914999880566029,
+                    "totalMs": 1.0194999873638154,
+                    "maxSelfMs": 0.5186999891666346,
+                    "calls": 4
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.8278000131249428,
+                    "totalMs": 0.8278000131249428,
+                    "maxSelfMs": 0.33000001311302187,
+                    "calls": 4
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.6984999910637271,
+                    "totalMs": 1.6271999920718372,
+                    "maxSelfMs": 0.07839999889256433,
+                    "calls": 31
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.6813999968580902,
+                    "totalMs": 0.7215999960899353,
+                    "maxSelfMs": 0.37979998998343947,
+                    "calls": 2
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.5861999985063449,
+                    "totalMs": 0.5998999981675297,
+                    "maxSelfMs": 0.079500000923872,
+                    "calls": 26
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.5172999731148593,
+                    "totalMs": 2.5981999645009639,
+                    "maxSelfMs": 0.07019999995827675,
+                    "calls": 21
+                },
+                {
+                    "name": "StdRender.ApplyShader",
+                    "selfMs": 0.45500000217725758,
+                    "totalMs": 0.47840000223368409,
+                    "maxSelfMs": 0.07129999855533242,
+                    "calls": 26
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.4350000023841858,
+                    "totalMs": 0.4350000023841858,
+                    "maxSelfMs": 0.4350000023841858,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "index": 146,
+            "ms": 38.88999938964844,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 19.62570046633482,
+                    "totalMs": 19.62570046633482,
+                    "maxSelfMs": 18.264400482177736,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 2.2284999842522668,
+                    "totalMs": 2.2284999842522668,
+                    "maxSelfMs": 0.44600000977516177,
+                    "calls": 30
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.9132000058889389,
+                    "totalMs": 0.9132000058889389,
+                    "maxSelfMs": 0.4832000136375427,
+                    "calls": 4
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.91120004595723,
+                    "totalMs": 3.633500033058226,
+                    "maxSelfMs": 0.2199999913573265,
+                    "calls": 21
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.7073999943677336,
+                    "totalMs": 0.7434999942779541,
+                    "maxSelfMs": 0.4387999844038859,
+                    "calls": 2
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.6999999922263669,
+                    "totalMs": 1.308399998000823,
+                    "maxSelfMs": 0.24080000567482785,
+                    "calls": 27
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.6210000024875626,
+                    "totalMs": 0.6420000025536865,
+                    "maxSelfMs": 0.10730000212788582,
+                    "calls": 26
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.615800000501622,
+                    "totalMs": 0.6381999999284744,
+                    "maxSelfMs": 0.21230000204377576,
+                    "calls": 4
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.46389999985694888,
+                    "totalMs": 0.46389999985694888,
+                    "maxSelfMs": 0.46389999985694888,
+                    "calls": 1
+                },
+                {
+                    "name": "Inl_ScriptableRenderContext.Submit",
+                    "selfMs": 0.46220033382996919,
+                    "totalMs": 7.764200150966644,
+                    "maxSelfMs": 0.3969003256643191,
+                    "calls": 2
+                }
+            ]
+        },
+        {
+            "index": 194,
+            "ms": 36.92399978637695,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 16.142399966716768,
+                    "totalMs": 16.142399966716768,
+                    "maxSelfMs": 12.974699974060059,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.8403000155230985,
+                    "totalMs": 1.8403000155230985,
+                    "maxSelfMs": 0.4016000032424927,
+                    "calls": 31
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 1.1619999781250954,
+                    "totalMs": 1.1619999781250954,
+                    "maxSelfMs": 0.44029998779296877,
+                    "calls": 4
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 1.1371000108410954,
+                    "totalMs": 1.1573000103235245,
+                    "maxSelfMs": 0.6006000025954563,
+                    "calls": 4
+                },
+                {
+                    "name": "fps.Gameplay.dll!Unity.FPS.Gameplay::PlayerCharacterController.Update() [Invoke]",
+                    "selfMs": 0.8884000331163406,
+                    "totalMs": 1.0713000297546387,
+                    "maxSelfMs": 0.8884000331163406,
+                    "calls": 1
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.8693999907700345,
+                    "totalMs": 3.318600008264184,
+                    "maxSelfMs": 0.229500001645647,
+                    "calls": 22
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.7846999926186982,
+                    "totalMs": 1.4085999897215516,
+                    "maxSelfMs": 0.2786000026972033,
+                    "calls": 28
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.6817000010341872,
+                    "totalMs": 0.7038000009488314,
+                    "maxSelfMs": 0.08510000060778111,
+                    "calls": 27
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.6807000034023076,
+                    "totalMs": 0.723800003528595,
+                    "maxSelfMs": 0.36820000736042859,
+                    "calls": 2
+                },
+                {
+                    "name": "BehaviourUpdate",
+                    "selfMs": 0.42220017890940655,
+                    "totalMs": 5.210100173950195,
+                    "maxSelfMs": 0.42220017890940655,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "index": 122,
+            "ms": 34.041500091552737,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 18.18560004234314,
+                    "totalMs": 18.18560004234314,
+                    "maxSelfMs": 15.144000053405762,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.5870999863836915,
+                    "totalMs": 1.5870999863836915,
+                    "maxSelfMs": 0.14509999752044679,
+                    "calls": 30
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.6470999913290143,
+                    "totalMs": 2.3442999813705684,
+                    "maxSelfMs": 0.15390000864863397,
+                    "calls": 21
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.5653999969363213,
+                    "totalMs": 0.5653999969363213,
+                    "maxSelfMs": 0.19140000641345979,
+                    "calls": 4
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.5645999966654927,
+                    "totalMs": 0.5983999967575073,
+                    "maxSelfMs": 0.33719999564345928,
+                    "calls": 2
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.5407000205668737,
+                    "totalMs": 1.187800005543977,
+                    "maxSelfMs": 0.07830001007823739,
+                    "calls": 30
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.5142999959280132,
+                    "totalMs": 0.5344999954104424,
+                    "maxSelfMs": 0.15890000296349172,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.4166999985172879,
+                    "totalMs": 0.43569999816827478,
+                    "maxSelfMs": 0.04250000143656507,
+                    "calls": 26
+                },
+                {
+                    "name": "Camera.RenderSkybox",
+                    "selfMs": 0.34389998973347249,
+                    "totalMs": 0.35679998993873598,
+                    "maxSelfMs": 0.34389998973347249,
+                    "calls": 1
+                },
+                {
+                    "name": "Profiler.FlushMemoryCounters",
+                    "selfMs": 0.33500000834465029,
+                    "totalMs": 0.33500000834465029,
+                    "maxSelfMs": 0.33500000834465029,
+                    "calls": 1
+                }
+            ]
+        },
+        {
+            "index": 73,
+            "ms": 33.97090148925781,
+            "expensive": [
+                {
+                    "name": "EditorLoop",
+                    "selfMs": 18.519100189208986,
+                    "totalMs": 18.519100189208986,
+                    "maxSelfMs": 16.772600173950197,
+                    "calls": 4
+                },
+                {
+                    "name": "SRPBatcher.Flush",
+                    "selfMs": 1.5803999837953598,
+                    "totalMs": 1.5803999837953598,
+                    "maxSelfMs": 0.2336999922990799,
+                    "calls": 30
+                },
+                {
+                    "name": "Inl_On Record Render Graph",
+                    "selfMs": 0.7708999867318198,
+                    "totalMs": 0.8125999867916107,
+                    "maxSelfMs": 0.494599977042526,
+                    "calls": 2
+                },
+                {
+                    "name": "RenderLoop.DrawSRPBatcher",
+                    "selfMs": 0.5727999934460968,
+                    "totalMs": 2.516799976117909,
+                    "maxSelfMs": 0.08760001137852669,
+                    "calls": 21
+                },
+                {
+                    "name": "WaitForJobGroupID",
+                    "selfMs": 0.5620999731399934,
+                    "totalMs": 1.599599992390722,
+                    "maxSelfMs": 0.09570000693202019,
+                    "calls": 31
+                },
+                {
+                    "name": "LogStringToConsole",
+                    "selfMs": 0.46390000730752947,
+                    "totalMs": 0.46390000730752947,
+                    "maxSelfMs": 0.18170000612735749,
+                    "calls": 4
+                },
+                {
+                    "name": "ExecuteRenderQueueJob",
+                    "selfMs": 0.46199999563395979,
+                    "totalMs": 0.46199999563395979,
+                    "maxSelfMs": 0.2809000015258789,
+                    "calls": 3
+                },
+                {
+                    "name": "SRPBRender.ApplyShader",
+                    "selfMs": 0.4590999992506113,
+                    "totalMs": 0.4709999989718199,
+                    "maxSelfMs": 0.05109999838168733,
+                    "calls": 26
+                },
+                {
+                    "name": "RenderLoop.ScheduleDraw",
+                    "selfMs": 0.4505999912507832,
+                    "totalMs": 7.286600041668862,
+                    "maxSelfMs": 0.19280006550252438,
+                    "calls": 16
+                },
+                {
+                    "name": "UnityEngine.CoreModule.dll!UnityEngine::StackTraceUtility.ExtractStringFromExceptionInternal() [Invoke]",
+                    "selfMs": 0.4066000015445752,
+                    "totalMs": 0.42480000108480456,
+                    "maxSelfMs": 0.15049999862822006,
+                    "calls": 4
+                }
+            ]
+        }
+    ]
+}

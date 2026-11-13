@@ -1,0 +1,90 @@
+10.353 incl  0.009 self  calls/frame 1.0  [render] 
+10.353 incl  0.036 self  calls/frame 1.0  Main Thread
+10.286 incl  0.083 self  calls/frame 1.0  PlayerLoop
+6.965 incl  0.016 self  calls/frame 20.7  [render] Gfx.WaitForGfxCommandsFromMainThread
+6.949 incl  6.949 self  calls/frame 20.7  [render] Semaphore.WaitForSignal
+5.503 incl  0.073 self  calls/frame 1.0  PostLateUpdate.FinishFrameRendering
+5.328 incl  0.020 self  calls/frame 1.0  UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke]
+5.308 incl  0.034 self  calls/frame 1.0  Inl_UniversalRenderTotal
+5.266 incl  0.142 self  calls/frame 2.0  Inl_RenderCameraStack
+3.510 incl  0.303 self  calls/frame 16.3  [render] RenderLoop
+2.697 incl  0.119 self  calls/frame 2.0  Inl_ScriptableRenderContext.Submit
+2.511 incl  0.104 self  calls/frame 15.7  RenderLoop.ScheduleDraw
+2.488 incl  0.101 self  calls/frame 2.0  [render] ExecuteRenderGraph
+2.222 incl  0.097 self  calls/frame 2.0  ExecuteRenderGraph
+2.097 incl  0.009 self  calls/frame 1.0  [render] UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera
+1.853 incl  0.018 self  calls/frame 1.0  UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera
+1.401 incl  0.088 self  calls/frame 1.0  Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera
+1.324 incl  0.754 self  calls/frame 39.0  WaitForJobGroupID
+1.129 incl  0.002 self  calls/frame 1.0  Update.ScriptRunBehaviourUpdate
+1.127 incl  0.152 self  calls/frame 1.0  BehaviourUpdate
+1.124 incl  0.272 self  calls/frame 20.7  [render] RenderLoop.DrawSRPBatcher
+1.043 incl  1.043 self  calls/frame 63.0  [render] DrawBuffersBatchMode
+0.861 incl  0.092 self  calls/frame 1.0  Inl_UniversalRenderPipeline.RenderSingleCameraInternal: WeaponCamera
+0.857 incl  0.007 self  calls/frame 2.0  [render] DrawOpaqueObjects
+0.813 incl  0.070 self  calls/frame 2.0  CullScriptable
+0.761 incl  0.109 self  calls/frame 20.7  RenderLoop.DrawSRPBatcher
+0.628 incl  0.004 self  calls/frame 2.0  DrawOpaqueObjects
+0.556 incl  0.136 self  calls/frame 5.0  EndRenderQueueExtraction
+0.544 incl  0.047 self  calls/frame 2.0  Inl_ExecuteRenderGraph
+0.515 incl  0.002 self  calls/frame 1.0  PostLateUpdate.PlayerUpdateCanvases
+0.482 incl  0.001 self  calls/frame 1.0  UIEvents.WillRenderCanvases
+0.481 incl  0.104 self  calls/frame 1.0  UGUI.Rendering.UpdateBatches
+0.469 incl  0.022 self  calls/frame 49.8  EngineJob
+0.460 incl  0.058 self  calls/frame 13.0  Shadows.ExecuteDrawShadows
+0.455 incl  0.017 self  calls/frame 2.0  Inl_RecordRenderGraph
+0.438 incl  0.380 self  calls/frame 2.0  Inl_On Record Render Graph
+0.413 incl  0.002 self  calls/frame 1.0  PreLateUpdate.ScriptRunBehaviourLateUpdate
+0.413 incl  0.012 self  calls/frame 1.0  UniversalRenderPipeline.RenderSingleCameraInternal: WeaponCamera
+0.412 incl  0.008 self  calls/frame 1.0  [render] UniversalRenderPipeline.RenderSingleCameraInternal: WeaponCamera
+0.411 incl  0.073 self  calls/frame 1.0  LateBehaviourUpdate
+0.402 incl  0.019 self  calls/frame 13.0  Shadows.ScheduleRenderJobs
+0.392 incl  0.146 self  calls/frame 16.2  RenderLoop.Draw
+0.385 incl  0.019 self  calls/frame 2.0  CullResults.CreateSharedRendererScene
+0.383 incl  0.364 self  calls/frame 52.2  SRPBRender.ApplyShader
+0.380 incl  0.003 self  calls/frame 6.0  Director.ProcessFrame
+0.376 incl  0.012 self  calls/frame 2.0  Animators.Update
+0.367 incl  0.007 self  calls/frame 2.0  [render] DrawDepthNormalPrepass
+0.367 incl  0.367 self  calls/frame 63.0  SRPBatcher.Flush
+0.361 incl  0.282 self  calls/frame 16.2  [render] RenderLoop.Draw
+0.350 incl  0.007 self  calls/frame 2.0  DrawDepthNormalPrepass
+0.335 incl  0.003 self  calls/frame 2.0  Draw Additional Lights Shadowmap
+0.332 incl  0.016 self  calls/frame 1.0  AdditionalLightsShadow
+0.304 incl  0.004 self  calls/frame 2.0  DrawTransparentObjects
+0.295 incl  0.042 self  calls/frame 1.0  [render] Gfx.PresentFrame
+0.289 incl  0.021 self  calls/frame 10.8  [render] Shadows.DrawSRPBatcher
+0.283 incl  0.004 self  calls/frame 2.0  [render] DrawTransparentObjects
+0.283 incl  0.236 self  calls/frame 12.0  fps.AI.dll!Unity.FPS.AI::EnemyMobile.Update() [Invoke]
+0.275 incl  0.017 self  calls/frame 6.0  Shadows.PrepareDrawShadows
+0.254 incl  0.001 self  calls/frame 1.0  PreLateUpdate.DirectorUpdateAnimationBegin
+0.245 incl  0.002 self  calls/frame 1.0  PostLateUpdate.ProfilerEndFrame
+0.245 incl  0.148 self  calls/frame 102.0  TransformChangeSystem
+0.244 incl  0.003 self  calls/frame 1.0  PreUpdate.AIUpdate
+0.243 incl  0.001 self  calls/frame 1.0  Profiler.FlushCounters
+0.242 incl  0.001 self  calls/frame 2.0  [render] Draw Additional Lights Shadowmap
+0.241 incl  0.022 self  calls/frame 2.0  NavMeshManager
+0.241 incl  0.047 self  calls/frame 1.0  [render] AdditionalLightsShadow
+0.229 incl  0.006 self  calls/frame 1.0  PostLateUpdate.UpdateAllRenderers
+0.209 incl  0.001 self  calls/frame 0.5  FixedUpdate.PhysicsFixedUpdate
+0.207 incl  0.206 self  calls/frame 5.0  QueuePrepareIntegrateMainThreadObjects
+0.205 incl  0.001 self  calls/frame 1.0  PreLateUpdate.DirectorUpdateAnimationEnd
+0.196 incl  0.006 self  calls/frame 1.0  PostLateUpdate.UpdateAllSkinnedMeshes
+0.195 incl  0.001 self  calls/frame 1.0  PreLateUpdate.ParticleSystemBeginUpdateAll
+0.194 incl  0.194 self  calls/frame 1.0  [render] IDXGISwapChain::Present
+0.194 incl  0.134 self  calls/frame 1.0  ParticleSystem.Update
+0.194 incl  0.048 self  calls/frame 2.0  SceneCulling
+0.190 incl  0.055 self  calls/frame 1.0  MeshSkinning.Update
+0.189 incl  0.003 self  calls/frame 2.0  [render] Draw Main Light Shadowmap
+0.188 incl  0.023 self  calls/frame 1.0  UnityEngine.UIModule.dll!UnityEngine::Canvas.SendWillRenderCanvases() [Invoke]
+0.186 incl  0.003 self  calls/frame 1.0  [render] MainLightShadow
+0.185 incl  0.185 self  calls/frame 1.0  Profiler.FlushMemoryCounters
+0.181 incl  0.002 self  calls/frame 2.0  FinalizeUpdateRendererBoundingVolumes
+0.181 incl  0.043 self  calls/frame 1.0  [render] MeshSkinning.SkinOnGPU
+0.163 incl  0.022 self  calls/frame 10.8  Shadows.DrawSRPBatcher
+0.156 incl  0.005 self  calls/frame 1.0  Render
+0.153 incl  0.005 self  calls/frame 2.0  Draw Main Light Shadowmap
+0.150 incl  0.149 self  calls/frame 1.0  CanvasUpdate.PreRender
+0.150 incl  0.025 self  calls/frame 6.0  Director.PrepareFrame
+0.147 incl  0.004 self  calls/frame 1.0  MainLightShadow
+0.146 incl  0.138 self  calls/frame 30.5  StdRender.ApplyShader
+0.140 incl  0.009 self  calls/frame 2.0  DrawScreenSpaceUI

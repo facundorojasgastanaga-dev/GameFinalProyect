@@ -1,0 +1,171 @@
+player=Player_ModularArm_v07 pos=(0.00, 0.03, -31.00)
+Player_ModularArm_v07 [PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,PlayerBodyPresentation,MechanicInput,AdvancedPlayerMovement,StolenWeaponCarrier,SlideContactEffects,ProtagonistHandsPresentation,ProtagonistBodyAnimation,ProtagonistMelee,ProtagonistSlidePresentation,ExtractionArcFx] lp=(0.00, 0.03, -31.00)
+  Main Camera [Camera,AudioListener,UniversalAdditionalCameraData,Volume] fov=60 near=0.1 depth=-1 mask=2871 lp=(0.00, 1.50, 0.00)
+    WeaponCamera [Camera,UniversalAdditionalCameraData] fov=60 near=0.1 depth=0 mask=1024 lp=(0.00, 0.00, 0.00)
+      SlideLegs_FPS (off) [] lp=(0.00, 0.00, 0.00)
+        IR_Rig [] lp=(0.00, 0.00, 0.00)
+        SlideLegs_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistActions/IR_SlideLegs.fbx lp=(0.00, 0.00, 0.00)
+    FirstPersonSocket [] lp=(0.00, 0.00, 0.00)
+      DefaultWeaponPosition [] lp=(0.26, -0.35, 0.47)
+      AimingWeaponPosition [] lp=(0.00, -0.35, 0.47)
+      DownWeaponPosition [] lp=(0.24, -1.30, 0.23)
+      WeaponParentSocket [] lp=(0.60, -0.47, 0.07)
+        Protagonist_FPS [Animator] avatar=- human=False ctrl=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/Protagonist_FPS.controller lp=(0.00, 0.00, 0.00)
+  Capsule [] lp=(0.00, 1.00, 0.00)
+    VFX_JetpackTrail_left [ParticleSystem,ParticleSystemRenderer] lp=(-0.41, -0.38, 0.35)
+    VFX_JetpackTrail_right [ParticleSystem,ParticleSystemRenderer] lp=(0.41, -0.38, 0.35)
+  AimPoint [] lp=(0.00, 1.09, 0.00)
+  ShadowProjector [Projector] lp=(0.00, 0.64, 0.00)
+  SurvivorRobot_Visual (off) [] lp=(0.00, 0.00, 0.00)
+    ForearmSocket_R [] lp=(-0.49, 0.99, 0.00)
+    ForearmSocket_L [] lp=(0.49, 0.99, 0.00)
+    Graphite [MeshFilter,MeshRenderer] lp=(0.00, 0.00, 0.00)
+    WornCeramic [MeshFilter,MeshRenderer] lp=(0.00, 0.00, 0.00)
+    EnergyCyan [MeshFilter,MeshRenderer] lp=(0.00, 0.00, 0.00)
+    RescueOrange [MeshFilter,MeshRenderer] lp=(0.00, 0.00, 0.00)
+  SlideContactParticles (off) [ParticleSystem,ParticleSystemRenderer] lp=(0.00, 0.00, 0.00)
+  Protagonist_Body [LODGroup,Animator] avatar=- human=False ctrl=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/Protagonist_Body.controller lp=(0.00, 0.00, 0.00)
+    Body_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.00, 0.00, 0.00)
+    Body_LOD1 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.00, 0.00, 0.00)
+    Body_LOD2 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.00, 0.00, 0.00)
+    Forearm_L_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.34, 1.25, -0.07)
+    Forearm_L_LOD1 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.34, 1.25, -0.07)
+    Forearm_L_LOD2 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.34, 1.25, -0.07)
+    Forearm_R_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.34, 1.25, -0.07)
+    Forearm_R_LOD1 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.34, 1.25, -0.07)
+    Forearm_R_LOD2 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.34, 1.25, -0.07)
+    Hand_L_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.42, 1.00, 0.00)
+    Hand_L_LOD1 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.42, 1.00, 0.00)
+    Hand_L_LOD2 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(-0.42, 1.00, 0.00)
+    Hand_R_LOD0 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.42, 1.00, 0.00)
+    Hand_R_LOD1 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.42, 1.00, 0.00)
+    Hand_R_LOD2 [SkinnedMeshRenderer] mesh=Assets/IronRequiem/Art/Player/ProtagonistV01/Rigged/IR_Protagonist_Rigged.fbx lp=(0.42, 1.00, 0.00)
+    IR_Rig [] lp=(0.00, 0.00, 0.00)
+      Root [] lp=(0.00, 0.00, 0.00)
+        Pelvis [] lp=(0.00, 0.94, 0.00)
+  SlideMetalSparks_L [ParticleSystem,ParticleSystemRenderer] lp=(0.00, 0.00, 0.00)
+  SlideMetalSparks_R [ParticleSystem,ParticleSystemRenderer] lp=(0.00, 0.00, 0.00)
+pcc.PlayerCamera=Main Camera
+pcc.RotationSpeed=200
+pcc.CameraHeightRatio=0.8
+pcc.CapsuleHeightStanding=1.8
+-- roots
+GameManager [GameFlowManager,EnemyManager,ActorsManager,ObjectiveManager,AudioManager,AudioSource] children=3
+GameHUD [JetpackCounter,WeaponHUDManager,PlayerHealthBar,FeedbackFlashHUD,FramerateCounter,StanceHUD,NotificationHUDManager,ObjectiveHUDManager,CrosshairManager,DisplayMessageManager] children=2
+InGameMenu [InGameMenuManager,TakeScreenshot] children=1
+EventSystem [EventSystem,InputSystemUIInputModule] children=0
+Player_ModularArm_v07 [PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,PlayerBodyPresentation,MechanicInput,AdvancedPlayerMovement,StolenWeaponCarrier,SlideContactEffects,ProtagonistHandsPresentation,ProtagonistBodyAnimation,ProtagonistMelee,ProtagonistSlidePresentation,ExtractionArcFx] children=9
+LabSun [Light] children=0
+ArenaMessages [Canvas,CanvasScaler] children=2
+CombatLabMenu [Canvas,CanvasScaler,GraphicRaycaster,CombatLabMenu,RequiemMenuView,MenuNavigation] children=3
+LabMenuMusic [AudioSource,MenuMusic] children=0
+PersistentAirlocks [] children=19
+CampaignSession [CampaignFlow,SectorLightingBlend] children=0
+CampaignMusic [CombatMusic] children=0
+-- canvases
+GameManager/EndGameFadeCanvas mode=ScreenSpaceOverlay order=100 group=True active=False
+GameManager/GameHUD/FeedbackFlashCanvas mode=ScreenSpaceOverlay order=0 group=False active=True
+GameManager/GameHUD/HUD mode=ScreenSpaceOverlay order=1 group=False active=True
+GameManager/InGameMenu/Canvas mode=ScreenSpaceOverlay order=100 group=True active=False
+GameHUD/FeedbackFlashCanvas mode=ScreenSpaceOverlay order=0 group=False active=True
+GameHUD/HUD mode=ScreenSpaceOverlay order=1 group=False active=True
+InGameMenu/Canvas mode=ScreenSpaceOverlay order=2 group=True active=False
+ArenaMessages mode=ScreenSpaceOverlay order=30 group=False active=True
+CombatLabMenu mode=ScreenSpaceOverlay order=200 group=False active=True
+-- audio sources
+GameManager clip=Wind Ambience group=Ambient
+Player_ModularArm_v07 clip=- group=PlayerMovement
+Player_ModularArm_v07 clip=Jetpack_Use group=Jetpack
+LabMenuMusic clip=- group=-
+-- music/fx managers
+GameManager Unity.FPS.Game.AudioManager
+GameManager/GameHUD Unity.FPS.UI.WeaponHUDManager
+GameManager/GameHUD Unity.FPS.UI.FeedbackFlashHUD
+GameManager/GameHUD Unity.FPS.UI.StanceHUD
+GameManager/GameHUD Unity.FPS.UI.NotificationHUDManager
+GameManager/GameHUD Unity.FPS.UI.ObjectiveHUDManager
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth IronRequiem.HudHealthTint
+GameManager/GameHUD/HUD/WeaponHeatHUD IronRequiem.WeaponHeatHud
+GameManager/GameHUD/HUD/VP_DamageDirection IronRequiem.DamageDirectionHud
+GameHUD Unity.FPS.UI.WeaponHUDManager
+GameHUD Unity.FPS.UI.FeedbackFlashHUD
+GameHUD Unity.FPS.UI.StanceHUD
+GameHUD Unity.FPS.UI.NotificationHUDManager
+GameHUD Unity.FPS.UI.ObjectiveHUDManager
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth IronRequiem.HudHealthTint
+GameHUD/HUD/VP_DamageDirection IronRequiem.DamageDirectionHud
+ArenaMessages/Message IronRequiem.HudBannerPlate
+LabMenuMusic IronRequiem.MenuMusic
+CampaignMusic IronRequiem.CombatMusic
+-- mixers
+Assets/FPS/Audio/MainAudioMixer.mixer groups=Ambient,DamageTick,Enemies,EnemyAttack,EnemyDeath,EnemyDetection,EnemyMovement,General,HUDObjective,HUDVictory,Impact,Jetpack,Master,Misc,Music,Pickup,Player,PlayerMovement,WeaponChargeBuildup,WeaponChargeLoop,WeaponOverheat,WeaponShoot
+-- clips
+Assets/FPS/Audio/Music/Wind Ambience.mp3 38.59s
+Assets/FPS/Audio/SFX/Enemies/Hoverbot_Alert.wav 0.81s
+Assets/FPS/Audio/SFX/Enemies/Hoverbot_Attack.wav 0.63s
+Assets/FPS/Audio/SFX/Enemies/Hoverbot_Death.wav 1.03s
+Assets/FPS/Audio/SFX/Enemies/Hoverbot_Movement.wav 17.45s
+Assets/FPS/Audio/SFX/Enemies/Turret_Alert.mp3 1.31s
+Assets/FPS/Audio/SFX/Enemies/Turret_Attack.wav 0.49s
+Assets/FPS/Audio/SFX/Enemies/Turret_Death.wav 0.83s
+Assets/FPS/Audio/SFX/Pickups/Pickup_Health.wav 0.75s
+Assets/FPS/Audio/SFX/Pickups/Pickup_Weapon_Small.wav 0.07s
+Assets/FPS/Audio/SFX/Player/Damage_Tick2.mp3 0.08s
+Assets/FPS/Audio/SFX/Player/Footstep.wav 0.30s
+Assets/FPS/Audio/SFX/Player/Jetpack_Use.wav 1.51s
+Assets/FPS/Audio/SFX/Player/Jump.wav 0.96s
+Assets/FPS/Audio/SFX/Player/Land.wav 0.42s
+Assets/FPS/Audio/SFX/Player/Land_Damage.wav 0.30s
+Assets/FPS/Audio/SFX/UI/Notification_Chime.wav 0.15s
+Assets/FPS/Audio/SFX/UI/Notification_End.wav 0.57s
+Assets/FPS/Audio/SFX/UI/Notification_Snap.wav 0.59s
+Assets/FPS/Audio/SFX/Weapons/Blaster_Shot.wav 1.53s
+Assets/FPS/Audio/SFX/Weapons/Shotgun_Shot.wav 0.98s
+Assets/FPS/Audio/SFX/Weapons/Weapon_Cooling.wav 5.50s
+Assets/FPS/Tutorials/Pop.aiff 0.08s
+Assets/IronRequiem/Audio/Music/IR_Combat01_Explore.wav 32.00s
+Assets/IronRequiem/Audio/Music/IR_Combat01_Full.wav 38.66s
+Assets/IronRequiem/Audio/Music/IR_Combat01_Loop.wav 32.00s
+Assets/IronRequiem/Audio/Music/IR_Menu01_Loop.wav 48.00s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_CannonArm.wav 1.20s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Clatter.wav 1.10s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_FootMetal.wav 0.75s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Hydraulic.wav 1.60s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_PowerUp.wav 2.60s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Rummage1.wav 0.90s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Rummage2.wav 0.90s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Rummage3.wav 0.90s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Servo.wav 1.00s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Spark.wav 0.60s
+Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Hangar_Tear.wav 0.80s
+Assets/IronRequiem/Audio/SFX/SawBot/SawMotor_Attack_Loop.wav 2.00s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/FailedDownload.wav 0.00s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Adam.wav 1.70s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Alice.wav 1.57s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Bella.wav 1.38s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Bill.wav 1.91s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Brian.wav 1.52s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Callum.wav 1.99s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Charlie.wav 1.38s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Chris.wav 1.25s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Daniel.wav 1.62s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Eric.wav 1.28s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/George.wav 1.57s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Harry.wav 1.62s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Jessica.wav 1.33s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Laura.wav 1.62s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Liam.wav 1.91s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Lily.wav 1.57s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Matilda.wav 1.57s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/River.wav 1.33s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Roger.wav 1.49s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Sarah.wav 1.38s
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Sound/Sounds/VoiceSamples/Will.wav 1.52s
+-- models with Humanoid avatars
+Assets/FPS/Animation/Rigs/HoverBot.fbx
+Assets/FPS/Animation/Rigs/Turret.fbx
+Assets/IronRequiem/Art/Enemies/T07Animated/T07_GenericAvatar.asset
+Assets/IronRequiem/Art/Enemies/T07Mech/T07Mech_Rigged.fbx
+Assets/IronRequiem/Art/Robots/NewRobotAnimated/IR_NewRobot_Animated.fbx
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Animate/Motion/Runtime/Prefabs/Actors/biped_v0/Biped_Humanoid.fbx
+Packages/com.unity.ai.assistant/Modules/Unity.AI.Animate/Motion/Runtime/Prefabs/Actors/biped_v1/Biped_Humanoid.fbx

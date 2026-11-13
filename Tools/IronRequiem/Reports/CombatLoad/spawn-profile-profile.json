@@ -1,0 +1,566 @@
+{
+    "frames": 96,
+    "markers": [
+        {
+            "name": "[render] Semaphore.WaitForSignal",
+            "selfMs": 925.7574967838154,
+            "totalMs": 925.7574967838154,
+            "maxSelfMs": 14.473799705505371,
+            "calls": 1809
+        },
+        {
+            "name": "WaitForJobGroupID",
+            "selfMs": 126.20359972746519,
+            "totalMs": 208.04039943031968,
+            "maxSelfMs": 0.34489999944344165,
+            "calls": 4037
+        },
+        {
+            "name": "[render] DrawBuffersBatchMode",
+            "selfMs": 120.22249949199613,
+            "totalMs": 120.22249949199613,
+            "maxSelfMs": 0.3783999979496002,
+            "calls": 4967
+        },
+        {
+            "name": "[render] ",
+            "selfMs": 91.88059483397956,
+            "totalMs": 1482.2174940109253,
+            "maxSelfMs": 91.16239393720025,
+            "calls": 96
+        },
+        {
+            "name": "Inl_On Record Render Graph",
+            "selfMs": 52.51159984571859,
+            "totalMs": 61.44419978559017,
+            "maxSelfMs": 0.8575999792665243,
+            "calls": 190
+        },
+        {
+            "name": "[render] RenderLoop.Draw",
+            "selfMs": 49.56349969436269,
+            "totalMs": 56.58089965104591,
+            "maxSelfMs": 0.4176000001025386,
+            "calls": 1206
+        },
+        {
+            "name": "SRPBatcher.Flush",
+            "selfMs": 48.4043997808476,
+            "totalMs": 48.4043997808476,
+            "maxSelfMs": 0.19709999859333039,
+            "calls": 4967
+        },
+        {
+            "name": "SRPBRender.ApplyShader",
+            "selfMs": 41.86559981432947,
+            "totalMs": 44.513499761233109,
+            "maxSelfMs": 0.24099999363534153,
+            "calls": 3961
+        },
+        {
+            "name": "[render] RenderLoop",
+            "selfMs": 39.54739850262558,
+            "totalMs": 482.27669817869175,
+            "maxSelfMs": 1.715399962005904,
+            "calls": 1425
+        },
+        {
+            "name": "[render] IDXGISwapChain::Present",
+            "selfMs": 32.78830003738403,
+            "totalMs": 32.78830003738403,
+            "maxSelfMs": 0.6947000026702881,
+            "calls": 95
+        },
+        {
+            "name": "[render] RenderLoop.DrawSRPBatcher",
+            "selfMs": 31.5900001296759,
+            "totalMs": 124.95709970081225,
+            "maxSelfMs": 0.2704000113881193,
+            "calls": 1151
+        },
+        {
+            "name": "QueuePrepareIntegrateMainThreadObjects",
+            "selfMs": 29.142499930712803,
+            "totalMs": 29.89109992354497,
+            "maxSelfMs": 0.3702999949455261,
+            "calls": 464
+        },
+        {
+            "name": "Instantiate.Copy",
+            "selfMs": 24.46450023995567,
+            "totalMs": 25.164700233377518,
+            "maxSelfMs": 3.6897000182361809,
+            "calls": 48
+        },
+        {
+            "name": "TransformChangeSystem",
+            "selfMs": 22.630799828650198,
+            "totalMs": 40.65939978741517,
+            "maxSelfMs": 0.23240000009536744,
+            "calls": 7882
+        },
+        {
+            "name": "StdRender.ApplyShader",
+            "selfMs": 20.115299899371168,
+            "totalMs": 21.36349987552967,
+            "maxSelfMs": 0.3060999952722341,
+            "calls": 2117
+        },
+        {
+            "name": "BehaviourUpdate",
+            "selfMs": 19.723299788522128,
+            "totalMs": 122.83089929819107,
+            "maxSelfMs": 0.9341000621279818,
+            "calls": 95
+        },
+        {
+            "name": "EndRenderQueueExtraction",
+            "selfMs": 19.423199891614787,
+            "totalMs": 80.36539977585199,
+            "maxSelfMs": 0.30869999527931216,
+            "calls": 475
+        },
+        {
+            "name": "RenderLoop.Draw",
+            "selfMs": 18.54569999199157,
+            "totalMs": 54.260899781947959,
+            "maxSelfMs": 0.22159998607821763,
+            "calls": 1206
+        },
+        {
+            "name": "Profiler.FlushMemoryCounters",
+            "selfMs": 18.269699975848199,
+            "totalMs": 18.269699975848199,
+            "maxSelfMs": 0.4756999909877777,
+            "calls": 95
+        },
+        {
+            "name": "Inl_RenderCameraStack",
+            "selfMs": 17.38810096225643,
+            "totalMs": 732.8946000935975,
+            "maxSelfMs": 0.4446998448402155,
+            "calls": 190
+        },
+        {
+            "name": "Instantiate.Produce",
+            "selfMs": 17.18240012411843,
+            "totalMs": 18.37540011620149,
+            "maxSelfMs": 2.5520000141550556,
+            "calls": 48
+        },
+        {
+            "name": "ExecuteRenderQueueJob",
+            "selfMs": 17.12429997837171,
+            "totalMs": 17.12429997837171,
+            "maxSelfMs": 0.30230000615119936,
+            "calls": 220
+        },
+        {
+            "name": "[render] MeshSkinning.GPUBatchedSkin",
+            "selfMs": 16.78789994865656,
+            "totalMs": 16.78789994865656,
+            "maxSelfMs": 0.5430999994277954,
+            "calls": 94
+        },
+        {
+            "name": "Inl_ScriptableRenderContext.Submit",
+            "selfMs": 16.37050123917288,
+            "totalMs": 368.9724000990391,
+            "maxSelfMs": 0.30859998264349999,
+            "calls": 190
+        },
+        {
+            "name": "ParticleSystem.Update",
+            "selfMs": 15.512099811676308,
+            "totalMs": 25.40319986641407,
+            "maxSelfMs": 0.3030000036524143,
+            "calls": 95
+        },
+        {
+            "name": "[render] ExecuteRenderGraph",
+            "selfMs": 15.284399567251967,
+            "totalMs": 325.933799341321,
+            "maxSelfMs": 0.1949999171483796,
+            "calls": 190
+        },
+        {
+            "name": "PxScene.simulate",
+            "selfMs": 15.220700062018296,
+            "totalMs": 30.095400005578996,
+            "maxSelfMs": 1.2338000053496217,
+            "calls": 73
+        },
+        {
+            "name": "CanvasUpdate.PreRender",
+            "selfMs": 15.166799968239502,
+            "totalMs": 15.28819996790844,
+            "maxSelfMs": 1.3776000221041614,
+            "calls": 95
+        },
+        {
+            "name": "RenderLoop.DrawSRPBatcher",
+            "selfMs": 14.02840000228025,
+            "totalMs": 91.77549959300086,
+            "maxSelfMs": 0.20220000948756934,
+            "calls": 1151
+        },
+        {
+            "name": "fps.AI.dll!Unity.FPS.AI::EnemyMobile.Update() [Invoke]",
+            "selfMs": 13.851199944103428,
+            "totalMs": 14.142499942448922,
+            "maxSelfMs": 0.256500011717435,
+            "calls": 1140
+        },
+        {
+            "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: Main Camera",
+            "selfMs": 13.108599356026389,
+            "totalMs": 208.63879919052125,
+            "maxSelfMs": 0.43450003722682598,
+            "calls": 95
+        },
+        {
+            "name": "ExecuteRenderGraph",
+            "selfMs": 12.694700395775726,
+            "totalMs": 299.95829959213736,
+            "maxSelfMs": 0.2254999933138606,
+            "calls": 190
+        },
+        {
+            "name": "Idle",
+            "selfMs": 12.53539998854103,
+            "totalMs": 12.53539998854103,
+            "maxSelfMs": 1.176900029182434,
+            "calls": 212
+        },
+        {
+            "name": "RenderLoop.ScheduleDraw",
+            "selfMs": 12.110000383159786,
+            "totalMs": 316.8689992107029,
+            "maxSelfMs": 0.15449998807162047,
+            "calls": 1421
+        },
+        {
+            "name": "Inl_UniversalRenderPipeline.RenderSingleCameraInternal: WeaponCamera",
+            "selfMs": 11.952399937435985,
+            "totalMs": 116.73019993305207,
+            "maxSelfMs": 0.39289995143190029,
+            "calls": 95
+        },
+        {
+            "name": "[render] Canvas.RenderOverlays",
+            "selfMs": 11.93989996734308,
+            "totalMs": 13.246499961765949,
+            "maxSelfMs": 0.21960000589024276,
+            "calls": 570
+        },
+        {
+            "name": "Inl_Setup Light Constants",
+            "selfMs": 11.315499926451594,
+            "totalMs": 12.698699919506908,
+            "maxSelfMs": 0.3078999947756529,
+            "calls": 190
+        },
+        {
+            "name": "[render] Gfx.SetRenderTarget",
+            "selfMs": 11.023199947027024,
+            "totalMs": 11.023199947027024,
+            "maxSelfMs": 0.10239999741315842,
+            "calls": 3617
+        },
+        {
+            "name": "CullScriptable",
+            "selfMs": 10.512600402777025,
+            "totalMs": 121.0018000677228,
+            "maxSelfMs": 0.20430004797526636,
+            "calls": 190
+        },
+        {
+            "name": "PlayerLoop",
+            "selfMs": 10.264000098039105,
+            "totalMs": 1356.27570104599,
+            "maxSelfMs": 0.2285996757564135,
+            "calls": 95
+        },
+        {
+            "name": "UGUI.Rendering.UpdateBatches",
+            "selfMs": 10.163600025327469,
+            "totalMs": 49.87589980661869,
+            "maxSelfMs": 0.5122001050986,
+            "calls": 95
+        },
+        {
+            "name": "[render] RenderLoopDevice.Idle",
+            "selfMs": 10.016699932413758,
+            "totalMs": 14.203699909063289,
+            "maxSelfMs": 0.052000001072883609,
+            "calls": 3968
+        },
+        {
+            "name": "Material.SetPassFast",
+            "selfMs": 10.008399958162045,
+            "totalMs": 10.452099947142415,
+            "maxSelfMs": 0.12249999832420144,
+            "calls": 1425
+        },
+        {
+            "name": "GameObject.ActivateAwakeRecursively",
+            "selfMs": 9.998000228246383,
+            "totalMs": 39.2134002376697,
+            "maxSelfMs": 1.748200039146468,
+            "calls": 81
+        },
+        {
+            "name": "[render] Gfx.InitializeBuffer",
+            "selfMs": 9.92950002746511,
+            "totalMs": 9.92950002746511,
+            "maxSelfMs": 0.817799985408783,
+            "calls": 349
+        },
+        {
+            "name": "[render] AdditionalLightsShadow",
+            "selfMs": 9.901499926229008,
+            "totalMs": 41.208999797701839,
+            "maxSelfMs": 0.32459996081888678,
+            "calls": 95
+        },
+        {
+            "name": "[render] Shadows.Draw",
+            "selfMs": 9.65529996425903,
+            "totalMs": 9.822099961107597,
+            "maxSelfMs": 0.2803000015555881,
+            "calls": 383
+        },
+        {
+            "name": "Shadows.ExecuteDrawShadows",
+            "selfMs": 9.366099966224283,
+            "totalMs": 72.93399982806295,
+            "maxSelfMs": 0.10280000045895577,
+            "calls": 1235
+        },
+        {
+            "name": "Shadows.ExtractShaderPassContext",
+            "selfMs": 9.266099968692288,
+            "totalMs": 9.266099968692288,
+            "maxSelfMs": 0.04349999874830246,
+            "calls": 1235
+        },
+        {
+            "name": "[render] ScheduleGeometryJobs",
+            "selfMs": 9.175499944016338,
+            "totalMs": 9.175499944016338,
+            "maxSelfMs": 0.09600000083446503,
+            "calls": 682
+        },
+        {
+            "name": "RenderLoop.CleanupNodeQueue",
+            "selfMs": 9.046399966071477,
+            "totalMs": 9.046399966071477,
+            "maxSelfMs": 0.12110000103712082,
+            "calls": 1045
+        },
+        {
+            "name": "MeshSkinning.Update",
+            "selfMs": 8.8126999840606,
+            "totalMs": 29.430999912321569,
+            "maxSelfMs": 0.2135000079870224,
+            "calls": 95
+        },
+        {
+            "name": "LateBehaviourUpdate",
+            "selfMs": 8.683400182562764,
+            "totalMs": 40.912300020456317,
+            "maxSelfMs": 0.4009999865593272,
+            "calls": 95
+        },
+        {
+            "name": "[render] MeshSkinning.SkinOnGPU",
+            "selfMs": 8.324100035242737,
+            "totalMs": 28.07729996740818,
+            "maxSelfMs": 0.4114000052213669,
+            "calls": 95
+        },
+        {
+            "name": "PostLateUpdate.FinishFrameRendering",
+            "selfMs": 8.241904658912972,
+            "totalMs": 760.9872026443481,
+            "maxSelfMs": 0.26490015351737386,
+            "calls": 95
+        },
+        {
+            "name": "fps.UI.dll!Unity.FPS.UI::Compass.Update() [Invoke]",
+            "selfMs": 8.13139992399374,
+            "totalMs": 8.182399924684433,
+            "maxSelfMs": 0.2207999974489212,
+            "calls": 190
+        },
+        {
+            "name": "ParticleSystem.Draw",
+            "selfMs": 7.949599961495551,
+            "totalMs": 9.313899941626005,
+            "maxSelfMs": 0.07709999824874103,
+            "calls": 5367
+        },
+        {
+            "name": "IRON.AI.TargetDetection",
+            "selfMs": 7.831099984163302,
+            "totalMs": 11.826799966045656,
+            "maxSelfMs": 0.3188000099180499,
+            "calls": 1140
+        },
+        {
+            "name": "ParticleSystem.ScheduleGeometryJobs",
+            "selfMs": 7.523200006122352,
+            "totalMs": 8.995099999709055,
+            "maxSelfMs": 0.1736999973654747,
+            "calls": 177
+        },
+        {
+            "name": "MeshSkinning.SkinOnGPU",
+            "selfMs": 7.382099941838533,
+            "totalMs": 12.173399936407805,
+            "maxSelfMs": 0.15779999271035195,
+            "calls": 95
+        },
+        {
+            "name": "[render] PlayerEndOfFrame",
+            "selfMs": 7.2591000842512589,
+            "totalMs": 11.941500031447504,
+            "maxSelfMs": 1.169799990952015,
+            "calls": 95
+        },
+        {
+            "name": "Inl_NRPRGComp_ExecuteBeginRenderpassCommand",
+            "selfMs": 7.075499972153921,
+            "totalMs": 7.075499972153921,
+            "maxSelfMs": 0.05269999802112579,
+            "calls": 1615
+        },
+        {
+            "name": "[render] SSAO",
+            "selfMs": 7.016399958563852,
+            "totalMs": 7.016399958563852,
+            "maxSelfMs": 0.18379999697208405,
+            "calls": 950
+        },
+        {
+            "name": "fps.AI.dll!Unity.FPS.AI::EnemyController.Start() [Invoke]",
+            "selfMs": 6.994499949723831,
+            "totalMs": 7.598599940538406,
+            "maxSelfMs": 1.0079000037367223,
+            "calls": 12
+        },
+        {
+            "name": "Unity.Animation.Rigging.dll!UnityEngine.Animations.Rigging::RigBuilder.OnEnable() [Invoke]",
+            "selfMs": 6.637900003894174,
+            "totalMs": 6.88289999961853,
+            "maxSelfMs": 1.2267999538089499,
+            "calls": 8
+        },
+        {
+            "name": "Inl_ExecuteRenderGraph",
+            "selfMs": 6.559200273783063,
+            "totalMs": 76.33999998867512,
+            "maxSelfMs": 0.20869999543356244,
+            "calls": 190
+        },
+        {
+            "name": "Setup Camera Properties",
+            "selfMs": 6.454599947435781,
+            "totalMs": 6.454599947435781,
+            "maxSelfMs": 0.2721000015735626,
+            "calls": 380
+        },
+        {
+            "name": "SceneCulling",
+            "selfMs": 6.447799991234206,
+            "totalMs": 31.23089988529682,
+            "maxSelfMs": 0.2053999900817871,
+            "calls": 190
+        },
+        {
+            "name": "Inl_UniversalRenderPipeline.ComputeShadowCasterCullingInfos",
+            "selfMs": 6.43759997934103,
+            "totalMs": 6.43759997934103,
+            "maxSelfMs": 0.10909999907016754,
+            "calls": 190
+        },
+        {
+            "name": "Main Thread",
+            "selfMs": 6.402992610332149,
+            "totalMs": 1482.1590933799744,
+            "maxSelfMs": 2.3633958085338238,
+            "calls": 96
+        },
+        {
+            "name": "IronRequiem.Runtime.dll!IronRequiem::BigBotCombat.LateUpdate() [Invoke]",
+            "selfMs": 6.3673999886377719,
+            "totalMs": 8.630699973087758,
+            "maxSelfMs": 0.08350000251084566,
+            "calls": 380
+        },
+        {
+            "name": "Inl_SSAO",
+            "selfMs": 6.365699985588435,
+            "totalMs": 6.365699985588435,
+            "maxSelfMs": 0.2948000133037567,
+            "calls": 950
+        },
+        {
+            "name": "fps.UI.dll!Unity.FPS.UI::AmmoCounter.Update() [Invoke]",
+            "selfMs": 6.263400008312601,
+            "totalMs": 7.794699973193929,
+            "maxSelfMs": 0.0768999966676347,
+            "calls": 380
+        },
+        {
+            "name": "Physics.RaycastNonAlloc",
+            "selfMs": 6.181399970315397,
+            "totalMs": 6.181399970315397,
+            "maxSelfMs": 0.07249999791383743,
+            "calls": 1370
+        },
+        {
+            "name": "StdShadow.ApplyShader",
+            "selfMs": 6.065899979628739,
+            "totalMs": 6.61849997122772,
+            "maxSelfMs": 0.07469999883323908,
+            "calls": 580
+        },
+        {
+            "name": "fps.Gameplay.dll!Unity.FPS.Gameplay::PlayerCharacterController.Update() [Invoke]",
+            "selfMs": 6.040999969700351,
+            "totalMs": 7.45459995791316,
+            "maxSelfMs": 0.13469999935477973,
+            "calls": 95
+        },
+        {
+            "name": "ParticleSystem.Update2",
+            "selfMs": 5.944699924446468,
+            "totalMs": 5.976899923938618,
+            "maxSelfMs": 0.11159999668598175,
+            "calls": 6711
+        },
+        {
+            "name": "SSAO",
+            "selfMs": 5.898499970004195,
+            "totalMs": 6.380799961654702,
+            "maxSelfMs": 0.08110000076703727,
+            "calls": 950
+        },
+        {
+            "name": "Canvas.BuildBatch",
+            "selfMs": 5.870599976507947,
+            "totalMs": 5.870599976507947,
+            "maxSelfMs": 0.1200999990105629,
+            "calls": 397
+        },
+        {
+            "name": "[render] Gfx.PresentFrame",
+            "selfMs": 5.839300110004842,
+            "totalMs": 44.40320008993149,
+            "maxSelfMs": 0.18460004101507367,
+            "calls": 95
+        }
+    ],
+    "note": "Development Player CPU profiler, wave 3, 6-11 s (staged damage + shooting). Ranked by self time; divide by frames for per-frame cost."
+}

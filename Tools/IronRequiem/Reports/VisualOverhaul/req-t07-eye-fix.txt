@@ -1,0 +1,7 @@
+failed
+2026-11-08T16:41:52.7755765-04:00
+System.TypeLoadException: Could not load type 'IronRequiem.Editor.VisualOverhaulT07EyeFix' from assembly 'IronRequiem.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+  at (wrapper managed-to-native) System.Reflection.Assembly.InternalGetType(System.Reflection.Assembly,System.Reflection.Module,string,bool,bool)
+  at System.Reflection.RuntimeAssembly.GetType (System.String name, System.Boolean throwOnError, System.Boolean ignoreCase) [0x00022] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.Reflection.Assembly.GetType (System.String name, System.Boolean throwOnError) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at IronRequiem.Editor.VisualOverhaulDriver.Tick () [0x0031b] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\VisualOverhaul\VisualOverhaulDriver.cs:73 

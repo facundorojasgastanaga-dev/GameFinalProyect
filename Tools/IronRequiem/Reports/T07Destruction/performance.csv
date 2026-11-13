@@ -1,0 +1,8 @@
+Editor only; AI disabled equally; animations/foot IK active; no controlled Player/GPU benchmark.
+GPU=NVIDIA GeForce RTX 4050 Laptop GPU; screen=1001x342; quality=Default; VSync=0
+label,enemies,frames,mean_ms,p95_ms,main_thread_ms,gc_bytes,max_armor,max_bursts,max_particles
+original_16_intact,16,180,7.938,10.166,7.849,12077.3,0,0,151
+variant_16_intact,16,180,8.536,9.812,8.477,12257.0,0,0,161
+variant_16_49percent_transient,16,180,9.461,11.882,9.364,12279.1,16,0,48
+variant_16_24percent,16,180,9.092,11.210,8.635,12240.2,16,0,103
+variant_16_death_tail,16,180,8.317,10.276,7.902,12672.8,0,16,448

@@ -1,0 +1,138 @@
+PREFAB Assets/IronRequiem/Prefabs/SecondaryShotgun/T07_HitFeedback_v04_NavThrottle.prefab comps=Transform,EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,CapsuleCollider,Damageable,NavigationModule,Animator,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression,EnemyPowerIndicators,RobotHitFeedback,EnemyExecutionSource,EnemyCannonChargePresentation
+  T07_HitFeedback_v04_NavThrottle act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,CapsuleCollider,Damageable,NavigationModule,Animator,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression,EnemyPowerIndicators,RobotHitFeedback,EnemyExecutionSource,EnemyCannonChargePresentation
+  BasicRobot act=True lp=(0.000, 0.768, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Animator
+  BasicRobot/Bottom act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit)] en=False wb=(0.000, 0.991, -0.006)/(0.646, 0.550, 0.523) mesh=Bottom v=1584 
+  BasicRobot/EyeBall act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit),HoverBot_Glass(Universal Render Pipeline/Lit),HoverBot_Eye(Universal Render Pipeline/Lit)] en=False wb=(0.000, 1.371, -0.021)/(0.337, 0.334, 0.292) mesh=EyeBall v=618 
+  BasicRobot/Robot_Root_C_Jnt act=True lp=(0.000, 0.600, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt act=True lp=(0.000, -0.286, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt act=True lp=(-0.161, -0.052, -0.042) le=(316, 180, 199) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt/Bot_L_Wing02_Jnt act=True lp=(0.000, 0.055, 0.000) le=(340, 7, 6) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt/Bot_L_Wing02_Jnt/Bot_L_Wing03_Jnt_End act=True lp=(0.000, 0.252, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt act=True lp=(0.160, -0.052, -0.042) le=(44, 0, 19) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt/Bot_R_Wing02_Jnt act=True lp=(0.000, -0.055, 0.000) le=(340, 7, 6) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt/Bot_R_Wing02_Jnt/Bot_R_Wing03_Jnt_End act=True lp=(0.000, -0.252, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (2) act=True lp=(0.074, 0.110, -0.085) le=(335, 124, 296) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (3) act=True lp=(-0.163, 0.001, 0.189) le=(320, 303, 103) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/IrisBlade_C_Jnt act=True lp=(0.000, 0.000, 0.053) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_Alert act=True lp=(0.000, 0.419, 0.019) le=(0, 0, 0) ls=(0.360, 0.360, 0.360) R[ExclamationMark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_EnemyMuzzleFlash act=True lp=(0.000, 0.000, 0.199) le=(270, 0, 0) ls=(0.751, 0.751, 0.751) R[MuzzleFlash(Universal Render Pipeline/Particles/Unlit),null] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt act=True lp=(0.000, 0.255, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Front_Panel_C_Jnt act=True lp=(0.000, 0.000, 0.166) le=(0, 270, 225) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Front_Panel_C_Jnt/Front_Panel_C_Jnt_End act=True lp=(0.000, 0.185, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt act=True lp=(-0.231, 0.000, 0.000) le=(0, 0, 50) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt/VFX_AngrySteam act=True lp=(0.000, 0.000, 0.000) le=(0, 180, 180) ls=(1.000, 1.000, 1.000) R[SmokeAngry(Universal Render Pipeline/Particles/Lit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt act=True lp=(0.230, 0.000, 0.000) le=(0, 180, 230) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt/VFX_AngrySteam act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[SmokeAngry(Universal Render Pipeline/Particles/Lit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks act=True lp=(0.121, 0.231, 0.166) le=(313, 48, 266) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks (1) act=True lp=(-0.010, 0.232, -0.107) le=(308, 205, 96) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Top act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit)] en=False wb=(0.000, 1.593, 0.022)/(0.666, 0.307, 0.685) mesh=Top v=2625 
+  WeaponRoot act=True lp=(0.300, 1.092, 0.027) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) WeaponController,AudioSource
+  WeaponRoot/Weapon_EyeLazers/GunRoot act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/GunMuzzle act=True lp=(0.000, 0.000, -0.026) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/CannonMount act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle act=True lp=(0.000, 0.000, 0.620) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta act=False lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyCore act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(0.035, 0.035, 0.035) 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyCore/HotCoreAndHalo act=True lp=(0.000, 0.000, 1.000) le=(0, 0, 0) ls=(1.650, 1.650, 1.650) R[EnergyCore(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.300, 1.092, 0.682)/(0.058, 0.058, 0.000) mesh=CoreQuad v=4 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/OuterFrame act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[EnergyFrame(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.300, 1.092, 0.647)/(1.090, 1.090, 0.000) mesh=AngularFrame v=16 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/InnerFrame act=True lp=(0.000, 0.000, 0.018) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[EnergyFrame(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.300, 1.092, 0.665)/(1.090, 1.090, 0.000) mesh=AngularFrame v=16 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyRays act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[EnergyFrame(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.260, 1.092, 0.687)/(0.980, 0.918, 0.080) mesh=EnergyRays v=18 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergySpindle act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[EnergyFrame(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.300, 1.092, 1.147)/(1.000, 0.866, 1.000) mesh=EnergySpindle v=12 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/ConvergingSparks act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[EnergySparks(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual act=True lp=(0.000, 0.000, 0.000) le=(0, 180, 180) ls=(100.000, 100.000, 100.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit)] en=True wb=(0.313, 1.152, 0.301)/(0.215, 0.436, 0.679) mesh=CannonModule_LOD0 v=2560 CannonAmmo,AudioSource,CannonOverdrive,DamageArea,CannonExplosion,StolenCannon,LODGroup
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual/CriticalSmoke act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[MechanicParticles(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual/LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit)] en=True wb=(0.312, 1.152, 0.301)/(0.213, 0.436, 0.679) mesh=CannonModule_LOD1 v=1591 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual/LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit)] en=True wb=(0.304, 1.151, 0.292)/(0.197, 0.432, 0.660) mesh=CannonModule_LOD2 v=779 
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint act=True lp=(0.000, 0.000, 0.030) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Health,Damageable,SphereCollider,DetachableCannon
+  WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint/JointIndicator act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(0.190, 0.110, 0.080) R[RescueOrange(Universal Render Pipeline/Lit)] en=True wb=(0.300, 1.092, 0.057)/(0.190, 0.110, 0.080) mesh=Cube v=24 
+  HitBox act=True lp=(0.000, 1.359, 0.000) le=(270, 0, 0) ls=(1.000, 1.000, 1.000) mesh=Sphere v=515 SphereCollider,Damageable
+  HealthBarPivot act=True lp=(0.000, 2.101, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  HealthBarPivot/Canvas act=True lp=(0.000, 0.000, -0.123) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Canvas,CanvasScaler,GraphicRaycaster
+  HealthBarPivot/Canvas/ImageBackground act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  HealthBarPivot/Canvas/ImageFill act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  ShadowProjector act=True lp=(0.000, 1.017, 0.000) le=(90, 0, 0) ls=(1.000, 1.000, 1.000) Projector
+  DetectionModule act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) DetectionModule
+  T07_Visual act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  T07_Visual/Body act=True lp=(0.000, 0.000, 0.000) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) R[T07_URP(Universal Render Pipeline/Lit)] en=False wb=(-0.039, 1.025, -0.015)/(0.861, 2.049, 0.442) mesh=Body_LOD0 v=12151 
+  T07_Visual/Body/LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[T07_URP(Universal Render Pipeline/Lit)] en=False wb=(-0.038, 1.025, -0.015)/(0.863, 2.050, 0.441) mesh=Body_LOD1 v=7395 
+  T07_Visual/Body/LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[T07_URP(Universal Render Pipeline/Lit)] en=False wb=(-0.043, 1.026, -0.017)/(0.860, 2.050, 0.436) mesh=Body_LOD2 v=3860 
+  T07_Visual/CannonModule act=False lp=(0.300, 1.092, 0.027) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) R[T07_URP(Universal Render Pipeline/Lit)] en=True wb=(0.313, 0.818, 0.088)/(0.215, 0.679, 0.436) mesh=CannonModule_LOD0 v=2560 
+  AimPoint act=True lp=(0.000, 1.400, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Head act=True lp=(0.000, 1.650, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Shoulder_-1 act=True lp=(-0.330, 1.510, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Elbow_-1 act=True lp=(-0.340, 1.170, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Hip_-1 act=True lp=(-0.140, 0.940, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Knee_-1 act=True lp=(-0.170, 0.560, 0.010) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Shoulder_1 act=True lp=(0.330, 1.510, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Elbow_1 act=True lp=(0.340, 1.170, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Hip_1 act=True lp=(0.140, 0.940, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  ArticulationGuides_NoRig/Knee_1 act=True lp=(0.170, 0.560, 0.010) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) LODGroup
+  Body/AnimatedRig act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/Body_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.010, 0.963, 0.002)/(2.459, 3.828, 2.131) mesh=Body_LOD0 v=10595 
+  Body/AnimatedRig/Body_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.010, 0.964, 0.001)/(2.464, 3.827, 2.130) mesh=Body_LOD1 v=6686 
+  Body/AnimatedRig/Body_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.005, 0.966, -0.002)/(2.456, 3.823, 2.117) mesh=Body_LOD2 v=3620 
+  Body/AnimatedRig/T07Rig act=True lp=(0.000, 0.000, 0.000) le=(270, 0, 0) ls=(100.000, 100.000, 100.000) 
+  Body/AnimatedRig/T07Rig/Root act=True lp=(0.000, 0.000, 0.000) le=(90, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips act=True lp=(0.000, 0.009, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine act=True lp=(0.000, 0.002, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest act=True lp=(0.000, 0.002, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head act=True lp=(0.000, 0.003, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/PowerIndicator act=True lp=(0.000, 0.001, 0.001) le=(303, 19, 0) ls=(0.001, 0.000, 0.000) R[RobotStatus_Amber(Universal Render Pipeline/Lit)] en=True wb=(0.001, 1.723, 0.104)/(0.094, 0.024, 0.055) mesh=Cube v=24 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L act=True lp=(0.003, 0.000, 0.000) le=(2, 177, 177) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L/Forearm_L act=True lp=(0.000, 0.004, 0.000) le=(1, 0, 360) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L/Forearm_L/Hand_L act=True lp=(0.000, 0.003, 0.000) le=(359, 356, 3) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L/ArmorSocket_Shoulder_L act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R act=True lp=(-0.003, 0.000, 0.000) le=(2, 183, 183) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R/Forearm_R act=True lp=(0.000, 0.004, 0.000) le=(1, 360, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R/Forearm_R/Hand_R act=True lp=(0.000, 0.003, 0.000) le=(359, 4, 357) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R/ArmorSocket_Shoulder_R act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/ArmorSocket_Pectoral_L act=True lp=(0.001, 0.000, 0.001) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/ArmorSocket_Pectoral_R act=True lp=(-0.001, 0.000, 0.001) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/DamageSparks act=True lp=(0.000, 0.000, 0.002) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[WarmEnergy(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/BodyDamageSmoke act=True lp=(0.001, 0.000, 0.002) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[ResidualSmoke(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_L act=True lp=(0.001, 0.000, 0.000) le=(1, 177, 177) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_L/Shin_L act=True lp=(0.000, 0.004, 0.000) le=(359, 358, 2) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_L/Shin_L/Foot_L act=True lp=(0.000, 0.004, 0.000) le=(292, 358, 2) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_R act=True lp=(-0.001, 0.000, 0.000) le=(1, 183, 183) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_R/Shin_R act=True lp=(0.000, 0.004, 0.000) le=(359, 2, 358) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/T07Rig/Root/Hips/Thigh_R/Shin_R/Foot_R act=True lp=(0.000, 0.004, 0.000) le=(292, 2, 358) ls=(1.000, 1.000, 1.000) 
+  Body/AnimatedRig/Plate_Pectoral_L act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) RobotArmorPiece
+  Body/AnimatedRig/Plate_Pectoral_L/Armor_Pectoral_L_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.125, 1.410, 0.145)/(0.406, 0.406, 0.287) mesh=Armor_Pectoral_L_LOD0 v=250 
+  Body/AnimatedRig/Plate_Pectoral_L/Armor_Pectoral_L_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.125, 1.410, 0.145)/(0.406, 0.406, 0.287) mesh=Armor_Pectoral_L_LOD1 v=177 
+  Body/AnimatedRig/Plate_Pectoral_L/Armor_Pectoral_L_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.124, 1.410, 0.145)/(0.402, 0.405, 0.285) mesh=Armor_Pectoral_L_LOD2 v=110 
+  Body/AnimatedRig/Plate_Shoulder_R act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) RobotArmorPiece
+  Body/AnimatedRig/Plate_Shoulder_R/Armor_Shoulder_R_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.340, 1.479, -0.025)/(0.506, 0.502, 0.584) mesh=Armor_Shoulder_R_LOD0 v=638 
+  Body/AnimatedRig/Plate_Shoulder_R/Armor_Shoulder_R_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.340, 1.480, -0.026)/(0.505, 0.505, 0.583) mesh=Armor_Shoulder_R_LOD1 v=401 
+  Body/AnimatedRig/Plate_Shoulder_R/Armor_Shoulder_R_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.337, 1.479, -0.029)/(0.492, 0.496, 0.573) mesh=Armor_Shoulder_R_LOD2 v=230 
+  Body/AnimatedRig/Plate_Pectoral_R act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) RobotArmorPiece
+  Body/AnimatedRig/Plate_Pectoral_R/Armor_Pectoral_R_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.115, 1.410, 0.147)/(0.378, 0.397, 0.280) mesh=Armor_Pectoral_R_LOD0 v=238 
+  Body/AnimatedRig/Plate_Pectoral_R/Armor_Pectoral_R_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.115, 1.410, 0.147)/(0.377, 0.397, 0.281) mesh=Armor_Pectoral_R_LOD1 v=163 
+  Body/AnimatedRig/Plate_Pectoral_R/Armor_Pectoral_R_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.117, 1.410, 0.147)/(0.384, 0.399, 0.283) mesh=Armor_Pectoral_R_LOD2 v=94 
+  Body/AnimatedRig/Plate_Shoulder_L act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) RobotArmorPiece
+  Body/AnimatedRig/Plate_Shoulder_L/Armor_Shoulder_L_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.308, 1.477, -0.027)/(0.442, 0.471, 0.554) mesh=Armor_Shoulder_L_LOD0 v=525 
+  Body/AnimatedRig/Plate_Shoulder_L/Armor_Shoulder_L_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.308, 1.476, -0.027)/(0.443, 0.469, 0.554) mesh=Armor_Shoulder_L_LOD1 v=329 
+  Body/AnimatedRig/Plate_Shoulder_L/Armor_Shoulder_L_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(0.305, 1.474, -0.030)/(0.428, 0.460, 0.541) mesh=Armor_Shoulder_L_LOD2 v=184 
+  Body/AnimatedRig/SeverableRightArm act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) RobotDetachedArm
+  Body/AnimatedRig/SeverableRightArm/Arm_R_LOD0 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.334, 1.114, -0.009)/(1.066, 1.686, 1.127) mesh=T07_Arm_R_LOD0 v=5210 
+  Body/AnimatedRig/SeverableRightArm/Arm_R_LOD1 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.336, 1.138, -0.029)/(1.073, 1.730, 1.107) mesh=T07_Arm_R_LOD1 v=3181 
+  Body/AnimatedRig/SeverableRightArm/Arm_R_LOD2 act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Hit_T07_URP_f8f0f1(Universal Render Pipeline/Lit),Hit_ExposedMechanism_2a213b(Universal Render Pipeline/Lit)] en=True wb=(-0.347, 1.118, 0.067)/(1.097, 1.734, 1.314) mesh=T07_Arm_R_LOD2 v=1639 
+  FootPlacementRig act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Rig
+  FootPlacementRig/Leg_L act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) TwoBoneIKConstraint
+  FootPlacementRig/FootTarget_L act=True lp=(0.170, 0.120, 0.015) le=(70, 180, 180) ls=(1.000, 1.000, 1.000) 
+  FootPlacementRig/KneeHint_L act=True lp=(0.170, 0.570, 0.665) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  FootPlacementRig/Leg_R act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) TwoBoneIKConstraint
+  FootPlacementRig/FootTarget_R act=True lp=(-0.170, 0.120, 0.015) le=(70, 180, 180) ls=(1.000, 1.000, 1.000) 
+  FootPlacementRig/KneeHint_R act=True lp=(-0.170, 0.570, 0.665) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  RobotLocalizedHitSparks act=True lp=(0.074, 0.110, -0.085) le=(335, 124, 296) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+CHILDWEAPON WeaponRoot/Weapon_EyeLazers flash=Assets/IronRequiem/Prefabs/SecondaryShotgun/T07_HitFeedback_v04_NavThrottle.prefab proj=Assets/IronRequiem/Prefabs/CombatFollowup/T07_ChargedProjectile.prefab delay=0.85
+INDICATORS Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/PowerIndicator:RobotStatus_Amber(Universal Render Pipeline/Lit)
+DAMAGE mats=Hit_DamageStage_1_4bf558,Hit_DamageStage_2_e653fe,Hit_DamageStage_3_34c1fc body=18 interior=Hit_ExposedMechanism_2a213b burst=Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab
+ENEMYCTRL bodyMat=null charge=1.2 deathVfx=Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab
+HITFEEDBACK sparks=RobotLocalizedHitSparks count=6 body=21

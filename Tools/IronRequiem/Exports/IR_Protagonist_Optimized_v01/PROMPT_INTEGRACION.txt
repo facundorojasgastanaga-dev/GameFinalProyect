@@ -1,0 +1,43 @@
+Trabaja como desarrollador de Unity, artista técnico y animador de IRON REQUIEM. Integra únicamente el protagonista optimizado y su representación modular de manos/armas. Lee AGENTS.md, la checklist y los informes recientes antes de editar. La preparación de estos archivos no los ha importado todavía a Unity.
+
+PAQUETE
+Usa IR_Protagonist_Optimized_v01.zip, o su carpeta ya disponible en:
+C:/Users/gehbd/ProyectoGameFinal/Tools/IronRequiem/Exports/IR_Protagonist_Optimized_v01
+Lee primero README.md y Verification/geometry.json y roundtrip.json.
+
+ARCHIVOS
+- IR_Protagonist_LOD0.fbx: cuerpo completo cercano, cinco piezas, 21.108 triángulos.
+- IR_Protagonist_LOD1.fbx: 11.628 triángulos.
+- IR_Protagonist_LOD2.fbx: 6.122 triángulos.
+- IR_Protagonist_FPS_Parts.fbx: solo antebrazos y manos LOD0, 6.070 triángulos.
+- IR_Protagonist_Editable.blend: editable con geometría y texturas empaquetadas.
+- Equivalentes GLB y carpeta Textures, con mapas PBR 2048 y metallic/smoothness para URP.
+
+INSPECCIÓN REAL
+Las fuentes tenían 50.000 triángulos y no traían esqueleto, pesos ni clips. Los archivos optimizados siguen siendo mallas estáticas en pose A; los sockets son guías, no huesos. No los presentes como personajes ya animados. Las manos del LOD0 conservan casi toda su geometría fuente, pero su topología generada puede necesitar limpieza para cerrar un puño y agarrar armas correctamente.
+
+1. IMPORTAR SIN REEMPLAZAR LA ARQUITECTURA
+Respalda únicamente los archivos afectados. Importa copias bajo Assets/IronRequiem/Art/Player y crea una variante de prefab. Conserva las fuentes externas y la entrega optimizada.
+Reutiliza PlayerCharacterController, PlayerInputHandler, PlayerWeaponsManager, WeaponController, StolenWeaponCarrier y los sistemas actuales de cámara, dash y slide. No crees otro controlador FPS, inventario o autoridad de movimiento. No cambies controles, velocidad, daño, energía o funcionamiento de las armas como consecuencia de integrar el modelo.
+Empieza en un laboratorio separado. No guardes una escena con cambios pendientes del usuario. Mantén disponible el jugador anterior como respaldo.
+
+2. PREPARAR UN RIG VERIFICABLE
+Inspecciona las piezas y crea el rig/pesos necesarios para cuerpo y manos, con dedos articulados cuando la geometría lo permita. Conserva UV, materiales, silueta y pivotes. Comparte el esqueleto y las referencias de articulación entre los LOD y verifica deformaciones; limpiar topología solo donde sea necesario para los movimientos previstos.
+Normaliza la importación de ejes: Blender usa Z arriba y -Y como frente. La entrega mide aproximadamente 1,80 m y tiene origen del root en el suelo. No asumas escala u orientación por el nombre del formato: verifica bounds, pose y sockets dentro de Unity.
+
+3. MANOS Y MODOS VISUALES
+Las piezas se llaman Body_LOD#, Forearm_L_LOD#, Forearm_R_LOD#, Hand_L_LOD# y Hand_R_LOD#. Los archivos contienen guías Elbow_L/R, Wrist_L/R y ModuleSocket_L/R.
+- Mano normal / melee: mostrar las manos normales y preparar las poses de puño/golpe necesarias. Si el combate melee todavía no existe, registra esa mecánica como pendiente de alcance y no inventes teclas, combos, daño o balance al integrar los modelos.
+- Mano de disparo: acoplar el módulo de pistola ya existente a la guía correspondiente, ajustándolo visualmente. Ocultar únicamente la mano/pieza que realmente sustituya ese módulo, sin ocultar el brazo entero ni dibujar dedos dentro del arma.
+- Arma robada: reutilizar el arma temporal y su socket/inventario actuales; adaptar las manos y su pose a esa arma, conservando carga, energía, humo crítico, lanzamiento y explosión. Al soltarla o agotarla, restaurar la representación normal o de pistola según el estado real del inventario.
+Usa el estado actual del sistema de armas como fuente para la presentación. Evita un segundo inventario o una máquina de estados que pueda contradecir al existente. Las manos izquierdas/derechas y las armas no pueden duplicarse al cambiar rápido, pausar, morir o perder el módulo.
+
+4. VISTA FPS Y LOD
+IR_Protagonist_FPS_Parts es una alternativa para la representación de primera persona: no superpongas sus manos con las del cuerpo completo en la misma cámara. Respeta PlayerBodyPresentation y las máscaras de cámaras/sombras. Ajusta encuadre, ADS, retroceso y puntos de disparo sin mover la cámara de gameplay ni cambiar la trayectoria por error.
+Los archivos LOD0/1/2 contienen versiones separadas, no un LODGroup ya configurado. Configúralo mediante APIs del Editor. Las cinco piezas de cada nivel deben corresponder al mismo nivel; revisa las uniones de muñeca/codo y la visibilidad de manos durante los cambios. Usa LOD0 para las manos FPS cercanas salvo una medida que justifique otra opción.
+Crea un material URP/Lit compartido con BaseColor sRGB, Normal como normal map y MetalSmooth en lineal (metallic R, smoothness A). No conectes Roughness directamente como smoothness. Revisa si hacen falta optimizaciones adicionales con medidas, no por suposición.
+
+5. VERIFICACIÓN Y CIERRE
+Verifica primero importación, compilación, referencias, escala y ausencia de scripts ausentes. Prueba luego en Play Mode: cámara/movimiento/dash/slide, puño o pose normal, pistola, recoger arma enemiga, cargar/disparar, cambiar de arma, lanzar, agotamiento, humo, explosión, pausa y muerte. Comprueba visibilidad de todas las manos/LOD, clipping y alineación de muzzle durante movimiento y apuntado.
+No declares probado un control por llamar directamente a una función. Registra las pruebas reales, capturas y pendientes. Mantén separadas la reducción de triángulos y las mejoras de FPS medidas.
+Actualiza solo el bloque de protagonista correspondiente en la checklist. No empieces blur, optimización general, destrucción del enemigo u otras tareas por esta integración. No compres assets, consumas créditos ni instales paquetes experimentales.

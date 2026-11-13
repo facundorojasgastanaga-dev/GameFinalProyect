@@ -1,0 +1,45 @@
+PREFAB Assets/IronRequiem/Prefabs/CombatFollowup/HoverBot_CombatPolish.prefab comps=Transform,EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,PooledEnemyDeathBurst
+  HoverBot_CombatPolish act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) EnemyController,EnemyMobile,Health,WorldspaceHealthBar,NavMeshAgent,Actor,CompassElement,AudioSource,PooledEnemyDeathBurst
+  BasicRobot act=True lp=(0.000, 0.768, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Animator
+  BasicRobot/Bottom act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit)] en=True wb=(0.000, 0.991, -0.006)/(0.646, 0.550, 0.523) mesh=Bottom v=1584 
+  BasicRobot/EyeBall act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit),HoverBot_Glass(Universal Render Pipeline/Lit),HoverEye(Universal Render Pipeline/Lit)] en=True wb=(0.000, 1.371, -0.021)/(0.337, 0.334, 0.292) mesh=EyeBall v=618 
+  BasicRobot/Robot_Root_C_Jnt act=True lp=(0.000, 0.600, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt act=True lp=(0.000, -0.286, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt act=True lp=(-0.161, -0.052, -0.042) le=(316, 180, 199) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt/Bot_L_Wing02_Jnt act=True lp=(0.000, 0.055, 0.000) le=(340, 7, 6) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_L_Wing01_Jnt/Bot_L_Wing02_Jnt/Bot_L_Wing03_Jnt_End act=True lp=(0.000, 0.252, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt act=True lp=(0.160, -0.052, -0.042) le=(44, 0, 19) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt/Bot_R_Wing02_Jnt act=True lp=(0.000, -0.055, 0.000) le=(340, 7, 6) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/Bot_R_Wing01_Jnt/Bot_R_Wing02_Jnt/Bot_R_Wing03_Jnt_End act=True lp=(0.000, -0.252, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (2) act=True lp=(0.074, 0.110, -0.085) le=(335, 124, 296) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (3) act=True lp=(-0.163, 0.001, 0.189) le=(320, 303, 103) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/IrisBlade_C_Jnt act=True lp=(0.000, 0.000, 0.053) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_Alert act=True lp=(0.000, 0.419, 0.019) le=(0, 0, 0) ls=(0.360, 0.360, 0.360) R[ExclamationMark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_EnemyMuzzleFlash act=True lp=(0.000, 0.000, 0.199) le=(270, 0, 0) ls=(0.751, 0.751, 0.751) R[MuzzleFlash(Universal Render Pipeline/Particles/Unlit),null] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt act=True lp=(0.000, 0.255, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Front_Panel_C_Jnt act=True lp=(0.000, 0.000, 0.166) le=(0, 270, 225) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Front_Panel_C_Jnt/Front_Panel_C_Jnt_End act=True lp=(0.000, 0.185, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt act=True lp=(-0.231, 0.000, 0.000) le=(0, 0, 50) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt/VFX_AngrySteam act=True lp=(0.000, 0.000, 0.000) le=(0, 180, 180) ls=(1.000, 1.000, 1.000) R[SmokeAngry(Universal Render Pipeline/Particles/Lit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt act=True lp=(0.230, 0.000, 0.000) le=(0, 180, 230) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt/VFX_AngrySteam act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[SmokeAngry(Universal Render Pipeline/Particles/Lit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks act=True lp=(0.121, 0.231, 0.166) le=(313, 48, 266) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks (1) act=True lp=(-0.010, 0.232, -0.107) le=(308, 205, 96) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  BasicRobot/Top act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[HoverBot_Body(Universal Render Pipeline/Lit)] en=True wb=(0.000, 1.593, 0.022)/(0.666, 0.307, 0.685) mesh=Top v=2625 
+  WeaponRoot act=True lp=(0.000, 1.347, 0.256) le=(0, 180, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers act=True lp=(0.000, 0.000, 0.052) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) WeaponController,AudioSource
+  WeaponRoot/Weapon_EyeLazers/GunRoot act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  WeaponRoot/Weapon_EyeLazers/GunMuzzle act=True lp=(0.000, 0.000, -0.026) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  HitBox act=True lp=(0.000, 1.359, 0.000) le=(270, 0, 0) ls=(1.000, 1.000, 1.000) mesh=Sphere v=515 SphereCollider,Damageable
+  HealthBarPivot act=True lp=(0.000, 2.101, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  HealthBarPivot/Canvas act=True lp=(0.000, 0.000, -0.123) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Canvas,CanvasScaler,GraphicRaycaster
+  HealthBarPivot/Canvas/ImageBackground act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  HealthBarPivot/Canvas/ImageFill act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  ShadowProjector act=True lp=(0.000, 1.017, 0.000) le=(90, 0, 0) ls=(1.000, 1.000, 1.000) Projector
+  DetectionModule act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) DetectionModule
+CHILDWEAPON WeaponRoot/Weapon_EyeLazers flash=Assets/IronRequiem/Prefabs/CombatFollowup/HoverBot_CombatPolish.prefab proj=Assets/IronRequiem/Prefabs/FastCombat/EnemyProjectile_0.prefab delay=0.8
+ENEMYCTRL bodyMat=HoverBot_Body charge=0 deathVfx=Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab

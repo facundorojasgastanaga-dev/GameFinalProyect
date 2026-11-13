@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.1260184">
+  <test-suite type="TestSuite" id="1000" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.126018" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1005" name="IronRequiem.EditModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.EditModeTests.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.110361" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="20492" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1006" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.108883" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1007" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.108078" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="CharacterAssetTests" fullname="IronRequiem.Tests.CharacterAssetTests" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="1.104865" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1003" name="EnemyHasIndependentDamageJointAndRealMaterialMaps" fullname="IronRequiem.Tests.CharacterAssetTests.EnemyHasIndependentDamageJointAndRealMaterialMaps" methodname="EnemyHasIndependentDamageJointAndRealMaterialMaps" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="1631430627" result="Passed" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:51Z" duration="0.098467" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" fullname="IronRequiem.Tests.CharacterAssetTests.LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" methodname="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="1441420638" result="Failed" label="Error" start-time="2026-10-29 06:09:51Z" end-time="2026-10-29 06:09:52Z" duration="0.962794" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.ArgumentException : Invalid SceneManagerSetup:
+ No loaded scene found.
+ One active scene is required. Number of active scenes: 0]]></message>
+                <stack-trace><![CDATA[  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.RestoreSceneManagerSetup(UnityEditor.SceneManagement.SceneSetup[])
+  at IronRequiem.Tests.CharacterAssetTests.LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts () [0x0011e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\EditMode\CharacterAssetTests.cs:61 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 ]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1002" name="PlayerRetainsTemplateControllerCameraAndWeaponReferences" fullname="IronRequiem.Tests.CharacterAssetTests.PlayerRetainsTemplateControllerCameraAndWeaponReferences" methodname="PlayerRetainsTemplateControllerCameraAndWeaponReferences" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="1667725351" result="Passed" start-time="2026-10-29 06:09:52Z" end-time="2026-10-29 06:09:52Z" duration="0.009207" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

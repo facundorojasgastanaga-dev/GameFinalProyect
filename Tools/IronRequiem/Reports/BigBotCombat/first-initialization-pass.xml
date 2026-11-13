@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="8.0340491">
+  <test-suite type="TestSuite" id="1100" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="79" result="Failed" site="Child" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="8.034049" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1094" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="79" result="Failed" site="Child" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="8.013155" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1095" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="79" result="Failed" site="Child" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="8.008677" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1029" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="79" result="Failed" site="Child" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="8.000829" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="BigBotCombatTests" fullname="IronRequiem.Tests.BigBotCombatTests" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:56Z" duration="7.984876" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1005" name="AlternatingProjectilesLeaveMouthDamagePlayerAndIgnoreOwner" fullname="IronRequiem.Tests.BigBotCombatTests.AlternatingProjectilesLeaveMouthDamagePlayerAndIgnoreOwner" methodname="AlternatingProjectilesLeaveMouthDamagePlayerAndIgnoreOwner" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1386894421" result="Failed" start-time="2026-11-01 07:48:48Z" end-time="2026-11-01 07:48:51Z" duration="2.921469" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object
+TearDown : Unhandled log message: '[Exception] UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1007" name="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" fullname="IronRequiem.Tests.BigBotCombatTests.DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" methodname="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="136878307" result="Failed" label="Error" start-time="2026-11-01 07:48:51Z" end-time="2026-11-01 07:48:52Z" duration="0.878276" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : UnityEngine.MissingReferenceException : The object of type 'IronRequiem.BigBotCombat' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[--SetUp
+  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponentFastPath (System.Type type) [0x00006] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponent[T] () [0x00000] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at IronRequiem.Tests.BigBotCombatTests+<Setup>d__10.MoveNext () [0x00142] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotCombatTests.cs:31 
+  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35 
+  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:155 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></output>
+            </test-case>
+            <test-case id="1003" name="DetectsPursuesAndRespectsLargeBodyAroundCover" fullname="IronRequiem.Tests.BigBotCombatTests.DetectsPursuesAndRespectsLargeBodyAroundCover" methodname="DetectsPursuesAndRespectsLargeBodyAroundCover" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1322748309" result="Failed" start-time="2026-11-01 07:48:52Z" end-time="2026-11-01 07:48:53Z" duration="0.812848" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object
+TearDown : Unhandled log message: '[Exception] UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></output>
+            </test-case>
+            <test-case id="1004" name="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" fullname="IronRequiem.Tests.BigBotCombatTests.LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" methodname="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="46011269" result="Failed" label="Error" start-time="2026-11-01 07:48:53Z" end-time="2026-11-01 07:48:53Z" duration="0.859718" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : UnityEngine.MissingReferenceException : The object of type 'IronRequiem.BigBotCombat' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[--SetUp
+  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponentFastPath (System.Type type) [0x00006] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponent[T] () [0x00000] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at IronRequiem.Tests.BigBotCombatTests+<Setup>d__10.MoveNext () [0x00142] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotCombatTests.cs:31 
+  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35 
+  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:155 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></output>
+            </test-case>
+            <test-case id="1008" name="PlayerProjectileCanDamageBigBotThroughExistingDamageable" fullname="IronRequiem.Tests.BigBotCombatTests.PlayerProjectileCanDamageBigBotThroughExistingDamageable" methodname="PlayerProjectileCanDamageBigBotThroughExistingDamageable" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1054278610" result="Failed" start-time="2026-11-01 07:48:53Z" end-time="2026-11-01 07:48:54Z" duration="0.834374" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object
+TearDown : Unhandled log message: '[Exception] UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></output>
+            </test-case>
+            <test-case id="1006" name="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" fullname="IronRequiem.Tests.BigBotCombatTests.ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" methodname="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="747588689" result="Failed" label="Error" start-time="2026-11-01 07:48:54Z" end-time="2026-11-01 07:48:55Z" duration="0.831578" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : UnityEngine.MissingReferenceException : The object of type 'IronRequiem.BigBotCombat' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.]]></message>
+                <stack-trace><![CDATA[--SetUp
+  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x00065] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponentFastPath (System.Type type) [0x00006] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at UnityEngine.Component.GetComponent[T] () [0x00000] in <31995d14579b46ad8dd078d2fe61a81c>:0 
+  at IronRequiem.Tests.BigBotCombatTests+<Setup>d__10.MoveNext () [0x00142] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotCombatTests.cs:31 
+  at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35 
+  at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:155 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></output>
+            </test-case>
+            <test-case id="1002" name="VariantReferencesLargeNavigationAndBlockedDetection" fullname="IronRequiem.Tests.BigBotCombatTests.VariantReferencesLargeNavigationAndBlockedDetection" methodname="VariantReferencesLargeNavigationAndBlockedDetection" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1942453886" result="Failed" start-time="2026-11-01 07:48:55Z" end-time="2026-11-01 07:48:56Z" duration="0.815286" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object
+TearDown : Unhandled log message: '[Exception] UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[UnityException: InitializeNavMeshPath is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'BigBotCombat'.
+See "Script Serialization" page in the Unity Manual for further details.
+UnityEngine.AI.NavMeshPath..ctor () (at <72a9065c27e445dba452ef1073b33c75>:0)
+IronRequiem.BigBotCombat..ctor () (at Assets/IronRequiem/Scripts/AI/BigBotCombat.cs:26)
+
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

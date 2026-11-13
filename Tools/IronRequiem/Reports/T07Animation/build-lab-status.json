@@ -1,0 +1,6 @@
+{
+    "utc": "2026-10-30T05:09:38.5478709Z",
+    "operation": "build-lab",
+    "error": "System.InvalidOperationException: User scene is dirty: Assets/IronRequiem/Scenes/CharacterLab.unity\r\n  at IronRequiem.Editor.T07AnimationBuilder.RequireClean () [0x00050] in C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Editor\\T07AnimationBuilder.cs:45 \r\n  at IronRequiem.Editor.T07ScenePromotion.ReplaceScene (System.String path, System.String oldPrefab, System.String newPrefab) [0x0000d] in C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Editor\\T07ScenePromotion.cs:19 \r\n  at IronRequiem.Editor.T07AnimationAuthoring.BuildLab () [0x00061] in C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Editor\\T07AnimationAuthoring.cs:38 \r\n  at IronRequiem.Editor.T07AnimationBuilder.RunStage (System.String operation) [0x0000d] in C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Editor\\T07AnimationBuilder.cs:66 \r\n  at IronRequiem.Editor.T07AnimationBuilder.Tick () [0x0007f] in C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Editor\\T07AnimationBuilder.cs:35 ",
+    "success": false
+}

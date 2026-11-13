@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="38.0653818">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="38.065382" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="37.965471" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="37.950269" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="37.934655" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1244" name="T07DestructionBehaviorTests" fullname="IronRequiem.Tests.T07DestructionBehaviorTests" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:52Z" duration="37.896274" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1248" name="DeathInterruptsAttackWhileArmorSocketsFollowAnimatedBones" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.DeathInterruptsAttackWhileArmorSocketsFollowAnimatedBones" methodname="DeathInterruptsAttackWhileArmorSocketsFollowAnimatedBones" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="1930804025" result="Passed" start-time="2026-11-08 07:21:14Z" end-time="2026-11-08 07:21:18Z" duration="3.981271" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1246" name="FullHealthLethalAndRepeatedDamageProcessDeathLootAndCannonExactlyOnce" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.FullHealthLethalAndRepeatedDamageProcessDeathLootAndCannonExactlyOnce" methodname="FullHealthLethalAndRepeatedDamageProcessDeathLootAndCannonExactlyOnce" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="410258893" result="Passed" start-time="2026-11-08 07:21:18Z" end-time="2026-11-08 07:21:22Z" duration="4.652977" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1245" name="GradualDamageHasStrictThresholdsStableLodsAndPermanentArmorLoss" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.GradualDamageHasStrictThresholdsStableLodsAndPermanentArmorLoss" methodname="GradualDamageHasStrictThresholdsStableLodsAndPermanentArmorLoss" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="692699928" result="Passed" start-time="2026-11-08 07:21:22Z" end-time="2026-11-08 07:21:25Z" duration="2.401041" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1249" name="ReusedDebrisAndEffectsResetAndNewEnemiesStartComplete" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.ReusedDebrisAndEffectsResetAndNewEnemiesStartComplete" methodname="ReusedDebrisAndEffectsResetAndNewEnemiesStartComplete" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="128348828" result="Passed" start-time="2026-11-08 07:21:25Z" end-time="2026-11-08 07:21:33Z" duration="8.143729" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1247" name="SimultaneousDamagePreservesPreviouslyStolenEquippedCannon" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.SimultaneousDamagePreservesPreviouslyStolenEquippedCannon" methodname="SimultaneousDamagePreservesPreviouslyStolenEquippedCannon" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="2085606680" result="Passed" start-time="2026-11-08 07:21:33Z" end-time="2026-11-08 07:21:39Z" duration="6.275301" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+]]></output>
+            </test-case>
+            <test-case id="1250" name="ZZ_MeasureSixteenRobotsAndSimultaneousDeathsWithBoundedPools" fullname="IronRequiem.Tests.T07DestructionBehaviorTests.ZZ_MeasureSixteenRobotsAndSimultaneousDeathsWithBoundedPools" methodname="ZZ_MeasureSixteenRobotsAndSimultaneousDeathsWithBoundedPools" classname="IronRequiem.Tests.T07DestructionBehaviorTests" runstate="Runnable" seed="2058771265" result="Passed" start-time="2026-11-08 07:21:39Z" end-time="2026-11-08 07:21:52Z" duration="12.369464" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

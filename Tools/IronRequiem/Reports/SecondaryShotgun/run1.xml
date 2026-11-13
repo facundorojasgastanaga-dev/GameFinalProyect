@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Failed(Child)" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.5670127">
+  <test-suite type="TestSuite" id="1197" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="161" result="Failed" site="Child" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.567013" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1191" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="161" result="Failed" site="Child" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.532617" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="10736" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1192" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="161" result="Failed" site="Child" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.527561" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1097" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="161" result="Failed" site="Child" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.521073" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1162" name="SecondaryShotgunTests" fullname="IronRequiem.Tests.SecondaryShotgunTests" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:28Z" duration="44.503975" total="6" passed="2" failed="4" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1168" name="CaptureAnimationPoses" fullname="IronRequiem.Tests.SecondaryShotgunTests.CaptureAnimationPoses" methodname="CaptureAnimationPoses" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="341793234" result="Failed" start-time="2026-11-04 23:07:44Z" end-time="2026-11-04 23:08:03Z" duration="19.691308" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] "SetDestination" can only be called on an active agent that has been placed on a NavMesh.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3)
+Unity.FPS.AI.EnemyController:SetNavDestination (UnityEngine.Vector3) (at Assets/FPS/Scripts/AI/EnemyController.cs:324)
+Unity.FPS.AI.EnemyMobile:UpdateAiStateTransitions () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:91)
+Unity.FPS.AI.EnemyMobile:Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:67)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+Failed to create agent because it is not close enough to the NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+]]></output>
+            </test-case>
+            <test-case id="1167" name="ExecutionRequiresStrictlyBelow75PercentBigBot" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentBigBot" methodname="ExecutionRequiresStrictlyBelow75PercentBigBot" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="2084017896" result="Passed" start-time="2026-11-04 23:08:03Z" end-time="2026-11-04 23:08:09Z" duration="5.649213" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1166" name="ExecutionRequiresStrictlyBelow75PercentT07" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentT07" methodname="ExecutionRequiresStrictlyBelow75PercentT07" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1264882734" result="Failed" start-time="2026-11-04 23:08:09Z" end-time="2026-11-04 23:08:13Z" duration="4.380561" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] "SetDestination" can only be called on an active agent that has been placed on a NavMesh.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3)
+Unity.FPS.AI.EnemyController:SetNavDestination (UnityEngine.Vector3) (at Assets/FPS/Scripts/AI/EnemyController.cs:324)
+Unity.FPS.AI.EnemyMobile:UpdateAiStateTransitions () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:91)
+Unity.FPS.AI.EnemyMobile:Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:67)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+]]></output>
+            </test-case>
+            <test-case id="1164" name="ShotgunDamageFallsOffWithDistanceAndRange" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunDamageFallsOffWithDistanceAndRange" methodname="ShotgunDamageFallsOffWithDistanceAndRange" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1336656354" result="Failed" start-time="2026-11-04 23:08:13Z" end-time="2026-11-04 23:08:15Z" duration="2.126497" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] "SetDestination" can only be called on an active agent that has been placed on a NavMesh.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3)
+Unity.FPS.AI.EnemyController:SetNavDestination (UnityEngine.Vector3) (at Assets/FPS/Scripts/AI/EnemyController.cs:324)
+Unity.FPS.AI.EnemyMobile:UpdateCurrentAiState () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:113)
+Unity.FPS.AI.EnemyMobile:Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:68)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+]]></output>
+            </test-case>
+            <test-case id="1163" name="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunIsSecondaryAndCoexistsWithStolenWeapon" methodname="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1723160727" result="Failed" start-time="2026-11-04 23:08:15Z" end-time="2026-11-04 23:08:18Z" duration="2.966587" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] "SetDestination" can only be called on an active agent that has been placed on a NavMesh.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3)
+Unity.FPS.AI.EnemyController:SetNavDestination (UnityEngine.Vector3) (at Assets/FPS/Scripts/AI/EnemyController.cs:324)
+Unity.FPS.AI.EnemyMobile:UpdateAiStateTransitions () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:91)
+Unity.FPS.AI.EnemyMobile:Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:67)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+]]></output>
+            </test-case>
+            <test-case id="1165" name="SlideCooldownStartsAtEndAndNeedsNewPress" fullname="IronRequiem.Tests.SecondaryShotgunTests.SlideCooldownStartsAtEndAndNeedsNewPress" methodname="SlideCooldownStartsAtEndAndNeedsNewPress" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1593798129" result="Passed" start-time="2026-11-04 23:08:18Z" end-time="2026-11-04 23:08:28Z" duration="9.657582" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

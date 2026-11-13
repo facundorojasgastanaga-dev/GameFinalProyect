@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.8128853">
+  <test-suite type="TestSuite" id="1118" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.812885" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1112" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.747030" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1113" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.742268" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1047" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="95" result="Failed" site="Child" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.735924" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1031" name="CombatPolishTests" fullname="IronRequiem.Tests.CombatPolishTests" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:57Z" duration="13.715590" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1032" name="MeleeContactAngles" fullname="IronRequiem.Tests.CombatPolishTests.MeleeContactAngles" methodname="MeleeContactAngles" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" seed="5182278" result="Failed" start-time="2026-11-02 03:54:44Z" end-time="2026-11-02 03:54:54Z" duration="9.979551" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Contact inside large collider cannot be rejected using distance to its centre
+  Expected: 975.0f
+  But was:  1000.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatPolishTests+<MeleeContactAngles>d__14.MoveNext () [0x00355] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatPolishTests.cs:51
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1033" name="MeleeTimingWallAndRange" fullname="IronRequiem.Tests.CombatPolishTests.MeleeTimingWallAndRange" methodname="MeleeTimingWallAndRange" classname="IronRequiem.Tests.CombatPolishTests" runstate="Runnable" seed="1938357891" result="Passed" start-time="2026-11-02 03:54:54Z" end-time="2026-11-02 03:54:57Z" duration="3.695769" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

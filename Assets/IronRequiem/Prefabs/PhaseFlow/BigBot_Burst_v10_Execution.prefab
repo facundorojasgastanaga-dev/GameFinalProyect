@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &469141281422059665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 408566721290986183, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: executionOnly
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292124479275491281, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334084901528121243, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      propertyPath: m_Name
+      value: BigBot_Burst_v10_Execution
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8334084901528121243, guid: d1ca4ab028d2d6844b6a24709db28868,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6997342248986553242}
+  m_SourcePrefab: {fileID: 100100000, guid: d1ca4ab028d2d6844b6a24709db28868, type: 3}
+--- !u!1 &8442603939733800714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8334084901528121243, guid: d1ca4ab028d2d6844b6a24709db28868,
+    type: 3}
+  m_PrefabInstance: {fileID: 469141281422059665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6997342248986553242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442603939733800714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2fe849dfebd3d4e947cbcc64fce332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.EnemyExecutionSource
+  healthThreshold: 0.75
+  modulePrefab: {fileID: 8440697517988263117, guid: a5615bbc7cff156478d5a50ceec61237,
+    type: 3}

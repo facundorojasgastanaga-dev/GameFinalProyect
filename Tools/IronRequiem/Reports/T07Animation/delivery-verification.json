@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-30T05:59:57.216759+00:00",
+  "protected_files": 1900,
+  "changes": [
+    {
+      "path": "Assets/IronRequiem/Editor/IronRequiem.Editor.asmdef",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scenes/CharacterLab.unity",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scenes/T07OptimizationLab.unity",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scripts/IronRequiem.Runtime.asmdef",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Prefabs/Enemies/T07_Common_Optimized.prefab",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Scripts/Weapons/CannonExplosion.cs",
+      "expected": true,
+      "exists": true
+    },
+    {
+      "path": "Assets/IronRequiem/Tests/PlayMode/CharacterBehaviorTests.cs",
+      "expected": true,
+      "exists": true
+    }
+  ],
+  "unexpected_changes": [],
+  "tests": [
+    {
+      "report": "play.xml",
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "success": true
+    },
+    {
+      "report": "edit.xml",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "success": true
+    },
+    {
+      "report": "regression-play.xml",
+      "total": 28,
+      "passed": 28,
+      "failed": 0,
+      "success": true
+    },
+    {
+      "report": "regression-edit.xml",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "success": true
+    }
+  ],
+  "missing_metas": [],
+  "audit_utc": "2026-10-30T05:59:54.0758639Z",
+  "playing": false,
+  "compilation_errors": [],
+  "scenes": [
+    {
+      "path": "Assets/IronRequiem/Scenes/CharacterLab.unity",
+      "dirty": false,
+      "missingScripts": 0
+    }
+  ],
+  "fps_gain_measured": false,
+  "all_checks_pass": true
+}

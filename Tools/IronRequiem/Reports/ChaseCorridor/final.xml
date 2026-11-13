@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-07 23:55:58Z" end-time="2026-11-07 23:56:37Z" duration="38.3865329">
+  <test-suite type="TestSuite" id="1263" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="216" result="Passed" start-time="2026-11-07 23:55:58Z" end-time="2026-11-07 23:56:37Z" duration="38.386533" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1257" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="216" result="Passed" start-time="2026-11-07 23:55:59Z" end-time="2026-11-07 23:56:37Z" duration="38.349271" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1258" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="216" result="Passed" start-time="2026-11-07 23:55:59Z" end-time="2026-11-07 23:56:37Z" duration="38.341553" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="216" result="Passed" start-time="2026-11-07 23:55:59Z" end-time="2026-11-07 23:56:37Z" duration="38.332079" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1059" name="ChaseCorridorTests" fullname="IronRequiem.Tests.ChaseCorridorTests" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-07 23:55:59Z" end-time="2026-11-07 23:56:37Z" duration="38.306414" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1062" name="FallCostsHealthAndPreservesInventoryWhileSawsContinue" fullname="IronRequiem.Tests.ChaseCorridorTests.FallCostsHealthAndPreservesInventoryWhileSawsContinue" methodname="FallCostsHealthAndPreservesInventoryWhileSawsContinue" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" seed="1312853596" result="Passed" start-time="2026-11-07 23:55:59Z" end-time="2026-11-07 23:56:04Z" duration="5.683438" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1063" name="PreviousUpperRoomUnlocksDoorAndLoadsChaseIntoPlay" fullname="IronRequiem.Tests.ChaseCorridorTests.PreviousUpperRoomUnlocksDoorAndLoadsChaseIntoPlay" methodname="PreviousUpperRoomUnlocksDoorAndLoadsChaseIntoPlay" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" seed="259783308" result="Passed" start-time="2026-11-07 23:56:04Z" end-time="2026-11-07 23:56:12Z" duration="7.723734" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1060" name="RunCorridorJumpThreeGapsAndReachExit" fullname="IronRequiem.Tests.ChaseCorridorTests.RunCorridorJumpThreeGapsAndReachExit" methodname="RunCorridorJumpThreeGapsAndReachExit" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" seed="460662605" result="Passed" start-time="2026-11-07 23:56:12Z" end-time="2026-11-07 23:56:24Z" duration="11.995762" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1061" name="SawsCatchPlayerAndRestartResetsEncounter" fullname="IronRequiem.Tests.ChaseCorridorTests.SawsCatchPlayerAndRestartResetsEncounter" methodname="SawsCatchPlayerAndRestartResetsEncounter" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" seed="522002604" result="Passed" start-time="2026-11-07 23:56:24Z" end-time="2026-11-07 23:56:30Z" duration="5.758813" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1064" name="UpperTurretRemainsAvailableAcrossThreeSpawnSeeds" fullname="IronRequiem.Tests.ChaseCorridorTests.UpperTurretRemainsAvailableAcrossThreeSpawnSeeds" methodname="UpperTurretRemainsAvailableAcrossThreeSpawnSeeds" classname="IronRequiem.Tests.ChaseCorridorTests" runstate="Runnable" seed="309961726" result="Passed" start-time="2026-11-07 23:56:30Z" end-time="2026-11-07 23:56:37Z" duration="7.105854" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.0867225">
+  <test-suite type="TestSuite" id="1075" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.086723" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1069" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.054807" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="20252" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1070" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.051222" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1021" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.047291" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1041" name="ProtagonistIntegrationTests" fullname="IronRequiem.Tests.ProtagonistIntegrationTests" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:38Z" duration="18.034346" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1044" name="EmptyInventoryRestoresNormalHandsWithoutAddingMelee" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.EmptyInventoryRestoresNormalHandsWithoutAddingMelee" methodname="EmptyInventoryRestoresNormalHandsWithoutAddingMelee" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="336383139" result="Failed" start-time="2026-10-31 22:29:20Z" end-time="2026-10-31 22:29:27Z" duration="6.845748" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: less than 9.99999975E-05f
+  But was:  0.202239901f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistIntegrationTests.CheckPistol () [0x00030] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistIntegrationTests.cs:55
+at IronRequiem.Tests.ProtagonistIntegrationTests+<EmptyInventoryRestoresNormalHandsWithoutAddingMelee>d__23.MoveNext () [0x00126] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistIntegrationTests.cs:114
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+]]></output>
+            </test-case>
+            <test-case id="1045" name="NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" methodname="NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="713033934" result="Failed" start-time="2026-10-31 22:29:27Z" end-time="2026-10-31 22:29:30Z" duration="3.026126" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: same as <CannonModule_Visual (IronRequiem.StolenCannon)>
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistIntegrationTests+<Pickup>d__20.MoveNext () [0x0004d] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistIntegrationTests.cs:83
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1043" name="NativeMovementSlideDashAimAndPistolFire" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.NativeMovementSlideDashAimAndPistolFire" methodname="NativeMovementSlideDashAimAndPistolFire" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="779357694" result="Failed" start-time="2026-10-31 22:29:30Z" end-time="2026-10-31 22:29:33Z" duration="2.659500" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: greater than 1
+  But was:  0.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistIntegrationTests+<NativeMovementSlideDashAimAndPistolFire>d__22.MoveNext () [0x000aa] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistIntegrationTests.cs:103
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1046" name="PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" methodname="PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="675929914" result="Failed" start-time="2026-10-31 22:29:33Z" end-time="2026-10-31 22:29:36Z" duration="2.991391" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: same as <CannonModule_Visual (IronRequiem.StolenCannon)>
+  But was:  null
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistIntegrationTests+<Pickup>d__20.MoveNext () [0x0004d] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistIntegrationTests.cs:83
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1042" name="SharedSkeletonLodsAndMaterialRemainValid" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.SharedSkeletonLodsAndMaterialRemainValid" methodname="SharedSkeletonLodsAndMaterialRemainValid" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="1920555318" result="Passed" start-time="2026-10-31 22:29:36Z" end-time="2026-10-31 22:29:38Z" duration="2.484028" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

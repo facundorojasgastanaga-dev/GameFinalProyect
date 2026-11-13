@@ -1,0 +1,72 @@
+== lights
+HangarSet/Bridge/RobotWash type=Spot on=True I=5.50 range=7.0 angle=54 col=RGBA(1.000, 0.740, 0.520, 1.000)
+HangarSet/Bridge/RobotWash type=Spot on=True I=5.50 range=7.0 angle=54 col=RGBA(1.000, 0.740, 0.520, 1.000)
+HangarSet/Bridge/RobotWash type=Spot on=True I=5.50 range=7.0 angle=54 col=RGBA(1.000, 0.740, 0.520, 1.000)
+HangarSet/Bridge/BridgeLamp/Spot type=Spot on=True I=9.64 range=10.0 angle=85 col=RGBA(1.000, 0.580, 0.250, 1.000)
+HangarSet/Bridge/BridgeLamp/Spot type=Spot on=True I=13.26 range=10.0 angle=85 col=RGBA(1.000, 0.580, 0.250, 1.000)
+HangarSet/Bridge/BridgeLamp/Spot type=Spot on=True I=2.30 range=10.0 angle=85 col=RGBA(1.000, 0.580, 0.250, 1.000)
+HangarSet/Bridge/BridgeLamp/Spot type=Spot on=True I=13.39 range=10.0 angle=85 col=RGBA(1.000, 0.580, 0.250, 1.000)
+HangarSet/Bridge/BannerWash type=Spot on=True I=6.00 range=12.0 angle=70 col=RGBA(1.000, 0.450, 0.300, 1.000)
+HangarSet/Lights/Moon type=Directional on=True I=0.60 range=0.0 angle=60 col=RGBA(0.450, 0.550, 0.750, 1.000)
+HangarSet/Lights/WarmFill type=Point on=True I=1.60 range=6.0 angle=60 col=RGBA(1.000, 0.500, 0.200, 1.000)
+HangarSet/Lights/BridgeBounce type=Point on=True I=4.00 range=16.0 angle=60 col=RGBA(0.350, 0.450, 0.600, 1.000)
+HangarSet/Lights/HallTube0/Down type=Spot on=True I=6.01 range=10.0 angle=110 col=RGBA(1.000, 0.820, 0.620, 1.000)
+HangarSet/Lights/HallTube1/Down type=Spot on=True I=8.33 range=10.0 angle=110 col=RGBA(1.000, 0.820, 0.620, 1.000)
+HangarSet/Lights/HallTube2/Down type=Spot on=True I=8.59 range=10.0 angle=110 col=RGBA(1.000, 0.820, 0.620, 1.000)
+HangarSet/Lights/Beacon/BeaconSpot type=Spot on=True I=6.00 range=22.0 angle=32 col=RGBA(1.000, 0.120, 0.080, 1.000)
+HangarSet/Capsule_C04/VisorGlow type=Point on=True I=0.00 range=1.1 angle=60 col=RGBA(0.350, 0.900, 1.000, 1.000)
+HangarSet/Capsule_C04/PodCyan type=Point on=True I=0.85 range=3.0 angle=60 col=RGBA(0.250, 0.850, 1.000, 1.000)
+HangarSet/OverheadLamp/KeySpot type=Spot on=True I=15.43 range=11.0 angle=62 col=RGBA(1.000, 0.870, 0.720, 1.000)
+HangarSet/PodRim type=Point on=True I=3.00 range=5.5 angle=60 col=RGBA(0.400, 0.600, 1.000, 1.000)
+HangarSet/Fx/Explosion0/Flash type=Point on=True I=0.00 range=14.0 angle=60 col=RGBA(1.000, 0.600, 0.250, 1.000)
+HangarSet/Fx/Explosion1/Flash type=Point on=True I=0.00 range=14.0 angle=60 col=RGBA(1.000, 0.600, 0.250, 1.000)
+== walker renderers (active walkers only)
+MenuWalker_T07_0/T07Mech_Cannon [MeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_T07_0/T07Mech_Body [SkinnedMeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_T07_1/T07Mech_Cannon [MeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_T07_1/T07Mech_Body [SkinnedMeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_T07_2/T07Mech_Cannon [MeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_T07_2/T07Mech_Body [SkinnedMeshRenderer] vis=True mat=T07Mech_Atlas shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_0/SawSpin [MeshRenderer] vis=True mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_0/SawSpin_Low [MeshRenderer] vis=False mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_0/Body_LOD0 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_0/Body_LOD1 [SkinnedMeshRenderer] vis=True mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_0/Body_LOD2 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_0/Body_LOD3 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_1/SawSpin [MeshRenderer] vis=True mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_1/SawSpin_Low [MeshRenderer] vis=False mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_1/Body_LOD0 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_1/Body_LOD1 [SkinnedMeshRenderer] vis=True mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_1/Body_LOD2 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_1/Body_LOD3 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_2/SawSpin [MeshRenderer] vis=True mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_2/SawSpin_Low [MeshRenderer] vis=False mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_2/Body_LOD0 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_2/Body_LOD1 [SkinnedMeshRenderer] vis=True mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_2/Body_LOD2 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_2/Body_LOD3 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_3/SawSpin [MeshRenderer] vis=True mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_3/SawSpin_Low [MeshRenderer] vis=False mat=MW_Carronero_Saw shader=Universal Render Pipeline/Lit hdrMax=1.00
+MenuWalker_Carronero_3/Body_LOD0 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_3/Body_LOD1 [SkinnedMeshRenderer] vis=True mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_3/Body_LOD2 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+MenuWalker_Carronero_3/Body_LOD3 [SkinnedMeshRenderer] vis=False mat=Carronero_Body shader=Universal Render Pipeline/Lit hdrMax=0.90
+== bright materials anywhere in HangarSet (hdrMax > 1.5)
+HangarSet/Bridge/BridgeLamp/Head mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Bridge/BridgeLamp/Head mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Bridge/BridgeLamp/Head mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Bridge/BridgeLamp/Head mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Lights/HallTube0/Tube mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Lights/HallTube1/Tube mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Lights/HallTube2/Tube mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Lights/Beacon/BeaconHead mat=HG_RedGlow shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Capsule_C04/Strip-1 mat=HG_CyanGlow shader=Universal Render Pipeline/Unlit hdrMax=2.10
+HangarSet/Capsule_C04/Strip1 mat=HG_CyanGlow shader=Universal Render Pipeline/Unlit hdrMax=2.10
+HangarSet/Capsule_C04/StripHead mat=HG_CyanGlow shader=Universal Render Pipeline/Unlit hdrMax=2.10
+HangarSet/Capsule_C04/StripFoot mat=HG_CyanGlow shader=Universal Render Pipeline/Unlit hdrMax=2.10
+HangarSet/Capsule_C04/Led0 mat=HG_OrangeGlow shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Capsule_C04/Led1 mat=HG_OrangeGlow shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Capsule_C04/Led2 mat=HG_OrangeGlow shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/Capsule_C04/Led3 mat=HG_OrangeGlow shader=Universal Render Pipeline/Unlit hdrMax=2.00
+HangarSet/OverheadLamp/Tube mat=HG_LampWarm shader=Universal Render Pipeline/Unlit hdrMax=2.00
+== bloom threshold=1.1 intensity=0.6 scatter=0.65 clamp=10 stopNaN=True fog=0.022

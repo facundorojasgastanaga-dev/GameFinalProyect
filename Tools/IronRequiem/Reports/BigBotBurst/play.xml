@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="29.1302882">
+  <test-suite type="TestSuite" id="1166" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="135" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="29.130288" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1160" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="135" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="28.895071" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1161" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="135" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="28.886756" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1073" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="135" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="28.879297" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1010" name="BigBotBurstTests" fullname="IronRequiem.Tests.BigBotBurstTests" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:42Z" duration="28.859446" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1013" name="CannonLossContinuesOnlyRemainingBudgetAndEmergencyDeath" fullname="IronRequiem.Tests.BigBotBurstTests.CannonLossContinuesOnlyRemainingBudgetAndEmergencyDeath" methodname="CannonLossContinuesOnlyRemainingBudgetAndEmergencyDeath" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="1989730182" result="Passed" start-time="2026-11-03 00:29:13Z" end-time="2026-11-03 00:29:23Z" duration="9.641720" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1014" name="ClickCompletesAfterReleaseAndInsufficientEnergy" fullname="IronRequiem.Tests.BigBotBurstTests.ClickCompletesAfterReleaseAndInsufficientEnergy" methodname="ClickCompletesAfterReleaseAndInsufficientEnergy" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="1397653598" result="Passed" start-time="2026-11-03 00:29:23Z" end-time="2026-11-03 00:29:27Z" duration="3.642041" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="HeldRepeatsAndReleaseFinishesCurrentBurst" fullname="IronRequiem.Tests.BigBotBurstTests.HeldRepeatsAndReleaseFinishesCurrentBurst" methodname="HeldRepeatsAndReleaseFinishesCurrentBurst" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="62147559" result="Passed" start-time="2026-11-03 00:29:27Z" end-time="2026-11-03 00:29:31Z" duration="4.716680" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="NormalAlternatesThreeAndRespectsPause" fullname="IronRequiem.Tests.BigBotBurstTests.NormalAlternatesThreeAndRespectsPause" methodname="NormalAlternatesThreeAndRespectsPause" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="295841121" result="Passed" start-time="2026-11-03 00:29:31Z" end-time="2026-11-03 00:29:35Z" duration="3.318270" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="ObstacleAndTargetLossCancelBetweenShots" fullname="IronRequiem.Tests.BigBotBurstTests.ObstacleAndTargetLossCancelBetweenShots" methodname="ObstacleAndTargetLossCancelBetweenShots" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="14288426" result="Passed" start-time="2026-11-03 00:29:35Z" end-time="2026-11-03 00:29:37Z" duration="2.834967" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="SwitchThrowAndDeathInterruptBurstWithoutDelayedShots" fullname="IronRequiem.Tests.BigBotBurstTests.SwitchThrowAndDeathInterruptBurstWithoutDelayedShots" methodname="SwitchThrowAndDeathInterruptBurstWithoutDelayedShots" classname="IronRequiem.Tests.BigBotBurstTests" runstate="Runnable" seed="979862567" result="Passed" start-time="2026-11-03 00:29:37Z" end-time="2026-11-03 00:29:42Z" duration="4.572811" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

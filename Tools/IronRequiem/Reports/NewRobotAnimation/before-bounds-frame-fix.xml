@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.2027147">
+  <test-suite type="TestSuite" id="1092" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="72" result="Failed" site="Child" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.202715" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1086" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="72" result="Failed" site="Child" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.184670" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1087" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="72" result="Failed" site="Child" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.180447" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1021" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="72" result="Failed" site="Child" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.174107" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1041" name="NewRobotAnimationTests" fullname="IronRequiem.Tests.NewRobotAnimationTests" classname="IronRequiem.Tests.NewRobotAnimationTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:12Z" duration="3.158965" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1045" name="LodsSelectOneLevelAndAllFollowSameAnimatedBones" fullname="IronRequiem.Tests.NewRobotAnimationTests.LodsSelectOneLevelAndAllFollowSameAnimatedBones" methodname="LodsSelectOneLevelAndAllFollowSameAnimatedBones" classname="IronRequiem.Tests.NewRobotAnimationTests" runstate="Runnable" seed="1954045063" result="Passed" start-time="2026-11-01 06:59:08Z" end-time="2026-11-01 06:59:10Z" duration="1.254070" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1042" name="ScaleSharedRigAndReferencesAreCorrect" fullname="IronRequiem.Tests.NewRobotAnimationTests.ScaleSharedRigAndReferencesAreCorrect" methodname="ScaleSharedRigAndReferencesAreCorrect" classname="IronRequiem.Tests.NewRobotAnimationTests" runstate="Runnable" seed="1312238032" result="Failed" start-time="2026-11-01 06:59:10Z" end-time="2026-11-01 06:59:10Z" duration="0.648721" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  LOD bounds must follow robot size, not FBX scale factor
+  Expected: in range (3,6)
+  But was:  2.63054395f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.NewRobotAnimationTests+<ScaleSharedRigAndReferencesAreCorrect>d__8.MoveNext () [0x002be] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\NewRobotAnimationTests.cs:40
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1044" name="ShotLayersRepeatAndInterruptWithoutDuplicateMoments" fullname="IronRequiem.Tests.NewRobotAnimationTests.ShotLayersRepeatAndInterruptWithoutDuplicateMoments" methodname="ShotLayersRepeatAndInterruptWithoutDuplicateMoments" classname="IronRequiem.Tests.NewRobotAnimationTests" runstate="Runnable" seed="1149544116" result="Passed" start-time="2026-11-01 06:59:10Z" end-time="2026-11-01 06:59:11Z" duration="0.635630" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="WalkPlantsStanceFootAndTurnsWithoutRootMotion" fullname="IronRequiem.Tests.NewRobotAnimationTests.WalkPlantsStanceFootAndTurnsWithoutRootMotion" methodname="WalkPlantsStanceFootAndTurnsWithoutRootMotion" classname="IronRequiem.Tests.NewRobotAnimationTests" runstate="Runnable" seed="1518155226" result="Passed" start-time="2026-11-01 06:59:11Z" end-time="2026-11-01 06:59:12Z" duration="0.597022" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

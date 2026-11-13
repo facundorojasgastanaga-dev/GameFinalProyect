@@ -1,0 +1,82 @@
+{
+    "utc":  "2026-10-29T18:47:58.9934263Z",
+    "baselineFiles":  1869,
+    "changes":  [
+                    {
+                        "path":  "Assets/IronRequiem/Editor/DesignV02Upgrade.cs",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Prefabs/Weapons/Projectile_T07_Charged.prefab",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol.prefab",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Prefabs/Weapons/Weapon_T07_Temporary.prefab",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Scripts/Weapons/ChargedProjectileDamage.cs",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Tests/EditMode/MechanicsAssetTests.cs",
+                        "expected":  true,
+                        "state":  "changed"
+                    },
+                    {
+                        "path":  "Assets/IronRequiem/Tests/PlayMode/MechanicsBehaviorTests.cs",
+                        "expected":  true,
+                        "state":  "changed"
+                    }
+                ],
+    "unexpectedChanges":  [
+
+                          ],
+    "tests":  [
+                  {
+                      "mode":  "play",
+                      "result":  "Passed",
+                      "total":  21,
+                      "passed":  21,
+                      "failed":  0,
+                      "originalPassed":  3,
+                      "report":  "Tools/IronRequiem/Reports/weapon-feedback-play.xml"
+                  },
+                  {
+                      "mode":  "edit",
+                      "result":  "Passed",
+                      "total":  7,
+                      "passed":  7,
+                      "failed":  0,
+                      "originalPassed":  3,
+                      "report":  "Tools/IronRequiem/Reports/weapon-feedback-edit.xml"
+                  }
+              ],
+    "missingMetas":  [
+
+                     ],
+    "compilationErrors":  [
+
+                          ],
+    "auditUtc":  "2026-10-29T18:47:32.1976928Z",
+    "playing":  false,
+    "scenes":  [
+                   {
+                       "path":  "Assets/IronRequiem/Scenes/CharacterLab.unity",
+                       "dirty":  false,
+                       "missingScripts":  0
+                   }
+               ],
+    "environment":  "Interactive Unity Editor with virtual Input System devices",
+    "applyShutdownIssue":  "Native SerializationCache/UnloadDomain crash after prefabs were saved. Retained in weapon-feedback-apply.log; interactive tests subsequently passed.",
+    "allChecksPass":  true
+}

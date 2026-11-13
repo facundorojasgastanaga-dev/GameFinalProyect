@@ -1,0 +1,32 @@
+PREFAB Assets/FPS/Prefabs/Enemies/Enemy_Turret.prefab comps=Transform,EnemyController,Health,WorldspaceHealthBar,EnemyTurret,Actor,CompassElement,NavMeshAgent
+  Enemy_Turret act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(4.000, 4.000, 4.000) EnemyController,Health,WorldspaceHealthBar,EnemyTurret,Actor,CompassElement,NavMeshAgent
+  TurretRobot act=True lp=(0.000, 0.000, 0.000) le=(0, 90, 0) ls=(1.000, 1.000, 1.000) Animator
+  TurretRobot/Turret_Root_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt act=True lp=(0.000, 0.196, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt act=True lp=(0.000, 0.030, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Handle_R_Jnt act=True lp=(0.000, 0.098, 0.170) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt act=True lp=(0.000, 0.220, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt act=True lp=(-0.203, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot act=True lp=(-0.158, 0.000, 0.000) le=(0, 270, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun act=True lp=(0.000, 0.000, 0.052) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) WeaponController,AudioSource
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun/GunRoot act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun/GunMuzzle act=True lp=(0.000, 0.000, -0.026) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun/GunMuzzle/VFX_EnemyMuzzleFlash act=True lp=(0.000, 0.000, 0.000) le=(270, 90, 0) ls=(1.000, 1.000, 1.000) R[MuzzleFlash(Universal Render Pipeline/Particles/Unlit),null] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/Hitbox Top act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) BoxCollider,Damageable
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks act=True lp=(-0.224, 0.144, -0.251) le=(335, 205, 180) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks (1) act=True lp=(0.240, -0.100, 0.259) le=(358, 30, 180) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks (2) act=True lp=(-0.208, 0.206, 0.127) le=(304, 25, 123) ls=(1.000, 1.000, 1.000) R[Spark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_Alert act=True lp=(-0.128, 0.418, 0.000) le=(0, 0, 0) ls=(0.640, 0.640, 0.640) R[ExclamationMark(Universal Render Pipeline/Particles/Unlit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_AngrySteamTurret act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[SmokeAngry(Universal Render Pipeline/Particles/Lit)] en=True wb=(0.000, 0.000, 0.000)/(0.000, 0.000, 0.000) ParticleSystem
+  TurretRobot/TurretBottom act=True lp=(-1.612, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Turret_Body(Universal Render Pipeline/Lit)] en=True wb=(0.000, 0.616, 0.000)/(3.978, 1.235, 3.978) mesh=TurretBottom v=1215 
+  TurretRobot/TurretCenter act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Turret_Body(Universal Render Pipeline/Lit)] en=True wb=(0.051, 1.900, -0.015)/(2.631, 1.993, 2.972) mesh=TurretCenter v=1478 
+  TurretRobot/TurretTop act=True lp=(0.000, 1.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) R[Turret_Body(Universal Render Pipeline/Lit),Turret_Glass(Universal Render Pipeline/Lit),Turret_Eye(Universal Render Pipeline/Lit)] en=True wb=(0.000, 2.183, 0.175)/(2.360, 2.076, 2.562) mesh=TurretTop v=1450 
+  TurretRobot/Hitbox Base act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) BoxCollider,Damageable,BoxCollider
+  HealthBar Pivot act=True lp=(0.000, 2.101, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) 
+  HealthBar Pivot/Canvas act=True lp=(0.000, 0.000, -0.117) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) Canvas,CanvasScaler,GraphicRaycaster
+  HealthBar Pivot/Canvas/ImageBackground act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  HealthBar Pivot/Canvas/ImageFill act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) CanvasRenderer,Image
+  DetectionModule act=True lp=(0.000, 0.000, 0.000) le=(0, 0, 0) ls=(1.000, 1.000, 1.000) DetectionModule
+CHILDWEAPON TurretRobot/Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun flash=Assets/FPS/Prefabs/Enemies/Enemy_Turret.prefab proj=Assets/FPS/Prefabs/Projectiles/Projectile_Turret.prefab delay=0.06
+ENEMYCTRL bodyMat=Turret_Body charge=0 deathVfx=Assets/FPS/Prefabs/VFX/VFX_Explosion.prefab

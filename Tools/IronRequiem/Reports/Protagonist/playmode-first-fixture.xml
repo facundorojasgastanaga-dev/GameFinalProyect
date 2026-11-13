@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.3577531">
+  <test-suite type="TestSuite" id="1075" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.357753" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1069" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.327589" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18956" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1070" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.323903" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1021" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="57" result="Failed" site="Child" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.320682" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1041" name="ProtagonistIntegrationTests" fullname="IronRequiem.Tests.ProtagonistIntegrationTests" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:53Z" duration="15.302251" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1044" name="EmptyInventoryRestoresNormalHandsWithoutAddingMelee" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.EmptyInventoryRestoresNormalHandsWithoutAddingMelee" methodname="EmptyInventoryRestoresNormalHandsWithoutAddingMelee" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="134429975" result="Failed" start-time="2026-10-31 22:27:38Z" end-time="2026-10-31 22:27:43Z" duration="5.322026" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Font Asset [LiberationSans SDF - Fallback] Units Per EM set to 2048. Please commit the newly serialized value.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></output>
+            </test-case>
+            <test-case id="1045" name="NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" methodname="NativeCannonPickupChargeSwitchThrowRepickupAndExplosion" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="775202305" result="Failed" start-time="2026-10-31 22:27:43Z" end-time="2026-10-31 22:27:46Z" duration="2.434621" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></output>
+            </test-case>
+            <test-case id="1043" name="NativeMovementSlideDashAimAndPistolFire" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.NativeMovementSlideDashAimAndPistolFire" methodname="NativeMovementSlideDashAimAndPistolFire" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="980152588" result="Failed" start-time="2026-10-31 22:27:46Z" end-time="2026-10-31 22:27:48Z" duration="2.486669" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></output>
+            </test-case>
+            <test-case id="1046" name="PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" methodname="PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="1360819988" result="Failed" start-time="2026-10-31 22:27:48Z" end-time="2026-10-31 22:27:51Z" duration="2.572148" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></output>
+            </test-case>
+            <test-case id="1042" name="SharedSkeletonLodsAndMaterialRemainValid" fullname="IronRequiem.Tests.ProtagonistIntegrationTests.SharedSkeletonLodsAndMaterialRemainValid" methodname="SharedSkeletonLodsAndMaterialRemainValid" classname="IronRequiem.Tests.ProtagonistIntegrationTests" runstate="Runnable" seed="1060043446" result="Failed" start-time="2026-10-31 22:27:51Z" end-time="2026-10-31 22:27:53Z" duration="2.460823" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp : Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.InGameMenuManager.Update () (at Assets/FPS/Scripts/UI/InGameMenuManager.cs:82)
+
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

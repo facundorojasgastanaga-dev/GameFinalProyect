@@ -1,0 +1,100 @@
+{
+  "source_triangles": 49948,
+  "source_scale_preserved": true,
+  "source_height_m": 0.778153,
+  "source_static": true,
+  "removed_distal_faces": 4455,
+  "wrist_caps": 4,
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 22184,
+      "body_triangles": 18000,
+      "body_to_source_p95_m": 0.0009810744086280465,
+      "body_to_source_max_m": 0.00179503601975739,
+      "parts": [
+        {
+          "name": "Body_LOD0",
+          "triangles": 18000
+        },
+        {
+          "name": "GuideBar_L_LOD0",
+          "triangles": 444
+        },
+        {
+          "name": "Chain_L_LOD0",
+          "triangles": 1648
+        },
+        {
+          "name": "GuideBar_R_LOD0",
+          "triangles": 444
+        },
+        {
+          "name": "Chain_R_LOD0",
+          "triangles": 1648
+        }
+      ]
+    },
+    {
+      "lod": 1,
+      "triangles": 12384,
+      "body_triangles": 9000,
+      "body_to_source_p95_m": 0.001858804957009852,
+      "body_to_source_max_m": 0.0032554122153669596,
+      "parts": [
+        {
+          "name": "Body_LOD1",
+          "triangles": 9000
+        },
+        {
+          "name": "GuideBar_L_LOD1",
+          "triangles": 348
+        },
+        {
+          "name": "Chain_L_LOD1",
+          "triangles": 1344
+        },
+        {
+          "name": "GuideBar_R_LOD1",
+          "triangles": 348
+        },
+        {
+          "name": "Chain_R_LOD1",
+          "triangles": 1344
+        }
+      ]
+    },
+    {
+      "lod": 2,
+      "triangles": 8200,
+      "body_triangles": 5760,
+      "body_to_source_p95_m": 0.002578666200861335,
+      "body_to_source_max_m": 0.004735852591693401,
+      "parts": [
+        {
+          "name": "Body_LOD2",
+          "triangles": 5760
+        },
+        {
+          "name": "GuideBar_L_LOD2",
+          "triangles": 252
+        },
+        {
+          "name": "Chain_L_LOD2",
+          "triangles": 968
+        },
+        {
+          "name": "GuideBar_R_LOD2",
+          "triangles": 252
+        },
+        {
+          "name": "Chain_R_LOD2",
+          "triangles": 968
+        }
+      ]
+    }
+  ],
+  "saw_fix": "Closed guide bars, even perimeter chain links, alternating raked cutters and end/drive rivets; separate left/right pivots. No rig or animation added.",
+  "textures": "4096 ->2048, normal vectors renormalized, original atlas UV retained outside rebuilt saws, per-face planar UVs using quiet metal patches of the original atlas on rebuilt saws. URP metallic/smoothness packed separately.",
+  "fps_claim": false
+}

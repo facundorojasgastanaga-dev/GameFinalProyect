@@ -1,0 +1,42 @@
+muzzle local(root)=(0.0000, 0.0940, 0.4100) rot=(0.00, 0.00, 0.00)
+attachment in muzzle space=(0.0000, 0.0000, -0.2850) parent=PrimaryModuleVisual fwd·muzzle=1.0000
+  renderer Primary_Weapon active=True mats=Module_PlayerArmor boundsMuzzle c=(0.0000, -0.0034, -0.1666) s=(0.1148, 0.0976, 0.2408)
+  renderer Primary_Weapon_Container_01 active=True mats=Module_PlayerArmor,Module_PlayerEnergy boundsMuzzle c=(0.0216, 0.0166, -0.1334) s=(0.0765, 0.0810, 0.0577)
+  renderer Primary_Weapon_Container_02 active=True mats=Module_PlayerArmor,Module_PlayerEnergy boundsMuzzle c=(0.0215, 0.0165, -0.2068) s=(0.0765, 0.0810, 0.0577)
+  renderer Primary_Weapon_Container_03 active=True mats=Module_PlayerArmor,Module_PlayerEnergy boundsMuzzle c=(-0.0229, 0.0160, -0.1334) s=(0.0766, 0.0810, 0.0577)
+  renderer Primary_Weapon_Container_04 active=True mats=Module_PlayerArmor,Module_PlayerEnergy boundsMuzzle c=(-0.0229, 0.0159, -0.2068) s=(0.0766, 0.0810, 0.0577)
+  renderer Primary_Weapon_Front_Piece_01 active=True mats=Module_PlayerFront boundsMuzzle c=(0.0407, -0.0010, -0.0277) s=(0.0568, 0.1535, 0.0759)
+  renderer Primary_Weapon_Front_Piece_02 active=True mats=Module_PlayerFront boundsMuzzle c=(-0.0407, -0.0010, -0.0277) s=(0.0568, 0.1535, 0.0759)
+module bounds (muzzle space) c=(0.0000, -0.0010, -0.1384) s=(0.1382, 0.1535, 0.2972) min=(-0.0691, -0.0778, -0.2870)
+player Forearm_R parent=UpperArm_R
+player Hand_R parent=Forearm_R
+player Forearm_R_FPS parent=Protagonist_FPS mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.2136, 0.3220, 0.1782)
+   skin mesh=Forearm_R_FPS verts=905 bones=50 root=Root
+player Hand_R_FPS parent=Protagonist_FPS mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.1688, 0.1783, 0.1253)
+   skin mesh=Hand_R_FPS verts=2190 bones=50 root=Root
+player Forearm_R parent=UpperArm_R
+player Hand_R parent=Forearm_R
+player RightArm_UniversalCoupling parent=ModuleSocket_R mats=Coupling_Ivory(RGBA(0.817, 0.747, 0.684, 1.000) tex=none),Receiver_Graphite(RGBA(0.101, 0.093, 0.091, 1.000) tex=none) bounds=(0.1611, 0.1612, 0.0893)
+   mesh UniversalForearm_Coupling bounds=Center: (0.0000, 0.0000, -0.0305), Extents: (0.0615, 0.0615, 0.0445) localScale=(1.000, 1.000, 1.000)
+player Forearm_R_Receiver parent=Protagonist_FPS mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.2648, 0.4890, 0.2213)
+   skin mesh=Protagonist_RightForearm_Receiver verts=905 bones=50 root=Root
+player Forearm_R_LOD0 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.2136, 0.3220, 0.1782)
+   skin mesh=Forearm_R_LOD0 verts=905 bones=50 root=Root
+player Forearm_R_LOD1 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.2125, 0.3209, 0.1787)
+   skin mesh=Forearm_R_LOD1 verts=637 bones=50 root=Root
+player Forearm_R_LOD2 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.2102, 0.3189, 0.1802)
+   skin mesh=Forearm_R_LOD2 verts=409 bones=50 root=Root
+player Hand_R_LOD0 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.1688, 0.1783, 0.1253)
+   skin mesh=Hand_R_LOD0 verts=2190 bones=50 root=Root
+player Hand_R_LOD1 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.1642, 0.1766, 0.1244)
+   skin mesh=Hand_R_LOD1 verts=883 bones=50 root=Root
+player Hand_R_LOD2 parent=Protagonist_Body mats=IR_Protagonist_URP(RGBA(1.000, 1.000, 1.000, 1.000) tex=IR_Protagonist_BaseColor) bounds=(0.1616, 0.1721, 0.1244)
+   skin mesh=Hand_R_LOD2 verts=510 bones=50 root=Root
+player Forearm_R parent=UpperArm_R
+player Hand_R parent=Forearm_R
+player RightArm_ModuleSocket parent=Forearm_R
+material Coupling_Ivory shader=Universal Render Pipeline/Lit base=RGBA(0.817, 0.747, 0.684, 1.000) tex=none metal=0.10 smooth=0.50 users-guid=dec8fd146bd987b4086ca4f47ed72e47
+material Module_PlayerArmor shader=Universal Render Pipeline/Lit base=RGBA(1.000, 0.992, 0.979, 1.000) tex=Blaster_PlayerPalette metal=0.20 smooth=0.55 users-guid=37d140ff78b738f4ea29431b2888d5eb
+material Module_PlayerEnergy shader=Universal Render Pipeline/Lit base=RGBA(0.060, 0.090, 0.100, 0.550) tex=Blaster_PlayerPalette metal=0.26 smooth=0.62 users-guid=58677467c056cd944b453d781ec35847
+material Module_PlayerFront shader=Universal Render Pipeline/Lit base=RGBA(0.180, 0.170, 0.160, 1.000) tex=Blaster_PlayerPalette metal=0.26 smooth=0.50 users-guid=103c28076a777cd498d58003aebc7790
+material Receiver_Graphite shader=Universal Render Pipeline/Lit base=RGBA(0.101, 0.093, 0.091, 1.000) tex=none metal=0.45 smooth=0.32 users-guid=2d76696d3efa51449b26309c145bc7ce

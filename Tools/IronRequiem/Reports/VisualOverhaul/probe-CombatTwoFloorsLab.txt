@@ -1,0 +1,92 @@
+SCENE Assets/IronRequiem/Scenes/CombatTwoFloorsLab.unity lighting=Resources/unity_builtin_extra fog=False ambient=Flat RGBA(0.360, 0.410, 0.460, 1.000) sky=Default-Skybox
+ROOT GameManager active=True prefab=Assets/FPS/Prefabs/GameManager.prefab renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,GameFlowManager,EnemyManager,ActorsManager,ObjectiveManager,AudioManager,AudioSource
+ROOT GameHUD active=True prefab=Assets/FPS/Prefabs/UI/GameHUD.prefab renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,JetpackCounter,WeaponHUDManager,PlayerHealthBar,FeedbackFlashHUD,FramerateCounter,StanceHUD,NotificationHUDManager,ObjectiveHUDManager,CrosshairManager,DisplayMessageManager
+ROOT InGameMenu active=True prefab=Assets/FPS/Prefabs/UI/InGameMenu.prefab renderers=0 bounds=(25.2, -1.4, 26.4)/(0.0, 0.0, 0.0) comps=Transform,InGameMenuManager,TakeScreenshot
+ROOT EventSystem active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,EventSystem,InputSystemUIInputModule
+ROOT Player_ModularArm_v07 active=True prefab=Assets/IronRequiem/Prefabs/Player/Player_ModularArm_v07.prefab renderers=31 bounds=(0.3, 1.2, -14.1)/(1.6, 2.6, 28.2) comps=Transform,PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,PlayerBodyPresentation,MechanicInput,AdvancedPlayerMovement,StolenWeaponCarrier,SlideContactEffects,ProtagonistHandsPresentation,ProtagonistBodyAnimation,ProtagonistMelee,ProtagonistSlidePresentation
+ROOT ArenaGate active=True prefab=- renderers=1 bounds=(27.0, 3.8, 25.0)/(1.0, 7.5, 12.0) comps=Transform,MeshFilter,BoxCollider,MeshRenderer,NavMeshObstacle
+ROOT LabSun active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT WaveSpawnPoints active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform
+ROOT ArenaMessages active=True prefab=- renderers=0 bounds=(500.5, 171.0, 0.0)/(0.0, 0.0, 0.0) comps=RectTransform,Canvas,CanvasScaler
+ROOT CombatTwoRoomsCoordinator active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,CombatTwoRoomsLab,EnemySpawnQueue,LabRoomVisibility
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(-10.0, 1.0, -6.2)/(20.1, 1.9, 12.4) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(10.0, 1.0, 6.2)/(20.1, 1.9, 12.4) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(-10.0, 5.0, -7.2)/(20.1, 9.9, 14.4) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT Pickup_Health active=True prefab=Assets/FPS/Prefabs/Pickups/Pickup_Health.prefab renderers=3 bounds=(10.0, 5.0, 9.2)/(20.1, 9.9, 18.4) comps=Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+ROOT CombatLabMenu active=True prefab=- renderers=0 bounds=(500.5, 171.0, 0.0)/(0.0, 0.0, 0.0) comps=RectTransform,Canvas,CanvasScaler,GraphicRaycaster,CombatLabMenu,RequiemMenuView,MenuNavigation
+ROOT LabMenuMusic active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform,AudioSource,MenuMusic
+ROOT TwoFloorsGeometry active=True prefab=- renderers=123 bounds=(4.3, 7.8, -1.3)/(63.5, 17.6, 66.5) comps=Transform,NavMeshSurface
+ROOT GapFallRecovery active=True prefab=- renderers=0 bounds=(0.0, 4.8, 0.0)/(0.0, 0.0, 0.0) comps=Transform,BoxCollider,Rigidbody,GapFallRecovery
+ROOT GapReturnPoints active=True prefab=- renderers=0 bounds=(0.0, 0.0, 0.0)/(0.0, 0.0, 0.0) comps=Transform
+ROOT StairSign active=True prefab=- renderers=1 bounds=(0.0, 0.0, 26.4)/(5.6, 1.3, 0.0) comps=RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+ROOT GapSign active=True prefab=- renderers=1 bounds=(0.0, 0.0, 8.0)/(5.8, 1.3, 0.0) comps=RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(-15.0, 7.0, -18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(-15.0, 7.0, 18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(15.0, 7.0, -18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(15.0, 7.0, 18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(-15.0, 15.0, -18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(-15.0, 15.0, 18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(15.0, 15.0, -18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT FloorLamp active=True prefab=- renderers=0 bounds=(15.0, 15.0, 18.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT StairLight active=True prefab=- renderers=0 bounds=(31.0, 12.0, 8.0)/(0.0, 0.0, 0.0) comps=Transform,Light
+ROOT Sector03Door active=True prefab=- renderers=1 bounds=(0.0, 11.5, 25.0)/(8.0, 7.0, 0.5) comps=Transform,MeshFilter,BoxCollider,MeshRenderer
+ROOT Sector03Frame active=True prefab=- renderers=1 bounds=(-4.4, 11.5, 25.0)/(0.7, 7.0, 1.0) comps=Transform,MeshFilter,BoxCollider,MeshRenderer
+ROOT Sector03Frame active=True prefab=- renderers=1 bounds=(4.4, 11.5, 25.0)/(0.7, 7.0, 1.0) comps=Transform,MeshFilter,BoxCollider,MeshRenderer
+ROOT Sector03Entrance active=True prefab=- renderers=0 bounds=(0.0, 10.0, 24.0)/(0.0, 0.0, 0.0) comps=Transform,BoxCollider,Rigidbody,ChaseSceneEntrance
+ROOT Sector03Sign active=True prefab=- renderers=1 bounds=(0.0, 0.0, 24.6)/(2.9, 0.8, 0.0) comps=RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+MAT Bunker_RustMetal x50 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Environment/Bunker/Bunker_RustMetal.mat
+MAT Bunker_Hazard x43 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Environment/Bunker/Bunker_Hazard.mat
+MAT IR_Protagonist_URP x21 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/ProtagonistV01/Materials/IR_Protagonist_URP.mat
+MAT Bunker_Wall x20 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Environment/Bunker/Bunker_Wall.mat
+MAT Bunker_LampCold x8 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Environment/Bunker/Bunker_LampCold.mat
+MAT Bunker_Floor x5 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Environment/Bunker/Bunker_Floor.mat
+MAT M_HealthPickup x4 shader=Universal Render Pipeline/Lit path=Assets/FPS/Art/Materials/VFX/M_HealthPickup.mat
+MAT ParticlesUnlit x4 shader=Universal Render Pipeline/Particles/Unlit path=Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+MAT HealthCube x4 shader=Universal Render Pipeline/Particles/Lit path=Assets/FPS/Art/Materials/VFX/HealthCube.mat
+MAT LiberationSans SDF Material x3 shader=TextMeshPro/Mobile/Distance Field path=Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+MAT MechanicParticles x3 shader=Universal Render Pipeline/Particles/Unlit path=Assets/IronRequiem/VFX/Mechanics/MechanicParticles.mat
+MAT JetPackTrail x2 shader=Universal Render Pipeline/Particles/Unlit path=Assets/FPS/Art/Materials/VFX/JetPackTrail.mat
+MAT EnergyCyan x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/Prototype/EnergyCyan.mat
+MAT RescueOrange x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/Prototype/RescueOrange.mat
+MAT Gate x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Levels/TwoRooms/Gate.mat
+MAT Coupling_Ivory x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Weapons/ArmModuleV07/Coupling_Ivory.mat
+MAT Receiver_Graphite x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Weapons/ArmModuleV07/Receiver_Graphite.mat
+MAT Graphite x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/Prototype/Graphite.mat
+MAT WornCeramic x1 shader=Universal Render Pipeline/Lit path=Assets/IronRequiem/Art/Player/Prototype/WornCeramic.mat
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(-15.0, 7.0, -18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(15.0, 15.0, 18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(-15.0, 15.0, 18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(15.0, 7.0, 18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(15.0, 7.0, -18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(15.0, 15.0, -18.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(-15.0, 7.0, 18.0)
+LIGHT StairLight Point Realtime int=3 range=30 col=RGBA(1.000, 1.000, 1.000, 1.000) shadows=None pos=(31.0, 12.0, 8.0)
+LIGHT LabSun Directional Realtime int=1.3 range=10 col=RGBA(1.000, 1.000, 1.000, 1.000) shadows=None pos=(0.0, 0.0, 0.0)
+LIGHT FloorLamp Point Realtime int=3 range=32 col=RGBA(0.750, 0.880, 1.000, 1.000) shadows=None pos=(-15.0, 15.0, -18.0)
+CAMERA Player_ModularArm_v07/Main Camera clear=Skybox far=300
+CAMERA Player_ModularArm_v07/Main Camera/WeaponCamera clear=Nothing far=10
+VOLUME Main Camera global=True profile=Assets/Rendering/PostProcessingProfile.asset [Bloom,Vignette,Tonemapping,MotionBlur-off,FilmGrain]
+PLAYER Player_ModularArm_v07 weapons=Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_ArmModule_v07_ExtendedHeat.prefab delay=0.2 smooth=False pos=(0.0, 0.0, -28.0)
+IR RequiemMenuView x2
+IR MenuMusic x1
+IR IndustrialPanelGraphic x15
+IR MechanicInput x1
+IR ChaseSceneEntrance x1
+IR WeaponHeatHud x1
+IR PlayerBodyPresentation x1
+IR EnemySpawnQueue x1
+IR CombatTwoRoomsLab x1
+IR AdvancedPlayerMovement x1
+IR ThermalGaugeGraphic x1
+IR StolenWeaponCarrier x1
+IR SlideContactEffects x1
+IR ProtagonistSlidePresentation x1
+IR CombatLabMenu x1
+IR ProtagonistBodyAnimation x1
+IR LabRoomVisibility x1
+IR ProtagonistHandsPresentation x1
+IR ProtagonistMelee x1
+IR GapFallRecovery x1
+NAVMESH verts=687
+NAVBOUNDS (4.0, 8.3, -1.5)/(57.2, 16.6, 60.4)
+NAVSURFACE TwoFloorsGeometry data=Assets/IronRequiem/Art/Levels/TwoFloorGap/TwoFloorsNavMesh.asset collect=Children geom=RenderMeshes agent=0

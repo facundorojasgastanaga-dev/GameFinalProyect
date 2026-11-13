@@ -1,0 +1,825 @@
+{
+  "source_static_confirmed": true,
+  "bones": 50,
+  "shared_skeleton": true,
+  "parts": [
+    {
+      "part": "Forearm_L_LOD0",
+      "triangles": 858,
+      "vertices": 431,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Forearm_R_LOD0",
+      "triangles": 872,
+      "vertices": 438,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Hand_R_LOD0",
+      "triangles": 2198,
+      "vertices": 1095,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    },
+    {
+      "part": "Body_LOD0",
+      "triangles": 15038,
+      "vertices": 7505,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Hand_L_LOD0",
+      "triangles": 2142,
+      "vertices": 1071,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    },
+    {
+      "part": "Hand_L_LOD1",
+      "triangles": 528,
+      "vertices": 266,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    },
+    {
+      "part": "Forearm_L_LOD1",
+      "triangles": 542,
+      "vertices": 273,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Hand_R_LOD1",
+      "triangles": 562,
+      "vertices": 277,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    },
+    {
+      "part": "Body_LOD1",
+      "triangles": 9426,
+      "vertices": 4699,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Forearm_R_LOD1",
+      "triangles": 570,
+      "vertices": 287,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Body_LOD2",
+      "triangles": 4962,
+      "vertices": 2467,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Hand_R_LOD2",
+      "triangles": 278,
+      "vertices": 135,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    },
+    {
+      "part": "Forearm_L_LOD2",
+      "triangles": 310,
+      "vertices": 157,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Forearm_R_LOD2",
+      "triangles": 320,
+      "vertices": 162,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 2
+    },
+    {
+      "part": "Hand_L_LOD2",
+      "triangles": 252,
+      "vertices": 126,
+      "uv_unchanged": true,
+      "unweighted": 0,
+      "max_influences": 3
+    }
+  ],
+  "clips": [
+    "IR_Idle",
+    "IR_Walk",
+    "IR_HandNormal",
+    "IR_HandFist",
+    "IR_HandGrip",
+    "IR_PunchPosePreview"
+  ],
+  "deformation_checks": [
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 2.392393495359381e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Idle",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 2.392393495359381e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_Walk",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 2.392393495359381e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 8.429884174375701e-08
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.192238405779396e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandNormal",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 8.431427402612772e-08
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.12427313423101766
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.12570676171386602
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.1250027510966113
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.12419797132003306
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 2.392393495359381e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.12243983795760792
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.12345627388452546
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.12427313423101766
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandFist",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.12570676171386602
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.06107097718993537
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.0617803138298746
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.06142569528279564
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.06108357225823382
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 2.393337071681772e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 2.392393495359381e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.060244399786095124
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.06079342561563747
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2489448945403256e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.06107097718993537
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_HandGrip",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.0617803138298746
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.14178643426814103
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_R_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.15656277450353767
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Body_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.14201903915381087
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_L_LOD0",
+      "finite": true,
+      "max_vertex_motion_m": 0.12570676171386602
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.1250027510966113
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_L_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.15645977779668546
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Body_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.14178845580872365
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_R_LOD1",
+      "finite": true,
+      "max_vertex_motion_m": 0.14178845580872365
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Body_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.14211609793860852
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.15645977779668546
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_R_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.14178437204921251
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_L_LOD2",
+      "finite": true,
+      "max_vertex_motion_m": 0.12345627388452546
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.14178643426814103
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_R_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.15656277450353767
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Forearm_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 1.2013700229374393e-07
+    },
+    {
+      "clip": "IR_PunchPosePreview",
+      "mesh": "Hand_L_FPS",
+      "finite": true,
+      "max_vertex_motion_m": 0.12570676171386602
+    }
+  ],
+  "limitations": [
+    "First-pass anatomical weights on generated topology; close-up knuckle/thumb contact needs artistic review.",
+    "PunchPosePreview is presentation only; no melee mechanics or controls."
+  ]
+}

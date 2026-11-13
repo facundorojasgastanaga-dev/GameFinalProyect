@@ -1,0 +1,10 @@
+CAMERA Main Camera stopNaN False -> True post=True
+CAMERA WeaponCamera stopNaN False -> True post=False
+SKIP non-IronRequiem profile Assets/Rendering/PostProcessingProfile.asset
+BLOOM intensity=0.1(True) threshold=0.9 clamp=65472 -> clamp=12
+  override Bloom active=True
+  override Vignette active=True
+  override Tonemapping active=True
+  override MotionBlur active=False
+  override FilmGrain active=True
+VOLUME Main Camera Assets/Rendering/PostProcessingProfile.asset -> Assets/IronRequiem/Art/VisualPass/Campaign_PostProfile.asset

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.7713942">
+  <test-suite type="TestSuite" id="1283" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="233" result="Failed" site="Child" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.771394" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1277" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="233" result="Failed" site="Child" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.637675" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1278" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="233" result="Failed" site="Child" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.628381" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="233" result="Failed" site="Child" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.622228" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1268" name="VisualOverhaulTests" fullname="IronRequiem.Tests.VisualOverhaulTests" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.603825" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1272" name="EnemyLightsFollowStatesWarnAndGoOutOnDeath" fullname="IronRequiem.Tests.VisualOverhaulTests.EnemyLightsFollowStatesWarnAndGoOutOnDeath" methodname="EnemyLightsFollowStatesWarnAndGoOutOnDeath" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="470225379" result="Failed" start-time="2026-11-08 08:26:06Z" end-time="2026-11-08 08:26:17Z" duration="10.521612" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  state changes
+  Expected: greater than or equal to 2
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.VisualOverhaulTests+<EnemyLightsFollowStatesWarnAndGoOutOnDeath>d__27.MoveNext () [0x005c0] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\VisualOverhaulTests.cs:154
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

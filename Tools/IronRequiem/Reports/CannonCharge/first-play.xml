@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.4008604">
+  <test-suite type="TestSuite" id="1043" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="31" result="Failed" site="Child" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.400860" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1037" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="31" result="Failed" site="Child" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.369729" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13004" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1038" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="31" result="Failed" site="Child" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.361914" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1039" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="31" result="Failed" site="Child" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.353861" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="CannonChargeBehaviorTests" fullname="IronRequiem.Tests.CannonChargeBehaviorTests" classname="IronRequiem.Tests.CannonChargeBehaviorTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:53Z" duration="24.342615" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1003" name="ConsecutiveShotsStartAtMouthWhileMovingAndIgnorePlayer" fullname="IronRequiem.Tests.CannonChargeBehaviorTests.ConsecutiveShotsStartAtMouthWhileMovingAndIgnorePlayer" methodname="ConsecutiveShotsStartAtMouthWhileMovingAndIgnorePlayer" classname="IronRequiem.Tests.CannonChargeBehaviorTests" runstate="Runnable" seed="1925484138" result="Passed" start-time="2026-10-30 11:06:29Z" end-time="2026-10-30 11:06:39Z" duration="10.238147" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+]]></output>
+            </test-case>
+            <test-case id="1002" name="RimChargeAndAimRemainAlignedThroughMotionAndAds" fullname="IronRequiem.Tests.CannonChargeBehaviorTests.RimChargeAndAimRemainAlignedThroughMotionAndAds" methodname="RimChargeAndAimRemainAlignedThroughMotionAndAds" classname="IronRequiem.Tests.CannonChargeBehaviorTests" runstate="Runnable" seed="1723274425" result="Failed" start-time="2026-10-30 11:06:39Z" end-time="2026-10-30 11:06:43Z" duration="4.077997" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[SetUp :   Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CannonChargeBehaviorTests+<Setup>d__12.MoveNext () [0x002e3] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CannonChargeBehaviorTests.cs:58
+at UnityEngine.TestTools.EnumeratorHelper+<ProgressOnEnumerator>d__5.MoveNext () [0x00017] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+<ExecuteEnumerable>d__16[T].MoveNext () [0x00132] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:155
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+]]></output>
+            </test-case>
+            <test-case id="1004" name="SwitchingCancellingAndExhaustionLeaveNoChargeEffects" fullname="IronRequiem.Tests.CannonChargeBehaviorTests.SwitchingCancellingAndExhaustionLeaveNoChargeEffects" methodname="SwitchingCancellingAndExhaustionLeaveNoChargeEffects" classname="IronRequiem.Tests.CannonChargeBehaviorTests" runstate="Runnable" seed="599806094" result="Passed" start-time="2026-10-30 11:06:43Z" end-time="2026-10-30 11:06:53Z" duration="9.983285" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Account API did not become accessible within 30 seconds. This may be due to network issues or editor focus.
+[Worker1] Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD0' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD1' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker0] Renderer 'Body_LOD2' is registered with more than one LODGroup ('AnimatedRig' and 'Body').
+[Worker1] Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker1] Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker1] Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker1] Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker1] Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker1] Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[Worker0] Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,4 @@
+System.IO.IOException: The process cannot access the file 'C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Requests\stutter.txt' because it is being used by another process.
+  at System.IO.FileSystem.DeleteFile (System.String fullPath) [0x0001a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.IO.File.Delete (System.String path) [0x00014] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at IronRequiem.Editor.CombatStutterCapture.Tick () [0x0018e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\CombatStutterCapture.cs:49 

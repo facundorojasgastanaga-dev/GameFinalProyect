@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="2.0475008">
+  <test-suite type="TestSuite" id="1030" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="2.047501" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1040" name="IronRequiem.EditModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.EditModeTests.dll" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="2.030540" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="380" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1041" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="2.027927" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1042" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="2.026146" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1031" name="CharacterAssetTests" fullname="IronRequiem.Tests.CharacterAssetTests" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="1.655840" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1033" name="EnemyHasIndependentDamageJointAndRealMaterialMaps" fullname="IronRequiem.Tests.CharacterAssetTests.EnemyHasIndependentDamageJointAndRealMaterialMaps" methodname="EnemyHasIndependentDamageJointAndRealMaterialMaps" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="504399167" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:33Z" duration="0.039769" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" fullname="IronRequiem.Tests.CharacterAssetTests.LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" methodname="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="933449799" result="Passed" start-time="2026-10-29 13:51:33Z" end-time="2026-10-29 13:51:35Z" duration="1.592073" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1032" name="PlayerRetainsTemplateControllerCameraAndWeaponReferences" fullname="IronRequiem.Tests.CharacterAssetTests.PlayerRetainsTemplateControllerCameraAndWeaponReferences" methodname="PlayerRetainsTemplateControllerCameraAndWeaponReferences" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="1772713533" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.013349" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1035" name="MechanicsAssetTests" fullname="IronRequiem.Tests.MechanicsAssetTests" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.368369" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1039" name="CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" fullname="IronRequiem.Tests.MechanicsAssetTests.CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" methodname="CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="67138145" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.085159" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" fullname="IronRequiem.Tests.MechanicsAssetTests.NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" methodname="NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="1785455651" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.016101" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" fullname="IronRequiem.Tests.MechanicsAssetTests.PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" methodname="PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="332556943" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.029472" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1037" name="PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" fullname="IronRequiem.Tests.MechanicsAssetTests.PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" methodname="PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="2076783480" result="Passed" start-time="2026-10-29 13:51:35Z" end-time="2026-10-29 13:51:35Z" duration="0.003870" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,15 @@
+UI unify 11/13/2026 4:08:38 AM
+backup Tools/IronRequiem/Backups/20261113-0408-ui-unify
+theme fonts title=Roboto-Black SDF body=LiberationSans SDF sounds hover=Pickup_Weapon_Small click=Notification_Snap back=Notification_End output=Master
+  options overlay GameManager/InGameMenu/Canvas/IndustrialShell/OptionsPanel console scale 1.58 (fits 76% height)
+  options overlay CombatLabMenu/IndustrialShell/OptionsPanel console scale 1.58 (fits 76% height)
+  skip unused template menu InGameMenu/Canvas
+  death screen restyled CombatLabMenu/DeathPanel
+  banner ArenaMessages/Message
+  created Assets/IronRequiem/Art/Menu/UI/IR_UI_Ring.png
+Assets/IronRequiem/Scenes/RequiemCampaign.unity: canvases=10 options overlays=2 buttons=13 texts=74
+  skip prompt WakeUpCinematic/CinematicUI/SkipPrompt
+Assets/IronRequiem/Scenes/Campaign/Room00_Hangar.unity: canvases=1 options overlays=0 buttons=0 texts=1
+Assets/IronRequiem/Scenes/Campaign/Room00b_AlarmCorridor.unity: canvases=0 options overlays=0 buttons=0 texts=0
+  options overlay Canvas/IndustrialShell/OptionsPanel console scale 1.58 (fits 76% height)
+Assets/FPS/Scenes/IntroMenu.unity: canvases=1 options overlays=1 buttons=7 texts=29

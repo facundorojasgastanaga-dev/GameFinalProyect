@@ -1,0 +1,10 @@
+VFX Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Muzzle_Primary.prefab <- Assets/FPS/Prefabs/VFX/VFX_MuzzleFlashGreen.prefab maxScreen<=0.12 size x1
+  material Lazer_Green -> Spark (VP_Impact_Primary)
+VFX Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Impact_Primary.prefab <- Assets/FPS/Prefabs/VFX/VFX_LazerSparksGreen.prefab maxScreen<=0.05 size x1
+VFX Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Muzzle_Shotgun.prefab <- Assets/IronRequiem/Prefabs/SecondaryShotgun/MuzzleFlash_Shotgun_Secondary.prefab maxScreen<=0.16 size x1.25
+  material Lazer_Blue -> Spark (VP_Impact_Shotgun)
+VFX Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Impact_Shotgun.prefab <- Assets/FPS/Prefabs/VFX/VFX_LazerSparksBlue.prefab maxScreen<=0.045 size x0.8
+BOLT Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Bolt_Primary.prefab <- Assets/IronRequiem/Prefabs/Weapons/Projectile_IR_Integrated_v05.prefab impact=VP_Impact_Primary
+BOLT Assets/IronRequiem/Prefabs/VisualPass/VFX/VP_Bolt_Shotgun.prefab <- Assets/IronRequiem/Prefabs/SecondaryShotgun/Projectile_Shotgun_Secondary.prefab impact=VP_Impact_Shotgun
+WEAPON Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_IR_ArmCannon_VO.prefab muzzle VP_Muzzle_Primary -> VP_Muzzle_Primary | projectile VP_Bolt_Primary -> VP_Bolt_Primary
+WEAPON Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_Shotgun_ArmModule_VO.prefab muzzle VP_Muzzle_Shotgun -> VP_Muzzle_Shotgun | projectile VP_Bolt_Shotgun -> VP_Bolt_Shotgun

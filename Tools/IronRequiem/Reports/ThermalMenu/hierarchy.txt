@@ -1,0 +1,223 @@
+Assets/FPS/Scenes/IntroMenu.unity
+Canvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-480.00, y:-243.60, width:960.00, height:487.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(500.50, 254.00)
+Canvas/BackgroundImage active=True components=RectTransform,CanvasRenderer,RawImage
+ rect=(x:-480.00, y:-243.60, width:960.00, height:487.19) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Canvas/BackgroundImage/VignetteImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-480.00, y:-243.60, width:960.00, height:487.19) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Canvas/TitleText active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-467.83, y:-87.50, width:935.65, height:175.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+ TEXT=
+Canvas/StartButton active=True components=RectTransform,CanvasRenderer,Image,Button,LoadSceneButton
+ rect=(x:-190.00, y:0.00, width:380.00, height:70.00) anchors=(0.50, 0.00)/(0.50, 0.00) pos=(0.00, 25.00)
+Canvas/StartButton/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-190.00, y:-35.00, width:380.00, height:70.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Play
+Canvas/ControlsButton active=True components=RectTransform,CanvasRenderer,Image,Button,ToggleGameObjectButton
+ rect=(x:-190.00, y:0.00, width:380.00, height:30.00) anchors=(0.50, 0.00)/(0.50, 0.00) pos=(0.00, 105.00)
+Canvas/ControlsButton/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-190.00, y:-15.00, width:380.00, height:30.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Controls
+Canvas/ControlsImage active=False components=RectTransform
+ rect=(x:-430.00, y:-166.10, width:860.00, height:332.19) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 27.50)
+Canvas/ControlsImage/ContentImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-430.00, y:-166.10, width:860.00, height:332.19) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Canvas/ControlsImage/CloseButton active=True components=RectTransform,CanvasRenderer,Image,Button,ToggleGameObjectButton
+ rect=(x:-20.00, y:-20.00, width:20.00, height:20.00) anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-15.00, -15.00)
+Canvas/ControlsImage/CloseButton/Image active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Assets/FPS/Scenes/MainScene.unity
+GameManager active=True components=Transform,GameFlowManager,EnemyManager,ActorsManager,ObjectiveManager,AudioManager,AudioSource
+GameManager/EndGameFadeCanvas active=False components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster,CanvasGroup
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/EndGameFadeCanvas/Image active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/FeedbackFlashCanvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(485.13, 251.20)
+GameManager/GameHUD/FeedbackFlashCanvas/FlashImage active=True components=RectTransform,CanvasRenderer,Image,CanvasGroup
+ rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/FeedbackFlashCanvas/VignetteImage active=True components=RectTransform,CanvasRenderer,Image,CanvasGroup
+ rect=(x:-500.50, y:-254.00, width:1001.00, height:508.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-480.00, y:-243.60, width:960.00, height:487.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(485.13, 251.20)
+GameManager/GameHUD/HUD/WeaponHUDManager active=True components=RectTransform,VerticalLayoutGroup
+ rect=(x:-100.00, y:-243.60, width:100.00, height:487.19) anchors=(1.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/Crosshair active=True components=RectTransform,CanvasRenderer
+ rect=(x:-2.50, y:-2.50, width:5.00, height:5.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -0.20)
+GameManager/GameHUD/HUD/Crosshair/V active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-5.00, y:-5.00, width:10.00, height:10.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/Compass active=True components=RectTransform,CanvasRenderer,Compass,RectMask2D,CanvasGroup
+ rect=(x:-194.00, y:-30.00, width:388.00, height:30.00) anchors=(0.50, 1.00)/(0.50, 1.00) pos=(0.00, -25.00)
+GameManager/GameHUD/HUD/Compass/CompassBackground active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-194.00, y:-15.00, width:388.00, height:30.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/Compass/CompassBackground/LineImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-194.00, y:-0.50, width:388.00, height:1.00) anchors=(0.00, 0.50)/(1.00, 0.50) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/Compass/Directions active=True components=RectTransform
+ rect=(x:-50.00, y:-50.00, width:100.00, height:100.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/FramerateCounter active=False components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-200.00, y:-26.70, width:200.00, height:26.70) anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-22.00, -10.00)
+ TEXT=000
+GameManager/GameHUD/HUD/NotificationsRect active=True components=RectTransform,VerticalLayoutGroup
+ rect=(x:0.00, y:0.00, width:100.00, height:145.85) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 106.70)
+GameManager/GameHUD/HUD/ObjectivesRect active=True components=RectTransform,VerticalLayoutGroup
+ rect=(x:0.00, y:-186.36, width:215.42, height:186.36) anchors=(0.00, 1.00)/(0.00, 1.00) pos=(0.00, -55.00)
+GameManager/GameHUD/HUD/DisplayMessageRect active=True components=RectTransform,UITable
+ rect=(x:-480.00, y:-150.00, width:960.00, height:300.00) anchors=(0.00, 0.50)/(1.00, 0.50) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner active=True components=RectTransform,VerticalLayoutGroup
+ rect=(x:0.00, y:0.00, width:260.50, height:252.55) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter active=True components=RectTransform,CanvasGroup,FillBarColorChange
+ rect=(x:0.00, y:0.00, width:106.00, height:22.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/BackgroundImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-53.00, y:-11.00, width:106.00, height:22.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/FillImageJetpack active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-53.00, y:-11.00, width:106.00, height:22.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/JetpackIcon active=True components=RectTransform,CanvasRenderer,Image,CanvasGroup
+ rect=(x:0.00, y:-7.00, width:98.00, height:14.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(4.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent active=True components=RectTransform,HorizontalLayoutGroup
+ rect=(x:-91.59, y:-15.00, width:183.17, height:30.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth active=True components=RectTransform,CanvasGroup
+ rect=(x:0.00, y:0.00, width:194.00, height:30.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/BackgroundImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-97.00, y:-15.00, width:194.00, height:30.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/FillImageHealth active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-97.00, y:-15.00, width:194.00, height:30.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/HealthIcon active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:-10.00, width:184.00, height:20.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(5.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:0.00, width:30.00, height:30.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance/StanceIcon active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:0.00, width:25.00, height:25.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-11.79, -12.92)
+GameManager/GameHUD/HUD/PauseMenuInfo active=True components=RectTransform
+ rect=(x:0.00, y:-40.00, width:219.00, height:40.00) anchors=(0.00, 1.00)/(0.00, 1.00) pos=(22.00, 0.00)
+GameManager/GameHUD/HUD/PauseMenuInfo/TABImage active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:-12.50, width:50.00, height:25.00) anchors=(0.00, 0.50)/(0.00, 0.50) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/PauseMenuInfo/TABImage/Text active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-25.00, y:-12.50, width:50.00, height:25.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Tab
+GameManager/GameHUD/HUD/PauseMenuInfo/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-100.00, y:-15.00, width:200.00, height:30.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(45.00, 0.00)
+ TEXT=Pause/Options
+GameManager/GameHUD/HUD/MechanicsHUD active=True components=RectTransform,MechanicHud
+ rect=(x:-480.00, y:-243.60, width:960.00, height:487.19) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/GameHUD/HUD/MechanicsHUD/MechanicStatus active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-455.00, y:-155.00, width:455.00, height:155.00) anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-24.00, -88.00)
+ TEXT=
+GameManager/GameHUD/HUD/MechanicsHUD/PickupPrompt active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-275.00, y:0.00, width:550.00, height:45.00) anchors=(0.50, 0.00)/(0.50, 0.00) pos=(0.00, 155.00)
+ TEXT=
+GameManager/InGameMenu active=True components=Transform,InGameMenuManager,TakeScreenshot
+GameManager/InGameMenu/Canvas active=False components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster,CanvasGroup
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/Background active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-200.00, y:-150.00, width:400.00, height:300.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/Title active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-200.00, y:-40.00, width:400.00, height:40.00) anchors=(0.00, 1.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Pause/Options
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel active=True components=RectTransform,CanvasRenderer,GridLayoutGroup
+ rect=(x:-200.00, y:-130.00, width:400.00, height:260.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, -20.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:-22.19, width:390.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:-11.10, width:160.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Look Sensitivity
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider active=True components=RectTransform,Slider
+ rect=(x:-80.00, y:-10.00, width:160.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(25.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider/Background active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-80.00, y:-5.00, width:160.00, height:10.00) anchors=(0.00, 0.25)/(1.00, 0.75) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider/Fill Area active=True components=RectTransform
+ rect=(x:-70.00, y:-5.00, width:140.00, height:10.00) anchors=(0.00, 0.25)/(1.00, 0.75) pos=(-5.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider/Fill Area/Fill active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.93, y:0.00, width:21.86, height:0.00) anchors=(0.00, 0.00)/(0.08, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider/Handle Slide Area active=True components=RectTransform
+ rect=(x:-70.00, y:-10.00, width:140.00, height:20.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/SensitivityPanel/Slider/Handle Slide Area/Handle active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:0.00, width:20.00, height:0.00) anchors=(0.08, 0.00)/(0.08, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ShadowsPanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:-22.19, width:390.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, -59.38)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ShadowsPanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:-11.10, width:160.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Shadows
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ShadowsPanel/Toggle active=True components=RectTransform,Toggle
+ rect=(x:-80.00, y:-10.00, width:160.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(25.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ShadowsPanel/Toggle/Background active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 1.00)/(0.00, 1.00) pos=(10.00, -10.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ShadowsPanel/Toggle/Background/Checkmark active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/InvincibilityPanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:-22.19, width:390.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, -86.57)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/InvincibilityPanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:-11.10, width:160.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Invincibility
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/InvincibilityPanel/Toggle active=True components=RectTransform,Toggle
+ rect=(x:-80.00, y:-10.00, width:160.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(25.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/InvincibilityPanel/Toggle/Background active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 1.00)/(0.00, 1.00) pos=(10.00, -10.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/InvincibilityPanel/Toggle/Background/Checkmark active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/FrameratePanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:-22.19, width:390.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, -113.76)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/FrameratePanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:-11.10, width:160.00, height:22.19) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Framerate Counter
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/FrameratePanel/Toggle active=True components=RectTransform,Toggle
+ rect=(x:-80.00, y:-10.00, width:160.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(25.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/FrameratePanel/Toggle/Background active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 1.00)/(0.00, 1.00) pos=(10.00, -10.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/FrameratePanel/Toggle/Background/Checkmark active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ControlPanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ControlPanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:0.00, width:160.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Controls
+
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ControlPanel/Button active=True components=RectTransform,CanvasRenderer,Image,Button
+ rect=(x:-30.77, y:0.00, width:61.53, height:0.00) anchors=(0.50, 0.00)/(0.50, 1.00) pos=(-24.59, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ControlPanel/Button/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-30.77, y:0.00, width:61.53, height:0.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Show
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ScreenshotPanel active=True components=RectTransform,CanvasRenderer
+ rect=(x:0.00, y:0.00, width:0.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ScreenshotPanel/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:0.00, y:0.00, width:160.00, height:0.00) anchors=(0.00, 0.00)/(0.00, 1.00) pos=(10.00, 0.00)
+ TEXT=Screenshot
+
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ScreenshotPanel/Button active=True components=RectTransform,CanvasRenderer,Image,Button
+ rect=(x:-42.38, y:0.00, width:84.75, height:0.00) anchors=(0.50, 0.00)/(0.50, 1.00) pos=(-12.97, 0.00)
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ScreenshotPanel/Button/Text (TMP) active=True components=RectTransform,CanvasRenderer,TextMeshProUGUI
+ rect=(x:-42.38, y:0.00, width:84.75, height:0.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+ TEXT=Take new
+GameManager/InGameMenu/Canvas/MenuPanel/InnerPanel/ScreenshotPanel/PreviewRawImage active=True components=RectTransform,CanvasRenderer,RawImage
+ rect=(x:-75.12, y:-42.26, width:150.24, height:84.51) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(115.80, -30.16)
+GameManager/InGameMenu/Canvas/MenuPanel/CloseButton active=True components=RectTransform,CanvasRenderer,Image,Button
+ rect=(x:-20.00, y:-20.00, width:20.00, height:20.00) anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-5.00, -5.00)
+GameManager/InGameMenu/Canvas/MenuPanel/CloseButton/Image active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+GameManager/InGameMenu/Canvas/ControlsImage active=False components=RectTransform,CanvasRenderer,Image
+ rect=(x:-343.55, y:-322.80, width:687.10, height:322.80) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 109.90)
+GameManager/InGameMenu/Canvas/ControlsImage/CloseButton active=True components=RectTransform,CanvasRenderer,Image,Button
+ rect=(x:-20.00, y:-20.00, width:20.00, height:20.00) anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-15.00, -15.00)
+GameManager/InGameMenu/Canvas/ControlsImage/CloseButton/Image active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-10.00, y:-10.00, width:20.00, height:20.00) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Player active=True components=Transform,PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,SceneObjectGuid,MechanicInput,StolenWeaponCarrier,AdvancedPlayerMovement,SlideContactEffects
+ WEAPON=Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol.prefab
+Enemy_Turret/HealthBar Pivot/Canvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+Enemy_Turret/HealthBar Pivot/Canvas/ImageBackground active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+Enemy_Turret/HealthBar Pivot/Canvas/ImageFill active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.49, y:-0.04, width:0.98, height:0.08) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+T07_Common_Destructible/HealthBarPivot/Canvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+T07_Common_Destructible/HealthBarPivot/Canvas/ImageBackground active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+T07_Common_Destructible/HealthBarPivot/Canvas/ImageFill active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.49, y:-0.04, width:0.98, height:0.08) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+T07_Common_Destructible (1)/HealthBarPivot/Canvas active=True components=RectTransform,Canvas,CanvasScaler,GraphicRaycaster
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00)
+T07_Common_Destructible (1)/HealthBarPivot/Canvas/ImageBackground active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.50, y:-0.05, width:1.00, height:0.10) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)
+T07_Common_Destructible (1)/HealthBarPivot/Canvas/ImageFill active=True components=RectTransform,CanvasRenderer,Image
+ rect=(x:-0.49, y:-0.04, width:0.98, height:0.08) anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00)

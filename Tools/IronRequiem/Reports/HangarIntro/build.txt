@@ -1,0 +1,48 @@
+Room00_Hangar build 11/13/2026 3:29:31 AM
+backup Tools/IronRequiem/Backups/20261113-0329-room00-hangar
+mesh LODs on for Scrap_RustedWreckage.fbx (generateMeshLods)
+scrap Scrap_RustedWreckage raw=(0.99, 0.52, 0.70) upFix=none tris=9274
+mesh LODs on for Scrap_MachineWreck.fbx (generateMeshLods)
+scrap Scrap_MachineWreck raw=(0.98, 0.58, 0.68) upFix=none tris=9589
+mesh LODs on for Scrap_MilitaryMech.fbx (generateMeshLods)
+scrap Scrap_MilitaryMech raw=(0.98, 0.66, 0.67) upFix=none tris=9670
+rigid skin: cached copies reused (v30f-cut-head-neck-hands-per-vertex)
+fx Assets/IronRequiem/Prefabs/VFX/FX_BigBot_Blast_v4.prefab
+fx Assets/IronRequiem/Prefabs/VFX/FX_Fist_HeavyImpact_v4.prefab
+fx Assets/IronRequiem/Prefabs/VFX/FX_Slide_Deflect_v4.prefab
+fist weapon: Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Fist.prefab (updated)
+BigBot_Current: damage 8.0 -> 12.0 per shell, blast radius 1.80 -> 2.88 m, cannons on blast projectile 2, execution disabled=yes
+robot raw size=(0.59, 1.11, 0.32) centre=(0.01, 0.44, -0.01) upFix=none
+robot scale=2.019 bounds after fit=(1.43, 1.88, 1.61)
+rigid skin applied to 2 skinned renderer(s)
+collars: off
+colliders: 36
+v4 pit: edge z=13.2 back z=30.5 depth=42 hidden floor props=0 () posts=15 rails=10 point lights=4
+scrap yard: piles=14 (skipped over pit 5) wreck pieces=155 floor debris=45 placeholder cubes left=0
+scrap piles=19 points=10 models=3
+glass shards=22
+navmesh sources=112 points on mesh 10/10
+scavengers=5 (prefab Assets/IronRequiem/Prefabs/Campaign/Carronero.prefab)
+rig bones head=mixamorig:Head forearm=mixamorig:RightForeArm
+v4 end camera samples inside/touching the capsule shell=0 (E_Reveal + F_ToHead, 42 samples)
+timeline shots=8 sounds=15 duration=27.8
+restraints: robot surface samples=24777
+restraints=8 cables=4 footrest y=-0.969 (pod-local)
+foot contact windows=6
+stand=(-0.78, 0.00, -107.93) facing=(0.50, 0.00, 0.87) grip=(-2.15, 1.02, -108.61)
+saved Assets/IronRequiem/Scenes/Campaign/Room00_Hangar.unity
+corridor navmesh sources=23
+corridor: waves=2 (2 T-07 + 1 Carroñero, 2 Carroñeros) slots on mesh 6/6
+saved Assets/IronRequiem/Scenes/Campaign/Room00b_AlarmCorridor.unity
+chamber: doors ChamberHangarDoor / ChamberCorridorDoor + shutter, cycle lamps=2
+starting weapons: [Weapon_IR_Fist] -> [] (right-hand strike on F / M1 unarmed; cannon from the montage station; Weapon_IR_Fist and the shotgun kept as assets)
+HUD: fist charge ring + slide guard edge on HUD
+montage station prefab Assets/IronRequiem/Prefabs/Levels/MountStation_C04.prefab in the lobby at z=-33.9 (E to mount Weapon_IR_ArmCannon_VO, ~5.6 s, hold E/Space to skip)
+stages: Room00_Hangar, Room00b_AlarmCorridor, Room01_Foundry, Room02_Breach, Room03_Assembly, Room04_Reactor, Pursuit05
+airlock 0 ChamberAirlock source=0 door=ChamberHangarDoor->ChamberCorridorDoor
+airlock 1 HangarAirlock source=1 door=LobbyRear->InitialLoadingDoor
+airlock 2 StairAirlock source=2 door=Room01ExitDoor->Room02EntryDoor
+airlock 3 Transfer source=3 door=SourceDoor->DestinationDoor
+airlock 4 Transfer source=4 door=SourceDoor->DestinationDoor
+airlock 5 Transfer source=5 door=SourceDoor->DestinationDoor
+reopened Assets/FPS/Scenes/IntroMenu.unity

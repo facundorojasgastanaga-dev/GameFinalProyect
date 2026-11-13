@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.1838013">
+  <test-suite type="TestSuite" id="1087" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="68" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.183801" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1081" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="68" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.168792" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34464" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1082" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="68" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.165467" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1021" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="68" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.160394" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1041" name="ProtagonistActionsTests" fullname="IronRequiem.Tests.ProtagonistActionsTests" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:49Z" duration="15.147300" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1047" name="DownwardLookKeepsLegPoseAnchoredAndVisible" fullname="IronRequiem.Tests.ProtagonistActionsTests.DownwardLookKeepsLegPoseAnchoredAndVisible" methodname="DownwardLookKeepsLegPoseAnchoredAndVisible" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1766050631" result="Passed" start-time="2026-11-01 02:01:34Z" end-time="2026-11-01 02:01:38Z" duration="4.300948" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1048" name="SlideDirectionStaysFixedAndTorsoCannotTurnBehind" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlideDirectionStaysFixedAndTorsoCannotTurnBehind" methodname="SlideDirectionStaysFixedAndTorsoCannotTurnBehind" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1171149114" result="Passed" start-time="2026-11-01 02:01:38Z" end-time="2026-11-01 02:01:42Z" duration="3.420416" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" methodname="SlideShowsOnlyLegsAndContactSparksThenClearsOnJump" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1482059853" result="Passed" start-time="2026-11-01 02:01:42Z" end-time="2026-11-01 02:01:45Z" duration="3.256026" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" methodname="SlopeContactsFollowSurfaceNormalAndSlideEndsCleanly" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="2127167910" result="Passed" start-time="2026-11-01 02:01:45Z" end-time="2026-11-01 02:01:49Z" duration="4.138723" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

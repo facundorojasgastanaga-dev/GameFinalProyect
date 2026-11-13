@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:20Z" duration="23.7365477">
+  <test-suite type="TestSuite" id="1244" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="201" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:20Z" duration="23.736548" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1238" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="201" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:20Z" duration="23.685414" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="37364" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1239" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="201" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:20Z" duration="23.677195" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1110" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="201" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:20Z" duration="23.664333" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1076" name="CombatTwoRoomsTests" fullname="IronRequiem.Tests.CombatTwoRoomsTests" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:02Z" duration="6.074883" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1077" name="ExactWavesGateAndCompletion" fullname="IronRequiem.Tests.CombatTwoRoomsTests.ExactWavesGateAndCompletion" methodname="ExactWavesGateAndCompletion" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" seed="388741627" result="Passed" start-time="2026-11-07 05:08:56Z" end-time="2026-11-07 05:09:02Z" duration="6.023829" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1093" name="CombatVarietyTests" fullname="IronRequiem.Tests.CombatVarietyTests" classname="IronRequiem.Tests.CombatVarietyTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-07 05:09:02Z" end-time="2026-11-07 05:09:20Z" duration="17.565647" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1096" name="BlockedSlotsRecoverAndOnlyLivingEnemiesAdvanceWaves" fullname="IronRequiem.Tests.CombatVarietyTests.BlockedSlotsRecoverAndOnlyLivingEnemiesAdvanceWaves" methodname="BlockedSlotsRecoverAndOnlyLivingEnemiesAdvanceWaves" classname="IronRequiem.Tests.CombatVarietyTests" runstate="Runnable" seed="1466809801" result="Passed" start-time="2026-11-07 05:09:02Z" end-time="2026-11-07 05:09:11Z" duration="8.828393" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1094" name="IndustrialMenuOptionsPauseDeathAndRestart" fullname="IronRequiem.Tests.CombatVarietyTests.IndustrialMenuOptionsPauseDeathAndRestart" methodname="IndustrialMenuOptionsPauseDeathAndRestart" classname="IronRequiem.Tests.CombatVarietyTests" runstate="Runnable" seed="1480565593" result="Passed" start-time="2026-11-07 05:09:11Z" end-time="2026-11-07 05:09:15Z" duration="3.965990" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+]]></output>
+            </test-case>
+            <test-case id="1095" name="SeedsChangeMixedSpawnsAndPlayerPositionIsRechecked" fullname="IronRequiem.Tests.CombatVarietyTests.SeedsChangeMixedSpawnsAndPlayerPositionIsRechecked" methodname="SeedsChangeMixedSpawnsAndPlayerPositionIsRechecked" classname="IronRequiem.Tests.CombatVarietyTests" runstate="Runnable" seed="651739610" result="Passed" start-time="2026-11-07 05:09:15Z" end-time="2026-11-07 05:09:20Z" duration="4.762014" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

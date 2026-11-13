@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.446846">
+  <test-suite type="TestSuite" id="1281" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.446846" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1275" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.403338" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1276" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.390251" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1116" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="231" result="Failed" site="Child" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.377997" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1082" name="CombatTwoRoomsTests" fullname="IronRequiem.Tests.CombatTwoRoomsTests" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:30Z" duration="13.351981" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1083" name="ExactWavesGateAndCompletion" fullname="IronRequiem.Tests.CombatTwoRoomsTests.ExactWavesGateAndCompletion" methodname="ExactWavesGateAndCompletion" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" seed="1325255366" result="Failed" start-time="2026-11-08 06:57:17Z" end-time="2026-11-08 06:57:21Z" duration="4.366350" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatTwoRoomsTests+<ExactWavesGateAndCompletion>d__7.MoveNext () [0x00214] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatTwoRoomsTests.cs:27
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1084" name="HealingIsClampedAndSingleUseAndNavigation" fullname="IronRequiem.Tests.CombatTwoRoomsTests.HealingIsClampedAndSingleUseAndNavigation" methodname="HealingIsClampedAndSingleUseAndNavigation" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" seed="1040685514" result="Passed" start-time="2026-11-08 06:57:21Z" end-time="2026-11-08 06:57:23Z" duration="1.377589" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1086" name="MenuStartupAndLegacyOverlayRegression" fullname="IronRequiem.Tests.CombatTwoRoomsTests.MenuStartupAndLegacyOverlayRegression" methodname="MenuStartupAndLegacyOverlayRegression" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" seed="246825329" result="Failed" start-time="2026-11-08 06:57:23Z" end-time="2026-11-08 06:57:25Z" duration="2.123994" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatTwoRoomsTests.AssertLegacyHidden () [0x0000f] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatTwoRoomsTests.cs:40
+at IronRequiem.Tests.CombatTwoRoomsTests+<MenuStartupAndLegacyOverlayRegression>d__12.MoveNext () [0x000f3] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatTwoRoomsTests.cs:47
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1085" name="PursuitAndMenuDeathReload" fullname="IronRequiem.Tests.CombatTwoRoomsTests.PursuitAndMenuDeathReload" methodname="PursuitAndMenuDeathReload" classname="IronRequiem.Tests.CombatTwoRoomsTests" runstate="Runnable" seed="878884840" result="Passed" start-time="2026-11-08 06:57:25Z" end-time="2026-11-08 06:57:30Z" duration="5.421160" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="17" result="Failed(Child)" total="17" passed="14" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:44Z" duration="3.2458265">
+  <test-suite type="TestSuite" id="1000" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:44Z" duration="3.245827" total="17" passed="14" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1024" name="IronRequiem.EditModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.EditModeTests.dll" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:44Z" duration="3.108509" total="17" passed="14" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13388" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1025" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:44Z" duration="3.040757" total="17" passed="14" failed="3" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1026" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:44Z" duration="3.027871" total="17" passed="14" failed="3" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="CannonChargeAssetTests" fullname="IronRequiem.Tests.CannonChargeAssetTests" classname="IronRequiem.Tests.CannonChargeAssetTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-08 01:52:41Z" end-time="2026-11-08 01:52:42Z" duration="0.395400" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1003" name="ChargePrefabHasBoundedLocalParticlesSharedUrpMaterialsAndNoGameplay" fullname="IronRequiem.Tests.CannonChargeAssetTests.ChargePrefabHasBoundedLocalParticlesSharedUrpMaterialsAndNoGameplay" methodname="ChargePrefabHasBoundedLocalParticlesSharedUrpMaterialsAndNoGameplay" classname="IronRequiem.Tests.CannonChargeAssetTests" runstate="Runnable" seed="378093371" result="Passed" start-time="2026-11-08 01:52:42Z" end-time="2026-11-08 01:52:42Z" duration="0.118105" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="EquippedVariantUsesGeometrySocketAndPreservesNativeGameplay" fullname="IronRequiem.Tests.CannonChargeAssetTests.EquippedVariantUsesGeometrySocketAndPreservesNativeGameplay" methodname="EquippedVariantUsesGeometrySocketAndPreservesNativeGameplay" classname="IronRequiem.Tests.CannonChargeAssetTests" runstate="Runnable" seed="585478459" result="Passed" start-time="2026-11-08 01:52:42Z" end-time="2026-11-08 01:52:42Z" duration="0.121061" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1004" name="CharacterAssetTests" fullname="IronRequiem.Tests.CharacterAssetTests" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-08 01:52:42Z" end-time="2026-11-08 01:52:43Z" duration="1.664551" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="EnemyHasIndependentDamageJointAndRealMaterialMaps" fullname="IronRequiem.Tests.CharacterAssetTests.EnemyHasIndependentDamageJointAndRealMaterialMaps" methodname="EnemyHasIndependentDamageJointAndRealMaterialMaps" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="474094407" result="Passed" start-time="2026-11-08 01:52:42Z" end-time="2026-11-08 01:52:42Z" duration="0.112593" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" fullname="IronRequiem.Tests.CharacterAssetTests.LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" methodname="LabHasOnePlayerEnemyBakedNavigationAndNoMissingScripts" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="199412377" result="Passed" start-time="2026-11-08 01:52:42Z" end-time="2026-11-08 01:52:43Z" duration="1.513957" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+]]></output>
+            </test-case>
+            <test-case id="1005" name="PlayerRetainsTemplateControllerCameraAndWeaponReferences" fullname="IronRequiem.Tests.CharacterAssetTests.PlayerRetainsTemplateControllerCameraAndWeaponReferences" methodname="PlayerRetainsTemplateControllerCameraAndWeaponReferences" classname="IronRequiem.Tests.CharacterAssetTests" runstate="Runnable" seed="235693349" result="Passed" start-time="2026-11-08 01:52:43Z" end-time="2026-11-08 01:52:43Z" duration="0.019679" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1008" name="MechanicsAssetTests" fullname="IronRequiem.Tests.MechanicsAssetTests" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-08 01:52:43Z" end-time="2026-11-08 01:52:44Z" duration="0.464719" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1012" name="CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" fullname="IronRequiem.Tests.MechanicsAssetTests.CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" methodname="CriticalAndSlideParticlesAreBoundedAndUseSupportedUrpMaterial" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="2070097939" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.022575" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" fullname="IronRequiem.Tests.MechanicsAssetTests.NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" methodname="NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="1374770727" result="Failed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.029743" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  CollectWeapon must not conflict with an existing action
+  Expected: 1
+  But was:  2
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MechanicsAssetTests.NewActionsAreUniqueAndDoNotReuseExistingKeyboardBindings () [0x000b1] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\EditMode\MechanicsAssetTests.cs:22
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1011" name="PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" fullname="IronRequiem.Tests.MechanicsAssetTests.PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" methodname="PistolIsASingleShotVariantAndShotgunRemainsAnIndependentAsset" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="1144980039" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.056204" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" fullname="IronRequiem.Tests.MechanicsAssetTests.PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" methodname="PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent" classname="IronRequiem.Tests.MechanicsAssetTests" runstate="Runnable" seed="2147027834" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.012642" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1013" name="T07AnimationAssetTests" fullname="IronRequiem.Tests.T07AnimationAssetTests" classname="IronRequiem.Tests.T07AnimationAssetTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.193953" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1014" name="AllThreeSkinsShareRealBonesWeightsUvsAndOriginalTriangleCounts" fullname="IronRequiem.Tests.T07AnimationAssetTests.AllThreeSkinsShareRealBonesWeightsUvsAndOriginalTriangleCounts" methodname="AllThreeSkinsShareRealBonesWeightsUvsAndOriginalTriangleCounts" classname="IronRequiem.Tests.T07AnimationAssetTests" runstate="Runnable" seed="1561339097" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.066159" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="AnimatorKeepsNativeContractInPlaceClipsAndSeparateDeathState" fullname="IronRequiem.Tests.T07AnimationAssetTests.AnimatorKeepsNativeContractInPlaceClipsAndSeparateDeathState" methodname="AnimatorKeepsNativeContractInPlaceClipsAndSeparateDeathState" classname="IronRequiem.Tests.T07AnimationAssetTests" runstate="Runnable" seed="1660578695" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.024161" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="ExplosionVariantHasBoundedPresentationAndNoDamageOrPhysicsFragments" fullname="IronRequiem.Tests.T07AnimationAssetTests.ExplosionVariantHasBoundedPresentationAndNoDamageOrPhysicsFragments" methodname="ExplosionVariantHasBoundedPresentationAndNoDamageOrPhysicsFragments" classname="IronRequiem.Tests.T07AnimationAssetTests" runstate="Runnable" seed="543119149" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.017890" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1017" name="T07DestructionAssetTests" fullname="IronRequiem.Tests.T07DestructionAssetTests" classname="IronRequiem.Tests.T07DestructionAssetTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.140556" total="3" passed="2" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1020" name="AllArmorMeshesHaveClosedCapsAndRealRigidWeights" fullname="IronRequiem.Tests.T07DestructionAssetTests.AllArmorMeshesHaveClosedCapsAndRealRigidWeights" methodname="AllArmorMeshesHaveClosedCapsAndRealRigidWeights" classname="IronRequiem.Tests.T07DestructionAssetTests" runstate="Runnable" seed="1006775905" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.025054" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="VariantKeepsRealSkeletonLodsCannonAndHealthWithIndependentArmor" fullname="IronRequiem.Tests.T07DestructionAssetTests.VariantKeepsRealSkeletonLodsCannonAndHealthWithIndependentArmor" methodname="VariantKeepsRealSkeletonLodsCannonAndHealthWithIndependentArmor" classname="IronRequiem.Tests.T07DestructionAssetTests" runstate="Runnable" seed="2114908444" result="Failed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.093327" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 5
+  But was:  6
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.T07DestructionAssetTests.VariantKeepsRealSkeletonLodsCannonAndHealthWithIndependentArmor () [0x000ad] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\EditMode\T07DestructionAssetTests.cs:18
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1019" name="VisualExplosionAndCosmeticDebrisCannotApplyDamageOrCollisions" fullname="IronRequiem.Tests.T07DestructionAssetTests.VisualExplosionAndCosmeticDebrisCannotApplyDamageOrCollisions" methodname="VisualExplosionAndCosmeticDebrisCannotApplyDamageOrCollisions" classname="IronRequiem.Tests.T07DestructionAssetTests" runstate="Runnable" seed="881436543" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.005346" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1021" name="T07OptimizationAssetTests" fullname="IronRequiem.Tests.T07OptimizationAssetTests" classname="IronRequiem.Tests.T07OptimizationAssetTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.044903" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1022" name="LodsKeepSeparateBodyAndWeaponWithValidGeometryAndNoInventedRig" fullname="IronRequiem.Tests.T07OptimizationAssetTests.LodsKeepSeparateBodyAndWeaponWithValidGeometryAndNoInventedRig" methodname="LodsKeepSeparateBodyAndWeaponWithValidGeometryAndNoInventedRig" classname="IronRequiem.Tests.T07OptimizationAssetTests" runstate="Runnable" seed="776314829" result="Passed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.012119" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1023" name="VariantKeepsIndependentCannonLodsAndOptimizedHeldWeapon" fullname="IronRequiem.Tests.T07OptimizationAssetTests.VariantKeepsIndependentCannonLodsAndOptimizedHeldWeapon" methodname="VariantKeepsIndependentCannonLodsAndOptimizedHeldWeapon" classname="IronRequiem.Tests.T07OptimizationAssetTests" runstate="Runnable" seed="1719354940" result="Failed" start-time="2026-11-08 01:52:44Z" end-time="2026-11-08 01:52:44Z" duration="0.014520" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: <CannonModule_LOD0 (UnityEngine.Mesh)>
+  But was:  <CannonClean_LOD0 (UnityEngine.Mesh)>
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.T07OptimizationAssetTests.VariantKeepsIndependentCannonLodsAndOptimizedHeldWeapon () [0x00142] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\EditMode\T07OptimizationAssetTests.cs:42
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

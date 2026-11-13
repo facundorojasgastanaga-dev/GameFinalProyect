@@ -1,0 +1,78 @@
+Canvas GameManager/GameHUD/HUD mode=ScreenSpaceOverlay scaler=(960.00, 540.00) match 0
+Canvas GameManager/InGameMenu/Canvas mode=ScreenSpaceOverlay scaler=(1920.00, 1080.00) match 0.5
+Canvas CombatLabMenu mode=ScreenSpaceOverlay scaler=(1920.00, 1080.00) match 0.5
+Canvas InGameMenu/Canvas mode=ScreenSpaceOverlay scaler=(800.00, 600.00) match 0
+Canvas ArenaMessages mode=ScreenSpaceOverlay scaler=(800.00, 600.00) match 0
+Canvas GameHUD/HUD mode=ScreenSpaceOverlay scaler=(960.00, 540.00) match 0
+Canvas GameManager/GameHUD/FeedbackFlashCanvas mode=ScreenSpaceOverlay scaler=(800.00, 600.00) match 0
+Canvas GameManager/EndGameFadeCanvas mode=ScreenSpaceOverlay scaler=(800.00, 600.00) match 0
+Canvas GameHUD/FeedbackFlashCanvas mode=ScreenSpaceOverlay scaler=(800.00, 600.00) match 0
+GameHUD/HUD a=(0.00, 0.00)-(0.00, 0.00) pos=(960.00, 540.00) size=(960.00, 540.00) 
+GameHUD/HUD/FramerateCounter a=(1.00, 1.00)-(1.00, 1.00) pos=(-22.00, -10.00) size=(200.00, 26.70) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) '000' fs=16
+GameHUD/HUD/BottomLeftcorner/JetpackCounter a=(0.00, 1.00)-(0.00, 1.00) pos=(25.00, -192.55) size=(106.00, 22.00) 
+GameHUD/HUD/ObjectivesRect a=(0.00, 1.00)-(0.00, 1.00) pos=(0.00, -55.00) size=(215.42, 186.36) 
+GameManager/GameHUD/HUD/ObjectivesRect a=(0.00, 1.00)-(0.00, 1.00) pos=(0.00, -55.00) size=(215.42, 186.36) 
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent a=(0.00, 1.00)-(0.00, 1.00) pos=(116.59, -212.55) size=(183.17, 30.00) 
+GameHUD/HUD/Crosshair/V a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, 0.00) size=(10.00, 10.00) Image RGBA(1.000, 1.000, 1.000, 0.588)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance a=(0.00, 1.00)-(0.00, 1.00) pos=(199.00, -30.00) size=(30.00, 30.00) Image RGBA(0.000, 0.000, 0.000, 0.200)
+GameManager/GameHUD/HUD/BottomLeftcorner a=(0.00, 0.00)-(0.00, 0.00) pos=(0.00, 0.00) size=(260.50, 252.55) 
+GameHUD/HUD/Compass/CompassBackground a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(1.000, 1.000, 1.000, 0.102)
+GameManager/GameHUD/HUD/WeaponHUDManager a=(1.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(100.00, 0.00) 
+GameHUD/FeedbackFlashCanvas a=(0.00, 0.00)-(0.00, 0.00) pos=(960.00, 540.00) size=(1920.00, 1080.00) 
+GameManager/GameHUD/HUD/WeaponHeatHUD/ThermalContent/THERMAL a=(0.50, 0.50)-(0.50, 0.50) pos=(35.00, 36.00) size=(120.00, 18.00) TextMeshProUGUI RGBA(0.120, 0.820, 0.910, 1.000) 'TÉRMICO' fs=11
+GameHUD/HUD/WeaponHUDManager a=(1.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(100.00, 0.00) 
+GameManager/GameHUD/FeedbackFlashCanvas a=(0.00, 0.00)-(0.00, 0.00) pos=(944.63, 537.20) size=(1920.00, 1080.00) 
+GameManager/GameHUD/HUD/Crosshair a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, -0.20) size=(5.00, 5.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/JetpackIcon a=(0.00, 0.00)-(1.00, 1.00) pos=(4.00, 0.00) size=(-8.00, -8.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth a=(0.00, 1.00)-(0.00, 1.00) pos=(0.00, -30.00) size=(194.00, 30.00) 
+GameHUD/HUD/DisplayMessageRect a=(0.00, 0.50)-(1.00, 0.50) pos=(0.00, 0.00) size=(0.00, 300.00) 
+GameManager/GameHUD/HUD/WeaponHeatHUD a=(1.00, 0.00)-(1.00, 0.00) pos=(-12.00, 70.00) size=(195.00, 125.00) 
+GameManager/GameHUD/HUD/PauseMenuInfo/TABImage/Text a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) 'Esc' fs=12
+GameHUD/FeedbackFlashCanvas/VignetteImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+GameManager/GameHUD/HUD/WeaponHeatHUD/ThermalContent a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) 
+GameHUD/HUD/BottomLeftcorner/JetpackCounter/FillImageJetpack a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.965, 1.000, 1.000)
+GameHUD/HUD/PauseMenuInfo/TABImage a=(0.00, 0.50)-(0.00, 0.50) pos=(0.00, 0.00) size=(50.00, 25.00) Image RGBA(0.179, 0.179, 0.179, 1.000)
+GameManager/GameHUD/HUD/PauseMenuInfo/Text (TMP) a=(0.50, 0.50)-(0.50, 0.50) pos=(45.00, 0.00) size=(200.00, 30.00) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) 'Pause/Options' fs=10
+GameManager/GameHUD/HUD/Crosshair/V a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, 0.00) size=(10.00, 10.00) Image RGBA(1.000, 1.000, 1.000, 0.588)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent a=(0.00, 1.00)-(0.00, 1.00) pos=(116.59, -212.55) size=(183.17, 30.00) 
+GameHUD/HUD/BottomLeftcorner a=(0.00, 0.00)-(0.00, 0.00) pos=(0.00, 0.00) size=(260.50, 252.55) 
+GameHUD/FeedbackFlashCanvas/FlashImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(1.000, 0.000, 0.000, 1.000)
+GameHUD/HUD/Compass/CompassBackground/LineImage a=(0.00, 0.50)-(1.00, 0.50) pos=(0.00, 0.00) size=(0.00, 1.00) Image RGBA(1.000, 1.000, 1.000, 1.000)
+GameHUD/HUD/PauseMenuInfo a=(0.00, 1.00)-(0.00, 1.00) pos=(22.00, 0.00) size=(219.00, 40.00) 
+GameHUD/HUD/PauseMenuInfo/TABImage/Text a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) 'Tab' fs=10
+GameManager/GameHUD/HUD a=(0.00, 0.00)-(0.00, 0.00) pos=(944.63, 537.20) size=(960.00, 540.00) 
+GameHUD/HUD/PauseMenuInfo/Text (TMP) a=(0.50, 0.50)-(0.50, 0.50) pos=(45.00, 0.00) size=(200.00, 30.00) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) 'Pause/Options' fs=10
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance a=(0.00, 1.00)-(0.00, 1.00) pos=(199.00, -30.00) size=(30.00, 30.00) Image RGBA(0.000, 0.000, 0.000, 0.200)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/FillImageHealth a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.976, 0.129, 0.216, 1.000)
+GameManager/GameHUD/HUD/WeaponHeatHUD/ThermalContent/HeatPercent a=(0.50, 0.50)-(0.50, 0.50) pos=(35.00, 5.00) size=(115.00, 35.00) TextMeshProUGUI RGBA(0.880, 0.940, 0.940, 1.000) '0%' fs=26
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth a=(0.00, 1.00)-(0.00, 1.00) pos=(0.00, -30.00) size=(194.00, 30.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance/StanceIcon a=(0.50, 0.50)-(0.50, 0.50) pos=(-11.79, -12.92) size=(25.00, 25.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+GameManager/GameHUD/HUD/Compass/Directions a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, 0.00) size=(100.00, 100.00) 
+GameManager/GameHUD/HUD/WeaponHeatHUD/ThermalContent/HeatState a=(0.50, 0.50)-(0.50, 0.50) pos=(35.00, -25.00) size=(123.00, 30.00) TextMeshProUGUI RGBA(0.880, 0.940, 0.940, 1.000) 'FRÍA / ESTABLE' fs=10
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/HealthIcon a=(0.00, 0.00)-(1.00, 1.00) pos=(5.00, 0.00) size=(-10.00, -10.00) Image RGBA(1.000, 1.000, 1.000, 1.000)
+GameManager/GameHUD/HUD/PauseMenuInfo/TABImage a=(0.00, 0.50)-(0.00, 0.50) pos=(0.00, 0.00) size=(50.00, 25.00) Image RGBA(0.179, 0.179, 0.179, 1.000)
+GameManager/GameHUD/HUD/Compass/CompassBackground/LineImage a=(0.00, 0.50)-(1.00, 0.50) pos=(0.00, 0.00) size=(0.00, 1.00) Image RGBA(1.000, 1.000, 1.000, 1.000)
+GameHUD/HUD/Compass/Directions a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, 0.00) size=(100.00, 100.00) 
+GameManager/GameHUD/HUD/PauseMenuInfo a=(0.00, 1.00)-(0.00, 1.00) pos=(22.00, 0.00) size=(219.00, 40.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/HealthIcon a=(0.00, 0.00)-(1.00, 1.00) pos=(5.00, 0.00) size=(-10.00, -10.00) Image RGBA(1.000, 1.000, 1.000, 1.000)
+GameManager/GameHUD/HUD/NotificationsRect a=(0.00, 0.00)-(0.00, 0.00) pos=(0.00, 106.70) size=(100.00, 145.85) 
+GameManager/GameHUD/HUD/WeaponHeatHUD/ThermalContent/CurvedThermalChannel a=(0.00, 0.00)-(0.00, 0.00) pos=(0.00, 0.00) size=(150.00, 210.00) ThermalGaugeGraphic RGBA(1.000, 1.000, 1.000, 1.000)
+GameHUD/HUD/Compass a=(0.50, 1.00)-(0.50, 1.00) pos=(0.00, -25.00) size=(388.00, 30.00) 
+GameManager/GameHUD/HUD/Compass a=(0.50, 1.00)-(0.50, 1.00) pos=(0.00, -25.00) size=(388.00, 30.00) 
+GameHUD/HUD/BottomLeftcorner/JetpackCounter/BackgroundImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 0.400)
+GameManager/GameHUD/HUD/FramerateCounter a=(1.00, 1.00)-(1.00, 1.00) pos=(-22.00, -10.00) size=(200.00, 26.70) TextMeshProUGUI RGBA(1.000, 1.000, 1.000, 1.000) '000' fs=16
+GameManager/GameHUD/HUD/DisplayMessageRect a=(0.00, 0.50)-(1.00, 0.50) pos=(0.00, 0.00) size=(0.00, 300.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/FillImageHealth a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.976, 0.129, 0.216, 1.000)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/FillImageJetpack a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.965, 1.000, 1.000)
+GameManager/GameHUD/FeedbackFlashCanvas/FlashImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(1.000, 0.000, 0.000, 1.000)
+GameHUD/HUD/BottomLeftcorner/JetpackCounter/JetpackIcon a=(0.00, 0.00)-(1.00, 1.00) pos=(4.00, 0.00) size=(-8.00, -8.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter/BackgroundImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 0.400)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/BackgroundImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 0.400)
+GameManager/GameHUD/FeedbackFlashCanvas/VignetteImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+GameHUD/HUD/Crosshair a=(0.50, 0.50)-(0.50, 0.50) pos=(0.00, -0.20) size=(5.00, 5.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/JetpackCounter a=(0.00, 1.00)-(0.00, 1.00) pos=(25.00, -192.55) size=(106.00, 22.00) 
+GameManager/GameHUD/HUD/BottomLeftcorner/HorizontalContent/PlayerHealth/BackgroundImage a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(0.000, 0.000, 0.000, 0.400)
+GameHUD/HUD/NotificationsRect a=(0.00, 0.00)-(0.00, 0.00) pos=(0.00, 106.70) size=(100.00, 145.85) 
+GameManager/GameHUD/HUD/Compass/CompassBackground a=(0.00, 0.00)-(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) Image RGBA(1.000, 1.000, 1.000, 0.102)
+GameHUD/HUD/BottomLeftcorner/HorizontalContent/Stance/StanceIcon a=(0.50, 0.50)-(0.50, 0.50) pos=(-11.79, -12.92) size=(25.00, 25.00) Image RGBA(0.000, 0.000, 0.000, 1.000)
+CampaignFlow.message = ArenaMessages/Message

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.6441624">
+  <test-suite type="TestSuite" id="1184" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="150" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.644162" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1178" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="150" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.627769" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="38640" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1179" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="150" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.623169" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1091" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="150" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.617994" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1078" name="EnemyRangeTests" fullname="IronRequiem.Tests.EnemyRangeTests" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:53Z" duration="16.602672" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1083" name="EveryEnemyHitsBeyondOldRangeAndWallBlocks" fullname="IronRequiem.Tests.EnemyRangeTests.EveryEnemyHitsBeyondOldRangeAndWallBlocks" methodname="EveryEnemyHitsBeyondOldRangeAndWallBlocks" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" seed="1019795462" result="Passed" start-time="2026-11-04 15:32:36Z" end-time="2026-11-04 15:32:43Z" duration="7.104712" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            </test-case>
+            <test-case id="1079" name="SerializedRangesAndUnchangedBalance" fullname="IronRequiem.Tests.EnemyRangeTests.SerializedRangesAndUnchangedBalance" methodname="SerializedRangesAndUnchangedBalance" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" seed="335510615" result="Passed" start-time="2026-11-04 15:32:44Z" end-time="2026-11-04 15:32:44Z" duration="0.807203" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1081" name="SingleCannonSixAndLossDuringBurstDeath" fullname="IronRequiem.Tests.EnemyRangeTests.SingleCannonSixAndLossDuringBurstDeath" methodname="SingleCannonSixAndLossDuringBurstDeath" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" seed="2126913882" result="Passed" start-time="2026-11-04 15:32:44Z" end-time="2026-11-04 15:32:48Z" duration="3.401269" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1080" name="TwoCannonsSixAndExactPauseAtNewRange" fullname="IronRequiem.Tests.EnemyRangeTests.TwoCannonsSixAndExactPauseAtNewRange" methodname="TwoCannonsSixAndExactPauseAtNewRange" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" seed="1590285722" result="Passed" start-time="2026-11-04 15:32:48Z" end-time="2026-11-04 15:32:50Z" duration="2.637829" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1082" name="WallAndTargetLossCancelPending" fullname="IronRequiem.Tests.EnemyRangeTests.WallAndTargetLossCancelPending" methodname="WallAndTargetLossCancelPending" classname="IronRequiem.Tests.EnemyRangeTests" runstate="Runnable" seed="744749771" result="Passed" start-time="2026-11-04 15:32:50Z" end-time="2026-11-04 15:32:53Z" duration="2.614568" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

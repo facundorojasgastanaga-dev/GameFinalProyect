@@ -1,0 +1,9 @@
+restore FAILED System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: Unknown V03 operation: restore
+  at IronRequiem.Editor.CombatV03Authoring.Run (System.String operation) [0x00026] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\CombatV03Authoring.cs:27 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at IronRequiem.Editor.CombatV03Tools.ExecuteAuthoring (System.String operation) [0x00046] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\CombatV03Tools.cs:71 
+  at IronRequiem.Editor.CombatV03Tools.Tick () [0x0024b] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\CombatV03Tools.cs:61 

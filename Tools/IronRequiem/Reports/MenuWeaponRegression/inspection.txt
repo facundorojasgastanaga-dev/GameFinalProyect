@@ -1,0 +1,18 @@
+Assets/IronRequiem/Scenes/SawBotLab.unity
+Pause InGameMenu industrial=True
+ Canvas rect=(x:0.00, y:0.00, width:0.00, height:0.00) scale=(0.00, 0.00, 0.00) anchors=(0.00, 0.00)/(0.00, 0.00) canvas=ScreenSpaceOverlay root=True mask=
+ InGameMenu rect=none scale=(1.00, 1.00, 1.00) anchors=none canvas=none mask=
+ GameManager rect=none scale=(1.00, 1.00, 1.00) anchors=none canvas=none mask=
+Pause InGameMenu industrial=False
+ Canvas rect=(x:0.00, y:0.00, width:0.00, height:0.00) scale=(0.00, 0.00, 0.00) anchors=(0.00, 0.00)/(0.00, 0.00) canvas=ScreenSpaceOverlay root=True mask=
+ InGameMenu rect=none scale=(1.00, 1.00, 1.00) anchors=none canvas=none mask=
+Assets/IronRequiem/Prefabs/SecondaryShotgun/BigBot_Burst_v10_NavThrottle.prefab rootScale=(3.48, 3.48, 3.48) module=Assets/IronRequiem/Prefabs/CombatFollowup/BigBot_Module.prefab
+ world root=(348.18, 348.18, 348.18) components=Transform,LODGroup,BoxCollider,Rigidbody,BigBotCannonDebris,CannonAmmo,AudioSource,CannonOverdrive,DamageArea,CannonExplosion,StolenCannon
+ LOD BigBot_Module enabled=True reference=(0.00, 0.00, 0.00) size=0.005365005 lossyscale=(348.18, 348.18, 348.18) levels=0.18,0.07,0.015
+ Forearm_R_LOD0 active=True enabled=True forceOff=False layer=0 bounds=Center: (-0.21, 0.25, -0.08), Extents: (0.38, 0.55, 0.44) shadow=Off
+ Pincer_R_LOD0 active=True enabled=True forceOff=False layer=0 bounds=Center: (0.25, 1.14, 0.00), Extents: (0.29, 0.43, 0.22) shadow=Off
+ Forearm_R_LOD1 active=True enabled=True forceOff=False layer=0 bounds=Center: (-0.21, 0.25, -0.08), Extents: (0.38, 0.55, 0.44) shadow=Off
+ Pincer_R_LOD1 active=True enabled=True forceOff=False layer=0 bounds=Center: (0.25, 1.14, 0.00), Extents: (0.29, 0.43, 0.21) shadow=Off
+ Forearm_R_LOD2 active=True enabled=True forceOff=False layer=0 bounds=Center: (-0.21, 0.25, -0.08), Extents: (0.38, 0.55, 0.44) shadow=Off
+ Pincer_R_LOD2 active=True enabled=True forceOff=False layer=0 bounds=Center: (0.25, 1.15, 0.00), Extents: (0.28, 0.43, 0.21) shadow=Off
+Assets/IronRequiem/Prefabs/Enemies/BigBot_Burst_v10.prefab has no execution module (legacy enemy variant)

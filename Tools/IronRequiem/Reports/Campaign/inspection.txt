@@ -1,0 +1,46 @@
+Active=Assets/IronRequiem/Scenes/CombatTwoFloorsLab.unity
+GameManager Transform,GameFlowManager,EnemyManager,ActorsManager,ObjectiveManager,AudioManager,AudioSource
+GameHUD Transform,JetpackCounter,WeaponHUDManager,PlayerHealthBar,FeedbackFlashHUD,FramerateCounter,StanceHUD,NotificationHUDManager,ObjectiveHUDManager,CrosshairManager,DisplayMessageManager
+InGameMenu Transform,InGameMenuManager,TakeScreenshot
+EventSystem Transform,EventSystem,InputSystemUIInputModule
+Player_ModularArm_v07 Transform,PlayerInputHandler,PlayerCharacterController,Health,PlayerWeaponsManager,Jetpack,CharacterController,Actor,Damageable,AudioSource,AudioSource,PlayerBodyPresentation,MechanicInput,AdvancedPlayerMovement,StolenWeaponCarrier,SlideContactEffects,ProtagonistHandsPresentation,ProtagonistBodyAnimation,ProtagonistMelee,ProtagonistSlidePresentation
+ArenaGate Transform,MeshFilter,BoxCollider,MeshRenderer,NavMeshObstacle
+LabSun Transform,Light
+WaveSpawnPoints Transform
+ArenaMessages RectTransform,Canvas,CanvasScaler
+CombatTwoRoomsCoordinator Transform,CombatTwoRoomsLab,EnemySpawnQueue,LabRoomVisibility
+Pickup_Health Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+Pickup_Health Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+Pickup_Health Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+Pickup_Health Transform,BoxCollider,Rigidbody,HealthPickup,NavMeshModifier
+CombatLabMenu RectTransform,Canvas,CanvasScaler,GraphicRaycaster,CombatLabMenu,RequiemMenuView,MenuNavigation
+LabMenuMusic Transform,AudioSource,MenuMusic
+TwoFloorsGeometry Transform,NavMeshSurface
+GapFallRecovery Transform,BoxCollider,Rigidbody,GapFallRecovery
+GapReturnPoints Transform
+StairSign RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+GapSign RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+FloorLamp Transform,Light
+StairLight Transform,Light
+Sector03Door Transform,MeshFilter,BoxCollider,MeshRenderer
+Sector03Frame Transform,MeshFilter,BoxCollider,MeshRenderer
+Sector03Frame Transform,MeshFilter,BoxCollider,MeshRenderer
+Sector03Entrance Transform,BoxCollider,Rigidbody,ChaseSceneEntrance
+Sector03Sign RectTransform,MeshRenderer,TextMeshPro,MeshFilter
+Light LabSun Directional 1.3 at(0.00, 0.00, 0.00)
+Light FloorLamp Point 3 at(-15.00, 7.00, -18.00)
+Light FloorLamp Point 3 at(-15.00, 7.00, 18.00)
+Light FloorLamp Point 3 at(15.00, 7.00, -18.00)
+Light FloorLamp Point 3 at(15.00, 7.00, 18.00)
+Light FloorLamp Point 3 at(-15.00, 15.00, -18.00)
+Light FloorLamp Point 3 at(-15.00, 15.00, 18.00)
+Light FloorLamp Point 3 at(15.00, 15.00, -18.00)
+Light FloorLamp Point 3 at(15.00, 15.00, 18.00)
+Light StairLight Point 3 at(31.00, 12.00, 8.00)

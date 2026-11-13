@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="72.0526559">
+  <test-suite type="TestSuite" id="1197" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="72.052656" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1191" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="72.026662" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="10736" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1192" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="72.019588" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1097" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="72.011729" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1162" name="SecondaryShotgunTests" fullname="IronRequiem.Tests.SecondaryShotgunTests" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:53Z" duration="71.997159" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1168" name="CaptureAnimationPoses" fullname="IronRequiem.Tests.SecondaryShotgunTests.CaptureAnimationPoses" methodname="CaptureAnimationPoses" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1466793729" result="Passed" start-time="2026-11-05 00:05:41Z" end-time="2026-11-05 00:06:05Z" duration="23.514278" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1167" name="ExecutionRequiresStrictlyBelow75PercentBigBot" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentBigBot" methodname="ExecutionRequiresStrictlyBelow75PercentBigBot" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1920459326" result="Passed" start-time="2026-11-05 00:06:05Z" end-time="2026-11-05 00:06:10Z" duration="5.501465" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1166" name="ExecutionRequiresStrictlyBelow75PercentT07" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentT07" methodname="ExecutionRequiresStrictlyBelow75PercentT07" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1874032727" result="Passed" start-time="2026-11-05 00:06:10Z" end-time="2026-11-05 00:06:14Z" duration="4.236795" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1164" name="ShotgunDamageFallsOffWithDistanceAndRange" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunDamageFallsOffWithDistanceAndRange" methodname="ShotgunDamageFallsOffWithDistanceAndRange" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="765105433" result="Passed" start-time="2026-11-05 00:06:14Z" end-time="2026-11-05 00:06:38Z" duration="23.231616" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1163" name="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunIsSecondaryAndCoexistsWithStolenWeapon" methodname="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="542995160" result="Passed" start-time="2026-11-05 00:06:38Z" end-time="2026-11-05 00:06:43Z" duration="5.733615" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+]]></output>
+            </test-case>
+            <test-case id="1165" name="SlideCooldownStartsAtEndAndNeedsNewPress" fullname="IronRequiem.Tests.SecondaryShotgunTests.SlideCooldownStartsAtEndAndNeedsNewPress" methodname="SlideCooldownStartsAtEndAndNeedsNewPress" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="942144588" result="Passed" start-time="2026-11-05 00:06:43Z" end-time="2026-11-05 00:06:53Z" duration="9.746754" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

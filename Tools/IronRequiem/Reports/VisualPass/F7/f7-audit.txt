@@ -1,0 +1,78 @@
+== Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab
+  [HoverBot_Current] EnemyController: SelfDestructYHeight=-20 PathReachingRadius=2 DestinationUpdateThreshold=0.3 DestinationRefreshInterval=0.25 OrientationSpeed=10 DeathDuration=0 SwapToNextWeapon=False AllowWeaponlessPolicy=False RequireVisibleTargetToShoot=True EnemyChargeDuration=0 DelayAfterWeaponSwap=0 EyeColorMaterial->HoverEye BodyMaterial->HoverBot_Body_HS FlashOnHitDuration=0.2 DamageTick->Damage_Tick2 DeathVfx->VFX_HoverBot_Explosion DeathVfxSpawnPoint->HitBox LootPrefab->Loot_Health DropRate=1 
+  [HoverBot_Current] EnemyMobile: Animator->BasicRobot AttackStopDistanceRatio=0.08 UseExternalDamagePresentation=False OnDetectSfx->Hoverbot_Alert 
+  [HoverBot_Current] Health: MaxHealth=80 CriticalHealthRatio=0.3 
+  [HoverBot_Current] WorldspaceHealthBar: Health->HoverBot_Current HealthBarImage->ImageFill HealthBarPivot->HealthBarPivot HideFullHealthBar=True 
+  [HoverBot_Current] NavMeshAgent speed=4.2 accel=8 angular=120 stop=0.2
+  [HoverBot_Current] PooledEnemyDeathBurst: effectPrefab->RobotBodyBurst_CombatPolish_VO_VO_VO anchor->HitBox size=0.7 
+  [HoverBot_Current] EnemyPowerIndicators: 
+  [HoverBot_Current] EnemyStateLights: warningLead=0.35 blinkHz=14 
+  [HoverBot_Current/WeaponRoot/Weapon_EyeLazers] WeaponController: WeaponRoot->GunRoot WeaponMuzzle->GunMuzzle ProjectilePrefab->EnemyProjectile_Drone DelayBetweenShots=1.5 BulletSpreadAngle=0 BulletsPerShot=1 RecoilForce=1 AimZoomRatio=1 AutomaticReload=True UsesHeatInsteadOfAmmo=False HasPhysicalBullets=False ClipSize=30 ShellCasingEjectionForce=2 ShellPoolSize=1 AmmoReloadRate=0.5 AmmoReloadDelay=0.5 MaxAmmo=100 AutomaticReleaseOnCharged=False MaxChargeDuration=2 AmmoUsedOnStartCharge=1 AmmoUsageRateWhileCharging=2 MuzzleFlashPrefab->VFX_EnemyMuzzleFlash UnparentMuzzleFlash=False ShootSfx->Hoverbot_Attack UseContinuousShootSound=False 
+      projectile Assets/IronRequiem/Prefabs/VisualPass/Balance/EnemyProjectile_Drone.prefab ProjectileStandard: Radius=0.1 Root->EnemyProjectile_Drone Tip->Tip MaxLifeTime=5 ImpactVfx->VFX_LazerSparksRed ImpactVfxLifetime=5 ImpactVfxSpawnOffset=0.1 Speed=70 GravityDownAcceleration=0 TrajectoryCorrectionDistance=5 InheritWeaponVelocity=False Damage=4 
+  [HoverBot_Current/DetectionModule] DetectionModule: DetectionSourcePoint->WeaponRoot DetectionRange=20 AttackRange=12.5 KnownTargetTimeout=12 UseExternalDamagePresentation=False 
+== Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab
+  [T07_Current_Repaired] EnemyController: SelfDestructYHeight=-20 PathReachingRadius=2 DestinationUpdateThreshold=0.3 DestinationRefreshInterval=0.25 OrientationSpeed=10 DeathDuration=1.65 SwapToNextWeapon=False AllowWeaponlessPolicy=False RequireVisibleTargetToShoot=True EnemyChargeDuration=1.2 DelayAfterWeaponSwap=0 EyeColorMaterial->RescueOrange FlashOnHitDuration=0.2 DamageTick->Damage_Tick2 DeathVfx->VFX_HoverBot_Explosion DeathVfxSpawnPoint->AimPoint LootPrefab->Loot_Health DropRate=0 
+  [T07_Current_Repaired] EnemyMobile: Animator->T07_Current_Repaired AttackStopDistanceRatio=0.7 UseExternalDamagePresentation=True OnDetectSfx->Hoverbot_Alert 
+  [T07_Current_Repaired] Health: MaxHealth=128 CriticalHealthRatio=0.3 
+  [T07_Current_Repaired] WorldspaceHealthBar: Health->T07_Current_Repaired HealthBarImage->ImageFill HealthBarPivot->HealthBarPivot HideFullHealthBar=True 
+  [T07_Current_Repaired] NavMeshAgent speed=4.2 accel=8 angular=120 stop=1
+  [T07_Current_Repaired] DisarmedEnemyRetreat: cannon->CannonJoint enemy->T07_Current_Repaired 
+  [T07_Current_Repaired] T07CannonSocket: socket->Forearm_L pivot->WeaponRoot weapon->Weapon_EyeLazers joint->CannonJoint mobile->T07_Current_Repaired 
+  [T07_Current_Repaired] EnemyPowerIndicators: 
+  [T07_Current_Repaired] EnemyExecutionSource: healthThreshold=0.75 modulePrefab->T07_Module 
+  [T07_Current_Repaired] EnemyCannonChargePresentation: enemy->T07_Current_Repaired effect->CannonCharge_Magenta core->EnergyCore outer->OuterFrame inner->InnerFrame rays->EnergyRays spindle->EnergySpindle 
+  [T07_Current_Repaired] EnemyStateLights: warningLead=0.35 blinkHz=14 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers] WeaponController: WeaponRoot->CannonMount WeaponMuzzle->Muzzle ProjectilePrefab->T07_SniperProjectile DelayBetweenShots=0.85 BulletSpreadAngle=0 BulletsPerShot=1 RecoilForce=1 AimZoomRatio=1 AutomaticReload=True UsesHeatInsteadOfAmmo=False HasPhysicalBullets=False ClipSize=30 ShellCasingEjectionForce=2 ShellPoolSize=1 AmmoReloadRate=0.5 AmmoReloadDelay=0.5 MaxAmmo=100 AutomaticReleaseOnCharged=False MaxChargeDuration=2 AmmoUsedOnStartCharge=1 AmmoUsageRateWhileCharging=2 MuzzleFlashPrefab->T07_MuzzleFlash_Bounded UnparentMuzzleFlash=False ShootSfx->Hoverbot_Attack UseContinuousShootSound=False 
+      projectile Assets/IronRequiem/Prefabs/VisualPass/Balance/T07_SniperProjectile.prefab ProjectileStandard: Radius=0.04 Root->T07_SniperProjectile Tip->T07_SniperProjectile MaxLifeTime=5 ImpactVfx->VFX_LazerSparksGreen ImpactVfxLifetime=5 ImpactVfxSpawnOffset=0.1 Speed=90 GravityDownAcceleration=0 TrajectoryCorrectionDistance=5 InheritWeaponVelocity=False Damage=22 
+      projectile Assets/IronRequiem/Prefabs/VisualPass/Balance/T07_SniperProjectile.prefab ChargedProjectileDamage: minimumDamage=18 maximumDamage=26 energyVisual->ChargedEnergyBolt energyTrail->T07_SniperProjectile minimumRadius=0.04 maximumRadius=0.14 
+      projectile Assets/IronRequiem/Prefabs/VisualPass/Balance/T07_SniperProjectile.prefab ProjectileMuzzleOrigin: 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual] CannonAmmo: capacity=100 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual] CannonOverdrive: criticalThreshold=0.2 criticalGraceDuration=5 smoke->CriticalSmoke activationSound->Hoverbot_Alert 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual] CannonExplosion: damage=100 backupFuse=6 impactEffect->VP_CannonExplosion_IR 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual] StolenCannon: weaponPrefab->Weapon_T07_Temporary_Optimized pickupDelay=0.3 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint] Health: MaxHealth=35 CriticalHealthRatio=0.3 
+  [T07_Current_Repaired/WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint] DetachableCannon: moduleVisual->CannonModule_Visual executionOnly=True enemy->T07_Current_Repaired mobile->T07_Current_Repaired jointCollider->CannonJoint 
+  [T07_Current_Repaired/DetectionModule] DetectionModule: DetectionSourcePoint->AimPoint DetectionRange=45 AttackRange=38 KnownTargetTimeout=6 UseExternalDamagePresentation=True 
+== Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab
+  [SawBot_Current] Health: MaxHealth=140 CriticalHealthRatio=0.3 
+  [SawBot_Current] NavMeshAgent speed=9.5 accel=34 angular=300 stop=0.55
+  [SawBot_Current] EnemyController: SelfDestructYHeight=-20 PathReachingRadius=2 DestinationUpdateThreshold=0.35 DestinationRefreshInterval=0.25 OrientationSpeed=10 DeathDuration=4 SwapToNextWeapon=False AllowWeaponlessPolicy=True RequireVisibleTargetToShoot=True EnemyChargeDuration=0 DelayAfterWeaponSwap=0 FlashOnHitDuration=0.1 DamageTick->Damage_Tick2 DropRate=0 
+  [SawBot_Current] EnemyMobile: Animator->Presentation AttackStopDistanceRatio=1 UseExternalDamagePresentation=True OnDetectSfx->Hoverbot_Alert 
+  [SawBot_Current] SawBotCombat: damage=12 reach=1.1 preparation=0.2 recovery=0.55 turnSpeed=300 animator->Presentation attackOrigin->SawAttackOrigin bodyJoint->Body leftWheel->Wheel_L rightWheel->Wheel_R leftChain->Chain_L rightChain->Chain_R wheelRadius=0.28 deathEffect->RobotBodyBurst_CombatPolish impactSparks->HitSparks impactSound->Damage_Tick2 healthBar->HealthBar sustainedSaw=True deathBurstDelay=1.35 moveSpeed=9.5 acceleration=34 exitReach=1.4 damagePerSecond=20 damageInterval=0.1 contactRadius=0.16 attackTurnSpeed=140 leftBladeStart->SawContactBase leftBladeEnd->SawContactTip rightBladeStart->SawContactBase rightBladeEnd->SawContactTip 
+  [SawBot_Current] WorldspaceHealthBar: Health->SawBot_Current HealthBarImage->ImageFill HealthBarPivot->HealthBar HideFullHealthBar=False 
+  [SawBot_Current] EnemyExecutionSource: healthThreshold=0.75 modulePrefab->SawBot_AnimatedModule_v02 
+  [SawBot_Current] SawBotWeaponSource: 
+  [SawBot_Current] SawMotorPresentation: enemy->SawBot_Current extraction->SawBot_Current motor->SawAttackMotor 
+  [SawBot_Current] EnemyPowerIndicators: 
+  [SawBot_Current] EnemyStateLights: warningLead=0.35 blinkHz=14 
+  [SawBot_Current/Presentation] SawBotAnimationEvents: combat->SawBot_Current 
+  [SawBot_Current/Presentation/Rig/Body/UpperArm_L/Forearm_L/Chain_L/CirculatingChain] SawChainMotion: phaseCount=8 teethPerSecond=18 
+  [SawBot_Current/Presentation/Rig/Body/UpperArm_R/Forearm_R/Chain_R/CirculatingChain] SawChainMotion: phaseCount=8 teethPerSecond=18 
+  [SawBot_Current/Detection] DetectionModule: DetectionSourcePoint->Detection DetectionRange=22 AttackRange=3 KnownTargetTimeout=4 Animator->Presentation UseExternalDamagePresentation=True 
+== Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab
+  [BigBot_Current] Health: MaxHealth=960 CriticalHealthRatio=0.3 
+  [BigBot_Current] NavMeshAgent speed=1.68 accel=5 angular=60 stop=3
+  [BigBot_Current] BigBotDetectionModule: DetectionSourcePoint->BigBotDetectionSource DetectionRange=36 AttackRange=28.6 KnownTargetTimeout=8 UseExternalDamagePresentation=True 
+  [BigBot_Current] EnemyController: SelfDestructYHeight=-20 PathReachingRadius=0.65 DestinationUpdateThreshold=0.3 DestinationRefreshInterval=0.25 OrientationSpeed=5 DeathDuration=2.5 SwapToNextWeapon=True AllowWeaponlessPolicy=False RequireVisibleTargetToShoot=True EnemyChargeDuration=0 DelayAfterWeaponSwap=0 FlashOnHitDuration=0.5 DeathVfxSpawnPoint->BigBotDetectionSource DropRate=0 
+  [BigBot_Current] EnemyMobile: Animator->Presentation AttackStopDistanceRatio=0.72 UseExternalDamagePresentation=True 
+  [BigBot_Current] BigBotCombat: damage=8 projectileSpeed=22 projectileRange=48 shotInterval=1.8 preparationTime=0.7 attackDistance=28.6 detectionDistance=36 explosiveShots=True explosionRadius=1.8 emergencyBursts=True emergencyBurstCount=6 emergencyBurstInterval=0.12 emergencyBurstPause=0.75 alternatingBursts=True normalBurstCount=6 normalBurstInterval=0.15 normalBurstPause=1 pauseIncludesPreparation=True turnSpeed=60 torso->Torso healthBarPivot->BigBotHealthBar presentation->Presentation emergencyCadenceMultiplier=1.5 
+  [BigBot_Current] WorldspaceHealthBar: Health->BigBot_Current HealthBarImage->ImageFill HealthBarPivot->BigBotHealthBar HideFullHealthBar=False 
+  [BigBot_Current] EnemyPowerIndicators: 
+  [BigBot_Current] EnemyStateLights: warningLead=0.35 blinkHz=14 
+  [BigBot_Current] EnemyExecutionSource: healthThreshold=0.75 modulePrefab->BigBot_Module 
+  [BigBot_Current] EnemyStateLights: warningLead=0.35 blinkHz=14 
+  [BigBot_Current/Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L/Forearm_L/Pincer_L/WeaponMuzzle_L/BigBotCannon_L] WeaponController: WeaponRoot->BigBotCannon_L WeaponMuzzle->BigBotCannon_L ProjectilePrefab->EnemyProjectile_1_VO_VO_VO_VO DelayBetweenShots=0.05 BulletSpreadAngle=0 BulletsPerShot=1 RecoilForce=0 AimZoomRatio=1 AutomaticReload=True UsesHeatInsteadOfAmmo=False HasPhysicalBullets=False ClipSize=30 ShellCasingEjectionForce=2 ShellPoolSize=1 AmmoReloadRate=1000 AmmoReloadDelay=0 MaxAmmo=10000 AutomaticReleaseOnCharged=False MaxChargeDuration=2 AmmoUsedOnStartCharge=1 AmmoUsageRateWhileCharging=1 MuzzleFlashPrefab->BigBot_BurstMuzzle_v10_VO_VO_VO_VO UnparentMuzzleFlash=False ShootSfx->Hoverbot_Attack UseContinuousShootSound=False 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab ProjectileStandard: Radius=0.1 Root->EnemyProjectile_1_VO_VO_VO_VO Tip->Tip MaxLifeTime=2.182 ImpactVfx->BigBot_ProjectileImpact_v08 ImpactVfxLifetime=2 ImpactVfxSpawnOffset=0.025 Speed=22 GravityDownAcceleration=0 TrajectoryCorrectionDistance=-1 InheritWeaponVelocity=False Damage=8 AreaOfDamage->EnemyProjectile_1_VO_VO_VO_VO 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab BigBotProjectileSettings: 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab DamageArea: AreaOfEffectDistance=1.8 RespectObstacles=True IgnoreOwner=True IgnoreSameAffiliation=True 
+  [BigBot_Current/Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R/Forearm_R/Pincer_R/WeaponMuzzle_R/BigBotCannon_R] WeaponController: WeaponRoot->BigBotCannon_R WeaponMuzzle->BigBotCannon_R ProjectilePrefab->EnemyProjectile_1_VO_VO_VO_VO DelayBetweenShots=0.05 BulletSpreadAngle=0 BulletsPerShot=1 RecoilForce=0 AimZoomRatio=1 AutomaticReload=True UsesHeatInsteadOfAmmo=False HasPhysicalBullets=False ClipSize=30 ShellCasingEjectionForce=2 ShellPoolSize=1 AmmoReloadRate=1000 AmmoReloadDelay=0 MaxAmmo=10000 AutomaticReleaseOnCharged=False MaxChargeDuration=2 AmmoUsedOnStartCharge=1 AmmoUsageRateWhileCharging=1 MuzzleFlashPrefab->BigBot_BurstMuzzle_v10_VO_VO_VO_VO UnparentMuzzleFlash=False ShootSfx->Hoverbot_Attack UseContinuousShootSound=False 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab ProjectileStandard: Radius=0.1 Root->EnemyProjectile_1_VO_VO_VO_VO Tip->Tip MaxLifeTime=2.182 ImpactVfx->BigBot_ProjectileImpact_v08 ImpactVfxLifetime=2 ImpactVfxSpawnOffset=0.025 Speed=22 GravityDownAcceleration=0 TrajectoryCorrectionDistance=-1 InheritWeaponVelocity=False Damage=8 AreaOfDamage->EnemyProjectile_1_VO_VO_VO_VO 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab BigBotProjectileSettings: 
+      projectile Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/EnemyProjectile_1_VO_VO_VO_VO.prefab DamageArea: AreaOfEffectDistance=1.8 RespectObstacles=True IgnoreOwner=True IgnoreSameAffiliation=True 
+== VO primary
+  WeaponRoot=Weapon_IR_ArmCannon_VO/GunRoot
+  [Weapon_IR_ArmCannon_VO] WeaponFuelCellHandler: SimultaneousFuelCellsUsage=False 
+  [Weapon_IR_ArmCannon_VO] PrimaryModuleHeatPresentation: 
+  [Weapon_IR_ArmCannon_VO] WeaponHeat: heatEnabled=True maximumHeat=100 heatPerShot=2.5 coolingDelay=0.6 coolingPerSecond=20 recoveryHeat=35 
+  [Weapon_IR_ArmCannon_VO] HeatVentFx: glowMaterial->MuzzleFlash steamMaterial->SmokeOverheat glowSize=0.045 steamRate=38 steamFrom=0.3 
+  [Weapon_IR_ArmCannon_VO] WeaponDeployMotion: seconds=0.28 overshoot=1.6 twistDegrees=-18 
