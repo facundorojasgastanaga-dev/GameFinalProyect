@@ -1,0 +1,35 @@
+﻿## Assets/IronRequiem/Prefabs/Weapons/Weapon_BigBot_Temporary.prefab
+PrefabInstance 9182170297205042744 source=Weapon_T07_Temporary_Optimized.prefab parentTransform=0
+   ov 2676506266080154676 m_LocalPosition.x = 0 
+   ov 2676506266080154676 m_LocalPosition.y = 0 
+   ov 2676506266080154676 m_LocalPosition.z = 0 
+   ov 2676506266080154676 m_LocalRotation.w = 1 
+   ov 2676506266080154676 m_LocalRotation.x = 0 
+   ov 2676506266080154676 m_LocalRotation.y = 0 
+   ov 2676506266080154676 m_LocalRotation.z = 0 
+   ov 2676506266080154676 m_LocalEulerAnglesHint.x = 0 
+   ov 2676506266080154676 m_LocalEulerAnglesHint.y = 0 
+   ov 2676506266080154676 m_LocalEulerAnglesHint.z = 0 
+   ov 2676506266080154679 m_Name = Weapon_BigBot_Temporary 
+   ov 5961681290868382410 m_LocalPosition.x = 0.015 
+   ov 5961681290868382410 m_LocalPosition.y = 0.065 
+   ov 5961681290868382410 m_LocalPosition.z = 0.043474793 
+   ov 7865323439376940778 m_Enabled = 0 
+GO 3152773641495889648 "BigBot_EquippedCannon" active=1
+  TR 2461338619069683119 of "BigBot_EquippedCannon" pos={x: 0.015, y: 0.065, z: 0.48} rot={x: -0, y: -0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=5753351099916961387
+GO 4702384141529170920 "Forearm_R_LOD0" active=1
+  TR 71084185467454253 of "Forearm_R_LOD0" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=2461338619069683119
+  MeshFilter on "Forearm_R_LOD0" enabled=- mesh=HeldBigBot_Forearm_R_LOD0.asset:4300000
+  MeshRenderer on "Forearm_R_LOD0" enabled=1 mats=BigBot_Surface.mat
+GO 6670959682843279247 "Pincer_R_LOD0" active=1
+  TR 6155612919169528037 of "Pincer_R_LOD0" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=2461338619069683119
+  MeshFilter on "Pincer_R_LOD0" enabled=- mesh=HeldBigBot_Pincer_R_LOD0.asset:4300000
+  MeshRenderer on "Pincer_R_LOD0" enabled=1 mats=BigBot_Surface.mat
+  MB StolenChargeAnchor on "?"
+     shell: {fileID: 2847308090348264085}
+     muzzle: {fileID: 7128215610836453085}
+     forwardOffset: 0.015
+     vibration: 0.0035
+     swell: 0.05
+     recoilDistance: 0.045
+     recoilSeconds: 0.14

@@ -1,0 +1,15 @@
+[T07 robot anim]
+  R_Idle len=4 curves=63
+  R_CombatIdle len=2.4 curves=63
+  R_PatrolWalk len=1.4 curves=75
+  R_CombatAdvance len=1.4 curves=75
+  R_CannonAttack len=0.7 curves=59
+  R_HitReaction len=0.6 curves=63
+  swap ArmedTree: R_Idle -> R_Idle
+  swap ArmedTree: R_PatrolWalk -> R_PatrolWalk
+  swap AlertedTree: R_CombatIdle -> R_CombatIdle
+  swap AlertedTree: R_CombatAdvance -> R_CombatAdvance
+  swap DisarmedTree: R_Idle -> R_Idle
+  swap CannonAttack: R_CannonAttack -> R_CannonAttack
+  swap HitReaction: R_HitReaction -> R_HitReaction
+controller=Assets/IronRequiem/Art/Enemies/T07MechRobotAnim/T07MechRobot_Locomotion.controller sheets=Tools/IronRequiem/Reports/T07MechRobotAnim

@@ -31,6 +31,10 @@ namespace IronRequiem
             foreach (var r in all) if (!weaponRoot || !r.transform.IsChildOf(weaponRoot.transform)) { outside[n] = r; outsideEnabled[n] = r.enabled; n++; }
         }
 
+        bool skipNext;
+        /// 16/11: the next show appears fully deployed (the montage station already animated the attachment).
+        public void SkipNextDeploy() { skipNext = true; if (t < 1 && shown) { t = 1; Apply(1); skipNext = false; } }
+
         void OnEnable() { shown = false; Sync(IsShown()); }
         void OnDisable() { transform.localScale = baseScale; transform.localRotation = baseRotation; t = 1; }
 
@@ -47,7 +51,7 @@ namespace IronRequiem
 
         void Sync(bool visible)
         {
-            if (visible && !shown) { t = 0; Apply(0); }
+            if (visible && !shown) { if (skipNext) { skipNext = false; t = 1; Apply(1); } else { t = 0; Apply(0); } }
             if (!visible) { transform.localScale = baseScale; transform.localRotation = baseRotation; t = 1; }
             shown = visible;
             for (int i = 0; i < outside.Length; i++)

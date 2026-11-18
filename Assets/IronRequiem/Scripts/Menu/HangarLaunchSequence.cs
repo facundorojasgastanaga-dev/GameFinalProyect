@@ -44,7 +44,7 @@ namespace IronRequiem
             if (canopyRenderer && canopyRenderer.sharedMaterial && canopyRenderer.sharedMaterial.HasProperty(BaseColorId)) glassColor = canopyRenderer.sharedMaterial.GetColor(BaseColorId);
         }
 
-        void Start() { StartCoroutine(Intro()); }
+        void Start() { if(protagonist)protagonist.HoldDark(); StartCoroutine(Intro()); }
 
         IEnumerator Intro()
         {
@@ -81,6 +81,7 @@ namespace IronRequiem
             // Timeline (s): panel out 0–.4 · capsule vents/opens .2–1.2 · camera to the face .1–1.8 ·
             // protagonist powers on at 1.8 · EN LÍNEA 2.4 · fade 2.9–3.5.
             if (patrol) patrol.Locked = true;
+            if(menuPanel){menuPanel.interactable=false;menuPanel.blocksRaycasts=true;}
             foreach (var f in powerOn) if (f) f.Hold(-1);
             foreach (var f in stabilise) if (f) f.SetStable(true);
             if (status) status.Lock("INICIANDO", new Color(1f, .55f, .12f), 6f, "CÁPSULA C-04 · DESBLOQUEO DE SELLOS");
@@ -104,8 +105,8 @@ namespace IronRequiem
                     var look = Quaternion.LookRotation((lookTarget ? lookTarget.position : pushTarget.position) - pushTarget.position);
                     cameraRig.Dolly(pushTarget.position, look, Mathf.Clamp01((t - .1f) / 1.7f));
                 }
-                // v4: the robot stays powered off (eyes and visor dark) for the whole approach; Room00's visor shot turns it on.
-                if (!woke) { woke = true; if (protagonist) protagonist.HoldDark(); }
+                // The menu's existing power-up plays before handing off to the unchanged level flow.
+                if (!woke && t>=1.8f) { woke = true; if (protagonist) protagonist.Reboot(); }
                 if (!online && t >= 2.4f) { online = true; if (status) status.Lock("EN LÍNEA", new Color(.25f, .9f, 1f), 0f, "UNIDAD C-04 · DESPLIEGUE AUTORIZADO"); }
                 SetFade(Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - 2.9f) / .55f)));
                 yield return null;

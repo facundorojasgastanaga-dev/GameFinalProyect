@@ -1,0 +1,77 @@
+{
+  "P-A": {
+    "name": "Monolito",
+    "idea": "Evolución del bloque recto actual con rejilla de calor en el lomo.",
+    "heat_point": "rejilla superior",
+    "tris": 1444,
+    "objects": 27,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.054,
+      -0.378,
+      -0.062
+    ],
+    "bounds_max": [
+      0.054,
+      0.0,
+      0.0735
+    ],
+    "length_coupling_to_front": 0.378,
+    "length_vs_current_pct": -0.3,
+    "renders": {
+      "34": "P-A_Monolito_34.png",
+      "side": "P-A_Monolito_perfil.png",
+      "fps": "P-A_Monolito_fps.png"
+    }
+  },
+  "P-B": {
+    "name": "Tambor de celdas",
+    "idea": "Tambor hexagonal de celdas que gira y se pone al rojo.",
+    "heat_point": "6 celdas del tambor",
+    "tris": 1760,
+    "objects": 28,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.0538,
+      -0.372,
+      -0.071
+    ],
+    "bounds_max": [
+      0.0538,
+      0.0,
+      0.075
+    ],
+    "length_coupling_to_front": 0.372,
+    "length_vs_current_pct": -1.8,
+    "renders": {
+      "34": "P-B_TamborCeldas_34.png",
+      "side": "P-B_TamborCeldas_perfil.png",
+      "fps": "P-B_TamborCeldas_fps.png"
+    }
+  },
+  "P-C": {
+    "name": "Bobina en horquilla",
+    "idea": "Horquilla abierta con bobina expuesta entre dos patas.",
+    "heat_point": "bobina expuesta",
+    "tris": 1840,
+    "objects": 26,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.055,
+      -0.379,
+      -0.058
+    ],
+    "bounds_max": [
+      0.055,
+      0.0,
+      0.068
+    ],
+    "length_coupling_to_front": 0.379,
+    "length_vs_current_pct": 0.0,
+    "renders": {
+      "34": "P-C_BobinaHorquilla_34.png",
+      "side": "P-C_BobinaHorquilla_perfil.png",
+      "fps": "P-C_BobinaHorquilla_fps.png"
+    }
+  }
+}

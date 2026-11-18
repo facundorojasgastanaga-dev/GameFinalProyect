@@ -1,0 +1,100 @@
+﻿## Assets/IronRequiem/Prefabs/VisualOverhaul/Weapon_IR_ArmCannon_VO.prefab
+PrefabInstance 3229152525120672031 source=Weapon_IR_ArmModule_v07_ExtendedHeat.prefab parentTransform=0
+   ov 699797303758350210 m_Enabled = 0 
+   ov 699797303758350216 m_Enabled = 0 
+   ov 699797303758350222 m_Enabled = 0 
+   ov 2700121861374691434 ProjectilePrefab =  VP_Bolt_Primary.prefab
+   ov 2700121861374691434 MuzzleFlashPrefab =  VP_Muzzle_Primary.prefab
+   ov 5195386974054671425 m_LocalPosition.x = 0 
+   ov 5195386974054671425 m_LocalPosition.y = 0 
+   ov 5195386974054671425 m_LocalPosition.z = 0 
+   ov 5195386974054671425 m_LocalRotation.w = 1 
+   ov 5195386974054671425 m_LocalRotation.x = 0 
+   ov 5195386974054671425 m_LocalRotation.y = 0 
+   ov 5195386974054671425 m_LocalRotation.z = 0 
+   ov 5195386974054671425 m_LocalEulerAnglesHint.x = 0 
+   ov 5195386974054671425 m_LocalEulerAnglesHint.y = 0 
+   ov 5195386974054671425 m_LocalEulerAnglesHint.z = 0 
+   ov 5195386974054671426 m_Name = Weapon_IR_ArmCannon_VO 
+GO 373133120272382356 "VO_Body" active=1
+  TR 1193071665974958008 of "VO_Body" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+  MeshFilter on "VO_Body" enabled=- mesh=VO_ArmCannon_Body.asset:4300000
+  MeshRenderer on "VO_Body" enabled=1 mats=VO_Suit_Plate.mat,VO_Suit_Joint.mat,VO_Suit_Accent.mat
+GO 624020727546638545 "VO_Module" active=1
+  TR 7934825149301653730 of "VO_Module" pos={x: 0, y: 0, z: 0} rot={x: -0, y: -0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=8167481191283067193
+GO 1464969028298607272 "VO_Light_0" active=1
+  TR 8816232413445557418 of "VO_Light_0" pos={x: -0.0625, y: 0.08799999, z: 0.18500444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+  MeshFilter on "VO_Light_0" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_0" enabled=1 mats=VO_Suit_Light.mat
+GO 3402803631363285701 "VO_FiringRings" active=1
+  TR 320531720138677983 of "VO_FiringRings" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+  MeshFilter on "VO_FiringRings" enabled=- mesh=VO_ArmCannon_Rings.asset:4300000
+  MeshRenderer on "VO_FiringRings" enabled=1 mats=VO_Suit_Ring.mat
+GO 4408676042996937301 "VO_PortSteam" active=1
+  TR 595411037776454034 of "VO_PortSteam" pos={x: 0, y: 0.124, z: 0.14500444} rot={x: -0, y: 0.80229294, z: 0.5969305, w: 0} scale={x: 0.3, y: 0.3, z: 0.3} father=8167481191283067193
+GO 5201396970913586557 "VO_Joint_R" active=1
+  TR 5610456598006036721 of "VO_Joint_R" pos={x: 0.05, y: 0.124, z: 0.12900443} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+GO 5737425843086832217 "VO_Joint_L" active=1
+  TR 178473849781381007 of "VO_Joint_L" pos={x: -0.05, y: 0.124, z: 0.12900443} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+GO 6153397930535910465 "VO_Light_1" active=1
+  TR 3772766573652382697 of "VO_Light_1" pos={x: -0.0625, y: 0.08799999, z: 0.21300444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+  MeshFilter on "VO_Light_1" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_1" enabled=1 mats=VO_Suit_Light.mat
+GO 6220191331525764382 "VO_Light_2" active=1
+  TR 7975023512924082950 of "VO_Light_2" pos={x: -0.0625, y: 0.08799999, z: 0.24100444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7934825149301653730
+  MeshFilter on "VO_Light_2" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_2" enabled=1 mats=VO_Suit_Light.mat
+GO 6299742047183827622 "Plate" active=1
+  TR 2147306958701594101 of "Plate" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5610456598006036721
+  MeshFilter on "Plate" enabled=- mesh=VO_JointPlate_R.asset:4300000
+  MeshRenderer on "Plate" enabled=1 mats=VO_Suit_Plate.mat
+GO 6496642172319671802 "VO_Audio" active=1
+  TR 5595424334587837215 of "VO_Audio" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7262610691124098398
+GO 7328156504047089046 "Plate" active=1
+  TR 8111311601036295534 of "Plate" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=178473849781381007
+  MeshFilter on "Plate" enabled=- mesh=VO_JointPlate_L.asset:4300000
+  MeshRenderer on "Plate" enabled=1 mats=VO_Suit_Plate.mat
+  MB ArmModuleVisual on "?"
+     moduleRoot: {fileID: 7934825149301653730}
+     joints:
+     - {fileID: 178473849781381007}
+     - {fileID: 5610456598006036721}
+     jointOpenEuler: {x: 0, y: 0, z: 28}
+     sequenceLights:
+     - {fileID: 2348876180172335765}
+     - {fileID: 5512297830371546134}
+     - {fileID: 5456108696694957536}
+     firingRings:
+     - {fileID: 9091041496724381103}
+     phaseSeconds: 0.3
+     ejectOffset: {x: 0.32, y: -0.55, z: -0.05}
+     ejectEuler: {x: 25, y: 35, z: -40}
+     insertOffset: {x: 0.28, y: -0.5, z: -0.12}
+     insertEuler: {x: -20, y: -30, z: 30}
+     audioSource: {fileID: 5275142113470295396}
+     unlockClip: {fileID: 8300000, guid: 3f01be6994a0ab6448a945dbdd9b3cda, type: 3}
+     dockClip: {fileID: 8300000, guid: d0f1afed8fa916244af6ca73579ded67, type: 3}
+     ventClip: {fileID: 8300000, guid: 93331a7c9fe98494a84f18effb358899, type: 3}
+     unlockSteam: {fileID: 7245996879203673831}
+     ringBoostPerShot: 0.9
+     ringMaxBoost: 6
+     ringDecayPerSecond: 5
+     cellSink: {x: 0, y: -0.2, z: 0}
+  MB HeatVentFx on "?"
+     glowMaterial: {fileID: 2100000, guid: eb52fb0b8eb988248aac01ce3d48f122, type: 2}
+     steamMaterial: {fileID: 2100000, guid: c0c800bf948180345ad0ef9380a6851f, type: 2}
+     glowCold: {r: 1, g: 0.35, b: 0.05, a: 0}
+     glowHot: {r: 2.4, g: 0.7, b: 0.12, a: 0.85}
+     glowSize: 0.045
+     steamRate: 38
+     steamFrom: 0.3
+  MB WeaponDeployMotion on "?"
+     seconds: 0.28
+     retracted: {x: 0.72, y: 0.72, z: 0.12}
+     overshoot: 1.6
+     twistDegrees: -18
+  MB MuzzleShotFx on "?"
+     smokePrefab: {fileID: 3288267572943311638, guid: 2e7ff30f6630d9a4896f76b3fb37557d,
+     type: 3}
+     lifetime: 0.9
+     scale: 1

@@ -30,15 +30,39 @@ namespace IronRequiem
         public void Configure(IndustrialPanelGraphic plate, TMP_Text text, Graphic bar, Graphic halo) { face = plate; label = text; accent = bar; glow = halo; }
         public void ConfigureTheme(IronRequiemUiTheme shared, bool isBack) { theme = shared; backButton = isBack; }
 
-        Color RestFill => theme ? theme.ButtonRestFill : restFill;
-        Color RestRim => theme ? theme.ButtonRestRim : restRim;
-        Color HotFill => theme ? theme.ButtonHotFill : hotFill;
-        Color HotRim => theme ? theme.ButtonHotRim : hotRim;
-        Color RestText => theme ? theme.ButtonRestText : restText;
-        Color HotText => theme ? theme.ButtonHotText : hotText;
+        /// 16/11 menu redesign (concept E): every button is a Dymo-style tape label, black with raised light lettering; the
+        /// selected one turns orange with dark lettering. Set to false to get the previous cyan/orange plates back.
+        public static bool DymoStyle = true;
+        bool Dymo => DymoStyle && face;
+        static readonly Color DymoRest = new Color(.03f, .034f, .04f, 1), DymoRestEdge = new Color(.22f, .24f, .25f, 1), DymoHotEdge = new Color(1f, .82f, .55f, 1);
+        static readonly Color DymoRestText = new Color(.94f, .96f, .97f), DymoHotText = new Color(.09f, .05f, .015f);
+        static readonly Color DefaultOrange = new Color(1f, .6f, .2f);
+        bool dymoApplied;
+
+        Color RestFill => Dymo ? DymoRest : theme ? theme.ButtonRestFill : restFill;
+        Color RestRim => Dymo ? DymoRestEdge : theme ? theme.ButtonRestRim : restRim;
+        Color HotFill => Dymo ? (theme ? theme.Orange : DefaultOrange) : theme ? theme.ButtonHotFill : hotFill;
+        Color HotRim => Dymo ? DymoHotEdge : theme ? theme.ButtonHotRim : hotRim;
+        Color RestText => Dymo ? DymoRestText : theme ? theme.ButtonRestText : restText;
+        Color HotText => Dymo ? DymoHotText : theme ? theme.ButtonHotText : hotText;
 
         void Awake() { selectable = GetComponent<Selectable>(); if (label) labelBase = label.rectTransform.anchoredPosition; baseScale = transform.localScale; }
-        void OnEnable() { selected = EventSystem.current && EventSystem.current.currentSelectedGameObject == gameObject; k = -1; press = 0; pressed = false; enabledAt = Time.unscaledTime; transform.localScale = baseScale; }
+        void OnEnable()
+        {
+            selected = EventSystem.current && EventSystem.current.currentSelectedGameObject == gameObject; k = -1; press = 0; pressed = false; enabledAt = Time.unscaledTime; transform.localScale = baseScale;
+            if (Dymo && !dymoApplied)
+            {
+                dymoApplied = true; face.SetStyle(IndustrialPanelGraphic.PanelStyle.Label);
+                if (accent) accent.enabled = false; if (glow) glow.enabled = false;               // the tape has no side bar or halo
+                // the main-menu metal plate and lamp (MainMenuRestore) would cover the tape; they are scene objects, so hide them here
+                for (int i = 0; i < transform.childCount; i++) { var child = transform.GetChild(i); if (child.name == "MenuOnlyMetal" || child.name == "MenuOnlyLamp") child.gameObject.SetActive(false); }
+                if (label) { label.characterSpacing = Mathf.Max(label.characterSpacing, 6f); label.fontStyle |= FontStyles.Bold; }
+            }
+        }
+
+        // A click can close the screen that holds the button (VOLVER hides its own panel): drop the press so the squash
+        // and the "pressed" flag never survive the deactivation.
+        void OnDisable() { pressed = false; press = 0; transform.localScale = baseScale; }
 
         bool Interactable => !selectable || selectable.interactable;
         public void OnPointerEnter(PointerEventData e) { if (Interactable && EventSystem.current) EventSystem.current.SetSelectedGameObject(gameObject); }

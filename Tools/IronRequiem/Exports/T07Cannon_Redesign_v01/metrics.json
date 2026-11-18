@@ -1,0 +1,293 @@
+{
+  "weapon": "T07CannonCrudo",
+  "folder": "Tools/IronRequiem/Exports/T07Cannon_Redesign_v01",
+  "concept": "Docs/IronRequiem/Concepts/Weapons/Redesign_v01/T07Cannon (C-A Arrancado crudo)",
+  "generated": "2026-11-16 20:40",
+  "blender": "5.2.3 LTS",
+  "budget_lod0": 2600,
+  "tris": {
+    "LOD0": 2420,
+    "LOD1": 1210,
+    "LOD2": 604
+  },
+  "lod_ratios": [
+    1.0,
+    0.5,
+    0.25
+  ],
+  "parts": 51,
+  "materials": [
+    "T07CannonCrudo_Surface",
+    "Heat_Emissive",
+    "Charge_Emissive"
+  ],
+  "tris_per_slot_lod0": {
+    "T07CannonCrudo_Surface": 2276,
+    "Heat_Emissive": 96,
+    "Charge_Emissive": 48
+  },
+  "textures": {
+    "BaseColor": {
+      "file": "T07CannonCrudo_BaseColor.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "Emission": {
+      "file": "T07CannonCrudo_Emission.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "MetalSmooth": {
+      "file": "T07CannonCrudo_MetalSmooth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "texture_notes": {
+    "BaseColor": "sRGB",
+    "MetalSmooth": "lineal: R=G=B metalico, A=smoothness (URP/Lit _MetallicGlossMap, Source = Metallic Alpha)",
+    "Emission": "sRGB: cian = estado (Surface), blanco = zonas tintables (Heat_Emissive / Charge_Emissive), negro = sin emision",
+    "Normal": "no se hornea: biseles reales + Weighted Normal; importar normales del FBX"
+  },
+  "bake_seconds": {
+    "base": 4.2,
+    "metal": 1.4,
+    "smooth": 2.1,
+    "emit": 0.2
+  },
+  "bake_stats": {
+    "metal_mean": 0.353,
+    "smooth_mean": 0.302,
+    "smooth_range": [
+      0.0,
+      0.865
+    ]
+  },
+  "uv": {
+    "texel_px_per_m": 736.9,
+    "texel_note": "densidad de las caras visibles (las enterradas usan 8 %)",
+    "uv_fill": 0.4341,
+    "area_visible_m2": 0.83773,
+    "area_total_m2": 0.92982,
+    "hidden_tris": 342,
+    "stacked_copy_tris": 572,
+    "stacked_groups": [
+      "band",
+      "collar_bolt",
+      "collar_lock",
+      "rod",
+      "rodclamp",
+      "tip",
+      "weld"
+    ],
+    "uv_downscale": 1.0,
+    "covered_px_512": 91394,
+    "overlap_px_512": 0,
+    "overlap_pct": 0.0
+  },
+  "topology": {
+    "duplicate_faces": 0,
+    "hidden_tris": 342,
+    "open_parts": [],
+    "parts_checked": 51
+  },
+  "dimensions_lod0_blender": [
+    0.2035,
+    0.664,
+    0.343
+  ],
+  "bounds_lod0_blender": {
+    "min": [
+      -0.101,
+      -0.664,
+      -0.245
+    ],
+    "max": [
+      0.1024,
+      0.0,
+      0.098
+    ]
+  },
+  "length_attachment_to_muzzle": 0.664,
+  "sockets": {
+    "Attachment": [
+      0,
+      0,
+      0
+    ],
+    "Muzzle": [
+      0,
+      -0.664,
+      0
+    ],
+    "unity_attachment": [
+      0,
+      0,
+      0
+    ],
+    "unity_muzzle": [
+      0,
+      0,
+      0.664
+    ]
+  },
+  "heat_step_attribute": "Color de vertice HeatStep (R 0..1) en las caras de Heat_Emissive; 0 en el resto",
+  "verification": {
+    "file": "T07CannonCrudo.fbx",
+    "checks": {
+      "unique_attachment": true,
+      "attachment_at_origin": true,
+      "muzzle_on_axis": true,
+      "muzzle_length": 0.664,
+      "nothing_behind_attachment": true,
+      "all_triangulated": true,
+      "slot_names": true,
+      "muzzle_face_normal_minus_y": true,
+      "socket_depth_ge_6mm": true,
+      "socket_diameter_066": true,
+      "collar_080_092": true,
+      "flat_back_face_y0": true
+    },
+    "nodes": [
+      "Attachment",
+      "Muzzle",
+      "T07CannonCrudo_LOD0",
+      "T07CannonCrudo_LOD1",
+      "T07CannonCrudo_LOD2"
+    ],
+    "attachment_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "muzzle_world": [
+      0.0,
+      -0.664,
+      0.0
+    ],
+    "lods": {
+      "T07CannonCrudo_LOD0": {
+        "tris": 2420,
+        "polys": 2420,
+        "all_triangles": true,
+        "materials": [
+          "T07CannonCrudo_Surface",
+          "Heat_Emissive",
+          "Charge_Emissive"
+        ],
+        "bounds_min": [
+          -0.101,
+          -0.664,
+          -0.245
+        ],
+        "bounds_max": [
+          0.1024,
+          0.0,
+          0.098
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "T07CannonCrudo_LOD1": {
+        "tris": 1201,
+        "polys": 1201,
+        "all_triangles": true,
+        "materials": [
+          "T07CannonCrudo_Surface",
+          "Heat_Emissive",
+          "Charge_Emissive"
+        ],
+        "bounds_min": [
+          -0.0994,
+          -0.664,
+          -0.245
+        ],
+        "bounds_max": [
+          0.0996,
+          0.0,
+          0.0969
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "T07CannonCrudo_LOD2": {
+        "tris": 602,
+        "polys": 602,
+        "all_triangles": true,
+        "materials": [
+          "T07CannonCrudo_Surface",
+          "Heat_Emissive",
+          "Charge_Emissive"
+        ],
+        "bounds_min": [
+          -0.0916,
+          -0.664,
+          -0.2437
+        ],
+        "bounds_max": [
+          0.089,
+          -0.0005,
+          0.0971
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    },
+    "max_y_all_lods": 0.0,
+    "muzzle_faces": 32,
+    "socket_depth_min": 0.008,
+    "socket_diameter_min": 0.066,
+    "socket_diameter_max": 0.06702,
+    "collar_outer_diameter": 0.091,
+    "collar_outer_diameter_min": 0.0888,
+    "all_pass": true
+  },
+  "renders": {
+    "34": "T07CannonCrudo_render_34.png",
+    "perfil": "T07CannonCrudo_render_perfil.png",
+    "fps": "T07CannonCrudo_render_fps.png",
+    "comparacion": "T07CannonCrudo_render_comparacion.png"
+  },
+  "fbx": {
+    "file": "T07CannonCrudo.fbx",
+    "sha256": "38bebb96eca889ba51441ce52034f274d30b93123dd37616687f63273a009017",
+    "bytes": 194796
+  },
+  "working_blend": "Tools/IronRequiem/Blender/Working/WeaponsRedesign_v01/T07CannonCrudo.blend",
+  "engine": "BLENDER_EEVEE",
+  "seconds": 48.5,
+  "notes": [
+    "Adaptador acortado 10 mm por detras para el collar de 32 mm; rebabas adelantadas si invaden el collar.",
+    "Boca: cuerpo, cara y anima solapados 2-5 mm (el boceto tenia caras coplanares en -0,52/-0,634/-0,664).",
+    "Cables: curvas convertidas a tubos cerrados (resolucion 4); las puntas de cobre, pernos, abrazaderas de varilla y rebabas desaparecen en LOD2."
+  ],
+  "t07_tone": {
+    "source": "Assets/IronRequiem/Art/Enemies/T07New/Textures/T07_BaseColor.png",
+    "linear_rgb": [
+      0.0864,
+      0.1128,
+      0.1324
+    ],
+    "pixels_used": 2970436,
+    "pixels_total": 16777216
+  },
+  "heat_parts": "Torn_CutHot (borde de corte caliente) en Heat_Emissive; ChargeSlot + Muzzle_Charge en Charge_Emissive"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.7682775">
+  <test-suite type="TestSuite" id="1320" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.768278" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1314" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.639974" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1315" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.634224" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.627496" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.604888" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1130" name="A_RouteCapturesAndMapChecks" fullname="IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks" methodname="A_RouteCapturesAndMapChecks" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="918392468" result="Passed" start-time="2026-11-17 07:45:38Z" end-time="2026-11-17 07:48:08Z" duration="149.509017" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 3544.3 ms · door+preload 0 / activate 3544 / unload 0 / settle 419 · peak at frame 2/5 load 0.90
+Error after 4 attempt(s): Unknown -  -- Result type: PointsBalanceResult -- Url: https://generators.ai.unity.com -- Trace Id 7274918b-7f88-42fd-a033-8a3be1c8f381 => 
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 224.6 ms · door+preload 225 / activate 52 / unload 128 / settle 28 · peak at frame 56/141 load 0.90
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 108.4 ms · door+preload 26 / activate 45 / unload 108 / settle 25 · peak at frame 105/209 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 240.4 ms · door+preload 240 / activate 45 / unload 96 / settle 24 · peak at frame 1/270 load 0.90
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room03_Assembly (preload) peak frame 166.0 ms · door+preload 165 / activate 62 / unload 166 / settle 34 · peak at frame 469/487 load 1.00
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room04_Reactor (preload) peak frame 239.1 ms · door+preload 239 / activate 67 / unload 89 / settle 23 · peak at frame 25/642 load 0.90
+[Campaign] transition to Pursuit05 (preload) peak frame 194.0 ms · door+preload 194 / activate 61 / unload 70 / settle 25 · peak at frame 34/765 load 0.90
+[CampaignTests] Passed A_RouteCapturesAndMapChecks
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

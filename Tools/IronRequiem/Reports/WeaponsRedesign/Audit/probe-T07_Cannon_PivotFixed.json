@@ -1,0 +1,251 @@
+{
+ "source": "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Weapons\\T07CannonPivotFixed\\T07_Cannon_PivotFixed.fbx",
+ "sha256_before": "c9f8132e805263fe36761f649f870ed63b36e3bf5f774a642982e8fe1dc45ff2",
+ "tag": "T07_Cannon_PivotFixed",
+ "objects": [
+  {
+   "name": "CannonClean_LOD0",
+   "vertices": 819,
+   "triangles": 1702,
+   "polygons": 1702,
+   "origin_blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bounds_blender_min": [
+    -0.13771966099739075,
+    -0.667332649230957,
+    -0.06042087823152542
+   ],
+   "bounds_blender_max": [
+    0.17580991983413696,
+    0.003189320210367441,
+    0.1345733255147934
+   ],
+   "size_blender_xyz_m": [
+    0.3135295808315277,
+    0.6705219694413245,
+    0.19499420374631882
+   ],
+   "size_unity_xyz_m": [
+    0.3135295808315277,
+    0.19499420374631882,
+    0.6705219694413245
+   ],
+   "unity_bounds_min": [
+    -0.17580991983413696,
+    -0.06042087823152542,
+    -0.003189320210367441
+   ],
+   "unity_bounds_max": [
+    0.13771966099739075,
+    0.1345733255147934,
+    0.667332649230957
+   ],
+   "materials": [
+    {
+     "name": "OriginalCannonSurface",
+     "images": {},
+     "tris": 1494,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    },
+    {
+     "name": "CutInterior",
+     "images": {},
+     "tris": 208,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    }
+   ],
+   "emissive": null
+  },
+  {
+   "name": "CannonClean_LOD1",
+   "vertices": 419,
+   "triangles": 906,
+   "polygons": 906,
+   "origin_blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bounds_blender_min": [
+    -0.13472142815589905,
+    -0.6672026515007019,
+    -0.05992799252271652
+   ],
+   "bounds_blender_max": [
+    0.1721220761537552,
+    0.00343144778162241,
+    0.13207514584064484
+   ],
+   "size_blender_xyz_m": [
+    0.30684350430965424,
+    0.6706340992823243,
+    0.19200313836336136
+   ],
+   "size_unity_xyz_m": [
+    0.30684350430965424,
+    0.19200313836336136,
+    0.6706340992823243
+   ],
+   "unity_bounds_min": [
+    -0.1721220761537552,
+    -0.05992799252271652,
+    -0.00343144778162241
+   ],
+   "unity_bounds_max": [
+    0.13472142815589905,
+    0.13207514584064484,
+    0.6672026515007019
+   ],
+   "materials": [
+    {
+     "name": "OriginalCannonSurface",
+     "images": {},
+     "tris": 768,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    },
+    {
+     "name": "CutInterior",
+     "images": {},
+     "tris": 138,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    }
+   ],
+   "emissive": null
+  },
+  {
+   "name": "CannonClean_LOD2",
+   "vertices": 170,
+   "triangles": 412,
+   "polygons": 412,
+   "origin_blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bounds_blender_min": [
+    -0.13255378603935242,
+    -0.6589116454124451,
+    -0.05540852248668671
+   ],
+   "bounds_blender_max": [
+    0.1825893521308899,
+    0.0034623092506080866,
+    0.10823021084070206
+   ],
+   "size_blender_xyz_m": [
+    0.3151431381702423,
+    0.6623739546630532,
+    0.16363873332738876
+   ],
+   "size_unity_xyz_m": [
+    0.3151431381702423,
+    0.16363873332738876,
+    0.6623739546630532
+   ],
+   "unity_bounds_min": [
+    -0.1825893521308899,
+    -0.05540852248668671,
+    -0.0034623092506080866
+   ],
+   "unity_bounds_max": [
+    0.13255378603935242,
+    0.10823021084070206,
+    0.6589116454124451
+   ],
+   "materials": [
+    {
+     "name": "OriginalCannonSurface",
+     "images": {},
+     "tris": 337,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    },
+    {
+     "name": "CutInterior",
+     "images": {},
+     "tris": 75,
+     "emission_strength": 0.0,
+     "emission_color_linked": false
+    }
+   ],
+   "emissive": null
+  }
+ ],
+ "empties": [
+  {
+   "name": "Attachment",
+   "parent": "CannonClean_LOD0",
+   "blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "unity_local_of_fbx_root": [
+    -0.0,
+    0.0,
+    -0.0
+   ],
+   "blender_minusY_dir": [
+    0.0,
+    -1.0,
+    1.6292067073209182e-07
+   ],
+   "unity_dir_of_blender_minusY": [
+    -0.0,
+    1.6292067073209182e-07,
+    1.0
+   ]
+  },
+  {
+   "name": "Muzzle",
+   "parent": "CannonClean_LOD0",
+   "blender_world": [
+    0.0,
+    -0.6644195914268494,
+    1.0824768281736397e-07
+   ],
+   "unity_local_of_fbx_root": [
+    -0.0,
+    1.0824768281736397e-07,
+    0.6644195914268494
+   ],
+   "blender_minusY_dir": [
+    0.0,
+    -1.0,
+    1.6292067073209182e-07
+   ],
+   "unity_dir_of_blender_minusY": [
+    -0.0,
+    1.6292067073209182e-07,
+    1.0
+   ]
+  }
+ ],
+ "lod0_bounds_blender": [
+  [
+   -0.13771966099739075,
+   -0.667332649230957,
+   -0.06042087823152542
+  ],
+  [
+   0.17580991983413696,
+   0.003189320210367441,
+   0.1345733255147934
+  ]
+ ],
+ "renders": [
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\T07_Cannon_PivotFixed_front.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\T07_Cannon_PivotFixed_side.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\T07_Cannon_PivotFixed_three_quarter.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\T07_Cannon_PivotFixed_top.png"
+ ],
+ "sha256_after": "c9f8132e805263fe36761f649f870ed63b36e3bf5f774a642982e8fe1dc45ff2",
+ "source_unchanged": true
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Failed(Child)" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:44:27Z" duration="325.7388675">
+  <test-suite type="TestSuite" id="1310" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:44:27Z" duration="325.738868" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1304" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:44:27Z" duration="325.521014" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1305" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:44:27Z" duration="325.490449" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:44:27Z" duration="325.473002" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+          <test-suite type="TestFixture" id="1051" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:43:48Z" duration="286.198016" total="7" passed="6" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1057" name="CurrentRobotsEyesAndExecutionOnlyWeapons" fullname="IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons" methodname="CurrentRobotsEyesAndExecutionOnlyWeapons" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1520097746" result="Passed" start-time="2026-11-16 18:39:02Z" end-time="2026-11-16 18:39:24Z" duration="21.501381" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 4354.0 ms · door+preload 0 / activate 4354 / unload 0 / settle 470 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 83.2 ms · door+preload 26 / activate 32 / unload 83 / settle 33 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 110.0 ms · door+preload 85 / activate 46 / unload 110 / settle 28 · peak at frame 99/203 load 1.00
+[CampaignTests] Passed CurrentRobotsEyesAndExecutionOnlyWeapons
+]]></output>
+            </test-case>
+            <test-case id="1055" name="DeathScreenButtonsReceiveClicks" fullname="IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks" methodname="DeathScreenButtonsReceiveClicks" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1013071036" result="Passed" start-time="2026-11-16 18:39:24Z" end-time="2026-11-16 18:39:40Z" duration="16.093500" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 2068.8 ms · door+preload 0 / activate 2069 / unload 0 / settle 229 · peak at frame 2/20 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 69.5 ms · door+preload 30 / activate 45 / unload 69 / settle 25 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 52.5 ms · door+preload 24 / activate 50 / unload 52 / settle 25 · peak at frame 99/203 load 1.00
+[CampaignTests] Passed DeathScreenButtonsReceiveClicks
+]]></output>
+            </test-case>
+            <test-case id="1056" name="EquippedExplosionCleansInventoryInAdditiveRoom" fullname="IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom" methodname="EquippedExplosionCleansInventoryInAdditiveRoom" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="181080745" result="Passed" start-time="2026-11-16 18:39:40Z" end-time="2026-11-16 18:40:01Z" duration="21.357411" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 2051.4 ms · door+preload 0 / activate 2051 / unload 0 / settle 269 · peak at frame 2/18 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 69.9 ms · door+preload 28 / activate 41 / unload 70 / settle 25 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 98.1 ms · door+preload 27 / activate 47 / unload 98 / settle 26 · peak at frame 99/203 load 1.00
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+]]></output>
+            </test-case>
+            <test-case id="1054" name="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" fullname="IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne" methodname="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1764424736" result="Passed" start-time="2026-11-16 18:40:01Z" end-time="2026-11-16 18:40:28Z" duration="26.743828" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 2336.8 ms · door+preload 0 / activate 2337 / unload 0 / settle 142 · peak at frame 2/18 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 67.9 ms · door+preload 25 / activate 51 / unload 68 / settle 23 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 66.1 ms · door+preload 23 / activate 42 / unload 66 / settle 25 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room00_Hangar (preload) peak frame 1028.3 ms · door+preload 0 / activate 1028 / unload 0 / settle 208 · peak at frame 2/5 load 0.90
+[CampaignTests] Passed IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+]]></output>
+            </test-case>
+            <test-case id="1053" name="PresentationHandsMountedArmsAndOverdriveHud" fullname="IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud" methodname="PresentationHandsMountedArmsAndOverdriveHud" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="337798018" result="Passed" start-time="2026-11-16 18:40:28Z" end-time="2026-11-16 18:40:58Z" duration="30.017626" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1381.3 ms · door+preload 0 / activate 1381 / unload 0 / settle 167 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 68.9 ms · door+preload 27 / activate 42 / unload 69 / settle 28 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 84.9 ms · door+preload 22 / activate 43 / unload 85 / settle 24 · peak at frame 99/203 load 1.00
+[V5UI] captured classic-hud-overdrive (720p, 1080p, 1440p) cam=Main Camera top=Main Camera canvases=4 layers=Default,UI
+[CampaignTests] Passed PresentationHandsMountedArmsAndOverdriveHud
+]]></output>
+            </test-case>
+            <test-case id="1052" name="TwelveRoundsAirlocksInventoryAndPursuit" fullname="IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit" methodname="TwelveRoundsAirlocksInventoryAndPursuit" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="2130447176" result="Failed" start-time="2026-11-16 18:40:58Z" end-time="2026-11-16 18:43:25Z" duration="147.241455" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Approach shifted pursuit gap stage=6 player=(0.00, 8.00, 264.25)
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<Until>d__19.MoveNext () [0x000ab] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:132
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1419.3 ms · door+preload 0 / activate 1419 / unload 0 / settle 157 · peak at frame 2/18 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 62.5 ms · door+preload 22 / activate 39 / unload 62 / settle 22 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 111.4 ms · door+preload 26 / activate 41 / unload 111 / settle 27 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 75.8 ms · door+preload 39 / activate 48 / unload 76 / settle 29 · peak at frame 99/295 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 69.3 ms · door+preload 26 / activate 61 / unload 69 / settle 28 · peak at frame 99/501 load 1.00
+[Campaign] transition to Room04_Reactor (preload) peak frame 93.9 ms · door+preload 43 / activate 65 / unload 94 / settle 26 · peak at frame 99/660 load 1.00
+[Campaign] transition to Pursuit05 (preload) peak frame 78.7 ms · door+preload 37 / activate 64 / unload 79 / settle 28 · peak at frame 99/769 load 1.00
+[CampaignTests] Failed TwelveRoundsAirlocksInventoryAndPursuit
+]]></output>
+            </test-case>
+            <test-case id="1058" name="V4FistChargeSlideGuardAndBigBotBlast" fullname="IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast" methodname="V4FistChargeSlideGuardAndBigBotBlast" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="437549335" result="Passed" start-time="2026-11-16 18:43:25Z" end-time="2026-11-16 18:43:48Z" duration="23.106155" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1749.1 ms · door+preload 0 / activate 1749 / unload 0 / settle 253 · peak at frame 2/10 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 62.9 ms · door+preload 23 / activate 33 / unload 63 / settle 25 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 95.9 ms · door+preload 24 / activate 45 / unload 96 / settle 28 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room00_Hangar (preload) peak frame 1547.5 ms · door+preload 0 / activate 1547 / unload 0 / settle 262 · peak at frame 2/6 load 0.90
+[CampaignTests] Passed V4FistChargeSlideGuardAndBigBotBlast
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1124" name="HangarIntroPresentationTests" fullname="IronRequiem.Tests.HangarIntroPresentationTests" classname="IronRequiem.Tests.HangarIntroPresentationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-11-16 18:43:48Z" end-time="2026-11-16 18:44:27Z" duration="39.238831" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1125" name="FullCinematicAndKeyboardSkipsConverge" fullname="IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge" methodname="FullCinematicAndKeyboardSkipsConverge" classname="IronRequiem.Tests.HangarIntroPresentationTests" runstate="Runnable" seed="63321374" result="Passed" start-time="2026-11-16 18:43:48Z" end-time="2026-11-16 18:44:27Z" duration="39.219830" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 2008.3 ms · door+preload 0 / activate 2008 / unload 0 / settle 234 · peak at frame 2/19 load 0.90
+[Campaign] transition to Room00_Hangar (preload) peak frame 2091.6 ms · door+preload 0 / activate 2092 / unload 0 / settle 226 · peak at frame 2/18 load 0.90
+[Campaign] transition to Room00_Hangar (preload) peak frame 1978.4 ms · door+preload 0 / activate 1978 / unload 0 / settle 204 · peak at frame 2/19 load 0.90
+[CampaignTests] Passed FullCinematicAndKeyboardSkipsConverge
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

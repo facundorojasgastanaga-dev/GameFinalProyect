@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.4733201">
+  <test-suite type="TestSuite" id="1327" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="267" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.473320" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1321" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="267" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.457180" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="45896" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1322" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="267" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.452338" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="267" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.446707" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:44Z" duration="16.431333" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1137" name="H_HangarPostAfterCinematic" fullname="IronRequiem.Tests.MapFxAudit.H_HangarPostAfterCinematic" methodname="H_HangarPostAfterCinematic" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="341588122" result="Passed" start-time="2026-11-17 16:20:28Z" end-time="2026-11-17 16:20:38Z" duration="9.805388" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="300000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 1730.5 ms · door+preload 0 / activate 1731 / unload 0 / settle 168 · peak at frame 2/5 load 0.90
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed H_HangarPostAfterCinematic
+]]></output>
+            </test-case>
+            <test-case id="1138" name="I_BurstPoolPerPrefab" fullname="IronRequiem.Tests.MapFxAudit.I_BurstPoolPerPrefab" methodname="I_BurstPoolPerPrefab" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1091152706" result="Passed" start-time="2026-11-17 16:20:38Z" end-time="2026-11-17 16:20:44Z" duration="6.596403" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1625.9 ms · door+preload 0 / activate 1626 / unload 0 / settle 213 · peak at frame 2/18 load 0.90
+[CampaignTests] Passed I_BurstPoolPerPrefab
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

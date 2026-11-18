@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Failed(Child)" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.3859903">
+  <test-suite type="TestSuite" id="1310" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.385990" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1304" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.272118" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1305" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.180677" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.156683" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1203" name="RobotPortraitTests" fullname="IronRequiem.Tests.RobotPortraitTests" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:18:32Z" duration="62.104278" total="9" passed="7" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1204" name="A_ImportsAll23AndChecksAlphaResolutionAndAlignment" fullname="IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment" methodname="A_ImportsAll23AndChecksAlphaResolutionAndAlignment" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1860821742" result="Passed" start-time="2026-11-16 15:17:30Z" end-time="2026-11-16 15:17:40Z" duration="9.432417" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+]]></output>
+            </test-case>
+            <test-case id="1205" name="B_HealthThresholdsImpactsAndHealingUseResultingDamageTier" fullname="IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier" methodname="B_HealthThresholdsImpactsAndHealingUseResultingDamageTier" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1514840563" result="Passed" start-time="2026-11-16 15:17:40Z" end-time="2026-11-16 15:17:51Z" duration="10.846634" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+]]></output>
+            </test-case>
+            <test-case id="1206" name="C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil" fullname="IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil" methodname="C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1849371497" result="Failed" start-time="2026-11-16 15:17:51Z" end-time="2026-11-16 15:17:56Z" duration="5.394677" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.StreamWriter..ctor (System.String path) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+System.IO.File.WriteAllText (System.String path, System.String contents) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+IronRequiem.Editor.VisualOverhaulDriver.Tick () (at Assets/IronRequiem/Editor/VisualOverhaul/VisualOverhaulDriver.cs:45)
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at <7e18efd2f0d74a72a5b8b42f8f47e22d>:0)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.StreamWriter..ctor (System.String path) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+System.IO.File.WriteAllText (System.String path, System.String contents) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+IronRequiem.Editor.VisualOverhaulDriver.Tick () (at Assets/IronRequiem/Editor/VisualOverhaul/VisualOverhaulDriver.cs:45)
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at <7e18efd2f0d74a72a5b8b42f8f47e22d>:0)
+
+[CampaignTests] Failed C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+]]></output>
+            </test-case>
+            <test-case id="1207" name="D_PauseTeleportCameraSwapAndCinematicResetLookSample" fullname="IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample" methodname="D_PauseTeleportCameraSwapAndCinematicResetLookSample" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1603679145" result="Passed" start-time="2026-11-16 15:17:56Z" end-time="2026-11-16 15:17:59Z" duration="2.407324" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed D_PauseTeleportCameraSwapAndCinematicResetLookSample
+]]></output>
+            </test-case>
+            <test-case id="1208" name="E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused" fullname="IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused" methodname="E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="777687866" result="Passed" start-time="2026-11-16 15:17:59Z" end-time="2026-11-16 15:18:05Z" duration="6.362674" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+]]></output>
+            </test-case>
+            <test-case id="1209" name="F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage" fullname="IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage" methodname="F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1540342053" result="Failed" start-time="2026-11-16 15:18:05Z" end-time="2026-11-16 15:18:11Z" duration="6.003327" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: greater than 0.600000024f
+  But was:  0.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.RobotPortraitTests+<F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage>d__28.MoveNext () [0x0017e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\RobotPortraitTests.cs:206
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+]]></output>
+            </test-case>
+            <test-case id="1210" name="G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage" fullname="IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage" methodname="G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1187572353" result="Passed" start-time="2026-11-16 15:18:11Z" end-time="2026-11-16 15:18:24Z" duration="13.138047" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+]]></output>
+            </test-case>
+            <test-case id="1212" name="H_SubscriptionsOverlayReuseAndManagedAllocations" fullname="IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations" methodname="H_SubscriptionsOverlayReuseAndManagedAllocations" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="788912554" result="Passed" start-time="2026-11-16 15:18:24Z" end-time="2026-11-16 15:18:26Z" duration="2.092291" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed H_SubscriptionsOverlayReuseAndManagedAllocations
+]]></output>
+            </test-case>
+            <test-case id="1211" name="I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad" fullname="IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad" methodname="I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1616393924" result="Passed" start-time="2026-11-16 15:18:26Z" end-time="2026-11-16 15:18:32Z" duration="6.248247" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+Saving results to: Tools/IronRequiem/Reports/RobotPortraitV03/playmode.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

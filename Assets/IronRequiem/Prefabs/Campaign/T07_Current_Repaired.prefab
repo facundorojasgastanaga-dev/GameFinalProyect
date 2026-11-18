@@ -2449,6 +2449,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.385
       objectReference: {fileID: 0}
+    - target: {fileID: 2293485333993590681, guid: 6e773a89b9e807d44963e83d8e0cfaa8,
+        type: 3}
+      propertyPath: deathBurstPrefab
+      value: 
+      objectReference: {fileID: 5824550490772496056, guid: 6933cfa37e0725e4b8e1726ce3d45670,
+        type: 3}
     - target: {fileID: 2597737099026532010, guid: 6e773a89b9e807d44963e83d8e0cfaa8,
         type: 3}
       propertyPath: impactEffect
@@ -3073,6 +3079,8 @@ MonoBehaviour:
   module: {fileID: 9029683296281601051}
   joint: {fileID: 1184807769227777977}
   forwardOffset: 0.05
+  aimAtTarget: 0
+  aimCone: 60
 --- !u!4 &5680033501589723122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1574062399382568543, guid: 6e773a89b9e807d44963e83d8e0cfaa8,

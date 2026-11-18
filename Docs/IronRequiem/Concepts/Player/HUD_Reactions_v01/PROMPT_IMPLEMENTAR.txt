@@ -1,0 +1,42 @@
+Trabaja en IRON REQUIEM. Lee AGENTS.md y el estado actual del HUD. Usa las skills pertinentes de UI y rendimiento, y caveman para los avances.
+
+OBJETIVO
+Animar el retrato del protagonista en el panel «UNIDAD 01» del HUD existente, con reacciones inspiradas en el retrato de DOOM clásico y adaptadas a nuestro robot. Esta tarea modifica únicamente ese retrato.
+
+ASSETS
+Usa los ocho PNG transparentes de:
+C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/
+01_neutral.png
+02_mirada_izquierda.png
+03_mirada_derecha.png
+04_impacto.png
+05_critico.png
+06_ataque.png
+07_overdrive.png
+08_apagado.png
+
+Copia los PNG a Assets/IronRequiem/Art/UI/RobotPortrait/v01/. Conserva los originales de Docs. Importa como Sprite (2D and UI), Single, transparencia habilitada, Full Rect, pivote central, sin mipmaps ni Read/Write. Comienza con máximo 512 y filtrado bilineal; comprueba legibilidad en su tamaño real. Ajusta encuadre y alineación al cambiar poses si hace falta, sin deformarlas ni recortar el casco.
+
+INTEGRACIÓN
+Inspecciona Assets/IronRequiem/Scripts/UI/RetroStatusBar.cs y RobotPortraitGraphic.cs.
+Reutiliza el Canvas, panel y propietarios de estado existentes. Sustituye únicamente el dibujo geométrico del rostro por el retrato con sprites. Conserva etiquetas, anclajes, números, inventario, controles, menús y demás feedback.
+
+REACCIONES
+- Reposo: secuencia neutral, mirada izquierda, neutral, mirada derecha; pausas variables de 1–2 segundos. Izquierda/derecha se refieren a la pantalla.
+- Recibir daño: impacto durante 0,2 segundos. Puede acompañarse de un desplazamiento mínimo del retrato, sin mover el HUD.
+- Vida inferior al 25%: estado crítico persistente con parpadeo leve. Al curarse por encima del umbral, recuperar el estado correspondiente.
+- Disparo o golpe confirmado: pose de ataque breve, limitada para que armas rápidas no la reinicien cada frame.
+- Ejecución confirmada: pose de ataque durante 0,5 segundos.
+- OVERDRIVE real activo: pose energizada con pulso suave. Si la salud es crítica, conservar el daño visible y aplicar el pulso sobre el retrato crítico.
+- Muerte: apagado persistente hasta reinicio o reaparición.
+
+Prioridad: muerte > impacto temporal > crítico > OVERDRIVE > ataque/ejecución > reposo.
+Conectar a Health y a los eventos reales de combate, extracción y OVERDRIVE. No deducir acciones solo por teclas pulsadas.
+Estas imágenes son poses, no una animación ya terminada: implementar la secuencia y sus tiempos. No generar más imágenes.
+
+RENDIMIENTO Y VERIFICACIÓN
+Precargar las referencias; cambiar sprite solo cuando cambie la pose. Evitar cargas desde disco, Instantiate, materiales nuevos y asignaciones por frame. Desactivar raycastTarget y limpiar suscripciones al destruirse.
+
+Validar primero en una escena o variante de prueba: reposo, daño repetido, curación, ataque, ejecución, OVERDRIVE, muerte, pausa y reinicio. Revisar 720p, 1080p y 1440p, transparencia y ausencia de saltos de escala.
+Preservar MainScene y no guardar escenas previamente sucias. No instalar paquetes ni controlar mi escritorio.
+Entregar archivos modificados, capturas reales y pruebas realizadas; identificar lo que no pudo comprobarse. No cambiar gameplay ni rediseñar el resto del HUD.

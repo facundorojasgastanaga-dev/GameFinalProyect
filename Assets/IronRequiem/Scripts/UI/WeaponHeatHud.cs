@@ -18,6 +18,15 @@ namespace IronRequiem
         int displayed=-1;
         string lastState;
         public WeaponHeat BoundHeat=>heat;
+        /// Runtime only: moves the gauge under another HUD block (e.g. the right status column) so it stays off the
+        /// first-person weapon. Both aspect offsets become the same docked offset; nothing is serialized.
+        public void Dock(RectTransform parent,Vector2 anchor,Vector2 pivot,Vector2 offset,float maxWidth)
+        {
+            var r=(RectTransform)transform;r.SetParent(parent,false);
+            r.anchorMin=r.anchorMax=anchor;r.pivot=pivot;wideOffset=narrowOffset=offset;r.anchoredPosition=offset;
+            float width=r.rect.width;r.localScale=width>maxWidth&&width>0?Vector3.one*(maxWidth/width):Vector3.one;
+            layoutRoot=r;ownerCanvas=GetComponentInParent<Canvas>();
+        }
         public void Configure(PlayerWeaponsManager manager,GameObject root,ThermalGaugeGraphic graphic,TMP_Text percent,TMP_Text label)
         {inventory=manager;content=root;gauge=graphic;percentage=percent;state=label;}
         void Start(){if(!inventory)inventory=FindAnyObjectByType<PlayerWeaponsManager>();if(inventory){inventory.OnSwitchedToWeapon+=Bind;Bind(inventory.GetActiveWeapon());}}

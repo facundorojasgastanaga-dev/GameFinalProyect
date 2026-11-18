@@ -40,9 +40,11 @@ namespace IronRequiem.Editor
         {
             if (EditorApplication.timeSinceStartup < next) return;
             next = EditorApplication.timeSinceStartup + 1;
-            Directory.CreateDirectory(Reports);
             bool testing = SessionState.GetBool(Key, false);
-            File.WriteAllText(Reports + "/heartbeat.txt", DateTime.Now.ToString("O") + " compiling=" + EditorApplication.isCompiling + " updating=" + EditorApplication.isUpdating + " playing=" + EditorApplication.isPlayingOrWillChangePlaymode + " testing=" + testing + " paused=" + EditorApplication.isPaused + " timeScale=" + Time.timeScale + " scene=" + SceneManager.GetActiveScene().path);
+            // Best-effort diagnostic: another process may hold the file open (Win32 1224); an exception here would fail the running test.
+            try { Directory.CreateDirectory(Reports); File.WriteAllText(Reports + "/heartbeat.txt", DateTime.Now.ToString("O") + " compiling=" + EditorApplication.isCompiling + " updating=" + EditorApplication.isUpdating + " playing=" + EditorApplication.isPlayingOrWillChangePlaymode + " testing=" + testing + " paused=" + EditorApplication.isPaused + " timeScale=" + Time.timeScale + " scene=" + SceneManager.GetActiveScene().path); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
             if (testing) Watchdog();
             if (EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode || testing) return;
             if (SessionState.GetBool(Key + ".restore", false))

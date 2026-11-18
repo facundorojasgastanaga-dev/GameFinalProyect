@@ -1,0 +1,1321 @@
+{
+ "source": "C:/Users/gehbd/ProyectoGameFinal/Assets/IronRequiem/Art/Player/ProtagonistV01/Source/IR_Protagonist_LOD1.fbx",
+ "blender": "5.2.3 LTS",
+ "objects": [
+  {
+   "object": "Body_LOD1",
+   "verts": 4699,
+   "faces": 8824,
+   "tris": 9426,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "origin_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bounds_min": [
+    -0.35956,
+    -0.19817,
+    4e-05
+   ],
+   "bounds_max": [
+    0.35918,
+    0.1985,
+    1.79941
+   ],
+   "dimensions": [
+    0.71873,
+    0.39667,
+    1.79937
+   ],
+   "origin_to_bbox_center": [
+    0.00019,
+    -0.00017,
+    -0.89972
+   ],
+   "face_sides": {
+    "3": 8349,
+    "4": 457,
+    "5": 16,
+    "58": 1,
+    "61": 1
+   },
+   "ngons": 18,
+   "ngons_concave": 2,
+   "ngons_concave_idx_sample": [
+    8822,
+    8823
+   ],
+   "ngon_max_sides": 61,
+   "quads_concave": 0,
+   "edges_boundary": 0,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 0,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 1,
+   "inverted_closed_islands": [],
+   "open_islands": 0,
+   "floating_islands_gt_1mm": [],
+   "tiny_islands_lt_8verts": 0,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 4699,
+     "faces": 8824,
+     "closed": true,
+     "signed_volume_m3": 0.08416997871679592,
+     "bbox_min": [
+      -0.3596,
+      -0.1982,
+      0.0
+     ],
+     "bbox_max": [
+      0.3592,
+      0.1985,
+      1.7994
+     ],
+     "center": [
+      -0.0002,
+      0.03,
+      0.9294
+     ]
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 8824,
+    "count": 4,
+    "fraction": 0.0005,
+    "idx_sample": [
+     4445,
+     4449,
+     6380,
+     8458
+    ],
+    "sample_step": 1
+   },
+   "self_intersections": {
+    "face_pairs": 6,
+    "same_island": 6,
+    "idx_sample": [
+     [
+      4548,
+      4589
+     ],
+     [
+      4579,
+      4589
+     ],
+     [
+      7300,
+      7306
+     ],
+     [
+      7294,
+      7300
+     ],
+     [
+      8716,
+      8717
+     ],
+     [
+      2082,
+      2085
+     ]
+    ]
+   },
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.40874,
+    "area3d_m2": 2.7143,
+    "faces_uv_zero_area": 2,
+    "faces_uv_flipped_winding": 4579,
+    "texel_density_px_per_m_at_2048": 794.7,
+    "stretch_ratio_normalised": {
+     "mean": 1.008,
+     "p5": 0.4867,
+     "p50": 1.0047,
+     "p95": 1.5102,
+     "min": 0.0,
+     "max": 6.1273
+    },
+    "faces_area_ratio_off_by_2x": 633,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 1005,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 586.0,
+     "median": 791.9,
+     "p95": 879.3,
+     "max": 1778.4
+    },
+    "texel_density_by_uv_island_largest30": {
+     "114": 819.1,
+     "685": 804.2,
+     "557": 815.7,
+     "0": 823.2,
+     "460": 808.4,
+     "445": 795.0,
+     "629": 813.3,
+     "564": 797.8,
+     "259": 799.7,
+     "807": 804.7,
+     "390": 811.2,
+     "433": 819.3,
+     "310": 808.1,
+     "788": 793.6,
+     "264": 809.5,
+     "155": 809.5,
+     "231": 807.7,
+     "260": 814.1,
+     "131": 799.9,
+     "885": 811.3,
+     "59": 812.9,
+     "556": 797.9,
+     "87": 805.2,
+     "633": 802.9,
+     "439": 813.8,
+     "294": 815.0,
+     "664": 808.2,
+     "266": 808.2,
+     "297": 786.9,
+     "397": 813.1
+    },
+    "raster": {
+     "res": 1024,
+     "covered_px": 428638,
+     "coverage_fraction": 0.4088,
+     "overlap_px_total": 133,
+     "overlap_px_cross_island": 34,
+     "overlap_px_same_island": 99,
+     "overlap_fraction_of_covered": 0.0003,
+     "overlapping_island_pairs_top": [
+      {
+       "islands": [
+        389,
+        893
+       ],
+       "px": 34
+      }
+     ],
+     "overlapping_island_pairs_count": 1
+    }
+   },
+   "materials": [
+    "Material.001"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  },
+  {
+   "object": "Forearm_L_LOD1",
+   "verts": 273,
+   "faces": 393,
+   "tris": 542,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "origin_world": [
+    0.34093,
+    0.06648,
+    1.25467
+   ],
+   "bounds_min": [
+    0.25505,
+    -0.03717,
+    0.98798
+   ],
+   "bounds_max": [
+    0.45763,
+    0.11872,
+    1.26492
+   ],
+   "dimensions": [
+    0.20258,
+    0.15589,
+    0.27695
+   ],
+   "origin_to_bbox_center": [
+    -0.01541,
+    0.02571,
+    0.12822
+   ],
+   "face_sides": {
+    "3": 318,
+    "4": 70,
+    "5": 2,
+    "9": 1,
+    "17": 1,
+    "58": 1
+   },
+   "ngons": 5,
+   "ngons_concave": 3,
+   "ngons_concave_idx_sample": [
+    380,
+    385,
+    388
+   ],
+   "ngon_max_sides": 58,
+   "quads_concave": 0,
+   "edges_boundary": 0,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 0,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 1,
+   "inverted_closed_islands": [],
+   "open_islands": 0,
+   "floating_islands_gt_1mm": [],
+   "tiny_islands_lt_8verts": 0,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 273,
+     "faces": 393,
+     "closed": true,
+     "signed_volume_m3": 0.0017691210174414587,
+     "bbox_min": [
+      0.255,
+      -0.0372,
+      0.988
+     ],
+     "bbox_max": [
+      0.4576,
+      0.1187,
+      1.2649
+     ],
+     "center": [
+      0.3564,
+      0.0408,
+      1.1437
+     ]
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 393,
+    "count": 0,
+    "fraction": 0.0,
+    "idx_sample": [],
+    "sample_step": 1
+   },
+   "self_intersections": {
+    "face_pairs": 0,
+    "idx_sample": []
+   },
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.01415,
+    "area3d_m2": 0.10698,
+    "faces_uv_zero_area": 3,
+    "faces_uv_flipped_winding": 160,
+    "texel_density_px_per_m_at_2048": 744.9,
+    "stretch_ratio_normalised": {
+     "mean": 1.0694,
+     "p5": 0.5104,
+     "p50": 1.1278,
+     "p95": 1.4693,
+     "min": 0.0,
+     "max": 2.3312
+    },
+    "faces_area_ratio_off_by_2x": 23,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 62,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 380.1,
+     "median": 770.0,
+     "p95": 848.5,
+     "max": 1061.4
+    },
+    "texel_density_by_uv_island_largest30": {
+     "4": 809.5,
+     "14": 788.8,
+     "0": 802.9,
+     "3": 770.7,
+     "13": 809.4,
+     "61": 0.0,
+     "25": 799.8,
+     "37": 749.2,
+     "10": 797.8,
+     "9": 739.3,
+     "1": 791.1,
+     "8": 832.6,
+     "60": 0.0,
+     "17": 792.1,
+     "19": 772.0,
+     "20": 834.8,
+     "29": 562.4,
+     "44": 817.6,
+     "2": 672.0,
+     "30": 824.3,
+     "28": 763.2,
+     "45": 811.4,
+     "41": 871.0,
+     "18": 572.8,
+     "59": 700.3,
+     "5": 798.7,
+     "16": 375.5,
+     "51": 812.6,
+     "40": 844.0,
+     "42": 769.4
+    },
+    "raster": {
+     "res": 1024,
+     "covered_px": 14828,
+     "coverage_fraction": 0.0141,
+     "overlap_px_total": 1,
+     "overlap_px_cross_island": 0,
+     "overlap_px_same_island": 1,
+     "overlap_fraction_of_covered": 0.0001,
+     "overlapping_island_pairs_top": [],
+     "overlapping_island_pairs_count": 0
+    }
+   },
+   "materials": [
+    "Material.001"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  },
+  {
+   "object": "Forearm_R_LOD1",
+   "verts": 287,
+   "faces": 420,
+   "tris": 570,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "origin_world": [
+    -0.34085,
+    0.06648,
+    1.25467
+   ],
+   "bounds_min": [
+    -0.45633,
+    -0.03634,
+    0.98797
+   ],
+   "bounds_max": [
+    -0.25462,
+    0.11836,
+    1.2654
+   ],
+   "dimensions": [
+    0.20171,
+    0.15471,
+    0.27743
+   ],
+   "origin_to_bbox_center": [
+    0.01462,
+    0.02547,
+    0.12799
+   ],
+   "face_sides": {
+    "3": 348,
+    "4": 68,
+    "5": 2,
+    "23": 1,
+    "61": 1
+   },
+   "ngons": 4,
+   "ngons_concave": 2,
+   "ngons_concave_idx_sample": [
+    418,
+    419
+   ],
+   "ngon_max_sides": 61,
+   "quads_concave": 0,
+   "edges_boundary": 0,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 0,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 1,
+   "inverted_closed_islands": [],
+   "open_islands": 0,
+   "floating_islands_gt_1mm": [],
+   "tiny_islands_lt_8verts": 0,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 287,
+     "faces": 420,
+     "closed": true,
+     "signed_volume_m3": 0.0017806444555645807,
+     "bbox_min": [
+      -0.4563,
+      -0.0363,
+      0.988
+     ],
+     "bbox_max": [
+      -0.2546,
+      0.1184,
+      1.2654
+     ],
+     "center": [
+      -0.3526,
+      0.0427,
+      1.1493
+     ]
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 420,
+    "count": 0,
+    "fraction": 0.0,
+    "idx_sample": [],
+    "sample_step": 1
+   },
+   "self_intersections": {
+    "face_pairs": 0,
+    "idx_sample": []
+   },
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.01423,
+    "area3d_m2": 0.10755,
+    "faces_uv_zero_area": 2,
+    "faces_uv_flipped_winding": 256,
+    "texel_density_px_per_m_at_2048": 745.0,
+    "stretch_ratio_normalised": {
+     "mean": 1.0999,
+     "p5": 0.6232,
+     "p50": 1.1111,
+     "p95": 1.5613,
+     "min": 0.0,
+     "max": 3.6653
+    },
+    "faces_area_ratio_off_by_2x": 12,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 62,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 511.6,
+     "median": 768.3,
+     "p95": 838.4,
+     "max": 1039.8
+    },
+    "texel_density_by_uv_island_largest30": {
+     "13": 812.9,
+     "4": 809.1,
+     "6": 793.6,
+     "22": 803.8,
+     "61": 0.0,
+     "33": 781.9,
+     "37": 784.5,
+     "29": 801.1,
+     "7": 795.3,
+     "3": 692.5,
+     "60": 0.0,
+     "21": 800.7,
+     "1": 759.4,
+     "47": 817.9,
+     "2": 805.9,
+     "53": 759.4,
+     "38": 814.3,
+     "40": 722.1,
+     "14": 772.6,
+     "16": 767.1,
+     "50": 809.7,
+     "23": 774.1,
+     "10": 838.8,
+     "43": 766.9,
+     "5": 754.0,
+     "19": 655.7,
+     "44": 807.4,
+     "42": 723.3,
+     "49": 520.2,
+     "32": 794.4
+    },
+    "raster": {
+     "res": 1024,
+     "covered_px": 14938,
+     "coverage_fraction": 0.0142,
+     "overlap_px_total": 0,
+     "overlap_px_cross_island": 0,
+     "overlap_px_same_island": 0,
+     "overlap_fraction_of_covered": 0.0,
+     "overlapping_island_pairs_top": [],
+     "overlapping_island_pairs_count": 0
+    }
+   },
+   "materials": [
+    "Material.001"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  },
+  {
+   "object": "Hand_L_LOD1",
+   "verts": 266,
+   "faces": 498,
+   "tris": 528,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "origin_world": [
+    0.41984,
+    0.0002,
+    0.99742
+   ],
+   "bounds_min": [
+    0.35397,
+    -0.06963,
+    0.78862
+   ],
+   "bounds_max": [
+    0.48023,
+    0.04745,
+    1.01318
+   ],
+   "dimensions": [
+    0.12627,
+    0.11708,
+    0.22456
+   ],
+   "origin_to_bbox_center": [
+    0.00274,
+    0.01129,
+    0.09652
+   ],
+   "face_sides": {
+    "3": 486,
+    "4": 10,
+    "9": 1,
+    "17": 1
+   },
+   "ngons": 2,
+   "ngons_concave": 2,
+   "ngons_concave_idx_sample": [
+    496,
+    497
+   ],
+   "ngon_max_sides": 17,
+   "quads_concave": 0,
+   "edges_boundary": 0,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 0,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 2,
+   "inverted_closed_islands": [],
+   "open_islands": 0,
+   "floating_islands_gt_1mm": [
+    {
+     "island": 0,
+     "verts": 255,
+     "dist_m": 0.00288,
+     "center": [
+      0.4327,
+      -0.0149,
+      0.8984
+     ]
+    },
+    {
+     "island": 1,
+     "verts": 11,
+     "dist_m": 0.00288,
+     "center": [
+      0.4512,
+      -0.0049,
+      1.0075
+     ]
+    }
+   ],
+   "tiny_islands_lt_8verts": 0,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 255,
+     "faces": 488,
+     "closed": true,
+     "signed_volume_m3": 0.0005806951182047249,
+     "bbox_min": [
+      0.354,
+      -0.0696,
+      0.7886
+     ],
+     "bbox_max": [
+      0.4802,
+      0.0475,
+      1.0068
+     ],
+     "center": [
+      0.4327,
+      -0.0149,
+      0.8984
+     ],
+     "nearest_other_island_m": 0.00288
+    },
+    {
+     "island": 1,
+     "verts": 11,
+     "faces": 10,
+     "closed": true,
+     "signed_volume_m3": 9.021313000327521e-07,
+     "bbox_min": [
+      0.4426,
+      -0.0228,
+      1.0034
+     ],
+     "bbox_max": [
+      0.4589,
+      0.0134,
+      1.0132
+     ],
+     "center": [
+      0.4512,
+      -0.0049,
+      1.0075
+     ],
+     "nearest_other_island_m": 0.00288
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 498,
+    "count": 0,
+    "fraction": 0.0,
+    "idx_sample": [],
+    "sample_step": 1
+   },
+   "self_intersections": {
+    "face_pairs": 0,
+    "idx_sample": []
+   },
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.01012,
+    "area3d_m2": 0.0737,
+    "faces_uv_zero_area": 2,
+    "faces_uv_flipped_winding": 265,
+    "texel_density_px_per_m_at_2048": 759.1,
+    "stretch_ratio_normalised": {
+     "mean": 1.0552,
+     "p5": 0.5449,
+     "p50": 1.0273,
+     "p95": 1.6502,
+     "min": 0.0,
+     "max": 4.7416
+    },
+    "faces_area_ratio_off_by_2x": 30,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 151,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 570.8,
+     "median": 757.8,
+     "p95": 895.5,
+     "max": 1652.9
+    },
+    "texel_density_by_uv_island_largest30": {
+     "64": 803.4,
+     "70": 816.6,
+     "150": 0.0,
+     "52": 859.1,
+     "67": 781.4,
+     "77": 831.1,
+     "51": 789.3,
+     "69": 840.1,
+     "101": 800.7,
+     "125": 801.2,
+     "73": 765.9,
+     "61": 764.3,
+     "41": 698.5,
+     "43": 764.4,
+     "59": 758.8,
+     "142": 723.8,
+     "106": 694.9,
+     "135": 781.8,
+     "53": 846.0,
+     "60": 724.9,
+     "68": 760.2,
+     "31": 713.1,
+     "50": 750.5,
+     "27": 687.2,
+     "29": 803.2,
+     "6": 676.0,
+     "86": 782.9,
+     "110": 781.1,
+     "94": 758.1,
+     "117": 829.4
+    },
+    "raster": {
+     "res": 1024,
+     "covered_px": 10609,
+     "coverage_fraction": 0.0101,
+     "overlap_px_total": 0,
+     "overlap_px_cross_island": 0,
+     "overlap_px_same_island": 0,
+     "overlap_fraction_of_covered": 0.0,
+     "overlapping_island_pairs_top": [],
+     "overlapping_island_pairs_count": 0
+    }
+   },
+   "materials": [
+    "Material.001"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  },
+  {
+   "object": "Hand_R_LOD1",
+   "verts": 277,
+   "faces": 531,
+   "tris": 562,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "origin_world": [
+    -0.41976,
+    0.0002,
+    0.99742
+   ],
+   "bounds_min": [
+    -0.47905,
+    -0.07116,
+    0.78928
+   ],
+   "bounds_max": [
+    -0.35503,
+    0.04656,
+    1.01273
+   ],
+   "dimensions": [
+    0.12402,
+    0.11772,
+    0.22345
+   ],
+   "origin_to_bbox_center": [
+    -0.00272,
+    0.0125,
+    0.09642
+   ],
+   "face_sides": {
+    "3": 519,
+    "4": 11,
+    "23": 1
+   },
+   "ngons": 1,
+   "ngons_concave": 1,
+   "ngons_concave_idx_sample": [
+    530
+   ],
+   "ngon_max_sides": 23,
+   "quads_concave": 0,
+   "edges_boundary": 0,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 0,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 1,
+   "inverted_closed_islands": [],
+   "open_islands": 0,
+   "floating_islands_gt_1mm": [],
+   "tiny_islands_lt_8verts": 0,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 277,
+     "faces": 531,
+     "closed": true,
+     "signed_volume_m3": 0.0005778630593293133,
+     "bbox_min": [
+      -0.4791,
+      -0.0712,
+      0.7893
+     ],
+     "bbox_max": [
+      -0.355,
+      0.0466,
+      1.0127
+     ],
+     "center": [
+      -0.4348,
+      -0.0169,
+      0.9019
+     ]
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 531,
+    "count": 3,
+    "fraction": 0.0056,
+    "idx_sample": [
+     94,
+     98,
+     101
+    ],
+    "sample_step": 1
+   },
+   "self_intersections": {
+    "face_pairs": 2,
+    "same_island": 2,
+    "idx_sample": [
+     [
+      91,
+      95
+     ],
+     [
+      101,
+      112
+     ]
+    ]
+   },
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.01017,
+    "area3d_m2": 0.07443,
+    "faces_uv_zero_area": 1,
+    "faces_uv_flipped_winding": 210,
+    "texel_density_px_per_m_at_2048": 757.1,
+    "stretch_ratio_normalised": {
+     "mean": 1.0404,
+     "p5": 0.4797,
+     "p50": 1.0262,
+     "p95": 1.5922,
+     "min": 0.0,
+     "max": 3.8351
+    },
+    "faces_area_ratio_off_by_2x": 43,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 158,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 543.4,
+     "median": 757.7,
+     "p95": 897.0,
+     "max": 1379.7
+    },
+    "texel_density_by_uv_island_largest30": {
+     "28": 805.4,
+     "12": 814.3,
+     "157": 0.0,
+     "90": 747.6,
+     "83": 815.5,
+     "86": 767.0,
+     "20": 796.5,
+     "39": 824.1,
+     "89": 714.0,
+     "18": 691.4,
+     "93": 774.0,
+     "84": 724.1,
+     "77": 708.6,
+     "10": 847.0,
+     "14": 744.9,
+     "97": 809.3,
+     "79": 762.2,
+     "41": 728.2,
+     "85": 771.8,
+     "59": 739.0,
+     "48": 732.0,
+     "127": 787.7,
+     "123": 759.2,
+     "11": 862.5,
+     "107": 751.0,
+     "87": 827.4,
+     "9": 689.5,
+     "17": 740.5,
+     "139": 773.9,
+     "51": 850.0
+    },
+    "raster": {
+     "res": 1024,
+     "covered_px": 10628,
+     "coverage_fraction": 0.0101,
+     "overlap_px_total": 6,
+     "overlap_px_cross_island": 0,
+     "overlap_px_same_island": 6,
+     "overlap_fraction_of_covered": 0.0006,
+     "overlapping_island_pairs_top": [],
+     "overlapping_island_pairs_count": 0
+    }
+   },
+   "materials": [
+    "Material.001"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  }
+ ],
+ "armatures": [],
+ "empties": [
+  {
+   "name": "Elbow_L",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    0.34093,
+    0.06648,
+    1.25467
+   ],
+   "axis_x": [
+    0.6432,
+    0.7657,
+    -0.0
+   ],
+   "axis_y": [
+    0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Elbow_R",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    -0.34085,
+    0.06648,
+    1.25467
+   ],
+   "axis_x": [
+    0.6432,
+    -0.7657,
+    0.0
+   ],
+   "axis_y": [
+    -0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    -0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "IR_Protagonist_Root_LOD1",
+   "parent": null,
+   "parent_bone": "",
+   "world_pos": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "axis_x": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "axis_y": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "axis_z": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "ModuleSocket_L",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    0.41984,
+    0.0002,
+    0.99742
+   ],
+   "axis_x": [
+    0.6432,
+    0.7657,
+    -0.0
+   ],
+   "axis_y": [
+    0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "ModuleSocket_R",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    -0.41976,
+    0.0002,
+    0.99742
+   ],
+   "axis_x": [
+    0.6432,
+    -0.7657,
+    0.0
+   ],
+   "axis_y": [
+    -0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    -0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Wrist_L",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    0.41984,
+    0.0002,
+    0.99742
+   ],
+   "axis_x": [
+    0.6432,
+    0.7657,
+    -0.0
+   ],
+   "axis_y": [
+    0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Wrist_R",
+   "parent": "IR_Protagonist_Root_LOD1",
+   "parent_bone": "",
+   "world_pos": [
+    -0.41976,
+    0.0002,
+    0.99742
+   ],
+   "axis_x": [
+    0.6432,
+    -0.7657,
+    0.0
+   ],
+   "axis_y": [
+    -0.7108,
+    -0.5971,
+    0.3719
+   ],
+   "axis_z": [
+    -0.2847,
+    -0.2392,
+    -0.9283
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  }
+ ],
+ "actions": [],
+ "materials": {
+  "count": 1,
+  "names": [
+   "Material.001"
+  ],
+  "same_stem_groups": {},
+  "identical_signature_groups": [],
+  "images": [
+   [
+    "texture_pbr_20250901.png",
+    [
+     2048,
+     2048
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Player\\ProtagonistV01\\Source\\Textures\\IR_Protagonist_BaseColor.png"
+   ],
+   [
+    "texture_pbr_20250901_metallic.png",
+    [
+     2048,
+     2048
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Player\\ProtagonistV01\\Source\\Textures\\IR_Protagonist_Metallic.png"
+   ],
+   [
+    "texture_pbr_20250901_normal.png",
+    [
+     2048,
+     2048
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Player\\ProtagonistV01\\Source\\Textures\\IR_Protagonist_Normal.png"
+   ],
+   [
+    "texture_pbr_20250901_roughness.png",
+    [
+     2048,
+     2048
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Player\\ProtagonistV01\\Source\\Textures\\IR_Protagonist_Roughness.png"
+   ]
+  ]
+ },
+ "cross_object_intersections_same_lod": [
+  {
+   "a": "Body_LOD1",
+   "b": "Forearm_L_LOD1",
+   "overlapping_tri_pairs": 5
+  },
+  {
+   "a": "Body_LOD1",
+   "b": "Forearm_R_LOD1",
+   "overlapping_tri_pairs": 9
+  },
+  {
+   "a": "Forearm_L_LOD1",
+   "b": "Hand_L_LOD1",
+   "overlapping_tri_pairs": 29
+  },
+  {
+   "a": "Forearm_R_LOD1",
+   "b": "Hand_R_LOD1",
+   "overlapping_tri_pairs": 21
+  }
+ ],
+ "elapsed_s": 16.2
+}

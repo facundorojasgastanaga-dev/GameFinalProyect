@@ -1,0 +1,37 @@
+﻿## Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_PrimaryCapsules_v03.prefab
+PrefabInstance 7610794217840573726 source=Weapon_IR_PrimaryModule_v02.prefab parentTransform=0
+   ov 142854857780653604 MaxAmmo = 64 
+   ov 142854857780653604 ShootType = 1 
+   ov 142854857780653604 AmmoReloadRate = 64 
+   ov 142854857780653604 AmmoReloadDelay = 0.28 
+   ov 142854857780653604 ProjectilePrefab =  Projectile_IR_PrimaryCapsules_v03.prefab
+   ov 142854857780653604 DelayBetweenShots = 0.1 
+   ov 7825848604124070412 m_Name = Weapon_IR_PrimaryCapsules_v03 
+   ov 7825848604124070415 m_LocalPosition.x = 0 
+   ov 7825848604124070415 m_LocalPosition.y = 0 
+   ov 7825848604124070415 m_LocalPosition.z = 0 
+   ov 7825848604124070415 m_LocalRotation.w = 1 
+   ov 7825848604124070415 m_LocalRotation.x = 0 
+   ov 7825848604124070415 m_LocalRotation.y = 0 
+   ov 7825848604124070415 m_LocalRotation.z = 0 
+   ov 7825848604124070415 m_LocalEulerAnglesHint.x = 0 
+   ov 7825848604124070415 m_LocalEulerAnglesHint.y = 0 
+   ov 7825848604124070415 m_LocalEulerAnglesHint.z = 0 
+GO 317623095941739953 "Capsule_1" active=1
+  TR 446397879556024618 of "Capsule_1" pos={x: 0.039, y: 0.13999997, z: 0.18200001} rot={x: 0.20466691, y: 0.9788317, z: -0.000000008946275, w: -0.00000004278609} scale={x: 0.216, y: 0.216, z: 0.216} father=3111559395306889708
+  MeshFilter on "Capsule_1" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300010
+  MeshRenderer on "Capsule_1" enabled=1 mats=WeaponPistol.mat,WeaponPistol_Transparent.mat
+GO 1990589793850616123 "Capsule_2" active=1
+  TR 8587092418728334052 of "Capsule_2" pos={x: 0.039, y: 0.13999997, z: 0.30200002} rot={x: 0.20466691, y: 0.9788317, z: -0.000000008946275, w: -0.00000004278609} scale={x: 0.216, y: 0.216, z: 0.216} father=3111559395306889708
+  MeshFilter on "Capsule_2" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300008
+  MeshRenderer on "Capsule_2" enabled=1 mats=WeaponPistol.mat,WeaponPistol_Transparent.mat
+GO 2073896861875663120 "Capsule_3" active=1
+  TR 5707403549079289218 of "Capsule_3" pos={x: -0.039, y: 0.13999997, z: 0.18200001} rot={x: -0.20466691, y: 0.9788317, z: 0.000000008946275, w: -0.00000004278609} scale={x: 0.216, y: 0.216, z: 0.216} father=3111559395306889708
+  MeshFilter on "Capsule_3" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300004
+  MeshRenderer on "Capsule_3" enabled=1 mats=WeaponPistol.mat,WeaponPistol_Transparent.mat
+GO 4575704727421476155 "Capsule_4" active=1
+  TR 7701342662533266916 of "Capsule_4" pos={x: -0.039, y: 0.13999997, z: 0.30200002} rot={x: -0.20466691, y: 0.9788317, z: 0.000000008946275, w: -0.00000004278609} scale={x: 0.216, y: 0.216, z: 0.216} father=3111559395306889708
+  MeshFilter on "Capsule_4" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300006
+  MeshRenderer on "Capsule_4" enabled=1 mats=WeaponPistol.mat,WeaponPistol_Transparent.mat
+GO 6684419661908533827 "TemplateCapsules" active=1
+  TR 3111559395306889708 of "TemplateCapsules" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=1194940427154604918

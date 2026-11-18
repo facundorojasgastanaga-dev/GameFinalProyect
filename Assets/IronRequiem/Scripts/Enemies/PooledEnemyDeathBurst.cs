@@ -17,7 +17,7 @@ namespace IronRequiem
             if(requested)return true;
             requested=true;PresentationCount++;
             // The template enemy is removed immediately; the pool owns the visual after this call.
-            RobotDestructionPool.Burst(null,anchor?anchor.position:transform.position+Vector3.up,null,size);
+            RobotDestructionPool.Burst(effectPrefab,null,anchor?anchor.position:transform.position+Vector3.up,null,size);
             return true;
         }
     }

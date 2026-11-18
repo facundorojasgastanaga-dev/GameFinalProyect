@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.215305">
+  <test-suite type="TestSuite" id="1297" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="243" result="Failed" site="Child" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.215305" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1291" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="243" result="Failed" site="Child" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.165268" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1292" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="243" result="Failed" site="Child" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.148894" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1123" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="243" result="Failed" site="Child" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.130787" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1124" name="MainMenuRestoreTests" fullname="IronRequiem.Tests.MainMenuRestoreTests" classname="IronRequiem.Tests.MainMenuRestoreTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.080073" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1125" name="CapsuleOptionsBackgroundAndSingleLaunch" fullname="IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch" methodname="CapsuleOptionsBackgroundAndSingleLaunch" classname="IronRequiem.Tests.MainMenuRestoreTests" runstate="Runnable" seed="1832952694" result="Failed" start-time="2026-11-15 17:01:44Z" end-time="2026-11-15 17:01:51Z" duration="7.000046" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 1
+  But was:  2
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MainMenuRestoreTests+<CapsuleOptionsBackgroundAndSingleLaunch>d__8.MoveNext () [0x002e7] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MainMenuRestoreTests.cs:36
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+[CampaignTests] Failed CapsuleOptionsBackgroundAndSingleLaunch
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

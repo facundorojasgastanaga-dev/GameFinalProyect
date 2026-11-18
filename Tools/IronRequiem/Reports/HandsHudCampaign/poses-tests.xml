@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 17:01:59Z" end-time="2026-11-16 17:02:00Z" duration="0.8387027">
+  <test-suite type="TestSuite" id="1000" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-11-16 17:01:59Z" end-time="2026-11-16 17:02:00Z" duration="0.838703" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1031" name="IronRequiem.EditModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.EditModeTests.dll" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-11-16 17:01:59Z" end-time="2026-11-16 17:02:00Z" duration="0.724881" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1032" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.655780" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1033" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.270697" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1008" name="HandPoseControllerTests" fullname="IronRequiem.Tests.HandPoseControllerTests" classname="IronRequiem.Tests.HandPoseControllerTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.261716" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1009" name="AnimatedWritesCannotAccumulateIntoTheAbsolutePose" fullname="IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose" methodname="AnimatedWritesCannotAccumulateIntoTheAbsolutePose" classname="IronRequiem.Tests.HandPoseControllerTests" runstate="Runnable" seed="1467964771" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.097916" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed AnimatedWritesCannotAccumulateIntoTheAbsolutePose
+]]></output>
+            </test-case>
+            <test-case id="1010" name="ReversingTheBlendReturnsToNamedPosesWithoutChangingScale" fullname="IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale" methodname="ReversingTheBlendReturnsToNamedPosesWithoutChangingScale" classname="IronRequiem.Tests.HandPoseControllerTests" runstate="Runnable" seed="125182849" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.008886" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ReversingTheBlendReturnsToNamedPosesWithoutChangingScale
+]]></output>
+            </test-case>
+            <test-case id="1011" name="TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose" fullname="IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose" methodname="TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose" classname="IronRequiem.Tests.HandPoseControllerTests" runstate="Runnable" seed="2054271535" result="Passed" start-time="2026-11-16 17:02:00Z" end-time="2026-11-16 17:02:00Z" duration="0.001930" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

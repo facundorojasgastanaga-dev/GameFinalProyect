@@ -30,6 +30,8 @@ namespace IronRequiem
         }
 
         [SerializeField] Transform model;
+        [SerializeField] HandPoseController handPoses;
+        public void ConfigureHandPoses(HandPoseController poses) => handPoses=poses;
         [SerializeField] Transform pod;            // capsule frame: model "up" is pod +Y, visor faces pod -Z
         [SerializeField] Transform railGrip;
         [SerializeField] Transform standPoint;
@@ -76,6 +78,8 @@ namespace IronRequiem
         public Transform RightForearm => rFore;
         public Transform RightHand => rHand;
         public Transform Head => head;
+        public Vector3 BodyFacing { get; private set; }
+        public Vector3 BodyCenter => hips ? hips.position : model.position;
         public Vector3 RightFootPlanted { get; private set; }
         public Vector3 LeftFootPlanted { get; private set; }
         public bool IsBound => bound;
@@ -268,6 +272,7 @@ namespace IronRequiem
             model.position = hp - hr * hipsOffsetModel;
             var bodyFwd = hr * fwdModel; bodyFwd = Vector3.ProjectOnPlane(bodyFwd, up).sqrMagnitude > .01f ? bodyFwd : face;
             var bodyFace = yawRot * face; var bodyRight = Vector3.Cross(up, bodyFace);
+            BodyFacing = bodyFace;
 
             // ---- foot targets: carried on the cradle footrest, then planted inside, an arc over the lip, the floor
             var lInner = Cradled(root0 + rootRot0 * lFootModel, eq, ePivot, eOff); var rInner = Cradled(root0 + rootRot0 * rFootModel, eq, ePivot, eOff);
@@ -359,8 +364,19 @@ namespace IronRequiem
             // fingers: twitch, fist for the punches, open/close while studying; the left hand closes on the rail
             float curl = Curl(t);
             float grip = Smooth(T.railIn + .2f, T.railIn + .5f, t) * (1 - Smooth(T.railOut, T.railOut + .4f, t));
-            CurlHand(rFingers, rHand, curl, true);
-            CurlHand(lFingers, lHand, Mathf.Max(Mathf.Min(curl, .5f) * .7f, grip * .85f), false);
+            if(handPoses)
+            {
+                float inspect=Smooth(T.handStart,T.handStart+.15f,t)*(1-Smooth(T.handEnd-.15f,T.handEnd,t));
+                float punchBlend=Smooth(T.punch1-.55f,T.punch1-.4f,t)*(1-Smooth(T.punch2+.5f,T.punch2+.7f,t));
+                handPoses.SampleRight(HandPoseLibrary.Pose.Relaxed,inspect>0?HandPoseLibrary.Pose.Inspect:HandPoseLibrary.Pose.Fist,inspect>0?inspect:curl*punchBlend);
+                float railGripWeight=Smooth(T.railIn+.2f,T.railIn+.35f,t)*(1-Smooth(T.railOut,T.railOut+.15f,t));
+                handPoses.SampleLeft(HandPoseLibrary.Pose.Relaxed,HandPoseLibrary.Pose.Grip,railGripWeight);
+            }
+            else
+            {
+                CurlHand(rFingers, rHand, curl, true);
+                CurlHand(lFingers, lHand, Mathf.Max(Mathf.Min(curl, .5f) * .7f, grip * .85f), false);
+            }
         }
 
         /// Foot target for time t: planted inside before its step, an arc over the capsule lip during it, the floor after.

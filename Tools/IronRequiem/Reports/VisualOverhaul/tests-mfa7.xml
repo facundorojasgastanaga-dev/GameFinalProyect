@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.4876654">
+  <test-suite type="TestSuite" id="1319" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="260" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.487665" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1313" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="260" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.318287" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1314" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="260" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.309829" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="260" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.300318" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:57:43Z" duration="125.265259" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1131" name="B_FightEffectsAndProfiler" fullname="IronRequiem.Tests.MapFxAudit.B_FightEffectsAndProfiler" methodname="B_FightEffectsAndProfiler" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1080493070" result="Passed" start-time="2026-11-17 06:55:38Z" end-time="2026-11-17 06:56:28Z" duration="49.772933" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 3477.6 ms · door+preload 0 / activate 3478 / unload 0 / settle 388 · peak at frame 2/5 load 0.90
+Error after 4 attempt(s): Unknown -  -- Result type: PointsBalanceResult -- Url: https://generators.ai.unity.com -- Trace Id cbbe9581-64b5-4600-994d-21dcce6524e3 => 
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 80.9 ms · door+preload 29 / activate 29 / unload 81 / settle 26 · peak at frame 104/134 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 104.0 ms · door+preload 104 / activate 43 / unload 104 / settle 25 · peak at frame 5/210 load 0.90
+[CampaignTests] Passed B_FightEffectsAndProfiler
+]]></output>
+            </test-case>
+            <test-case id="1132" name="C_HordeProfilerRoom03" fullname="IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03" methodname="C_HordeProfilerRoom03" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1575153826" result="Passed" start-time="2026-11-17 06:56:28Z" end-time="2026-11-17 06:57:43Z" duration="75.371939" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1092.3 ms · door+preload 0 / activate 1092 / unload 0 / settle 190 · peak at frame 2/13 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 58.0 ms · door+preload 27 / activate 43 / unload 58 / settle 26 · peak at frame 104/134 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 79.4 ms · door+preload 23 / activate 39 / unload 79 / settle 24 · peak at frame 108/214 load 1.00
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room02_Breach (preload) peak frame 86.7 ms · door+preload 52 / activate 65 / unload 87 / settle 23 · peak at frame 95/282 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 72.8 ms · door+preload 29 / activate 40 / unload 73 / settle 22 · peak at frame 98/493 load 1.00
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+[CampaignTests] Passed C_HordeProfilerRoom03
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

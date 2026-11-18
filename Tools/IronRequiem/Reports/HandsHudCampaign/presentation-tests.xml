@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.8416039">
+  <test-suite type="TestSuite" id="1300" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="245" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.841604" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1294" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="245" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.816141" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1295" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="245" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.799136" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="245" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.783790" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1051" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.746904" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1053" name="PresentationHandsMountedArmsAndOverdriveHud" fullname="IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud" methodname="PresentationHandsMountedArmsAndOverdriveHud" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1010475146" result="Passed" start-time="2026-11-16 01:08:22Z" end-time="2026-11-16 01:08:54Z" duration="31.688833" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2518.6 ms · door+preload 0 / activate 2519 / unload 0 / settle 331 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 75.0 ms · door+preload 25 / activate 47 / unload 75 / settle 34 · peak at frame 99/112 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 145.2 ms · door+preload 21 / activate 41 / unload 145 / settle 33 · peak at frame 99/168 load 1.00
+[V5UI] captured classic-hud-overdrive (720p, 1080p, 1440p) cam=Main Camera top=Main Camera canvases=4 layers=Default,UI
+[CampaignTests] Passed PresentationHandsMountedArmsAndOverdriveHud
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

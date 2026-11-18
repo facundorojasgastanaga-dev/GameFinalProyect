@@ -214,6 +214,9 @@ namespace IronRequiem.EditorTools
                 b.transition = Selectable.Transition.None;
             }
             fx.ConfigureTheme(theme, IsBack(b, label));
+            // v6: a fully transparent hit image is culled by its CanvasRenderer and then ignored by the GraphicRaycaster
+            // (the death-screen buttons could not be clicked). Keep the mesh so the button still receives the pointer.
+            var hit = b.GetComponent<Image>(); if (hit && hit.color.a < .01f) { hit.enabled = true; hit.canvasRenderer.cullTransparentMesh = false; hit.raycastTarget = true; EditorUtility.SetDirty(hit.canvasRenderer); EditorUtility.SetDirty(hit); }
             if (label) { label.font = theme.TitleFont ? theme.TitleFont : label.font; label.characterSpacing = Mathf.Max(label.characterSpacing, theme.BodySpacing + 1); label.color = theme.ButtonRestText; if (label.fontSize < 24) label.fontSize = 24; label.enableWordWrapping = false;
                 // hangar signature on every button: label left of centre after the accent bar
                 var lr = label.rectTransform; lr.anchorMin = Vector2.zero; lr.anchorMax = Vector2.one; lr.pivot = new Vector2(.5f, .5f); lr.offsetMin = lr.offsetMax = Vector2.zero; lr.localScale = Vector3.one;

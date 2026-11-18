@@ -1,0 +1,176 @@
+﻿## Assets/IronRequiem/Prefabs/Weapons/Weapon_T07_Temporary_Optimized.prefab
+PrefabInstance 4116204426120894277 source=CannonCharge_Magenta.prefab parentTransform=2126012834667145445
+   ov 931338137510770586 m_LocalPosition.x = 0 
+   ov 931338137510770586 m_LocalPosition.y = 0 
+   ov 931338137510770586 m_LocalPosition.z = 0 
+   ov 931338137510770586 m_LocalRotation.w = 1 
+   ov 931338137510770586 m_LocalRotation.x = 0 
+   ov 931338137510770586 m_LocalRotation.y = 0 
+   ov 931338137510770586 m_LocalRotation.z = 0 
+   ov 931338137510770586 m_LocalEulerAnglesHint.x = 0 
+   ov 931338137510770586 m_LocalEulerAnglesHint.y = 0 
+   ov 931338137510770586 m_LocalEulerAnglesHint.z = 0 
+   ov 7418866990949539065 m_Name = ChargeEnergy 
+PrefabInstance 8126793231484271247 source=Weapon_T07_Temporary.prefab parentTransform=0
+   ov 1460118713415576944 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576946 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576948 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576952 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576954 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576956 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 1460118713415576958 'm_Materials.Array.data[0]' =  WeaponPistol_FPS.mat
+   ov 2156967605841593445 m_Enabled = 0 
+   ov 2156967605841593445 m_Materials.Array.size = 2 
+   ov 2156967605841593445 'm_Materials.Array.data[0]' =  T07_URP_FPS.mat
+   ov 2156967605841593445 'm_Materials.Array.data[1]' =  ExposedMechanism_FPS.mat
+   ov 4075068602372489872 AimOffset.x = 0.25 
+   ov 4075068602372489872 AimOffset.y = 0.15 
+   ov 4075068602372489872 ProjectilePrefab =  Projectile_T07_Magenta.prefab
+   ov 4075068602372489872 MuzzleFlashPrefab =  
+   ov 5106575696810791084 m_Mesh =  T07_CannonClean.fbx
+   ov 5125132356125646723 m_LocalScale.x = 100 
+   ov 5125132356125646723 m_LocalScale.y = 100 
+   ov 5125132356125646723 m_LocalScale.z = 100 
+   ov 5125132356125646723 m_LocalPosition.x = 0.124672465 
+   ov 5125132356125646723 m_LocalPosition.y = 0.12729266 
+   ov 5125132356125646723 m_LocalPosition.z = -0.08433542 
+   ov 5125132356125646723 m_LocalRotation.w = -0.26520115 
+   ov 5125132356125646723 m_LocalRotation.x = 0.87993544 
+   ov 5125132356125646723 m_LocalRotation.y = -0.3644812 
+   ov 5125132356125646723 m_LocalRotation.z = 0.15011823 
+   ov 6191595331407031992 m_Name = Weapon_T07_Temporary_Optimized 
+   ov 6191595331407031995 m_LocalPosition.x = 0 
+   ov 6191595331407031995 m_LocalPosition.y = 0 
+   ov 6191595331407031995 m_LocalPosition.z = 0 
+   ov 6191595331407031995 m_LocalRotation.w = 1 
+   ov 6191595331407031995 m_LocalRotation.x = 0 
+   ov 6191595331407031995 m_LocalRotation.y = 0 
+   ov 6191595331407031995 m_LocalRotation.z = 0 
+   ov 6191595331407031995 m_LocalEulerAnglesHint.x = 0 
+   ov 6191595331407031995 m_LocalEulerAnglesHint.y = 0 
+   ov 6191595331407031995 m_LocalEulerAnglesHint.z = 0 
+   ov 6641211404006379927 effectRoot =  {fileID: 6911528053679623100}
+   ov 6641211404006379927 energyCore =  {fileID: 7969832230076266170}
+   ov 6641211404006379927 energyRays =  {fileID: 1636268289068277445}
+   ov 6641211404006379927 innerFrame =  {fileID: 2611783667066126158}
+   ov 6641211404006379927 outerFrame =  {fileID: 5581600855008897242}
+   ov 6641211404006379927 energySpindle =  {fileID: 6618270964113877636}
+   ov 6641211404006379927 energyParticles =  {fileID: 7830540996267841992}
+   ov 7874884841553695338 m_LocalPosition.x = 0.015 
+   ov 7874884841553695338 m_LocalPosition.y = 0.065 
+   ov 7874884841553695338 m_LocalPosition.z = 0.48 
+GO 752838021271014737 "Primary_Weapon_Front_Piece_01" active=1
+  TR 230946072183553744 of "Primary_Weapon_Front_Piece_01" pos={x: -0.14438201, y: 0.32857326, z: -0.531914} rot={x: 0.000000021855694, y: 0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+  MeshFilter on "Primary_Weapon_Front_Piece_01" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300002
+  MeshRenderer on "Primary_Weapon_Front_Piece_01" enabled=1 mats=Module_PlayerFront_T07Stolen.mat
+GO 1128053687935190177 "VO_Joint_L" active=1
+  TR 8704717241015798142 of "VO_Joint_L" pos={x: -0.05, y: 0.124, z: 0.12900443} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+GO 1172616225623889527 "PrimaryModuleVisual" active=1
+  TR 5337483891402107482 of "PrimaryModuleVisual" pos={x: 0, y: 0.09399997, z: 0.07700002} rot={x: -0.7071068, y: 0, z: -0, w: 0.7071067} scale={x: 100, y: 100, z: 100} father=6408117195204818093
+  MeshFilter on "PrimaryModuleVisual" enabled=- mesh=IR_TemplateArmModule_v04.fbx:979869482020438308
+  MeshRenderer on "PrimaryModuleVisual" enabled=1 mats=PlayerSurface_T07Stolen.mat
+GO 1494121230338217234 "VO_Light_1" active=1
+  TR 125315463865823449 of "VO_Light_1" pos={x: -0.0625, y: 0.08799999, z: 0.21300444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+  MeshFilter on "VO_Light_1" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_1" enabled=1 mats=VO_Suit_Light_T07Stolen.mat
+GO 1668022718918576593 "Primary_Weapon_Container_02" active=1
+  TR 8008535792622553393 of "Primary_Weapon_Container_02" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=1938360847320566171
+  MeshFilter on "Primary_Weapon_Container_02" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300008
+  MeshRenderer on "Primary_Weapon_Container_02" enabled=1 mats=Module_PlayerArmor_T07Stolen.mat,Module_PlayerEnergy_T07Stolen.mat
+GO 1757992547916868538 "TelescopicSupport_3" active=1
+  TR 4889088071037255734 of "TelescopicSupport_3" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=6408117195204818093
+  SkinnedMeshRenderer on "TelescopicSupport_3" enabled=1 mesh=TelescopicSupport_3.asset:4300000 mats=PlayerSurface_T07Stolen.mat
+GO 2055056622830386050 "VO_Body" active=1
+  TR 3710555300472038882 of "VO_Body" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+  MeshFilter on "VO_Body" enabled=- mesh=VO_ArmCannon_Body.asset:4300000
+  MeshRenderer on "VO_Body" enabled=1 mats=VO_Suit_Plate_T07Stolen.mat,VO_Suit_Joint_T07Stolen.mat,VO_Suit_Accent_T07Stolen.mat
+GO 2556221614803395177 "TelescopicSupport_0" active=1
+  TR 5640347929834017993 of "TelescopicSupport_0" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=6408117195204818093
+  SkinnedMeshRenderer on "TelescopicSupport_0" enabled=1 mesh=TelescopicSupport_0.asset:4300000 mats=PlayerSurface_T07Stolen.mat
+GO 3438305983493672540 "VO_FiringRings" active=1
+  TR 4424475256447666747 of "VO_FiringRings" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+  MeshFilter on "VO_FiringRings" enabled=- mesh=VO_ArmCannon_Rings.asset:4300000
+  MeshRenderer on "VO_FiringRings" enabled=1 mats=VO_Suit_Ring_T07Stolen.mat
+GO 4098754500377137526 "Primary_Weapon_Container_04" active=1
+  TR 7965675373719697474 of "Primary_Weapon_Container_04" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=9097856799923641929
+  MeshFilter on "Primary_Weapon_Container_04" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300006
+  MeshRenderer on "Primary_Weapon_Container_04" enabled=1 mats=Module_PlayerArmor_T07Stolen.mat,Module_PlayerEnergy_T07Stolen.mat
+GO 4527506635390542715 "Plate" active=1
+  TR 181186007352997473 of "Plate" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=8704717241015798142
+  MeshFilter on "Plate" enabled=- mesh=VO_JointPlate_L.asset:4300000
+  MeshRenderer on "Plate" enabled=1 mats=VO_Suit_Plate_T07Stolen.mat
+GO 4735856307719626968 "VO_Light_2" active=1
+  TR 8107082036969764268 of "VO_Light_2" pos={x: -0.0625, y: 0.08799999, z: 0.24100444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+  MeshFilter on "VO_Light_2" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_2" enabled=1 mats=VO_Suit_Light_T07Stolen.mat
+GO 4884812386382601078 "Primary_Weapon_Front_Piece_02" active=1
+  TR 5253858135651574507 of "Primary_Weapon_Front_Piece_02" pos={x: 0.14438201, y: 0.32857326, z: -0.531914} rot={x: 0.000000021855694, y: 0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+  MeshFilter on "Primary_Weapon_Front_Piece_02" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300000
+  MeshRenderer on "Primary_Weapon_Front_Piece_02" enabled=1 mats=Module_PlayerFront_T07Stolen.mat
+GO 4959151859912973771 "VO_Module" active=1
+  TR 5505721855070340339 of "VO_Module" pos={x: 0, y: 0, z: 0} rot={x: -0, y: -0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=6408117195204818093
+GO 4966755339100816242 "PistonSocket (3)" active=1
+  TR 7431845063973120937 of "PistonSocket (3)" pos={x: 0.07592502, y: 0.4027196, z: -0.13970605} rot={x: 0.000000020825098, y: -0.0000000018201263, z: -0.20576778,     w: 0.97860086} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+GO 5052143108999276983 "PistonSocket (2)" active=1
+  TR 1938360847320566171 of "PistonSocket (2)" pos={x: -0.07731137, y: 0.4018825, z: 0.12339113} rot={x: 0.000000021380629, y: 0.000000004412186, z: 0.2046317, w: 0.97883904} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+GO 5109111658827784706 "Plate" active=1
+  TR 8831184253949640366 of "Plate" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=8966675415120204841
+  MeshFilter on "Plate" enabled=- mesh=VO_JointPlate_R.asset:4300000
+  MeshRenderer on "Plate" enabled=1 mats=VO_Suit_Plate_T07Stolen.mat
+GO 5544462021578936530 "VO_Light_0" active=1
+  TR 1189422714813052055 of "VO_Light_0" pos={x: -0.0625, y: 0.08799999, z: 0.18500444} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+  MeshFilter on "VO_Light_0" enabled=- mesh=VO_StatusSlit.asset:4300000
+  MeshRenderer on "VO_Light_0" enabled=1 mats=VO_Suit_Light_T07Stolen.mat
+GO 5794857311341908870 "Primary_Weapon" active=1
+  TR 1619466157942223039 of "Primary_Weapon" pos={x: -0, y: 0, z: 0} rot={x: 0.000000021855694, y: 0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+  MeshFilter on "Primary_Weapon" enabled=- mesh=Module_Housing_NoGrip.asset:4300000
+  MeshRenderer on "Primary_Weapon" enabled=1 mats=Module_PlayerArmor_T07Stolen.mat
+GO 6131143655012472387 "TelescopicSupport_2" active=1
+  TR 3245838118416670665 of "TelescopicSupport_2" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=6408117195204818093
+  SkinnedMeshRenderer on "TelescopicSupport_2" enabled=1 mesh=TelescopicSupport_2.asset:4300000 mats=PlayerSurface_T07Stolen.mat
+GO 6785819970171731935 "TelescopicSupport_1" active=1
+  TR 504575214726333128 of "TelescopicSupport_1" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=6408117195204818093
+  SkinnedMeshRenderer on "TelescopicSupport_1" enabled=1 mesh=TelescopicSupport_1.asset:4300000 mats=PlayerSurface_T07Stolen.mat
+GO 7131552806701401925 "PistonSocket (4)" active=1
+  TR 9097856799923641929 of "PistonSocket (4)" pos={x: 0.07581724, y: 0.4024745, z: 0.12339109} rot={x: 0.000000020825098, y: -0.0000000018201263, z: -0.20576778,     w: 0.97860086} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+GO 7544891523007980074 "Primary_Weapon_Container_03" active=1
+  TR 7448725325732858262 of "Primary_Weapon_Container_03" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7431845063973120937
+  MeshFilter on "Primary_Weapon_Container_03" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300004
+  MeshRenderer on "Primary_Weapon_Container_03" enabled=1 mats=Module_PlayerArmor_T07Stolen.mat,Module_PlayerEnergy_T07Stolen.mat
+GO 7660323993476602755 "WeaponMesh_Pistol" active=1
+  TR 6264898503352615313 of "WeaponMesh_Pistol" pos={x: 0, y: 0.017119996, z: 0.12728} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 0.62, y: 0.62, z: 0.62} father=6408117195204818093
+GO 7737021364208280758 "VO_Joint_R" active=1
+  TR 8966675415120204841 of "VO_Joint_R" pos={x: 0.05, y: 0.124, z: 0.12900443} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=5505721855070340339
+GO 7774911816337873126 "Weapon_Primary" active=1
+  TR 5871906743409057445 of "Weapon_Primary" pos={x: -0.0000007360453, y: -0.030303296, z: 0.178} rot={x: -0, y: 1, z: -0, w: 0.0000029504295} scale={x: 0.45, y: 0.45, z: 0.45} father=6264898503352615313
+GO 7998800860645764770 "Primary_Weapon_Container_01" active=1
+  TR 9006805101293862589 of "Primary_Weapon_Container_01" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=8915440352237002360
+  MeshFilter on "Primary_Weapon_Container_01" enabled=- mesh=Mesh_Weapon_Primary.fbx:4300010
+  MeshRenderer on "Primary_Weapon_Container_01" enabled=1 mats=Module_PlayerArmor_T07Stolen.mat,Module_PlayerEnergy_T07Stolen.mat
+GO 8139753984085403249 "VP_StolenShell" active=1
+  TR 6408117195204818093 of "VP_StolenShell" pos={x: 0.058383998, y: 0.05489952, z: -0.17542674} rot={x: -0, y: -0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=3509884570489841747
+  MB StolenShellFit on "VP_StolenShell"
+     socketToShellPosition: {x: 0, y: -0.063999996, z: 0.00999999}
+     socketToShellRotation: {x: -0, y: -0, z: -0, w: 1}
+     overlap: 0.02
+     absorbSeconds: 0.42
+     startOffset: {x: 0.06, y: 0.14, z: 0.38}
+     startEuler: {x: -28, y: 18, z: 45}
+     sparkMaterial: {fileID: 2100000, guid: 93c163e6f58fe2242964723bdb6ff7ef, type: 2}
+GO 8263491706847493836 "Attachment" active=1
+  TR 5961681290868382410 of "Attachment" pos={x: 0.058383998, y: 0.05583952, z: -0.1741767} rot={x: -0, y: -0, z: -0, w: 1} scale={x: 1, y: 1, z: 1} father=3509884570489841747
+GO 8739156910296160330 "PistonSocket (1)" active=1
+  TR 8915440352237002360 of "PistonSocket (1)" pos={x: -0.07741862, y: 0.40212774, z: -0.13970606} rot={x: 0.000000021380629, y: 0.000000004412186, z: 0.2046317, w: 0.97883904} scale={x: 1, y: 1, z: 1} father=5871906743409057445
+  MB StolenChargeAnchor on "?"
+     shell: {fileID: 6408117195204818093}
+     muzzle: {fileID: 2126012834667145445}
+     forwardOffset: 0.015
+     vibration: 0.0035
+     swell: 0.05
+     recoilDistance: 0.045
+     recoilSeconds: 0.14
+  MB MuzzleShotFx on "?"
+     smokePrefab: {fileID: 3288267572943311638, guid: 2e7ff30f6630d9a4896f76b3fb37557d,
+     type: 3}
+     lifetime: 0.9
+     scale: 1.8

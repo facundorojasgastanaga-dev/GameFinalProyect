@@ -1,0 +1,80 @@
+IronCampaignMapFxDeathFx.Analyze
+== Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab (variant of Assets/IronRequiem/Prefabs/VisualOverhaul/BigBot_Burst_v10_NavThrottle_VO.prefab)
+  first IEnemyDeathPresentation: BigBotCombat
+  EnemyController.DeathVfx -> null  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  BigBotDestruction.sharedPoolTemplate -> Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab enabled=True scale=1.55
+== Assets/IronRequiem/Prefabs/Campaign/Carronero.prefab (variant of Assets/IronRequiem/Prefabs/Enemies/SawBot_SawPolish_v04.prefab)
+  first IEnemyDeathPresentation: SawBotCombat
+  EnemyController.DeathVfx -> null  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  SawBotCombat.deathEffect -> Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab
+== Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab (variant of Assets/IronRequiem/Prefabs/SecondaryShotgun/HoverBot_CombatPolish_NavThrottle.prefab)
+  first IEnemyDeathPresentation: PooledEnemyDeathBurst
+  EnemyController.DeathVfx -> Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  PooledEnemyDeathBurst.effectPrefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab size=0.7
+== Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab (variant of Assets/IronRequiem/Prefabs/Enemies/SawBot_SawPolish_v04.prefab)
+  first IEnemyDeathPresentation: SawBotCombat
+  EnemyController.DeathVfx -> null  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  SawBotCombat.deathEffect -> Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab
+== Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab (variant of Assets/IronRequiem/Prefabs/VisualOverhaul/T07_HitFeedback_v04_NavThrottle_VO.prefab)
+  first IEnemyDeathPresentation: RobotDamageProgression
+  EnemyController.DeathVfx -> Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  RobotDamageProgression.deathBurstPrefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab preserveLegacyDeathEffect=False
+== Assets/IronRequiem/Prefabs/Campaign/T07_Mech.prefab
+  first IEnemyDeathPresentation: RobotDamageProgression
+  EnemyController.DeathVfx -> Assets/FPS/Prefabs/VFX/VFX_HoverBot_Explosion.prefab  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  RobotDamageProgression.deathBurstPrefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab preserveLegacyDeathEffect=False
+== Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab (variant of Assets/IronRequiem/Prefabs/CombatFollowup/Turret_CombatPolish.prefab)
+  first IEnemyDeathPresentation: PooledEnemyDeathBurst
+  EnemyController.DeathVfx -> Assets/FPS/Prefabs/VFX/VFX_Explosion.prefab  [not spawned: presentation returns true]
+  MechDeathExplosion (own debris pieces + sparks, no prefab)
+  PooledEnemyDeathBurst.effectPrefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab size=1.4
+-- Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab (original Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab) flash=no
+   .                            size 0.1..0.2 x1 speed 10..20 max=64 scaling=Hierarchy | Billboard mesh=- mat=TrailDeath(opaque) maxScreen=0.3
+   VFX_ImpactRing               size 3 x1 speed 0 max=64 scaling=Hierarchy | Mesh mesh=Mesh_ExplosionDisk mat=DiskExplosion maxScreen=0.3
+   VFX_ActionLines              size 0.5 x1 speed 0.2..0.3 max=64 scaling=Hierarchy | Stretch mesh=- mat=SpeedLine maxScreen=0.3
+   VFX_ImpactFlare              size 6 x1 speed 0 max=64 scaling=Hierarchy | Billboard mesh=- mat=ImpactFlare maxScreen=0.3
+   InitialFlash                 size 1.105..1.105 x1 speed 0..0 max=1 scaling=Hierarchy | Billboard mesh=- mat=HotFlash maxScreen=0.3
+   ExpandingCore                size 1.6..1.365 x1 speed 1.5..1.76 max=4 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.3
+   HotSparks                    size 0.036..0.036 x1 speed 7..8.8 max=12 scaling=Hierarchy | Stretch mesh=- mat=WarmEnergy maxScreen=0.3
+   VisualFragments              size 0.029..0.029 x1 speed 4..4.95 max=4 scaling=Hierarchy | Mesh mesh=Cube mat=WarmEnergy maxScreen=0.3
+   ResidualSmoke                size 0.585..0.585 x1 speed 0.7..1.155 max=8 scaling=Hierarchy | Billboard mesh=- mat=ResidualSmoke maxScreen=0.3
+   BodyOverload                 size 0.008..0.022 x1 speed 0.6..2 max=12 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.035
+-- Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab (original Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab) flash=yes
+   .                            size 0.1..7.329 x36.644 speed 10..107.005 max=64 scaling=Hierarchy | Billboard mesh=- mat=TrailDeath(opaque) maxScreen=0.3
+   VFX_ImpactRing               size 109.933 x36.644 speed 0 max=64 scaling=Hierarchy | Mesh mesh=Mesh_ExplosionDisk mat=DiskExplosion maxScreen=0.3
+   VFX_ActionLines              size 18.322 x36.644 speed 0.2..1.605 max=64 scaling=Hierarchy | Stretch mesh=- mat=SpeedLine maxScreen=0.3
+   VFX_ImpactFlare              size 219.865 x36.644 speed 0 max=64 scaling=Hierarchy | Billboard mesh=- mat=ImpactFlare maxScreen=0.3
+   InitialFlash                 size 1.105..40.492 x36.644 speed 0..0 max=1 scaling=Hierarchy | Billboard mesh=- mat=HotFlash maxScreen=0.3
+   ExpandingCore                size 1.6..50.019 x36.644 speed 1.5..9.416 max=4 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.3
+   HotSparks                    size 0.036..1.31 x36.644 speed 7..47.082 max=12 scaling=Hierarchy | Stretch mesh=- mat=WarmEnergy maxScreen=0.3
+   VisualFragments              size 0.029..1.072 x36.644 speed 4..26.484 max=4 scaling=Hierarchy | Mesh mesh=Cube mat=WarmEnergy maxScreen=0.3
+   ResidualSmoke                size 0.585..21.437 x36.644 speed 0.7..6.18 max=8 scaling=Hierarchy | Billboard mesh=- mat=ResidualSmoke maxScreen=0.3
+   BodyOverload                 size 0.008..0.806 x36.644 speed 0.6..10.701 max=12 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.035
+-- Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO.prefab (original Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab) flash=yes
+   .                            size 0.1..0.664 x3.322 speed 10..34.98 max=64 scaling=Hierarchy | Billboard mesh=- mat=TrailDeath(opaque) maxScreen=0.3
+   VFX_ImpactRing               size 9.965 x3.322 speed 0 max=64 scaling=Hierarchy | Mesh mesh=Mesh_ExplosionDisk mat=DiskExplosion maxScreen=0.3
+   VFX_ActionLines              size 1.661 x3.322 speed 0.2..0.525 max=64 scaling=Hierarchy | Stretch mesh=- mat=SpeedLine maxScreen=0.3
+   VFX_ImpactFlare              size 19.929 x3.322 speed 0 max=64 scaling=Hierarchy | Billboard mesh=- mat=ImpactFlare maxScreen=0.3
+   InitialFlash                 size 1.105..3.67 x3.322 speed 0..0 max=1 scaling=Hierarchy | Billboard mesh=- mat=HotFlash maxScreen=0.3
+   ExpandingCore                size 1.6..4.534 x3.322 speed 1.5..3.078 max=4 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.3
+   HotSparks                    size 0.036..0.119 x3.322 speed 7..15.391 max=12 scaling=Hierarchy | Stretch mesh=- mat=WarmEnergy maxScreen=0.3
+   VisualFragments              size 0.029..0.097 x3.322 speed 4..8.658 max=4 scaling=Hierarchy | Mesh mesh=Cube mat=WarmEnergy maxScreen=0.3
+   ResidualSmoke                size 0.585..1.943 x3.322 speed 0.7..2.02 max=8 scaling=Hierarchy | Billboard mesh=- mat=ResidualSmoke maxScreen=0.3
+   BodyOverload                 size 0.008..0.073 x3.322 speed 0.6..3.498 max=12 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.035
+-- Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO.prefab (original Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab) flash=yes
+   .                            size 0.1..2.206 x11.032 speed 10..61.18 max=64 scaling=Hierarchy | Billboard mesh=- mat=TrailDeath(opaque) maxScreen=0.3
+   VFX_ImpactRing               size 33.097 x11.032 speed 0 max=64 scaling=Hierarchy | Mesh mesh=Mesh_ExplosionDisk mat=DiskExplosion maxScreen=0.3
+   VFX_ActionLines              size 5.516 x11.032 speed 0.2..0.918 max=64 scaling=Hierarchy | Stretch mesh=- mat=SpeedLine maxScreen=0.3
+   VFX_ImpactFlare              size 66.194 x11.032 speed 0 max=64 scaling=Hierarchy | Billboard mesh=- mat=ImpactFlare maxScreen=0.3
+   InitialFlash                 size 1.105..12.191 x11.032 speed 0..0 max=1 scaling=Hierarchy | Billboard mesh=- mat=HotFlash maxScreen=0.3
+   ExpandingCore                size 1.6..15.059 x11.032 speed 1.5..5.384 max=4 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.3
+   HotSparks                    size 0.036..0.394 x11.032 speed 7..26.919 max=12 scaling=Hierarchy | Stretch mesh=- mat=WarmEnergy maxScreen=0.3
+   VisualFragments              size 0.029..0.323 x11.032 speed 4..15.142 max=4 scaling=Hierarchy | Mesh mesh=Cube mat=WarmEnergy maxScreen=0.3
+   ResidualSmoke                size 0.585..6.454 x11.032 speed 0.7..3.533 max=8 scaling=Hierarchy | Billboard mesh=- mat=ResidualSmoke maxScreen=0.3
+   BodyOverload                 size 0.008..0.243 x11.032 speed 0.6..6.118 max=12 scaling=Hierarchy | Billboard mesh=- mat=WarmEnergy maxScreen=0.035

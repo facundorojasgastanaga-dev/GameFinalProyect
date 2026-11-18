@@ -125,7 +125,7 @@ namespace IronRequiem
                 return;
             }
             deathAge+=Time.deltaTime;
-            if(deathBurstEnabled&&!deathBurstRequested&&deathAge>=deathBurstPreparationAt){deathBurstRequested=true;if(RobotDestructionPool.Burst(deathBurstAnchor,deathBurstAnchor?deathBurstAnchor.position:transform.position+Vector3.up,null,deathBurstScale))DeathBurstCount++;}
+            if(deathBurstEnabled&&!deathBurstRequested&&deathAge>=deathBurstPreparationAt){deathBurstRequested=true;if(RobotDestructionPool.Burst(sharedPoolTemplate,deathBurstAnchor,deathBurstAnchor?deathBurstAnchor.position:transform.position+Vector3.up,null,deathBurstScale))DeathBurstCount++;}
             float clipTime=animator.GetCurrentAnimatorStateInfo(0).IsName("Death")?animator.GetCurrentAnimatorStateInfo(0).normalizedTime*1.8f:deathAge;
             float offset=deathFloorOffset.Evaluate(Mathf.Clamp(clipTime,0,1.8f))*Mathf.Clamp01(deathAge/.14f);animator.transform.localPosition=deathVisualBase+Vector3.up*(offset/transform.lossyScale.y);
             // Ground the two actual sole volumes during the blend from locomotion into the native clip.

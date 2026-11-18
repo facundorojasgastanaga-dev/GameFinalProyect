@@ -1,0 +1,77 @@
+{
+  "PR-A": {
+    "name": "Corona de cápsulas",
+    "idea": "Tres cápsulas de calor inclinadas sobre el lomo que se eyectan al saturarse.",
+    "heat_point": "3 cápsulas en el lomo",
+    "tris": 1920,
+    "objects": 32,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.052,
+      -0.333,
+      -0.057
+    ],
+    "bounds_max": [
+      0.052,
+      0.0,
+      0.115
+    ],
+    "length_coupling_to_front": 0.333,
+    "length_vs_current_pct": 0.0,
+    "renders": {
+      "34": "PR-A_CoronaCapsulas_34.png",
+      "side": "PR-A_CoronaCapsulas_perfil.png",
+      "fps": "PR-A_CoronaCapsulas_fps.png"
+    }
+  },
+  "PR-B": {
+    "name": "Rotativa",
+    "idea": "Mini rotativa de tres cañas con anillo de calor entre motor y cañas.",
+    "heat_point": "anillo tras las cañas",
+    "tris": 1584,
+    "objects": 25,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.052,
+      -0.331,
+      -0.054
+    ],
+    "bounds_max": [
+      0.052,
+      0.0,
+      0.078
+    ],
+    "length_coupling_to_front": 0.331,
+    "length_vs_current_pct": -0.6,
+    "renders": {
+      "34": "PR-B_Rotativa_34.png",
+      "side": "PR-B_Rotativa_perfil.png",
+      "fps": "PR-B_Rotativa_fps.png"
+    }
+  },
+  "PR-C": {
+    "name": "Espina radiadora",
+    "idea": "Cuerpo bajo con aletas de radiador que se encienden progresivamente.",
+    "heat_point": "barra y aletas",
+    "tris": 1428,
+    "objects": 36,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.052,
+      -0.334,
+      -0.061
+    ],
+    "bounds_max": [
+      0.052,
+      0.0,
+      0.075
+    ],
+    "length_coupling_to_front": 0.334,
+    "length_vs_current_pct": 0.3,
+    "renders": {
+      "34": "PR-C_EspinaRadiadora_34.png",
+      "side": "PR-C_EspinaRadiadora_perfil.png",
+      "fps": "PR-C_EspinaRadiadora_fps.png"
+    }
+  }
+}

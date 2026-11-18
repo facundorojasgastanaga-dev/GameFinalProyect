@@ -1,0 +1,19 @@
+IronCampaignMapFxDeathFx.Apply
+  Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab unchanged
+  Assets/IronRequiem/Prefabs/Campaign/Carronero.prefab unchanged
+  created Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab = variant of Assets/IronRequiem/Prefabs/VFX/RobotBodyBurst_CombatPolish.prefab size x1.35 speed x1.15 once
+    .                            size 0.1..0.2 -> 0.1..0.27 (was 0.2) speed -> 10..23 cap 0.3
+    VFX_ImpactRing               size 3 -> 4.05 (was 3) speed -> 0 cap 4.5
+    VFX_ActionLines              size 0.5 -> 0.675 (was 0.5) speed -> 0.2..0.345
+    VFX_ImpactFlare              size 6 -> 8.1 (was 6) speed -> 0
+    InitialFlash                 size 1.105..1.105 -> 1.105..1.492 (was 1.105) speed -> 0..0
+    ExpandingCore                size 1.6..1.365 -> 1.6..1.843 (was 1.365) speed -> 1.5..2.024
+    HotSparks                    size 0.036..0.036 -> 0.036..0.048 (was 0.036) speed -> 7..10.12
+    VisualFragments              size 0.029..0.029 -> 0.029..0.039 (was 0.029) speed -> 4..5.693 cap 0.08
+    ResidualSmoke                size 0.585..0.585 -> 0.585..0.79 (was 0.585) speed -> 0.7..1.328
+    BodyOverload                 size 0.008..0.022 -> 0.008..0.03 (was 0.022) speed -> 0.6..2.3
+  Assets/IronRequiem/Prefabs/Campaign/HoverBot_Current.prefab : PooledEnemyDeathBurst.effectPrefab : Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab
+  Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab unchanged
+  Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab : RobotDamageProgression.deathBurstPrefab : Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab
+  Assets/IronRequiem/Prefabs/Campaign/T07_Mech.prefab : RobotDamageProgression.deathBurstPrefab : Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab
+  Assets/IronRequiem/Prefabs/Campaign/Turret_Current.prefab : PooledEnemyDeathBurst.effectPrefab : Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_VO_VO_VO.prefab -> Assets/IronRequiem/Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab

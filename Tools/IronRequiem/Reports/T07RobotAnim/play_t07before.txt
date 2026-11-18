@@ -1,0 +1,55 @@
+[T07 robot anim play T07Before] scene=Assets/IronRequiem/Scenes/T07RobotAnimLab_Before.unity
+  player parked 24.7 m from mech
+  mech=T07_Current_Repaired_T07Before controller=T07_Locomotion
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=2.32 ai=Patrol target=none dist=22.5
+  shot r0c0 t=2.50 state=ArmedLocomotion speed=2.32 alerted=False attacks=0
+  shot r0c1 t=2.85 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  shot r0c2 t=3.21 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  shot r0c3 t=3.55 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  shot r0c4 t=3.90 state=ArmedLocomotion speed=3.98 alerted=False attacks=0
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=4.12 ai=Patrol target=none dist=27.1
+  shot r0c5 t=4.26 state=ArmedLocomotion speed=4.12 alerted=False attacks=0
+  shot r0c6 t=4.61 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  shot r0c7 t=4.95 state=ArmedLocomotion speed=3.00 alerted=False attacks=0
+  shot r0c8 t=5.31 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  shot r0c9 t=5.66 state=ArmedLocomotion speed=4.20 alerted=False attacks=0
+  t=6.00 player placed 15.0 m from mech
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=2.63 ai=Follow target=Player_IR_v01 dist=14.9
+  shot r1c0 t=6.30 state=AlertedLocomotion speed=2.63 alerted=True attacks=0
+  shot r1c1 t=6.61 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+  shot r1c2 t=6.91 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+  shot r1c3 t=7.21 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+  shot r1c4 t=7.50 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=4.20 ai=Attack target=Player_IR_v01 dist=9.0
+  shot r1c5 t=7.81 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+  shot r1c6 t=8.11 state=AlertedLocomotion speed=4.20 alerted=True attacks=0
+  shot r1c7 t=8.40 state=AlertedLocomotion speed=0.00 alerted=True attacks=0
+  shot r1c8 t=8.71 state=AlertedLocomotion speed=0.00 alerted=True attacks=0
+  t=8.81 first shot after chase: burst
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=False vel=0.00 ai=Attack target=Player_IR_v01 dist=6.8
+  shot r2c0 t=8.81 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r2c1 t=8.86 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c2 t=8.92 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c3 t=8.97 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r1c9 t=9.01 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c4 t=9.02 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=False vel=0.00 ai=Attack target=Player_IR_v01 dist=6.8
+  shot r2c5 t=9.07 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c6 t=9.12 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c7 t=9.16 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c8 t=9.21 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  shot r2c9 t=9.27 state=AlertedLocomotion +CannonAttack speed=0.00 alerted=True attacks=1
+  t=10.21 damage applied (trigger=none)
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=False vel=0.00 ai=Attack target=AimPoint dist=6.8
+  shot r3c0 t=10.21 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c1 t=10.27 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c2 t=10.31 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c3 t=10.37 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c4 t=10.41 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=False vel=0.00 ai=Attack target=Player_IR_v01 dist=6.8
+  shot r3c5 t=10.47 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c6 t=10.51 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c7 t=10.57 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c8 t=10.61 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  shot r3c9 t=10.67 state=AlertedLocomotion speed=0.00 alerted=True attacks=1
+  attacks=1 damagedEvents=1 consoleErrors=0

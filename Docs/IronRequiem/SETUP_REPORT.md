@@ -97,6 +97,21 @@ T-07 es una sola malla de **10.370 triángulos**, sin rig, animaciones ni cañó
 
 Siguiente paso recomendado: **preparar una copia del T-07 en Blender, separar geométricamente el cañón y las piezas móviles, ubicar pivotes y crear un rig verificable**. Después producir el primer ciclo de locomoción y una variante de prefab que reutilice la IA y armas de la plantilla. No empezar generación automática de animaciones sobre el FBX estático original.
 
+## Evaluación de skills para estación de montaje y HUD — 16/11/2026
+
+Petición: preparar skills para animación FPS de brazos/cambio de arma y layout de HUD uGUI. **No se instaló nada nuevo.** Respaldo de este informe: `Tools/IronRequiem/Backups/20261116-skills-eval/`.
+
+| Skill | Fuente | Versión | Estado | Uso en esta tarea |
+|---|---|---|---|---|
+| iron-requiem-fps | Local `.agents/skills/` | — | Ya presente | Aplica: arma vía PlayerWeaponsManager/WeaponController, verificación de cambio de arma y pausa |
+| iron-requiem-modular-weapons | Local `.agents/skills/` | — | Ya presente | Aplica: sockets/pivotes del módulo montado, Blender solo sobre copias |
+| iron-requiem-enemy-ai / -performance | Local | — | Ya presentes | No aplican a estas dos partes |
+| unity:ui-ugui, unity:ui, unity:unity-cli | Plugin oficial Unity (Anthropic Directory, `github.com/unity-technologies/unity-agent-plugin`) | 0.1.9-beta, habilitado en Claude Code | Ya instalado | ui-ugui: anclajes/pivotes, ediciones dirigidas sin reconstruir. unity-cli: no lanzar otro Editor sobre el proyecto abierto |
+| game-dev-combat-animation, game-dev-combat-skill-polish, design-action-combat | Skills de usuario ya cargadas | — | Ya presentes | Orientadas a Three.js/web; solo criterios generales de anticipación/asentamiento. No sustituyen las reglas del proyecto |
+| animation-studio | Anthropic Directory, comunidad | 1.1.0 | Rechazada | Vídeo 2D generado por código; no aplica a Unity |
+
+Búsqueda en el catálogo (SearchPlugins/SearchSkills: "unity animation", "first person viewmodel", "weapon swap animation", "game hud layout"): sin otra skill oficial de Anthropic o Unity para animación FPS. El plugin Unity no incluye skill de animación. No se buscaron terceros porque ninguna laguna lo justificaba.
+
 ## Fuentes oficiales
 
 - [Plugin de Unity Technologies](https://github.com/Unity-Technologies/unity-agent-plugin).
@@ -105,3 +120,19 @@ Siguiente paso recomendado: **preparar una copia del T-07 en Blender, separar ge
 - Versiones y dependencias consultadas directamente en el registro oficial `packages.unity.com`.
 
 Para autenticar Meshy en otra ocasión: `meshy auth login --device --format json --no-update-check`, completar el acceso personalmente en el navegador y comprobar `meshy auth status --format json --no-update-check`. No es necesario autenticarse para inspeccionar el FBX local con Blender.
+
+## Skills para estación de montaje y HUD (16/11/2026)
+
+Revisión para la tarea v37 (animación de la estación de montaje y HUD que tapaba las armas). **No se instaló nada**: las skills ya disponibles cubren la tarea. La búsqueda en el catálogo de Claude (SearchSkills: unity animation, fps viewmodel, weapon swap animation, ugui hud layout, game feel) no devolvió resultados, así que no hubo candidatas de Anthropic, Unity ni terceros que evaluar.
+
+| Skill | Fuente | Aporta a esta tarea | Scripts | Estado |
+|---|---|---|---|---|
+| iron-requiem-fps | local `.agents/skills/` | Una sola autoridad de movimiento y cámara; armas de la plantilla | No | Instalada; manda sobre las genéricas |
+| iron-requiem-modular-weapons | local `.agents/skills/` | Montaje de módulos y paso por PlayerWeaponsManager/WeaponController | No | Instalada; manda |
+| iron-requiem-enemy-ai / -performance | local | No aplica (IA y rendimiento) | No | Instaladas; no usadas |
+| unity:ui, unity:ui-ugui | plugin oficial Unity Technologies | Anclajes y layout del Canvas uGUI existente | No | Disponibles |
+| unity:unity-cli | plugin oficial Unity Technologies | Control del Editor; no conecta sin `com.unity.pipeline`, que sigue pendiente | No | Disponible, no utilizable |
+| game-dev-combat-animation, design-action-combat | skills de usuario ya instaladas | Referencias de game feel (asentamiento y retroceso) | No | Solo como referencia |
+| animate, animation-systems, improve-animations | skills de usuario | Movimiento web (CSS/JS); no aplican a Unity | — | No aplican |
+
+Las skills genéricas no sustituyen AGENTS.md ni las iron-requiem-*. Ninguna autoriza a instalar paquetes ni a cambiar pipeline, entrada o Editor.

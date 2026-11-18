@@ -10,11 +10,15 @@ namespace IronRequiem
         [SerializeField] Image fill;
         [SerializeField] Image fullFlash;
         [SerializeField] Color chargeColor=new Color(.25f,.95f,1f,.9f),fullColor=new Color(.85f,1f,1f,1f);
+        [SerializeField] FistChargeRadialGraphic radial;
         float shown,flash;bool wasFull;
         public float Shown=>shown;
         public void Configure(ProtagonistMelee attack,CanvasGroup canvasGroup,Image ring,Image full){melee=attack;group=canvasGroup;fill=ring;fullFlash=full;}
+        /// Segmented radial meter driven every frame by this HUD (independent of the central ring's visibility).
+        public void AttachRadial(FistChargeRadialGraphic radialMeter){radial=radialMeter;if(radial)radial.Driven=true;}
         void LateUpdate()
         {
+            if(radial)radial.SetState(melee&&melee.IsCharging,melee?melee.ChargeLevel:0f,melee&&melee.FullyCharged);
             if(!melee||!group)return;
             bool charging=melee.IsCharging;
             shown=Mathf.MoveTowards(shown,charging?1:0,Time.unscaledDeltaTime*(charging?10f:5f));

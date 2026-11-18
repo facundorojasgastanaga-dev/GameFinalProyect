@@ -1,0 +1,272 @@
+{
+  "weapon": "PrimaryEspina",
+  "folder": "Tools/IronRequiem/Exports/Primary_Redesign_v01",
+  "concept": "Docs/IronRequiem/Concepts/Weapons/Redesign_v01/Primary (PR-C Espina radiadora)",
+  "generated": "2026-11-16 20:39",
+  "blender": "5.2.3 LTS",
+  "budget_lod0": 1500,
+  "tris": {
+    "LOD0": 1460,
+    "LOD1": 730,
+    "LOD2": 364
+  },
+  "lod_ratios": [
+    1.0,
+    0.5,
+    0.249
+  ],
+  "parts": 34,
+  "materials": [
+    "PrimaryEspina_Surface",
+    "Heat_Emissive"
+  ],
+  "tris_per_slot_lod0": {
+    "PrimaryEspina_Surface": 1236,
+    "Heat_Emissive": 224
+  },
+  "textures": {
+    "BaseColor": {
+      "file": "PrimaryEspina_BaseColor.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "Emission": {
+      "file": "PrimaryEspina_Emission.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "MetalSmooth": {
+      "file": "PrimaryEspina_MetalSmooth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "texture_notes": {
+    "BaseColor": "sRGB",
+    "MetalSmooth": "lineal: R=G=B metalico, A=smoothness (URP/Lit _MetallicGlossMap, Source = Metallic Alpha)",
+    "Emission": "sRGB: cian = estado (Surface), blanco = zonas tintables (Heat_Emissive / Charge_Emissive), negro = sin emision",
+    "Normal": "no se hornea: biseles reales + Weighted Normal; importar normales del FBX"
+  },
+  "bake_seconds": {
+    "base": 4.1,
+    "metal": 1.0,
+    "smooth": 2.1,
+    "emit": 0.2
+  },
+  "bake_stats": {
+    "metal_mean": 0.386,
+    "smooth_mean": 0.383,
+    "smooth_range": [
+      0.0,
+      0.862
+    ]
+  },
+  "uv": {
+    "texel_px_per_m": 1350.0,
+    "texel_note": "densidad de las caras visibles (las enterradas usan 8 %)",
+    "uv_fill": 0.4291,
+    "area_visible_m2": 0.24666,
+    "area_total_m2": 0.27176,
+    "hidden_tris": 222,
+    "stacked_copy_tris": 44,
+    "stacked_groups": [
+      "collar_lock"
+    ],
+    "uv_downscale": 0.9753,
+    "covered_px_512": 112392,
+    "overlap_px_512": 0,
+    "overlap_pct": 0.0
+  },
+  "topology": {
+    "duplicate_faces": 0,
+    "hidden_tris": 222,
+    "open_parts": [],
+    "parts_checked": 34
+  },
+  "dimensions_lod0_blender": [
+    0.104,
+    0.333,
+    0.137
+  ],
+  "bounds_lod0_blender": {
+    "min": [
+      -0.052,
+      -0.333,
+      -0.061
+    ],
+    "max": [
+      0.052,
+      0.0,
+      0.076
+    ]
+  },
+  "length_attachment_to_muzzle": 0.333,
+  "sockets": {
+    "Attachment": [
+      0,
+      0,
+      0
+    ],
+    "Muzzle": [
+      0,
+      -0.333,
+      0
+    ],
+    "unity_attachment": [
+      0,
+      0,
+      0
+    ],
+    "unity_muzzle": [
+      0,
+      0,
+      0.333
+    ]
+  },
+  "heat_step_attribute": "Color de vertice HeatStep (R 0..1) en las caras de Heat_Emissive; 0 en el resto",
+  "verification": {
+    "file": "PrimaryEspina.fbx",
+    "checks": {
+      "unique_attachment": true,
+      "attachment_at_origin": true,
+      "muzzle_on_axis": true,
+      "muzzle_length": 0.333,
+      "nothing_behind_attachment": true,
+      "all_triangulated": true,
+      "slot_names": true,
+      "muzzle_face_normal_minus_y": true,
+      "socket_depth_ge_6mm": true,
+      "socket_diameter_066": true,
+      "collar_080_092": true,
+      "flat_back_face_y0": true
+    },
+    "nodes": [
+      "Attachment",
+      "Muzzle",
+      "PrimaryEspina_LOD0",
+      "PrimaryEspina_LOD1",
+      "PrimaryEspina_LOD2"
+    ],
+    "attachment_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "muzzle_world": [
+      0.0,
+      -0.333,
+      0.0
+    ],
+    "lods": {
+      "PrimaryEspina_LOD0": {
+        "tris": 1460,
+        "polys": 1460,
+        "all_triangles": true,
+        "materials": [
+          "PrimaryEspina_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.052,
+          -0.333,
+          -0.061
+        ],
+        "bounds_max": [
+          0.052,
+          0.0,
+          0.076
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "PrimaryEspina_LOD1": {
+        "tris": 730,
+        "polys": 730,
+        "all_triangles": true,
+        "materials": [
+          "PrimaryEspina_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.0517,
+          -0.3327,
+          -0.061
+        ],
+        "bounds_max": [
+          0.0517,
+          0.0,
+          0.0754
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "PrimaryEspina_LOD2": {
+        "tris": 364,
+        "polys": 364,
+        "all_triangles": true,
+        "materials": [
+          "PrimaryEspina_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.0516,
+          -0.3327,
+          -0.0591
+        ],
+        "bounds_max": [
+          0.0516,
+          0.0,
+          0.0748
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    },
+    "max_y_all_lods": 0.0,
+    "muzzle_faces": 24,
+    "socket_depth_min": 0.008,
+    "socket_diameter_min": 0.066,
+    "socket_diameter_max": 0.06702,
+    "collar_outer_diameter": 0.091,
+    "collar_outer_diameter_min": 0.0888,
+    "all_pass": true
+  },
+  "renders": {
+    "34": "PrimaryEspina_render_34.png",
+    "perfil": "PrimaryEspina_render_perfil.png",
+    "fps": "PrimaryEspina_render_fps.png",
+    "comparacion": "PrimaryEspina_render_comparacion.png"
+  },
+  "fbx": {
+    "file": "PrimaryEspina.fbx",
+    "sha256": "431280d9fcd372a6ec4ca8272085ff271a3e7bde05c50796504db6001f8b80f0",
+    "bytes": 119116
+  },
+  "working_blend": "Tools/IronRequiem/Blender/Working/WeaponsRedesign_v01/PrimaryEspina.blend",
+  "engine": "BLENDER_EEVEE",
+  "seconds": 30.9,
+  "notes": [
+    "Cuerpo acortado 14 mm por detras para dejar el collar de 32 mm del contrato (frente y silueta sin cambios).",
+    "Aletas apoyadas en el cuerpo (+5 mm hacia abajo) y bordes elevados 1 mm para eliminar caras coplanares.",
+    "Las 9 aletas comparten el slot Heat_Emissive; el escalonado se lee del color de vertice HeatStep."
+  ],
+  "heat_parts": "HeatBar (HeatStep 0) + FinEdge0..8 (HeatStep 0..1 en pasos de 0,125); renders con nivel 0,55 = 5 aletas encendidas, como el boceto"
+}

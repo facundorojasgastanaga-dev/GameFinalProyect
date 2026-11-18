@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 17:36:38Z" end-time="2026-11-16 17:38:05Z" duration="86.7970436">
+  <test-suite type="TestSuite" id="1311" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 17:36:38Z" end-time="2026-11-16 17:38:05Z" duration="86.797044" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1304" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 17:36:39Z" end-time="2026-11-16 17:38:05Z" duration="86.717081" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1305" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 17:36:39Z" end-time="2026-11-16 17:38:05Z" duration="86.697679" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="254" result="Failed" site="Child" start-time="2026-11-16 17:36:39Z" end-time="2026-11-16 17:38:05Z" duration="86.681724" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1051" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-16 17:36:39Z" end-time="2026-11-16 17:38:05Z" duration="86.646244" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1056" name="EquippedExplosionCleansInventoryInAdditiveRoom" fullname="IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom" methodname="EquippedExplosionCleansInventoryInAdditiveRoom" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="2109348674" result="Passed" start-time="2026-11-16 17:36:39Z" end-time="2026-11-16 17:37:00Z" duration="21.429443" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 4336.4 ms · door+preload 0 / activate 4336 / unload 0 / settle 386 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00_Hangar (preload) peak frame 4336.4 ms · door+preload 0 / activate 4336 / unload 0 / settle 386 · peak at frame 2/5 load 0.90
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 79.6 ms · door+preload 24 / activate 33 / unload 80 / settle 18 · peak at frame 99/129 load 1.00
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 79.6 ms · door+preload 24 / activate 33 / unload 80 / settle 18 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 76.1 ms · door+preload 18 / activate 27 / unload 76 / settle 15 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room01_Foundry (preload) peak frame 76.1 ms · door+preload 18 / activate 27 / unload 76 / settle 15 · peak at frame 99/203 load 1.00
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+]]></output>
+            </test-case>
+            <test-case id="1052" name="TwelveRoundsAirlocksInventoryAndPursuit" fullname="IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit" methodname="TwelveRoundsAirlocksInventoryAndPursuit" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="275563374" result="Failed" start-time="2026-11-16 17:37:00Z" end-time="2026-11-16 17:38:05Z" duration="65.121012" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.StreamWriter..ctor (System.String path) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+System.IO.File.WriteAllText (System.String path, System.String contents) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+IronRequiem.Editor.VisualOverhaulDriver.Tick () (at Assets/IronRequiem/Editor/VisualOverhaul/VisualOverhaulDriver.cs:45)
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at <7e18efd2f0d74a72a5b8b42f8f47e22d>:0)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1643.7 ms · door+preload 0 / activate 1644 / unload 0 / settle 196 · peak at frame 2/13 load 0.90
+[Campaign] transition to Room00_Hangar (preload) peak frame 1643.7 ms · door+preload 0 / activate 1644 / unload 0 / settle 196 · peak at frame 2/13 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 49.8 ms · door+preload 18 / activate 27 / unload 50 / settle 12 · peak at frame 99/129 load 1.00
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 49.8 ms · door+preload 18 / activate 27 / unload 50 / settle 12 · peak at frame 99/129 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 90.7 ms · door+preload 32 / activate 46 / unload 91 / settle 31 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room01_Foundry (preload) peak frame 90.7 ms · door+preload 32 / activate 46 / unload 91 / settle 31 · peak at frame 99/203 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 72.3 ms · door+preload 29 / activate 72 / unload 70 / settle 31 · peak at frame 98/295 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 72.3 ms · door+preload 29 / activate 72 / unload 70 / settle 31 · peak at frame 98/295 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 90.6 ms · door+preload 25 / activate 66 / unload 91 / settle 35 · peak at frame 99/501 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 90.6 ms · door+preload 25 / activate 66 / unload 91 / settle 35 · peak at frame 99/501 load 1.00
+IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.StreamWriter..ctor (System.String path) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+System.IO.File.WriteAllText (System.String path, System.String contents) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+IronRequiem.Editor.VisualOverhaulDriver.Tick () (at Assets/IronRequiem/Editor/VisualOverhaul/VisualOverhaulDriver.cs:45)
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at <7e18efd2f0d74a72a5b8b42f8f47e22d>:0)
+
+IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+System.IO.StreamWriter..ctor (System.String path) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+(wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string)
+System.IO.File.WriteAllText (System.String path, System.String contents) (at <816f70bc2a9c4332b0bd119906a8d40e>:0)
+IronRequiem.Editor.VisualOverhaulDriver.Tick () (at Assets/IronRequiem/Editor/VisualOverhaul/VisualOverhaulDriver.cs:45)
+UnityEditor.EditorApplication.Internal_CallUpdateFunctions () (at <7e18efd2f0d74a72a5b8b42f8f47e22d>:0)
+
+[CampaignTests] Failed TwelveRoundsAirlocksInventoryAndPursuit
+[CampaignTests] Failed TwelveRoundsAirlocksInventoryAndPursuit
+[CampaignTests] Failed TwelveRoundsAirlocksInventoryAndPursuit
+[CampaignTests] Failed TwelveRoundsAirlocksInventoryAndPursuit
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

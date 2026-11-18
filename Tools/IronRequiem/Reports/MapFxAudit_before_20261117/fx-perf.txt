@@ -1,0 +1,35 @@
+FX/PERF audit, Editor Play Mode (Test Runner). Editor numbers include Editor overhead; trend only, not Player FPS. screen=1030x556 vSync=0 targetFrameRate=-1
+[room01-wave1-idle-live-ai] frames=165 dt avg=18.38ms p50=18.20 p95=24.02 p99=26.89 max=49.52 | mainThread p50=18.09 p95=23.79 | GC/frame avg=14.0KB max=61.0KB framesWithGC=165 | maxBatches=0 maxSetPass=129 maxTris=186876 | maxParticles=89 aliveSystems=13 activePointSpotLights=14 | agents=6 unmovedAgents=0 living=6
+  shot fx-execution-extraction-0 lum=0.197 dark%=9.9 white%=0.00
+  shot fx-execution-extraction-1 lum=0.200 dark%=8.8 white%=0.16
+  shot fx-execution-extraction-2 lum=0.267 dark%=5.3 white%=0.00
+  shot fx-execution-extraction-3 lum=0.240 dark%=5.7 white%=0.00
+  shot fx-execution-extraction-4 lum=0.190 dark%=13.8 white%=0.00
+  shot fx-execution-extraction-5 lum=0.191 dark%=16.8 white%=0.00
+execution: held=T07_Module(Clone)
+  shot seq-room01-fight-live-0 lum=0.152 dark%=21.4 white%=0.00
+  shot seq-room01-fight-live-1 lum=0.307 dark%=5.5 white%=0.05
+  shot seq-room01-fight-live-2 lum=0.176 dark%=16.6 white%=0.00
+  shot seq-room01-fight-live-3 lum=0.194 dark%=18.5 white%=0.00
+  shot seq-room01-fight-live-4 lum=0.216 dark%=10.1 white%=0.00
+[room01-fight-live] frames=716 dt avg=19.57ms p50=17.71 p95=26.26 p99=39.71 max=336.11 | mainThread p50=17.88 p95=26.29 | GC/frame avg=90.2KB max=10954.0KB framesWithGC=716 | maxBatches=0 maxSetPass=227 maxTris=308788 | maxParticles=259 aliveSystems=32 activePointSpotLights=16 | agents=5 unmovedAgents=0 living=1
+  shot fx-slide-guard-0 lum=0.164 dark%=16.2 white%=0.00
+  shot fx-slide-guard-1 lum=0.186 dark%=11.3 white%=0.00
+  shot fx-slide-guard-2 lum=0.191 dark%=9.4 white%=0.00
+  shot fx-slide-guard-3 lum=0.198 dark%=8.4 white%=0.00
+  shot fx-damage-overlay-0 lum=0.206 dark%=5.5 white%=0.00
+  shot fx-damage-overlay-1 lum=0.206 dark%=5.5 white%=0.00
+  shot fx-damage-overlay-2 lum=0.206 dark%=5.5 white%=0.00
+  shot fx-death-0 lum=0.138 dark%=17.1 white%=0.00
+  shot fx-death-1 lum=0.138 dark%=17.2 white%=0.00
+  shot fx-death-2 lum=0.176 dark%=15.9 white%=0.00
+  shot fx-death-3 lum=0.170 dark%=13.9 white%=0.00
+  shot fx-death-4 lum=0.145 dark%=12.4 white%=0.00
+  shot fx-death-5 lum=0.134 dark%=14.7 white%=0.00
+camera AA=None quality=High postFX=True stack=1 fov=60.0
+  screen blur-A-current-still lum=0.158 dark%=11.1 white%=0.00
+  screen blur-A-current-turning lum=0.166 dark%=27.8 white%=0.01
+  screen blur-B-noMotionBlurDofCaLens-still lum=0.158 dark%=11.4 white%=0.00
+  screen blur-B-noMotionBlurDofCaLens-turning lum=0.173 dark%=26.5 white%=0.01
+  screen blur-C-alsoNoAA-still lum=0.157 dark%=13.8 white%=0.00
+  screen blur-C-alsoNoAA-turning lum=0.166 dark%=28.0 white%=0.01

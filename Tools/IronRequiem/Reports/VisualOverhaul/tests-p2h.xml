@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 07:42:43Z" end-time="2026-11-17 07:42:54Z" duration="10.8382996">
+  <test-suite type="TestSuite" id="1320" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="261" result="Failed" site="Child" start-time="2026-11-17 07:42:43Z" end-time="2026-11-17 07:42:54Z" duration="10.838300" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1314" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="261" result="Failed" site="Child" start-time="2026-11-17 07:42:44Z" end-time="2026-11-17 07:42:54Z" duration="10.719954" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1315" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="261" result="Failed" site="Child" start-time="2026-11-17 07:42:44Z" end-time="2026-11-17 07:42:54Z" duration="10.711989" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="261" result="Failed" site="Child" start-time="2026-11-17 07:42:44Z" end-time="2026-11-17 07:42:54Z" duration="10.703103" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1288" name="ThermalMenuTests" fullname="IronRequiem.Tests.ThermalMenuTests" classname="IronRequiem.Tests.ThermalMenuTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-17 07:42:44Z" end-time="2026-11-17 07:42:54Z" duration="10.680708" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1292" name="EscapePauseInputAndSettings" fullname="IronRequiem.Tests.ThermalMenuTests.EscapePauseInputAndSettings" methodname="EscapePauseInputAndSettings" classname="IronRequiem.Tests.ThermalMenuTests" runstate="Runnable" seed="1889580639" result="Failed" start-time="2026-11-17 07:42:44Z" end-time="2026-11-17 07:42:50Z" duration="6.070529" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ThermalMenuTests+<EscapePauseInputAndSettings>d__22.MoveNext () [0x002f0] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ThermalMenuTests.cs:88
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed EscapePauseInputAndSettings
+]]></output>
+            </test-case>
+            <test-case id="1293" name="IntroNavigationPersistenceAndPlayFlow" fullname="IronRequiem.Tests.ThermalMenuTests.IntroNavigationPersistenceAndPlayFlow" methodname="IntroNavigationPersistenceAndPlayFlow" classname="IronRequiem.Tests.ThermalMenuTests" runstate="Runnable" seed="841006404" result="Failed" start-time="2026-11-17 07:42:50Z" end-time="2026-11-17 07:42:54Z" duration="4.505530" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 18 but was 9. Strings differ at index 0.
+  Expected: "CombatTwoFloorsLab"
+  But was:  "IntroMenu"
+  -----------^
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ThermalMenuTests+<IntroNavigationPersistenceAndPlayFlow>d__23.MoveNext () [0x002ef] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ThermalMenuTests.cs:99
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[SALIR: cierre de aplicación omitido en el Editor.
+[CampaignTests] Failed IntroNavigationPersistenceAndPlayFlow
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

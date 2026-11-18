@@ -14,7 +14,12 @@ namespace IronRequiem
     /// About 5.6 s. Hold E or Space to skip: same final state. Once mounted, a campaign restart gives the cannon back
     /// silently and the sequence never repeats (until a new game from the main menu).
     /// The pose is a pure function of the sequence time; discrete events fire once when their time is crossed.
+    /// 16/11: the arm override is set in Update (before ProtagonistHandsPresentation's IK, order 110) and every prop
+    /// that follows the forearm is placed in LateUpdate after it (order 1100), so clamps, lock ring, grippers and the
+    /// cannon read the solved hand instead of the raw animator pose. The cannon proxy ends exactly on the pose the
+    /// real weapon spawns at, so the swap is invisible; the real cannon skips its deploy motion.
     [RequireComponent(typeof(BoxCollider))]
+    [DefaultExecutionOrder(1100)]
     public sealed class WeaponMountStation : MonoBehaviour
     {
         [SerializeField] WeaponController weaponPrefab;
@@ -27,16 +32,20 @@ namespace IronRequiem
         [SerializeField] AudioSource sfx;
         [SerializeField] AudioClip hydraulicClip, sparkClip, servoClip, clampClip, lockClip;
         [SerializeField] string prompt = "[E] ACOPLAR MÓDULO DE CAÑÓN";
-        [SerializeField] string message = "MÓDULO DE CAÑÓN ACOPLADO · CLIC IZQUIERDO DISPARA · [F] GOLPE MECÁNICO";
+        [SerializeField] string message = "MÓDULO DE CAÑÓN ACOPLADO · CLIC IZQUIERDO DISPARA · [F] GOLPE (MANO IZQUIERDA)";
         [SerializeField, Min(.5f)] float messageSeconds = 4f;
         [SerializeField, Min(.2f)] float skipHoldSeconds = .6f;
         [Header("Camera-space poses (metres)")]
-        [SerializeField] Vector3 inspectWrist = new Vector3(.07f, -.12f, .40f), inspectElbow = new Vector3(.32f, -.34f, .05f);
+        // v6: the forearm is framed in the centre of the view, rising nearly straight up in front of the camera
+        [SerializeField] Vector3 inspectWrist = new Vector3(.015f, -.085f, .42f), inspectElbow = new Vector3(.13f, -.36f, .10f);
 
-        static readonly Vector3 RaiseStartWrist = new Vector3(.24f, -.42f, .36f), RaiseStartElbow = new Vector3(.34f, -.62f, .02f);
+        static readonly Vector3 RaiseStartWrist = new Vector3(.17f, -.44f, .36f), RaiseStartElbow = new Vector3(.27f, -.64f, .04f);
+        // v6: clamp pads close on the forearm before the locks turn and open when the cannon is in place
+        const float TClamp0 = .72f, TClamp1 = .95f, TUnclamp0 = 4.6f, TUnclamp1 = 4.85f, TPull = .32f;
+        Transform clampA, clampB; Vector3 detachAxis;
         // timeline (seconds)
         public const float Duration = 5.6f;
-        const float TRaise0 = .1f, TRaise1 = .75f, TArmA0 = .55f, TArmA1 = 1.35f, TLocks0 = .9f, TLocks1 = 1.5f, TDetach = 1.55f, TAway1 = 2.45f;
+        const float TRaise0 = .1f, TRaise1 = .75f, TArmA0 = .55f, TArmA1 = 1.35f, TLocks0 = 1.0f, TLocks1 = 1.5f, TDetach = 1.55f, TAway1 = 2.45f;
         const float TArmB0 = 1.85f, TApproach = 3.05f, TSlide = 3.5f, TLock = 3.8f, TLower1 = 4.55f, TSwap = 4.6f, TRelease1 = 4.85f;
         const float THeat0 = 4.8f, THeat1 = 5.1f;
 
@@ -64,6 +73,7 @@ namespace IronRequiem
 
         void Awake()
         {
+            message = message.Replace("[F] GOLPE MECÁNICO", "[F] GOLPE (MANO IZQUIERDA)"); // v7: F strikes with the left hand (older prefab text)
             GetComponent<BoxCollider>().isTrigger = true; block = new MaterialPropertyBlock();
             if (flashLight) flashLight.enabled = false; if (lockRing) lockRing.gameObject.SetActive(false);
         }
@@ -105,7 +115,8 @@ namespace IronRequiem
             if (player && player.IsDead) { Abort(); return; }
             t += Time.deltaTime;
             Step(false);
-            if (t >= Duration) Finish();
+            if (t >= Duration) { Finish(); return; }
+            DriveArm();
         }
 
         void LateUpdate() { if (t >= 0) PoseVisuals(); }
@@ -119,7 +130,7 @@ namespace IronRequiem
             if (movement) movement.BeginScriptedMove(StandPoint, .45f, 0);
             framingFrom = new Vector2(player.transform.eulerAngles.y, NormalizePitch(player.PlayerCamera.transform.localEulerAngles.x));
             framingTo = new Vector2(Quaternion.LookRotation(face).eulerAngles.y, 4f);
-            BuildHandProxy(); SetFpsLayer(true);
+            BuildHandProxy(); BuildClamps(); SetFpsLayer(true);
             Debug.Log("[Campaign] montage station: sequence started", this);
         }
         Vector2 framingFrom, framingTo;
@@ -131,6 +142,7 @@ namespace IronRequiem
         void Step(bool skipping)
         {
             if (Cross(0, TLocks0) && !skipping) { Play(hydraulicClip, .9f); if (steam) steam.Play(true); if (lockRing) lockRing.gameObject.SetActive(true); }
+            if (Cross(8, TClamp1) && !skipping) Play(clampClip, .7f);
             if (Cross(1, TLocks0 + .25f) && !skipping) { Play(sparkClip, .8f); if (sparks) sparks.Play(true); }
             if (Cross(2, TDetach)) { if (!skipping) Play(servoClip, .7f); if (lockRing) lockRing.gameObject.SetActive(false); AttachHandToGripper(); }
             if (Cross(3, TArmB0) && !skipping) Play(servoClip, .6f);
@@ -146,34 +158,52 @@ namespace IronRequiem
         }
 
         // poses: pure functions of t
+        // Update: framing + the right-arm override (consumed by the IK later this frame)
+        void DriveArm()
+        {
+            if (!player || !hands) return;
+            var cam = player.PlayerCamera.transform;
+            float f = Mathf.SmoothStep(0, 1, Mathf.Clamp01(t / .45f));
+            if (t < TRelease1) player.SetViewAngles(Mathf.LerpAngle(framingFrom.x, framingTo.x, f), Mathf.Lerp(framingFrom.y, framingTo.y, f));
+            if (movement && t >= .5f && movement.IsScripted) movement.EndScriptedMove();
+            // right arm: rise to the inspect pose, hold, then lower to the exact pose the mounted cannon keeps afterwards
+            bool detached = t >= TDetach && t < TSwap + .02f;
+            float weight = t < TRaise0 ? 0 : t < TSwap ? Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TRaise0) / TTakeOver)) : 1 - Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TSwap) / (TRelease1 - TSwap)));
+            float rise = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TRaise0) / (TRaise1 - TRaise0)));
+            Vector3 wrist = Vector3.Lerp(RaiseStartWrist, inspectWrist, rise), elbow = Vector3.Lerp(RaiseStartElbow, inspectElbow, rise);
+            // 16/11: while the override takes over, pull the start pose below and behind the camera so the blend from the
+            // idle pose (above the frame) passes outside the view frustum instead of crossing its centre for a frame
+            if (t < TRaise0 + TTakeOver) { float u = 1 - Mathf.Clamp01((t - TRaise0) / TTakeOver), d = .9f * u * u; var away = new Vector3(0, -d, -d); wrist += away; elbow += away; }
+            PortPose(out var portWrist, out var portElbow);
+            if (t > TLock + .15f) { float k = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TLock - .15f) / (TLower1 - TLock - .15f))); wrist = Vector3.Lerp(inspectWrist, portWrist, k); elbow = Vector3.Lerp(inspectElbow, portElbow, k); }
+            // locks shake the forearm a little (faded in/out, no step at either end)
+            if (t > TLocks0 && t < TLocks1) { float env = Mathf.Sin(Mathf.PI * (t - TLocks0) / (TLocks1 - TLocks0)); float s = Mathf.Sin(t * 60f) * .003f * env; wrist += new Vector3(s, s * .5f, 0); }
+            // settle: the clamp seat and the lock each push the forearm back a little and it springs into place
+            wrist += Kick(t - TSlide, .45f) + Kick(t - TLock, 1f); elbow += .4f * (Kick(t - TSlide, .45f) + Kick(t - TLock, 1f));
+            if (t < TRelease1) hands.SetRightArmOverride(wrist, elbow, weight, detached);
+            else hands.ClearRightArmOverride();
+        }
+        const float TTakeOver = .16f;
+        // damped spring, starts at zero (continuous): back toward the camera and slightly up, camera space
+        static Vector3 Kick(float tau, float scale)
+        {
+            if (tau <= 0 || tau > .6f) return Vector3.zero;
+            float e = Mathf.Exp(-tau * 11f) * Mathf.Sin(tau * Mathf.PI * 2f * 5.5f) * scale;
+            return new Vector3(0, .005f, -.016f) * e;
+        }
+
+        // LateUpdate (after the IK): everything that follows the solved forearm
         void PoseVisuals()
         {
             if (!player || !hands) return;
             var cam = player.PlayerCamera.transform;
-            // framing
-            float f = Mathf.SmoothStep(0, 1, Mathf.Clamp01(t / .45f));
-            if (t < TRelease1) player.SetViewAngles(Mathf.LerpAngle(framingFrom.x, framingTo.x, f), Mathf.Lerp(framingFrom.y, framingTo.y, f));
-            if (movement && t >= .5f && movement.IsScripted) movement.EndScriptedMove();
-            // right arm: rise to the inspect pose, hold, then go to the port pose where the cannon sits in hand
-            bool detached = t >= TDetach && t < TSwap + .02f;
-            // the override takes over quickly at a low, out-of-view start pose, then the forearm rises on a clean path
-            // (blending straight from the idle pose let the IK sweep the hand through the camera)
-            float weight = t < TRaise0 ? 0 : t < TSwap ? Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TRaise0) / .12f)) : 1 - Mathf.SmoothStep(0, 1, (t - TSwap) / (TRelease1 - TSwap));
-            float rise = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TRaise0) / (TRaise1 - TRaise0)));
-            Vector3 wrist = Vector3.Lerp(RaiseStartWrist, inspectWrist, rise), elbow = Vector3.Lerp(RaiseStartElbow, inspectElbow, rise);
-            PortPose(cam, out var portWrist, out var portElbow);
-            if (t > TLock + .15f) { float k = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TLock - .15f) / (TLower1 - TLock - .15f))); wrist = Vector3.Lerp(inspectWrist, portWrist, k); elbow = Vector3.Lerp(inspectElbow, portElbow, k); }
-            // locks shake the forearm a little
-            if (t > TLocks0 && t < TLocks1) { float s = Mathf.Sin(t * 60f) * .003f; wrist += new Vector3(s, s * .5f, 0); }
-            if (t < TRelease1) hands.SetRightArmOverride(wrist, elbow, weight, detached);
-            else hands.ClearRightArmOverride();
-
             var handPos = hands.RightHand.position; var forearmDir = (hands.RightHand.position - hands.RightForearmBone.position).normalized;
             if (lockRing && lockRing.gameObject.activeSelf)
             {
                 lockRing.position = handPos - forearmDir * .02f;
                 lockRing.rotation = Quaternion.LookRotation(forearmDir, cam.up) * Quaternion.Euler(0, 0, Mathf.Clamp01((t - TLocks0) / (TLocks1 - TLocks0)) * 120f);
             }
+            PoseClamps(cam, handPos, forearmDir);
             if (steam) steam.transform.position = handPos; if (sparks) sparks.transform.position = handPos;
             if (dockFlash) dockFlash.transform.position = handPos; if (flashLight) { flashLight.transform.position = handPos + cam.forward * .05f; flashLight.intensity = Mathf.Max(0, 1 - (t - TLock) / .35f) * 6f; if (t > TLock + .4f) flashLight.enabled = false; }
 
@@ -186,7 +216,11 @@ namespace IronRequiem
                 if (t < TArmA0) { target = handArm.RestTarget; grip = 0; }
                 else if (t < TArmA1) { float k = Mathf.SmoothStep(0, 1, (t - TArmA0) / (TArmA1 - TArmA0)); target = Vector3.Lerp(handArm.RestTarget, near, k); grip = Mathf.Clamp01((t - TArmA1 + .2f) / .2f); }
                 else if (t < TDetach) { target = near; grip = 1; }
-                else if (t < TAway1) { float k = Mathf.SmoothStep(0, 1, (t - TDetach) / (TAway1 - TDetach)); target = Vector3.Lerp(handGripStart, away, k); grip = 1; }
+                else if (t < TDetach + TPull)
+                {   // v6: the hand first slides straight off along the forearm axis, no twist
+                    float k = Mathf.SmoothStep(0, 1, (t - TDetach) / TPull); target = handGripStart + detachAxis * (.1f * k); grip = 1;
+                }
+                else if (t < TAway1) { float k = Mathf.SmoothStep(0, 1, (t - TDetach - TPull) / (TAway1 - TDetach - TPull)); target = Vector3.Lerp(handGripStart + detachAxis * .1f, away, k); grip = 1; }
                 else { target = away; grip = 1; }
                 handArm.Pose(target, -cam.up, grip);
                 if (handProxy && t >= TDetach) handProxy.transform.SetPositionAndRotation(handArm.Gripper.TransformPoint(handGripOffset), handArm.Gripper.rotation * handGripRotation);
@@ -194,7 +228,8 @@ namespace IronRequiem
             // arm B + cannon proxy: rack -> in front of the wrist -> slides on -> twist lock -> follows the arm down
             if (cannonArm && cannonProxy)
             {
-                Vector3 attach = handPos; var axis = forearmDir;
+                // the module's Attachment sits MountedHandLead behind the hand bone once mounted (it sleeves the forearm)
+                var axis = forearmDir; Vector3 attach = handPos - axis * hands.MountedHandLead;
                 Vector3 proxyAt; float twist = 0, slide;
                 var rack = cannonRack ? cannonRack.position : cannonArm.RestTarget;
                 if (t < TArmB0) { PlaceProxyFree(rack, cannonRack ? cannonRack.rotation : transform.rotation); cannonArm.Pose(GripPointOnProxy(), Vector3.down, t > TArmB0 - .3f ? 1 : 0); }
@@ -212,6 +247,16 @@ namespace IronRequiem
                     slide = t < TSlide ? .38f * (1 - Mathf.SmoothStep(0, 1, (t - TApproach) / (TSlide - TApproach))) : 0;
                     twist = t < TSlide ? 25f : t < TLock ? 25f * (1 - Mathf.SmoothStep(0, 1, (t - TSlide) / (TLock - TSlide))) : 0;
                     PlaceProxyOnArm(attach, axis, cam.up, slide, twist);
+                    // 16/11: the last stretch of the lowering settles the proxy on the exact transform the real cannon
+                    // spawns with: the socket at its rest position (DefaultWeaponPosition; before the swap the socket
+                    // itself still sits where the empty-handed manager left it), so the swap is not visible
+                    float seat = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - (TLower1 - .22f)) / .22f));
+                    if (seat > 0 && weapons)
+                    {
+                        var socket = weapons.WeaponParentSocket; var rest = weapons.DefaultWeaponPosition.position;
+                        cannonProxy.transform.SetPositionAndRotation(Vector3.Lerp(cannonProxy.transform.position, rest, seat), Quaternion.Slerp(cannonProxy.transform.rotation, socket.rotation, seat));
+                        GripPointOnProxyCached = GripPointOnProxy();
+                    }
                     var hold = t < TLock + .1f ? GripPointOnProxy() : Vector3.Lerp(GripPointOnProxy(), cannonArm.RestTarget, Mathf.SmoothStep(0, 1, (t - TLock - .1f) / .6f));
                     cannonArm.Pose(hold, Vector3.down, t < TLock + .1f ? 1 : 0);
                 }
@@ -222,17 +267,46 @@ namespace IronRequiem
             if (t >= THeat0 && t < THeat1) { var heat = ActiveHeat(); if (heat) heat.PreviewHeat(Mathf.Lerp(.15f, .72f, (t - THeat0) / (THeat1 - THeat0))); }
         }
 
-        // where the cannon's attachment sits when the weapon is in hand (camera space), from the weapons manager rest pose
-        void PortPose(Transform cam, out Vector3 wrist, out Vector3 elbow)
+        // v6 forearm clamps: two dark pads either side of the forearm, closing with an eased stroke and a clank
+        void BuildClamps()
         {
-            var root = weapons.DefaultWeaponPosition.position;
-            var rootRot = weapons.WeaponParentSocket.rotation;
-            Vector3 attachLocal = proxyAttachment ? cannonProxy.transform.InverseTransformPoint(proxyAttachment.position) : Vector3.zero;
-            Vector3 fwdLocal = proxyMuzzle ? cannonProxy.transform.InverseTransformDirection(proxyMuzzle.forward) : Vector3.forward;
-            var attachWorld = root + rootRot * Vector3.Scale(attachLocal, cannonProxy ? cannonProxy.transform.lossyScale : Vector3.one);
-            var fwd = rootRot * fwdLocal;
-            wrist = cam.InverseTransformPoint(attachWorld); elbow = cam.InverseTransformPoint(attachWorld - fwd * .3f);
+            if (clampA) return;
+            Material mat = null; var arm = handArm ? handArm.GetComponentInChildren<Renderer>() : null; if (arm) mat = arm.sharedMaterial;
+            clampA = MakePad("ClampPad_A", mat); clampB = MakePad("ClampPad_B", mat);
         }
+        Transform MakePad(string name, Material mat)
+        {
+            var go = GameObject.CreatePrimitive(PrimitiveType.Cube); go.name = name; Destroy(go.GetComponent<Collider>());
+            go.transform.SetParent(transform, false); go.transform.localScale = new Vector3(.03f, .07f, .11f);
+            var r = go.GetComponent<Renderer>(); if (mat) r.sharedMaterial = mat; r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            if (hands) go.layer = hands.RightHand.gameObject.layer; go.SetActive(false); return go.transform;
+        }
+        void PoseClamps(Transform cam, Vector3 handPos, Vector3 axis)
+        {
+            if (!clampA) return;
+            bool show = t >= TClamp0 - .25f && t < TUnclamp1 + .2f; clampA.gameObject.SetActive(show); clampB.gameObject.SetActive(show); if (!show) return;
+            float close = t < TClamp0 ? 0 : t < TClamp1 ? Mathf.SmoothStep(0, 1, (t - TClamp0) / (TClamp1 - TClamp0)) : t < TUnclamp0 ? 1 : 1 - Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - TUnclamp0) / (TUnclamp1 - TUnclamp0)));
+            var side = Vector3.Cross(axis, cam.forward); if (side.sqrMagnitude < 1e-4f) side = cam.right; side.Normalize();
+            var centre = handPos - axis * .13f; float gap = Mathf.Lerp(.11f, .058f, close);
+            var rot = Quaternion.LookRotation(axis, Vector3.Cross(side, axis));
+            clampA.SetPositionAndRotation(centre + side * gap, rot); clampB.SetPositionAndRotation(centre - side * gap, rot);
+        }
+
+        // 16/11: camera-space wrist/elbow that ProtagonistHandsPresentation itself computes once the cannon is mounted
+        // (hand bone MountedHandLead ahead of the Attachment along the muzzle, elbow hint 1 m behind), evaluated at
+        // the weapon socket rest pose. Ending the lowering here makes the override fade-out after the swap motionless.
+        void PortPose(out Vector3 wrist, out Vector3 elbow)
+        {
+            var cam = player.PlayerCamera.transform; var socket = weapons.WeaponParentSocket;
+            var rest = weapons.DefaultWeaponPosition.position;
+            var attachWorld = rest + socket.rotation * Vector3.Scale(proxyAttachLocal, InHandScale);
+            var fwd = socket.rotation * proxyMuzzleLocal;
+            var w = attachWorld + fwd * hands.MountedHandLead;
+            wrist = cam.InverseTransformPoint(w); elbow = cam.InverseTransformPoint(w - fwd);
+        }
+        Vector3 proxyAttachLocal, proxyMuzzleLocal = Vector3.forward;
+        // world scale the weapon has under the socket (prefab root scale x socket scale)
+        Vector3 InHandScale => weapons && weaponPrefab ? Vector3.Scale(weapons.WeaponParentSocket.lossyScale, weaponPrefab.transform.localScale) : Vector3.one;
         Quaternion MuzzleAligned(Vector3 axis, Vector3 up, float twist)
         {
             var muzzleLocalRot = proxyMuzzle ? Quaternion.Inverse(cannonProxy.transform.rotation) * proxyMuzzle.rotation : Quaternion.identity;
@@ -262,7 +336,13 @@ namespace IronRequiem
         void Swap()
         {
             if (cannonProxy) cannonProxy.SetActive(false);
-            if (weapons && weaponPrefab && !weapons.HasWeapon(weaponPrefab) && weapons.AddWeapon(weaponPrefab)) SelectMounted(true);
+            if (weapons && weaponPrefab && !weapons.HasWeapon(weaponPrefab) && weapons.AddWeapon(weaponPrefab))
+            {
+                // the station already slid the module on: it appears seated, without the generic deploy expansion
+                var mounted = weapons.HasWeapon(weaponPrefab); var deploy = mounted ? mounted.GetComponent<WeaponDeployMotion>() : null;
+                if (deploy) deploy.SkipNextDeploy();
+                SelectMounted(true);
+            }
             Granted = true; mountedThisRun = true;
             Debug.Log("[Campaign] montage station: " + weaponPrefab.name + " mounted", this);
         }
@@ -281,6 +361,7 @@ namespace IronRequiem
             if (!Granted) Swap();
             if (hands) hands.ClearRightArmOverride();
             if (handProxy) Destroy(handProxy);
+            HideClamps();
             SetFpsLayer(false);
             if (movement && movement.IsScripted) movement.EndScriptedMove();
             PlayerInputLock.Set(false);
@@ -300,10 +381,11 @@ namespace IronRequiem
         }
         void Abort()
         {
-            if (hands) hands.ClearRightArmOverride(); if (handProxy) Destroy(handProxy); SetFpsLayer(false);
+            if (hands) hands.ClearRightArmOverride(); if (handProxy) Destroy(handProxy); HideClamps(); SetFpsLayer(false);
             if (cannonProxy && !Granted) cannonProxy.SetActive(true);
             PlayerInputLock.Set(false); t = -1; PoseArmsAtRest();
         }
+        void HideClamps() { if (clampA) clampA.gameObject.SetActive(false); if (clampB) clampB.gameObject.SetActive(false); }
         void MarkDone() { Granted = true; Lamp(doneColor, 2f); if (cannonProxy) cannonProxy.SetActive(false); }
 
         // ------------------------------------------------------------------ props
@@ -321,6 +403,11 @@ namespace IronRequiem
             if (weaponPrefab.WeaponRoot) { var rootPath = GetPath(weaponPrefab.transform, weaponPrefab.WeaponRoot.transform); var vis = rootPath.Length > 0 ? cannonProxy.transform.Find(rootPath) : cannonProxy.transform; if (vis) vis.gameObject.SetActive(true); }
             cannonProxy.transform.SetParent(transform, false); Destroy(holder);
             cannonProxy.transform.SetPositionAndRotation(cannonRack ? cannonRack.position : transform.position, cannonRack ? cannonRack.rotation : transform.rotation);
+            // 16/11: the proxy is the same object the player ends up holding: give it the in-hand world scale
+            var parentScale = transform.lossyScale; var want = InHandScale;
+            cannonProxy.transform.localScale = new Vector3(want.x / Mathf.Max(1e-4f, parentScale.x), want.y / Mathf.Max(1e-4f, parentScale.y), want.z / Mathf.Max(1e-4f, parentScale.z));
+            proxyAttachLocal = proxyAttachment ? cannonProxy.transform.InverseTransformPoint(proxyAttachment.position) : Vector3.zero;
+            proxyMuzzleLocal = proxyMuzzle ? cannonProxy.transform.InverseTransformDirection(proxyMuzzle.forward) : Vector3.forward;
             var renderers = cannonProxy.GetComponentsInChildren<Renderer>(true);
             proxyBounds = new Bounds(Vector3.zero, Vector3.one * .2f); bool first = true;
             foreach (var r in renderers)
@@ -393,6 +480,7 @@ namespace IronRequiem
             handGripOffset = handArm.Gripper.InverseTransformPoint(handProxy.transform.position);
             handGripRotation = Quaternion.Inverse(handArm.Gripper.rotation) * handProxy.transform.rotation;
             handGripStart = handArm.Gripper.position;
+            detachAxis = (hands.RightHand.position - hands.RightForearmBone.position).normalized;
         }
         void SetFpsLayer(bool on)
         {

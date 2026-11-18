@@ -1,0 +1,228 @@
+{
+ "source": "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Weapons\\BasicPistolModule\\PistolModule_1000.fbx",
+ "sha256_before": "4685e2536c82cac6d09f5349c8ae35a5562377cb64e2a77cff1a9973f575f474",
+ "tag": "PistolModule_1000",
+ "objects": [
+  {
+   "name": "PistolModule_1000",
+   "vertices": 1000,
+   "triangles": 532,
+   "polygons": 234,
+   "origin_blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bounds_blender_min": [
+    -0.05849999934434891,
+    -0.3790000081062317,
+    -0.06099998578429222
+   ],
+   "bounds_blender_max": [
+    0.05849999934434891,
+    6.477104186330962e-09,
+    0.07700001448392868
+   ],
+   "size_blender_xyz_m": [
+    0.11699999868869781,
+    0.3790000145833359,
+    0.1380000002682209
+   ],
+   "size_unity_xyz_m": [
+    0.11699999868869781,
+    0.1380000002682209,
+    0.3790000145833359
+   ],
+   "unity_bounds_min": [
+    -0.05849999934434891,
+    -0.06099998578429222,
+    -6.477104186330962e-09
+   ],
+   "unity_bounds_max": [
+    0.05849999934434891,
+    0.07700001448392868,
+    0.3790000081062317
+   ],
+   "materials": [
+    {
+     "name": "PistolModule_Atlas",
+     "images": {
+      "base": {
+       "name": "PistolModule_BaseColor",
+       "file": "PistolModule_BaseColor.png",
+       "size": [
+        768,
+        768
+       ]
+      },
+      "emission": {
+       "name": "PistolModule_Emission",
+       "file": "PistolModule_Emission.png",
+       "size": [
+        768,
+        768
+       ]
+      }
+     },
+     "tris": 532,
+     "emission_strength": 0.699999988079071,
+     "emission_color_linked": true
+    }
+   ],
+   "emissive": {
+    "image": "PistolModule_Emission",
+    "faces": 12,
+    "faces_total": 234,
+    "area_m2": 0.0026839994825422764,
+    "area_total_m2": 0.3807964961306425,
+    "unity_centroid": [
+     0.0,
+     0.009000032261949462,
+     0.1979999989271164
+    ],
+    "unity_min": [
+     -0.05849999934434891,
+     0.005500032100826502,
+     0.1655000001192093
+    ],
+    "unity_max": [
+     0.05849999934434891,
+     0.012500032782554626,
+     0.2304999977350235
+    ],
+    "mean_rgb": [
+     0.01568627543747425,
+     0.7803922295570374,
+     0.9411765336990356
+    ],
+    "clusters_unity_1cm": [
+     [
+      [
+       0.06,
+       0.01,
+       0.17
+      ],
+      0.21,
+      1
+     ],
+     [
+      [
+       -0.06,
+       0.01,
+       0.17
+      ],
+      0.21,
+      1
+     ],
+     [
+      [
+       0.06,
+       0.01,
+       0.2
+      ],
+      13.0,
+      4
+     ],
+     [
+      [
+       -0.06,
+       0.01,
+       0.2
+      ],
+      13.0,
+      4
+     ],
+     [
+      [
+       0.06,
+       0.01,
+       0.23
+      ],
+      0.21,
+      1
+     ],
+     [
+      [
+       -0.06,
+       0.01,
+       0.23
+      ],
+      0.21,
+      1
+     ]
+    ]
+   },
+   "emissive_texel_fraction": 0.16666666666666666
+  }
+ ],
+ "empties": [
+  {
+   "name": "Attachment",
+   "parent": "PistolModule_1000",
+   "blender_world": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "unity_local_of_fbx_root": [
+    -0.0,
+    0.0,
+    -0.0
+   ],
+   "blender_minusY_dir": [
+    0.0,
+    -1.0,
+    1.6292067073209182e-07
+   ],
+   "unity_dir_of_blender_minusY": [
+    -0.0,
+    1.6292067073209182e-07,
+    1.0
+   ]
+  },
+  {
+   "name": "Muzzle",
+   "parent": "PistolModule_1000",
+   "blender_world": [
+    0.0,
+    -0.3790000081062317,
+    6.174693822913468e-08
+   ],
+   "unity_local_of_fbx_root": [
+    -0.0,
+    6.174693822913468e-08,
+    0.3790000081062317
+   ],
+   "blender_minusY_dir": [
+    0.0,
+    -1.0,
+    1.6292067073209182e-07
+   ],
+   "unity_dir_of_blender_minusY": [
+    -0.0,
+    1.6292067073209182e-07,
+    1.0
+   ]
+  }
+ ],
+ "lod0_bounds_blender": [
+  [
+   -0.05849999934434891,
+   -0.3790000081062317,
+   -0.06099998578429222
+  ],
+  [
+   0.05849999934434891,
+   6.477104186330962e-09,
+   0.07700001448392868
+  ]
+ ],
+ "renders": [
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\PistolModule_1000_front.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\PistolModule_1000_side.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\PistolModule_1000_three_quarter.png",
+  "C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Reports\\WeaponsRedesign\\Audit\\renders\\PistolModule_1000_top.png"
+ ],
+ "sha256_after": "4685e2536c82cac6d09f5349c8ae35a5562377cb64e2a77cff1a9973f575f474",
+ "source_unchanged": true
+}

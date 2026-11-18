@@ -32,6 +32,8 @@ namespace IronRequiem
         static int sessionKills;
         float nextSpawn, nextGap; BridgeWalker lastSpawned; int explosionIndex; float counterFlash, reticleAlpha; BridgeWalker hovered;
         readonly RaycastHit[] hits = new RaycastHit[8];
+        readonly System.Collections.Generic.List<RaycastResult> uiHits = new System.Collections.Generic.List<RaycastResult>();
+        PointerEventData pointer;
         public bool Locked { get; set; }
         public int Kills => sessionKills;
 
@@ -43,6 +45,7 @@ namespace IronRequiem
 
         void Start()
         {
+            sessionKills = 0;
             foreach (var w in pool) if (w) w.Kill();
             if (conveyor)
             {
@@ -85,6 +88,12 @@ namespace IronRequiem
             if (mouse != null && view && !Locked)
             {
                 bool overUi = EventSystem.current && EventSystem.current.IsPointerOverGameObject();
+                if(EventSystem.current)
+                {
+                    if(pointer==null)pointer=new PointerEventData(EventSystem.current);
+                    pointer.position=mouse.position.ReadValue();uiHits.Clear();EventSystem.current.RaycastAll(pointer,uiHits);
+                    overUi|=uiHits.Count>0;
+                }
                 if (!overUi)
                 {
                     var ray = view.ScreenPointToRay(mouse.position.ReadValue());

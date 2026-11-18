@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 import bpy
-from mathutils import Vector
+from mathutils import Matrix, Vector
 
 
 def sha256(path):
@@ -82,6 +82,16 @@ def main():
     parser.add_argument('--objects', nargs='+', help='Exact object names to export from the imported copy')
     parser.add_argument('--separate-loose', action='store_true', help='Separate selected mesh islands in the temporary scene only')
     parser.add_argument('--pivots-json', type=Path, help='Mapping of exact object name to world-space [x,y,z] origin in Blender units')
+    parser.add_argument('--frames-json', type=Path,
+                        help='Mapping of exact object name to {"origin":[x,y,z],"forward":[x,y,z],"up":[x,y,z]} in Blender world '
+                             'space. Bakes the frame into the mesh data: origin -> (0,0,0), forward -> -Y (Unity +Z), up -> +Z '
+                             '(Unity +Y); the object is left at the world origin with identity rotation and scale.')
+    parser.add_argument('--empties-json', type=Path,
+                        help='Mapping of new empty name to {"parent": exact object name, "location": [x,y,z]} in parent-local '
+                             'space, created after frames/pivots (e.g. Attachment and Muzzle sockets) and exported with it.')
+    parser.add_argument('--triangulate', action='store_true',
+                        help='Triangulate selected meshes before export (same triangle count as Blender loop triangles) so '
+                             'Unity does not re-triangulate concave n-gons such as cut caps.')
     parser.add_argument('--export-animation', action='store_true')
     args = parser.parse_args(sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else [])
     source = args.input.resolve(strict=True)
@@ -138,6 +148,75 @@ def main():
             bpy.ops.object.select_all(action='DESELECT')
             for obj in selected:
                 obj.select_set(True)
+        if args.frames_json:
+            frames = json.loads(args.frames_json.read_text(encoding='utf-8-sig'))
+            if set(frames) - {o.name for o in selected}:
+                parser.error('Frame name is absent from the selected copy.')
+            applied = {}
+            for obj in selected:
+                if obj.name not in frames:
+                    continue
+                if obj.type != 'MESH' or obj.parent or obj.data.users > 1:
+                    parser.error('Frames apply only to unparented, single-user mesh objects: ' + obj.name)
+                f = frames[obj.name]
+                origin, forward, up = (Vector(f[k]) for k in ('origin', 'forward', 'up'))
+                if forward.length < 1e-6 or up.length < 1e-6:
+                    parser.error('Frame vectors must be non-zero: ' + obj.name)
+                forward.normalize()
+                up = (up - forward * up.dot(forward))
+                if up.length < 1e-3:
+                    parser.error('Frame up is parallel to forward: ' + obj.name)
+                up.normalize()
+                y_axis = -forward
+                x_axis = y_axis.cross(up)
+                basis = Matrix((x_axis, y_axis, up)).transposed()  # columns = local axes in world
+                frame = Matrix.Translation(origin) @ basis.to_4x4()
+                obj.data.transform(frame.inverted() @ obj.matrix_world)
+                obj.data.update()
+                obj.matrix_world = Matrix.Identity(4)
+                applied[obj.name] = {'origin': list(origin), 'forward': list(forward), 'up': list(up),
+                                     'basis_columns_xyz': [list(x_axis), list(y_axis), list(up)]}
+            report['frames_applied'] = applied
+        if args.triangulate:
+            import bmesh
+            counts = {}
+            for obj in selected:
+                if obj.type != 'MESH':
+                    continue
+                bm = bmesh.new()
+                bm.from_mesh(obj.data)
+                bmesh.ops.triangulate(bm, faces=bm.faces[:], quad_method='BEAUTY', ngon_method='EAR_CLIP')
+                bm.to_mesh(obj.data)
+                bm.free()
+                obj.data.update()
+                counts[obj.name] = len(obj.data.polygons)
+            report['triangulated'] = counts
+        if args.empties_json:
+            empties = json.loads(args.empties_json.read_text(encoding='utf-8-sig'))
+            by_name = {o.name: o for o in selected}
+            created = []
+            for name, spec in empties.items():
+                parent = by_name.get(spec.get('parent'))
+                if parent is None or bpy.data.objects.get(name):
+                    parser.error('Empty parent missing or empty name already used: ' + name)
+                empty = bpy.data.objects.new(name, None)
+                empty.empty_display_type = 'ARROWS'
+                empty.empty_display_size = 0.05
+                bpy.context.scene.collection.objects.link(empty)
+                empty.parent = parent
+                empty.matrix_parent_inverse = Matrix.Identity(4)
+                empty.location = Vector(spec['location'])
+                selected.append(empty)
+                created.append({'name': name, 'parent': parent.name, 'location': list(spec['location'])})
+            report['empties_created'] = created
+        bpy.ops.object.select_all(action='DESELECT')
+        for obj in selected:
+            obj.select_set(True)
+        bpy.context.view_layer.update()
+        report['export_objects_final'] = [
+            {'name': o.name, 'type': o.type, 'parent': o.parent.name if o.parent else None,
+             'matrix_world': [list(r) for r in o.matrix_world],
+             'local_bounds': [list(v) for v in o.bound_box] if o.type == 'MESH' else None} for o in selected]
         args.output.parent.mkdir(parents=True, exist_ok=True)
         bpy.ops.export_scene.fbx(filepath=str(args.output.resolve()), use_selection=True,
                                  axis_forward='-Z', axis_up='Y', apply_unit_scale=True,

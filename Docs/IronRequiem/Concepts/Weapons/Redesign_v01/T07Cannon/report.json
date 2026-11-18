@@ -1,0 +1,77 @@
+{
+  "C-A": {
+    "name": "Arrancado crudo",
+    "idea": "El cañón actual casi literal: corte con rebabas, cables y abrazadera soldada.",
+    "heat_point": "ranura lateral + ánima",
+    "tris": 3140,
+    "objects": 53,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.101,
+      -0.664,
+      -0.245
+    ],
+    "bounds_max": [
+      0.1024,
+      0.0,
+      0.098
+    ],
+    "length_coupling_to_front": 0.664,
+    "length_vs_current_pct": -0.0,
+    "renders": {
+      "34": "C-A_ArrancadoCrudo_34.png",
+      "side": "C-A_ArrancadoCrudo_perfil.png",
+      "fps": "C-A_ArrancadoCrudo_fps.png"
+    }
+  },
+  "C-B": {
+    "name": "Núcleo expuesto",
+    "idea": "Carcasa reventada que deja a la vista la celda de carga magenta.",
+    "heat_point": "núcleo magenta central",
+    "tris": 3440,
+    "objects": 51,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.093,
+      -0.664,
+      -0.2165
+    ],
+    "bounds_max": [
+      0.0918,
+      0.0,
+      0.1479
+    ],
+    "length_coupling_to_front": 0.664,
+    "length_vs_current_pct": -0.0,
+    "renders": {
+      "34": "C-B_NucleoExpuesto_34.png",
+      "side": "C-B_NucleoExpuesto_perfil.png",
+      "fps": "C-B_NucleoExpuesto_fps.png"
+    }
+  },
+  "C-C": {
+    "name": "Antebrazo completo",
+    "idea": "Se arranca también la concha del antebrazo y restos de la mano del T-07.",
+    "heat_point": "rejillas de la concha",
+    "tris": 3144,
+    "objects": 53,
+    "engine": "BLENDER_EEVEE",
+    "bounds_min": [
+      -0.1298,
+      -0.666,
+      -0.1724
+    ],
+    "bounds_max": [
+      0.1105,
+      0.0,
+      0.1255
+    ],
+    "length_coupling_to_front": 0.666,
+    "length_vs_current_pct": 0.3,
+    "renders": {
+      "34": "C-C_AntebrazoCompleto_34.png",
+      "side": "C-C_AntebrazoCompleto_perfil.png",
+      "fps": "C-C_AntebrazoCompleto_fps.png"
+    }
+  }
+}

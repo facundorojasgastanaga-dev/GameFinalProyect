@@ -1,0 +1,130 @@
+Level audit 2026-11-13 19:16 tag=before
+== Session RequiemCampaign: airlocks 6
+
+== RequiemCampaign: roots=13 renderers=235 tris=47.7k batchingStatic=9 occluderStatic=0 materials=24 colliders=105 (mesh=0) lights=13 [Point/Realtime/None×12, Directional/Realtime/None×1] reflectionProbes=0 [] LODGroups=1 navSurfaces=0 (data=0) audio=9 (streaming? see import)
+   bounds center=(14.5, 7.7, 42.1) size=(43.0, 17.5, 252.8)  lightmaps=sí
+   root GameManager active=True children=199 renderers=0 colliders=0
+   root GameHUD active=True children=43 renderers=0 colliders=0
+   root InGameMenu active=True children=40 renderers=0 colliders=0
+   root EventSystem active=True children=0 renderers=0 colliders=0
+   root Player_ModularArm_v07 active=True children=230 renderers=33 colliders=1
+   root LabSun active=True children=0 renderers=0 colliders=0
+   root ArenaMessages active=True children=2 renderers=0 colliders=0
+   root CombatLabMenu active=True children=123 renderers=0 colliders=0
+   root LabMenuMusic active=True children=0 renderers=0 colliders=0
+   root PersistentAirlocks active=True children=254 renderers=212 colliders=104
+   root CampaignSession active=True children=0 renderers=0 colliders=0
+   root CampaignMusic active=True children=0 renderers=0 colliders=0
+   root CampaignStartCover active=True children=2 renderers=0 colliders=0
+   piso (muestras cada 2 m): 260/260 libres, 0 bajo obstáculo <2,2 m · niveles: y=16.50×218 y=5.25×35 y=7.00×7 · techo libre p10/p50/p90 = -/-/- m
+
+== Room00_Hangar: roots=4 renderers=815 tris=2049.1k batchingStatic=200 occluderStatic=0 materials=33 colliders=144 (mesh=0) lights=31 [Spot/Realtime/None×16, Directional/Realtime/None×1, Point/Realtime/None×13, Spot/Realtime/Soft×1] reflectionProbes=0 [] LODGroups=215 navSurfaces=1 (data=1) audio=18 (streaming? see import)
+   bounds center=(-1.2, -0.3, -130.9) size=(149.1, 83.9, 113.9)  lightmaps=sí
+   root HangarSector active=True children=1162 renderers=768 colliders=114
+   root Scavengers active=True children=551 renderers=230 colliders=35
+   root RoomEncounter active=True children=0 renderers=0 colliders=0
+   root WakeUpCinematic active=True children=42 renderers=3 colliders=0
+   piso (muestras cada 2 m): 646/646 libres, 0 bajo obstáculo <2,2 m · niveles: y=17.00×525 y=18.00×105 y=5.50×16 · techo libre p10/p50/p90 = -/-/- m
+
+== Room00b_AlarmCorridor: roots=1 renderers=72 tris=1.0k batchingStatic=0 occluderStatic=0 materials=10 colliders=23 (mesh=0) lights=17 [Spot/Realtime/None×9, Point/Realtime/None×8] reflectionProbes=0 [] LODGroups=0 navSurfaces=1 (data=1) audio=1 (streaming? see import)
+   bounds center=(0.0, 4.5, -52.4) size=(20.0, 10.0, 35.2)  lightmaps=sí
+   root AlarmCorridor active=True children=113 renderers=72 colliders=23
+   piso (muestras cada 2 m): 153/153 libres, 0 bajo obstáculo <2,2 m · niveles: y=9.50×153 · techo libre p10/p50/p90 = -/-/- m
+
+== Room01_Foundry: roots=8 renderers=85 tris=1.7k batchingStatic=56 occluderStatic=0 materials=10 colliders=17 (mesh=0) lights=4 [Point/Realtime/None×4] reflectionProbes=1 [Baked] LODGroups=0 navSurfaces=1 (data=1) audio=0 (streaming? see import)
+   bounds center=(0.0, 3.5, -1.3) size=(71.0, 25.0, 82.5)  lightmaps=sí
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root TwoFloorsGeometry active=True children=27 renderers=23 colliders=15
+   root RoomEncounter active=True children=14 renderers=0 colliders=0
+   root SectorReflection active=True children=0 renderers=0 colliders=0
+   root VisualPass_SectorGrade active=True children=0 renderers=0 colliders=0
+   root VisualPass_VoidShell active=True children=6 renderers=6 colliders=0
+   root VisualPass_Dressing active=True children=52 renderers=52 colliders=0
+   piso (muestras cada 2 m): 40/40 libres, 0 bajo obstáculo <2,2 m · niveles: y=7.50×38 y=8.00×2 · techo libre p10/p50/p90 = -/-/- m
+
+== Room02_Breach: roots=12 renderers=84 tris=1.8k batchingStatic=50 occluderStatic=0 materials=13 colliders=20 (mesh=0) lights=4 [Point/Realtime/None×4] reflectionProbes=1 [Baked] LODGroups=0 navSurfaces=1 (data=1) audio=0 (streaming? see import)
+   bounds center=(0.0, 11.8, -3.5) size=(71.0, 25.6, 78.0)  lightmaps=sí
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root TwoFloorsGeometry active=True children=31 renderers=27 colliders=17
+   root GapFallRecovery active=True children=0 renderers=0 colliders=1
+   root GapReturnPoints active=True children=10 renderers=0 colliders=0
+   root GapSign active=True children=0 renderers=1 colliders=0
+   root RoomEncounter active=True children=11 renderers=0 colliders=0
+   root SectorReflection active=True children=0 renderers=0 colliders=0
+   root VisualPass_SectorGrade active=True children=0 renderers=0 colliders=0
+   root VisualPass_VoidShell active=True children=6 renderers=6 colliders=0
+   root VisualPass_LavaPools active=True children=1 renderers=1 colliders=0
+   root VisualPass_Dressing active=True children=45 renderers=45 colliders=0
+   piso (muestras cada 2 m): 847/847 libres, 0 bajo obstáculo <2,2 m · niveles: y=16.50×837 y=16.00×10 · techo libre p10/p50/p90 = -/-/- m
+
+== Room03_Assembly: roots=8 renderers=80 tris=1.6k batchingStatic=50 occluderStatic=0 materials=10 colliders=18 (mesh=0) lights=4 [Point/Realtime/None×4] reflectionProbes=1 [Baked] LODGroups=0 navSurfaces=1 (data=1) audio=0 (streaming? see import)
+   bounds center=(0.0, 11.8, 65.0) size=(71.0, 25.5, 70.0)  lightmaps=sí
+   root AssemblyGeometry active=True children=28 renderers=24 colliders=16
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root RoomEncounter active=True children=14 renderers=0 colliders=0
+   root SectorReflection active=True children=0 renderers=0 colliders=0
+   root VisualPass_SectorGrade active=True children=0 renderers=0 colliders=0
+   root VisualPass_VoidShell active=True children=6 renderers=6 colliders=0
+   root VisualPass_Dressing active=True children=46 renderers=46 colliders=0
+   piso (muestras cada 2 m): 744/744 libres, 0 bajo obstáculo <2,2 m · niveles: y=16.50×717 y=16.00×27 · techo libre p10/p50/p90 = -/-/- m
+
+== Room04_Reactor: roots=8 renderers=79 tris=1.7k batchingStatic=50 occluderStatic=0 materials=11 colliders=17 (mesh=0) lights=4 [Point/Realtime/None×4] reflectionProbes=1 [Baked] LODGroups=0 navSurfaces=1 (data=1) audio=0 (streaming? see import)
+   bounds center=(0.0, 11.8, 129.0) size=(71.0, 25.5, 70.0)  lightmaps=sí
+   root ReactorGeometry active=True children=27 renderers=23 colliders=15
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root RoomEncounter active=True children=14 renderers=0 colliders=0
+   root SectorReflection active=True children=0 renderers=0 colliders=0
+   root VisualPass_SectorGrade active=True children=0 renderers=0 colliders=0
+   root VisualPass_VoidShell active=True children=6 renderers=6 colliders=0
+   root VisualPass_Dressing active=True children=46 renderers=46 colliders=0
+   piso (muestras cada 2 m): 744/744 libres, 0 bajo obstáculo <2,2 m · niveles: y=16.50×717 y=16.00×27 · techo libre p10/p50/p90 = -/-/- m
+
+== Pursuit05: roots=22 renderers=86 tris=8.5k batchingStatic=9 occluderStatic=0 materials=13 colliders=27 (mesh=0) lights=6 [Point/Realtime/None×6] reflectionProbes=1 [Baked] LODGroups=0 navSurfaces=1 (data=1) audio=1 (streaming? see import)
+   bounds center=(0.0, 11.8, 276.0) size=(34.0, 25.6, 236.0)  lightmaps=sí
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root Pickup_Health active=True children=3 renderers=3 colliders=1
+   root ChaseCorridorGeometry active=True children=45 renderers=39 colliders=18
+   root ChaseEntranceGate active=False children=0 renderers=1 colliders=1
+   root ChaseExitGate active=True children=0 renderers=1 colliders=1
+   root ChaseGap_48 active=True children=0 renderers=0 colliders=1
+   root ReturnPoints_48 active=True children=6 renderers=0 colliders=0
+   root ChaseGap_98 active=True children=0 renderers=0 colliders=1
+   root ReturnPoints_98 active=True children=6 renderers=0 colliders=0
+   root ChaseGap_148 active=True children=0 renderers=0 colliders=1
+   root ReturnPoints_148 active=True children=6 renderers=0 colliders=0
+   root GiantSawCarriage active=True children=39 renderers=36 colliders=0
+   root ChaseEncounter active=True children=0 renderers=0 colliders=1
+   root EntranceSign active=True children=0 renderers=1 colliders=0
+   root ExitSign active=True children=0 renderers=1 colliders=0
+   root AmbushPoints active=True children=5 renderers=0 colliders=0
+   root SectorReflection active=True children=0 renderers=0 colliders=0
+   root VisualPass_SectorGrade active=True children=0 renderers=0 colliders=0
+   root VisualPass_VoidShell active=True children=6 renderers=6 colliders=0
+   root VisualPass_LavaPools active=True children=3 renderers=3 colliders=0
+   piso (muestras cada 2 m): 990/990 libres, 0 bajo obstáculo <2,2 m · niveles: y=16.50×990 · techo libre p10/p50/p90 = -/-/- m
+
+== Uniones (alturas de piso alrededor de cada esclusa; paso = salto vertical entre muestras vecinas de 0,5 m)
+-- esclusa 0 (Room00_Hangar → Room00b_AlarmCorridor) centro=(0.0, 2.0, -79.7) eje=X · peor escalón 0.0 cm · escalones: ninguno
+   alturas: · · · · · 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 5.30 · · · · ·
+   escena/material del piso: -7.5m→-(-) | -5.0m→RequiemCampaign(HG_PlateDark) | 5.5m→-(-)
+-- esclusa 1 (Room00b_AlarmCorridor → Room01_Foundry) centro=(0.0, 2.0, -30.2) eje=X · peor escalón 0.0 cm · escalones: ninguno
+   alturas: 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.67 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+   escena/material del piso: -9.0m→Room01_Foundry(CP_Floor) | 0.0m→RequiemCampaign(Player_ModularArm_v07) | 0.5m→Room01_Foundry(CP_Floor)
+-- esclusa 2 (Room01_Foundry → Room02_Breach) centro=(31.0, 2.0, 25.0) eje=Z · peor escalón 20.0 cm · escalones: -6.5m Δ20.0cm, -5.5m Δ20.0cm, -4.5m Δ20.0cm, -4.0m Δ20.0cm, -3.0m Δ20.0cm, -2.5m Δ20.0cm, -1.5m Δ20.0cm, -0.5m Δ20.0cm
+   alturas: 1.60 1.40 1.40 1.20 1.20 1.00 0.80 0.80 0.60 0.40 0.40 0.20 0.20 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 · ·
+   escena/material del piso: -7.0m→RequiemCampaign(VO_Env_RustMetal) | 6.5m→-(-)
+-- esclusa 3 (Room02_Breach → Room03_Assembly) centro=(0.0, 10.0, 33.0) eje=X · peor escalón 0.0 cm · escalones: ninguno
+   alturas: · · · · 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 · · · ·
+   escena/material del piso: -8.0m→-(-) | -6.0m→RequiemCampaign(VO_Env_Floor) | 6.5m→-(-)
+-- esclusa 4 (Room03_Assembly → Room04_Reactor) centro=(0.0, 10.0, 97.0) eje=X · peor escalón 0.0 cm · escalones: ninguno
+   alturas: · · · · 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 · · · ·
+   escena/material del piso: -8.0m→-(-) | -6.0m→RequiemCampaign(VO_Env_Floor) | 6.5m→-(-)
+-- esclusa 5 (Room04_Reactor → Pursuit05) centro=(0.0, 10.0, 161.0) eje=X · peor escalón 0.0 cm · escalones: ninguno
+   alturas: · · · · 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00 · · · ·
+   escena/material del piso: -8.0m→-(-) | -6.0m→RequiemCampaign(VO_Env_Floor) | 6.5m→-(-)

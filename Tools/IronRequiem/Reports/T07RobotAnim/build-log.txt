@@ -1,0 +1,39 @@
+[T07 robot anim]
+  chain Forearm_L localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(0.5, 0.4, 359.6) rot=(1.5, 176.5, 176.5) pos=(0.320, 1.025, 0.015) det=1
+  chain UpperArm_L localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(2.0, 177.0, 177.0) rot=(2.0, 177.0, 177.0) pos=(0.300, 1.415, 0.000) det=1
+  chain Chest localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 1.365, 0.000) det=1
+  chain Spine localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 1.125, 0.000) det=1
+  chain Hips localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 0.885, 0.000) det=1
+  chain Root localScale=(1.000, 1.000, 1.000) lossy=(100.000, 100.000, 100.000) localRot=(90.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 0.000, 0.000) det=1
+  chain T07Rig localScale=(100.000, 100.000, 100.000) lossy=(100.000, 100.000, 100.000) localRot=(270.0, 0.0, 0.0) rot=(270.0, 0.0, 0.0) pos=(0.000, 0.000, 0.000) det=1
+  chain AnimatedRig localScale=(1.000, 1.000, 1.000) lossy=(1.000, 1.000, 1.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 0.000, 0.000) det=1
+  chain Body localScale=(1.000, 1.000, 1.000) lossy=(1.000, 1.000, 1.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 0.000, 0.000) det=1
+  chain T07_Current_Repaired localScale=(1.000, 1.000, 1.000) lossy=(1.000, 1.000, 1.000) localRot=(0.0, 0.0, 0.0) rot=(0.0, 0.0, 0.0) pos=(0.000, 0.000, 0.000) det=1
+  renamed non-bone duplicate ArticulationGuides_NoRig/Head
+  cannon barrel at rest=(0.00, 0.00, 1.00) (mounted across the forearm)
+  bone Left_UpperLeg (Body/AnimatedRig/T07Rig/Root/Hips/Thigh_R) pos=(-0.145, 0.875, 0.000)
+  bone Right_UpperLeg (Body/AnimatedRig/T07Rig/Root/Hips/Thigh_L) pos=(0.145, 0.875, 0.000)
+  bone Left_UpperArm (Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R) pos=(-0.300, 1.415, 0.000)
+  bone Right_UpperArm (Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L) pos=(0.300, 1.415, 0.000)
+  bone Right_Hand (Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L/Forearm_L/Hand_L) pos=(0.340, 0.685, 0.025)
+  bone Head (Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head) pos=(0.000, 1.625, 0.000)
+  cannon socket=Right_LowerArm at (0.320, 1.025, 0.015) aimBone=-
+T-07 proxy animator=T07_Current_Repaired scale=1 stride=1.5 (model 1.5) height=1.869 legLen=0.831 hip=0.885 ankle=0.045 fwd=(0.00, 0.00, 1.00) smr=18 boundsTop=2.877
+  R_Idle len=4 curves=67
+  R_CombatIdle len=2.4 curves=67
+  R_PatrolWalk len=1.4 curves=67
+  R_CombatAdvance len=1.4 curves=67
+  R_CannonAttack len=0.7 curves=63
+  R_HitReaction len=0.6 curves=63
+  solver upper=(0.27, -0.84, 0.46) fore=(0.00, -1.00, -0.05) hips=(0.000, 0.843, 0.000)
+  played upper=(0.26, -0.84, 0.47) fore=(-0.01, -1.00, -0.05) hips=(-0.001, 0.844, 0.000)
+  new R_CombatIdle: forearm=(-0.01, -1.00, -0.05) mouth=Muzzle fwd=(0.02, -0.08, 1.00) mouthFromElbow=(0.01, 0.00, 0.68)
+  prefab rest: forearm=(0.05, -1.00, 0.03) mouth=Muzzle fwd=(0.00, 0.00, 1.00) mouthFromElbow=(-0.01, 0.05, 0.68)
+  old CombatIdle: forearm=(0.05, -0.99, 0.10) mouth=Muzzle fwd=(0.00, 0.07, 1.00) mouthFromElbow=(-0.01, 0.10, 0.67)
+  swap ArmedTree: R_Idle -> R_Idle
+  swap ArmedTree: R_PatrolWalk -> R_PatrolWalk
+  swap AlertedTree: R_CombatIdle -> R_CombatIdle
+  swap AlertedTree: R_CombatAdvance -> R_CombatAdvance
+  swap CannonAttack: R_CannonAttack -> R_CannonAttack
+  swap HitReaction: R_HitReaction -> R_HitReaction
+controller=Assets/IronRequiem/Art/Enemies/T07RobotAnim/T07Robot_Locomotion.controller sheets=Tools/IronRequiem/Reports/T07RobotAnim

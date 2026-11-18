@@ -1,0 +1,42 @@
+[T07 robot anim play SawBefore] scene=Assets/IronRequiem/Scenes/SawBotRobotAnimLab_Before.unity
+  player parked 24.7 m from mech
+  mech=SawBot_Current_SawBefore controller=SawBot_SawPolish
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=9.50 ai=Follow target=AimPoint dist=4.9
+  shot r0c0 t=2.50 state=Locomotion speed=9.50 alerted=True attacks=0
+  shot r0c1 t=2.86 state=Locomotion speed=9.50 alerted=True attacks=0
+  shot r0c2 t=3.21 state=SawHold speed=0.31 alerted=True attacks=0
+  shot r0c3 t=3.55 state=SawHold speed=0.01 alerted=True attacks=0
+  shot r0c4 t=3.90 state=SawHold speed=0.00 alerted=True attacks=0
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=True hasPath=False vel=0.00 ai=Attack target=AimPoint dist=1.0
+  shot r0c5 t=4.26 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r0c6 t=4.61 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r0c7 t=4.96 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r0c8 t=5.31 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r0c9 t=5.66 state=SawHold speed=0.00 alerted=True attacks=0
+  t=6.01 player placed 15.0 m from mech
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=0.00 ai=Follow target=Player_IR_v01 dist=15.0
+  shot r1c0 t=6.30 state=Locomotion speed=0.00 alerted=True attacks=0
+  shot r1c1 t=6.60 state=Locomotion speed=6.30 alerted=True attacks=0
+  shot r1c2 t=6.91 state=Locomotion speed=9.39 alerted=True attacks=0
+  shot r1c3 t=7.21 state=Locomotion speed=9.49 alerted=True attacks=0
+  shot r1c4 t=7.50 state=Locomotion speed=9.45 alerted=True attacks=0
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=False hasPath=True vel=9.50 ai=Follow target=Player_IR_v01 dist=2.7
+  shot r1c5 t=7.80 state=Locomotion speed=9.50 alerted=True attacks=0
+  shot r1c6 t=8.11 state=Attack speed=2.28 alerted=True attacks=0
+  shot r1c7 t=8.41 state=SawHold speed=0.06 alerted=True attacks=0
+  shot r1c8 t=8.71 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r1c9 t=9.01 state=SawHold speed=0.00 alerted=True attacks=0
+  t=10.20 damage applied (trigger=none)
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=True hasPath=False vel=0.00 ai=Attack target=AimPoint dist=1.0
+  shot r3c0 t=10.20 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r3c1 t=10.25 state=SawHold +Hit speed=0.00 alerted=True attacks=0
+  shot r3c2 t=10.31 state=SawHold +Hit speed=0.00 alerted=True attacks=0
+  shot r3c3 t=10.35 state=SawHold +Hit speed=0.00 alerted=True attacks=0
+  shot r3c4 t=10.41 state=SawHold +Hit speed=0.00 alerted=True attacks=0
+    diag onNavMesh=True agentType=Humanoid agentEnabled=True stopped=True hasPath=False vel=0.00 ai=Attack target=Player_IR_v01 dist=1.0
+  shot r3c5 t=10.46 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r3c6 t=10.51 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r3c7 t=10.57 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r3c8 t=10.61 state=SawHold speed=0.00 alerted=True attacks=0
+  shot r3c9 t=10.65 state=SawHold speed=0.00 alerted=True attacks=0
+  attacks=0 damagedEvents=1 consoleErrors=0

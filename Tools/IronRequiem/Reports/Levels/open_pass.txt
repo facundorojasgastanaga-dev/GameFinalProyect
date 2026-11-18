@@ -1,0 +1,62 @@
+v35 level pass 2026-11-14 00:31
+materials wall=CP_Wall (UnityEngine.Material) metal=VO_Env_RustMetal (UnityEngine.Material) hazard=VO_Env_Hazard (UnityEngine.Material) lava=CP_Lava (UnityEngine.Material) cold=VO_Light_Cold (UnityEngine.Material)
+
+== Room01_Foundry (Foundry) techo 7.0 → 12.0 m libres
+  techo Room01Ceiling sube 5 m
+  extensiones de muro/columna 9, dinteles 1
+  coberturas agrandadas 4
+  pasarelas 1 (altura +3,8 m, rampas de ~19°)
+  spawns movidos fuera de pasarelas/coberturas: 0/12
+  pickups de vida movidos a pasarelas: 1
+  dressing existente reubicado 51
+  decoración 104 piezas · flechas 12
+  NavMesh actualizado (ok) fuentes=31 vértices=416
+  sonda de reflexión re-horneada ok → Assets/IronRequiem/Art/Levels/Campaign/Room01_Foundry_Reflection.exr
+
+== Room02_Breach (Breach) techo 8.0 → 13.0 m libres
+  techo Roof sube 5 m
+  extensiones de muro/columna 10, dinteles 2
+  coberturas agrandadas 4
+  pasarelas 3 (altura +3,8 m, rampas de ~19°)
+  spawns movidos fuera de pasarelas/coberturas: 0/9
+  pickups de vida movidos a pasarelas: 2
+  dressing existente reubicado 44
+  decoración 98 piezas · flechas 10
+  NavMesh actualizado (ok) fuentes=41 vértices=355
+  sonda de reflexión re-horneada ok → Assets/IronRequiem/Art/Levels/Campaign/Room02_Breach_Reflection.exr
+
+== Room03_Assembly (Assembly) techo 8.0 → 13.0 m libres
+  techo Roof sube 5 m
+  extensiones de muro/columna 10, dinteles 2
+  coberturas agrandadas 0
+  pasarelas 2 (altura +3,8 m, rampas de ~19°)
+  spawns movidos fuera de pasarelas/coberturas: 4/12
+  pickups de vida movidos a pasarelas: 1
+  dressing existente reubicado 45
+  decoración 180 piezas · flechas 9
+  NavMesh actualizado (ok) fuentes=38 vértices=473
+  sonda de reflexión re-horneada ok → Assets/IronRequiem/Art/Levels/Campaign/Room03_Assembly_Reflection.exr
+
+== Room04_Reactor (Reactor) techo 8.0 → 13.0 m libres
+  techo Roof sube 5 m
+  extensiones de muro/columna 8, dinteles 2
+  coberturas agrandadas 4
+  pasarelas 2 (altura +3,8 m, rampas de ~19°)
+  spawns movidos fuera de pasarelas/coberturas: 0/12
+  pickups de vida movidos a pasarelas: 1
+  dressing existente reubicado 45
+  decoración 90 piezas · flechas 10
+  NavMesh actualizado (ok) fuentes=35 vértices=430
+  sonda de reflexión re-horneada ok → Assets/IronRequiem/Art/Levels/Campaign/Room04_Reactor_Reflection.exr
+
+== Room00b_AlarmCorridor: flechas 6 (piso y=0.00); sin cambios de geometría (pasillo de alarma, ya 20 m de ancho)
+
+== RequiemCampaign: rampa invisible sobre la escalera (14.0°, 33.0 m)
+
+v35 floor guide rebuild 00:44
+materials wall=CP_Wall (UnityEngine.Material) metal=VO_Env_RustMetal (UnityEngine.Material) hazard=VO_Env_Hazard (UnityEngine.Material) lava=CP_Lava (UnityEngine.Material) cold=VO_Light_Cold (UnityEngine.Material)
+Room01_Foundry: flechas 12
+Room02_Breach: flechas 10
+Room03_Assembly: flechas 9
+Room04_Reactor: flechas 10
+corredor: flechas 6

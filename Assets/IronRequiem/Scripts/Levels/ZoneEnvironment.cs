@@ -55,8 +55,21 @@ namespace IronRequiem
             readonly List<Volume> volumes = new List<Volume>(); readonly List<float> weights = new List<float>();
             readonly List<AudioSource> sources = new List<AudioSource>(); readonly List<float> levels = new List<float>();
             static readonly List<GameObject> roots = new List<GameObject>();
+            // 17/11/2026 (MAP_FX_AUDIT_20261117 E2, narrowed by r2 P-E2a): Room00_Hangar reuses the menu's HG_MenuVolume
+            // (CA .12, grain .28, vignette .38, bloom .6), tuned for the menu shot and too heavy in play. The wake-up
+            // cinematic belongs to the protected menu zone, so HG_PostVolume is never modified: HangarGameplayPost adds the
+            // gameplay copy as a separate runtime Volume (priority +1) only after the cinematic. Strict match: the stage
+            // scene, the object and the profile must all be the hangar ones. Missing asset = keep the original.
+            const string MenuProfile = "HG_MenuVolume", HangarScene = "Room00_Hangar", HangarVolume = "HG_PostVolume";
+            static VolumeProfile gameplayProfile; static bool gameplayLoaded;
+            static VolumeProfile GameplayProfile
+            {
+                get { if (!gameplayLoaded) { gameplayProfile = Resources.Load<VolumeProfile>("IronRequiem/HG_GameplayVolume"); gameplayLoaded = true; } return gameplayProfile; }
+            }
 
             /// Records the scene's global volumes and the AudioSources that are playing (or play on awake) in a loop.
+            /// 17/11/2026 (M1): a volume with VolumeFadeIn is claimed (its own fade stops) and its authored weight, captured
+            /// before VolumeFadeIn zeroed it, is the target; reading v.weight here recorded 0 and the grade stayed off.
             public void Bind(Scene scene)
             {
                 volumes.Clear(); weights.Clear(); sources.Clear(); levels.Clear();
@@ -64,7 +77,14 @@ namespace IronRequiem
                 scene.GetRootGameObjects(roots);
                 foreach (var r in roots)
                 {
-                    foreach (var v in r.GetComponentsInChildren<Volume>(true)) if (v.isGlobal) { volumes.Add(v); weights.Add(v.weight); }
+                    foreach (var v in r.GetComponentsInChildren<Volume>(true)) if (v.isGlobal)
+                    {
+                        if (v.GetComponent<HangarGameplayPost>()) continue; // runtime overlay: its weight follows HG_PostVolume
+                        if (scene.name == HangarScene && v.name == HangarVolume && v.sharedProfile && v.sharedProfile.name == MenuProfile && GameplayProfile)
+                            HangarGameplayPost.Attach(v, GameplayProfile);
+                        var fade = v.GetComponent<VolumeFadeIn>();
+                        volumes.Add(v); weights.Add(fade ? fade.Claim() : v.weight);
+                    }
                     foreach (var s in r.GetComponentsInChildren<AudioSource>(true)) if (s.loop && (s.isPlaying || s.playOnAwake)) { sources.Add(s); levels.Add(s.volume); }
                 }
                 roots.Clear();

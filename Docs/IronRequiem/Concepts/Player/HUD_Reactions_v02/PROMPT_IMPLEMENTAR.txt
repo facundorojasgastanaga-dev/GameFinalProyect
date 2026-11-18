@@ -1,0 +1,74 @@
+Trabaja en IRON REQUIEM. Lee AGENTS.md y el estado actual del HUD. Usa las skills pertinentes de UI y rendimiento, y caveman para avances breves.
+
+OBJETIVO
+Actualizar únicamente el retrato «UNIDAD 01» del HUD: daño visual progresivo, miradas según el giro de cámara, impactos, chispas y reacción de carga del puño. Reutilizar el sistema existente.
+
+ASSETS
+23 PNG transparentes en:
+C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v02/
+
+Cada nivel d0, d1, d2 y d3 tiene:
+{nivel}_frente.png
+{nivel}_izquierda.png
+{nivel}_derecha.png
+{nivel}_impacto.png
+{nivel}_punio_carga.png
+Además: ataque.png, overdrive.png y apagado.png.
+
+Copiar los PNG a Assets/IronRequiem/Art/UI/RobotPortrait/v02/, conservando los originales. Importar como Sprite Single, Full Rect, pivote central, alpha, sin mipmaps ni Read/Write. Máximo inicial 512; comprobar calidad y compresión en el panel real. Alinear todos los frames sin saltos de escala ni recortes. No reflejar imágenes para fabricar direcciones: las roturas son asimétricas.
+
+INTEGRACIÓN
+Inspeccionar RetroStatusBar.cs y RobotPortraitGraphic.cs. Conservar Canvas, panel, etiquetas, inventario, controles, cámara y gameplay. Si ya se implementó v01, ampliarla sin duplicar componentes ni suscripciones.
+
+DAÑO PROGRESIVO — LEER HEALTH REAL
+d0: vida >=75%.
+d1: vida >=50% y <75%.
+d2: vida >=25% y <50%.
+d3: vida >0% y <25%.
+Vida <=0: apagado.png.
+Actualizar al recibir daño, curarse y reaparecer. El nivel de daño, la mirada y la reacción son variables independientes: un giro o una carga nunca debe reparar el casco.
+
+MIRADA SEGÚN CÁMARA
+Sustituir el paseo aleatorio anterior por seguimiento del giro horizontal REAL de la cámara de gameplay.
+- Giro a izquierda: sprite izquierda del nivel actual.
+- Giro a derecha: sprite derecha del nivel actual.
+- Al dejar de girar: volver suavemente a frente tras unos 0,15–0,25 s.
+Calcular delta angular firmado con Mathf.DeltaAngle y velocidad angular por segundo. Suavizar y usar zona muerta e histéresis configurables, evitando temblores cerca del centro.
+Respetar entrada invertida, mando, sensibilidad y vueltas de 359 a 0 grados. No basarse solo en Mouse.delta, ni confundir movimiento A/D con giro. Reiniciar la muestra en teletransporte, cambio de cámara, pausa o cinemática; no tratar esas discontinuidades como giros del jugador.
+Usar exclusivamente el yaw horizontal de gameplay, excluyendo bob, recoil y cámaras cinemáticas. No modificar cómo se controla la cámara.
+
+IMPACTOS
+Al recibir daño real, mostrar impacto DEL NIVEL DE VIDA RESULTANTE durante aproximadamente 0,2 s, con recoil mínimo del retrato. Después restaurar mirada y estado vigentes. La reacción temporal puede centrar brevemente la pose; no dejarla bloqueada. La muerte tiene prioridad absoluta.
+
+CHISPAS DEL LADO ROTO
+La rotura principal está en el lado anatómico izquierdo del robot: aparece a la derecha de la imagen frontal. Mantener ese lado al girar.
+Cuando el retrato gire hacia la derecha de pantalla, hacia ese lado dañado:
+- d0: sin chispas por daño.
+- d1: chispa ocasional pequeña.
+- d2: ráfaga breve más visible.
+- d3: más chispas y parpadeo irregular controlado.
+Disparar una ráfaga al entrar en esa dirección, con cooldown; no crear una ráfaga cada frame.
+Animar las chispas como un overlay ligero de UI reutilizado, anclado a la grieta según la pose. Reutilizar feedback existente cuando sirva; no instalar librerías. Los chispazos pintados en algunos PNG son poses estáticas, no una animación terminada. Añadir movimiento y desvanecimiento al overlay sin alternar a una cara sana.
+Aumentar cantidad/frecuencia de forma acotada según daño y detener al morir o pausar. No lanzar partículas en el mundo ni afectar el modelo 3D.
+
+CARGA DEL PUÑO
+Conectar a ProtagonistMelee.IsCharging y ChargeLevel reales.
+- Con mirada centrada: usar {nivel}_punio_carga.png.
+- Si gira mientras carga: conservar izquierda/derecha DEL MISMO NIVEL y acompañar con un brillo cian ligero de UI, sin sustituirlo por una cara sana frontal.
+- Intensidad del pulso/brillo según ChargeLevel.
+- Con daño d2/d3: pequeñas chispas adicionales desde la misma rotura.
+- Al soltar o cancelar: restaurar estado actual inmediatamente; al golpear realmente, reacción breve de ataque.
+No añadir manos al retrato ni cambiar carga, daño o controles del melee.
+
+RESTO DE ESTADOS
+Conservar ataque/ejecución, OVERDRIVE y apagado de v01.
+ataque.png y overdrive.png representan casco sano: usarlos directamente solo en d0; con daño, conservar el sprite dañado y expresar energía mediante brillo/pulso de UI.
+Resolver muerte > impacto temporal > carga > ataque/ejecución > mirada normal. OVERDRIVE y daño persisten como estado visual; no borran grietas. No dejar el retrato en un estado anterior tras curación, cambio de arma, cancelación o reinicio.
+
+RENDIMIENTO Y VERIFICACIÓN
+Referencias precargadas; cambiar sprites solo al cambiar estado. Usar el Canvas existente, sin RenderTexture, cámara adicional, Instantiate o materiales nuevos por frame. Desactivar raycastTarget y limpiar eventos al destruirse.
+
+Validar en escena/variante de prueba: cuatro niveles y límites exactos 75/50/25%, curación, giros en ambos sentidos y a través de 0°, daño durante giro/carga, puño cancelado/completo, OVERDRIVE, pausa, muerte y reinicio. Inspeccionar 720p, 1080p y 1440p: transparencia, roturas coherentes, chispas alineadas y escala estable.
+
+Preservar MainScene, escenas ya sucias y originales. No modificar gameplay, paquetes, URP ni Input System. No controlar mi escritorio.
+Entregar archivos modificados, capturas reales y pruebas realizadas; señalar verificaciones pendientes sin declararlas superadas.

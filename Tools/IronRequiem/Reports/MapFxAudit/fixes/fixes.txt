@@ -1,0 +1,29 @@
+ROOM FIXES before/after, Editor Play Mode
+  shot fixes/m7-room02-south-before lum=0.336 dark%=28.3 white%=0.00
+Room02_Breach M7 walk south at x=0 from z -18 for 3.5 s: min y=7.50 min z=-33.15 final=(0.00, 7.50, -33.15) -> dropped to a lower surface
+Room02_Breach M7 walk south at x=-15 from z -18 for 3.5 s: min y=-5.36 min z=-36.76 final=(-15.00, -5.36, -36.76) -> FELL INTO THE VOID
+Room02_Breach M7 walk south at x=18 from z -18 for 3.5 s: min y=-5.32 min z=-37.44 final=(18.00, -5.32, -37.44) -> FELL INTO THE VOID
+  Room02_Breach navmesh (0.00, 8.00, -18.00) -> (0.00, 8.00, -31.00): sampleA=True sampleB=False status=none corners=0
+  shot fixes/m7-room02-south-after lum=0.361 dark%=23.1 white%=0.00
+Room02_Breach_v2 M7 walk south at x=0 from z -18 for 3.5 s: min y=8.00 min z=-33.15 final=(0.00, 8.00, -33.15) -> stayed on the floor
+Room02_Breach_v2 M7 walk south at x=-15 from z -18 for 3.5 s: min y=8.00 min z=-33.15 final=(-15.00, 8.00, -33.15) -> stayed on the floor
+Room02_Breach_v2 M7 walk south at x=18 from z -18 for 3.5 s: min y=8.00 min z=-33.15 final=(18.00, 8.00, -33.15) -> stayed on the floor
+  Room02_Breach_v2 navmesh (0.00, 8.00, -18.00) -> (0.00, 8.00, -31.00): sampleA=True sampleB=True status=PathComplete corners=2
+Room01_Foundry M8 room colliders overlapping the mount station: SouthWall
+  shot fixes/m8-room01-station-before lum=0.207 dark%=51.3 white%=0.00
+  shot fixes/m8-room01-southwest-before lum=0.186 dark%=49.4 white%=0.00
+Room01_Foundry M8 walk into the west span of the south wall: min z=-33.15 -> blocked by wall
+Room01_Foundry_v2 M8 room colliders overlapping the mount station: none
+  shot fixes/m8-room01-station-after lum=0.234 dark%=31.0 white%=0.00
+  shot fixes/m8-room01-southwest-after lum=0.186 dark%=49.5 white%=0.00
+Room01_Foundry_v2 M8 walk into the west span of the south wall: min z=-33.15 -> blocked by wall
+  shot fixes/m9-room04-ramp-before lum=0.239 dark%=10.8 white%=0.00
+Room04_Reactor M9 walk up the west ramp for 5 s: max y=10.82 final=(-23.80, 10.74, 127.65) -> did NOT reach the catwalk
+  shot fixes/m9-room04-east-before lum=0.241 dark%=16.7 white%=0.00
+  Room04_Reactor navmesh (-23.80, 8.00, 118.00) -> (-23.75, 11.80, 140.00): sampleA=True sampleB=True status=PathPartial corners=10
+  Room04_Reactor navmesh (23.80, 8.00, 118.00) -> (23.75, 11.80, 140.00): sampleA=True sampleB=True status=PathPartial corners=10
+  shot fixes/m9-room04-ramp-after lum=0.243 dark%=9.8 white%=0.00
+Room04_Reactor_v2 M9 walk up the west ramp for 5 s: max y=11.91 final=(-23.80, 8.00, 154.15) -> reached the catwalk
+  shot fixes/m9-room04-east-after lum=0.241 dark%=17.8 white%=0.00
+  Room04_Reactor_v2 navmesh (-23.80, 8.00, 118.00) -> (-23.75, 11.80, 140.00): sampleA=True sampleB=True status=PathComplete corners=2
+  Room04_Reactor_v2 navmesh (23.80, 8.00, 118.00) -> (23.75, 11.80, 140.00): sampleA=True sampleB=True status=PathComplete corners=2

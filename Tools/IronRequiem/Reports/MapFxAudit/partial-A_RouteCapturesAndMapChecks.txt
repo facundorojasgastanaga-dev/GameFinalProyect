@@ -1,0 +1,226 @@
+MAP audit, Editor Play Mode (Test Runner). screen=1030x556 quality=Default GPU=NVIDIA GeForce RTX 4050 Laptop GPU
+URP asset=Default_PipelineAsset renderScale=1 upscaling=Auto msaa=1 hdr=True shadowDist=50 cascades=1 mainShadowRes=1024 addLightShadowRes=1024 maxAddLights=4 softShadows=True
+  shot r00-hangar-intro-cinematic lum=0.327 dark%=0.1 white%=0.00
+== r00-hangar scene=Room00_Hangar bounds center=(-1.2, -0.3, -130.9) size=(149.1, 83.9, 113.9) renderers=753
+  light HangarSector/Bridge/RobotWash Spot Realtime I=5.50 range=7.0 col=FFBD85 shadows=None active=True
+  light HangarSector/Bridge/RobotWash Spot Realtime I=5.50 range=7.0 col=FFBD85 shadows=None active=True
+  light HangarSector/Bridge/RobotWash Spot Realtime I=5.50 range=7.0 col=FFBD85 shadows=None active=True
+  light HangarSector/Bridge/BridgeLamp/Spot Spot Realtime I=13.34 range=10.0 col=FF9440 shadows=None active=True
+  light HangarSector/Bridge/BridgeLamp/Spot Spot Realtime I=13.30 range=10.0 col=FF9440 shadows=None active=True
+  light HangarSector/Bridge/BridgeLamp/Spot Spot Realtime I=0.56 range=10.0 col=FF9440 shadows=None active=True
+  light HangarSector/Bridge/BridgeLamp/Spot Spot Realtime I=13.25 range=10.0 col=FF9440 shadows=None active=True
+  light HangarSector/Bridge/BannerWash Spot Realtime I=6.00 range=12.0 col=FF734C shadows=None active=True
+  light HangarSector/Lights/Moon Directional Realtime I=0.60 range=0.0 col=738CBF shadows=None active=True
+  light HangarSector/Lights/WarmFill Point Realtime I=1.60 range=6.0 col=FF8033 shadows=None active=True
+  light HangarSector/Lights/BridgeBounce Point Realtime I=4.00 range=16.0 col=597399 shadows=None active=True
+  light HangarSector/Lights/HallTube0/Down Spot Realtime I=8.88 range=10.0 col=FFD19E shadows=None active=True
+  light HangarSector/Lights/HallTube1/Down Spot Realtime I=8.52 range=10.0 col=FFD19E shadows=None active=True
+  light HangarSector/Lights/HallTube2/Down Spot Realtime I=8.50 range=10.0 col=FFD19E shadows=None active=True
+  light HangarSector/Lights/Beacon/BeaconSpot Spot Realtime I=6.00 range=22.0 col=FF1F14 shadows=None active=True
+  light HangarSector/Capsule_C04/PodCyan Point Realtime I=0.85 range=3.0 col=40D9FF shadows=None active=True
+  light HangarSector/OverheadLamp/KeySpot Spot Realtime I=15.35 range=11.0 col=FFDEB8 shadows=Soft active=True
+  light HangarSector/PodRim Point Realtime I=3.00 range=5.5 col=6699FF shadows=None active=True
+  light HangarSector/ConveyorPit/PitGlow Point Realtime I=16.00 range=24.0 col=FF7329 shadows=None active=True
+  light HangarSector/ConveyorPit/PitGlow Point Realtime I=16.00 range=24.0 col=FF7329 shadows=None active=True
+  light HangarSector/ConveyorPit/PitGlow Point Realtime I=16.00 range=24.0 col=FF7329 shadows=None active=True
+  light HangarSector/ConveyorPit/PitGlow Point Realtime I=16.00 range=24.0 col=FF7329 shadows=None active=True
+  light HangarSector/SectorLamps/WorkLamp0/Down Spot Realtime I=18.83 range=15.0 col=FFD19E shadows=None active=True
+  light HangarSector/SectorLamps/WorkLamp1/Down Spot Realtime I=16.84 range=15.0 col=FFD19E shadows=None active=True
+  light HangarSector/SectorLamps/WorkLamp2/Down Spot Realtime I=9.44 range=15.0 col=FFD19E shadows=None active=True
+  light HangarSector/SectorLamps/ExitGlow Point Realtime I=2.81 range=9.0 col=FF8033 shadows=None active=True
+  light HangarSector/ScrapZones/ScrapGlow Point Realtime I=2.72 range=9.0 col=FF8C40 shadows=None active=True
+  light HangarSector/ScrapZones/ScrapGlow Point Realtime I=3.13 range=9.0 col=FF8C40 shadows=None active=True
+  light WakeUpCinematic/HeroKey Spot Realtime I=0.00 range=9.0 col=D9EBFF shadows=None active=False
+  light mixamorig:Spine2/mixamorig:Neck/mixamorig:Head/VisorGlow Point Realtime I=0.00 range=1.1 col=59E6FF shadows=None active=False
+  light mixamorig:RightShoulder/mixamorig:RightArm/mixamorig:RightForeArm/CannonGlow Point Realtime I=0.00 range=1.6 col=4CE6FF shadows=None active=False
+  volume HangarSector/HG_PostVolume global=True prio=20 weight=1.00 profile=HG_GameplayVolume active=True
+  comp GapFallRecovery on HangarSector/ConveyorPit/PitFallRecovery enabled=True
+  ambient mode=Trilight sky=45474F I=1.00 fog=True fogMode=Exponential fogCol=0F1113 density=0.016 lin=0-300
+  errorMaterials=0 nullMaterialSlots=0 missingScripts=0
+  shaders Universal Render Pipeline/Litx487, Universal Render Pipeline/Unlitx64, TextMeshPro/Mobile/Distance Fieldx2, IronRequiem/HardSurfacex200
+  topMaterials HG_Trimx212, HG_Platex77, Scrap_RustedWreckage_HSx70, HG_Hazardx69, Scrap_MilitaryMech_HSx69, Scrap_MachineWreck_HSx61, HG_Hosex35, HG_Windowx31
+  navmesh levels=0/2.5/3/3.5/4/4.5/5 samples=485 navWithoutFloorCollider=0 
+  floatingCandidates=8
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+    float HangarSector/ConveyorPit/BrokenRailing/Rail gap=1.00
+  stack bloom active=True thr=1.1 int=0.25 scatter=0.65 | tonemap=Neutral | exposure=0.1 contrast=14 sat=-14 filter=EDFAFF | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.2 | chromatic=0 | lens=0 | grain=0.1
+  shot r00-hangar-pano-0 lum=0.075 dark%=41.1 white%=0.00
+  shot r00-hangar-pano-90 lum=0.059 dark%=60.1 white%=0.00
+  shot r00-hangar-pano-180 lum=0.093 dark%=49.2 white%=0.00
+  shot r00-hangar-pano-270 lum=0.056 dark%=70.6 white%=0.00
+  shot r00-hangar-overview-a lum=0.023 dark%=97.3 white%=0.00
+  shot r00-hangar-overview-b lum=0.026 dark%=95.0 white%=0.00
+  shot r00-hangar-route-exit lum=0.078 dark%=42.7 white%=0.00
+  route r00-hangar exitDoor=(0.0, 2.4, -84.0) distance=24.0 visible=True
+  shot r00-airlock-cycle lum=0.207 dark%=6.9 white%=0.00
+== r00b-corridor scene=Room00b_AlarmCorridor bounds center=(0.0, 4.3, -52.4) size=(20.0, 10.4, 35.2) renderers=142
+  light AlarmCorridor/Lights/Tube/Down Spot Realtime I=13.51 range=13.5 col=FFD1A6 shadows=None active=True
+  light AlarmCorridor/Lights/Tube/Down Spot Realtime I=13.40 range=13.5 col=FFD1A6 shadows=None active=True
+  light AlarmCorridor/Lights/Tube/Down Spot Realtime I=13.50 range=13.5 col=FFD1A6 shadows=None active=True
+  light AlarmCorridor/Lights/Tube/Down Spot Realtime I=7.36 range=13.5 col=FFD1A6 shadows=None active=True
+  light AlarmCorridor/Lights/Tube/Down Spot Realtime I=13.25 range=13.5 col=FFD1A6 shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light Lights/Beacon/Spin/BeaconSpot Spot Realtime I=14.00 range=16.0 col=FF1A0F shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light Lights/Beacon/Spin/BeaconSpot Spot Realtime I=14.00 range=16.0 col=FF1A0F shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light Lights/Beacon/Spin/BeaconSpot Spot Realtime I=14.00 range=16.0 col=FF1A0F shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light AlarmCorridor/Lights/AlarmRed Point Realtime I=2.80 range=9.0 col=FF140D shadows=None active=True
+  light Lights/Beacon/Spin/BeaconSpot Spot Realtime I=14.00 range=16.0 col=FF1A0F shadows=None active=True
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  comp CorridorAlarm on AlarmCorridor/RoomEncounter enabled=True
+  comp EnemyStateLights on T07_Current_Repaired enabled=True
+  comp EnemyStateLights on T07_Current_Repaired enabled=True
+  ambient mode=Trilight sky=43454D I=1.00 fog=True fogMode=Exponential fogCol=0F1113 density=0.0171587 lin=0-300
+  errorMaterials=0 nullMaterialSlots=0 missingScripts=0
+  shaders Universal Render Pipeline/Litx63, TextMeshPro/Mobile/Distance Fieldx6, Universal Render Pipeline/Unlitx12, IronRequiem/HardSurfacex104, Universal Render Pipeline/Particles/Unlitx5
+  topMaterials Hit_T07_URP_f8f0f1_HSx42, Hit_ExposedMechanism_2a213b_HSx36, HG_Trimx22, IR_V35_FloorGuidex12, VO_Suit_Jointx12, HG_Platex11, HG_PlateDarkx10, HG_Hazardx8
+  navmesh levels=0/0.5/1.5 samples=210 navWithoutFloorCollider=0 
+  floatingCandidates=0
+  stack bloom active=True thr=0.9 int=0.1 scatter=0.7 | tonemap=ACES | exposure=0 contrast=0 sat=0 filter=FFFFFF | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.084 | chromatic=0 | lens=0 | grain=0.3
+  shot r00b-corridor-pano-0 lum=0.120 dark%=36.6 white%=0.00
+  shot r00b-corridor-pano-90 lum=0.097 dark%=54.7 white%=0.00
+  shot r00b-corridor-pano-180 lum=0.140 dark%=33.1 white%=0.00
+  shot r00b-corridor-pano-270 lum=0.070 dark%=62.5 white%=0.00
+  shot r00b-corridor-overview-a lum=0.058 dark%=59.9 white%=0.00
+  shot r00b-corridor-overview-b lum=0.088 dark%=43.0 white%=0.00
+  shot r00b-corridor-wave-alarm lum=0.116 dark%=43.2 white%=0.00
+  shot r00b-corridor-deaths lum=0.118 dark%=42.9 white%=0.00
+  shot r00b-corridor-route-exit lum=0.111 dark%=49.2 white%=0.00
+  route r00b-corridor exitDoor=(0.0, 3.5, -35.0) distance=27.1 visible=True
+  shot r00c-lobby-station lum=0.231 dark%=11.5 white%=0.00
+  shot r00c-lobby-station-sequence lum=0.213 dark%=9.4 white%=0.00
+== r01-foundry scene=Room01_Foundry bounds center=(0.0, 3.5, -1.3) size=(71.0, 25.0, 82.5) renderers=257
+  light TwoFloorsGeometry/Room01Ceiling/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=FFA86B shadows=None active=True
+  light TwoFloorsGeometry/Room01Ceiling/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=FFA86B shadows=None active=True
+  light TwoFloorsGeometry/Room01Ceiling/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=FFA86B shadows=None active=True
+  light TwoFloorsGeometry/Room01Ceiling/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=FFA86B shadows=None active=True
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  light T07_DestructionPools/RobotBodyBurst_CombatPolish_IR(Clone)/VO_Flash Point Realtime I=0.00 range=9.0 col=FF9E4C shadows=None active=False
+  probe SectorReflection mode=Baked refresh=OnAwake res=128 baked=none box=(54.0, 14.0, 56.0) hdr=True
+  volume VisualPass_SectorGrade global=True prio=10 weight=0.23 profile=Sector_Room01_Foundry active=True
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/SawBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/SawBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/HoverBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/HoverBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/SawBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Mech enabled=False
+  comp EnemyStateLights on HoverBot_Current enabled=True
+  comp EnemyStateLights on SawBot_Current enabled=True
+  ambient mode=Trilight sky=5F5042 I=1.00 fog=True fogMode=ExponentialSquared fogCol=251912 density=0.016 lin=0-300
+  errorMaterials=0 nullMaterialSlots=0 missingScripts=0
+  shaders Universal Render Pipeline/Litx16, IronRequiem/HardSurfacex239, TextMeshPro/Mobile/Distance Fieldx2, Universal Render Pipeline/Unlitx2
+  topMaterials CP_Cablex94, VO_Env_RustMetalx59, IR_V35_FloorGuidex27, CP_Wallx19, IR_V35_NightWindowx14, SawBot_URPx12, IR_V35_FoundryGlowx9, CP_VoidShellx6
+  navmesh levels=0/0.5/4/12.5 samples=2489 navWithoutFloorCollider=0 
+  floatingCandidates=0
+  stack bloom active=True thr=0.9 int=0.1 scatter=0.7 | tonemap=ACES | exposure=0.0218549 contrast=2.622588 sat=-0.8741959 filter=FFFCF8 | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.084 | chromatic=0 | lens=0 | grain=0.3
+  shot r01-foundry-pano-0 lum=0.153 dark%=16.8 white%=0.00
+  shot r01-foundry-pano-90 lum=0.170 dark%=33.8 white%=0.00
+  shot r01-foundry-pano-180 lum=0.199 dark%=20.7 white%=0.00
+  shot r01-foundry-pano-270 lum=0.156 dark%=12.1 white%=0.00
+  shot r01-foundry-overview-a lum=0.075 dark%=68.1 white%=0.00
+  shot r01-foundry-overview-b lum=0.056 dark%=66.9 white%=0.00
+  reach r01-foundry round1: complete=6 partial=0 invalid=0 offNavMesh=0
+  shot r01-foundry-round1 lum=0.131 dark%=29.6 white%=0.00
+  shot r01-foundry-route-exit lum=0.130 dark%=37.2 white%=0.00
+  route r01-foundry exitDoor=(27.0, 3.8, 25.0) distance=52.5 visible=True
+  shot r01-foundry-airlock-inside lum=0.118 dark%=53.2 white%=0.00
+  shot r01-foundry-airlock-exit lum=0.156 dark%=46.8 white%=0.00
+== r02-breach scene=Room02_Breach bounds center=(0.0, 11.8, -3.5) size=(71.0, 25.6, 78.0) renderers=245
+  light TwoFloorsGeometry/Roof/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=BDD6FF shadows=None active=True
+  light TwoFloorsGeometry/Roof/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=BDD6FF shadows=None active=True
+  light TwoFloorsGeometry/Roof/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=BDD6FF shadows=None active=True
+  light TwoFloorsGeometry/Roof/MountedCeilingFixture/CeilingLight Point Realtime I=6.00 range=32.0 col=BDD6FF shadows=None active=True
+  probe SectorReflection mode=Baked refresh=OnAwake res=128 baked=none box=(54.0, 15.0, 56.0) hdr=True
+  volume VisualPass_SectorGrade global=True prio=10 weight=1.00 profile=Sector_Room02_Breach active=True
+  comp GapFallRecovery on GapFallRecovery enabled=True
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Current_Repaired enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/SawBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/SawBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/HoverBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/HoverBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/HoverBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Mech enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/BigBot_Current enabled=False
+  comp EnemyStateLights on RoomEncounter/EnemySpawnQueue_Prewarmed/T07_Mech enabled=False
+  ambient mode=Trilight sky=45474F I=1.00 fog=True fogMode=ExponentialSquared fogCol=0F1113 density=0.016 lin=0-300
+  errorMaterials=0 nullMaterialSlots=0 missingScripts=0
+  shaders Universal Render Pipeline/Litx2, IronRequiem/HardSurfacex240, TextMeshPro/Mobile/Distance Fieldx3
+  topMaterials CP_Cablex96, VO_Env_RustMetalx65, IR_V35_FloorGuidex23, CP_Wallx22, IR_V35_NightWindowx15, CP_VoidShellx6, VO_Env_Hazardx5, VO_Light_Coldx4
+  navmesh levels=8/8.5/12/21.5 samples=1944 navWithoutFloorCollider=0 
+  floatingCandidates=0
+  stack bloom active=True thr=0.9 int=0.1 scatter=0.7 | tonemap=ACES | exposure=0.1 contrast=14 sat=-12 filter=F0FAFF | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.084 | chromatic=0 | lens=0 | grain=0.3
+  shot r02-breach-pano-0 lum=0.108 dark%=33.7 white%=0.00
+  shot r02-breach-pano-90 lum=0.143 dark%=53.7 white%=0.00
+  shot r02-breach-pano-180 lum=0.217 dark%=34.2 white%=0.00
+  shot r02-breach-pano-270 lum=0.128 dark%=22.6 white%=0.00
+  shot r02-breach-overview-a lum=0.077 dark%=65.7 white%=0.00
+  shot r02-breach-overview-b lum=0.074 dark%=64.1 white%=0.00
+  shot r02-breach-gap-before-jump lum=0.116 dark%=29.4 white%=0.00
+  gap jump ok, landed (0.0, 9.7, 5.1)
+  reach r02-breach round1: complete=6 partial=0 invalid=0 offNavMesh=0
+  shot r02-breach-round1 lum=0.188 dark%=5.8 white%=0.00

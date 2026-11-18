@@ -9,6 +9,8 @@ namespace IronRequiem
         [SerializeField] StolenWeaponCarrier carrier;
         [SerializeField] TMP_Text status;
         [SerializeField] TMP_Text prompt;
+        [SerializeField] bool compactStatus;
+        public void ConfigureCompactStatus(bool compact)=>compactStatus=compact;
         bool lastDash, lastArmed, lastActive, lastBurst, lastSaw, lastUnarmed, initialized;
         ProtagonistMelee melee;
         int lastEnergy = int.MinValue, lastCharge = -1, lastSeconds = -1, lastPromptSeconds = -1;
@@ -33,8 +35,14 @@ namespace IronRequiem
             if (!initialized || dash != lastDash || energy != lastEnergy || armed != lastArmed || active != lastActive || charge != lastCharge || seconds != lastSeconds || burst != lastBurst || saw != lastSaw || unarmed != lastUnarmed)
             {
                 // v5: right-hand strike on F (hold to charge); unarmed, M1 strikes too
-                status.text = (movement ? "DASH  " + (dash ? "LISTO [CTRL]" : "SIN CARGA") : "") +
-                    (melee ? "\nGOLPE  [F]" + (unarmed ? " / [M1]" : " MECÁNICO") + " · MANTENER [F] CARGA" : "") +
+                if(compactStatus)
+                {
+                    if(!initialized||dash!=lastDash||unarmed!=lastUnarmed)
+                        status.text=unarmed?(dash?"CTRL  DASH LISTO\nF  CARGAR PUÑO  ·  M1  GOLPE DERECHO":"CTRL  DASH RECARGANDO\nF  CARGAR PUÑO  ·  M1  GOLPE DERECHO"):
+                            (dash?"CTRL  DASH LISTO\nF  CARGAR ANTEBRAZO  ·  G  EXPULSAR":"CTRL  DASH RECARGANDO\nF  CARGAR ANTEBRAZO  ·  G  EXPULSAR");
+                }
+                else status.text = (movement ? "DASH  " + (dash ? "LISTO [CTRL]" : "SIN CARGA") : "") +
+                    (melee ? "\nGOLPE IZQ.  [F]" + (unarmed ? " · DER. [M1]" : "") + " · MANTENER [F] CARGA" : "") +
                     (energy >= 0 ? "\nENERGÍA  " + energy + "/" + Mathf.CeilToInt(module.Ammo.Capacity) + (active ? "" : "  (guardado)") +
                     "\n" + (armed ? "PELIGRO · OVERDRIVE " + (seconds / 10f).ToString("0.0") + " s\n[G] LANZAR AHORA" : saw ? "MOTOSIERRA · MANTENER [M1]\n[G] SOLTAR" : burst ? "RÁFAGA · 3 PROYECTILES [M1]\n[G] SOLTAR" : "CARGA  " + charge + "% [M1]\n[G] SOLTAR") : "");
                 status.color = armed ? new Color(1, .55f, .15f) : Color.white;

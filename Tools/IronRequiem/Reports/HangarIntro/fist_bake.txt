@@ -1,0 +1,29 @@
+Fist bake 11/13/2026 6:51:57 PM — rig Player_ModularArm_v07 (ProtagonistV01 FPS)
+
+== Mano L: normalPalma=cross(Index1-Little1, Hand→Middle1) correcta N(local mano)=(1.00,0.07,0.00) superficie palma=31.1mm
+dedo   | X1 objetivo→final | X2 | X3 | eje local X1 / X2 / X3 | prueba de signo | punta→palma (malla) | holgura con el dedo vecino (malla)
+Index  | 85→75.4° | 102→100.0° | 65→62.5° | (0.00,0.00,-1.00) (0.00,0.00,-1.00) (0.00,0.00,-1.00) | pasó | 1.9 mm | Middle -29.9 mm
+         la bind ya traía: X1 23.0° X2 35.5° X3 28.6°
+Middle | 90→85.4° | 102→95.0° | 65→45.0° | (0.00,0.00,-1.00) (0.00,0.00,-1.00) (0.00,0.00,-1.00) | pasó | -15.5 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | Ring -28.5 mm
+         la bind ya traía: X1 24.4° X2 28.9° X3 27.2°
+Ring   | 92→87.2° | 102→95.0° | 65→40.0° | (0.00,0.00,-1.00) (0.00,0.00,-1.00) (0.00,0.00,-1.00) | pasó | -17.9 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | Little -14.3 mm
+         la bind ya traía: X1 23.9° X2 31.1° X3 27.8°
+Little | 95→99.3° | 102→125.0° | 65→85.0° | (0.00,0.00,-1.00) (0.00,0.00,-1.00) (0.00,0.00,-1.00) | pasó | -5.5 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | -
+         la bind ya traía: X1 22.4° X2 38.3° X3 28.9°
+Pulgar | Thumb1 oposición 52.5° + hacia índice 30.0° · Thumb2 17.5° · Thumb3 45.0° · FUERA de los rangos pedidos · yema→falange media índice/medio 53.5 mm · peor penetración del pulgar en los dedos 30.8 mm
+Palma: peor penetración de dedos en la palma -43.0 mm (negativo = atraviesa)
+Medidas sobre la malla deformada real (BakeMesh): vértice más cercano con signo por la normal. Twist: giros solo sobre ejes perpendiculares al hueso. Escalas 1,1,1.
+
+== Mano R: normalPalma=cross(Index1-Little1, Hand→Middle1) invertida (apuntaba al dorso) N(local mano)=(-1.00,0.07,0.00) superficie palma=29.5mm
+dedo   | X1 objetivo→final | X2 | X3 | eje local X1 / X2 / X3 | prueba de signo | punta→palma (malla) | holgura con el dedo vecino (malla)
+Index  | 85→82.6° | 102→100.0° | 65→60.0° | (0.00,0.00,1.00) (0.00,0.00,1.00) (0.00,0.00,1.00) | pasó | 2.5 mm | Middle -31.7 mm
+         la bind ya traía: X1 23.0° X2 35.5° X3 28.6°
+Middle | 90→85.4° | 102→95.0° | 65→40.0° | (0.00,0.00,1.00) (0.00,0.00,1.00) (0.00,0.00,1.00) | pasó | -22.2 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | Ring -21.9 mm
+         la bind ya traía: X1 24.4° X2 28.9° X3 27.2°
+Ring   | 92→116.2° | 102→115.0° | 65→40.0° | (0.00,0.00,1.00) (0.00,0.00,1.00) (0.00,0.00,1.00) | pasó | -17.2 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | Little -12.0 mm
+         la bind ya traía: X1 24.0° X2 31.1° X3 27.8°
+Little | 95→118.6° | 102→120.0° | 65→50.0° | (0.00,0.00,1.00) (0.00,0.00,1.00) (0.00,0.00,1.00) | pasó | -5.5 mm (ÁNGULOS FUERA DEL RANGO PEDIDO) | -
+         la bind ya traía: X1 22.4° X2 38.3° X3 28.9°
+Pulgar | Thumb1 oposición 15.0° + hacia índice 45.0° · Thumb2 55.0° · Thumb3 37.5° · FUERA de los rangos pedidos · yema→falange media índice/medio 18.8 mm · peor penetración del pulgar en los dedos 10.6 mm
+Palma: peor penetración de dedos en la palma -38.7 mm (negativo = atraviesa)
+Medidas sobre la malla deformada real (BakeMesh): vértice más cercano con signo por la normal. Twist: giros solo sobre ejes perpendiculares al hueso. Escalas 1,1,1.

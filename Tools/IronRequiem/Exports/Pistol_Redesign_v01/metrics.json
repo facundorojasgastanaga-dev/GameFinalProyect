@@ -1,0 +1,271 @@
+{
+  "weapon": "PistolMonolito",
+  "folder": "Tools/IronRequiem/Exports/Pistol_Redesign_v01",
+  "concept": "Docs/IronRequiem/Concepts/Weapons/Redesign_v01/Pistol (P-A Monolito)",
+  "generated": "2026-11-16 20:39",
+  "blender": "5.2.3 LTS",
+  "budget_lod0": 1300,
+  "tris": {
+    "LOD0": 1256,
+    "LOD1": 628,
+    "LOD2": 314
+  },
+  "lod_ratios": [
+    1.0,
+    0.5,
+    0.25
+  ],
+  "parts": 24,
+  "materials": [
+    "PistolMonolito_Surface",
+    "Heat_Emissive"
+  ],
+  "tris_per_slot_lod0": {
+    "PistolMonolito_Surface": 1156,
+    "Heat_Emissive": 100
+  },
+  "textures": {
+    "BaseColor": {
+      "file": "PistolMonolito_BaseColor.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "Emission": {
+      "file": "PistolMonolito_Emission.png",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    "MetalSmooth": {
+      "file": "PistolMonolito_MetalSmooth.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "texture_notes": {
+    "BaseColor": "sRGB",
+    "MetalSmooth": "lineal: R=G=B metalico, A=smoothness (URP/Lit _MetallicGlossMap, Source = Metallic Alpha)",
+    "Emission": "sRGB: cian = estado (Surface), blanco = zonas tintables (Heat_Emissive / Charge_Emissive), negro = sin emision",
+    "Normal": "no se hornea: biseles reales + Weighted Normal; importar normales del FBX"
+  },
+  "bake_seconds": {
+    "base": 5.1,
+    "metal": 1.1,
+    "smooth": 2.6,
+    "emit": 0.3
+  },
+  "bake_stats": {
+    "metal_mean": 0.361,
+    "smooth_mean": 0.368,
+    "smooth_range": [
+      0.0,
+      0.861
+    ]
+  },
+  "uv": {
+    "texel_px_per_m": 1350.0,
+    "texel_note": "densidad de las caras visibles (las enterradas usan 8 %)",
+    "uv_fill": 0.4592,
+    "area_visible_m2": 0.264,
+    "area_total_m2": 0.32192,
+    "hidden_tris": 144,
+    "stacked_copy_tris": 44,
+    "stacked_groups": [
+      "collar_lock"
+    ],
+    "uv_downscale": 0.9997,
+    "covered_px_512": 120267,
+    "overlap_px_512": 0,
+    "overlap_pct": 0.0
+  },
+  "topology": {
+    "duplicate_faces": 0,
+    "hidden_tris": 144,
+    "open_parts": [],
+    "parts_checked": 24
+  },
+  "dimensions_lod0_blender": [
+    0.108,
+    0.379,
+    0.1355
+  ],
+  "bounds_lod0_blender": {
+    "min": [
+      -0.054,
+      -0.379,
+      -0.062
+    ],
+    "max": [
+      0.054,
+      0.0,
+      0.0735
+    ]
+  },
+  "length_attachment_to_muzzle": 0.379,
+  "sockets": {
+    "Attachment": [
+      0,
+      0,
+      0
+    ],
+    "Muzzle": [
+      0,
+      -0.379,
+      0
+    ],
+    "unity_attachment": [
+      0,
+      0,
+      0
+    ],
+    "unity_muzzle": [
+      0,
+      0,
+      0.379
+    ]
+  },
+  "heat_step_attribute": "Color de vertice HeatStep (R 0..1) en las caras de Heat_Emissive; 0 en el resto",
+  "verification": {
+    "file": "PistolMonolito.fbx",
+    "checks": {
+      "unique_attachment": true,
+      "attachment_at_origin": true,
+      "muzzle_on_axis": true,
+      "muzzle_length": 0.379,
+      "nothing_behind_attachment": true,
+      "all_triangulated": true,
+      "slot_names": true,
+      "muzzle_face_normal_minus_y": true,
+      "socket_depth_ge_6mm": true,
+      "socket_diameter_066": true,
+      "collar_080_092": true,
+      "flat_back_face_y0": true
+    },
+    "nodes": [
+      "Attachment",
+      "Muzzle",
+      "PistolMonolito_LOD0",
+      "PistolMonolito_LOD1",
+      "PistolMonolito_LOD2"
+    ],
+    "attachment_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "muzzle_world": [
+      0.0,
+      -0.379,
+      0.0
+    ],
+    "lods": {
+      "PistolMonolito_LOD0": {
+        "tris": 1256,
+        "polys": 1256,
+        "all_triangles": true,
+        "materials": [
+          "PistolMonolito_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.054,
+          -0.379,
+          -0.062
+        ],
+        "bounds_max": [
+          0.054,
+          0.0,
+          0.0735
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "PistolMonolito_LOD1": {
+        "tris": 628,
+        "polys": 628,
+        "all_triangles": true,
+        "materials": [
+          "PistolMonolito_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.053,
+          -0.3786,
+          -0.062
+        ],
+        "bounds_max": [
+          0.053,
+          0.0,
+          0.0728
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      "PistolMonolito_LOD2": {
+        "tris": 314,
+        "polys": 314,
+        "all_triangles": true,
+        "materials": [
+          "PistolMonolito_Surface",
+          "Heat_Emissive"
+        ],
+        "bounds_min": [
+          -0.053,
+          -0.3786,
+          -0.0588
+        ],
+        "bounds_max": [
+          0.053,
+          0.0,
+          0.0718
+        ],
+        "color_attributes": [
+          "HeatStep"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    },
+    "max_y_all_lods": 0.0,
+    "muzzle_faces": 28,
+    "socket_depth_min": 0.008,
+    "socket_diameter_min": 0.066,
+    "socket_diameter_max": 0.06702,
+    "collar_outer_diameter": 0.091,
+    "collar_outer_diameter_min": 0.0888,
+    "all_pass": true
+  },
+  "renders": {
+    "34": "PistolMonolito_render_34.png",
+    "perfil": "PistolMonolito_render_perfil.png",
+    "fps": "PistolMonolito_render_fps.png",
+    "comparacion": "PistolMonolito_render_comparacion.png"
+  },
+  "fbx": {
+    "file": "PistolMonolito.fbx",
+    "sha256": "1d8deca0f1dbc43ef7a38eae937b3562988e2bc77d1a7269112067b57913c566",
+    "bytes": 107340
+  },
+  "working_blend": "Tools/IronRequiem/Blender/Working/WeaponsRedesign_v01/PistolMonolito.blend",
+  "engine": "BLENDER_EEVEE",
+  "seconds": 45.2,
+  "notes": [
+    "Collar del boceto (diam. 0,090, 22 mm) sustituido por el collar IR-ACOPLE-01 de 32 mm; el adaptador empieza en 0,032.",
+    "Muzzle_Rim/Muzzle_Edge ya no comparten la cara frontal (el boceto tenia caras coplanares)."
+  ],
+  "heat_parts": "VentSlot0..4 (HeatStep 0, .25, .5, .75, 1 de atras a delante)"
+}

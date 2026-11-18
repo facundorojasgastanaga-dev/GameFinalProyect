@@ -27,6 +27,12 @@ namespace IronRequiem
         [SerializeField] AudioListener cinematicListener;
         [SerializeField] ShotPath[] shots = new ShotPath[0];
         [SerializeField] WakeUpRobotPose pose;
+        [Header("Scavenger reveal")]
+        [SerializeField] bool shoulderReveal = true;
+        [SerializeField, Min(.1f)] float shoulderDistance = 1.15f;
+        [SerializeField, Min(.05f)] float shoulderSide = .4f;
+        [SerializeField, Min(.01f)] float cameraClearance = .16f;
+        readonly RaycastHit[] cameraHits = new RaycastHit[32];
         [SerializeField] CapsuleRobotIdle robotPower;
         [SerializeField] CampaignRoom room;
         [SerializeField] Transform standPoint;
@@ -203,7 +209,42 @@ namespace IronRequiem
                 else if (s.to) { toPos = s.to.position; toRot = s.to.rotation; }
                 else { toPos = s.from.position; toRot = s.from.rotation; }
                 s.camera.SetPositionAndRotation(Vector3.Lerp(s.from.position, toPos, k) + Shake(t), Quaternion.Slerp(s.from.rotation, toRot, k));
+                // The reveal shot follows the body's existing planted-foot turn. The head-flight path stays authored.
+                if (shoulderReveal && pose && !s.endAtHead && s.start >= pose.Times.turnEnd)
+                    PlaceShoulderReveal(s.camera, t);
             }
+        }
+
+        void PlaceShoulderReveal(Transform shot, float time)
+        {
+            if (time < pose.Times.turnEnd || time > pose.Times.turnBackEnd + 1.6f) return;
+            var forward = Vector3.ProjectOnPlane(pose.BodyFacing, Vector3.up).normalized;
+            if (forward.sqrMagnitude < .5f) return;
+            var right = Vector3.Cross(Vector3.up, forward);
+            var pivot = pose.BodyCenter + Vector3.up * .38f;
+            var desired = pivot - forward * shoulderDistance + right * shoulderSide + Vector3.up * .18f;
+            if(!ClearShoulderPosition(pivot,desired,out var position) &&
+               !ClearShoulderPosition(pivot,pivot-forward*shoulderDistance-right*shoulderSide+Vector3.up*.3f,out position) &&
+               !ClearShoulderPosition(pivot,pivot-forward*.8f+right*.7f+Vector3.up*.65f,out position)) return;
+            var look = pivot + forward * 4f - Vector3.up * .12f;
+            shot.SetPositionAndRotation(position, Quaternion.LookRotation(look - position, Vector3.up));
+        }
+
+        bool ClearShoulderPosition(Vector3 pivot,Vector3 desired,out Vector3 position)
+        {
+            var delta = desired - pivot;
+            int count = Physics.SphereCastNonAlloc(pivot, cameraClearance, delta.normalized,
+                cameraHits, delta.magnitude, ~0, QueryTriggerInteraction.Ignore);
+            float distance = delta.magnitude;
+            // O(N), N <= 32 hits. Ignore the hero; all other collision geometry constrains the camera boom.
+            for (int i = 0; i < count; i++)
+            {
+                var hit = cameraHits[i];
+                if (!hit.collider || hit.collider.transform.IsChildOf(pose.Model)) continue;
+                distance = Mathf.Min(distance, Mathf.Max(0, hit.distance - .04f));
+            }
+            position = pivot + delta.normalized * distance;
+            return distance>=.6f;
         }
 
         float kickAt = -10, kickAmp;

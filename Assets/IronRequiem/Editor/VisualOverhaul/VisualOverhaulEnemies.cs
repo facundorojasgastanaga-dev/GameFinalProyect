@@ -92,11 +92,18 @@ namespace IronRequiem.Editor
         public static GameObject BurstVariant(GameObject burst)
         {
             if (!burst) return null;
+            // 17/11/2026 (MAP_FX E1): idempotent. A burst that is already a _VO variant resolves to its original (no _VO_VO
+            // chains), and the multipliers are absolute from the variant's source instead of compounding on every rebuild.
+            while (burst.name.EndsWith("_VO", StringComparison.Ordinal) && PrefabUtility.GetCorrespondingObjectFromSource(burst) is GameObject baseBurst) burst = baseBurst;
             string dest = FxFolder + "/" + burst.name + "_VO.prefab"; Variant(AssetDatabase.GetAssetPath(burst), dest);
             var root = PrefabUtility.LoadPrefabContents(dest);
             try
             {
-                foreach (var ps in root.GetComponentsInChildren<ParticleSystem>(true)) { var main = ps.main; main.startSizeMultiplier *= 1.35f; main.startSpeedMultiplier *= 1.15f; }
+                foreach (var ps in root.GetComponentsInChildren<ParticleSystem>(true))
+                {
+                    var src = PrefabUtility.GetCorrespondingObjectFromSource(ps); if (!src) continue;
+                    var main = ps.main; main.startSizeMultiplier = src.main.startSizeMultiplier * 1.35f; main.startSpeedMultiplier = src.main.startSpeedMultiplier * 1.15f;
+                }
                 var flash = root.transform.Find("VO_Flash")?.GetComponent<Light>();
                 if (!flash) { var go = new GameObject("VO_Flash"); go.transform.SetParent(root.transform, false); flash = go.AddComponent<Light>(); }
                 flash.type = LightType.Point; flash.range = 9; flash.color = new Color(1f, .62f, .3f); flash.intensity = 0; flash.shadows = LightShadows.None; flash.lightmapBakeType = LightmapBakeType.Realtime; flash.enabled = false;

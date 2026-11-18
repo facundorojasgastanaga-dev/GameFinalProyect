@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace IronRequiem
 {
-    /// v4 charged punch presentation: cyan energy builds on the left fist while M1 is held, the charge hum
+    /// Charged punch presentation: cyan energy follows the active fist or mounted forearm while F is held; the charge hum
     /// rises in pitch, and a full charge flashes. Reads ProtagonistMelee only; no gameplay here. Zero GC per frame.
     [DefaultExecutionOrder(120)]
     public sealed class FistChargePresentation : MonoBehaviour
@@ -18,6 +18,8 @@ namespace IronRequiem
         [SerializeField,Min(0)] float glowIntensity=2.4f;
         [SerializeField] float energyRateStart=8,energyRateFull=70;
         float flash;
+        ProtagonistHandsPresentation hands;
+        void Awake(){hands=GetComponentInParent<ProtagonistHandsPresentation>();}
         public float Flash=>flash;
         public void Configure(ProtagonistMelee attack,Transform hand,ParticleSystem build,ParticleSystem burst,Light light,AudioSource loop,AudioClip full)
         {melee=attack;fist=hand;energy=build;fullBurst=burst;glow=light;hum=loop;fullChargeClip=full;}
@@ -30,11 +32,19 @@ namespace IronRequiem
         {
             if(!melee)return;
             flash=Mathf.MoveTowards(flash,0,Time.unscaledDeltaTime*4f);
-            if(fist)
+            var anchor=fist;
+            if(hands)anchor=melee.ArmedStrike?hands.RightHand:melee.LeftStrike?hands.LeftHandBone:hands.RightHand;
+            if(anchor)
             {
-                if(energy)energy.transform.position=fist.position;
-                if(fullBurst)fullBurst.transform.position=fist.position;
-                if(glow)glow.transform.position=fist.position;
+                Vector3 at=anchor.position;
+                if(hands)
+                {
+                    var forearm=melee.LeftStrike?hands.LeftForearm:hands.RightForearm;
+                    at=melee.ArmedStrike?Vector3.Lerp(forearm.position,anchor.position,.7f):anchor.position+(anchor.position-forearm.position).normalized*.08f;
+                }
+                if(energy)energy.transform.position=at;
+                if(fullBurst)fullBurst.transform.position=at;
+                if(glow)glow.transform.position=at;
             }
             if(!melee.IsCharging){if(glow&&flash<=0)glow.enabled=false;else if(glow){glow.enabled=true;glow.intensity=glowIntensity*2f*flash;}return;}
             float level=melee.ChargeLevel;

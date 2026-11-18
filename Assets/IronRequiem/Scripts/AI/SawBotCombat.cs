@@ -142,7 +142,7 @@ namespace IronRequiem
         void OnDisable(){if(health)health.OnDamaged-=Damaged;CancelAttack();}
         void Update()
         {
-            if(dead){if(coreIndicator&&Time.time-deathAt>.25f)coreIndicator.gameObject.SetActive(false);if(!burst&&Time.time-deathAt>deathBurstDelay){burst=true;RobotDestructionPool.Burst(null,transform.position+Vector3.up*.7f,null,.7f);}return;}
+            if(dead){if(coreIndicator&&Time.time-deathAt>.25f)coreIndicator.gameObject.SetActive(false);if(!burst&&Time.time-deathAt>deathBurstDelay){burst=true;RobotDestructionPool.Burst(deathEffect,null,transform.position+Vector3.up*.7f,null,.7f);}return;}
             if(executionHeld)return;
             if(Visible)lastSeen=Target.transform.position;
             if(sustainedSaw){TickSustainedAttack();return;}

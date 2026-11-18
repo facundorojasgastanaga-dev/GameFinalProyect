@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 15:21:02Z" end-time="2026-11-17 15:21:40Z" duration="37.3173517">
+  <test-suite type="TestSuite" id="1324" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="264" result="Failed" site="Child" start-time="2026-11-17 15:21:02Z" end-time="2026-11-17 15:21:40Z" duration="37.317352" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1318" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="264" result="Failed" site="Child" start-time="2026-11-17 15:21:02Z" end-time="2026-11-17 15:21:40Z" duration="37.239706" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="45896" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1319" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="264" result="Failed" site="Child" start-time="2026-11-17 15:21:02Z" end-time="2026-11-17 15:21:40Z" duration="37.215574" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="264" result="Failed" site="Child" start-time="2026-11-17 15:21:02Z" end-time="2026-11-17 15:21:40Z" duration="37.199786" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-17 15:21:03Z" end-time="2026-11-17 15:21:40Z" duration="37.169803" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1135" name="F_CollisionSuspects" fullname="IronRequiem.Tests.MapFxAudit.F_CollisionSuspects" methodname="F_CollisionSuspects" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1962677580" result="Failed" start-time="2026-11-17 15:21:03Z" end-time="2026-11-17 15:21:40Z" duration="37.111702" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[load Room01_Foundry stage=0 player=(-0.78, 0.00, -107.93)]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MapFxAudit+<Until>d__43.MoveNext () [0x000a9] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MapFxAudit.cs:467
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 4000.2 ms · door+preload 0 / activate 4000 / unload 0 / settle 490 · peak at frame 2/5 load 0.90
+[CampaignTests] Failed F_CollisionSuspects
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

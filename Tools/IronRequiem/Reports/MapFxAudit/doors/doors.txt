@@ -1,0 +1,151 @@
+DOOR audit, Editor Play Mode. stage=0 airlocks=6
+airlock[0] PersistentAirlocks/HangarTransit/ConnectionChamber/ChamberAirlock sourceStage=0 pos=(0.00, 2.00, -79.70) cycle=PersistentAirlocks/HangarTransit/ConnectionChamber trigger=BoxCollider(trigger) (7.0, 4.0, 5.8)
+  cycle lights=2 lamps=2 steam=2 audio=CycleAudio clips=IR_Airlock_Cycle/IR_Airlock_Done
+  source PersistentAirlocks/HangarTransit/ConnectionChamber/ChamberHangarDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: ChamberHangarDoor[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(8.40, 4.80, 0.60)
+    colliders: BoxCollider (8.4, 4.8, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a0-source-ChamberHangarDoor-1-closed active=True y=2.40 lum=0.122 dark%=5.9 white%=0.00
+    shot a0-source-ChamberHangarDoor-1b-cycle-amber active=True y=2.40 lum=0.108 dark%=11.6 white%=0.00
+    shot a0-source-ChamberHangarDoor-2-opening-0.25s active=True y=3.86 lum=0.096 dark%=21.6 white%=0.00
+    shot a0-source-ChamberHangarDoor-2-opening-0.5s active=True y=6.39 lum=0.085 dark%=33.4 white%=0.00
+    shot a0-source-ChamberHangarDoor-3-open active=False y=2.40 lum=0.080 dark%=39.7 white%=0.00
+    shot a0-source-ChamberHangarDoor-4-closing-0.2s active=True y=6.26 lum=0.084 dark%=38.2 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/HangarTransit/ConnectionChamber/ChamberCorridorDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: ChamberCorridorDoor[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(3.80, 4.80, 0.60); DoorRight[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(3.80, 4.80, 0.60); DoorBelow[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(0.80, 1.35, 0.60); DoorAbove[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(0.80, 2.65, 0.60); Porthole[HG_Glass<Universal Render Pipeline/Lit>] bounds=(0.80, 0.80, 0.06); PortholeBar[HG_Trim<Universal Render Pipeline/Lit>] bounds=(0.94, 0.07, 0.06); PortholeBar[HG_Trim<Universal Render Pipeline/Lit>] bounds=(0.94, 0.07, 0.06); PortholeBar[HG_Trim<Universal Render Pipeline/Lit>] bounds=(0.07, 0.94, 0.06); PortholeBar[HG_Trim<Universal Render Pipeline/Lit>] bounds=(0.07, 0.94, 0.06); PortholeCross[HG_Trim<Universal Render Pipeline/Lit>] bounds=(0.03, 0.80, 0.03)
+    colliders: BoxCollider (3.8, 4.8, 0.6),BoxCollider (3.8, 4.8, 0.6),BoxCollider (0.8, 1.4, 0.6),BoxCollider (0.8, 2.7, 0.6),BoxCollider (0.8, 0.8, 0.1) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a0-destination-ChamberCorridorDoor-1-closed active=True y=2.40 lum=0.024 dark%=98.1 white%=0.00
+    shot a0-destination-ChamberCorridorDoor-1b-cycle-amber active=True y=2.40 lum=0.024 dark%=97.5 white%=0.00
+    shot a0-destination-ChamberCorridorDoor-2-opening-0.25s active=True y=4.07 lum=0.024 dark%=98.1 white%=0.00
+    shot a0-destination-ChamberCorridorDoor-2-opening-0.5s active=True y=6.54 lum=0.024 dark%=97.6 white%=0.00
+    shot a0-destination-ChamberCorridorDoor-3-open active=False y=2.40 lum=0.024 dark%=98.1 white%=0.00
+    shot a0-destination-ChamberCorridorDoor-4-closing-0.2s active=True y=6.26 lum=0.024 dark%=98.1 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  extra PersistentAirlocks/HangarTransit/ConnectionChamber/VestibuleShutter scene=RequiemCampaign active=True layer=Default static=False
+    renderers: VestibuleShutter[HG_PlateDark<Universal Render Pipeline/Lit>] bounds=(8.40, 4.80, 0.50); ShutterHazard[HG_Hazard<Universal Render Pipeline/Lit>] bounds=(8.40, 0.58, 0.03)
+    colliders: BoxCollider (8.4, 4.8, 0.5) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a0-extra-VestibuleShutter-1-closed active=True y=2.40 lum=0.025 dark%=96.3 white%=0.00
+    shot a0-extra-VestibuleShutter-1b-cycle-amber active=True y=2.40 lum=0.025 dark%=96.3 white%=0.00
+    shot a0-extra-VestibuleShutter-2-opening-0.25s active=True y=3.93 lum=0.028 dark%=93.3 white%=0.00
+    shot a0-extra-VestibuleShutter-2-opening-0.5s active=True y=6.43 lum=0.028 dark%=93.8 white%=0.00
+    shot a0-extra-VestibuleShutter-3-open active=False y=2.40 lum=0.028 dark%=92.7 white%=0.00
+    shot a0-extra-VestibuleShutter-4-closing-0.2s active=True y=6.24 lum=0.028 dark%=93.8 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+airlock[1] PersistentAirlocks/StartLobby/HangarAirlock sourceStage=1 pos=(0.00, 2.00, -30.20) cycle=none trigger=BoxCollider(trigger) (10.0, 4.0, 5.0)
+  source PersistentAirlocks/StartLobby/LobbyRear scene=RequiemCampaign active=True layer=Default static=False
+    renderers: LobbyRear[VO_Env_Wall<IronRequiem/HardSurface>] bounds=(14.00, 7.00, 1.00)
+    colliders: BoxCollider (14.0, 7.0, 1.0) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a1-source-LobbyRear-1-closed active=True y=3.50 lum=0.073 dark%=77.9 white%=0.00
+    shot a1-source-LobbyRear-2-opening-0.25s active=True y=5.69 lum=0.081 dark%=74.8 white%=0.00
+    shot a1-source-LobbyRear-2-opening-0.5s active=True y=9.32 lum=0.096 dark%=68.6 white%=0.00
+    shot a1-source-LobbyRear-3-open active=False y=3.50 lum=0.065 dark%=78.8 white%=0.00
+    shot a1-source-LobbyRear-4-closing-0.2s active=True y=9.06 lum=0.095 dark%=69.0 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/StartLobby/InitialLoadingDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: InitialLoadingDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(12.00, 7.00, 0.60)
+    colliders: BoxCollider (12.0, 7.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a1-destination-InitialLoadingDoor-1-closed active=True y=3.50 lum=0.028 dark%=92.6 white%=0.00
+    shot a1-destination-InitialLoadingDoor-2-opening-0.25s active=True y=5.61 lum=0.036 dark%=89.2 white%=0.00
+    shot a1-destination-InitialLoadingDoor-2-opening-0.5s active=True y=9.26 lum=0.042 dark%=83.2 white%=0.00
+    shot a1-destination-InitialLoadingDoor-3-open active=False y=3.50 lum=0.040 dark%=88.1 white%=0.00
+    shot a1-destination-InitialLoadingDoor-4-closing-0.2s active=True y=9.18 lum=0.042 dark%=83.3 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+airlock[2] PersistentAirlocks/StairAirlock sourceStage=2 pos=(31.00, 2.00, 25.00) cycle=none trigger=BoxCollider(trigger) (5.0, 4.0, 6.0)
+  source PersistentAirlocks/Room01ExitDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: Room01ExitDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(1.00, 7.50, 12.00)
+    colliders: BoxCollider (1.0, 7.5, 12.0) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a2-source-Room01ExitDoor-1-closed active=True y=3.75 lum=0.046 dark%=57.3 white%=0.00
+    shot a2-source-Room01ExitDoor-2-opening-0.25s active=True y=6.10 lum=0.051 dark%=57.4 white%=0.00
+    shot a2-source-Room01ExitDoor-2-opening-0.5s active=True y=10.03 lum=0.052 dark%=54.9 white%=0.00
+    shot a2-source-Room01ExitDoor-3-open active=False y=3.75 lum=0.052 dark%=53.4 white%=0.00
+    shot a2-source-Room01ExitDoor-4-closing-0.2s active=True y=9.66 lum=0.052 dark%=54.5 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/Room02EntryDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: Room02EntryDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(1.00, 7.50, 8.00)
+    colliders: BoxCollider (1.0, 7.5, 8.0) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a2-destination-Room02EntryDoor-1-closed active=True y=11.75 lum=0.158 dark%=48.9 white%=0.00
+    shot a2-destination-Room02EntryDoor-2-opening-0.25s active=True y=14.06 lum=0.160 dark%=48.0 white%=0.00
+    shot a2-destination-Room02EntryDoor-2-opening-0.5s active=True y=18.02 lum=0.160 dark%=48.1 white%=0.00
+    shot a2-destination-Room02EntryDoor-3-open active=False y=11.75 lum=0.158 dark%=49.3 white%=0.00
+    shot a2-destination-Room02EntryDoor-4-closing-0.2s active=True y=17.71 lum=0.160 dark%=48.0 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+airlock[3] PersistentAirlocks/TransferAirlock_27/Transfer sourceStage=3 pos=(0.00, 10.00, 33.00) cycle=none trigger=BoxCollider(trigger) (8.0, 4.0, 6.0)
+  source PersistentAirlocks/TransferAirlock_27/SourceDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: SourceDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a3-source-SourceDoor-1-closed active=True y=12.00 lum=0.088 dark%=76.9 white%=0.00
+    shot a3-source-SourceDoor-2-opening-0.25s active=True y=14.50 lum=0.100 dark%=73.1 white%=0.00
+    shot a3-source-SourceDoor-2-opening-0.5s active=True y=18.63 lum=0.104 dark%=70.2 white%=0.00
+    shot a3-source-SourceDoor-3-open active=False y=12.00 lum=0.070 dark%=79.4 white%=0.00
+    shot a3-source-SourceDoor-4-closing-0.2s active=True y=18.38 lum=0.106 dark%=69.9 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/TransferAirlock_27/DestinationDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: DestinationDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a3-destination-DestinationDoor-1-closed active=True y=12.00 lum=0.038 dark%=79.3 white%=0.00
+    shot a3-destination-DestinationDoor-2-opening-0.25s active=True y=14.42 lum=0.050 dark%=75.3 white%=0.00
+    shot a3-destination-DestinationDoor-2-opening-0.5s active=True y=18.59 lum=0.055 dark%=71.6 white%=0.00
+    shot a3-destination-DestinationDoor-3-open active=False y=12.00 lum=0.054 dark%=75.8 white%=0.00
+    shot a3-destination-DestinationDoor-4-closing-0.2s active=True y=18.42 lum=0.055 dark%=71.6 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+airlock[4] PersistentAirlocks/TransferAirlock_91/Transfer sourceStage=4 pos=(0.00, 10.00, 97.00) cycle=none trigger=BoxCollider(trigger) (8.0, 4.0, 6.0)
+  source PersistentAirlocks/TransferAirlock_91/SourceDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: SourceDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a4-source-SourceDoor-1-closed active=True y=12.00 lum=0.088 dark%=76.9 white%=0.00
+    shot a4-source-SourceDoor-2-opening-0.25s active=True y=14.52 lum=0.100 dark%=73.1 white%=0.00
+    shot a4-source-SourceDoor-2-opening-0.5s active=True y=18.71 lum=0.104 dark%=70.2 white%=0.00
+    shot a4-source-SourceDoor-3-open active=False y=12.00 lum=0.070 dark%=79.4 white%=0.00
+    shot a4-source-SourceDoor-4-closing-0.2s active=True y=18.11 lum=0.106 dark%=69.8 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/TransferAirlock_91/DestinationDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: DestinationDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a4-destination-DestinationDoor-1-closed active=True y=12.00 lum=0.032 dark%=89.4 white%=0.00
+    shot a4-destination-DestinationDoor-2-opening-0.25s active=True y=14.38 lum=0.045 dark%=85.4 white%=0.00
+    shot a4-destination-DestinationDoor-2-opening-0.5s active=True y=18.51 lum=0.050 dark%=81.6 white%=0.00
+    shot a4-destination-DestinationDoor-3-open active=False y=12.00 lum=0.049 dark%=85.9 white%=0.00
+    shot a4-destination-DestinationDoor-4-closing-0.2s active=True y=18.40 lum=0.050 dark%=81.7 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+airlock[5] PersistentAirlocks/TransferAirlock_155/Transfer sourceStage=5 pos=(0.00, 10.00, 161.00) cycle=none trigger=BoxCollider(trigger) (8.0, 4.0, 6.0)
+  source PersistentAirlocks/TransferAirlock_155/SourceDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: SourceDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a5-source-SourceDoor-1-closed active=True y=12.00 lum=0.088 dark%=76.9 white%=0.00
+    shot a5-source-SourceDoor-2-opening-0.25s active=True y=14.52 lum=0.100 dark%=73.1 white%=0.00
+    shot a5-source-SourceDoor-2-opening-0.5s active=True y=18.64 lum=0.104 dark%=70.2 white%=0.00
+    shot a5-source-SourceDoor-3-open active=False y=12.00 lum=0.070 dark%=79.4 white%=0.00
+    shot a5-source-SourceDoor-4-closing-0.2s active=True y=18.42 lum=0.106 dark%=69.9 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+  destination PersistentAirlocks/TransferAirlock_155/DestinationDoor scene=RequiemCampaign active=True layer=Default static=False
+    renderers: DestinationDoor[VO_Env_Hazard<IronRequiem/HardSurface>] bounds=(10.00, 8.00, 0.60)
+    colliders: BoxCollider (10.0, 8.0, 0.6) | navObstacle: 
+    audio: 0 lights: 0 particles: 0 scripts: 
+    shot a5-destination-DestinationDoor-1-closed active=True y=12.00 lum=0.032 dark%=89.4 white%=0.00
+    shot a5-destination-DestinationDoor-2-opening-0.25s active=True y=14.56 lum=0.045 dark%=85.2 white%=0.00
+    shot a5-destination-DestinationDoor-2-opening-0.5s active=True y=18.69 lum=0.050 dark%=81.7 white%=0.00
+    shot a5-destination-DestinationDoor-3-open active=False y=12.00 lum=0.049 dark%=86.0 white%=0.00
+    shot a5-destination-DestinationDoor-4-closing-0.2s active=True y=18.49 lum=0.050 dark%=81.8 white%=0.00
+    contract: open ends inactive=True closing collider on first frame=True
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_27/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_155/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/StartLobby/VisualPass_DoorSill active=True colliders=BoxCollider (12.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_155/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_91/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/VisualPass_DoorSill active=True colliders=BoxCollider (3.0, 0.2, 8.4)
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_91/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/TransferAirlock_27/VisualPass_DoorSill active=True colliders=BoxCollider (10.4, 0.2, 3.0)
+other: RequiemCampaign / PersistentAirlocks/VisualPass_DoorSill active=True colliders=BoxCollider (3.0, 0.2, 12.4)
+other: Room00_Hangar / DoorAuditCamera active=True colliders=none

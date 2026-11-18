@@ -1,0 +1,6 @@
+[robot anim labs Saw]
+variant=Assets/IronRequiem/Prefabs/VisualPass/SawBotRobot/SawBot_RobotAnim_Test.prefab isVariant=True animator=Presentation
+  [SawBefore] lab override DetectionModule: detection 20 m, attack 3 m (unchanged), timeout 1 s
+  [SawBefore] Assets/IronRequiem/Scenes/SawBotRobotAnimLab_Before.unity: replaced T07_IR_v01 by SawBot_Current at (0.00, 0.05, 8.00) refsElsewhere=0
+  [SawAfter] lab override DetectionModule: detection 20 m, attack 3 m (unchanged), timeout 1 s
+  [SawAfter] Assets/IronRequiem/Scenes/SawBotRobotAnimLab_After.unity: replaced T07_IR_v01 by SawBot_RobotAnim_Test at (0.00, 0.05, 8.00) refsElsewhere=0

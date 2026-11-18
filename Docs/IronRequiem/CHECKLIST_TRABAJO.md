@@ -1129,3 +1129,302 @@ Respaldos: `Tools/IronRequiem/Backups/20261113-v5-melee-station-ui/` (los script
 - [x] Consola: 0 errores de scripts. Solo mensajes internos de Unity (`Library/EditorToolsSettings.asset`, token de recarga de dominio, ADTM de audio, `StateCache ... Sharing violation`).
 - [ ] Probar en partida real con teclado y ratón (golpe con F/M1, estación, menús con ratón y Escape) y medir en build de desarrollo.
 - [ ] Notas: la escena de campaña tiene dos HUD activos (el de `GameManager` y uno suelto de la plantilla, con "Tab" en vez de "Esc"); se superponen exactos y no se tocaron. Las pinzas de la estación son cajas oscuras simples.
+
+## v33 - Puño mecánico cerrado, muñeca con collar, estación con abrazaderas y botones de la pantalla de muerte (2026-11-13)
+Respaldos: `Tools/IronRequiem/Backups/20261113-v6-fist-wrist/` (ProtagonistHandsPresentation, WeaponMountStation, UiUnifyAuthoring previos), `<fecha-hora>-ui-unify` (escenas antes de reaplicar el estilo) y `CHECKLIST_TRABAJO` previo. Nada se borró; los GUID se conservan. Hecho por el puente, sin terminal: falta el commit.
+
+### 1. Puño cerrado (F y M1 desarmado)
+- [x] Causa de la garra: durante el golpe el Animator pasaba a `HandPose=1` (agarre) y el clip `IR_HandFist` es solo media garra. Ahora `HandPose=0` mientras la mano es normal.
+- [x] `ProtagonistHandsPresentation.ApplyFist`: curva por código las 15 falanges derechas (proximal 92°, media 104°, distal 78°, pulgar 58° sobre índice y medio), dedos juntos, muñeca recta. Cierra en 0,06 s, abre en 0,24 s. Sin asignaciones por frame. `FistClosure` público.
+- [x] Tap F: puño 1,00 a los 0,1 s y golpe. Mantener F: cerrado desde el inicio de la carga, vibra con energía cian, golpe y reapertura suave. M1 desarmado igual.
+- [x] Pose de carga reajustada (`ChargeW`/`ChargeE`): el puño entero queda en cuadro, abajo a la derecha de la mira, sin taparla.
+- [x] Con cañón o módulo robado, F sigue siendo el golpe mecánico con el antebrazo (sin cambios).
+
+### 2. Muñeca y WristMount
+- [x] Collar `WristCollar_R_FPS` (gris oscuro) en la unión mano-antebrazo; `WristMount` público, alineado al eje del antebrazo. Con antebrazo reemplazado se coloca en `rightPort`.
+- [x] El cilindro blanco (receptor) ya no aparece con la mano solo desacoplada; con antebrazo reemplazado se tiñe oscuro.
+- [x] Disparo del cañón tras la estación: boca y efectos alineados (capturas `wrist_aim`, `wrist_fire_a/b`).
+
+### 3. Estación de montaje
+- [x] Antebrazo centrado en cámara (`inspectWrist`/`inspectElbow` nuevos; sube desde abajo).
+- [x] Abrazaderas: cierran 0,72–0,95 s (sonido al cerrar), abren 4,6–4,85 s; se esconden al terminar o saltar.
+- [x] La mano sale 0,32 s recta por el eje del antebrazo antes de que el brazo A se la lleve.
+- [x] Resto igual a v32: cañón alineado, encaje lineal, giro de traba, cápsulas, calor/enfriado, mensaje, vuelta suave. Skip con E/Espacio: mismo estado.
+
+### 4. Pantalla de muerte
+- [x] REINICIAR y VOLVER AL MENÚ no respondían: el `Image` propio del botón (el que recibe el raycast) quedó desactivado y la placa hija no recibe raycast. `UiUnifyAuthoring.StyleButton` ahora lo activa (transparente, sin cull) en todos los botones. Clic real con ratón: reinicia.
+
+### 5. Brazos del CapsuleRobotRig
+- [ ] No adoptado: el rig es una sola malla rígida de todo el cuerpo; usar sus brazos rompía sockets, `rightPort` y escala del cañón. Las piernas del slide tampoco se cambiaron.
+
+### Verificación
+- [x] Capturas `Tools/IronRequiem/Bridge/v6/after/`: puño (reposo, tap a–d, carga inicio/media/completa, impacto, retorno, fin), armado (mismo set con cañón), estación (`station_t0.42`…`t4.13`, `station_done`), muñeca (reposo, apuntando, disparo, slide). Menús de depuración `HangarIntroDebugV6`, informe `Reports/HangarIntro/v6.txt`.
+- [x] CampaignTests: **6/6 en verde (235,9 s)**. Nuevos: `DeathScreenButtonsReceiveClicks` (cada botón es el primer impacto del raycast) y en el prólogo `FistClosure > 0,95` a 0,1 s del golpe.
+- [x] Consola: 0 errores.
+- [ ] Probar en partida real con teclado y ratón. Pinzas de la estación siguen siendo cubos.
+
+## v34 - Puño con forma real (dedos en la palma) y F otra vez con la mano izquierda (2026-11-13)
+Respaldos: `Tools/IronRequiem/Backups/20261113-v7-fist-left/` (ProtagonistHandsPresentation, ProtagonistMelee, WeaponMountStation, CampaignTests, HangarIntroDebugV6, MechanicHud previos) y el CHECKLIST previo. GUID conservados. Hecho por el puente, sin terminal: falta el commit.
+
+- [x] Puño v33 descartado: giraba cada falange con el eje del clip de garra y los dedos quedaban como garra o se doblaban hacia atrás.
+- [x] `HandFistRig` (nuevo, `Scripts/Player/HandFistRig.cs`): bisagra única en la línea de nudillos, dedos juntos (0,85), nudillo 92° / medio 106° / punta 72°, pulgar por CCD sobre índice y medio. Pose cerrada calculada una vez; por frame solo mezcla, sin GC. Lado de la palma del rig: derecha +1, izquierda −1 (comprobado en primeros planos).
+- [x] F (tap y carga) = mano izquierda, con o sin cañón (`ProtagonistMelee.LeftStrike`). M1 desarmado = golpe rápido con la derecha. Golpe mecánico con el antebrazo desactivado.
+- [x] HUD `GOLPE IZQ. [F] · DER. [M1] · MANTENER [F] CARGA`; mensaje de la estación `[F] GOLPE (MANO IZQUIERDA)`.
+- [x] Capturas `Bridge/v6/after/v7_left_*`, `v7_right_*` (frente, lado, arriba, interior, fondo liso) y `v7_left_charge_game`, `fist_*` (vista de juego). Menú `V7 fist closeups (play)`.
+- [x] CampaignTests **6/6 en verde (270,7 s)**; consola 0 errores.
+- [ ] Pulgar: en algunos ángulos queda algo levantado. Probar en partida real.
+
+## v35 - Transiciones más ligeras, suelos coherentes, salas abiertas y decoradas por sector (2026-11-13/14, modo autónomo)
+Respaldos: `Tools/IronRequiem/Backups/20261113-v35-levels-perf/` (CampaignFlow, CombatTwoRoomsLab, escenas de Room01–04, pasillo y RequiemCampaign, CHECKLIST previo). GUID conservados (NavMesh y sondas reescritos en sus mismos assets). Piezas sustituidas en la raíz inactiva `Quarantine_v35` de cada escena; nada borrado. Sin Codex ni commits.
+
+Herramientas nuevas (menús `Tools/Iron Requiem/…`):
+- `Perf/…`: tour automático en Editor o en un Player Development (Autoconnect Profiler). Mide por transición pico, frames >33/>50 ms, GC, tiempos de puerta/carga/activación/descarga/asentado y los tres frames más largos con su fase; por sala, la media, el p99 y el máximo en combate. `-irMarkers` añade los marcadores del profiler que más tiempo gastan (media y en el pico). Informe en `Builds/IR_Tour/ir_tour.txt`.
+- `Levels/Audit + captures (read only)`, `Levels/Dump geometry (read only)`.
+- `Levels/v35 Open + dress rooms (writes scenes)` (idempotente) y `Levels/v35 Rebuild floor guide`.
+
+Rendimiento de transiciones (causas medidas y arregladas):
+- [x] Glifos TMP dinámicos: un nombre de sector o "PREPARANDO…" nuevo rasterizaba glifos, subía el atlas y reconstruía el canvas en el frame de activación (≈40 ms en Room01). Ahora se precargan todos los glifos del español en las fuentes de la sesión, detrás de la portada (solo en Player).
+- [x] La sala vieja se destruye por tramos de unos 350 transforms por frame, siempre con la puerta cerrada. Después `UnloadSceneAsync` libera una escena vacía.
+- [x] La sala nueva se dibuja una vez, con la puerta cerrada, desde una cámara oculta de 320x180 (un sexto por frame). Así se preparan sus shaders y texturas antes de que el jugador la vea.
+- [x] Subidas asíncronas: búfer de 32 MB persistente y 3 ms por frame.
+- [x] Se mantienen las reglas del airlock: doble puerta, y descarga solo con la puerta cerrada y el jugador dentro.
+
+| Transición (Player dev, 1600x900) | Pico antes (ms) | Pico después (ms) |
+|---|---|---|
+| Hangar → pasillo | 69,9 | 32,4 |
+| Pasillo → Room01 | 50,6 | 35,8 (31,0 en la siguiente pasada) |
+| Room01 → Room02 | 21,1 | 31,2 |
+| Room02 → Room03 | 19,8 | 29,8 |
+| Room03 → Room04 | 25,2 | 29,1 |
+| Room04 → Pursuit | 39,5 | 25,9 |
+
+Combate (sala | media ms | p99 ms) en la última pasada: Room00b 13,7 | 21,8 · Room01 14,8 | 20,6 · Room02 13,3 | 18,8 · Room03 14,8 | 19,5 · Room04 14,3 | 18,8. Sin combate: Hangar 14,6 · Pursuit 10,6. Antes: media 6,7–7,6 y p99 10,4–11,3.
+
+- [ ] **Base de frame duplicada en todo el recorrido**, incluso en el hangar y en Pursuit, que no se tocaron. Por eso parece una causa del equipo (energía o temperatura del portátil, o el Editor abierto) y no de las salas. El hilo principal llena el frame y la GPU va casi ociosa (≈1,1–1,6 ms). Las subidas de Room02–04 (de 21–25 a 29–31 ms) siguen esa base, porque el sobrecoste del pico sobre la base bajó. Repetir antes y después con el portátil enchufado, en modo Alto rendimiento y con el Editor cerrado.
+- [ ] Los picos que quedan son `Resources.UnloadUnusedAssets` (≈17–23 ms, con la puerta cerrada) y el JIT de Mono la primera vez que se ejecuta un código. IL2CPP quitaría el JIT; no se cambió el backend.
+- [ ] El Player sigue en 1600x900: el juego restaura su tamaño de ventana. No se midió a 1080p y no se alcanza el objetivo de 120 FPS con la base actual.
+
+Suelos:
+- [x] Auditoría de juntas: no hay escalones accidentales. Los escalones de 20 cm de la escalera Room01→Room02 quedan cubiertos por la rampa invisible `V35_StairRamp` (14°) en `PersistentAirlocks`.
+- [x] Galones de guía emisivos cada 5 m a lo largo de la ruta, apuntando a la salida, más un marco emisivo en cada salida. Bordes de las pasarelas con franjas de peligro. Los materiales solo cambian en los umbrales.
+
+Salas (techo 7–8 m → 12–13 m, pasarelas a 3,8 m con rampas de ≈19°, coberturas agrandadas, decoración sin colisionador):
+- [x] Room01 Fundición: crisoles con metal fundido, bocas de horno y regueros naranjas. 104 piezas, 12 galones.
+- [x] Room02 Brecha: vigas caídas, grieta en el techo, placas colgantes y varillas sobre el vacío. 98 piezas y 3 pasarelas.
+- [x] Room03 Ensamblaje: brazos robot en el techo, cinta aérea con chasis y racks de cabezas. 180 piezas; 4 de 12 spawns movidos fuera de las pasarelas.
+- [x] Room04 Reactor: columna de energía cian, anillos, colector y conductos. 90 piezas.
+- [x] Comunes: pilastras, rieles de grúa, ventanas nocturnas, ventiladores, pórtico con cadena y gancho, cables. Luces teñidas por sector (mismo número e intensidad, sin sombras, como exigen los tests). NavMesh y sondas recocinados en sus assets. Botiquines movidos a las pasarelas.
+- [x] Capturas antes/después de cada sala, desde la entrada y desde un punto alto: `Tools/IronRequiem/Bridge/v35/before_play/` y `after_play/`.
+- [ ] Hangar sin abrir; el pasillo solo tiene galones. No hay luz horneada ni oclusión. Faltan ShaderVariantCollection y LOD dedicados para la decoración.
+
+Verificación: tour en Editor y en Player completo en todas las salas (todos los slots alcanzables), CampaignTests **6/6 en verde** y consola sin errores.
+
+## v36 — Poses absolutas, brazos completos, HUD clásico y entrada animada (2026-11-15)
+
+Respaldos: `Tools/IronRequiem/Backups/20261115-hands-hud-campaign/` y `20261115-animated-menu-entry/`. Detalle y límites: `HANDS_HUD_CAMPAIGN_DIAGNOSTIC_20261115.md`. Sin commits, paquetes nuevos ni Meshy.
+
+- [x] HandPoseController como autoridad final de dedos en campaña y cinemática; bibliotecas Open/Relaxed/Fist/Grip/Inspect de matrices bind por rig. Muestreo de timeline independiente del frame anterior.
+- [x] Plan B autorizado: puños rígidos L/R hechos en Blender, collar; geometría 2.484 tris, pulgar externo a 2 mm y distal-palma a 9,5 mm. Huesos/piezas sin escala animada.
+- [x] Hombro/brazo superior/codo de CapsuleRobotRig en copias FPS, siguiendo el brazo y conservados con cañón. F armado vuelve al golpe de antebrazo derecho; izquierda oculta sin acción.
+- [x] Barra inferior uGUI industrial, números bitmap y visor reactivo; energía/salud/slots/carga/OVERDRIVE, prompts/retícula/banners conservados. Raíz GameHUD activa.
+- [x] Carga anticipada del siguiente sector, activación retenida, teardown repartido y precalentamiento; sin UnloadUnusedAssets manual durante gameplay. Drain antes de descarga de pruebas/reinicio. Se conserva ventana; no se declara residencia completa ni Memory Profiler medido.
+- [x] Plano tras el hombro siguiendo el giro y comprobación de obstáculos; poses Inspect/Grip/Relaxed con blend. E/Espacio convergen al mismo estado.
+- [x] EditMode poses **3/3** y PlayMode **8/8** (siete CampaignTests + cinemática completa/saltos), sin errores registrados por la ejecución. Incluye inputs reales M1/F/E, cañón, extracción, OD, estación, reinicio y recorrido Room00–Pursuit05.
+- [x] Petición posterior del usuario: IntroMenu animado restaurado como inicio de Play. Pantalla antigua retirada de campaña y conservada en cuarentena fuera de Assets; pausa/muerte conservadas. IntroMenu y EditorBuildSettings idénticos al respaldo de la reparación. Movimiento de personajes/cámara medido; flujo JUGAR/reinicio/volver probado.
+- [ ] Cierre visual final de las capturas de puños y HUD 720/1080/1440 tras ajustar la herramienta de captura.
+- [ ] Player reparado medido a 1080p y comparación de picos/promedio/p99 con baseline real 1600x900. Objetivo 33 ms no certificado todavía.
+
+Las anotaciones de versiones anteriores sobre HandFistRig y el HUD describen estados históricos. Para esta campaña prevalece Contexto_Animaciones.md actualizado.
+
+## v37 — Estación de montaje (cambio de mano por el cañón) y HUD que no tape las armas (16/11/2026)
+
+Petición directa: «mejora la animación de cambio de mano al arma principal del robot que está después del pasillo en el hangar» + prompt adjunto con dos cambios autorizados (estación de montaje y HUD que tapa las armas). Respaldos y hashes: `Tools/IronRequiem/Backups/20261116-station-hud/`. Sin commits, paquetes, escenas ni prefabs guardados; GUID conservados. `UiUnifyAuthoring.cs`, `MechanicHud.cs` y `MountStation_C04.prefab` idénticos al respaldo.
+
+El «rifle» es `Weapon_IR_ArmCannon_VO`, que monta `WeaponMountStation` (`MountStation_C04`, lobby de `RequiemCampaign`, tras el pasillo del hangar). No es el cambio de arma 1/2 de `PlayerWeaponsManager`.
+
+### 1. Estación de montaje
+Reproducción (Play, E real, tiempo ×0,1, telemetría por frame `Reports/StationHud/<before|after>/station-telemetry.csv`, capturas `station/station_<t>_*.png`):
+- [x] Causa principal: la estación hacía `LateUpdate` (orden 0) antes del IK de `ProtagonistHandsPresentation` (110) y colocaba abrazaderas, anillo de traba, pinza del brazo A y el proxy del cañón con la pose de la mano **sin IK**. Quedaban ~1,6 m por encima de la cámara: entre 1,0 y 4,6 s solo se veía el antebrazo desnudo y el cañón **aparecía de golpe** en el swap.
+- [x] El cañón real reproducía al equiparse su `WeaponDeployMotion` (largo 12 %→100 %, giro −18°, rebote): deriva de 11,2 cm tras el swap.
+- [x] La toma de control inicial pasaba la mano por el centro del encuadre (16 frames a ×0,1).
+
+Corrección (`Scripts/Levels/WeaponMountStation.cs`):
+- [x] `[DefaultExecutionOrder(1100)]`; el override del brazo y el encuadre se calculan en `Update` (`DriveArm`, l. 162) antes del IK; los objetos que siguen al antebrazo se colocan en `LateUpdate` con la mano ya resuelta. Sin segundo escritor de dedos (`HandPoseController` sigue siendo el único).
+- [x] El cañón se acopla como manga: su `Attachment` queda `MountedHandLead` detrás de la mano (l. 231), igual que tras el montaje. El descenso termina en la pose exacta que calcula la presentación con el arma montada (`PortPose`, l. 298) y el proxy se asienta en el transform donde nace el arma real (`DefaultWeaponPosition` + rotación del socket). Swap: proxy 0 mm del arma real, mano inmóvil durante el fundido del override.
+- [x] El arma montada salta su despliegue genérico (`SkipNextDeploy`, l. 343). La recogida/cambio normal conserva el despliegue.
+- [x] Asentamiento: muelle amortiguado al encajar (TSlide, 45 %) y al bloquear (TLock), 1,6 cm hacia atrás y 0,5 cm arriba, ~0,35 s (`Kick`, l. 188). Vibración de las trabas con envolvente (sin escalón).
+- [x] Toma de control por debajo/detrás de la cámara (0,16 s): 0 frames con la mano dentro del encuadre.
+- [x] Duración total sin cambios (5,6 s); salto con E/Espacio y reinicio iguales.
+- Cambios mínimos de soporte: `ProtagonistHandsPresentation.MountedHandLead` (propiedad de solo lectura, l. 108) y `WeaponDeployMotion.SkipNextDeploy` (l. 36).
+
+### 2. HUD que tapaba las armas
+Medición (`Reports/StationHud/<before|after>/hud/measure.txt`, composición juego + overlay FPS + UI y máscara de solape `*_overlap.png`; 1920×1080, 2560×1440, 1920×1200 16:10, 2560×1080 21:9):
+- [x] Antes, la barra de ancho completo (180 px ref.) tapaba el 75 % del cañón (83 % a 21:9), 73–80 % del puño cargando, 52–66 % del cañón robado y 42–55 % de la pistola. El viewmodel ocupa siempre x ≥ 55 % del ancho y hasta ~37 % del alto.
+- [x] Solución menos invasiva: misma barra, mismos datos y estilo, convertida en bloque izquierdo (53 % del ancho; CARGA PUÑO y OVERDRIVE apilados en la última columna). Layout en código (`RetroStatusBar.cs`, l. 20 y 37), sin guardar escenas. Sin cambios de cámara, FOV ni viewmodel.
+- [x] Después: 0 % de la barra sobre cañón, pistola, puño y cañón robado en las cuatro resoluciones. Retícula, prompts, banners, números 5×7 y retrato conservados.
+- [ ] Queda 1–6 % de solape con el medidor térmico preexistente (`WeaponHeatHud`, esquina inferior derecha, antes oculto bajo la barra). No se tocó.
+
+### Verificación
+- [x] Compilación: 0 errores (solo avisos CS0618 preexistentes).
+- [x] EditMode poses **3/3** (`Reports/HandsHudCampaign/poses-tests.xml`, 16/11 13:02).
+- [ ] PlayMode CampaignTests + HangarIntroPresentationTests: en la ejecución de las 13:02 pasaron los 7 CampaignTests (estación con E real y salto con Espacio incluidos); se abortó al empezar HangarIntroPresentationTests porque se detuvo el Play. Las reejecuciones chocaron con otra sesión que usaba el mismo Editor. Falta una ejecución completa limpia (XML nuevo).
+  - Revisión de la sesión «Sprites / Models», 13:33–14:04, sobre `Bridge/console.txt`:
+    - Los fallos de TwelveRounds (13:38:05 y 13:52:46) y de Presentation (13:52:06) coinciden en el mismo frame con la IOException de `VisualOverhaulDriver.cs:45` (heartbeat.txt).
+    - Presentation pasó a las 14:01:12. En cada pasada la estación registró «Weapon_IR_ArmCannon_VO mounted». No hay ninguna aserción sobre WeaponMountStation ni sobre RetroStatusBar.
+    - NullReferenceException en `MenuFlicker.cs:73` (13:33:50), ajena a esta tarea.
+    - Skills registradas en `SETUP_REPORT.md`.
+  - Reejecución desde un segundo chat, con el puente inactivo 6 min antes (16/11, 13:45 y 13:50): intento 1 **7/8**, intento 2 **6/8** (`Reports/HandsHudCampaign/campaign-tests-attempt1.xml`, `campaign-tests.xml`). Los fallos (`TwelveRoundsAirlocksInventoryAndPursuit` en ambos; `PresentationHandsMountedArmsAndOverdriveHud` en el 2) no son aserciones del juego: `VisualOverhaulDriver.cs:45` escribe `Reports/VisualOverhaul/heartbeat.txt` cada segundo sin try/catch, Windows devuelve IOException 1224 (archivo abierto por otro proceso) y el Test Framework lo cuenta como log no esperado. La cinemática completa con saltos (HangarIntroPresentationTests) pasó en ambos. No se marca como superado: ninguna ejecución dio 8/8.
+- [ ] Cambio de armas 1/2 por entrada real: pistola→cañón con `1` verificado (antebrazo sustituido, socket animándose); el resto de la prueba quedó invalidado por la colisión con la otra sesión.
+- Skills: plugin oficial de Unity ya instalado (ui, ui-ugui, unity-cli usadas; craft-game-floors disponible para el suelo del hangar). Catálogo sin skills oficiales nuevas de animación FPS. game-dev-combat-animation (local) solo aporta método (línea base, medir antes de mirar); sus scripts son de otro proyecto web y no se ejecutaron. caveman (tercero) no instalado.
+- [x] Play Mode manual por el puente: estación con E real completa ×3 (antes/después), cañón, puño cargando, cañón robado y pistola medidos; salida de Play sin guardar.
+- [ ] Prueba con teclado y ratón físicos por el usuario.
+
+Heartbeat (16/11, 13:55, autorizado por el usuario «Sí, arréglalo»; respaldo `Backups/20261116-station-hud/VisualOverhaulDriver.cs`): la escritura de `VisualOverhaulDriver.cs:46` queda dentro de `try { } catch (IOException) { }`. Compila y escribe con normalidad. La reejecución de las 13:58 no dio veredicto: a las 14:01–14:03 otra sesión creó scripts en `Scripts/UI` (FistChargeHud, FistChargeRadialGraphic, OvalFrameGraphic, RoundedFrameGraphic, IronRequiemUiThemeLink), Unity recompiló en Play y el runner abortó (NullReference tras la recarga). Revisión independiente (solo lectura): el orden 1100 de la estación respeta la autoridad de poses y no hay escritores nuevos de dedos; `UiUnifyAuthoring.cs`, `MechanicHud.cs` y `MountStation_C04.prefab` idénticos al respaldo. Hallazgos abiertos: (D1) las medidas/capturas del HUD (12:46) no corresponden a `RetroStatusBar.cs` actual (modificado 13:31 y 14:04; «[F] MANTENER»; la comprobación de ajuste de texto registró «no RetroStatusBar»); (D2) el puño izquierdo (F sin arma, `ChargeW` en `ProtagonistHandsPresentation.cs:331`) no se midió y probablemente cae bajo el bloque izquierdo; (D3) el catch no cubre `UnauthorizedAccessException` ni `Directory.CreateDirectory` (l.43); (D4) `WeaponDeployMotion.SkipNextDeploy` (l.36) puede dejar `skipNext` activo si se llama con el arma ya desplegada (hoy ningún llamante lo hace); (D5) `PortPose` asume la rama `actionsEnabled && nativeAttachment`. Faltan tests de: secuencia completa sin saltar, despliegue saltado vs. conservado, muerte/pausa durante la secuencia y layout del HUD.
+
+#### Cierre de verificación (16/11, 14:09–14:22, una sola sesión en el Editor)
+Por petición del usuario («Esta, para la otra») se pausaron las sesiones «UI/ UX» y «Skills, animación de la estación…». UI/ UX había reescrito `RetroStatusBar.cs` en dos columnas laterales (ARMAS a la izquierda, SALUD/ESTADO DEL CUERPO/CARGA PUÑO a la derecha, retrato abajo al centro) y añadido `FistChargeRadialGraphic`, `RoundedFrameGraphic`, `OvalFrameGraphic`, `IronRequiemUiThemeLink`, `Editor/HudRedesignTools.cs` y `Resources/IronRequiem/HudThemeLink.asset` (respaldos `Backups/20261116-hud-text/` y `20261116-hud-redesign/`). Lo que sigue verifica ESE HUD, no el bloque izquierdo descrito arriba en el punto 2.
+- [x] `VisualOverhaulDriver.cs:43-48`: `CreateDirectory` y la escritura del heartbeat dentro de `try`, con `catch (IOException)` y `catch (UnauthorizedAccessException)` (D3 cerrado).
+- [x] Compilación: 0 `error CS`.
+- [x] PlayMode CampaignTests (7) + HangarIntroPresentationTests (1): **8/8 superados** (14:18, sin errores capturados). `Reports/HandsHudCampaign/campaign-tests-1418-8of8.xml`. Incluye estación con E real y salto, cinemática completa/saltos, puño cargado, menú, muerte y recorrido completo.
+- [x] Play Mode por el puente (RequiemCampaign, cinemática saltada): medición viewmodel vs. UI opaca en 1920×1080 / 2560×1440 / 1920×1200 / 2560×1080 (`Reports/StationHud/after-text/hud/measure.txt` y PNG con `_overlap`): pistola **0 %** en las cuatro; cañón montado 0,9 / 0,9 / **5,0** / 0 %; antebrazo armado cargando (F) 8,4 / 8,5 / **12,1** / 0 %; puño izquierdo cargando sin arma (D2) 5,1 / 5,1 / 4,5 / **9,2** % (retrato central). Entrada real 1 → pistola y 2 → cañón con antebrazo sustituido. Salida de Play sin guardar.
+- [ ] Solapes restantes: el medidor térmico (`WeaponHeatHud`, esquina inferior derecha) y la parte baja de la columna derecha tocan el cañón y el antebrazo cargando, sobre todo a 16:10; el retrato central toca el puño izquierdo. En 16:10 la notificación «ARMA OBTENIDA · …» se superpone a «FRÍA / ESTABLE» en la columna izquierda.
+- [ ] Ajuste de texto: 4 etiquetas por resolución desbordan su rect en ≤1 px de ancho («T07 TEMPORARY OPTIMIZED» ×2, «BRAZO DER.», «BRAZO IZQ.»; `after-text/hud/text-fit.txt`).
+- [ ] El estado desarmado en reposo mide 0 px de viewmodel: la herramienta no captura la mano derecha en reposo; sin dato.
+- [ ] Capturas antes/después de la secuencia de la estación con el código final: siguen siendo las de 12:40 (`Reports/StationHud/<before|after>/station/`).
+- Editor: fuera de Play, con RequiemCampaign abierta (sin cambios). No se restauró IntroMenu porque la escena previa registrada era la temporal del Test Runner.
+
+#### Corrección de solapes del HUD (16/11, 14:22–14:45; petición «Sí, corrígelos»)
+Respaldo y hashes: `Tools/IronRequiem/Backups/20261116-hud-overlap-1610/` (RetroStatusBar.cs, WeaponHeatHud.cs y sus .meta). Solo código en `Scripts/UI`; sin escenas, prefabs, cámara, FOV ni viewmodel. El retrato central (diseño de UI/ UX) no se movió.
+- [x] `RetroStatusBar.BuildBodyColumn`: el marco de la columna derecha rodea solo `BodyContent`; la franja inferior queda sin ningún píxel de UI.
+- [x] `RetroStatusBar.PlaceMechanicTexts`: el panel de munición de la plantilla (`WeaponHUDManager`, esquina inferior derecha sobre el arma) pasa a la banda vacía de ARMAS bajo los 9 slots (`AmmoTop` 290, `AmmoHeight` 130); `NotificationsRect` («ARMA OBTENIDA · …») pasa junto a la columna izquierda, encima de MechanicStatus (`NotificationPosition`). Se localizan por nombre porque `IronRequiem.Runtime` no referencia `fps.UI` (no se tocó el asmdef).
+- [x] `WeaponHeatHud.Dock(...)` (nuevo, solo en ejecución) y llamada desde `RetroStatusBar.Start`: el medidor térmico, si existe, se acopla bajo `BodyContent`. En RequiemCampaign no hay WeaponHeatHud: esa ruta no se ejercitó en Play.
+- [x] Compilación 0 `error CS`. Medición en Play (RequiemCampaign, `Reports/StationHud/after-text/hud/`; antes: `hud-before-1610/`, intermedia: `hud-fix1/`), 1920×1080 / 2560×1440 / 1920×1200 / 2560×1080: pistola 0/0/0/0 % (antes 0/0/0/0); cañón montado **0/0/0/0 %** (antes 0,9/0,9/5,0/0); antebrazo armado cargando **0/0/0/0 %** (antes 8,4/8,5/12,1/0); puño izquierdo cargando 3,1/3,1/2,7/5,6 % (antes 5,1/5,1/4,5/9,2; lo que queda es el retrato central). Notificación ya no pisa «FRÍA / ESTABLE».
+- [x] Repetición 17:57–18:02 (sin cambios de código desde 14:40, Editor libre): `TwelveRoundsAirlocksInventoryAndPursuit` aislado **superado** (168 s) y `ThermalHudRepairTests` **3/3** (incluye HUD térmico visible y enlazado en 7 laboratorios). `Reports/VisualOverhaul/tests-pursuit1758.xml` y `tests-thermal1758.xml`. El fallo de 14:44 fue intermitente (espera de movimiento en la persecución), no del HUD.
+- [ ] PlayMode campaña tras el cambio (14:44, primera ejecución): **7/8** (`campaign-tests-hud1610.xml`). Falla `TwelveRoundsAirlocksInventoryAndPursuit` en la espera de movimiento «Approach shifted pursuit gap stage=6» (persecución final), no en una aserción de HUD; ese test pasó a las 14:18 con el HUD anterior. La repetición aislada no llegó a ejecutarse: se canceló porque el Editor quedó en uso (Play en Room00_Hangar, fuera de tests, ~16:47).
+- [x] (sustituido por la repetición 3/3 de 18:02) `ThermalHudRepairTests` (16:41 → watchdog 16:45 tras ~2 h): ningún test terminó, resultado inconcluso; el Editor probablemente quedó sin foco o suspendido y el tiempo de juego no avanzó.
+- [ ] Texto: siguen los 4 desbordes ≤1 px por resolución de la barra; además el informe ahora incluye «R»/«Reload» del contador de la plantilla, que pasa a colgar de la barra (desborde preexistente de ese prefab).
+
+Pendientes anotados (no corregidos): medidor térmico en la esquina; al soltar las abrazaderas el antebrazo blanco cambia a la manga negra del módulo en el mismo frame del swap; el cuerpo del brazo B tapa el centro del encuadre ~0,4 s al bloquear; mejora del suelo/mapa del hangar pedida en el chat (Room00_Hangar tiene cambios sin commit: no se guardó).
+
+## v38 — Menú: etiquetas Dymo sobre chapa, interruptor de pantalla completa y botón VOLVER (16/11/2026)
+
+Petición directa: arreglar la copia fantasma de la palanca de PANTALLA COMPLETA, cambiarla por un interruptor, investigar VOLVER y rediseñar los botones del menú como etiquetas de etiquetadora (concepto E). Respaldos: `Tools/IronRequiem/Backups/20261116-hud-text/` y `20261116-hud-redesign/`. Sin commits, escenas ni prefabs guardados.
+
+- [x] Palanca: era un Toggle con la imagen "palanca abajo" siempre visible y "palanca arriba" encima. `OptionsSwitchVisual` la sustituye en tiempo de ejecución por un interruptor (`OptionsSwitchInstaller` lo añade al cargar escena; `RequiemMenuView` vive en `fps.UI` y no puede ver `IronRequiem.Runtime`).
+- [x] Botones: `IndustrialPanelGraphic` gana los estilos Label (cinta Dymo) y Sheet (chapa con remaches y franja de peligro); `HangarButtonFx` los usa (`HangarButtonFx.DymoStyle = false` devuelve el aspecto anterior) y oculta `MenuOnlyMetal`/`MenuOnlyLamp`.
+- [x] `HangarButtonFx.OnDisable` limpia el estado de pulsado (VOLVER se ocultaba con el efecto activo).
+- [x] Verificado en Play (IntroMenu, capturas `Tools/IronRequiem/Bridge/dymo_home2.png` y `dymo_options2.png`): compila, interruptor por ratón virtual, 4 de 4 ciclos OPCIONES→VOLVER.
+- [ ] VOLVER roto: no se reproduce en el Editor; pendiente de confirmar en el build y tras activar pantalla completa.
+- [ ] Sin revisar: menú de pausa, pantalla de muerte/Win/Lose con el nuevo estilo y hover con ratón físico.
+
+## IR-09 v03 — protagonista v02 refinado y rediseño de armas v01 (16–17/11/2026)
+
+Autorización directa del usuario: A) refinar el protagonista (auditoría, refinado, manos modulares y estándar de acople) y B) rediseñar las armas, con pausa de aprobación tras B1. Elegidas: P-A, PR-C y C-A, sobre los prefabs de campaña. Para el puño, acortar las falanges 2 y 3. Respaldo en `Tools/IronRequiem/Backups/20261116-protagonist-v02/`. Informes: `PROTAGONIST_V02_REFINE.md`, `WEAPONS_REDESIGN_V01.md` y `Tools/IronRequiem/Reports/IR09_V02_Review/review.md`.
+
+- [x] Auditoría A1 en solo lectura: 15 errores priorizados y 54 renders previos (`Reports/ProtagonistV02/Audit/`). Inventario de armas y contrato de acople (`Reports/WeaponsRedesign/Audit/`).
+- [x] Estándar IR-ACOPLE-01: socket `ModuleSocket_R/L` con +Z distal, brida Ø 0,078, espiga Ø 0,064 con 3 mm de solape, interfaz del módulo Ø 0,066 en z = 0 y un único `Attachment`.
+- [x] Protagonista v02 en tres iteraciones, visibles en la sesión de Blender:
+  - Manos rígidas por piezas con bisagras y un hueso por vértice.
+  - Muñeca según el estándar, codo entero y sockets únicos.
+  - LOD regenerados: FPS 8.768 de 9.000; LOD0 23.480 de 26.000.
+- [x] Exportación v02 con cinco clips de pose.
+- [x] En Unity:
+  - Variantes `Protagonist_FPS_v02` y `Protagonist_Body_v02`.
+  - Bibliotecas `HandPoses/V02` horneadas desde los clips.
+  - `Player_ModularArm_ProtagonistV02` y `ProtagonistV02Lab`.
+- [x] B1: nueve direcciones; el usuario eligió tres.
+- [x] B2:
+  - Tres armas con script, tres LOD, texturas 1024 y emisivos de calor y carga, dentro de presupuesto.
+  - Variantes de `Weapon_IR_ArmCannon_VO`, `Weapon_Shotgun_ArmModule_VO` y `Weapon_T07_Temporary_Optimized`.
+  - `WeaponsRedesignLab`.
+- [x] Código: socket opcional en `StolenShellFit`/`StolenChargeAnchor`; sin cambio con el campo vacío.
+- [x] PlayMode, entrada virtual: **3/3 aprobadas** (`WeaponsRedesignTests` ×2 y `ProtagonistV02Tests`).
+  - Acople a 1 mm y asiento del cañón a 0,00 mm.
+  - Disparo y disparo cargado.
+  - Cambio de arma.
+  - Golpes F y M1 con puño ≥ 0,9.
+- [x] Hashes protegidos 28/28 OK. La fuente del T-07 está intacta. Ningún prefab ni escena existente cambió; no se instalaron paquetes ni se hicieron commits.
+- [ ] Prueba manual en Play: vista FPS, estación mano → arma, puño cargado, cinemática del hangar, recogida y lanzamiento.
+- [x] Receptor `Forearm_R_Receiver` v02 para el jugador v07 (17/11, iteración 4).
+- [ ] Puño de medio y anular hasta PIP 95°.
+- [x] Costuras de codo, palma y muñeca, y espejo L/R por LOD (17/11, iteración 4; FPS 8.964).
+- [ ] Texel de las manos y del cañón.
+- [ ] PR-C: calor por aleta (requiere shader) y encuadre bajo (requiere autorizar un cambio de viewmodel).
+- [x] Estación de los laboratorios con el arma rediseñada.
+- [x] Ventana de carga del cañón animada (`ChargeWindowGlow`, verificada en PlayMode).
+- [ ] Integración en campaña tras la aprobación del usuario.
+- [ ] Limpieza manual de `Assets/InitTestScene*.unity` y de `C:\renders`.
+
+
+## IR-03 / IR-07 — Auditoría de mapa y efectos, y lote M1+E1+E2+B1 (17/11/2026)
+
+Informe completo y tabla de propuestas: [MAP_FX_AUDIT_20261117.md](MAP_FX_AUDIT_20261117.md). Respaldo y hashes: `Tools/IronRequiem/Backups/20261117-mapfx-phase2/`. Capturas: antes en `Tools/IronRequiem/Reports/MapFxAudit_before_20261117/`, después en `Tools/IronRequiem/Reports/MapFxAudit/` (mismos nombres).
+
+- [x] **M1. Grado de color por sala.** El Volume `VisualPass_SectorGrade` se quedaba en weight 0 en todas las salas. `VolumeFadeIn` guarda ahora el peso autorado en `Awake` y `ZoneEnvironment.Bind` lo reclama.
+  - Medido en Play: el peso pasa de 0 a 1,00 en unos 1,6 s en Room01 y Room02, y en Room02-05 es 1,00 al entrar.
+  - Archivos: `Scripts/VisualPass/VolumeFadeIn.cs` y `Scripts/Levels/ZoneEnvironment.cs`.
+- [x] **E1. Explosión de muerte.** La cadena `RobotBodyBurst_CombatPolish_VO_VO_VO` iba a ×36,6 del original (ImpactFlare a 220 m, ImpactRing a 110 m), y su partícula raíz opaca `TrailDeath` producía los cuadrados negros.
+  - Nuevo prefab `Prefabs/VisualOverhaul/VFX/RobotBodyBurst_CombatPolish_IR.prefab`: variante del original con tamaño ×1,35 y velocidad ×1,15 una sola vez, con topes.
+  - HoverBot_Current, Turret_Current, T07_Mech y T07_Current_Repaired apuntan ahora a `_IR`. Los `_VO*` se conservan sin cambios.
+  - `VisualOverhaulEnemies.cs` ya no acumula multiplicadores al reejecutarse. Herramienta nueva: `Editor/MapFx/IronCampaignMapFxDeathFx.cs`.
+  - El `DeathVfx` de plantilla no se anula, porque nunca se instancia: la presentación devuelve true.
+- [x] **E2. Hangar en juego.** Nuevo perfil `Resources/IronRequiem/HG_GameplayVolume.asset`: CA 0, grano 0,1, viñeta 0,2, bloom 0,25.
+  - `ZoneEnvironment` lo sustituye en runtime solo en las etapas de CampaignFlow.
+  - IntroMenu y la escena no cambian. Herramienta: `Editor/MapFx/IronCampaignMapFxHangar.cs`.
+- [x] **B1. Resolución nativa** (causa probable de IR-03).
+  - `PlayerSettings.defaultIsNativeResolution` pasa de 0 a 1.
+  - En build, `RequiemSettings` aplica `SetResolution(nativa, FullScreenWindow)` al activar la pantalla completa y al cargar el menú con esa preferencia. En el Editor no cambia nada.
+  - Herramienta: `Editor/MapFx/IronCampaignMapFxDisplay.cs`.
+- [x] **Compilación** sin errores.
+- [x] **PlayMode.** CampaignTests 7/7, MapFxAudit 4/4, MenuWeaponRegressionTests 3/3 y ThermalMenuTests: 4 de 6 aprobadas.
+  - Los 2 fallos de ThermalMenuTests (`EscapePauseInputAndSettings` e `IntroNavigationPersistenceAndPlayFlow`) también ocurren con el `RequiemSettings` original, así que son previos. El test espera el flujo antiguo IntroMenu → CombatTwoFloorsLab.
+- [x] **Hashes.** Ninguna escena cambió. Solo cambiaron los 4 prefabs de campaña previstos (más campos por defecto que añade la reserialización, iguales a los inicializadores en C#), el prefab nuevo `_IR` y una línea de `ProjectSettings.asset`.
+- [x] **Revisión independiente:** sin hallazgos bloqueantes.
+- [ ] **Recorrido manual completo** de la campaña con teclado y ratón. Solo se recorrió con entrada virtual del Test Runner.
+- [ ] **Medición Release a 1080p (R1).** En el Editor no hay cambio medible: main thread p50 de 18-24 ms antes y después, dentro del ruido de una pelea no determinista.
+- [x] **B1, arranque a pantalla completa** (aprobado por el usuario el 17/11/2026). `IronCampaignMapFxDisplay.Apply fullscreen` cambió `fullScreenMode` de Windowed a FullScreenWindow (`ProjectSettings.asset` l.115, `fullscreenMode: 3 → 1`; es el único cambio frente al respaldo `ProjectSettings.before-fullscreen.asset`). El ejecutable arranca sin bordes a la resolución nativa. Si en el registro quedó `IronRequiem.Fullscreen=0` o claves `Screenmanager*` de builds anteriores, mandan esas: borrarlas antes de comprobar. Pendiente: verificarlo en un build.
+- [ ] Comprobar en build que el blur desaparece, borrando antes las claves `Screenmanager*` del registro.
+
+### Verificación en build Release (17/11/2026)
+- [x] Build Release `Tools/IronRequiem/Builds/VisualOverhaul/mapfx-release/` (`VisualOverhaulBench.BuildGame`): Succeeded, 0 errores, 33 escenas, 275 s.
+- [x] **R1 medido a 1080p** (`-irTour -irFullHD`, Release, exclusiva 1920×1080, vsync 0, RTX 4050 Laptop): Hangar 174 FPS (p99 11,6 ms) · Pasillo 188 · Foundry 179 · Breach 183 · Assembly 182 · Reactor 192 · Pursuit 258. Media de salas por encima de 120 FPS; sin fotogramas >33 ms en combate. Informe: `Tools/IronRequiem/Reports/Perf/tour_player_mapfx_release_1080p.txt`. El tour cubre solo la primera ronda de cada sala con 3–6 enemigos.
+- [x] **B1: se mantiene sin bordes (decisión del usuario, 17/11/2026).** Con las claves `Screenmanager*` borradas, el ejecutable arranca en FullScreenWindow pero a **1600×900**: Windows escala el panel físico de 1920×1080 al 120 % y Unity recibe el escritorio lógico de 1600×900, que se estira a 1920×1080 (sigue el blur de IR-03). Solo la pantalla completa exclusiva da 1920×1080 reales. El usuario eligió no cambiar a exclusiva: con escalado de Windows al 120 % el blur de IR-03 persiste y queda como limitación conocida. Informe: `tour_player_mapfx_release_default.txt`.
+- Registro de Windows: exportado antes de las pruebas en `Backups/20261117-mapfx-phase2/registry-ProyectoGameFinal-before-build-test.reg` y restaurado al terminar.
+
+## IR-03 / IR-07 / PUERTAS — Auditoría r2 con zona protegida (17/11/2026), FASE 1
+Informe: `Docs/IronRequiem/MAP_FX_AUDIT_20261117_r2.md` (anexos en `Tools/IronRequiem/Reports/MapFxAudit2/` y `ProtectedZone/guardian.md`). Solo lectura y Play Mode; sin escenas guardadas ni commits. Archivos nuevos: `Editor/MapFx/IronCampaignProtectedZone.cs`, `Tests/PlayMode/ProtectedMenuReference.cs`, tests E/F en `MapFxAudit.cs` y `Tools/IronRequiem/ProtectedZone/compare_menu.ps1`.
+- [x] Zona protegida: hashes de 443 archivos iguales antes y después (solo cambia el atlas dinámico de TMP). Las capturas del menú no pueden ser idénticas píxel a píxel porque el menú usa tiempo real.
+- [ ] **E2 afecta a la zona protegida en runtime:** cambia el post de Room00 antes de la cinemática. Propuesta P-E2a, pendiente de decisión.
+- [ ] **E1 incompleto (F1):** `RobotDestructionPool` usa un solo prefab por sala. Propuesta E7.
+- [ ] Colisión confirmada en Play: hueco sin suelo en Room02 (M7), SouthWall de Room01 sobre la estación (M8), columnas en las rampas de Room04 (M9). La campaña termina en un muro ciego (M13).
+- [ ] **Corrección a la verificación B1 de arriba:** la build es DPI-aware (PerMonitorV2), así que el escalado al 120 % no está demostrado como causa del arranque a 1600×900. Diagnóstico B4 pendiente.
+- [x] Inventario de puertas: 6 esclusas y 13 puertas; contrato comprobado en Play (puerta abierta inactiva, colisión desde el primer frame al cerrar). Sin estado rojo ni sonido de puerta. A la espera de la decisión sobre la FASE P1.
+
+## T-07 Mech: prueba de animación (Tripo/Composio y clips propios de robot) (17/11/2026)
+Informe: `Docs/IronRequiem/TRIPO_RETARGET_TEST_20261117.md`. Solo variante y laboratorios; sin commits; producción intacta (19 hashes protegidos iguales).
+- [x] Tripo por Composio: subida y comprobación de rig gratis → `riggable: false`; saldo 0; **0 créditos gastados**. Vía descartada por API para este robot.
+- [x] Clips propios R_Idle, R_CombatIdle, R_PatrolWalk, R_CombatAdvance, R_CannonAttack y R_HitReaction, con el controller copiado `T07MechRobot_Locomotion`, la variante `T07_Mech_RobotAnim_Test` y los laboratorios Before/After.
+- [x] Compilación sin errores. Play Mode automático en los dos laboratorios: patrulla → persecución → disparo → golpe, 0 errores de consola. Revisor ciego: mejora en disparo, golpe y legibilidad patrulla/combate; idle peor.
+- [x] Limpieza (aprobada): el idle mantiene el cañón bajo y lo gira con la cabeza; el golpe gira y ladea el torso (distinto del disparo); la interpenetración se revisó en vistas cercanas y el golpe se separó del muslo; recaptura en Play con 0 errores.
+- [ ] Prueba manual con teclado y ratón y coste del Animator.
+- [x] Disparador del golpe: `MechHitReactionTrigger` (nuevo, solo en la variante) dispara OnDamaged con límite de 0,7 s y cede el brazo en el golpe y tras cada disparo. `T07CannonSocket.YieldAim` añadido; no hace nada si nadie lo llama (respaldo en Backups/20261117-t07mech-robot-anim). En Play, Before (el juego hoy) no reproduce nunca el HitReaction y After sí, con el daño real; 0 errores.
+- [ ] No hay tests que cubran `T07CannonSocket`; su equivalencia sin el disparador se verificó solo en Play.
+- [ ] Integración en `T07_Mech.prefab`: pendiente de aprobación.
+- [x] Escena vitrina `Assets/IronRequiem/Scenes/T07MechRobotAnimShowcase.unity`: 12 mechs visuales sin IA (delante NUEVO, detrás ANTES), 6 columnas, cada uno en bucle con `AnimationClipShowcase` (nuevo, PlayableGraph). Comprobación en Play: 11/12 se mueven más de 1 cm; `R_CombatIdle` se queda en 0,6 cm por diseño (quieto con zumbido). 0 errores; sale de Play sola y restaura la escena. Menú: `Tools/Iron Requiem/Visual Pass/T07 Mech robot anim (test) - Play SHOWCASE (all clips)`.
+
+## T-07 de campaña: animación de robot (18/11/2026)
+Informe: `Docs/IronRequiem/T07_ROBOT_ANIM_20261118.md`. Solo variante y escenas de prueba; sin commits; 20 hashes protegidos del T-07 y 19 del Mech iguales.
+- [x] Inventario de enemigos (BigBot, Carroñero, HoverBot, SawBot, T-07, torreta). Se empezó por el T-07: el más frecuente y con el mismo driver que el Mech.
+- [x] Rig medido: lados `_L`/`_R` nombrados desde el espectador, cañón perpendicular al antebrazo, hueso `Head` duplicado en guías. Corregido en la herramienta (`RCannonArm`/`rCannonPerp`); el Mech no cambia.
+- [x] 6 clips `R_*`, controller `T07Robot_Locomotion`, variante `T07_RobotAnim_Test`, laboratorios Before/After y vitrina `T07RobotAnimShowcase`.
+- [x] Play automático antes/después con 0 errores. El HitReaction ahora se ve (antes nunca). Vitrina con 12/12 robots en movimiento; Unity vuelve a IntroMenu limpio.
+- [ ] Prueba manual con teclado y ratón; revisor ciego A/B; coste del Animator.
+- [ ] Integración en `T07_Current_Repaired.prefab`: pendiente de aprobación.
+- [ ] Siguientes enemigos: SawBot (clips de rotación limpios; ruedas y cadena por código), HoverBot (controller de plantilla: copiar), BigBot (apuntado e IK de giro por código), torreta (pivote por código) y Carroñero (todo procedural: los clips no se verían sin cambiar `CarroneroMotion`).
+
+## SawBot: animación de robot (18/11/2026)
+Informe: `Docs/IronRequiem/SAWBOT_ROBOT_ANIM_20261118.md`. Solo variante y escenas de prueba; sin commits; 19 hashes protegidos del SawBot iguales.
+- [x] 5 clips `R_Saw*` (reposo, marcha, preparar 0,25 s exactos, serrar, golpe aditivo) con las poses de contacto originales como clave; muertes, ruedas y cadena sin tocar.
+- [x] Controller `SawBotRobot`, variante `SawBot_RobotAnim_Test`, laboratorios Before/After y vitrina `SawBotRobotAnimShowcase`.
+- [x] Play automático antes/después: 0 errores y la misma secuencia de IA. Vitrina: 9/10 en movimiento (el que no, es el SawHold antiguo, casi estático).
+- [ ] Prueba manual; integración en `SawBot_Current.prefab` pendiente de aprobación.

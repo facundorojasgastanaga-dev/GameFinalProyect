@@ -1,0 +1,5 @@
+Sector grade weight after room activation (VolumeFadeIn + CampaignFlow BlendIn)
+  Room01_Foundry: t=0.0s w=0.00 ambient=Trilight; t=0.8s w=0.47 ambient=Trilight; t=1.6s w=0.99 ambient=Trilight; t=2.3s w=1.00 ambient=Trilight; t=3.1s w=1.00 ambient=Trilight; t=3.8s w=1.00 ambient=Trilight; t=4.6s w=1.00 ambient=Trilight; t=5.4s w=1.00 ambient=Trilight; t=6.1s w=1.00 ambient=Trilight; 
+  stack bloom active=True thr=0.9 int=0.1 scatter=0.7 | tonemap=ACES | exposure=0.1 contrast=12 sat=-4 filter=FFF2E0 | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.084 | chromatic=0 | lens=0 | grain=0.3
+  Room02_Breach: t=0.0s w=0.00 ambient=Trilight; t=0.8s w=0.47 ambient=Trilight; t=1.5s w=0.99 ambient=Trilight; t=2.3s w=1.00 ambient=Trilight; t=3.1s w=1.00 ambient=Trilight; t=3.8s w=1.00 ambient=Trilight; t=4.6s w=1.00 ambient=Trilight; t=5.3s w=1.00 ambient=Trilight; t=6.1s w=1.00 ambient=Trilight; 
+  stack bloom active=True thr=0.9 int=0.1 scatter=0.7 | tonemap=ACES | exposure=0.1 contrast=14 sat=-12 filter=F0FAFF | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.084 | chromatic=0 | lens=0 | grain=0.3

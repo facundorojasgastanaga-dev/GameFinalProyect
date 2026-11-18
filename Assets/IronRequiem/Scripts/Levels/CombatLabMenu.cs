@@ -9,6 +9,9 @@ namespace IronRequiem
   [SerializeField] PlayerCharacterController player;
   [SerializeField] GameObject mainPanel,deathPanel;
   [SerializeField] MonoBehaviour pauseManager;
+  [SerializeField] bool directGameplayEntry;
+  bool IsCampaignEntry=>directGameplayEntry||gameObject.scene.name=="RequiemCampaign";
+  public void RemoveLegacyMainPanel(){directGameplayEntry=true;mainPanel=null;}
   static bool startAfterReload;
   public void ConfigurePause(MonoBehaviour manager)=>pauseManager=manager;
   public bool IsPlaying {get;private set;}
@@ -27,13 +30,13 @@ namespace IronRequiem
   public static void ContinueRun(string target){if(fromMainMenu)MainMenuLaunch.Continue(target);}
   static void Track(Scene s,LoadSceneMode mode){if(mode!=LoadSceneMode.Single)return;var pending=MainMenuLaunch.Consume();if(pending!=null&&s.name==pending)fromMainMenu=true;else if(s.name!=lastScene)fromMainMenu=false;lastScene=s.name;}
   public void Configure(PlayerCharacterController p,GameObject menu,GameObject death){player=p;mainPanel=menu;deathPanel=death;}
-  void Start(){ResumedAfterRestart=startAfterReload;if(startAfterReload||fromMainMenu){startAfterReload=false;BeginGame();}else ShowMain();}
-  void LateUpdate(){if(pauseManager)pauseManager.enabled=IsPlaying&&player&&!player.IsDead;if(!IsPlaying){Pause();return;}if(IsPlaying&&player&&player.GetComponent<Health>().CurrentHealth<=0){IsPlaying=false;mainPanel.SetActive(false);deathPanel.SetActive(true);Pause();}}
+  void Start(){ResumedAfterRestart=startAfterReload;if(IsCampaignEntry||startAfterReload||fromMainMenu){startAfterReload=false;BeginGame();}else ShowMain();}
+  void LateUpdate(){if(pauseManager)pauseManager.enabled=IsPlaying&&player&&!player.IsDead;if(!IsPlaying){Pause();return;}if(IsPlaying&&player&&player.GetComponent<Health>().CurrentHealth<=0){IsPlaying=false;if(mainPanel)mainPanel.SetActive(false);deathPanel.SetActive(true);Pause();}}
   void Pause(){AudioListener.pause=true;Time.timeScale=0;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;}
-  void ShowMain(){IsPlaying=false;mainPanel.SetActive(true);deathPanel.SetActive(false);Pause();}
-  public void BeginGame(){mainPanel.SetActive(false);deathPanel.SetActive(false);IsPlaying=true;if(pauseManager)pauseManager.enabled=true;AudioListener.pause=false;Time.timeScale=1;Cursor.lockState=CursorLockMode.Locked;Cursor.visible=false;}
+  void ShowMain(){if(!mainPanel){BeginGame();return;}IsPlaying=false;mainPanel.SetActive(true);deathPanel.SetActive(false);Pause();}
+  public void BeginGame(){if(mainPanel)mainPanel.SetActive(false);deathPanel.SetActive(false);IsPlaying=true;if(pauseManager)pauseManager.enabled=true;AudioListener.pause=false;Time.timeScale=1;Cursor.lockState=CursorLockMode.Locked;Cursor.visible=false;}
   public void RestartFromFirstRoom(){Reload(true);}
-  public void ReturnToMainMenu(){if(fromMainMenu){Time.timeScale=1;AudioListener.pause=false;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;SceneManager.LoadScene(MainMenuScene,LoadSceneMode.Single);return;}Reload(false);}
+  public void ReturnToMainMenu(){if(IsCampaignEntry||fromMainMenu){Time.timeScale=1;AudioListener.pause=false;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;SceneManager.LoadScene(MainMenuScene,LoadSceneMode.Single);return;}Reload(false);}
   void Reload(bool play){startAfterReload=play;Time.timeScale=1;SceneManager.LoadScene(gameObject.scene.name,LoadSceneMode.Single);}
   void OnDestroy(){Time.timeScale=1;AudioListener.pause=false;}
  }

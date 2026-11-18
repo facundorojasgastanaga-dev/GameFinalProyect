@@ -50,6 +50,8 @@ namespace IronRequiem
         public void UseSpawnQueue(EnemySpawnQueue queue)=>spawnQueue=queue;
         public void BindSession(PlayerCharacterController owner,TMP_Text label){player=owner;message=label;}
         public void ShowExitStatus(string value){if(Completed&&message)message.text=value;}
+        public Bounds FirstRoomBounds=>firstRoom; // v35: the tour benchmark walks the player into the arena
+        public Transform[] FirstRoomSpawns=>firstRoomSpawns;
         public void Configure(PlayerCharacterController p,Wave[] sequence,Transform[] a,Transform[] b,GameObject door,TMP_Text text){player=p;waves=sequence;firstRoomSpawns=a;secondRoomSpawns=b;gate=door;message=text;}
         void Start(){started=true;message.text="ENTRA EN LA PRIMERA ARENA";menu=FindAnyObjectByType<CombatLabMenu>();playerHunt=new GameObject("LabPlayerHuntRoute").AddComponent<Unity.FPS.AI.PatrolPath>();playerHunt.transform.SetParent(transform);playerHunt.PathNodes.Add(player.transform);
             RunSeed=scenarioSeed==0?Guid.NewGuid().GetHashCode():scenarioSeed;random=new System.Random(RunSeed);spawnPath=new NavMeshPath();plan=new Group[waves.Length][];compositions=new string[waves.Length];

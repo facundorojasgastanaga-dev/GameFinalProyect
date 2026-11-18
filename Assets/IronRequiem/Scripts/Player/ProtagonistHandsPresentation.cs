@@ -15,6 +15,8 @@ namespace IronRequiem
         [SerializeField] Health health;
         [SerializeField] WeaponController pistolPrefab;
         [SerializeField] Transform fpsRoot;
+        [SerializeField] HandPoseController handPoses;
+        public void ConfigureHandPoses(HandPoseController controller) => handPoses = controller;
         [SerializeField] Animator poseAnimator;
         [SerializeField] Transform leftForearm, rightForearm, leftHand, rightHand;
         [SerializeField] Transform leftModuleSocket, rightModuleSocket;
@@ -59,6 +61,28 @@ namespace IronRequiem
         Transform leftSleeve,rightSleeve;Renderer leftSleeveView,rightSleeveView;Renderer leftForearmView,rightForearmView;
         public bool ArmSleeves=>armSleeves;public Transform LeftForearm=>leftForearm;public Transform RightForearm=>rightForearm;public Renderer LeftForearmView=>leftForearmView;public Renderer RightForearmView=>rightForearmView;public Renderer LeftSleeve=>leftSleeveView;public Renderer RightSleeve=>rightSleeveView;
         public void ConfigureSleeves(bool enabled,float radius,Material material){armSleeves=enabled;sleeveRadius=radius;sleeveMaterial=material;}
+        [Header("v7 closed fist (procedural, both hands)")]
+        [Tooltip("Folds the fingers into a real fist (knuckles forward, fingers in the palm, thumb across index and middle) while that hand strikes or charges.")]
+        [SerializeField] bool closedFist=true;
+        [Tooltip("Per hand: finger angles, how close together, palm side (0 = rig default, 1 / -1 to flip if the fingers bend the wrong way). Editable live in Play mode.")]
+        [SerializeField] HandFistRig rightFist=new HandFistRig(),leftFist=new HandFistRig();
+        [Tooltip("Extra wrist rotation (degrees, hand local X/Y/Z) applied while that hand is a fist. Use it to turn the fist the right way round (e.g. 180 on one axis if it is upside down). Editable live in Play mode.")]
+        [SerializeField] Vector3 leftFistWristEuler,rightFistWristEuler;
+        [Tooltip("Play mode only: hold that fist in view (charge pose) so the values above can be tuned live.")]
+        [SerializeField] bool previewLeftFist,previewRightFist;
+        public HandFistRig RightFistRig=>rightFist;public HandFistRig LeftFistRig=>leftFist;
+        public Transform LeftHandBone=>leftHand;
+        public bool IsFingerBoneOf(Transform t)=>IsFingerBone(t);
+        void OnValidate(){rightFist?.Invalidate();leftFist?.Invalidate();}
+        public float FistClosure=>Mathf.Max(RightFistClosure,LeftFistClosure);
+        public float RightFistClosure=>handPoses?handPoses.RightClosure:rightFist.Weight;public float LeftFistClosure=>handPoses?handPoses.LeftClosure:leftFist.Weight;
+        public string FistDebug=>"R "+rightFist.Describe()+" | L "+leftFist.Describe();
+        [Header("v6 wrist joint (mechanical collar at the hand / module port)")]
+        [SerializeField] bool wristCollar=true;
+        [SerializeField,Min(.01f)] float wristCollarRadius=.046f,wristCollarLength=.032f;
+        [SerializeField] Color wristCollarColor=new Color(.13f,.14f,.16f),receiverColor=new Color(.16f,.17f,.19f);
+        Transform wristCollarT;Renderer wristCollarView;
+        public Transform WristMount=>wristCollarT;
         [Header("Disarm (wrench weapon off + punch)")]
         [SerializeField] DisarmMotion disarm=new DisarmMotion();
         [SerializeField] Vector3 yankCameraKick=new Vector3(-1.6f,-.8f,2.2f);
@@ -79,6 +103,9 @@ namespace IronRequiem
         public void ConfigureModularArm(Renderer[] receivers,float retainedLength)
         {modularRightArm=true;rightArmReceiverViews=receivers;retainedForearmLength=retainedLength;}
         public bool RightForearmReplaced=>modularRightArm&&CurrentRepresentation!=Representation.Normal;
+        /// 16/11: how far ahead of a mounted module's Attachment the right hand bone sits (read-only; the montage
+        /// station uses it to end its override exactly on the pose this component computes after the mount).
+        public float MountedHandLead=>(modularRightArm?rightLength-retainedForearmLength:0)+.003f;
         Vector3 leftAxis,rightAxis;
         Quaternion leftHandBind,rightHandBind;
         float leftLength,rightLength;
@@ -110,7 +137,30 @@ namespace IronRequiem
             leftLength=Vector3.Distance(leftHand.position,leftForearm.position);rightLength=Vector3.Distance(rightHand.position,rightForearm.position);
             leftHandBind=Quaternion.Inverse(leftForearm.rotation)*leftHand.rotation;rightHandBind=Quaternion.Inverse(rightForearm.rotation)*rightHand.rotation;
             foreach(var r in actionRightForearm){if(r.name=="Forearm_L_FPS")leftForearmView=r;if(r.name=="Forearm_R_FPS")rightForearmView=r;}
+            rightFist.Collect(rightHand,IsFingerBone,1);leftFist.Collect(leftHand,IsFingerBone,-1); // palm sides of the ProtagonistV01 rig
+            if(wristCollar)BuildWristCollar();
             if(armSleeves){leftSleeve=CreateSleeve("Sleeve_L_FPS",leftForearmView,out leftSleeveView);rightSleeve=CreateSleeve("Sleeve_R_FPS",rightForearmView,out rightSleeveView);}
+        }
+        bool IsFingerBone(Transform t)
+        {
+            if(!t||t==rightModuleSocket||t==leftModuleSocket||t.GetComponent<Renderer>())return false;
+            var n=t.name;return n.IndexOf("Socket",System.StringComparison.OrdinalIgnoreCase)<0&&n.IndexOf("Attachment",System.StringComparison.OrdinalIgnoreCase)<0&&n.IndexOf("Module",System.StringComparison.OrdinalIgnoreCase)<0&&!n.EndsWith("_end",System.StringComparison.OrdinalIgnoreCase);
+        }
+        // v6: a dark collar hides the seam between hand and forearm (and between forearm and module); the forearm receiver
+        // (shown while the hand is off) is tinted dark metal instead of the bare light grey of the source mesh.
+        void BuildWristCollar()
+        {
+            wristCollarT=CreateSleeve("WristCollar_R_FPS",rightForearmView,out wristCollarView);
+            var block=new MaterialPropertyBlock();block.SetColor("_BaseColor",wristCollarColor);block.SetColor("_Color",wristCollarColor);wristCollarView.SetPropertyBlock(block);
+            if(rightArmReceiverViews!=null)foreach(var r in rightArmReceiverViews)if(r){var b=new MaterialPropertyBlock();r.GetPropertyBlock(b);b.SetColor("_BaseColor",receiverColor);b.SetColor("_Color",receiverColor);r.SetPropertyBlock(b);}
+        }
+        void PoseWristCollar(Vector3 port,bool replaced)
+        {
+            if(!wristCollarT)return;
+            bool show=rightForearmView&&rightForearmView.enabled&&rightForearmView.gameObject.activeInHierarchy;wristCollarView.enabled=show;if(!show)return;
+            var dir=rightForearm.TransformDirection(rightAxis).normalized;var at=replaced?port:rightHand.position;
+            wristCollarT.SetPositionAndRotation(at-dir*(wristCollarLength*.35f),Quaternion.FromToRotation(Vector3.up,dir));
+            var ps=wristCollarT.parent.lossyScale;wristCollarT.localScale=new Vector3(wristCollarRadius*2/ps.x,wristCollarLength*.5f/ps.y,wristCollarRadius*2/ps.z);
         }
         Transform CreateSleeve(string name,Renderer reference,out Renderer view)
         {
@@ -154,8 +204,9 @@ namespace IronRequiem
             CurrentRepresentation=active&&carrier.Held&&carrier.Held.EquippedWeapon==active?Representation.StolenCannon:
                 active&&active.SourcePrefab==pistolPrefab.gameObject?Representation.Pistol:
                 IsMounted(active)?Representation.Mounted:Representation.Normal;
-            bool rightStrike=actionsEnabled&&melee&&melee.IsAttacking&&!melee.ArmedStrike;
-            poseAnimator.SetInteger(HandPose,CurrentRepresentation==Representation.Normal&&!rightStrike?0:1);
+            // v6: the right hand is a closed fist (NormalFist, HandPose 0) at rest and for the whole strike: tap, charge and
+            // release. Only a module in hand switches to the grip pose. (v5 wrongly opened the grip during the strike.)
+            poseAnimator.SetInteger(HandPose,CurrentRepresentation==Representation.Normal?0:1);
         }
         void LateUpdate()
         {
@@ -166,15 +217,16 @@ namespace IronRequiem
             bool replaced=CurrentRepresentation!=Representation.Normal;
             bool detached=armOverride&&overrideHandHidden;
             if(modularRightArm&&rightArmReceiverViews!=null)
-                foreach(var renderer in rightArmReceiverViews)if(renderer)renderer.enabled=replaced||detached;
+                foreach(var renderer in rightArmReceiverViews)if(renderer)renderer.enabled=replaced; // v6: a bare wrist shows only the collar cap
             foreach(var renderer in rightHandRenderers)renderer.enabled=!replaced&&!detached;
             bool punching=actionsEnabled&&melee&&melee.IsAttacking&&!disarming;
+            bool leftStrike=(punching&&melee.LeftStrike)||(previewLeftFist&&!disarming);bool disarmClosed=false;
             if(actionsEnabled)
             {
-                // v5: the strike is right-handed; the left hand only appears for the disarm.
-                foreach(var renderer in leftRenderers)renderer.enabled=disarming;
+                // v7: F strikes with the left hand (armed or not); the left hand also appears for the disarm.
+                foreach(var renderer in leftRenderers)renderer.enabled=disarming||leftStrike;
                 foreach(var renderer in actionRightForearm)if(renderer.name=="Forearm_R_FPS")renderer.enabled=(!active||active.IsWeaponActive||punching||armOverride)&&!RightForearmReplaced;
-                if(disarming&&leftPunchClip){disarm.Evaluate(out _,out _,out _,out bool closed);leftPunchClip.SampleAnimation(fpsRoot.gameObject,closed?.24f:0);}
+                if(disarming&&leftPunchClip){disarm.Evaluate(out _,out _,out _,out bool closed);disarmClosed=closed;leftPunchClip.SampleAnimation(fpsRoot.gameObject,closed?.24f:0);}
                 if(mountedWeapon!=active)
                 {
                     mountedWeapon=active;nativeAttachment=null;
@@ -206,8 +258,8 @@ namespace IronRequiem
             if(RightForearmReplaced&&active)
                 rightWrist=rightPort+active.WeaponMuzzle.forward*(rightLength-retainedForearmLength);
             Vector3 leftElbow;Vector3 rightElbowHint=camera.TransformPoint(new Vector3(.28f,-.45f,.02f));
-            bool rightJab=punching&&!melee.ArmedStrike&&!replaced;
-            if(rightJab)
+            bool rightJab=(punching&&!melee.LeftStrike&&!melee.ArmedStrike&&!replaced)||(previewRightFist&&!replaced&&!punching);
+            if(rightJab||leftStrike)
             {
                 JabPose(melee.PoseTime,out var jabWrist,out var jabElbow);
                 if(melee.IsCharging)
@@ -216,7 +268,7 @@ namespace IronRequiem
                     float level=melee.ChargeLevel,t=Time.time,amp=.0025f+.009f*level*level;
                     var shake=new Vector3(Mathf.Sin(t*71f)+.5f*Mathf.Sin(t*113f),Mathf.Sin(t*83f+1.3f),.6f*Mathf.Sin(t*97f+.4f))*amp;
                     // the chambered fist comes into view (the jab chamber sits outside the horizontal FOV) and is held there
-                    float show=Mathf.SmoothStep(0,1,Mathf.Clamp01(level*3f));
+                    float show=Mathf.SmoothStep(0,1,Mathf.Clamp01(level*7f)); // v6: in view within ~0.17 s of the charge
                     jabWrist=Vector3.Lerp(jabWrist,ChargeW,show)+shake;jabElbow=Vector3.Lerp(jabElbow,ChargeE,show)+shake*.5f;
                 }
                 else if(melee.Power>0&&melee.PoseTime>.12f&&melee.PoseTime<.4f)
@@ -229,10 +281,14 @@ namespace IronRequiem
                     float reachBoost=Mathf.Clamp01(1-Mathf.Abs(melee.PoseTime-.24f)/.16f)*melee.Power;
                     jabWrist+=new Vector3(.01f,.01f,.09f)*reachBoost;jabElbow+=new Vector3(.005f,.005f,.07f)*reachBoost;
                 }
-                // mirrored to the right side of the view
-                rightWrist=camera.TransformPoint(Mirror(jabWrist));rightElbowHint=camera.TransformPoint(Mirror(jabElbow));
+                // the left jab as authored; the right one mirrored to the right side of the view
+                if(leftStrike){leftWrist=camera.TransformPoint(jabWrist);leftElbow=camera.TransformPoint(jabElbow);}
+                else{rightWrist=camera.TransformPoint(Mirror(jabWrist));rightElbowHint=camera.TransformPoint(Mirror(jabElbow));leftElbow=camera.TransformPoint(new Vector3(-.24f,-.45f,.02f));}
             }
-            leftElbow=camera.TransformPoint(new Vector3(-.24f,-.45f,.02f));
+            else leftElbow=camera.TransformPoint(new Vector3(-.24f,-.45f,.02f));
+            // Inspector preview: hold the fist in the charge pose so it can be tuned live
+            if(previewLeftFist&&!punching&&!disarming){leftWrist=camera.TransformPoint(ChargeW);leftElbow=camera.TransformPoint(ChargeE);}
+            if(previewRightFist&&!punching&&!replaced){rightWrist=camera.TransformPoint(Mirror(ChargeW));rightElbowHint=camera.TransformPoint(Mirror(ChargeE));}
             if(disarming)
             {
                 disarm.Evaluate(out var wrist,out var elbow,out float weight,out _);
@@ -242,6 +298,22 @@ namespace IronRequiem
             if(actionsEnabled&&replaced&&active)rightElbowHint=rightWrist-active.WeaponMuzzle.forward;
             if(armOverride){rightWrist=Vector3.Lerp(rightWrist,camera.TransformPoint(overrideWrist),overrideWeight);rightElbowHint=Vector3.Lerp(rightElbowHint,camera.TransformPoint(overrideElbow),overrideWeight);}
             FitArm(rightForearm,rightHand,rightAxis,rightHandBind,rightLength,rightWrist,rightElbowHint);
+            // v7: the striking hand is a real fist from the first frame of the tap / charge until it reopens after the strike
+            if(handPoses)
+            {
+                bool rightClosed=closedFist&&rightJab&&!detached,leftClosed=closedFist&&(leftStrike||(disarming&&disarmClosed));
+                handPoses.RequestRight(rightClosed?HandPoseLibrary.Pose.Fist:replaced?HandPoseLibrary.Pose.Grip:HandPoseLibrary.Pose.Relaxed,rightClosed?.06f:.15f);
+                handPoses.RequestLeft(leftClosed?HandPoseLibrary.Pose.Fist:HandPoseLibrary.Pose.Relaxed,leftClosed?.06f:.15f);
+            }
+            else
+            {
+                // Legacy lab scenes retain their serialized rig until explicitly migrated; only one branch writes fingers.
+                rightFist.Apply(closedFist&&rightJab&&!detached);
+                leftFist.Apply(closedFist&&(leftStrike||(disarming&&disarmClosed)));
+                if(leftFist.Weight>0&&leftFistWristEuler!=Vector3.zero)leftHand.rotation=leftHand.rotation*Quaternion.Slerp(Quaternion.identity,Quaternion.Euler(leftFistWristEuler),leftFist.Weight);
+                if(rightFist.Weight>0&&rightFistWristEuler!=Vector3.zero)rightHand.rotation=rightHand.rotation*Quaternion.Slerp(Quaternion.identity,Quaternion.Euler(rightFistWristEuler),rightFist.Weight);
+            }
+            PoseWristCollar(rightPort,RightForearmReplaced&&active);
             if(armSleeves)
             {
                 FitSleeve(leftSleeve,leftSleeveView,leftForearmView,leftForearm,leftAxis,leftShoulder);
@@ -256,7 +328,7 @@ namespace IronRequiem
         [SerializeField] bool straightJab=true;
         static readonly Vector3 JabGuardW=new Vector3(-.17f,-.23f,.22f),JabGuardE=new Vector3(-.28f,-.40f,-.02f);
         static readonly Vector3 JabChamberW=new Vector3(-.19f,-.25f,.13f),JabChamberE=new Vector3(-.31f,-.40f,-.10f);
-        static readonly Vector3 ChargeW=new Vector3(-.12f,-.17f,.33f),ChargeE=new Vector3(-.25f,-.34f,.06f);
+        static readonly Vector3 ChargeW=new Vector3(-.10f,-.125f,.36f),ChargeE=new Vector3(-.23f,-.32f,.09f); // v6/v7: whole fist in frame, below-left of the crosshair (left hand)
         static readonly Vector3 JabHitW=new Vector3(-.055f,-.115f,.60f),JabHitE=new Vector3(-.13f,-.19f,.31f);
         static Vector3 Mirror(Vector3 v)=>new Vector3(-v.x,v.y,v.z);
         // v5 armed bash (socket space, metres / degrees): pull back and cock, drive forward with a twist, recover.

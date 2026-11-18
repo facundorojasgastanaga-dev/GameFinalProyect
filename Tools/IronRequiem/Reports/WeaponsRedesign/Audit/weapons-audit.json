@@ -1,0 +1,1263 @@
+{
+ "generated": "2026-11-16",
+ "mode": "solo lectura",
+ "blender": "5.2.3 LTS --background --factory-startup",
+ "unity_convention": "Unity = (-Xb, Zb, -Yb) para estos FBX (bakeAxisConversion 0)",
+ "weapons": {
+  "PistolModule_1000": {
+   "fbx": "Assets/IronRequiem/Art/Weapons/BasicPistolModule/PistolModule_1000.fbx",
+   "guid": "60c069240a47c1248b8576ed5920ca5f",
+   "meta": {
+    "globalScale": 1,
+    "useFileScale": 1,
+    "useFileUnits": 1,
+    "bakeAxisConversion": 0,
+    "isReadable": 0,
+    "meshCompression": 0,
+    "addColliders": 0,
+    "preserveHierarchy": 0,
+    "materialImportMode": 2,
+    "importAnimation": 1,
+    "animationType": "2 (Generic)",
+    "lODScreenPercentages": []
+   },
+   "authoring": {
+    "script": "Tools/IronRequiem/Blender/create_pistol_module.py",
+    "blend": "Tools/IronRequiem/Blender/Working/BasicPistolModule/PistolModule_1000.blend",
+    "export": "axis_forward='-Z', axis_up='Y', apply_unit_scale=True; empties Attachment (0,0,0), Muzzle (0,-0.379,0)"
+   },
+   "lods": {
+    "LOD0": 532
+   },
+   "vertices": 1000,
+   "textures": [
+    "PistolModule_BaseColor.png 768x768",
+    "PistolModule_Emission.png 768x768"
+   ],
+   "unity_materials": {
+    "PistolModule_URP.mat": "URP/Lit, _EmissionMap asignado, _EmissionColor 0.7, keyword _EMISSION AUSENTE (m_ValidKeywords: []) -> emision probablemente inactiva; verificar en Editor"
+   },
+   "emissive_note": "Ranuras cian laterales x=+-0.058 m, z=0.17-0.23 m, y~0.01 (muestreo por centroide UV; 16.7% de texeles del atlas emisivos). Pestanas naranja no son emisivas en el atlas.",
+   "geometry_note": "Caras sueltas: 1000 bordes abiertos, cada cara es una isla (sombreado plano por separacion). Origen = acople trasero; malla de z=0 a z=0.379.",
+   "unity_sockets_in_visual_prefab": {
+    "Attachment": [
+     0,
+     0,
+     0
+    ],
+    "Muzzle": [
+     0,
+     0,
+     0.379
+    ],
+    "forward": "+Z",
+    "up": "+Y",
+    "note": "PistolModule_1000_Visual: raiz identidad; nodo FBX -90 X (x100 de escala de archivo), hijos Attachment/Muzzle con +90 X override"
+   },
+   "sockets_in_weapon_prefabs": {
+    "Weapon_IR_Pistol (WeaponRoot)": {
+     "visual_root": [
+      0,
+      0.124,
+      0.077
+     ],
+     "Attachment": [
+      0,
+      0.124,
+      0.077
+     ],
+     "Muzzle=WeaponMuzzle": [
+      0,
+      0.124,
+      0.456
+     ]
+    },
+    "Weapon_IR_Pistol_CombatPolish": {
+     "Attachment": [
+      0,
+      0.124,
+      0.038
+     ],
+     "note": "override de posicion del nodo FBX Attachment (CombatPolishAuthoring.cs:147), renderers del modulo desactivados, RoboticWristCoupler en z=0.048"
+    },
+    "Weapon_IR_PrimaryModule_v02 y derivados": {
+     "note": "PistolModule_1000_Equipped desactivado; Attachment/Muzzle renombrados LegacyAttachment_1000/LegacyMuzzle_1000 por override (PrimaryModuleAuthoring.cs:34)"
+    }
+   },
+   "source_sha256": "4685e2536c82cac6d09f5349c8ae35a5562377cb64e2a77cff1a9973f575f474",
+   "source_unchanged_by_audit": true,
+   "blender_measure": {
+    "empties": [
+     {
+      "name": "Attachment",
+      "parent": "PistolModule_1000",
+      "blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     },
+     {
+      "name": "Muzzle",
+      "parent": "PistolModule_1000",
+      "blender_world": [
+       0.0,
+       -0.3790000081062317,
+       6.174693822913468e-08
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       6.174693822913468e-08,
+       0.3790000081062317
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     }
+    ],
+    "meshes": [
+     {
+      "name": "PistolModule_1000",
+      "vertices": 1000,
+      "triangles": 532,
+      "size_unity_xyz_m": [
+       0.11699999868869781,
+       0.1380000002682209,
+       0.3790000145833359
+      ],
+      "unity_bounds_min": [
+       -0.05849999934434891,
+       -0.06099998578429222,
+       -6.477104186330962e-09
+      ],
+      "unity_bounds_max": [
+       0.05849999934434891,
+       0.07700001448392868,
+       0.3790000081062317
+      ],
+      "origin_blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "materials": [
+       {
+        "name": "PistolModule_Atlas",
+        "images": {
+         "base": {
+          "name": "PistolModule_BaseColor",
+          "file": "PistolModule_BaseColor.png",
+          "size": [
+           768,
+           768
+          ]
+         },
+         "emission": {
+          "name": "PistolModule_Emission",
+          "file": "PistolModule_Emission.png",
+          "size": [
+           768,
+           768
+          ]
+         }
+        },
+        "tris": 532,
+        "emission_strength": 0.699999988079071,
+        "emission_color_linked": true
+       }
+      ],
+      "emissive": {
+       "image": "PistolModule_Emission",
+       "faces": 12,
+       "faces_total": 234,
+       "area_m2": 0.0026839994825422764,
+       "area_total_m2": 0.3807964961306425,
+       "unity_centroid": [
+        0.0,
+        0.009000032261949462,
+        0.1979999989271164
+       ],
+       "unity_min": [
+        -0.05849999934434891,
+        0.005500032100826502,
+        0.1655000001192093
+       ],
+       "unity_max": [
+        0.05849999934434891,
+        0.012500032782554626,
+        0.2304999977350235
+       ],
+       "mean_rgb": [
+        0.01568627543747425,
+        0.7803922295570374,
+        0.9411765336990356
+       ],
+       "clusters_unity_1cm": [
+        [
+         [
+          0.06,
+          0.01,
+          0.17
+         ],
+         0.21,
+         1
+        ],
+        [
+         [
+          -0.06,
+          0.01,
+          0.17
+         ],
+         0.21,
+         1
+        ],
+        [
+         [
+          0.06,
+          0.01,
+          0.2
+         ],
+         13.0,
+         4
+        ],
+        [
+         [
+          -0.06,
+          0.01,
+          0.2
+         ],
+         13.0,
+         4
+        ],
+        [
+         [
+          0.06,
+          0.01,
+          0.23
+         ],
+         0.21,
+         1
+        ],
+        [
+         [
+          -0.06,
+          0.01,
+          0.23
+         ],
+         0.21,
+         1
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   "renders": [
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/PistolModule_1000_front.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/PistolModule_1000_side.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/PistolModule_1000_three_quarter.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/PistolModule_1000_top.png"
+   ],
+   "transitive_consumers": {
+    "prefabs": [
+     "Assets/IronRequiem/Prefabs/Player/Player_CombatPolish_v01.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_IR_Protagonist_Actions_v02.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_IR_Protagonist_v01.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_IR_v01.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_Integrated_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_ModularArm_v07.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_NativeVisual_v06.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_PrimaryCapsules_v03.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_PrimaryModule_v02.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Visuals/PistolModule_1000_Visual.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Integrated_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol_CombatPolish.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Pistol_Thermal.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_PrimaryCapsules_v03.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_PrimaryModule_v02.prefab"
+    ],
+    "scenes": [
+     "Assets/FPS/Scenes/MainScene.unity",
+     "Assets/IronRequiem/Scenes/BigBotBazookaLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotBurstLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotChargeReferenceLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotCombatLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotDestructionLab.unity",
+     "Assets/IronRequiem/Scenes/BunkerBenchmark.unity",
+     "Assets/IronRequiem/Scenes/BunkerLab.unity",
+     "Assets/IronRequiem/Scenes/CharacterLab.unity",
+     "Assets/IronRequiem/Scenes/ChaseCorridorLab.unity",
+     "Assets/IronRequiem/Scenes/CombatFollowupLab.unity",
+     "Assets/IronRequiem/Scenes/CombatPerformanceLab.unity",
+     "Assets/IronRequiem/Scenes/CombatPolishLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoFloorsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoRoomsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatVarietyLab.unity",
+     "Assets/IronRequiem/Scenes/EnemyRangeBurstLab.unity",
+     "Assets/IronRequiem/Scenes/FastCombatExecutionLab.unity",
+     "Assets/IronRequiem/Scenes/HitWeaponLab.unity",
+     "Assets/IronRequiem/Scenes/ModularArmLab.unity",
+     "Assets/IronRequiem/Scenes/NativeWeaponVisualLab.unity",
+     "Assets/IronRequiem/Scenes/Performance120Lab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryCapsulesLab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryModuleLab.unity",
+     "Assets/IronRequiem/Scenes/ProtagonistActionsLab.unity",
+     "Assets/IronRequiem/Scenes/ProtagonistIntegrationLab.unity",
+     "Assets/IronRequiem/Scenes/RequiemCampaign.unity",
+     "Assets/IronRequiem/Scenes/RequiemCampaign_MechTest.unity",
+     "Assets/IronRequiem/Scenes/SawBotLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotSawPolishLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotSustainLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotWeaponDeathLab.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunBenchmark.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunLab.unity",
+     "Assets/IronRequiem/Scenes/SlidePistolLab.unity",
+     "Assets/IronRequiem/Scenes/T07DestructionLab.unity",
+     "Assets/IronRequiem/Scenes/T07OptimizationLab.unity",
+     "Assets/IronRequiem/Scenes/ThermalMenuLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/MainScene_VisualLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_A.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_B.unity",
+     "Assets/IronRequiem/Scenes/WeaponHeatBalanceLab.unity",
+     "Assets/_Recovery/0.unity"
+    ]
+   }
+  },
+  "IR_PrimaryModule_v02": {
+   "fbx": "Assets/IronRequiem/Art/Weapons/PrimaryModuleV02/IR_PrimaryModule_v02.fbx",
+   "guid": "899ab1d0bf4636a41a5549499212bc3e",
+   "meta": {
+    "globalScale": 1,
+    "useFileScale": 1,
+    "useFileUnits": 1,
+    "bakeAxisConversion": 0,
+    "isReadable": 0,
+    "meshCompression": 0,
+    "addColliders": 0,
+    "preserveHierarchy": 0,
+    "materialImportMode": 0,
+    "importAnimation": 0,
+    "animationType": "0 (None)",
+    "lODScreenPercentages": []
+   },
+   "authoring": {
+    "script": "Tools/IronRequiem/Blender/primary_module_v02.py",
+    "blend": "Tools/IronRequiem/Blender/Working/PrimaryModuleV02/IR_PrimaryModule_v02.blend",
+    "export": "axis_forward='-Z', axis_up='Y'; empties Attachment (0,0,0), Muzzle (0,-0.333,0); FBX de Working identico al de Assets (SHA 7839DEC7...)"
+   },
+   "lods": {
+    "LOD0": 696
+   },
+   "vertices": 384,
+   "textures": [
+    "Reutiliza PistolModule_BaseColor.png y PistolModule_Emission.png de BasicPistolModule (768x768)"
+   ],
+   "unity_materials": {
+    "PrimaryModule_URP.mat": "URP/Lit, _EMISSION activo, _EmissionMap = atlas de la pistola, _EmissionColor 0.7"
+   },
+   "emissive_note": "Ranuras cian laterales x=+-0.054 m, z=0.125-0.19 m (muestreo por centroide UV).",
+   "geometry_note": "Malla cerrada (0 bordes abiertos), 20 islas. La malla sobresale 4.5 mm por detras del Attachment (z min = -0.0045).",
+   "unity_sockets_in_weapon_prefab": {
+    "Weapon_IR_PrimaryModule_v02 (WeaponRoot)": {
+     "PrimaryModuleVisual": [
+      0,
+      0.094,
+      0.077
+     ],
+     "Attachment": [
+      0,
+      0.094,
+      0.077
+     ],
+     "GunMuzzle=WeaponMuzzle": [
+      0,
+      0.094,
+      0.41
+     ]
+    },
+    "note": "La visual se coloca haciendo coincidir el Muzzle del FBX con GunMuzzle (PrimaryModuleAuthoring.cs:35-37): anclaje por boca, no por acople."
+   },
+   "source_sha256": "7839dec7f3c9cfe1aad5920afd30132e728eacffbbdb16d438d5240e99fa65b8",
+   "source_unchanged_by_audit": true,
+   "blender_measure": {
+    "empties": [
+     {
+      "name": "Attachment",
+      "parent": "IR_PrimaryModule_v02",
+      "blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     },
+     {
+      "name": "Muzzle",
+      "parent": "IR_PrimaryModule_v02",
+      "blender_world": [
+       0.0,
+       -0.3330000042915344,
+       5.4252584646974356e-08
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       5.4252584646974356e-08,
+       0.3330000042915344
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     }
+    ],
+    "meshes": [
+     {
+      "name": "IR_PrimaryModule_v02",
+      "vertices": 384,
+      "triangles": 696,
+      "size_unity_xyz_m": [
+       0.10869999974966049,
+       0.11299997568130493,
+       0.33750001061707735
+      ],
+      "unity_bounds_min": [
+       -0.054349999874830246,
+       -0.052999962121248245,
+       -0.004500006325542927
+      ],
+      "unity_bounds_max": [
+       0.054349999874830246,
+       0.060000013560056686,
+       0.3330000042915344
+      ],
+      "origin_blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "materials": [
+       {
+        "name": "PistolModule_Atlas",
+        "images": {
+         "base": {
+          "name": "PistolModule_BaseColor",
+          "file": "PistolModule_BaseColor.png",
+          "size": [
+           768,
+           768
+          ]
+         },
+         "emission": {
+          "name": "PistolModule_Emission",
+          "file": "PistolModule_Emission.png",
+          "size": [
+           768,
+           768
+          ]
+         }
+        },
+        "tris": 696,
+        "emission_strength": 0.699999988079071,
+        "emission_color_linked": true
+       }
+      ],
+      "emissive": {
+       "image": "PistolModule_Emission",
+       "faces": 12,
+       "faces_total": 328,
+       "area_m2": 0.0014540001284331083,
+       "area_total_m2": 0.3315260145027423,
+       "unity_centroid": [
+        0.0,
+        0.006000025792270237,
+        0.1579999924935862
+       ],
+       "unity_min": [
+        -0.054349999874830246,
+        0.004000025801360607,
+        0.12549999356269836
+       ],
+       "unity_max": [
+        0.054349999874830246,
+        0.0080000264570117,
+        0.19050000607967377
+       ],
+       "mean_rgb": [
+        0.01568627543747425,
+        0.7803922295570374,
+        0.9411765336990356
+       ],
+       "clusters_unity_1cm": [
+        [
+         [
+          0.05,
+          0.01,
+          0.13
+         ],
+         0.06,
+         1
+        ],
+        [
+         [
+          -0.05,
+          0.01,
+          0.13
+         ],
+         0.06,
+         1
+        ],
+        [
+         [
+          0.05,
+          0.0,
+          0.16
+         ],
+         0.97,
+         1
+        ],
+        [
+         [
+          0.05,
+          0.01,
+          0.16
+         ],
+         6.18,
+         3
+        ],
+        [
+         [
+          -0.05,
+          0.0,
+          0.16
+         ],
+         0.97,
+         1
+        ],
+        [
+         [
+          -0.05,
+          0.01,
+          0.16
+         ],
+         6.18,
+         3
+        ],
+        [
+         [
+          0.05,
+          0.01,
+          0.19
+         ],
+         0.06,
+         1
+        ],
+        [
+         [
+          -0.05,
+          0.01,
+          0.19
+         ],
+         0.06,
+         1
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   "renders": [
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/IR_PrimaryModule_v02_front.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/IR_PrimaryModule_v02_side.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/IR_PrimaryModule_v02_three_quarter.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/IR_PrimaryModule_v02_top.png"
+   ],
+   "transitive_consumers": {
+    "prefabs": [
+     "Assets/IronRequiem/Prefabs/Player/Player_Integrated_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_ModularArm_v07.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_NativeVisual_v06.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_PrimaryCapsules_v03.prefab",
+     "Assets/IronRequiem/Prefabs/Player/Player_PrimaryModule_v02.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_Integrated_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_PrimaryCapsules_v03.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_IR_PrimaryModule_v02.prefab"
+    ],
+    "scenes": [
+     "Assets/IronRequiem/Scenes/BigBotBazookaLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotBurstLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotChargeReferenceLab.unity",
+     "Assets/IronRequiem/Scenes/BunkerBenchmark.unity",
+     "Assets/IronRequiem/Scenes/BunkerLab.unity",
+     "Assets/IronRequiem/Scenes/ChaseCorridorLab.unity",
+     "Assets/IronRequiem/Scenes/CombatFollowupLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoFloorsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoRoomsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatVarietyLab.unity",
+     "Assets/IronRequiem/Scenes/EnemyRangeBurstLab.unity",
+     "Assets/IronRequiem/Scenes/FastCombatExecutionLab.unity",
+     "Assets/IronRequiem/Scenes/HitWeaponLab.unity",
+     "Assets/IronRequiem/Scenes/ModularArmLab.unity",
+     "Assets/IronRequiem/Scenes/NativeWeaponVisualLab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryCapsulesLab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryModuleLab.unity",
+     "Assets/IronRequiem/Scenes/RequiemCampaign.unity",
+     "Assets/IronRequiem/Scenes/RequiemCampaign_MechTest.unity",
+     "Assets/IronRequiem/Scenes/SawBotLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotSawPolishLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotSustainLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotWeaponDeathLab.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunBenchmark.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/MainScene_VisualLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_A.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_B.unity",
+     "Assets/IronRequiem/Scenes/WeaponHeatBalanceLab.unity",
+     "Assets/_Recovery/0.unity"
+    ]
+   }
+  },
+  "T07_CannonClean": {
+   "fbx": "Assets/IronRequiem/Art/Weapons/T07CannonClean/T07_CannonClean.fbx",
+   "guid": "48ac3df5d72f0eb44a98b3d277f045d0",
+   "meta": {
+    "globalScale": 1,
+    "useFileScale": 1,
+    "useFileUnits": 1,
+    "bakeAxisConversion": 0,
+    "isReadable": 0,
+    "meshCompression": 0,
+    "addColliders": 0,
+    "preserveHierarchy": 0,
+    "materialImportMode": 0,
+    "importAnimation": 0,
+    "animationType": "2 (Generic)",
+    "lODScreenPercentages": [
+     0.25,
+     0.125,
+     0.01
+    ]
+   },
+   "lods": {
+    "LOD0": 1702,
+    "LOD1": 906,
+    "LOD2": 412
+   },
+   "unity_reported_tris_source_import": {
+    "LOD0": 1694,
+    "LOD1": 807,
+    "LOD2": 401
+   },
+   "textures": [],
+   "blender_materials": [
+    "OriginalCannonSurface (LOD0 1494 tris)",
+    "CutInterior (LOD0 208 tris)"
+   ],
+   "unity_materials": {
+    "T07_URP_FPS.mat": "URP/Lit, normal map, sin emision",
+    "ExposedMechanism_FPS.mat": "_EmissionColor naranja (1.08,0.31,0.05) pero sin keyword _EMISSION -> no emite"
+   },
+   "emissive_note": "Ninguna en el FBX; la carga magenta es VFX aparte (CannonCharge_Magenta.prefab).",
+   "pivot": "Origen del robot completo: (-0.300,-0.027,1.092) Blender; 7.7 cm fuera del eje; canon inclinado ~31 grados",
+   "firing_axis_blender": {
+    "mouth_center": [
+     -0.3154,
+     -0.2148,
+     0.5363
+    ],
+    "mouth_normal": [
+     -0.074,
+     -0.513,
+     -0.855
+    ],
+    "rear_attach": [
+     -0.2661,
+     0.126,
+     1.1045
+    ],
+    "length_m": 0.6644,
+    "source": "Docs/IronRequiem/WEAPON_PIVOT_T07_CANNON.md (probe_cannon_pivot.py)"
+   },
+   "sockets": "Ninguno en el FBX",
+   "usage_in_prefab": {
+    "Weapon_T07_Temporary_Optimized": "CannonClean renderer m_Enabled=0; nodo con escala 100, pos (0.1247,0.1273,-0.0843), rot (x0.880,y-0.364,z0.150,w-0.265). Lo visible es VP_StolenShell; Attachment (0.0584,0.0558,-0.1742); muzzle base (0.015,0.065,0.48) recolocado en runtime por StolenChargeAnchor."
+   },
+   "source_sha256": "4426ca8cecebb85feacb27b86e873bbedad37d7a20835c2878bc063c99557842",
+   "source_unchanged_by_audit": true,
+   "blender_measure": {
+    "empties": [],
+    "meshes": [
+     {
+      "name": "CannonClean_LOD0",
+      "vertices": 819,
+      "triangles": 1702,
+      "size_unity_xyz_m": [
+       0.15940257906913757,
+       0.6052557826042175,
+       0.42763545364141464
+      ],
+      "unity_bounds_min": [
+       0.2617354094982147,
+       0.5065093636512756,
+       -0.12218260020017624
+      ],
+      "unity_bounds_max": [
+       0.4211379885673523,
+       1.1117651462554932,
+       0.3054528534412384
+      ],
+      "origin_blender_world": [
+       -0.30023542046546936,
+       -0.02729412540793419,
+       1.0917651653289795
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 1494,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 208,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     },
+     {
+      "name": "CannonClean_LOD1",
+      "vertices": 419,
+      "triangles": 906,
+      "size_unity_xyz_m": [
+       0.15683045983314514,
+       0.6053540706634521,
+       0.4269481524825096
+      ],
+      "unity_bounds_min": [
+       0.2617354094982147,
+       0.506411075592041,
+       -0.12149529904127121
+      ],
+      "unity_bounds_max": [
+       0.41856586933135986,
+       1.1117651462554932,
+       0.3054528534412384
+      ],
+      "origin_blender_world": [
+       -0.30023542046546936,
+       -0.02729412540793419,
+       1.0917651653289795
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 768,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 138,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     },
+     {
+      "name": "CannonClean_LOD2",
+      "vertices": 170,
+      "triangles": 412,
+      "size_unity_xyz_m": [
+       0.14046737551689148,
+       0.5807867646217346,
+       0.4248740002512932
+      ],
+      "unity_bounds_min": [
+       0.2617354094982147,
+       0.5309783816337585,
+       -0.1224999651312828
+      ],
+      "unity_bounds_max": [
+       0.4022027850151062,
+       1.1117651462554932,
+       0.3023740351200104
+      ],
+      "origin_blender_world": [
+       -0.30023542046546936,
+       -0.02729412540793419,
+       1.0917651653289795
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 337,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 75,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     }
+    ]
+   },
+   "renders": [
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_CannonClean_front.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_CannonClean_side.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_CannonClean_three_quarter.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_CannonClean_top.png"
+   ],
+   "transitive_consumers": {
+    "prefabs": [
+     "Assets/IronRequiem/Prefabs/Campaign/BigBot_Current.prefab",
+     "Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab",
+     "Assets/IronRequiem/Prefabs/Campaign/T07_Mech.prefab",
+     "Assets/IronRequiem/Prefabs/CombatFollowup/BigBot_Burst_v10.prefab",
+     "Assets/IronRequiem/Prefabs/CombatFollowup/BigBot_Module.prefab",
+     "Assets/IronRequiem/Prefabs/CombatFollowup/T07_HitFeedback_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_Burst_v10.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_CombatPolish_v01.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_Destructible_v01.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_Explosive_v08.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_HitFeedback_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/BigBot_ReferenceCharge_v09.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_CombatPolish.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_Common_Animated_Working.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_Common_Destructible.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_Common_Optimized.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_HitFeedback_v04.prefab",
+     "Assets/IronRequiem/Prefabs/Enemies/T07_LegRepair_Charged_v05.prefab",
+     "Assets/IronRequiem/Prefabs/EnemyRange/BigBot_Burst_v10_Fast_Range.prefab",
+     "Assets/IronRequiem/Prefabs/EnemyRange/T07_HitFeedback_v04_Fast_Range.prefab",
+     "Assets/IronRequiem/Prefabs/FastCombat/BigBot_Burst_v10_Fast.prefab",
+     "Assets/IronRequiem/Prefabs/FastCombat/BigBot_Module.prefab",
+     "Assets/IronRequiem/Prefabs/FastCombat/T07_HitFeedback_v04_Fast.prefab",
+     "Assets/IronRequiem/Prefabs/FastCombat/T07_Module.prefab",
+     "Assets/IronRequiem/Prefabs/PhaseFlow/BigBot_Burst_v10_Execution.prefab",
+     "Assets/IronRequiem/Prefabs/PhaseFlow/T07_LegRepair_Charged_v05_Execution.prefab",
+     "Assets/IronRequiem/Prefabs/SecondaryShotgun/BigBot_Burst_v10_NavThrottle.prefab",
+     "Assets/IronRequiem/Prefabs/SecondaryShotgun/T07_HitFeedback_v04_NavThrottle.prefab",
+     "Assets/IronRequiem/Prefabs/VisualOverhaul/BigBot_Burst_v10_Execution_VO.prefab",
+     "Assets/IronRequiem/Prefabs/VisualOverhaul/BigBot_Burst_v10_NavThrottle_VO.prefab",
+     "Assets/IronRequiem/Prefabs/VisualOverhaul/T07_Common_Destructible_VO.prefab",
+     "Assets/IronRequiem/Prefabs/VisualOverhaul/T07_HitFeedback_v04_NavThrottle_VO.prefab",
+     "Assets/IronRequiem/Prefabs/VisualOverhaul/T07_LegRepair_Charged_v05_Execution_VO.prefab",
+     "Assets/IronRequiem/Prefabs/VisualPass/Mech/T07_Mech_Test.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/BigBot_BazookaPickup_v08.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/BigBot_BurstPickup_v10.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/BigBot_CollectibleCannon.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/BigBot_ReferenceChargePickup_v09.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_BigBot_Bazooka_v08.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_BigBot_ReferenceCharge_v09.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_BigBot_Temporary.prefab",
+     "Assets/IronRequiem/Prefabs/Weapons/Weapon_T07_Temporary_Optimized.prefab"
+    ],
+    "scenes": [
+     "Assets/FPS/Scenes/MainScene.unity",
+     "Assets/IronRequiem/Scenes/BigBotBazookaLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotBurstLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotChargeReferenceLab.unity",
+     "Assets/IronRequiem/Scenes/BigBotDestructionLab.unity",
+     "Assets/IronRequiem/Scenes/BunkerBenchmark.unity",
+     "Assets/IronRequiem/Scenes/BunkerLab.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Pursuit05.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Pursuit05_MechTest.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room00b_AlarmCorridor.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room01_Foundry.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room01_Foundry_MechTest.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room02_Breach.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room02_Breach_MechTest.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room03_Assembly.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room03_Assembly_MechTest.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room04_Reactor.unity",
+     "Assets/IronRequiem/Scenes/Campaign/Room04_Reactor_MechTest.unity",
+     "Assets/IronRequiem/Scenes/CharacterLab.unity",
+     "Assets/IronRequiem/Scenes/ChaseCorridorLab.unity",
+     "Assets/IronRequiem/Scenes/CombatFollowupLab.unity",
+     "Assets/IronRequiem/Scenes/CombatPerformanceLab.unity",
+     "Assets/IronRequiem/Scenes/CombatPolishLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoFloorsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatTwoRoomsLab.unity",
+     "Assets/IronRequiem/Scenes/CombatVarietyLab.unity",
+     "Assets/IronRequiem/Scenes/EnemyRangeBurstLab.unity",
+     "Assets/IronRequiem/Scenes/FastCombatExecutionLab.unity",
+     "Assets/IronRequiem/Scenes/HitWeaponLab.unity",
+     "Assets/IronRequiem/Scenes/ModularArmLab.unity",
+     "Assets/IronRequiem/Scenes/NativeWeaponVisualLab.unity",
+     "Assets/IronRequiem/Scenes/Performance120Lab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryCapsulesLab.unity",
+     "Assets/IronRequiem/Scenes/PrimaryModuleLab.unity",
+     "Assets/IronRequiem/Scenes/ProtagonistActionsLab.unity",
+     "Assets/IronRequiem/Scenes/ProtagonistIntegrationLab.unity",
+     "Assets/IronRequiem/Scenes/SawBotLab.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunBenchmark.unity",
+     "Assets/IronRequiem/Scenes/SecondaryShotgunLab.unity",
+     "Assets/IronRequiem/Scenes/SlidePistolLab.unity",
+     "Assets/IronRequiem/Scenes/T07DestructionLab.unity",
+     "Assets/IronRequiem/Scenes/T07OptimizationLab.unity",
+     "Assets/IronRequiem/Scenes/ThermalMenuLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/MainScene_VisualLab.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_A.unity",
+     "Assets/IronRequiem/Scenes/VisualOverhaul/VisualBench_B.unity",
+     "Assets/IronRequiem/Scenes/WeaponHeatBalanceLab.unity"
+    ]
+   }
+  },
+  "T07_Cannon_PivotFixed": {
+   "fbx": "Assets/IronRequiem/Art/Weapons/T07CannonPivotFixed/T07_Cannon_PivotFixed.fbx",
+   "guid": "3167e5df9a314d44a9213ef269e96bf4",
+   "meta": {
+    "globalScale": 1,
+    "useFileScale": 1,
+    "useFileUnits": 1,
+    "bakeAxisConversion": 0,
+    "isReadable": 0,
+    "meshCompression": 0,
+    "addColliders": 0,
+    "preserveHierarchy": 0,
+    "materialImportMode": 0,
+    "importAnimation": 0,
+    "animationType": "0 (None)",
+    "lODScreenPercentages": [
+     0.25,
+     0.125,
+     0.01
+    ]
+   },
+   "lods": {
+    "LOD0": 1702,
+    "LOD1": 906,
+    "LOD2": 412
+   },
+   "textures": [],
+   "unity_materials": {
+    "T07_URP_FPS.mat": "sin emision",
+    "ExposedMechanism_FPS.mat": "emision configurada sin keyword"
+   },
+   "lodgroup_in_visual": [
+    0.18,
+    0.06,
+    0.003
+   ],
+   "geometry_note": "Derivado sin seguimiento git (??). Mesh sobresale 3.2 mm detras del acople. LOD1/LOD2: boca desviada 1-4 cm.",
+   "unity_sockets_in_visual_prefab": {
+    "WeaponAttachment": [
+     0,
+     0,
+     0
+    ],
+    "WeaponMuzzle": [
+     0,
+     0,
+     0.66442
+    ],
+    "forward": "+Z",
+    "up": "+Y",
+    "fbx_empties": "Attachment (0,0,0) y Muzzle (0,0,0.6644) hijos de CannonClean_LOD0 (rotacion importada -90 X)"
+   },
+   "regenerated_by": "Assets/IronRequiem/Editor/WeaponPivotAuthoring.cs desde Tools/IronRequiem/Exports/T07_Cannon_PivotFixed/T07_Cannon_PivotFixed.fbx (copia identica, SHA C9F8132E...)",
+   "source_sha256": "c9f8132e805263fe36761f649f870ed63b36e3bf5f774a642982e8fe1dc45ff2",
+   "source_unchanged_by_audit": true,
+   "blender_measure": {
+    "empties": [
+     {
+      "name": "Attachment",
+      "parent": "CannonClean_LOD0",
+      "blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     },
+     {
+      "name": "Muzzle",
+      "parent": "CannonClean_LOD0",
+      "blender_world": [
+       0.0,
+       -0.6644195914268494,
+       1.0824768281736397e-07
+      ],
+      "unity_local_of_fbx_root": [
+       -0.0,
+       1.0824768281736397e-07,
+       0.6644195914268494
+      ],
+      "blender_minusY_dir": [
+       0.0,
+       -1.0,
+       1.6292067073209182e-07
+      ],
+      "unity_dir_of_blender_minusY": [
+       -0.0,
+       1.6292067073209182e-07,
+       1.0
+      ]
+     }
+    ],
+    "meshes": [
+     {
+      "name": "CannonClean_LOD0",
+      "vertices": 819,
+      "triangles": 1702,
+      "size_unity_xyz_m": [
+       0.3135295808315277,
+       0.19499420374631882,
+       0.6705219694413245
+      ],
+      "unity_bounds_min": [
+       -0.17580991983413696,
+       -0.06042087823152542,
+       -0.003189320210367441
+      ],
+      "unity_bounds_max": [
+       0.13771966099739075,
+       0.1345733255147934,
+       0.667332649230957
+      ],
+      "origin_blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 1494,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 208,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     },
+     {
+      "name": "CannonClean_LOD1",
+      "vertices": 419,
+      "triangles": 906,
+      "size_unity_xyz_m": [
+       0.30684350430965424,
+       0.19200313836336136,
+       0.6706340992823243
+      ],
+      "unity_bounds_min": [
+       -0.1721220761537552,
+       -0.05992799252271652,
+       -0.00343144778162241
+      ],
+      "unity_bounds_max": [
+       0.13472142815589905,
+       0.13207514584064484,
+       0.6672026515007019
+      ],
+      "origin_blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 768,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 138,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     },
+     {
+      "name": "CannonClean_LOD2",
+      "vertices": 170,
+      "triangles": 412,
+      "size_unity_xyz_m": [
+       0.3151431381702423,
+       0.16363873332738876,
+       0.6623739546630532
+      ],
+      "unity_bounds_min": [
+       -0.1825893521308899,
+       -0.05540852248668671,
+       -0.0034623092506080866
+      ],
+      "unity_bounds_max": [
+       0.13255378603935242,
+       0.10823021084070206,
+       0.6589116454124451
+      ],
+      "origin_blender_world": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "materials": [
+       {
+        "name": "OriginalCannonSurface",
+        "images": {},
+        "tris": 337,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       },
+       {
+        "name": "CutInterior",
+        "images": {},
+        "tris": 75,
+        "emission_strength": 0.0,
+        "emission_color_linked": false
+       }
+      ],
+      "emissive": null
+     }
+    ]
+   },
+   "renders": [
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_Cannon_PivotFixed_front.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_Cannon_PivotFixed_side.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_Cannon_PivotFixed_three_quarter.png",
+    "Tools/IronRequiem/Reports/WeaponsRedesign/Audit/renders/T07_Cannon_PivotFixed_top.png"
+   ],
+   "transitive_consumers": {
+    "prefabs": [
+     "Assets/IronRequiem/Prefabs/Weapons/Visuals/T07_Cannon_PivotFixed_Visual.prefab"
+    ],
+    "scenes": []
+   }
+  }
+ },
+ "attachment_contract": {
+  "receiver": "ProtagonistHandsPresentation (Assets/IronRequiem/Scripts/Player/ProtagonistHandsPresentation.cs)",
+  "arm_follows_weapon": "El arma se coloca con PlayerWeaponsManager (WeaponParentSocket + posicion por defecto/ADS); el antebrazo se ajusta al arma, no al reves.",
+  "weapon_interface": [
+   "Transform llamado exactamente \"Attachment\" bajo WeaponRoot (se toma el primero de GetComponentsInChildren; ModularArmTests exige uno solo)",
+   "WeaponController.WeaponMuzzle: su +Z (forward) es el eje de disparo y el eje del antebrazo"
+  ],
+  "port_formula": "rightPort = Attachment.position + WeaponMuzzle.forward * 0.003 (ProtagonistHandsPresentation.cs:256); solo si actionsEnabled, representacion distinta de Normal y Attachment encontrado",
+  "fallback_without_attachment": {
+   "pistolWristOffset": [
+    0,
+    -0.015,
+    -0.23
+   ],
+   "cannonWristOffset": [
+    0.015,
+    -0.04,
+    -0.38
+   ],
+   "mountedWristOffset": [
+    0,
+    -0.03,
+    -0.42
+   ],
+   "space": "rotacion de WeaponMuzzle, desde WeaponMuzzle.position (lineas 25-33, 246)"
+  },
+  "modular_arm_v07": "Con modularRightArm la mano avanza (rightLength - retainedForearmLength 0.14 m) a lo largo de muzzle.forward; RightModuleSocket = (rightPort, WeaponMuzzle.rotation) (linea 323); collar de muneca radio 0.046 m, largo 0.032 m en el puerto.",
+  "player_transforms": {
+   "Player_IR_Protagonist_v01": [
+    "ModuleSocket_R",
+    "ModuleSocket_L"
+   ],
+   "Player_ModularArm_v07": [
+    "RightArm_ModuleSocket (cuerpo, junto al codo)",
+    "Forearm_R_Receiver (SkinnedMeshRenderer)",
+    "RightArm_UniversalCoupling"
+   ],
+   "runtime_property": "ProtagonistHandsPresentation.RightModuleSocket (campo rightModuleSocket)"
+  },
+  "representation": "StolenCannon si carrier.Held.EquippedWeapon==active; Pistol si SourcePrefab==pistolPrefab; Mounted si esta en mountedWeaponPrefabs; Normal en otro caso (linea 204).",
+  "stolen_fit": "StolenShellFit coloca VP_StolenShell con la cara trasera de su AABB (centro x/y, min z) en RightModuleSocket con 0.02 m de solape; StolenChargeAnchor lleva la boca al centro frontal del AABB + 0.015 m.",
+  "mount_station": "WeaponMountStation usa Attachment del proxy, MountedHandLead (= rightLength-0.14+0.003) y bounds de renderers activos para el agarre.",
+  "requirements_for_zero_manual_adjustment": [
+   "Origen del FBX en el centro de la cara trasera de acople; disparo por Blender -Y (Unity +Z), arriba Blender +Z (Unity +Y); escala 1 m; exportar con axis_forward=-Z, axis_up=Y.",
+   "Vacios \"Attachment\" (0,0,0) y \"Muzzle\" (0,-L,0) dentro del FBX, o sockets equivalentes con identidad en la raiz del prefab visual; un unico \"Attachment\" por arma.",
+   "Ninguna geometria detras de z=0 salvo el solape previsto (3 mm del puerto, 20 mm en armas robadas); la cara trasera centrada en x=0,y=0.",
+   "Muzzle exactamente en el extremo del eje +Z y la caja AABB del arma alineada con +Z (StolenShellFit/StolenChargeAnchor miden por AABB).",
+   "Importacion: useFileScale=1, globalScale=1, bakeAxisConversion=0 (activar bake invirtio el canon); prefab visual con raiz identidad.",
+   "Colocacion en WeaponRoot por Attachment (hoy se hace por Muzzle contra GunMuzzle heredado): fijar una posicion canonica del Attachment, p.ej. (0, y, 0.077).",
+   "Conservar nombres de nodos FBX (fileID derivados del nombre) si se reemplaza un FBX existente."
+  ]
+ }
+}

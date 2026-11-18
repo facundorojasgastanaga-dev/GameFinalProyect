@@ -68,19 +68,21 @@ namespace IronRequiem
         float CurRadius=>Mathf.Lerp(radius,heavyRadius,Power);
         AdvancedPlayerMovement movement;
         Unity.FPS.Gameplay.PlayerInputHandler fpsInput;Unity.FPS.Gameplay.PlayerWeaponsManager weapons;
-        // v5: the strike is thrown by the right hand; with a weapon on the right forearm it is a mechanical bash.
+        // F uses the left hand while unarmed and the mounted right forearm while armed. Unarmed M1 is a right quick strike.
+        // ArmedStrike selects the existing mechanical bash presentation without changing inventory or weapon heat.
+        public bool LeftStrike {get;private set;}
         public bool ArmedStrike {get;private set;}
         public bool Unarmed=>!weapons||!weapons.GetActiveWeapon();
-        void StartAttack()
+        void StartAttack(bool left)
         {
-            IsAttacking=true;elapsed=0;struck=false;LastHitCount=0;AttackSerial++;damaged.Clear();Power=0;LastWasHeavy=false;LastWasFull=false;ArmedStrike=!Unarmed;
+            IsAttacking=true;elapsed=0;struck=false;LastHitCount=0;AttackSerial++;damaged.Clear();Power=0;LastWasHeavy=false;LastWasFull=false;LeftStrike=left&&Unarmed;ArmedStrike=left&&!Unarmed;
             DistanceCameraImpulse.Kick(aimCamera,windUpKick,new Vector3(0,.004f,-.012f));
         }
         // Fist weapon: M1 pressed. Starts the wind-up and holds the chambered pose while charging.
         public bool BeginCharge()
         {
             if(IsAttacking||!input.CanAct)return false;
-            StartAttack();IsCharging=true;chargeElapsed=0;fullAnnounced=false;ChargeStarted?.Invoke();return true;
+            StartAttack(true);IsCharging=true;chargeElapsed=0;fullAnnounced=false;ChargeStarted?.Invoke();return true;
         }
         // Fist weapon: M1 released. Tap = quick punch, hold = heavy punch scaled by charge.
         public void ReleaseCharge()
@@ -121,11 +123,11 @@ namespace IronRequiem
         {
             if(!input.CanAct){if(IsCharging)CancelCharge();else Cancel();return;}
             // Separate explicit bindings: E collects, F punches. Simultaneous input favours pickup.
-            // v5: F tap = quick strike, F held = charge (released on button up). Unarmed, M1 also throws the quick strike.
+            // v7: F tap = left quick strike, F held = left charge (released on button up). Unarmed, M1 throws a right quick strike.
             if(!IsAttacking&&!input.InteractPressed)
             {
                 if(input.MeleePressed)BeginCharge();
-                else if(Unarmed&&fpsInput&&fpsInput.GetFireInputDown())StartAttack();
+                else if(Unarmed&&fpsInput&&fpsInput.GetFireInputDown())StartAttack(false);
             }
             if(IsCharging&&!input.MeleeHeld)ReleaseCharge();
             if(!IsAttacking)return;

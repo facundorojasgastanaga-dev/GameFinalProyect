@@ -1,0 +1,153 @@
+{
+  "tool": "Built-in image_gen",
+  "status": "Generated PNG assets only; not integrated into Unity.",
+  "gaze": "Directions relative to screen/viewer. Never mirror damaged portraits.",
+  "levels": {
+    "d0": "health>=75%",
+    "d1": "50%<=health<75%",
+    "d2": "25%<=health<50%",
+    "d3": "0%<health<25%",
+    "apagado": "health<=0"
+  },
+  "damageSide": "Robot anatomical left, viewer right in frontal pose",
+  "images": [
+    {
+      "name": "d0_frente",
+      "file": "d0_frente.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/01_neutral.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "d0_izquierda",
+      "file": "d0_izquierda.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/02_mirada_izquierda.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "d0_derecha",
+      "file": "d0_derecha.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/03_mirada_derecha.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "d0_impacto",
+      "file": "d0_impacto.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/04_impacto.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "d3_frente",
+      "file": "d3_frente.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/05_critico.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "ataque",
+      "file": "ataque.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/06_ataque.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "overdrive",
+      "file": "overdrive.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/07_overdrive.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "apagado",
+      "file": "apagado.png",
+      "source": "C:/Users/gehbd/ProyectoGameFinal/Docs/IronRequiem/Concepts/Player/HUD_Reactions_v01/08_apagado.png",
+      "prompt": "Reuse original v01 sprite."
+    },
+    {
+      "name": "d1_frente",
+      "file": "d1_frente.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-ef348505-e7e8-4d1f-b5dc-7ff745838439.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. MILD DAMAGE level1 (health 50-74%). Same frontal neutral pose as input. Add ONE hairline crack and short dark scrape on viewer-RIGHT temple just below orange panel and a few small chips at right cheek; NO missing armor, no exposed circuits. Cyan visor fully lit. Only mild damage, clearly less damaged than a critical state."
+    },
+    {
+      "name": "d2_frente",
+      "file": "d2_frente.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-44f24625-4f76-4195-9d26-78997585432c.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. MODERATE DAMAGE level2 (health25-49%). Frontal neutral pose. Progressive damage on viewer-RIGHT: branched crack from right orange temple down through right cheek, small missing ivory cheek chip revealing dark circuitry, localized black scorch. Left half still nearly intact. Cyan visor slightly dim at viewer-right end but continuous. Clearly more damaged than hairline crack, LESS wrecked than critical reference. Use reference2 for damage location only, reduce severity."
+    },
+    {
+      "name": "d0_punio_carga",
+      "file": "d0_punio_carga.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-76c145f5-db6b-48ab-a02a-af2b4f38ea06.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CHARGING MELEE FIST, healthy state. Head only, NO fist/hand/body. Chin slightly lowered, visor intense cyan-white with bright focused center and restrained cyan edge reflection on lower face shield. Intact original neutral helmet and wear, no new cracks or sparks, no orange visor, no extra ornaments. Invariant: image1 defines the exact existing DAMAGE LEVEL and marks to preserve, only change reaction pose/light."
+    },
+    {
+      "name": "d1_izquierda",
+      "file": "d1_izquierda.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-b114466c-719e-496e-9cbf-274e34daf9ac.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. Turn the SAME mildly damaged head 12 degrees toward SCREEN LEFT. Keep its exact right-side hairline crack and cheek scrape attached to robot's own left side, not mirrored. No new damage, no sparks; this turn looks away from broken screen-right side. Invariant: image1 defines the exact existing DAMAGE LEVEL and marks to preserve, only change reaction pose/light."
+    },
+    {
+      "name": "d1_derecha",
+      "file": "d1_derecha.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-79636ddc-72ef-4751-8d61-98b8d5728d1c.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. MILD DAMAGE LOOK TOWARD SCREEN RIGHT. Match image2 orientation EXACTLY: forehead vent/chin shifted right, viewer-LEFT ear disk more exposed and viewer-RIGHT ear narrow. Existing damaged scratch must stay on far screen-right cheek, only a small orange spark at that edge. Preserve mild severity: hairline crack, cheek scrape, no missing armor. This is RIGHT look, not left. Image1 defines existing damage and identity; image2 defines required gaze orientation only."
+    },
+    {
+      "name": "d1_impacto",
+      "file": "d1_impacto.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-2ac3de19-6281-4b5c-87a8-7f27a6967719.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. Mild-damage HIT REACTION. Frontal head with 3 degree recoil tilt, same exact mild right cheek crack and scrape. Brief white-cyan visor flash and tiny orange spark from right cheek damage. No additional structural damage. Invariant: image1 defines the exact existing DAMAGE LEVEL and marks to preserve, only change reaction pose/light."
+    },
+    {
+      "name": "d1_punio_carga",
+      "file": "d1_punio_carga.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-825de002-8fb2-46ac-8c08-7686e5937a96.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CHARGING MELEE FIST, mildly damaged state. Head only, NO fist/hand/body in image. Chin slightly lowered, visor focuses to intense cyan-white center, restrained cyan circuit-light reflection across lower face, concentrated mechanical resolve. Keep exact same mild crack on right cheek, NO orange overdrive visor, no new damage. Invariant: image1 defines the exact existing DAMAGE LEVEL and marks to preserve, only change reaction pose/light."
+    },
+    {
+      "name": "d2_izquierda",
+      "file": "d2_izquierda.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-59cd0718-91a2-4fc2-b82f-8cd616ca476d.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. LOOK LEFT: copy the exact screen-LEFT turning direction and head orientation of image2. Preserve moderate damage from image1, with broken cheek on same physical side. No sparks in this away-from-damage view. Image1: identity and exact damage severity. Image2: POSE DIRECTION reference only, do not copy its healthy surface."
+    },
+    {
+      "name": "d2_derecha",
+      "file": "d2_derecha.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-bd822e96-354c-4054-b3fc-3649deffd798.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. LOOK RIGHT: copy image2 head orientation EXACTLY: forehead vent and chin shift toward SCREEN RIGHT, viewer-LEFT ear disk more exposed, viewer-RIGHT ear less exposed. Apply image1 moderate cracks to same physical cheek, not mirrored. 3 small orange sparks at damaged right edge as the head turns toward screen right. Image1: identity and exact damage severity. Image2: POSE DIRECTION reference only, do not copy its healthy surface."
+    },
+    {
+      "name": "d2_impacto",
+      "file": "d2_impacto.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-82af04d8-91e6-4501-beff-6c360bd08542.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. MODERATE DAMAGE HIT. Same frontal pose and cracks/chip/circuitry, tiny recoil tilt, cyan-white visor flash and medium orange spark burst from existing viewer-right damaged cheek. Preserve missing chip, do not repair. Image1: identity and exact damage severity. "
+    },
+    {
+      "name": "d2_punio_carga",
+      "file": "d2_punio_carga.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-65a869cc-ce45-4241-9521-89a4a983e8bc.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. MODERATE DAMAGE CHARGING FIST. Head only, no hands. Chin slightly lowers, cyan-white focused visor and thin cyan reflected edge light on lower face. Preserve all moderate cracks, chipped cheek and exposed circuits. A couple of tiny orange sparks from damaged cheek due to energy strain. No orange overdrive visor. Image1: identity and exact damage severity. "
+    },
+    {
+      "name": "d3_izquierda",
+      "file": "d3_izquierda.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-f3f98bf2-b5aa-4748-a6bd-b2571672f1c9.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CRITICAL look toward SCREEN LEFT: copy direction/pose image2. Preserve image1 extensive cracks, scorches and missing cheek on same physical side. Fragmented dim cyan visor. Tiny residual electrical fault, no bright charging. Image1 defines existing damage and identity; image2 defines required gaze orientation only."
+    },
+    {
+      "name": "d3_derecha",
+      "file": "d3_derecha.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-b0829620-9f58-485f-802e-899529baae93.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CRITICAL look toward SCREEN RIGHT: copy EXACT head orientation image2. Forehead vent/chin shift toward right, viewer-LEFT ear more exposed, viewer-RIGHT ear less exposed. Do not turn left. Preserve critical cracks and missing cheek in same physical side. Several sharp orange sparks spray from broken far right cheek edge as servos strain. Keep sparks small within canvas. Image1 defines existing damage and identity; image2 defines required gaze orientation only."
+    },
+    {
+      "name": "d3_impacto",
+      "file": "d3_impacto.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-cf855727-f410-41fa-afa5-df271f1d7f09.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CRITICAL HIT: same frontal severely cracked and scorched helmet, same missing right cheek/circuits, slight recoil tilt. Fragmented cyan visor flashes white in surviving sections. Orange sparks from exposed right cheek. DO NOT repair cracks or light dead visor sections uniformly. Image1 defines existing damage and identity; keep frontal framing."
+    },
+    {
+      "name": "d3_punio_carga",
+      "file": "d3_punio_carga.png",
+      "source": "C:/Users/gehbd/.codex/generated_images/01a18315-041a-7422-92b2-095dcf76af30/exec-df3ae583-f2e2-4c8b-840d-ebf8981d9f63.png",
+      "prompt": "Use case: identity-preserve. ONE transparent PNG reaction portrait for IRON REQUIEM HUD. Keep EXACT reference robot identity: ivory armored rounded helmet, orange temples, graphite round ears, tiny rectangular forehead vent, single continuous cyan visor, angular lower shield and short neck. Head and neck only. Identical square canvas framing and scale to first reference; full helmet visible, fixed centered neck anchor, no camera zoom. Match detailed hand-painted retro FPS sprite shading and upper-left light. Robot only: no human eyes/teeth/lips/skin, no human expression. Real alpha transparency, no text, labels, borders, backgrounds or grids. Anatomical consistency: damage location is on ROBOT'S OWN LEFT cheek/temple, which appears on the VIEWER'S RIGHT in frontal view; NEVER mirror the damage. Generate only the requested pose, not a sheet. CRITICAL CHARGING MELEE FIST: head only, no hands. Slightly lowered chin, surviving cyan visor sections brighten white-cyan while damaged sections remain dark. Cyan reflections on surviving lower shield edges. Preserve exact extensive cracks, missing right cheek and scorched exposed circuits. Several small orange sparks from damaged circuitry due to charge strain. Not orange overdrive. Image1 defines existing damage and identity; keep frontal framing."
+    }
+  ]
+}

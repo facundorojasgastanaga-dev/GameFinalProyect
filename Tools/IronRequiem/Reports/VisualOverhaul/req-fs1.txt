@@ -1,0 +1,20 @@
+ok
+2026-11-17T07:16:16.8313339-04:00
+IronCampaignMapFxDisplay.Apply
+before:
+  defaultScreenWidth=960 defaultScreenHeight=540
+  defaultIsNativeResolution=True
+  fullScreenMode=Windowed
+  resizableWindow=False
+  company=DefaultCompany product=ProyectoGameFinal
+after:
+  defaultScreenWidth=960 defaultScreenHeight=540
+  defaultIsNativeResolution=True
+  fullScreenMode=FullScreenWindow
+  resizableWindow=False
+  company=DefaultCompany product=ProyectoGameFinal
+changed: defaultIsNativeResolution True -> True
+changed: fullScreenMode Windowed -> FullScreenWindow
+BEHAVIOUR CHANGE (confirm): the executable now launches full screen (borderless FullScreenWindow) instead of Windowed. defaultScreenWidth/Height only apply to windowed launches.
+note: Windows players reuse the last resolution stored under HKCU\Software\<company>\<product> (Screenmanager *) until those keys are cleared.
+seconds=0.9

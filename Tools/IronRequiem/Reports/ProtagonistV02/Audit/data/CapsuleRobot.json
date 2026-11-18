@@ -1,0 +1,303 @@
+{
+ "source": "C:/Users/gehbd/ProyectoGameFinal/Assets/IronRequiem/Art/Protagonist/CapsuleRobot/CapsuleRobot.fbx",
+ "blender": "5.2.3 LTS",
+ "objects": [
+  {
+   "object": "tripo_node_1041fc84",
+   "verts": 370955,
+   "faces": 741923,
+   "tris": 741923,
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rotation_euler": [
+    -0.0,
+    0.0,
+    0.0
+   ],
+   "origin_world": [
+    0.00038,
+    0.00094,
+    0.0
+   ],
+   "bounds_min": [
+    -0.27026,
+    -0.10587,
+    0.0
+   ],
+   "bounds_max": [
+    0.27103,
+    0.10776,
+    1.00031
+   ],
+   "dimensions": [
+    0.54129,
+    0.21363,
+    1.00031
+   ],
+   "origin_to_bbox_center": [
+    0.0,
+    -0.0,
+    -0.50015
+   ],
+   "face_sides": {
+    "3": 741923
+   },
+   "ngons": 0,
+   "ngons_concave": 0,
+   "ngons_concave_idx_sample": [],
+   "ngon_max_sides": 0,
+   "quads_concave": 0,
+   "edges_boundary": 7,
+   "edges_nonmanifold_gt2": 0,
+   "edges_wire": 0,
+   "nonmanifold_idx_sample": [],
+   "verts_loose": 0,
+   "verts_no_faces": 0,
+   "verts_nonmanifold": 0,
+   "faces_zero_area": 0,
+   "edges_zero_length": 0,
+   "faces_duplicate_same_verts": 0,
+   "faces_duplicate_same_positions": 0,
+   "verts_coincident_extra": 4,
+   "faces_interior_bmesh": 0,
+   "edges_inconsistent_winding": 0,
+   "faces_flipped_vs_recalc_outside": 0,
+   "faces_flipped_idx_sample": [],
+   "islands": 3,
+   "inverted_closed_islands": [],
+   "open_islands": 2,
+   "floating_islands_gt_1mm": [
+    {
+     "island": 0,
+     "verts": 370948,
+     "dist_m": 0.004847,
+     "center": [
+      -0.0002,
+      0.0167,
+      0.506
+     ]
+    }
+   ],
+   "tiny_islands_lt_8verts": 2,
+   "island_list": [
+    {
+     "island": 0,
+     "verts": 370948,
+     "faces": 741920,
+     "closed": true,
+     "signed_volume_m3": 0.015354458247078494,
+     "bbox_min": [
+      -0.2703,
+      -0.1059,
+      0.0
+     ],
+     "bbox_max": [
+      0.271,
+      0.1078,
+      1.0003
+     ],
+     "center": [
+      -0.0002,
+      0.0167,
+      0.506
+     ],
+     "nearest_other_island_m": 0.004847
+    },
+    {
+     "island": 1,
+     "verts": 3,
+     "faces": 1,
+     "closed": false,
+     "signed_volume_m3": 6.023886574742695e-10,
+     "bbox_min": [
+      0.215,
+      -0.0199,
+      0.5103
+     ],
+     "bbox_max": [
+      0.2153,
+      -0.0198,
+      0.5106
+     ],
+     "center": [
+      0.2152,
+      -0.0199,
+      0.5104
+     ],
+     "nearest_other_island_m": 0.0
+    },
+    {
+     "island": 2,
+     "verts": 4,
+     "faces": 2,
+     "closed": false,
+     "signed_volume_m3": 4.7682592689094845e-09,
+     "bbox_min": [
+      -0.0337,
+      0.0056,
+      0.6314
+     ],
+     "bbox_max": [
+      -0.0336,
+      0.0067,
+      0.6326
+     ],
+     "center": [
+      -0.0336,
+      0.0061,
+      0.632
+     ],
+     "nearest_other_island_m": 0.0
+    }
+   ],
+   "faces_enclosed_by_own_shell": {
+    "tested": 61827,
+    "count": 13,
+    "fraction": 0.0002,
+    "idx_sample": [
+     70980,
+     128352,
+     210924,
+     251556,
+     266592,
+     285888,
+     353436,
+     554760,
+     590604,
+     696048,
+     698400,
+     704160,
+     722508
+    ],
+    "sample_step": 12
+   },
+   "self_intersections": "skipped (too many tris for BVH self-overlap in Python)",
+   "uv_layers": [
+    "UVMap"
+   ],
+   "uv": {
+    "uv_area_total_0_1": 0.62957,
+    "area3d_m2": 0.94135,
+    "faces_uv_zero_area": 4129,
+    "faces_uv_flipped_winding": 548,
+    "texel_density_px_per_m_at_2048": 1674.8,
+    "stretch_ratio_normalised": {
+     "mean": 0.9992,
+     "p5": 0.3467,
+     "p50": 0.8178,
+     "p95": 2.3325,
+     "min": 0.0,
+     "max": 29.9175
+    },
+    "faces_area_ratio_off_by_2x": 203590,
+    "uv_out_of_0_1": 0,
+    "uv_islands": 154,
+    "texel_density_per_uv_island_px_per_m": {
+     "min": 0.0,
+     "p5": 1116.9,
+     "median": 1439.7,
+     "p95": 2383.6,
+     "max": 2710.1
+    },
+    "texel_density_by_uv_island_largest30": {
+     "27": 1717.1,
+     "8": 1135.8,
+     "40": 1665.5,
+     "113": 1782.3,
+     "104": 1130.9,
+     "43": 1136.1,
+     "64": 1311.6,
+     "85": 1416.9,
+     "16": 1411.4,
+     "18": 2651.4,
+     "28": 2249.0,
+     "41": 1740.7,
+     "38": 1380.1,
+     "20": 1823.8,
+     "29": 2686.5,
+     "45": 1382.4,
+     "33": 1126.5,
+     "144": 1183.5,
+     "94": 1667.4,
+     "96": 1424.9,
+     "108": 1871.5,
+     "121": 1789.9,
+     "0": 1141.8,
+     "141": 1134.3,
+     "140": 1128.9,
+     "115": 2263.1,
+     "44": 1673.2,
+     "103": 1700.2,
+     "10": 1093.7,
+     "76": 1324.6
+    },
+    "raster": {
+     "res": 512,
+     "covered_px": 141918,
+     "coverage_fraction": 0.5414,
+     "overlap_px_total": 0,
+     "overlap_px_cross_island": 0,
+     "overlap_px_same_island": 0,
+     "overlap_fraction_of_covered": 0.0,
+     "overlapping_island_pairs_top": [],
+     "overlapping_island_pairs_count": 0
+    }
+   },
+   "materials": [
+    "tripo_mat_1041fc84"
+   ],
+   "material_slots_unused": [],
+   "material_slots_empty": []
+  }
+ ],
+ "armatures": [],
+ "empties": [],
+ "actions": [],
+ "materials": {
+  "count": 1,
+  "names": [
+   "tripo_mat_1041fc84"
+  ],
+  "same_stem_groups": {},
+  "identical_signature_groups": [],
+  "images": [
+   [
+    "mecha_robot_3d_model_basecolor",
+    [
+     0,
+     0
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Protagonist\\CapsuleRobot\\tripo_convert_1041fc84-3913-49ae-a29d-c90c4e061e86.fbm\\mecha_robot_3d_model_basecolor.JPEG"
+   ],
+   [
+    "mecha_robot_3d_model_metallic",
+    [
+     0,
+     0
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Protagonist\\CapsuleRobot\\tripo_convert_1041fc84-3913-49ae-a29d-c90c4e061e86.fbm\\mecha_robot_3d_model_metallic.JPEG"
+   ],
+   [
+    "mecha_robot_3d_model_normal",
+    [
+     0,
+     0
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Protagonist\\CapsuleRobot\\tripo_convert_1041fc84-3913-49ae-a29d-c90c4e061e86.fbm\\mecha_robot_3d_model_normal.PNG"
+   ],
+   [
+    "mecha_robot_3d_model_roughness",
+    [
+     0,
+     0
+    ],
+    "C:\\Users\\gehbd\\ProyectoGameFinal\\Assets\\IronRequiem\\Art\\Protagonist\\CapsuleRobot\\tripo_convert_1041fc84-3913-49ae-a29d-c90c4e061e86.fbm\\mecha_robot_3d_model_roughness.JPEG"
+   ]
+  ]
+ },
+ "cross_object_intersections_same_lod": [],
+ "elapsed_s": 221.5
+}

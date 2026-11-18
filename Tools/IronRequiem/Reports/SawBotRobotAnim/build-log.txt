@@ -1,0 +1,11 @@
+[SawBot robot anim]
+  R_SawIdle len=2 curves=23
+  R_SawDrive len=1 curves=23
+  R_SawContactPrepare len=0.25 curves=23
+  R_SawHold len=0.4 curves=23
+  R_SawHit len=0.317 curves=23
+  swap IdleDrive: R_SawIdle -> R_SawIdle
+  swap IdleDrive: R_SawDrive -> R_SawDrive
+  swap Attack: R_SawContactPrepare -> R_SawContactPrepare
+  swap SawHold: R_SawHold -> R_SawHold
+  swap Hit: R_SawHit -> R_SawHit

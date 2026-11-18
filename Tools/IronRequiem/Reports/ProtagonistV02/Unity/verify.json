@@ -1,0 +1,29 @@
+{
+  "Protagonist_FPS_v02": {"isVariant": true, "base": "Assets/IronRequiem/Art/Player/ProtagonistV01/Protagonist_FPS.prefab", "renderers": [
+    {"name": "Forearm_L_FPS", "mesh": "IR_Protagonist_v02_FPS_Rigged.fbx", "tris": 608, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_R_FPS", "mesh": "IR_Protagonist_v02_FPS_Rigged.fbx", "tris": 604, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_L_FPS", "mesh": "IR_Protagonist_v02_FPS_Rigged.fbx", "tris": 3876, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_R_FPS", "mesh": "IR_Protagonist_v02_FPS_Rigged.fbx", "tris": 3876, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000}
+  ]},
+  "Protagonist_Body_v02": {"isVariant": true, "base": "Assets/IronRequiem/Art/Player/ProtagonistV01/Protagonist_Body.prefab", "renderers": [
+    {"name": "Body_LOD0", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 14726, "maxBonesPerVertex": 2, "boneRestError_m": 0.000000},
+    {"name": "Body_LOD1", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 9186, "maxBonesPerVertex": 2, "boneRestError_m": 0.000000},
+    {"name": "Body_LOD2", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 4834, "maxBonesPerVertex": 2, "boneRestError_m": 0.000000},
+    {"name": "Forearm_L_LOD0", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 608, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_L_LOD1", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 204, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_L_LOD2", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 114, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_R_LOD0", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 604, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_R_LOD1", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 196, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Forearm_R_LOD2", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 110, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_L_LOD0", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 3876, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_L_LOD1", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 1176, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_L_LOD2", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 738, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_R_LOD0", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 3876, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_R_LOD1", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 1176, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000},
+    {"name": "Hand_R_LOD2", "mesh": "IR_Protagonist_v02_Rigged.fbx", "tris": 738, "maxBonesPerVertex": 1, "boneRestError_m": 0.000000}
+  ]},
+  "FPS_L": {"bones": 15, "names": "Index1_L,Index2_L,Index3_L,Middle1_L,Middle2_L,Middle3_L,Ring1_L,Ring2_L,Ring3_L,Little1_L,Little2_L,Little3_L,Thumb1_L,Thumb2_L,Thumb3_L", "maxOpenToFist_deg": 100.0, "palm": [0.9990, 0.0434, 0.0080], "forward": [-0.0399, 0.9664, -0.2541]},
+  "FPS_R": {"bones": 15, "names": "Index1_R,Index2_R,Index3_R,Middle1_R,Middle2_R,Middle3_R,Ring1_R,Ring2_R,Ring3_R,Little1_R,Little2_R,Little3_R,Thumb1_R,Thumb2_R,Thumb3_R", "maxOpenToFist_deg": 100.0, "palm": [-0.9990, 0.0433, 0.0080], "forward": [0.0399, 0.9664, -0.2540]},
+  "player": {"isVariant": true, "handPoseController": true, "fpsMeshes": "Forearm_L_FPS:IR_Protagonist_v02_FPS_Rigged.fbx; Forearm_R_FPS:IR_Protagonist_v02_FPS_Rigged.fbx; Hand_L_FPS:IR_Protagonist_v02_FPS_Rigged.fbx; Hand_R_FPS:IR_Protagonist_v02_FPS_Rigged.fbx; Forearm_R_Receiver:Protagonist_RightForearm_Receiver_v02.asset"},
+  "lab": "Assets/IronRequiem/Scenes/ProtagonistV02Lab.unity"
+}

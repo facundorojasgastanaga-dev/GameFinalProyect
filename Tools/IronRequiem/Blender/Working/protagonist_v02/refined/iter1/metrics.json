@@ -1,0 +1,3780 @@
+{
+ "task": "IR-09 A2/A3 protagonist v02 refine",
+ "blender": "5.2.3 LTS",
+ "source": "Tools\\IronRequiem\\Blender\\Working\\Protagonist\\IR_Protagonist_Rigged.blend",
+ "standard": "IR-ACOPLE-01",
+ "std_values_m": {
+  "forearm_end_z": -0.012,
+  "flange_d": 0.078,
+  "flange_bevel": 0.0015,
+  "flange_back_z": -0.022,
+  "spigot_d": 0.064,
+  "spigot_end_z": 0.003,
+  "collar_d": 0.08,
+  "collar_len": 0.032,
+  "housing_d": 0.066,
+  "housing_depth": 0.006,
+  "collar_bevel": 0.0015,
+  "forearm_cut_z": -0.016,
+  "hand_cut_z": 0.012
+ },
+ "source_sha256_before": {
+  "rigged_blend": "4b68ce35c8d1f0634a65f60eb528c5fb96c966a4569a3630ec67d9ca6f97eef9",
+  "closed_fist_blend": "ae3b8e60dab22c6b1c6657c27c7c92f17d7d17d7fd9e8c8c56020736ad3f90f0"
+ },
+ "before": {
+  "tris": {
+   "Body_LOD0": 15038,
+   "Body_LOD1": 9426,
+   "Body_LOD2": 4962,
+   "Forearm_L_FPS": 858,
+   "Forearm_L_LOD0": 858,
+   "Forearm_L_LOD1": 542,
+   "Forearm_L_LOD2": 310,
+   "Forearm_R_FPS": 872,
+   "Forearm_R_LOD0": 872,
+   "Forearm_R_LOD1": 570,
+   "Forearm_R_LOD2": 320,
+   "Hand_L_FPS": 2142,
+   "Hand_L_LOD0": 2142,
+   "Hand_L_LOD1": 528,
+   "Hand_L_LOD2": 252,
+   "Hand_R_FPS": 2198,
+   "Hand_R_LOD0": 2198,
+   "Hand_R_LOD1": 562,
+   "Hand_R_LOD2": 278
+  },
+  "weights": {
+   "Forearm_L_FPS": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 38,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_L_LOD0": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 38,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_L_LOD1": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 22,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_L_LOD2": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 11,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_R_FPS": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 39,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_R_LOD0": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 39,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_R_LOD1": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 21,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Forearm_R_LOD2": {
+    "max_bones_per_vertex": 2,
+    "vertices_with_2plus_bones": 10,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_L_FPS": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 781,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_L_LOD0": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 781,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_L_LOD1": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 192,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_L_LOD2": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 84,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_R_FPS": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 814,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_R_LOD0": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 814,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_R_LOD1": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 201,
+    "unweighted": 0,
+    "all_weights_one": false
+   },
+   "Hand_R_LOD2": {
+    "max_bones_per_vertex": 3,
+    "vertices_with_2plus_bones": 94,
+    "unweighted": 0,
+    "all_weights_one": false
+   }
+  },
+  "sockets": [
+   "Elbow_L",
+   "Elbow_L.001",
+   "Elbow_L.002",
+   "Elbow_R",
+   "Elbow_R.001",
+   "Elbow_R.002",
+   "ModuleSocket_L",
+   "ModuleSocket_L.001",
+   "ModuleSocket_L.002",
+   "ModuleSocket_R",
+   "ModuleSocket_R.001",
+   "ModuleSocket_R.002",
+   "Wrist_L",
+   "Wrist_L.001",
+   "Wrist_L.002",
+   "Wrist_R",
+   "Wrist_R.001",
+   "Wrist_R.002"
+  ],
+  "from_audit": {
+   "rigid_residual_fist_mm": {
+    "Little1_R": 5.9,
+    "Hand_R": 5.7
+   },
+   "wrist_hand_intrusion_into_sleeve_mm": 15.6,
+   "forearm_deformation_stress_pose_mm": 6.1,
+   "mixed_forearm_hand_vertices": 38,
+   "concave_cap_ngons": "48-70 sides",
+   "source": "Tools/IronRequiem/Reports/ProtagonistV02/Audit/audit.md"
+  }
+ },
+ "thumb_refit_offsets_m": {
+  "Thumb1_R": [
+   0.02328,
+   -0.03283,
+   -0.0097
+  ],
+  "Thumb1_L": [
+   -0.02328,
+   -0.03283,
+   -0.0097
+  ],
+  "Thumb2_R": [
+   -0.00015,
+   -0.0331,
+   -0.00378
+  ],
+  "Thumb2_L": [
+   0.00015,
+   -0.0331,
+   -0.00378
+  ],
+  "Thumb3_R": [
+   -0.00988,
+   -0.04534,
+   -0.00443
+  ],
+  "Thumb3_L": [
+   0.00988,
+   -0.04534,
+   -0.00443
+  ]
+ },
+ "frames": {
+  "Wrist_R": {
+   "origin": [
+    -0.41976,
+    0.0002,
+    0.99742
+   ],
+   "x": [
+    0.093,
+    -0.9707,
+    0.2216
+   ],
+   "y": [
+    -0.9541,
+    -0.0232,
+    0.2986
+   ],
+   "z": [
+    -0.2847,
+    -0.2392,
+    -0.9283
+   ]
+  },
+  "Elbow_R": {
+   "origin": [
+    -0.34085,
+    0.06648,
+    1.25467
+   ],
+   "x": [
+    0.093,
+    -0.9707,
+    0.2216
+   ],
+   "y": [
+    -0.9541,
+    -0.0232,
+    0.2986
+   ],
+   "z": [
+    -0.2847,
+    -0.2392,
+    -0.9283
+   ]
+  },
+  "Wrist_L": {
+   "origin": [
+    0.41976,
+    0.0002,
+    0.99742
+   ],
+   "x": [
+    0.093,
+    0.9707,
+    -0.2216
+   ],
+   "y": [
+    0.9541,
+    -0.0232,
+    0.2986
+   ],
+   "z": [
+    0.2847,
+    -0.2392,
+    -0.9283
+   ]
+  },
+  "Elbow_L": {
+   "origin": [
+    0.34085,
+    0.06648,
+    1.25467
+   ],
+   "x": [
+    0.093,
+    0.9707,
+    -0.2216
+   ],
+   "y": [
+    0.9541,
+    -0.0232,
+    0.2986
+   ],
+   "z": [
+    0.2847,
+    -0.2392,
+    -0.9283
+   ]
+  }
+ },
+ "elbow": {
+  "Body_LOD0_R": {
+   "plane_point": [
+    -0.32122,
+    0.05861,
+    1.28862
+   ],
+   "plane_normal": [
+    -0.49082,
+    0.19693,
+    -0.84871
+   ],
+   "chunk_faces": 197,
+   "body_cap_tris": 52
+  },
+  "Body_LOD1_R": {
+   "plane_point": [
+    -0.32122,
+    0.05861,
+    1.28862
+   ],
+   "plane_normal": [
+    -0.49082,
+    0.19693,
+    -0.84871
+   ],
+   "chunk_faces": 138,
+   "body_cap_tris": 42
+  },
+  "Body_LOD2_R": {
+   "plane_point": [
+    -0.32122,
+    0.05861,
+    1.28862
+   ],
+   "plane_normal": [
+    -0.49082,
+    0.19693,
+    -0.84871
+   ],
+   "chunk_faces": 78,
+   "body_cap_tris": 25
+  },
+  "Body_LOD0_L": {
+   "plane_point": [
+    0.32129,
+    0.05861,
+    1.28861
+   ],
+   "plane_normal": [
+    0.49106,
+    0.1969,
+    -0.84858
+   ],
+   "chunk_faces": 198,
+   "body_cap_tris": 52
+  },
+  "Body_LOD1_L": {
+   "plane_point": [
+    0.32129,
+    0.05861,
+    1.28861
+   ],
+   "plane_normal": [
+    0.49106,
+    0.1969,
+    -0.84858
+   ],
+   "chunk_faces": 132,
+   "body_cap_tris": 42
+  },
+  "Body_LOD2_L": {
+   "plane_point": [
+    0.32129,
+    0.05861,
+    1.28861
+   ],
+   "plane_normal": [
+    0.49106,
+    0.1969,
+    -0.84858
+   ],
+   "chunk_faces": 68,
+   "body_cap_tris": 29
+  },
+  "Forearm_R_LOD0": {
+   "removed_v01_caps": [
+    70,
+    70
+   ],
+   "neck_cap_tris": 52,
+   "boundary_edges_after_weld": 0
+  },
+  "Forearm_L_LOD0": {
+   "removed_v01_caps": [
+    65,
+    65
+   ],
+   "neck_cap_tris": 52,
+   "boundary_edges_after_weld": 0
+  }
+ },
+ "surface_pre_decimation": {
+  "Hand_R_LOD0": {
+   "ratio": 0.6,
+   "tris_before": 2198,
+   "tris_after": 1318,
+   "hausdorff_mm": 1.948,
+   "mean_dev_mm": 0.284
+  }
+ },
+ "hand_after_wrist_cut_tris": 1306,
+ "separators": {
+  "Index|Middle": {
+   "normal": [
+    -0.02,
+    0.999,
+    -0.04
+   ],
+   "offset": -0.06171,
+   "margin_mm": 0.38
+  },
+  "Middle|Ring": {
+   "normal": [
+    -0.0797,
+    0.9966,
+    -0.0199
+   ],
+   "offset": 0.01028,
+   "margin_mm": 0.58
+  },
+  "Ring|Little": {
+   "normal": [
+    -0.0797,
+    0.9966,
+    0.0199
+   ],
+   "offset": 0.07112,
+   "margin_mm": 3.25
+  }
+ },
+ "mcp_plane": {
+  "point": [
+   -0.458,
+   -0.009,
+   0.922
+  ],
+  "normal": [
+   -0.1465,
+   -0.0,
+   -0.9892
+  ],
+  "max_head_offset_mm": 0.0,
+  "max_angle_to_bone_deg": 1.36
+ },
+ "separator_slivers_dropped": [
+  {
+   "piece": "Index1_R",
+   "belongs_to": "Middle",
+   "faces": 6,
+   "max_thickness_across_separator_mm": 0.68
+  },
+  {
+   "piece": "Index2_R",
+   "belongs_to": "Middle",
+   "faces": 5,
+   "max_thickness_across_separator_mm": 0.65
+  },
+  {
+   "piece": "Middle2_R",
+   "belongs_to": "Ring",
+   "faces": 14,
+   "max_thickness_across_separator_mm": 0.85
+  },
+  {
+   "piece": "Middle3_R",
+   "belongs_to": "Ring",
+   "faces": 32,
+   "max_thickness_across_separator_mm": 1.03
+  },
+  {
+   "piece": "Ring2_R",
+   "belongs_to": "Little",
+   "faces": 10,
+   "max_thickness_across_separator_mm": 0.7
+  }
+ ],
+ "hand_partition": [
+  {
+   "id": 0,
+   "name": "Palm_R",
+   "bone": "Hand_R",
+   "tris": 434,
+   "components": [
+    382
+   ],
+   "cap_tris": 53
+  },
+  {
+   "id": 1,
+   "name": "Index1_R",
+   "bone": "Index1_R",
+   "tris": 206,
+   "components": [
+    181
+   ],
+   "cap_tris": 62
+  },
+  {
+   "id": 2,
+   "name": "Index2_R",
+   "bone": "Index2_R",
+   "tris": 178,
+   "components": [
+    152
+   ],
+   "cap_tris": 48
+  },
+  {
+   "id": 3,
+   "name": "Index3_R",
+   "bone": "Index3_R",
+   "tris": 116,
+   "components": [
+    106
+   ],
+   "cap_tris": 18
+  },
+  {
+   "id": 4,
+   "name": "Middle1_R",
+   "bone": "Middle1_R",
+   "tris": 276,
+   "components": [
+    240
+   ],
+   "cap_tris": 92
+  },
+  {
+   "id": 5,
+   "name": "Middle2_R",
+   "bone": "Middle2_R",
+   "tris": 202,
+   "components": [
+    167
+   ],
+   "cap_tris": 57
+  },
+  {
+   "id": 6,
+   "name": "Middle3_R",
+   "bone": "Middle3_R",
+   "tris": 84,
+   "components": [
+    77
+   ],
+   "cap_tris": 15
+  },
+  {
+   "id": 7,
+   "name": "Ring1_R",
+   "bone": "Ring1_R",
+   "tris": 206,
+   "components": [
+    175
+   ],
+   "cap_tris": 71
+  },
+  {
+   "id": 8,
+   "name": "Ring2_R",
+   "bone": "Ring2_R",
+   "tris": 140,
+   "components": [
+    117
+   ],
+   "cap_tris": 42
+  },
+  {
+   "id": 9,
+   "name": "Ring3_R",
+   "bone": "Ring3_R",
+   "tris": 122,
+   "components": [
+    107
+   ],
+   "cap_tris": 29
+  },
+  {
+   "id": 10,
+   "name": "Little1_R",
+   "bone": "Little1_R",
+   "tris": 184,
+   "components": [
+    159
+   ],
+   "cap_tris": 56
+  },
+  {
+   "id": 11,
+   "name": "Little2_R",
+   "bone": "Little2_R",
+   "tris": 132,
+   "components": [
+    112
+   ],
+   "cap_tris": 41
+  },
+  {
+   "id": 12,
+   "name": "Little3_R",
+   "bone": "Little3_R",
+   "tris": 102,
+   "components": [
+    92
+   ],
+   "cap_tris": 20
+  },
+  {
+   "id": 13,
+   "name": "Thumb1_R",
+   "bone": "Thumb1_R",
+   "tris": 114,
+   "components": [
+    96
+   ],
+   "cap_tris": 32
+  },
+  {
+   "id": 14,
+   "name": "Thumb2_R",
+   "bone": "Thumb2_R",
+   "tris": 138,
+   "components": [
+    119
+   ],
+   "cap_tris": 34
+  },
+  {
+   "id": 15,
+   "name": "Thumb3_R",
+   "bone": "Thumb3_R",
+   "tris": 70,
+   "components": [
+    60
+   ],
+   "cap_tris": 19
+  }
+ ],
+ "joint_recentre_mm": {
+  "Index1_R": 3.02,
+  "Index2_R": 9.16,
+  "Index3_R": 1.38,
+  "Little1_R": 2.37,
+  "Little2_R": 12.15,
+  "Little3_R": 4.39,
+  "Middle1_R": 2.72,
+  "Middle2_R": 6.31,
+  "Middle3_R": 0.04,
+  "Ring1_R": 2.8,
+  "Ring2_R": 6.39,
+  "Ring3_R": 0.53,
+  "Thumb1_R": 1.15,
+  "Thumb2_R": 3.86,
+  "Thumb3_R": 4.23
+ },
+ "rotulas": [
+  {
+   "id": 16,
+   "name": "Rotula_Index1_R",
+   "bone": "Hand_R",
+   "joint_bone": "Index1_R",
+   "radius_mm": 19.23,
+   "length_mm": 17.93,
+   "dorsal_extent_mm": 22.94,
+   "palmar_extent_mm": 22.94,
+   "axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.45502,
+    -0.04565,
+    0.92153
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Rotula_Index2_R",
+   "bone": "Index1_R",
+   "joint_bone": "Index2_R",
+   "radius_mm": 14.57,
+   "length_mm": 22.15,
+   "dorsal_extent_mm": 16.19,
+   "palmar_extent_mm": 16.19,
+   "axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.4558,
+    -0.05006,
+    0.88809
+   ]
+  },
+  {
+   "id": 18,
+   "name": "Rotula_Index3_R",
+   "bone": "Index2_R",
+   "joint_bone": "Index3_R",
+   "radius_mm": 12.63,
+   "length_mm": 18.56,
+   "dorsal_extent_mm": 14.11,
+   "palmar_extent_mm": 14.11,
+   "axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.44679,
+    -0.05704,
+    0.84677
+   ]
+  },
+  {
+   "id": 19,
+   "name": "Rotula_Middle1_R",
+   "bone": "Hand_R",
+   "joint_bone": "Middle1_R",
+   "radius_mm": 20.02,
+   "length_mm": 21.36,
+   "dorsal_extent_mm": 23.88,
+   "palmar_extent_mm": 23.88,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "center": [
+    -0.45531,
+    -0.0201,
+    0.92166
+   ]
+  },
+  {
+   "id": 20,
+   "name": "Rotula_Middle2_R",
+   "bone": "Middle1_R",
+   "joint_bone": "Middle2_R",
+   "radius_mm": 14.54,
+   "length_mm": 21.13,
+   "dorsal_extent_mm": 16.37,
+   "palmar_extent_mm": 16.37,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "center": [
+    -0.45813,
+    -0.02199,
+    0.87674
+   ]
+  },
+  {
+   "id": 21,
+   "name": "Rotula_Middle3_R",
+   "bone": "Middle2_R",
+   "joint_bone": "Middle3_R",
+   "radius_mm": 10.23,
+   "length_mm": 17.39,
+   "dorsal_extent_mm": 11.86,
+   "palmar_extent_mm": 11.86,
+   "axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.44597,
+    -0.02563,
+    0.82921
+   ]
+  },
+  {
+   "id": 22,
+   "name": "Rotula_Ring1_R",
+   "bone": "Hand_R",
+   "joint_bone": "Ring1_R",
+   "radius_mm": 20.24,
+   "length_mm": 20.89,
+   "dorsal_extent_mm": 23.77,
+   "palmar_extent_mm": 23.77,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "center": [
+    -0.45523,
+    0.00444,
+    0.92162
+   ]
+  },
+  {
+   "id": 23,
+   "name": "Rotula_Ring2_R",
+   "bone": "Ring1_R",
+   "joint_bone": "Ring2_R",
+   "radius_mm": 14.5,
+   "length_mm": 17.38,
+   "dorsal_extent_mm": 16.11,
+   "palmar_extent_mm": 16.11,
+   "axis": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.45813,
+    0.00215,
+    0.88053
+   ]
+  },
+  {
+   "id": 24,
+   "name": "Rotula_Ring3_R",
+   "bone": "Ring2_R",
+   "joint_bone": "Ring3_R",
+   "radius_mm": 11.07,
+   "length_mm": 17.24,
+   "dorsal_extent_mm": 12.58,
+   "palmar_extent_mm": 12.58,
+   "axis": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.44566,
+    0.00275,
+    0.83662
+   ]
+  },
+  {
+   "id": 25,
+   "name": "Rotula_Little1_R",
+   "bone": "Hand_R",
+   "joint_bone": "Little1_R",
+   "radius_mm": 20.03,
+   "length_mm": 18.49,
+   "dorsal_extent_mm": 23.08,
+   "palmar_extent_mm": 23.08,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "center": [
+    -0.45566,
+    0.0269,
+    0.9216
+   ]
+  },
+  {
+   "id": 26,
+   "name": "Rotula_Little2_R",
+   "bone": "Little1_R",
+   "joint_bone": "Little2_R",
+   "radius_mm": 13.72,
+   "length_mm": 20.3,
+   "dorsal_extent_mm": 16.68,
+   "palmar_extent_mm": 16.68,
+   "axis": [
+    -0.0,
+    1.0,
+    -0.0
+   ],
+   "center": [
+    -0.45333,
+    0.03045,
+    0.89301
+   ]
+  },
+  {
+   "id": 27,
+   "name": "Rotula_Little3_R",
+   "bone": "Little2_R",
+   "joint_bone": "Little3_R",
+   "radius_mm": 10.77,
+   "length_mm": 17.18,
+   "dorsal_extent_mm": 14.85,
+   "palmar_extent_mm": 14.85,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "center": [
+    -0.44364,
+    0.03415,
+    0.85784
+   ]
+  },
+  {
+   "id": 28,
+   "name": "Rotula_Thumb1_R",
+   "bone": "Hand_R",
+   "joint_bone": "Thumb1_R",
+   "radius_mm": 12.34,
+   "length_mm": 20.09,
+   "dorsal_extent_mm": 13.71,
+   "palmar_extent_mm": 13.71,
+   "axis": [
+    -0.0321,
+    0.9104,
+    -0.4125
+   ],
+   "center": [
+    -0.38462,
+    -0.03855,
+    0.94587
+   ]
+  },
+  {
+   "id": 29,
+   "name": "Rotula_Thumb2_R",
+   "bone": "Thumb1_R",
+   "joint_bone": "Thumb2_R",
+   "radius_mm": 11.87,
+   "length_mm": 23.75,
+   "dorsal_extent_mm": 13.19,
+   "palmar_extent_mm": 13.19,
+   "axis": [
+    -0.6451,
+    -0.5823,
+    -0.4948
+   ],
+   "center": [
+    -0.37774,
+    -0.04497,
+    0.92162
+   ]
+  },
+  {
+   "id": 30,
+   "name": "Rotula_Thumb3_R",
+   "bone": "Thumb2_R",
+   "joint_bone": "Thumb3_R",
+   "radius_mm": 11.24,
+   "length_mm": 20.03,
+   "dorsal_extent_mm": 12.87,
+   "palmar_extent_mm": 12.87,
+   "axis": [
+    0.5946,
+    0.8036,
+    0.0261
+   ],
+   "center": [
+    -0.37061,
+    -0.05261,
+    0.8925
+   ]
+  }
+ ],
+ "hand_R_lod0_before_budget_tris": 3904,
+ "hand_R_lod0_budget": {
+  "target": 3300,
+  "ratio_surface_pieces": 0.7766,
+  "tris": 3286
+ },
+ "forearm_lod0_budget": {
+  "Forearm_R_LOD0": {
+   "ratio": 0.754,
+   "tris_before": 1008,
+   "tris_after": 760
+  },
+  "Forearm_L_LOD0": {
+   "ratio": 0.7615,
+   "tris_before": 998,
+   "tris_after": 760
+  }
+ },
+ "finish": {
+  "spec": {
+   "angle_deg": 30.0,
+   "width": 0.0015,
+   "segments": 2
+  },
+  "surface_bevel_applied": false,
+  "cost_right_side_tris": {
+   "Hand_R_LOD0": {
+    "without_bevel": 3286,
+    "with_spec_bevel": 22322
+   },
+   "Forearm_R_LOD0": {
+    "without_bevel": 1040,
+    "with_spec_bevel": 5034
+   }
+  },
+  "fps_total_if_spec_bevel": 54712,
+  "note": "Angle-limited bevel on the v01 optimized surfaces bevels ~half of all edges (forearm 539/1107 edges > 30 deg) and breaks the FPS budget; mechanical parts (collar, flange/spigot, rotulas) carry modelled 1.2-1.5 mm chamfers; all meshes get Weighted Normal (keep sharp)."
+ },
+ "lod": {
+  "LOD1": {
+   "target_total": 12000,
+   "body_tris": 9198,
+   "arms_budget": 2802,
+   "ratio": 0.3239,
+   "arms_tris": 2744
+  },
+  "LOD2": {
+   "target_total": 6500,
+   "body_tris": 4850,
+   "arms_budget": 1650,
+   "ratio": 0.1907,
+   "arms_tris": 1620
+  }
+ },
+ "weight_conflict_vertices": {
+  "Forearm_L_FPS": 0,
+  "Forearm_L_LOD0": 0,
+  "Forearm_L_LOD1": 0,
+  "Forearm_L_LOD2": 0,
+  "Forearm_R_FPS": 0,
+  "Forearm_R_LOD0": 0,
+  "Forearm_R_LOD1": 0,
+  "Forearm_R_LOD2": 0,
+  "Hand_L_FPS": 0,
+  "Hand_L_LOD0": 0,
+  "Hand_L_LOD1": 0,
+  "Hand_L_LOD2": 0,
+  "Hand_R_FPS": 0,
+  "Hand_R_LOD0": 0,
+  "Hand_R_LOD1": 0,
+  "Hand_R_LOD2": 0
+ },
+ "sockets": {
+  "removed": [
+   "Elbow_L",
+   "Elbow_L.001",
+   "Elbow_L.002",
+   "Elbow_R",
+   "Elbow_R.001",
+   "Elbow_R.002",
+   "ModuleSocket_L",
+   "ModuleSocket_L.001",
+   "ModuleSocket_L.002",
+   "ModuleSocket_R",
+   "ModuleSocket_R.001",
+   "ModuleSocket_R.002",
+   "Wrist_L",
+   "Wrist_L.001",
+   "Wrist_L.002",
+   "Wrist_R",
+   "Wrist_R.001",
+   "Wrist_R.002"
+  ],
+  "created": [
+   {
+    "name": "Wrist_R",
+    "parent_bone": "Hand_R",
+    "origin": [
+     -0.41976,
+     0.0002,
+     0.99742
+    ],
+    "x": [
+     0.093,
+     -0.9707,
+     0.2216
+    ],
+    "y": [
+     -0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     -0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   },
+   {
+    "name": "ModuleSocket_R",
+    "parent_bone": "Hand_R",
+    "origin": [
+     -0.41976,
+     0.0002,
+     0.99742
+    ],
+    "x": [
+     0.093,
+     -0.9707,
+     0.2216
+    ],
+    "y": [
+     -0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     -0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   },
+   {
+    "name": "Elbow_R",
+    "parent_bone": "Forearm_R",
+    "origin": [
+     -0.34085,
+     0.06648,
+     1.25467
+    ],
+    "x": [
+     0.093,
+     -0.9707,
+     0.2216
+    ],
+    "y": [
+     -0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     -0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   },
+   {
+    "name": "Wrist_L",
+    "parent_bone": "Hand_L",
+    "origin": [
+     0.41976,
+     0.0002,
+     0.99742
+    ],
+    "x": [
+     0.093,
+     0.9707,
+     -0.2216
+    ],
+    "y": [
+     0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   },
+   {
+    "name": "ModuleSocket_L",
+    "parent_bone": "Hand_L",
+    "origin": [
+     0.41976,
+     0.0002,
+     0.99742
+    ],
+    "x": [
+     0.093,
+     0.9707,
+     -0.2216
+    ],
+    "y": [
+     0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   },
+   {
+    "name": "Elbow_L",
+    "parent_bone": "Forearm_L",
+    "origin": [
+     0.34085,
+     0.06648,
+     1.25467
+    ],
+    "x": [
+     0.093,
+     0.9707,
+     -0.2216
+    ],
+    "y": [
+     0.9541,
+     -0.0232,
+     0.2986
+    ],
+    "z": [
+     0.2847,
+     -0.2392,
+     -0.9283
+    ]
+   }
+  ]
+ },
+ "piece_tables": {
+  "Hand_R": [
+   {
+    "id": 0,
+    "name": "Palm_R",
+    "bone": "Hand_R",
+    "tris": 434,
+    "components": [
+     382
+    ],
+    "cap_tris": 53
+   },
+   {
+    "id": 1,
+    "name": "Index1_R",
+    "bone": "Index1_R",
+    "tris": 206,
+    "components": [
+     181
+    ],
+    "cap_tris": 62,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "Index2_R",
+    "bone": "Index2_R",
+    "tris": 178,
+    "components": [
+     152
+    ],
+    "cap_tris": 48,
+    "prox_plane": [
+     "<Vector (-0.4640, -0.0480, 0.8840)>",
+     "<Vector (0.4462, 0.0000, -0.8949)>"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "Index3_R",
+    "bone": "Index3_R",
+    "tris": 116,
+    "components": [
+     106
+    ],
+    "cap_tris": 18,
+    "prox_plane": [
+     "<Vector (-0.4460, -0.0480, 0.8479)>",
+     "<Vector (0.8205, 0.0000, -0.5716)>"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "Middle1_R",
+    "bone": "Middle1_R",
+    "tris": 276,
+    "components": [
+     240
+    ],
+    "cap_tris": 92,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "Middle2_R",
+    "bone": "Middle2_R",
+    "tris": 202,
+    "components": [
+     167
+    ],
+    "cap_tris": 57,
+    "prox_plane": [
+     "<Vector (-0.4640, -0.0220, 0.8744)>",
+     "<Vector (0.3698, 0.0000, -0.9291)>"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "Middle3_R",
+    "bone": "Middle3_R",
+    "tris": 84,
+    "components": [
+     77
+    ],
+    "cap_tris": 15,
+    "prox_plane": [
+     "<Vector (-0.4460, -0.0220, 0.8292)>",
+     "<Vector (0.7534, 0.0000, -0.6575)>"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "Ring1_R",
+    "bone": "Ring1_R",
+    "tris": 206,
+    "components": [
+     175
+    ],
+    "cap_tris": 71,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "Ring2_R",
+    "bone": "Ring2_R",
+    "tris": 140,
+    "components": [
+     117
+    ],
+    "cap_tris": 42,
+    "prox_plane": [
+     "<Vector (-0.4640, 0.0050, 0.8780)>",
+     "<Vector (0.3955, 0.0000, -0.9185)>"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "Ring3_R",
+    "bone": "Ring3_R",
+    "tris": 122,
+    "components": [
+     107
+    ],
+    "cap_tris": 29,
+    "prox_plane": [
+     "<Vector (-0.4460, 0.0050, 0.8362)>",
+     "<Vector (0.7783, 0.0000, -0.6279)>"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "Little1_R",
+    "bone": "Little1_R",
+    "tris": 184,
+    "components": [
+     159
+    ],
+    "cap_tris": 56,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "Little2_R",
+    "bone": "Little2_R",
+    "tris": 132,
+    "components": [
+     112
+    ],
+    "cap_tris": 41,
+    "prox_plane": [
+     "<Vector (-0.4640, 0.0290, 0.8872)>",
+     "<Vector (0.4782, 0.0000, -0.8783)>"
+    ]
+   },
+   {
+    "id": 12,
+    "name": "Little3_R",
+    "bone": "Little3_R",
+    "tris": 102,
+    "components": [
+     92
+    ],
+    "cap_tris": 20,
+    "prox_plane": [
+     "<Vector (-0.4460, 0.0290, 0.8541)>",
+     "<Vector (0.8430, 0.0000, -0.5379)>"
+    ]
+   },
+   {
+    "id": 13,
+    "name": "Thumb1_R",
+    "bone": "Thumb1_R",
+    "tris": 114,
+    "components": [
+     96
+    ],
+    "cap_tris": 32,
+    "prox_plane": [
+     "<Vector (-0.3837, -0.0378, 0.9463)>",
+     "<Vector (0.6016, -0.3120, -0.7353)>"
+    ]
+   },
+   {
+    "id": 14,
+    "name": "Thumb2_R",
+    "bone": "Thumb2_R",
+    "tris": 138,
+    "components": [
+     119
+    ],
+    "cap_tris": 34,
+    "prox_plane": [
+     "<Vector (-0.3801, -0.0521, 0.9192)>",
+     "<Vector (0.5523, 0.0921, -0.8285)>"
+    ]
+   },
+   {
+    "id": 15,
+    "name": "Thumb3_R",
+    "bone": "Thumb3_R",
+    "tris": 70,
+    "components": [
+     60
+    ],
+    "cap_tris": 19,
+    "prox_plane": [
+     "<Vector (-0.3719, -0.0613, 0.8916)>",
+     "<Vector (-0.1231, 0.1231, -0.9847)>"
+    ]
+   },
+   {
+    "id": 16,
+    "name": "Rotula_Index1_R",
+    "bone": "Hand_R",
+    "joint_bone": "Index1_R",
+    "radius_mm": 19.23,
+    "length_mm": 17.93,
+    "dorsal_extent_mm": 22.94,
+    "palmar_extent_mm": 22.94,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45502,
+     -0.04565,
+     0.92153
+    ]
+   },
+   {
+    "id": 17,
+    "name": "Rotula_Index2_R",
+    "bone": "Index1_R",
+    "joint_bone": "Index2_R",
+    "radius_mm": 14.57,
+    "length_mm": 22.15,
+    "dorsal_extent_mm": 16.19,
+    "palmar_extent_mm": 16.19,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.4558,
+     -0.05006,
+     0.88809
+    ]
+   },
+   {
+    "id": 18,
+    "name": "Rotula_Index3_R",
+    "bone": "Index2_R",
+    "joint_bone": "Index3_R",
+    "radius_mm": 12.63,
+    "length_mm": 18.56,
+    "dorsal_extent_mm": 14.11,
+    "palmar_extent_mm": 14.11,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44679,
+     -0.05704,
+     0.84677
+    ]
+   },
+   {
+    "id": 19,
+    "name": "Rotula_Middle1_R",
+    "bone": "Hand_R",
+    "joint_bone": "Middle1_R",
+    "radius_mm": 20.02,
+    "length_mm": 21.36,
+    "dorsal_extent_mm": 23.88,
+    "palmar_extent_mm": 23.88,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45531,
+     -0.0201,
+     0.92166
+    ]
+   },
+   {
+    "id": 20,
+    "name": "Rotula_Middle2_R",
+    "bone": "Middle1_R",
+    "joint_bone": "Middle2_R",
+    "radius_mm": 14.54,
+    "length_mm": 21.13,
+    "dorsal_extent_mm": 16.37,
+    "palmar_extent_mm": 16.37,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45813,
+     -0.02199,
+     0.87674
+    ]
+   },
+   {
+    "id": 21,
+    "name": "Rotula_Middle3_R",
+    "bone": "Middle2_R",
+    "joint_bone": "Middle3_R",
+    "radius_mm": 10.23,
+    "length_mm": 17.39,
+    "dorsal_extent_mm": 11.86,
+    "palmar_extent_mm": 11.86,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44597,
+     -0.02563,
+     0.82921
+    ]
+   },
+   {
+    "id": 22,
+    "name": "Rotula_Ring1_R",
+    "bone": "Hand_R",
+    "joint_bone": "Ring1_R",
+    "radius_mm": 20.24,
+    "length_mm": 20.89,
+    "dorsal_extent_mm": 23.77,
+    "palmar_extent_mm": 23.77,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45523,
+     0.00444,
+     0.92162
+    ]
+   },
+   {
+    "id": 23,
+    "name": "Rotula_Ring2_R",
+    "bone": "Ring1_R",
+    "joint_bone": "Ring2_R",
+    "radius_mm": 14.5,
+    "length_mm": 17.38,
+    "dorsal_extent_mm": 16.11,
+    "palmar_extent_mm": 16.11,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45813,
+     0.00215,
+     0.88053
+    ]
+   },
+   {
+    "id": 24,
+    "name": "Rotula_Ring3_R",
+    "bone": "Ring2_R",
+    "joint_bone": "Ring3_R",
+    "radius_mm": 11.07,
+    "length_mm": 17.24,
+    "dorsal_extent_mm": 12.58,
+    "palmar_extent_mm": 12.58,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44566,
+     0.00275,
+     0.83662
+    ]
+   },
+   {
+    "id": 25,
+    "name": "Rotula_Little1_R",
+    "bone": "Hand_R",
+    "joint_bone": "Little1_R",
+    "radius_mm": 20.03,
+    "length_mm": 18.49,
+    "dorsal_extent_mm": 23.08,
+    "palmar_extent_mm": 23.08,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45566,
+     0.0269,
+     0.9216
+    ]
+   },
+   {
+    "id": 26,
+    "name": "Rotula_Little2_R",
+    "bone": "Little1_R",
+    "joint_bone": "Little2_R",
+    "radius_mm": 13.72,
+    "length_mm": 20.3,
+    "dorsal_extent_mm": 16.68,
+    "palmar_extent_mm": 16.68,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45333,
+     0.03045,
+     0.89301
+    ]
+   },
+   {
+    "id": 27,
+    "name": "Rotula_Little3_R",
+    "bone": "Little2_R",
+    "joint_bone": "Little3_R",
+    "radius_mm": 10.77,
+    "length_mm": 17.18,
+    "dorsal_extent_mm": 14.85,
+    "palmar_extent_mm": 14.85,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.44364,
+     0.03415,
+     0.85784
+    ]
+   },
+   {
+    "id": 28,
+    "name": "Rotula_Thumb1_R",
+    "bone": "Hand_R",
+    "joint_bone": "Thumb1_R",
+    "radius_mm": 12.34,
+    "length_mm": 20.09,
+    "dorsal_extent_mm": 13.71,
+    "palmar_extent_mm": 13.71,
+    "axis": [
+     -0.0321,
+     0.9104,
+     -0.4125
+    ],
+    "center": [
+     -0.38462,
+     -0.03855,
+     0.94587
+    ]
+   },
+   {
+    "id": 29,
+    "name": "Rotula_Thumb2_R",
+    "bone": "Thumb1_R",
+    "joint_bone": "Thumb2_R",
+    "radius_mm": 11.87,
+    "length_mm": 23.75,
+    "dorsal_extent_mm": 13.19,
+    "palmar_extent_mm": 13.19,
+    "axis": [
+     -0.6451,
+     -0.5823,
+     -0.4948
+    ],
+    "center": [
+     -0.37774,
+     -0.04497,
+     0.92162
+    ]
+   },
+   {
+    "id": 30,
+    "name": "Rotula_Thumb3_R",
+    "bone": "Thumb2_R",
+    "joint_bone": "Thumb3_R",
+    "radius_mm": 11.24,
+    "length_mm": 20.03,
+    "dorsal_extent_mm": 12.87,
+    "palmar_extent_mm": 12.87,
+    "axis": [
+     0.5946,
+     0.8036,
+     0.0261
+    ],
+    "center": [
+     -0.37061,
+     -0.05261,
+     0.8925
+    ]
+   },
+   {
+    "id": 31,
+    "name": "Collar_R",
+    "bone": "Hand_R"
+   }
+  ],
+  "Hand_L": [
+   {
+    "id": 0,
+    "name": "Palm_L",
+    "bone": "Hand_L",
+    "tris": 434,
+    "components": [
+     382
+    ],
+    "cap_tris": 53
+   },
+   {
+    "id": 1,
+    "name": "Index1_L",
+    "bone": "Index1_L",
+    "tris": 206,
+    "components": [
+     181
+    ],
+    "cap_tris": 62,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 2,
+    "name": "Index2_L",
+    "bone": "Index2_L",
+    "tris": 178,
+    "components": [
+     152
+    ],
+    "cap_tris": 48,
+    "prox_plane": [
+     "<Vector (-0.4640, -0.0480, 0.8840)>",
+     "<Vector (0.4462, 0.0000, -0.8949)>"
+    ]
+   },
+   {
+    "id": 3,
+    "name": "Index3_L",
+    "bone": "Index3_L",
+    "tris": 116,
+    "components": [
+     106
+    ],
+    "cap_tris": 18,
+    "prox_plane": [
+     "<Vector (-0.4460, -0.0480, 0.8479)>",
+     "<Vector (0.8205, 0.0000, -0.5716)>"
+    ]
+   },
+   {
+    "id": 4,
+    "name": "Middle1_L",
+    "bone": "Middle1_L",
+    "tris": 276,
+    "components": [
+     240
+    ],
+    "cap_tris": 92,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 5,
+    "name": "Middle2_L",
+    "bone": "Middle2_L",
+    "tris": 202,
+    "components": [
+     167
+    ],
+    "cap_tris": 57,
+    "prox_plane": [
+     "<Vector (-0.4640, -0.0220, 0.8744)>",
+     "<Vector (0.3698, 0.0000, -0.9291)>"
+    ]
+   },
+   {
+    "id": 6,
+    "name": "Middle3_L",
+    "bone": "Middle3_L",
+    "tris": 84,
+    "components": [
+     77
+    ],
+    "cap_tris": 15,
+    "prox_plane": [
+     "<Vector (-0.4460, -0.0220, 0.8292)>",
+     "<Vector (0.7534, 0.0000, -0.6575)>"
+    ]
+   },
+   {
+    "id": 7,
+    "name": "Ring1_L",
+    "bone": "Ring1_L",
+    "tris": 206,
+    "components": [
+     175
+    ],
+    "cap_tris": 71,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 8,
+    "name": "Ring2_L",
+    "bone": "Ring2_L",
+    "tris": 140,
+    "components": [
+     117
+    ],
+    "cap_tris": 42,
+    "prox_plane": [
+     "<Vector (-0.4640, 0.0050, 0.8780)>",
+     "<Vector (0.3955, 0.0000, -0.9185)>"
+    ]
+   },
+   {
+    "id": 9,
+    "name": "Ring3_L",
+    "bone": "Ring3_L",
+    "tris": 122,
+    "components": [
+     107
+    ],
+    "cap_tris": 29,
+    "prox_plane": [
+     "<Vector (-0.4460, 0.0050, 0.8362)>",
+     "<Vector (0.7783, 0.0000, -0.6279)>"
+    ]
+   },
+   {
+    "id": 10,
+    "name": "Little1_L",
+    "bone": "Little1_L",
+    "tris": 184,
+    "components": [
+     159
+    ],
+    "cap_tris": 56,
+    "prox_plane": [
+     "<Vector (-0.4580, -0.0090, 0.9220)>",
+     "<Vector (-0.1465, -0.0000, -0.9892)>"
+    ]
+   },
+   {
+    "id": 11,
+    "name": "Little2_L",
+    "bone": "Little2_L",
+    "tris": 132,
+    "components": [
+     112
+    ],
+    "cap_tris": 41,
+    "prox_plane": [
+     "<Vector (-0.4640, 0.0290, 0.8872)>",
+     "<Vector (0.4782, 0.0000, -0.8783)>"
+    ]
+   },
+   {
+    "id": 12,
+    "name": "Little3_L",
+    "bone": "Little3_L",
+    "tris": 102,
+    "components": [
+     92
+    ],
+    "cap_tris": 20,
+    "prox_plane": [
+     "<Vector (-0.4460, 0.0290, 0.8541)>",
+     "<Vector (0.8430, 0.0000, -0.5379)>"
+    ]
+   },
+   {
+    "id": 13,
+    "name": "Thumb1_L",
+    "bone": "Thumb1_L",
+    "tris": 114,
+    "components": [
+     96
+    ],
+    "cap_tris": 32,
+    "prox_plane": [
+     "<Vector (-0.3837, -0.0378, 0.9463)>",
+     "<Vector (0.6016, -0.3120, -0.7353)>"
+    ]
+   },
+   {
+    "id": 14,
+    "name": "Thumb2_L",
+    "bone": "Thumb2_L",
+    "tris": 138,
+    "components": [
+     119
+    ],
+    "cap_tris": 34,
+    "prox_plane": [
+     "<Vector (-0.3801, -0.0521, 0.9192)>",
+     "<Vector (0.5523, 0.0921, -0.8285)>"
+    ]
+   },
+   {
+    "id": 15,
+    "name": "Thumb3_L",
+    "bone": "Thumb3_L",
+    "tris": 70,
+    "components": [
+     60
+    ],
+    "cap_tris": 19,
+    "prox_plane": [
+     "<Vector (-0.3719, -0.0613, 0.8916)>",
+     "<Vector (-0.1231, 0.1231, -0.9847)>"
+    ]
+   },
+   {
+    "id": 16,
+    "name": "Rotula_Index1_L",
+    "bone": "Hand_L",
+    "joint_bone": "Index1_R",
+    "radius_mm": 19.23,
+    "length_mm": 17.93,
+    "dorsal_extent_mm": 22.94,
+    "palmar_extent_mm": 22.94,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45502,
+     -0.04565,
+     0.92153
+    ]
+   },
+   {
+    "id": 17,
+    "name": "Rotula_Index2_L",
+    "bone": "Index1_L",
+    "joint_bone": "Index2_R",
+    "radius_mm": 14.57,
+    "length_mm": 22.15,
+    "dorsal_extent_mm": 16.19,
+    "palmar_extent_mm": 16.19,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.4558,
+     -0.05006,
+     0.88809
+    ]
+   },
+   {
+    "id": 18,
+    "name": "Rotula_Index3_L",
+    "bone": "Index2_L",
+    "joint_bone": "Index3_R",
+    "radius_mm": 12.63,
+    "length_mm": 18.56,
+    "dorsal_extent_mm": 14.11,
+    "palmar_extent_mm": 14.11,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44679,
+     -0.05704,
+     0.84677
+    ]
+   },
+   {
+    "id": 19,
+    "name": "Rotula_Middle1_L",
+    "bone": "Hand_L",
+    "joint_bone": "Middle1_R",
+    "radius_mm": 20.02,
+    "length_mm": 21.36,
+    "dorsal_extent_mm": 23.88,
+    "palmar_extent_mm": 23.88,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45531,
+     -0.0201,
+     0.92166
+    ]
+   },
+   {
+    "id": 20,
+    "name": "Rotula_Middle2_L",
+    "bone": "Middle1_L",
+    "joint_bone": "Middle2_R",
+    "radius_mm": 14.54,
+    "length_mm": 21.13,
+    "dorsal_extent_mm": 16.37,
+    "palmar_extent_mm": 16.37,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45813,
+     -0.02199,
+     0.87674
+    ]
+   },
+   {
+    "id": 21,
+    "name": "Rotula_Middle3_L",
+    "bone": "Middle2_L",
+    "joint_bone": "Middle3_R",
+    "radius_mm": 10.23,
+    "length_mm": 17.39,
+    "dorsal_extent_mm": 11.86,
+    "palmar_extent_mm": 11.86,
+    "axis": [
+     0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44597,
+     -0.02563,
+     0.82921
+    ]
+   },
+   {
+    "id": 22,
+    "name": "Rotula_Ring1_L",
+    "bone": "Hand_L",
+    "joint_bone": "Ring1_R",
+    "radius_mm": 20.24,
+    "length_mm": 20.89,
+    "dorsal_extent_mm": 23.77,
+    "palmar_extent_mm": 23.77,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45523,
+     0.00444,
+     0.92162
+    ]
+   },
+   {
+    "id": 23,
+    "name": "Rotula_Ring2_L",
+    "bone": "Ring1_L",
+    "joint_bone": "Ring2_R",
+    "radius_mm": 14.5,
+    "length_mm": 17.38,
+    "dorsal_extent_mm": 16.11,
+    "palmar_extent_mm": 16.11,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45813,
+     0.00215,
+     0.88053
+    ]
+   },
+   {
+    "id": 24,
+    "name": "Rotula_Ring3_L",
+    "bone": "Ring2_L",
+    "joint_bone": "Ring3_R",
+    "radius_mm": 11.07,
+    "length_mm": 17.24,
+    "dorsal_extent_mm": 12.58,
+    "palmar_extent_mm": 12.58,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.44566,
+     0.00275,
+     0.83662
+    ]
+   },
+   {
+    "id": 25,
+    "name": "Rotula_Little1_L",
+    "bone": "Hand_L",
+    "joint_bone": "Little1_R",
+    "radius_mm": 20.03,
+    "length_mm": 18.49,
+    "dorsal_extent_mm": 23.08,
+    "palmar_extent_mm": 23.08,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.45566,
+     0.0269,
+     0.9216
+    ]
+   },
+   {
+    "id": 26,
+    "name": "Rotula_Little2_L",
+    "bone": "Little1_L",
+    "joint_bone": "Little2_R",
+    "radius_mm": 13.72,
+    "length_mm": 20.3,
+    "dorsal_extent_mm": 16.68,
+    "palmar_extent_mm": 16.68,
+    "axis": [
+     -0.0,
+     1.0,
+     -0.0
+    ],
+    "center": [
+     -0.45333,
+     0.03045,
+     0.89301
+    ]
+   },
+   {
+    "id": 27,
+    "name": "Rotula_Little3_L",
+    "bone": "Little2_L",
+    "joint_bone": "Little3_R",
+    "radius_mm": 10.77,
+    "length_mm": 17.18,
+    "dorsal_extent_mm": 14.85,
+    "palmar_extent_mm": 14.85,
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "center": [
+     -0.44364,
+     0.03415,
+     0.85784
+    ]
+   },
+   {
+    "id": 28,
+    "name": "Rotula_Thumb1_L",
+    "bone": "Hand_L",
+    "joint_bone": "Thumb1_R",
+    "radius_mm": 12.34,
+    "length_mm": 20.09,
+    "dorsal_extent_mm": 13.71,
+    "palmar_extent_mm": 13.71,
+    "axis": [
+     -0.0321,
+     0.9104,
+     -0.4125
+    ],
+    "center": [
+     -0.38462,
+     -0.03855,
+     0.94587
+    ]
+   },
+   {
+    "id": 29,
+    "name": "Rotula_Thumb2_L",
+    "bone": "Thumb1_L",
+    "joint_bone": "Thumb2_R",
+    "radius_mm": 11.87,
+    "length_mm": 23.75,
+    "dorsal_extent_mm": 13.19,
+    "palmar_extent_mm": 13.19,
+    "axis": [
+     -0.6451,
+     -0.5823,
+     -0.4948
+    ],
+    "center": [
+     -0.37774,
+     -0.04497,
+     0.92162
+    ]
+   },
+   {
+    "id": 30,
+    "name": "Rotula_Thumb3_L",
+    "bone": "Thumb2_L",
+    "joint_bone": "Thumb3_R",
+    "radius_mm": 11.24,
+    "length_mm": 20.03,
+    "dorsal_extent_mm": 12.87,
+    "palmar_extent_mm": 12.87,
+    "axis": [
+     0.5946,
+     0.8036,
+     0.0261
+    ],
+    "center": [
+     -0.37061,
+     -0.05261,
+     0.8925
+    ]
+   },
+   {
+    "id": 31,
+    "name": "Collar_L",
+    "bone": "Hand_L"
+   }
+  ],
+  "Forearm_R": [
+   {
+    "id": 100,
+    "name": "Forearm_R",
+    "bone": "Forearm_R"
+   },
+   {
+    "id": 101,
+    "name": "FlangeSpigot_R",
+    "bone": "Forearm_R"
+   }
+  ],
+  "Forearm_L": [
+   {
+    "id": 100,
+    "name": "Forearm_L",
+    "bone": "Forearm_L"
+   },
+   {
+    "id": 101,
+    "name": "FlangeSpigot_L",
+    "bone": "Forearm_L"
+   }
+  ]
+ },
+ "fist_search": {
+  "FistTest": {
+   "mode": "spec",
+   "fingers": {
+    "Index": {
+     "angles_deg": [
+      95,
+      100,
+      90
+     ],
+     "max_pen_mm": 2.84,
+     "worst_pair": [
+      "Index2_R",
+      "Palm_R"
+     ]
+    },
+    "Middle": {
+     "angles_deg": [
+      85,
+      85,
+      40
+     ],
+     "max_pen_mm": 9.03,
+     "worst_pair": [
+      "Middle3_R",
+      "Palm_R"
+     ]
+    },
+    "Ring": {
+     "angles_deg": [
+      85,
+      85,
+      60
+     ],
+     "max_pen_mm": 5.96,
+     "worst_pair": [
+      "Ring3_R",
+      "Collar_R"
+     ]
+    },
+    "Little": {
+     "angles_deg": [
+      85,
+      90,
+      40
+     ],
+     "max_pen_mm": 6.0,
+     "worst_pair": [
+      "Little3_R",
+      "Collar_R"
+     ]
+    }
+   },
+   "grid_deg": {
+    "a1": [
+     85,
+     90,
+     95
+    ],
+    "a2": [
+     85,
+     90,
+     95,
+     100
+    ],
+    "a3": [
+     40,
+     50,
+     60,
+     70,
+     80,
+     90
+    ]
+   },
+   "angle_definition": "Unity local angle of each phalanx relative to its parent (HandPoseLibrary bind convention); 90 deg = right angle",
+   "thumb": {
+    "library_fist_fraction": 1.0,
+    "max_pen_mm": 7.97,
+    "worst_pair": [
+     "Thumb1_R",
+     "Rotula_Middle3_R"
+    ],
+    "scan_fraction_vs_pen_mm": [
+     [
+      0.0,
+      8.19
+     ],
+     [
+      0.1,
+      8.29
+     ],
+     [
+      0.2,
+      8.3
+     ],
+     [
+      0.3,
+      8.26
+     ],
+     [
+      0.4,
+      8.22
+     ],
+     [
+      0.5,
+      8.18
+     ],
+     [
+      0.6,
+      8.14
+     ],
+     [
+      0.7,
+      8.1
+     ],
+     [
+      0.8,
+      8.05
+     ],
+     [
+      0.9,
+      8.01
+     ],
+     [
+      1.0,
+      7.97
+     ],
+     [
+      1.1,
+      8.19
+     ],
+     [
+      1.2,
+      9.85
+     ],
+     [
+      1.3,
+      10.48
+     ]
+    ]
+   }
+  },
+  "FistClean": {
+   "mode": "clean",
+   "fingers": {
+    "Index": {
+     "angles_deg": [
+      50,
+      50,
+      20
+     ],
+     "max_pen_mm": 1.44,
+     "worst_pair": [
+      "Index3_R",
+      "Thumb3_R"
+     ]
+    },
+    "Middle": {
+     "angles_deg": [
+      70,
+      60,
+      60
+     ],
+     "max_pen_mm": 0.64,
+     "worst_pair": [
+      "Middle3_R",
+      "Rotula_Thumb2_R"
+     ]
+    },
+    "Ring": {
+     "angles_deg": [
+      50,
+      90,
+      60
+     ],
+     "max_pen_mm": 0.0,
+     "worst_pair": null
+    },
+    "Little": {
+     "angles_deg": [
+      70,
+      50,
+      60
+     ],
+     "max_pen_mm": 0.89,
+     "worst_pair": [
+      "Little2_R",
+      "Palm_R"
+     ]
+    }
+   },
+   "grid_deg": {
+    "a1": [
+     50,
+     60,
+     70,
+     80,
+     90
+    ],
+    "a2": [
+     50,
+     60,
+     70,
+     80,
+     90
+    ],
+    "a3": [
+     20,
+     30,
+     45,
+     60
+    ]
+   },
+   "angle_definition": "Unity local angle of each phalanx relative to its parent (HandPoseLibrary bind convention); 90 deg = right angle",
+   "thumb": {
+    "library_fist_fraction": 1.3,
+    "max_pen_mm": 0.0,
+    "worst_pair": null,
+    "scan_fraction_vs_pen_mm": [
+     [
+      0.0,
+      1.44
+     ],
+     [
+      0.1,
+      3.23
+     ],
+     [
+      0.2,
+      4.36
+     ],
+     [
+      0.3,
+      5.29
+     ],
+     [
+      0.4,
+      6.11
+     ],
+     [
+      0.5,
+      6.54
+     ],
+     [
+      0.6,
+      6.92
+     ],
+     [
+      0.7,
+      5.01
+     ],
+     [
+      0.8,
+      4.29
+     ],
+     [
+      0.9,
+      2.4
+     ],
+     [
+      1.0,
+      0.0
+     ],
+     [
+      1.1,
+      0.0
+     ],
+     [
+      1.2,
+      0.0
+     ],
+     [
+      1.3,
+      0.0
+     ]
+    ]
+   }
+  }
+ },
+ "test_actions": [
+  "IR_v02_Open",
+  "IR_v02_Relaxed",
+  "IR_v02_Fist",
+  "IR_v02_Grip",
+  "IR_v02_Inspect",
+  "IR_v02_FistTest",
+  "IR_v02_FistClean"
+ ],
+ "after": {
+  "tris": {
+   "Body_LOD0": 14712,
+   "Body_LOD1": 9198,
+   "Body_LOD2": 4850,
+   "Forearm_L_FPS": 1040,
+   "Forearm_L_LOD0": 1040,
+   "Forearm_L_LOD1": 336,
+   "Forearm_L_LOD2": 196,
+   "Forearm_R_FPS": 1040,
+   "Forearm_R_LOD0": 1040,
+   "Forearm_R_LOD1": 336,
+   "Forearm_R_LOD2": 196,
+   "Hand_L_FPS": 3286,
+   "Hand_L_LOD0": 3286,
+   "Hand_L_LOD1": 1036,
+   "Hand_L_LOD2": 614,
+   "Hand_R_FPS": 3286,
+   "Hand_R_LOD0": 3286,
+   "Hand_R_LOD1": 1036,
+   "Hand_R_LOD2": 614
+  }
+ },
+ "summary_tris": {
+  "LOD0": {
+   "before": 21108,
+   "after": 23364
+  },
+  "LOD1": {
+   "before": 11628,
+   "after": 11942
+  },
+  "LOD2": {
+   "before": 6122,
+   "after": 6470
+  },
+  "FPS": {
+   "before": 6070,
+   "after": 8652
+  }
+ },
+ "output_blend": "Tools\\IronRequiem\\Blender\\Working\\protagonist_v02\\refined\\IR_Protagonist_v02_refined.blend",
+ "verification_rim_points": {
+  "R": {
+   "Index1_R": {
+    "child": 12,
+    "parent": 11
+   },
+   "Index2_R": {
+    "child": 19,
+    "parent": 15
+   },
+   "Index3_R": {
+    "child": 9,
+    "parent": 13
+   },
+   "Middle1_R": {
+    "child": 5,
+    "parent": 2
+   },
+   "Middle2_R": {
+    "child": 23,
+    "parent": 23
+   },
+   "Middle3_R": {
+    "child": 7,
+    "parent": 12
+   },
+   "Ring1_R": {
+    "child": 5,
+    "parent": 1
+   },
+   "Ring2_R": {
+    "child": 12,
+    "parent": 12
+   },
+   "Ring3_R": {
+    "child": 11,
+    "parent": 12
+   },
+   "Little1_R": {
+    "child": 9,
+    "parent": 7
+   },
+   "Little2_R": {
+    "child": 12,
+    "parent": 15
+   },
+   "Little3_R": {
+    "child": 11,
+    "parent": 11
+   },
+   "Thumb1_R": {
+    "child": 12,
+    "parent": 11
+   },
+   "Thumb2_R": {
+    "child": 11,
+    "parent": 12
+   },
+   "Thumb3_R": {
+    "child": 13,
+    "parent": 12
+   }
+  }
+ },
+ "verification": {
+  "weights": {
+   "Forearm_L_FPS": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_L_LOD0": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_L_LOD1": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_L_LOD2": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_R_FPS": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_R_LOD0": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_R_LOD1": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Forearm_R_LOD2": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_L_FPS": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_L_LOD0": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_L_LOD1": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_L_LOD2": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_R_FPS": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_R_LOD0": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_R_LOD1": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   },
+   "Hand_R_LOD2": {
+    "max_bones_per_vertex": 1,
+    "vertices_with_2plus_bones": 0,
+    "unweighted": 0,
+    "all_weights_one": true
+   }
+  },
+  "health": {
+   "Forearm_L_FPS": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1040
+   },
+   "Forearm_L_LOD0": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1040
+   },
+   "Forearm_L_LOD1": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 336
+   },
+   "Forearm_L_LOD2": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 196
+   },
+   "Forearm_R_FPS": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1040
+   },
+   "Forearm_R_LOD0": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1040
+   },
+   "Forearm_R_LOD1": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 336
+   },
+   "Forearm_R_LOD2": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 196
+   },
+   "Hand_L_FPS": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 3286
+   },
+   "Hand_L_LOD0": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 3286
+   },
+   "Hand_L_LOD1": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1036
+   },
+   "Hand_L_LOD2": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 614
+   },
+   "Hand_R_FPS": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 3286
+   },
+   "Hand_R_LOD0": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 3286
+   },
+   "Hand_R_LOD1": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 1036
+   },
+   "Hand_R_LOD2": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 614
+   },
+   "Body_LOD0": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 14712
+   },
+   "Body_LOD1": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 9198
+   },
+   "Body_LOD2": {
+    "non_manifold_edges": 0,
+    "boundary_edges": 0,
+    "ngons_gt4": 0,
+    "loose_verts": 0,
+    "zero_area_faces": 0,
+    "duplicate_faces": 0,
+    "inconsistent_winding_edges": 0,
+    "pieces_with_inward_normals": [],
+    "triangles": 4850
+   }
+  },
+  "poses_R": {
+   "Open": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 6.27,
+     "Index2_R": 2.87,
+     "Index3_R": 2.73,
+     "Middle1_R": 6.11,
+     "Middle2_R": 3.52,
+     "Middle3_R": 1.93,
+     "Ring1_R": 4.83,
+     "Ring2_R": 2.7,
+     "Ring3_R": 2.39,
+     "Little1_R": 4.4,
+     "Little2_R": 3.91,
+     "Little3_R": 4.82,
+     "Thumb1_R": 0.0,
+     "Thumb2_R": 0.28,
+     "Thumb3_R": 0.27
+    },
+    "max_joint_gap_mm": 6.27,
+    "interpenetration": {
+     "max_depth_mm": 0.07,
+     "pairs_over_limit": [],
+     "pairs_touching": 4
+    }
+   },
+   "Relaxed": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 3.8,
+     "Index2_R": 2.87,
+     "Index3_R": 2.28,
+     "Middle1_R": 4.15,
+     "Middle2_R": 3.05,
+     "Middle3_R": 1.77,
+     "Ring1_R": 3.81,
+     "Ring2_R": 2.7,
+     "Ring3_R": 2.15,
+     "Little1_R": 2.9,
+     "Little2_R": 3.91,
+     "Little3_R": 4.67,
+     "Thumb1_R": 0.0,
+     "Thumb2_R": 0.28,
+     "Thumb3_R": 0.27
+    },
+    "max_joint_gap_mm": 4.67,
+    "interpenetration": {
+     "max_depth_mm": 0.18,
+     "pairs_over_limit": [],
+     "pairs_touching": 4
+    }
+   },
+   "Fist": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 5.72,
+     "Index2_R": 3.69,
+     "Index3_R": 2.18,
+     "Middle1_R": 6.39,
+     "Middle2_R": 3.54,
+     "Middle3_R": 2.13,
+     "Ring1_R": 5.19,
+     "Ring2_R": 2.9,
+     "Ring3_R": 1.9,
+     "Little1_R": 4.71,
+     "Little2_R": 3.91,
+     "Little3_R": 4.67,
+     "Thumb1_R": 2.21,
+     "Thumb2_R": 2.17,
+     "Thumb3_R": 2.45
+    },
+    "max_joint_gap_mm": 6.39,
+    "interpenetration": {
+     "max_depth_mm": 14.82,
+     "pairs_over_limit": [
+      {
+       "a": "Palm_R",
+       "b": "Ring3_R",
+       "depth_mm": 14.82
+      },
+      {
+       "a": "Palm_R",
+       "b": "Rotula_Middle3_R",
+       "depth_mm": 13.31
+      },
+      {
+       "a": "Palm_R",
+       "b": "Middle3_R",
+       "depth_mm": 13.21
+      },
+      {
+       "a": "Middle3_R",
+       "b": "Collar_R",
+       "depth_mm": 12.87
+      },
+      {
+       "a": "Ring3_R",
+       "b": "Collar_R",
+       "depth_mm": 12.87
+      },
+      {
+       "a": "Little3_R",
+       "b": "Collar_R",
+       "depth_mm": 11.09
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb2_R",
+       "depth_mm": 10.29
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Thumb1_R",
+       "depth_mm": 7.75
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb1_R",
+       "depth_mm": 7.49
+      },
+      {
+       "a": "Palm_R",
+       "b": "Little3_R",
+       "depth_mm": 7.38
+      },
+      {
+       "a": "Little2_R",
+       "b": "Rotula_Little1_R",
+       "depth_mm": 6.74
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Thumb2_R",
+       "depth_mm": 6.07
+      },
+      {
+       "a": "Thumb1_R",
+       "b": "Rotula_Index3_R",
+       "depth_mm": 6.05
+      },
+      {
+       "a": "Thumb1_R",
+       "b": "Rotula_Middle3_R",
+       "depth_mm": 5.98
+      },
+      {
+       "a": "Rotula_Index3_R",
+       "b": "Rotula_Thumb2_R",
+       "depth_mm": 5.92
+      },
+      {
+       "a": "Rotula_Middle3_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 5.77
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 5.69
+      },
+      {
+       "a": "Palm_R",
+       "b": "Middle2_R",
+       "depth_mm": 5.65
+      },
+      {
+       "a": "Palm_R",
+       "b": "Little2_R",
+       "depth_mm": 4.94
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Thumb3_R",
+       "depth_mm": 4.94
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb3_R",
+       "depth_mm": 4.53
+      },
+      {
+       "a": "Middle3_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 4.45
+      },
+      {
+       "a": "Palm_R",
+       "b": "Rotula_Ring3_R",
+       "depth_mm": 4.17
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Rotula_Thumb2_R",
+       "depth_mm": 3.96
+      },
+      {
+       "a": "Rotula_Index3_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 3.46
+      },
+      {
+       "a": "Index3_R",
+       "b": "Thumb1_R",
+       "depth_mm": 3.41
+      },
+      {
+       "a": "Palm_R",
+       "b": "Index3_R",
+       "depth_mm": 2.77
+      },
+      {
+       "a": "Thumb2_R",
+       "b": "Rotula_Index3_R",
+       "depth_mm": 2.34
+      },
+      {
+       "a": "Middle3_R",
+       "b": "Thumb1_R",
+       "depth_mm": 2.21
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Index1_R",
+       "depth_mm": 1.66
+      },
+      {
+       "a": "Rotula_Ring3_R",
+       "b": "Collar_R",
+       "depth_mm": 1.62
+      }
+     ],
+     "pairs_touching": 44
+    }
+   },
+   "Grip": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 6.27,
+     "Index2_R": 2.69,
+     "Index3_R": 2.39,
+     "Middle1_R": 6.65,
+     "Middle2_R": 3.54,
+     "Middle3_R": 2.39,
+     "Ring1_R": 5.26,
+     "Ring2_R": 2.9,
+     "Ring3_R": 2.35,
+     "Little1_R": 4.65,
+     "Little2_R": 3.91,
+     "Little3_R": 3.43,
+     "Thumb1_R": 2.04,
+     "Thumb2_R": 2.17,
+     "Thumb3_R": 2.4
+    },
+    "max_joint_gap_mm": 6.65,
+    "interpenetration": {
+     "max_depth_mm": 7.58,
+     "pairs_over_limit": [
+      {
+       "a": "Index3_R",
+       "b": "Thumb3_R",
+       "depth_mm": 7.58
+      },
+      {
+       "a": "Index3_R",
+       "b": "Rotula_Thumb3_R",
+       "depth_mm": 6.97
+      },
+      {
+       "a": "Rotula_Index3_R",
+       "b": "Rotula_Thumb3_R",
+       "depth_mm": 6.97
+      },
+      {
+       "a": "Thumb3_R",
+       "b": "Rotula_Index3_R",
+       "depth_mm": 4.89
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb3_R",
+       "depth_mm": 4.14
+      },
+      {
+       "a": "Index3_R",
+       "b": "Thumb2_R",
+       "depth_mm": 3.08
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Thumb3_R",
+       "depth_mm": 2.24
+      }
+     ],
+     "pairs_touching": 14
+    }
+   },
+   "Inspect": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 6.37,
+     "Index2_R": 2.87,
+     "Index3_R": 2.58,
+     "Middle1_R": 6.27,
+     "Middle2_R": 3.52,
+     "Middle3_R": 1.91,
+     "Ring1_R": 5.11,
+     "Ring2_R": 2.7,
+     "Ring3_R": 2.34,
+     "Little1_R": 4.62,
+     "Little2_R": 3.91,
+     "Little3_R": 4.68,
+     "Thumb1_R": 0.0,
+     "Thumb2_R": 0.28,
+     "Thumb3_R": 0.27
+    },
+    "max_joint_gap_mm": 6.37,
+    "interpenetration": {
+     "max_depth_mm": 0.11,
+     "pairs_over_limit": [],
+     "pairs_touching": 3
+    }
+   },
+   "FistTest": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 6.19,
+     "Index2_R": 3.69,
+     "Index3_R": 2.6,
+     "Middle1_R": 6.57,
+     "Middle2_R": 3.54,
+     "Middle3_R": 2.35,
+     "Ring1_R": 5.28,
+     "Ring2_R": 2.9,
+     "Ring3_R": 1.9,
+     "Little1_R": 4.7,
+     "Little2_R": 3.91,
+     "Little3_R": 2.86,
+     "Thumb1_R": 2.21,
+     "Thumb2_R": 2.17,
+     "Thumb3_R": 2.45
+    },
+    "max_joint_gap_mm": 6.57,
+    "interpenetration": {
+     "max_depth_mm": 9.03,
+     "pairs_over_limit": [
+      {
+       "a": "Palm_R",
+       "b": "Middle3_R",
+       "depth_mm": 9.03
+      },
+      {
+       "a": "Palm_R",
+       "b": "Rotula_Middle3_R",
+       "depth_mm": 8.15
+      },
+      {
+       "a": "Thumb1_R",
+       "b": "Rotula_Middle3_R",
+       "depth_mm": 7.97
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Thumb1_R",
+       "depth_mm": 7.29
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb2_R",
+       "depth_mm": 7.1
+      },
+      {
+       "a": "Index2_R",
+       "b": "Thumb1_R",
+       "depth_mm": 6.99
+      },
+      {
+       "a": "Rotula_Middle3_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 6.7
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 6.59
+      },
+      {
+       "a": "Middle3_R",
+       "b": "Rotula_Thumb1_R",
+       "depth_mm": 6.27
+      },
+      {
+       "a": "Little3_R",
+       "b": "Collar_R",
+       "depth_mm": 6.0
+      },
+      {
+       "a": "Ring3_R",
+       "b": "Collar_R",
+       "depth_mm": 5.96
+      },
+      {
+       "a": "Little2_R",
+       "b": "Rotula_Little1_R",
+       "depth_mm": 5.88
+      },
+      {
+       "a": "Palm_R",
+       "b": "Little2_R",
+       "depth_mm": 5.12
+      },
+      {
+       "a": "Thumb2_R",
+       "b": "Rotula_Index2_R",
+       "depth_mm": 4.58
+      },
+      {
+       "a": "Palm_R",
+       "b": "Ring3_R",
+       "depth_mm": 4.38
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Thumb2_R",
+       "depth_mm": 4.31
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Rotula_Thumb2_R",
+       "depth_mm": 4.13
+      },
+      {
+       "a": "Palm_R",
+       "b": "Middle2_R",
+       "depth_mm": 3.41
+      },
+      {
+       "a": "Palm_R",
+       "b": "Index2_R",
+       "depth_mm": 2.84
+      },
+      {
+       "a": "Index2_R",
+       "b": "Rotula_Index1_R",
+       "depth_mm": 2.49
+      },
+      {
+       "a": "Middle2_R",
+       "b": "Thumb2_R",
+       "depth_mm": 2.33
+      },
+      {
+       "a": "Palm_R",
+       "b": "Rotula_Index3_R",
+       "depth_mm": 2.15
+      },
+      {
+       "a": "Middle3_R",
+       "b": "Thumb1_R",
+       "depth_mm": 2.14
+      },
+      {
+       "a": "Rotula_Index2_R",
+       "b": "Rotula_Thumb3_R",
+       "depth_mm": 1.04
+      }
+     ],
+     "pairs_touching": 33
+    }
+   },
+   "FistClean": {
+    "rigid_residual_hand_mm": 0.0001,
+    "rigid_residual_forearm_mm": 0.0,
+    "joint_gap_mm": {
+     "Index1_R": 6.19,
+     "Index2_R": 2.69,
+     "Index3_R": 2.19,
+     "Middle1_R": 6.19,
+     "Middle2_R": 3.2,
+     "Middle3_R": 2.05,
+     "Ring1_R": 5.28,
+     "Ring2_R": 2.9,
+     "Ring3_R": 1.9,
+     "Little1_R": 4.02,
+     "Little2_R": 3.36,
+     "Little3_R": 4.67,
+     "Thumb1_R": 2.71,
+     "Thumb2_R": 2.22,
+     "Thumb3_R": 3.1
+    },
+    "max_joint_gap_mm": 6.19,
+    "interpenetration": {
+     "max_depth_mm": 0.89,
+     "pairs_over_limit": [],
+     "pairs_touching": 4
+    }
+   }
+  },
+  "wrist_R": {
+   "hand_min_z_mm": -0.0,
+   "forearm_max_z_mm": 3.0,
+   "axial_gap_collar_to_flange_mm": 12.0,
+   "spigot_engagement_mm": 3.0,
+   "spigot_max_radius_mm": 32.0,
+   "radial_clearance_spigot_housing_mm": 1.0,
+   "free_rotation_deg_before_spigot_contact": 5.36,
+   "free_rotation_deg_before_collar_hits_flange": 16.7,
+   "nothing_of_forearm_beyond_z_plus_3mm": true,
+   "nothing_of_hand_behind_z0": true
+  },
+  "wrist_L": {
+   "hand_min_z_mm": -0.0,
+   "forearm_max_z_mm": 3.0,
+   "axial_gap_collar_to_flange_mm": 12.0,
+   "spigot_engagement_mm": 3.0,
+   "spigot_max_radius_mm": 32.0,
+   "radial_clearance_spigot_housing_mm": 1.0,
+   "free_rotation_deg_before_spigot_contact": 5.36,
+   "free_rotation_deg_before_collar_hits_flange": 16.7,
+   "nothing_of_forearm_beyond_z_plus_3mm": true,
+   "nothing_of_hand_behind_z0": true
+  },
+  "hand_L_mirror_max_dev_mm": 0.0,
+  "uv_new_faces": {
+   "Forearm_L_FPS": {
+    "new_faces": 219,
+    "new_faces_in_metal_region": 219
+   },
+   "Forearm_L_LOD0": {
+    "new_faces": 219,
+    "new_faces_in_metal_region": 219
+   },
+   "Forearm_L_LOD1": {
+    "new_faces": 105,
+    "new_faces_in_metal_region": 105
+   },
+   "Forearm_L_LOD2": {
+    "new_faces": 64,
+    "new_faces_in_metal_region": 64
+   },
+   "Forearm_R_FPS": {
+    "new_faces": 218,
+    "new_faces_in_metal_region": 218
+   },
+   "Forearm_R_LOD0": {
+    "new_faces": 218,
+    "new_faces_in_metal_region": 218
+   },
+   "Forearm_R_LOD1": {
+    "new_faces": 105,
+    "new_faces_in_metal_region": 105
+   },
+   "Forearm_R_LOD2": {
+    "new_faces": 63,
+    "new_faces_in_metal_region": 63
+   },
+   "Hand_L_FPS": {
+    "new_faces": 1160,
+    "new_faces_in_metal_region": 1160
+   },
+   "Hand_L_LOD0": {
+    "new_faces": 1160,
+    "new_faces_in_metal_region": 1160
+   },
+   "Hand_L_LOD1": {
+    "new_faces": 503,
+    "new_faces_in_metal_region": 503
+   },
+   "Hand_L_LOD2": {
+    "new_faces": 301,
+    "new_faces_in_metal_region": 301
+   },
+   "Hand_R_FPS": {
+    "new_faces": 1160,
+    "new_faces_in_metal_region": 1160
+   },
+   "Hand_R_LOD0": {
+    "new_faces": 1160,
+    "new_faces_in_metal_region": 1160
+   },
+   "Hand_R_LOD1": {
+    "new_faces": 503,
+    "new_faces_in_metal_region": 503
+   },
+   "Hand_R_LOD2": {
+    "new_faces": 301,
+    "new_faces_in_metal_region": 301
+   }
+  },
+  "atlas": {
+   "atlas_raster_px": 512,
+   "occupied_fraction": 0.4654,
+   "free_fraction": 0.5346,
+   "largest_empty_square_px_of_2048": 84,
+   "hand_islands_area_uv_both_hands": 0.02382,
+   "extra_area_needed_for_x2_uv": 0.07145,
+   "x2_fits_in_free_area": true,
+   "proposal": "Free space is enough to scale the hand islands x2 if repacked"
+  },
+  "budget": {
+   "LOD0_total": 23364,
+   "LOD1_total": 11942,
+   "LOD2_total": 6470,
+   "FPS_total": 8652,
+   "limits": {
+    "LOD0_total_max": 26000,
+    "LOD1_total_approx": 12000,
+    "LOD2_total_approx": 6500,
+    "FPS_total_max": 9000
+   },
+   "LOD0_ok": true,
+   "FPS_ok": true
+  },
+  "tris_per_piece": {
+   "Hand_R": {
+    "LOD0": {
+     "Palm_R": 336,
+     "Index1_R": 158,
+     "Index2_R": 138,
+     "Index3_R": 90,
+     "Middle1_R": 214,
+     "Middle2_R": 156,
+     "Middle3_R": 64,
+     "Ring1_R": 158,
+     "Ring2_R": 108,
+     "Ring3_R": 94,
+     "Little1_R": 142,
+     "Little2_R": 102,
+     "Little3_R": 78,
+     "Thumb1_R": 88,
+     "Thumb2_R": 106,
+     "Thumb3_R": 54,
+     "Rotula_Index1_R": 64,
+     "Rotula_Index2_R": 64,
+     "Rotula_Index3_R": 64,
+     "Rotula_Middle1_R": 64,
+     "Rotula_Middle2_R": 64,
+     "Rotula_Middle3_R": 64,
+     "Rotula_Ring1_R": 64,
+     "Rotula_Ring2_R": 64,
+     "Rotula_Ring3_R": 64,
+     "Rotula_Little1_R": 64,
+     "Rotula_Little2_R": 64,
+     "Rotula_Little3_R": 64,
+     "Rotula_Thumb1_R": 64,
+     "Rotula_Thumb2_R": 64,
+     "Rotula_Thumb3_R": 64,
+     "Collar_R": 240
+    },
+    "LOD1": {
+     "Palm_R": 108,
+     "Index1_R": 50,
+     "Index2_R": 44,
+     "Index3_R": 28,
+     "Middle1_R": 68,
+     "Middle2_R": 50,
+     "Middle3_R": 20,
+     "Ring1_R": 50,
+     "Ring2_R": 34,
+     "Ring3_R": 30,
+     "Little1_R": 44,
+     "Little2_R": 32,
+     "Little3_R": 24,
+     "Thumb1_R": 28,
+     "Thumb2_R": 34,
+     "Thumb3_R": 16,
+     "Rotula_Index1_R": 20,
+     "Rotula_Index2_R": 20,
+     "Rotula_Index3_R": 20,
+     "Rotula_Middle1_R": 20,
+     "Rotula_Middle2_R": 20,
+     "Rotula_Middle3_R": 20,
+     "Rotula_Ring1_R": 20,
+     "Rotula_Ring2_R": 20,
+     "Rotula_Ring3_R": 20,
+     "Rotula_Little1_R": 20,
+     "Rotula_Little2_R": 20,
+     "Rotula_Little3_R": 20,
+     "Rotula_Thumb1_R": 20,
+     "Rotula_Thumb2_R": 20,
+     "Rotula_Thumb3_R": 20,
+     "Collar_R": 76
+    },
+    "LOD2": {
+     "Palm_R": 64,
+     "Index1_R": 30,
+     "Index2_R": 26,
+     "Index3_R": 16,
+     "Middle1_R": 40,
+     "Middle2_R": 30,
+     "Middle3_R": 12,
+     "Ring1_R": 30,
+     "Ring2_R": 20,
+     "Ring3_R": 16,
+     "Little1_R": 26,
+     "Little2_R": 18,
+     "Little3_R": 14,
+     "Thumb1_R": 16,
+     "Thumb2_R": 20,
+     "Thumb3_R": 12,
+     "Rotula_Index1_R": 12,
+     "Rotula_Index2_R": 12,
+     "Rotula_Index3_R": 12,
+     "Rotula_Middle1_R": 12,
+     "Rotula_Middle2_R": 12,
+     "Rotula_Middle3_R": 12,
+     "Rotula_Ring1_R": 12,
+     "Rotula_Ring2_R": 12,
+     "Rotula_Ring3_R": 12,
+     "Rotula_Little1_R": 12,
+     "Rotula_Little2_R": 12,
+     "Rotula_Little3_R": 12,
+     "Rotula_Thumb1_R": 12,
+     "Rotula_Thumb2_R": 12,
+     "Rotula_Thumb3_R": 12,
+     "Collar_R": 44
+    }
+   },
+   "Forearm_R": {
+    "LOD0": {
+     "Forearm_R": 760,
+     "FlangeSpigot_R": 280
+    },
+    "LOD1": {
+     "Forearm_R": 246,
+     "FlangeSpigot_R": 90
+    },
+    "LOD2": {
+     "Forearm_R": 144,
+     "FlangeSpigot_R": 52
+    }
+   }
+  }
+ },
+ "renders": [
+  "body_front.png",
+  "body_profile_right.png",
+  "body_back.png",
+  "body_three_quarter.png",
+  "hand_R_open_palm34.png",
+  "hand_R_open_dorsal34.png",
+  "hand_R_fist_palm34.png",
+  "hand_R_fist_dorsal34.png",
+  "hand_R_fist_clean_palm34.png",
+  "hand_R_fist_clean_dorsal34.png",
+  "hand_R_fist_library_palm34.png",
+  "hand_R_fist_library_dorsal34.png",
+  "hand_R_grip_palm34.png",
+  "hand_R_grip_dorsal34.png",
+  "hand_R_relaxed_palm34.png",
+  "hand_R_relaxed_dorsal34.png",
+  "hand_R_inspect_palm34.png",
+  "hand_R_inspect_dorsal34.png",
+  "wrist_R_closeup.png",
+  "wrist_R_closeup_under.png",
+  "elbow_R_closeup.png",
+  "elbow_R_closeup_back.png",
+  "fps_overforearm_R_Open.png",
+  "fps_overforearm_R_Grip.png",
+  "fps_overforearm_R_FistTest.png",
+  "hand_R_open_pieces.png",
+  "hand_R_fist_pieces.png"
+ ],
+ "source_sha256_after": {
+  "rigged_blend": "4b68ce35c8d1f0634a65f60eb528c5fb96c966a4569a3630ec67d9ca6f97eef9",
+  "closed_fist_blend": "ae3b8e60dab22c6b1c6657c27c7c92f17d7d17d7fd9e8c8c56020736ad3f90f0"
+ },
+ "sources_unchanged": true,
+ "log": [
+  "opened C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Blender\\Working\\Protagonist\\IR_Protagonist_Rigged.blend",
+  "thumb refit {'Thumb1_R': [0.02328, -0.03283, -0.0097], 'Thumb1_L': [-0.02328, -0.03283, -0.0097], 'Thumb2_R': [-0.00015, -0.0331, -0.00378], 'Thumb2_L': [0.00015, -0.0331, -0.00378], 'Thumb3_R': [-0.00988, -0.04534, -0.00443], 'Thumb3_L': [0.00988, -0.04534, -0.00443]}",
+  "hand partition [('Palm_R', 434, [382]), ('Index1_R', 206, [181]), ('Index2_R', 178, [152]), ('Index3_R', 116, [106]), ('Middle1_R', 276, [240]), ('Middle2_R', 202, [167]), ('Middle3_R', 84, [77]), ('Ring1_R', 206, [175]), ('Ring2_R', 140, [117]), ('Ring3_R', 122, [107]), ('Little1_R', 184, [159]), ('Little2_R', 132, [112]), ('Little3_R', 102, [92]), ('Thumb1_R', 114, [96]), ('Thumb2_R', 138, [119]), ('Thumb3_R', 70, [60])]",
+  "joint recentre (mm) {'Index1_R': 3.02, 'Index2_R': 9.16, 'Index3_R': 1.38, 'Little1_R': 2.37, 'Little2_R': 12.15, 'Little3_R': 4.39, 'Middle1_R': 2.72, 'Middle2_R': 6.31, 'Middle3_R': 0.04, 'Ring1_R': 2.8, 'Ring2_R': 6.39, 'Ring3_R': 0.53, 'Thumb1_R': 1.15, 'Thumb2_R': 3.86, 'Thumb3_R': 4.23}",
+  "fist search spec Index (95, 100, 90) 2.84 mm",
+  "fist search spec Middle (85, 85, 40) 9.03 mm",
+  "fist search spec Ring (85, 85, 60) 5.96 mm",
+  "fist search spec Little (85, 90, 40) 6.00 mm",
+  "fist search clean Index (50, 50, 20) 1.44 mm",
+  "fist search clean Middle (70, 60, 60) 0.64 mm",
+  "fist search clean Ring (50, 90, 60) 0.00 mm",
+  "fist search clean Little (70, 50, 60) 0.89 mm",
+  "saved C:\\Users\\gehbd\\ProyectoGameFinal\\Tools\\IronRequiem\\Blender\\Working\\protagonist_v02\\refined\\IR_Protagonist_v02_refined.blend"
+ ]
+}

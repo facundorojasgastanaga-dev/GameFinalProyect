@@ -1,0 +1,28 @@
+﻿## Assets/IronRequiem/Prefabs/Player/Player_ModularArm_v07.prefab
+PrefabInstance 8489508565382380491 source=Player_NativeVisual_v06.prefab parentTransform=0
+   ov 3467176433776276156 pistolPrefab =  Weapon_IR_ArmModule_v07.prefab
+   ov 3467176433776276156 modularRightArm = 1 
+   ov 3467176433776276156 rightArmReceiverViews.Array.size = 2 
+   ov 3467176433776276156 'rightArmReceiverViews.Array.data[0]' =  {fileID: 6237376285161516039}
+   ov 3467176433776276156 'rightArmReceiverViews.Array.data[1]' =  {fileID: 3991070309378605684}
+   ov 4204014046803866968 'StartingWeapons.Array.data[0]' =  Weapon_IR_ArmModule_v07.prefab
+   ov 5120737674641657335 m_LocalPosition.x = 0 
+   ov 5120737674641657335 m_LocalPosition.y = 0 
+   ov 5120737674641657335 m_LocalPosition.z = 0 
+   ov 5120737674641657335 m_LocalRotation.w = 1 
+   ov 5120737674641657335 m_LocalRotation.x = 0 
+   ov 5120737674641657335 m_LocalRotation.y = 0 
+   ov 5120737674641657335 m_LocalRotation.z = 0 
+   ov 5120737674641657335 m_LocalEulerAnglesHint.x = 0 
+   ov 5120737674641657335 m_LocalEulerAnglesHint.y = 0 
+   ov 5120737674641657335 m_LocalEulerAnglesHint.z = 0 
+   ov 6546441146569159646 m_Name = Player_ModularArm_v07 
+GO 738199286152504074 "Forearm_R_Receiver" active=1
+  TR 6833681491351661008 of "Forearm_R_Receiver" pos={x: 0.34085435, y: 1.2546699, z: -0.06648264} rot={x: -0.7071069, y: 0, z: 0, w: 0.7071067} scale={x: 1, y: 1, z: 1} father=7717088100399363043
+  SkinnedMeshRenderer on "Forearm_R_Receiver" enabled=0 mesh=Protagonist_RightForearm_Receiver.asset:4300000 mats=IR_Protagonist_URP.mat
+GO 8161856939797164325 "RightArm_UniversalCoupling" active=1
+  TR 2815638192847421306 of "RightArm_UniversalCoupling" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=1639422941087487879
+  MeshFilter on "RightArm_UniversalCoupling" enabled=- mesh=UniversalForearm_Coupling.asset:4300000
+  MeshRenderer on "RightArm_UniversalCoupling" enabled=0 mats=Coupling_Ivory.mat,Receiver_Graphite.mat
+GO 8540773504410427614 "RightArm_ModuleSocket" active=1
+  TR 9053140790745081558 of "RightArm_ModuleSocket" pos={x: -0.00000015646219, y: 0.14000057, z: 0.00000017881393} rot={x: -0.635396, y: -0.31027696, z: -0.31027693, w: 0.63539624} scale={x: 1, y: 1, z: 1} father=7103008106372847109

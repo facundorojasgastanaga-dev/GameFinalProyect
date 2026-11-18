@@ -92,7 +92,7 @@ namespace IronRequiem
             if (!isActiveAndEnabled || preserveLegacyDeathEffect) return false;
             if (deathStarted) return true;
             deathStarted = true; DeathPresentationCount++;
-            if (!RobotDestructionPool.Burst(chest, chest ? chest.position : transform.position + Vector3.up, HideBody)) { fallback = true; fallbackAge = 0; }
+            if (!RobotDestructionPool.Burst(deathBurstPrefab, chest, chest ? chest.position : transform.position + Vector3.up, HideBody)) { fallback = true; fallbackAge = 0; }
             return true;
         }
         void Update()

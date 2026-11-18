@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.860267">
+  <test-suite type="TestSuite" id="1320" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.860267" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1314" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.746031" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1315" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.740283" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="261" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.732259" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.710873" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1133" name="D_SectorVolumeWeightOverTime" fullname="IronRequiem.Tests.MapFxAudit.D_SectorVolumeWeightOverTime" methodname="D_SectorVolumeWeightOverTime" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="2035619336" result="Passed" start-time="2026-11-17 06:59:46Z" end-time="2026-11-17 07:00:27Z" duration="40.617613" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 3762.2 ms · door+preload 0 / activate 3762 / unload 0 / settle 328 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 83.5 ms · door+preload 25 / activate 42 / unload 83 / settle 28 · peak at frame 104/134 load 1.00
+Error after 4 attempt(s): Unknown -  -- Result type: PointsBalanceResult -- Url: https://generators.ai.unity.com -- Trace Id 7672a425-0d76-47ab-a930-ef69ff801159 => 
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 86.3 ms · door+preload 26 / activate 48 / unload 86 / settle 15 · peak at frame 103/209 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 84.5 ms · door+preload 34 / activate 41 / unload 85 / settle 26 · peak at frame 89/276 load 1.00
+[CampaignTests] Passed D_SectorVolumeWeightOverTime
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

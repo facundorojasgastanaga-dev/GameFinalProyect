@@ -1,0 +1,275 @@
+{
+  "D-A": {
+    "name": "Mandibula telescopica",
+    "idea": "Dos hojas con junta dentada; cerrojos laterales y cubo central giran, se separan 8 cm y se telescopan a casetes laterales.",
+    "open_s": 0.8,
+    "close_s": 0.45,
+    "open_phases": [
+      [
+        "Dogs fuera + cubo gira 30",
+        0.0,
+        0.17,
+        "IR_Mount_Lock"
+      ],
+      [
+        "Sello 8 cm + vapor",
+        0.17,
+        0.25,
+        "IR_Hangar_Hydraulic"
+      ],
+      [
+        "Deslizamiento telescopico",
+        0.25,
+        0.8,
+        "IR_Hangar_Servo (pitch 0.8)"
+      ]
+    ],
+    "close_phases": [
+      [
+        "Deslizamiento (ease-in)",
+        0.0,
+        0.33,
+        "IR_Hangar_Servo"
+      ],
+      [
+        "Choque",
+        0.33,
+        0.37,
+        "IR_Fist_HeavyImpact"
+      ],
+      [
+        "Dogs + cubo",
+        0.37,
+        0.45,
+        "IR_Mount_Clamp"
+      ]
+    ],
+    "renders": [
+      "D-A_Mandibula_V1_blocked.png",
+      "D-A_Mandibula_V1_unlock.png",
+      "D-A_Mandibula_V1_half.png",
+      "D-A_Mandibula_V1_open.png",
+      "D-A_Mandibula_V1_alarm.png",
+      "D-A_Mandibula_conjunto_blocked.png",
+      "D-A_Mandibula_conjunto_half.png",
+      "D-A_Mandibula_cronograma.png",
+      "D-A_Mandibula_lamina.png"
+    ],
+    "variants": {
+      "V1": {
+        "root_tris": 1432,
+        "frame_tris": 1759,
+        "proxy_tris": 0,
+        "root_objects": 22,
+        "frame_objects": 23
+      },
+      "V2": {
+        "root_tris": 1888,
+        "frame_tris": 1999,
+        "proxy_tris": 0,
+        "root_objects": 22,
+        "frame_objects": 23
+      },
+      "V3": {
+        "root_tris": 340,
+        "frame_tris": 1519,
+        "proxy_tris": 0,
+        "root_objects": 8,
+        "frame_objects": 22
+      },
+      "V4": {
+        "root_tris": 1816,
+        "frame_tris": 1951,
+        "proxy_tris": 0,
+        "root_objects": 22,
+        "frame_objects": 23
+      }
+    },
+    "engine": "BLENDER_EEVEE",
+    "post": "bloom(5.x)",
+    "sheet_size": [
+      1288,
+      1584
+    ]
+  },
+  "D-B": {
+    "name": "Persiana telescopica",
+    "idea": "Lamas horizontales; levas laterales y pasadores de suelo sueltan, la lama inferior sube y recoge al resto en un casete corto.",
+    "open_s": 0.7,
+    "close_s": 0.45,
+    "open_phases": [
+      [
+        "Levas 90 + pasadores",
+        0.0,
+        0.15,
+        "IR_Mount_Clamp"
+      ],
+      [
+        "Elevacion: la lama 0 recoge a las demas",
+        0.15,
+        0.7,
+        "IR_Hangar_Hydraulic + IR_Hangar_Clatter"
+      ]
+    ],
+    "close_phases": [
+      [
+        "Caida escalonada",
+        0.0,
+        0.36,
+        "IR_Hangar_Clatter"
+      ],
+      [
+        "Golpe",
+        0.36,
+        0.39,
+        "IR_Fist_HeavyImpact"
+      ],
+      [
+        "Pasadores + levas",
+        0.39,
+        0.45,
+        "IR_Mount_Lock"
+      ]
+    ],
+    "renders": [
+      "D-B_PersianaTelescopica_V1_blocked.png",
+      "D-B_PersianaTelescopica_V1_unlock.png",
+      "D-B_PersianaTelescopica_V1_half.png",
+      "D-B_PersianaTelescopica_V1_open.png",
+      "D-B_PersianaTelescopica_V1_alarm.png",
+      "D-B_PersianaTelescopica_conjunto_blocked.png",
+      "D-B_PersianaTelescopica_conjunto_half.png",
+      "D-B_PersianaTelescopica_cronograma.png",
+      "D-B_PersianaTelescopica_lamina.png"
+    ],
+    "variants": {
+      "V1": {
+        "root_tris": 852,
+        "frame_tris": 1467,
+        "proxy_tris": 0,
+        "root_objects": 18,
+        "frame_objects": 26
+      },
+      "V2": {
+        "root_tris": 1152,
+        "frame_tris": 1467,
+        "proxy_tris": 0,
+        "root_objects": 25,
+        "frame_objects": 26
+      },
+      "V3": {
+        "root_tris": 788,
+        "frame_tris": 1467,
+        "proxy_tris": 0,
+        "root_objects": 18,
+        "frame_objects": 26
+      },
+      "V4": {
+        "root_tris": 1200,
+        "frame_tris": 1467,
+        "proxy_tris": 0,
+        "root_objects": 25,
+        "frame_objects": 26
+      }
+    },
+    "engine": "BLENDER_EEVEE",
+    "post": "bloom(5.x)",
+    "sheet_size": [
+      1288,
+      1584
+    ]
+  },
+  "D-C": {
+    "name": "Boveda batiente",
+    "idea": "Hojas de boveda con junta diagonal; cerrojos superiores suben, sello cede y pivotan 90 grados hacia la sala con brazos hidraulicos.",
+    "open_s": 1.0,
+    "close_s": 0.45,
+    "open_phases": [
+      [
+        "Cerrojos suben",
+        0.0,
+        0.2,
+        "IR_Mount_Lock"
+      ],
+      [
+        "Sello cede 6 cm",
+        0.2,
+        0.28,
+        "IR_Hangar_Hydraulic"
+      ],
+      [
+        "Giro 90 con brazos",
+        0.28,
+        1.0,
+        "IR_Hangar_CannonArm + IR_Hangar_Servo"
+      ]
+    ],
+    "close_phases": [
+      [
+        "Giro (ease-in)",
+        0.0,
+        0.35,
+        "IR_Hangar_Servo"
+      ],
+      [
+        "Choque",
+        0.35,
+        0.38,
+        "IR_Fist_HeavyImpact"
+      ],
+      [
+        "Cerrojos bajan",
+        0.38,
+        0.45,
+        "IR_Mount_Clamp"
+      ]
+    ],
+    "renders": [
+      "D-C_BovedaBatiente_V1_blocked.png",
+      "D-C_BovedaBatiente_V1_unlock.png",
+      "D-C_BovedaBatiente_V1_half.png",
+      "D-C_BovedaBatiente_V1_open.png",
+      "D-C_BovedaBatiente_V1_alarm.png",
+      "D-C_BovedaBatiente_conjunto_blocked.png",
+      "D-C_BovedaBatiente_conjunto_half.png",
+      "D-C_BovedaBatiente_cronograma.png",
+      "D-C_BovedaBatiente_lamina.png"
+    ],
+    "variants": {
+      "V1": {
+        "root_tris": 520,
+        "frame_tris": 1671,
+        "proxy_tris": 0,
+        "root_objects": 14,
+        "frame_objects": 27
+      },
+      "V2": {
+        "root_tris": 664,
+        "frame_tris": 1671,
+        "proxy_tris": 0,
+        "root_objects": 14,
+        "frame_objects": 27
+      },
+      "V3": {
+        "root_tris": 928,
+        "frame_tris": 1791,
+        "proxy_tris": 0,
+        "root_objects": 24,
+        "frame_objects": 29
+      },
+      "V4": {
+        "root_tris": 1168,
+        "frame_tris": 1791,
+        "proxy_tris": 0,
+        "root_objects": 24,
+        "frame_objects": 29
+      }
+    },
+    "engine": "BLENDER_EEVEE",
+    "post": "bloom(5.x)",
+    "sheet_size": [
+      1288,
+      1584
+    ]
+  }
+}

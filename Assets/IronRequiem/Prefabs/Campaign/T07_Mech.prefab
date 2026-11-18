@@ -15182,7 +15182,7 @@ MonoBehaviour:
   sparks: {fileID: 4945850068589309599}
   smoke: {fileID: 1752629658381331294}
   chest: {fileID: 3663573494873922100}
-  deathBurstPrefab: {fileID: 7182159747111110752, guid: 6aa6a0e80a8a00d4b9a167b401987197,
+  deathBurstPrefab: {fileID: 5824550490772496056, guid: 6933cfa37e0725e4b8e1726ce3d45670,
     type: 3}
   preserveLegacyDeathEffect: 0
   criticalArm: {fileID: 0}
@@ -15429,6 +15429,7 @@ MonoBehaviour:
   healthThreshold: 0.75
   modulePrefab: {fileID: 4648795222875665828, guid: 2550b58e12816c44b8f7fa38b086704f,
     type: 3}
+  executionEnabled: 1
 --- !u!114 &6296901366861361325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20991,6 +20992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: 
+  PermanentMelee: 0
   WeaponIcon: {fileID: 0}
   CrosshairDataDefault:
     CrosshairSprite: {fileID: 0}
@@ -54900,6 +54902,7 @@ MonoBehaviour:
   KnownTargetTimeout: 6
   Animator: {fileID: 0}
   UseExternalDamagePresentation: 1
+  DetectionInterval: 0
 --- !u!1 &7779533624337630615
 GameObject:
   m_ObjectHideFlags: 0

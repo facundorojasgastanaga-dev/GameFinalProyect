@@ -1,0 +1,8 @@
+P-E2a hangar post, Editor Play Mode
+cinematic t=1.5s: HG_PostVolume profile=HG_MenuVolume weight=1.00 overlay=HG_GameplayVolume prio=21 weight=0.000
+  shot fixes/pe2a-cinematic-1.5s cam=CinematicCamera lum=0.262 dark%=0.3 white%=0.00
+  shot fixes/pe2a-cinematic-3.5s cam=CinematicCamera lum=0.165 dark%=26.2 white%=0.00
+cinematic t=3.5s overlay weight=0.000
+ramp to 1 in 1.50 s after Finished; overlay weight=1.00 source weight=1.00 HG_PostVolume profile still=HG_MenuVolume overlay scene=Room00_Hangar root=True
+  gameplay stack: stack bloom active=True thr=1.1 int=0.25 scatter=0.65 | tonemap=Neutral | exposure=0.1 contrast=14 sat=-14 filter=EDFAFF | motionBlur active=False int=0 q=Low | dof=Off | vignette=0.2 | chromatic=0 | lens=0 | grain=0.1
+  shot fixes/pe2a-hangar-gameplay lum=0.063 dark%=51.9 white%=0.00

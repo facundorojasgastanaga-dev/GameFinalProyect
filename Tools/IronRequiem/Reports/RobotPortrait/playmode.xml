@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.6394736">
+  <test-suite type="TestSuite" id="1305" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="249" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.639474" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1299" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="249" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.592058" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1300" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="249" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.576197" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="249" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.565093" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1203" name="RobotPortraitTests" fullname="IronRequiem.Tests.RobotPortraitTests" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:49Z" duration="17.542508" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1204" name="A_ImportsIdleSequenceAndStableReferences" fullname="IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences" methodname="A_ImportsIdleSequenceAndStableReferences" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="527936213" result="Passed" start-time="2026-11-16 05:22:32Z" end-time="2026-11-16 05:22:39Z" duration="7.096434" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed A_ImportsIdleSequenceAndStableReferences
+]]></output>
+            </test-case>
+            <test-case id="1205" name="B_DamageCriticalHealingPauseDeathAndRebind" fullname="IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind" methodname="B_DamageCriticalHealingPauseDeathAndRebind" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1013999057" result="Passed" start-time="2026-11-16 05:22:39Z" end-time="2026-11-16 05:22:42Z" duration="3.524008" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed B_DamageCriticalHealingPauseDeathAndRebind
+]]></output>
+            </test-case>
+            <test-case id="1206" name="C_AcceptedShotsExecutionAndOverdrivePriority" fullname="IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority" methodname="C_AcceptedShotsExecutionAndOverdrivePriority" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1865306556" result="Passed" start-time="2026-11-16 05:22:42Z" end-time="2026-11-16 05:22:47Z" duration="4.849462" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed C_AcceptedShotsExecutionAndOverdrivePriority
+]]></output>
+            </test-case>
+            <test-case id="1207" name="D_ConfirmedMeleeCollisionReactsButMissDoesNot" fullname="IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot" methodname="D_ConfirmedMeleeCollisionReactsButMissDoesNot" classname="IronRequiem.Tests.RobotPortraitTests" runstate="Runnable" seed="1472841998" result="Passed" start-time="2026-11-16 05:22:47Z" end-time="2026-11-16 05:22:49Z" duration="2.001006" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed D_ConfirmedMeleeCollisionReactsButMissDoesNot
+Saving results to: Tools/IronRequiem/Reports/RobotPortrait/playmode.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -47,7 +47,8 @@ namespace IronRequiem.Tests
                 var melee=player.GetComponent<ProtagonistMelee>();var hands=Object.FindAnyObjectByType<ProtagonistHandsPresentation>();
                 yield return new WaitForSeconds(.3f);Assert.That(hands.RightHandVisible,Is.True,"Unarmed: right hand visible");
                 InputSystem.QueueStateEvent(mouse,new MouseState().WithButton(MouseButton.Left,true));yield return Until(()=>melee.IsAttacking,1,"M1 strikes while unarmed");
-                Assert.That(melee.ArmedStrike,Is.False,"Unarmed strike is the right hand");InputSystem.QueueStateEvent(mouse,new MouseState());
+                Assert.That(melee.LeftStrike,Is.False,"Unarmed M1 strike is the right hand");InputSystem.QueueStateEvent(mouse,new MouseState());
+                yield return new WaitForSeconds(.1f);Assert.That(hands.RightFistClosure,Is.GreaterThan(.95f),"v7: the striking right hand is a closed fist within 0.1 s");
                 yield return null;Assert.That(hands.LeftHandVisible,Is.False,"Left hand hidden during the right strike");
                 yield return Until(()=>!melee.IsAttacking,2,"Quick strike resolves");Assert.That(melee.LastWasHeavy,Is.False);
             }
@@ -81,7 +82,7 @@ namespace IronRequiem.Tests
             Place(station.transform.position-station.transform.forward*.5f+Vector3.up*.03f);yield return new WaitForSeconds(.3f);
             Input(Key.E);yield return null;yield return null;Input();yield return Until(()=>station.Busy,2,"E starts the mounting sequence");
             Assert.That(PlayerInputLock.Locked,Is.True,"Input locked during the sequence");
-            yield return new WaitForSeconds(2f);Assert.That(station.SequenceTime,Is.GreaterThan(1.6f),"Sequence advances (hand off)");
+            yield return new WaitForSeconds(2f);Assert.That(station.SequenceTime,Is.GreaterThan(1.6f),"Sequence advances (hand off)");PresentationShot("station-hand-off");
             Input(Key.Space);yield return Until(()=>!station.Busy,3,"Holding Space skips");Input();
             Assert.That(station.WasSkipped&&station.Granted,Is.True,"Skipped and granted");Assert.That(PlayerInputLock.Locked,Is.False,"Control back");
             Assert.That(weapons.HasWeapon(station.WeaponPrefab),Is.Not.Null,"Cannon in the inventory");Assert.That(weapons.GetActiveWeapon().SourcePrefab,Is.SameAs(station.WeaponPrefab.gameObject),"Cannon selected after mounting");
@@ -109,6 +110,7 @@ namespace IronRequiem.Tests
         [UnityTearDown]public IEnumerator Cleanup()
         {
             Input();Time.timeScale=1;AudioListener.pause=false;SceneManager.sceneLoaded-=FixedWaves;var clean=SceneManager.CreateScene("CampaignCleanup"+Time.frameCount);SceneManager.SetActiveScene(clean);
+            var session=Object.FindAnyObjectByType<CampaignFlow>();if(session)yield return session.DrainPendingLoadsForShutdown();
             foreach(var queue in Object.FindObjectsByType<EnemySpawnQueue>()){queue.CancelPending();queue.enabled=false;}foreach(var waves in Object.FindObjectsByType<CombatTwoRoomsLab>())waves.enabled=false;Freeze();foreach(var bar in Object.FindObjectsByType<WorldspaceHealthBar>())bar.enabled=false;
             var loaded=Enumerable.Range(0,SceneManager.sceneCount).Select(SceneManager.GetSceneAt).Where(s=>s!=clean&&s.isLoaded).OrderBy(s=>s.name=="RequiemCampaign"?1:0).ToArray();foreach(var scene in loaded)if(scene.isLoaded)yield return SceneManager.UnloadSceneAsync(scene);yield return null;
             Time.captureDeltaTime=capture;InputSystem.actions.devices=devices;InputSystem.RemoveDevice(keys);InputSystem.RemoveDevice(mouse);Cursor.lockState=CursorLockMode.None;Application.runInBackground=background;
@@ -197,6 +199,47 @@ namespace IronRequiem.Tests
             var carrierFinal=player.GetComponent<StolenWeaponCarrier>();Assert.That(carrierFinal.ThrowHeld(),Is.True);Assert.That(held.gameObject.scene,Is.EqualTo(flow.CurrentRoom.gameObject.scene),"Thrown inventory belongs to current room");held.Explosion.TryDetonate();yield return null;Assert.That(carrierFinal.Held,Is.Null);
             File.WriteAllText(Report+"flow.txt",log+"Twelve rounds; one loaded gameplay scene at every sampled frame; previous scene/native objects destroyed; active player/weapon/energy survive all4 transitions; real E;40 stair traversal; four mounted lights per room; final3 jumps,5 original ambush enemies and crusher completion; thrown module rehomed to current room.\n");
         }
+        static void PresentationShot(string name)
+        {
+            SessionState.SetString("IR.HandsHud.CaptureTag",name);var began=DateTime.UtcNow;
+            Assert.That(EditorApplication.ExecuteMenuItem("Tools/Iron Requiem/Hands HUD Campaign/Capture gameplay state"),Is.True);
+            string path="Tools/IronRequiem/Reports/HandsHudCampaign/"+name+".png";
+            Assert.That(File.Exists(path)&&File.GetLastWriteTimeUtc(path)>=began.AddSeconds(-1),Is.True,"Fresh 1080p evidence: "+name);
+        }
+
+        [UnityTest]public IEnumerator PresentationHandsMountedArmsAndOverdriveHud()
+        {
+            var weapons=player.GetComponent<PlayerWeaponsManager>();var melee=player.GetComponent<ProtagonistMelee>();
+            var station=Object.FindAnyObjectByType<WeaponMountStation>();var native=weapons.GetActiveWeapon();
+            Assert.That(native,Is.Not.Null);weapons.RemoveWeapon(native);yield return new WaitForSeconds(.4f);
+            Assert.That(melee.Unarmed,Is.True);PresentationShot("unarmed-rest");
+            InputSystem.QueueStateEvent(mouse,new MouseState().WithButton(MouseButton.Left,true));yield return new WaitForSeconds(.05f);
+            InputSystem.QueueStateEvent(mouse,new MouseState());yield return new WaitForSeconds(.18f);PresentationShot("unarmed-quick-impact");
+            yield return Until(()=>!melee.IsAttacking,2,"Quick punch recovery");
+            Input(Key.F);yield return Until(()=>melee.IsCharging,1,"Unarmed F charge");yield return new WaitForSeconds(melee.MaxChargeSeconds+.15f);
+            Assert.That(melee.FullyCharged&&melee.LeftStrike,Is.True);PresentationShot("unarmed-full-charge");
+            Input();yield return new WaitForSeconds(.11f);PresentationShot("unarmed-heavy-impact");yield return Until(()=>!melee.IsAttacking,3,"Heavy punch recovery");
+            weapons.AddWeapon(station.WeaponPrefab);var equipped=weapons.HasWeapon(station.WeaponPrefab);
+            int slot=Enumerable.Range(0,9).Single(i=>weapons.GetWeaponAtSlotIndex(i)==equipped);weapons.SwitchToWeaponIndex(slot,true);yield return new WaitForSeconds(.5f);
+            Assert.That(player.GetComponent<FirstPersonUpperArms>(),Is.Not.Null);PresentationShot("mounted-rest");
+            Input(Key.F);yield return Until(()=>melee.IsCharging,1,"Mounted F charge");yield return new WaitForSeconds(melee.MaxChargeSeconds+.15f);
+            Assert.That(melee.ArmedStrike,Is.True);Assert.That(Object.FindAnyObjectByType<ProtagonistHandsPresentation>().LeftHandVisible,Is.False);PresentationShot("mounted-full-charge");
+            Input();yield return new WaitForSeconds(.11f);PresentationShot("mounted-impact");yield return Until(()=>!melee.IsAttacking,3,"Mounted bash recovery");
+            player.SetViewAngles(0,-40);InputSystem.QueueStateEvent(mouse,new MouseState().WithButton(MouseButton.Left,true));yield return new WaitForSeconds(.12f);
+            InputSystem.QueueStateEvent(mouse,new MouseState());yield return new WaitForSeconds(.08f);PresentationShot("mounted-fire");player.SetViewAngles(0,0);
+            var rounds=flow.CurrentRoom.Rounds;Place(new Vector3(0,.03f,-20));yield return Until(()=>rounds.PendingSpawns==0&&rounds.LivingEnemies>0,45,"Enemies available for real extraction");
+            var victim=rounds.Living.First(h=>h&&h.GetComponent<EnemyExecutionSource>());victim.TakeDamage(victim.MaxHealth*.3f,player.gameObject);
+            var box=victim.GetComponent<Collider>();player.enabled=false;Place(new Vector3(box.bounds.center.x,.03f,box.bounds.min.z-1));player.PlayerCamera.transform.LookAt(box.bounds.center);yield return null;
+            Input(Key.E);yield return null;yield return null;Input();yield return new WaitForSeconds(3.5f);
+            var held=player.GetComponent<StolenWeaponCarrier>().Held;Assert.That(held,Is.Not.Null);player.enabled=true;Place(new Vector3(0,.03f,-20));player.SetViewAngles(0,0);
+            Input(Key.F);yield return Until(()=>melee.IsCharging,1,"Stolen forearm charge");yield return new WaitForSeconds(melee.MaxChargeSeconds+.15f);PresentationShot("stolen-full-charge");
+            Input();yield return new WaitForSeconds(.11f);PresentationShot("stolen-impact");yield return Until(()=>!melee.IsAttacking,3,"Stolen bash recovery");
+            held.Ammo.Drain(Mathf.Max(0,held.Ammo.Remaining-held.Ammo.Capacity*.15f));Assert.That(held.Overdrive.IsArmed,Is.True);
+            float previousScale=Time.timeScale;Time.timeScale=0;yield return null;
+            try{Assert.That(EditorApplication.ExecuteMenuItem("Tools/Iron Requiem/Hands HUD Campaign/Capture HUD resolutions"),Is.True);}
+            finally{Time.timeScale=previousScale;}
+        }
+
         [UnityTest]public IEnumerator IntroMenuStartsCampaignAndRestartReturnsToRoomOne()
         {
             SceneManager.LoadScene("IntroMenu",LoadSceneMode.Single);yield return null;yield return null;
@@ -222,6 +265,22 @@ namespace IronRequiem.Tests
             AssertUnarmed("After restart of a run that never reached the station");
             flow.Menu.ReturnToMainMenu();yield return null;yield return null;yield return new WaitForSecondsRealtime(2);Assert.That(SceneManager.GetActiveScene().name,Is.EqualTo("IntroMenu"));Assert.That(Object.FindAnyObjectByType<CampaignRoom>(),Is.Null,"No orphan room after return while initial load pending");
             File.WriteAllText(Report+"menu.txt","Actual IntroMenu Primary uses RequiemCampaign, skips duplicate start menu, room1 loaded once. Restart reloads campaign in play; returning immediately to IntroMenu during initial async load leaves no orphan room/player.");
+        }
+        [UnityTest]public IEnumerator DeathScreenButtonsReceiveClicks()
+        {
+            // v6: REINICIAR and VOLVER AL MENÚ must be the first thing under the pointer (the v5 restyle left them unclickable)
+            player.GetComponent<Health>().Kill();yield return null;yield return null;yield return null;
+            var lab=Object.FindAnyObjectByType<CombatLabMenu>();Assert.That(lab.IsDeathMenu,Is.True,"Death menu shown");
+            var death=(GameObject)new SerializedObject(lab).FindProperty("deathPanel").objectReferenceValue;var buttons=death.GetComponentsInChildren<UnityEngine.UI.Button>();
+            Assert.That(buttons.Length,Is.EqualTo(2),"Two death buttons");
+            foreach(var b in buttons)
+            {
+                Vector2 screen=RectTransformUtility.WorldToScreenPoint(null,((RectTransform)b.transform).position);
+                var hits=new System.Collections.Generic.List<UnityEngine.EventSystems.RaycastResult>();
+                UnityEngine.EventSystems.EventSystem.current.RaycastAll(new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current){position=screen},hits);
+                Assert.That(hits.Count,Is.GreaterThan(0),b.name+" has something under the pointer");
+                Assert.That(hits[0].gameObject.GetComponentInParent<UnityEngine.UI.Button>(),Is.SameAs(b),b.name+" receives the click (first hit: "+hits[0].gameObject.name+")");
+            }
         }
         [UnityTest]public IEnumerator EquippedExplosionCleansInventoryInAdditiveRoom()
         {
@@ -263,13 +322,14 @@ namespace IronRequiem.Tests
             Assert.That(movement.SlideGuardActive,Is.False,"Window is shorter than the slide");health.TakeDamage(15,player.gameObject);Assert.That(health.CurrentHealth,Is.LessThan(before),"Damage counts again after the window");
             health.OnDamageIgnored-=count;health.Heal(100);health.Invincible=true;log.AppendLine("slide guard "+movement.SlideInvulnerability+" s, ignored="+ignored);
             yield return new WaitForSeconds(.4f);
-            // v5 charged strike on F, here with the cannon on the forearm (mechanical bash): hold F to full charge, release
+            // With a mounted cannon, F charges a right-forearm bash and leaves the unused left hand hidden.
             var rounds=flow.CurrentRoom.Rounds;yield return Until(()=>rounds.LivingEnemies>0&&rounds.PendingSpawns==0,45,"Room01 enemies for the punch");
             var victim=rounds.Living.First(h=>h&&h.CurrentHealth>h.MaxHealth*.5f);var enemy=victim.GetComponent<EnemyController>();var box=victim.GetComponent<Collider>();
             Place(new Vector3(box.bounds.center.x,.03f,box.bounds.min.z-1.2f));player.PlayerCamera.transform.LookAt(box.bounds.center);Physics.SyncTransforms();
             var armed=weapons.GetActiveWeapon();Assert.That(armed,Is.Not.Null,"Cannon in hand for the bash");var heatBefore=armed.GetComponent<WeaponHeat>();float heat0=heatBefore?heatBefore.CurrentHeat:0;
             float hp=victim.CurrentHealth;Input(Key.F);
-            yield return Until(()=>melee.IsCharging,1,"F starts the charge");Assert.That(melee.ArmedStrike,Is.True,"Armed: mechanical bash");
+            yield return Until(()=>melee.IsCharging,1,"F starts the charge");Assert.That(melee.ArmedStrike,Is.True,"F uses the mounted forearm");Assert.That(melee.LeftStrike,Is.False);
+            {var hands=Object.FindAnyObjectByType<ProtagonistHandsPresentation>();yield return new WaitForSeconds(.12f);Assert.That(hands.LeftHandVisible,Is.False,"Unused left hand remains hidden during the mounted bash");Assert.That(hands.GetComponent<FirstPersonUpperArms>(),Is.Not.Null,"Mounted bash retains the complete upper arm");}
             yield return new WaitForSeconds(melee.MaxChargeSeconds+.15f);Assert.That(melee.FullyCharged,Is.True,"Full charge after holding F");
             Place(new Vector3(box.bounds.center.x,.03f,box.bounds.min.z-1.2f));player.PlayerCamera.transform.LookAt(box.bounds.center);Physics.SyncTransforms();
             Input();yield return Until(()=>!melee.IsAttacking,2,"Heavy bash resolves");

@@ -1,0 +1,23 @@
+Campaign tour 2026-11-17 10:31 · PLAYER release · NVIDIA GeForce RTX 4050 Laptop GPU · 13th Gen Intel(R) Core(TM) i5-13420H · 1600x900 · quality Default · warm on · teardown 120 · vsync 0 · target -1 · profiler off
+Room00_Hangar | 533.4 | -1 | 0 | 0 (0) | 0 | 0.00 | 0.00 | 0.54 (533) | 0.00 (0) | 0.12 | 0.00 | 0.71 (first stage, behind the start cover)
+
+TRANSITIONS (ms / s)
+to | peak ms | >33ms | >50ms | GC alloc KB (max frame KB) | GC count | door s | load s | activate s (peak ms) | unload s (peak ms) | settle s | sweep s | total s
+Room00b_AlarmCorridor | 33.6 | 1 | 0 | 0 (0) | 1 | 1.60 | 0.00 | 0.02 (4) | 0.17 (27) | 0.05 | 0.00 | 1.84 · picos: [34ms @0.05s fase puerta/carga gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0] [27ms @1.68s fase descarga gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0] [21ms @1.64s fase activación gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+Room01_Foundry | 19.9 | 0 | 0 | 0 (0) | 1 | 1.60 | 0.00 | 0.01 (11) | 0.46 (20) | 1.02 | 0.00 | 3.10 · picos:
+Room02_Breach | 24.0 | 0 | 0 | 0 (0) | 2 | 1.60 | 0.00 | 0.01 (4) | 0.67 (24) | 0.81 | 0.00 | 3.10 · picos: [24ms @1.70s fase descarga gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0] [21ms @1.04s fase puerta/carga gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+Room03_Assembly | 11.6 | 0 | 0 | 0 (0) | 2 | 1.60 | 0.00 | 0.01 (4) | 1.58 (12) | 0.04 | 0.00 | 3.23 · picos:
+Room04_Reactor | 20.7 | 0 | 0 | 0 (0) | 1 | 1.60 | 0.00 | 0.01 (4) | 2.14 (11) | 0.03 | 0.00 | 3.79 · picos: [21ms @1.57s fase puerta/carga gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+Pursuit05 | 16.5 | 0 | 0 | 0 (0) | 1 | 1.60 | 0.00 | 0.01 (4) | 2.55 (14) | 0.03 | 0.00 | 4.21 · picos:
+
+ROOMS (frame time while the first round fights the invincible player)
+room | avg ms | fps | p99 ms | max ms | >33ms | enemies
+Room00_Hangar (no combat) | 5.06 | 198 | 9.27 | 33.0 | 0 | 0 · main 5.0 ms, espera present/GPU 0.0 ms · picos: [33ms @0.02s fase llegada gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+Room00b_AlarmCorridor | 4.55 | 220 | 6.51 | 27.6 | 0 | 3 · main 4.5 ms, espera present/GPU 0.0 ms · picos: [28ms @1.22s fase llegada gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+Room01_Foundry | 5.13 | 195 | 7.04 | 15.3 | 0 | 6 · main 5.1 ms, espera present/GPU 0.0 ms
+Room02_Breach | 4.57 | 219 | 6.17 | 11.9 | 0 | 6 · main 4.6 ms, espera present/GPU 0.0 ms
+Room03_Assembly | 4.81 | 208 | 6.22 | 15.6 | 0 | 6 · main 4.8 ms, espera present/GPU 0.0 ms
+Room04_Reactor | 4.76 | 210 | 6.37 | 12.2 | 0 | 6 · main 4.7 ms, espera present/GPU 0.0 ms
+Pursuit05 (no combat) | 3.77 | 265 | 6.30 | 30.2 | 0 | 0 · main 3.8 ms, espera present/GPU 0.0 ms · picos: [30ms @0.87s fase llegada gc 0.0 shader -1.0 awake -1.0 read -1.0 present 0.0]
+
+status: done

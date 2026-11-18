@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e9cf1a1198a924191f167ff860e3d1, type: 3}
+  m_Name: RobotPortraitV02
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.RobotPortraitSprites
+  Neutral: {fileID: 21300000, guid: d96f4856d4dfec54c8fe60456574e202, type: 3}
+  LookLeft: {fileID: 21300000, guid: 1212b79d50a8fe24487a11cc8099ac2c, type: 3}
+  LookRight: {fileID: 21300000, guid: 04279016b5240b34da8bf347c13f06dc, type: 3}
+  Impact: {fileID: 21300000, guid: 49ef021a5ed64084b8fb1b906d08fa8d, type: 3}
+  Critical: {fileID: 21300000, guid: 6fb026ddcf9ac5245b3e5b6bee1e80f2, type: 3}
+  Attack: {fileID: 21300000, guid: 4788694f438df914892c2fd5b9fd3ae1, type: 3}
+  Overdrive: {fileID: 21300000, guid: d6c0c493a861a5144908896e28cb81a8, type: 3}
+  Offline: {fileID: 21300000, guid: 630376a833d8ae7428402de6d0bf429d, type: 3}
+  damageLevels:
+  - front: {fileID: 21300000, guid: d96f4856d4dfec54c8fe60456574e202, type: 3}
+    left: {fileID: 21300000, guid: 1212b79d50a8fe24487a11cc8099ac2c, type: 3}
+    right: {fileID: 21300000, guid: 04279016b5240b34da8bf347c13f06dc, type: 3}
+    impact: {fileID: 21300000, guid: 49ef021a5ed64084b8fb1b906d08fa8d, type: 3}
+    charge: {fileID: 21300000, guid: 276deec6b8b12984c90690a69ce7325f, type: 3}
+  - front: {fileID: 21300000, guid: f227dae1d6cc38745a40b0d22ddcd724, type: 3}
+    left: {fileID: 21300000, guid: 1311b8850090e5a4d81d5f13a9b14ddb, type: 3}
+    right: {fileID: 21300000, guid: 0454cef536031fb4aae4c5d81f45df9b, type: 3}
+    impact: {fileID: 21300000, guid: ae05d995bf1284e48b768d790e7e5269, type: 3}
+    charge: {fileID: 21300000, guid: 813daeb75d7253e4a9c173d2e5ff47e3, type: 3}
+  - front: {fileID: 21300000, guid: 1addd641c9c2a9349bfeae5c0f68b916, type: 3}
+    left: {fileID: 21300000, guid: 326e239c134ac3d4796b6d7c4a211b06, type: 3}
+    right: {fileID: 21300000, guid: 73f9635f21d108147a6dfc29dbd36940, type: 3}
+    impact: {fileID: 21300000, guid: f0debceefcd01d548a3342ff4613f8a5, type: 3}
+    charge: {fileID: 21300000, guid: 49aa0de50d88e3843b4c4f2f105f43ee, type: 3}
+  - front: {fileID: 21300000, guid: 6fb026ddcf9ac5245b3e5b6bee1e80f2, type: 3}
+    left: {fileID: 21300000, guid: 5fbd8ccce094f454ebe46f8c3a7d00b6, type: 3}
+    right: {fileID: 21300000, guid: da9291893433bc245b2c4e8c4f1dbf13, type: 3}
+    impact: {fileID: 21300000, guid: dfe4349a4b77b1940a20f270b1a8fd72, type: 3}
+    charge: {fileID: 21300000, guid: 8d1555cb1d3a2674093a0a9a5e7997b3, type: 3}

@@ -1,13 +1,709 @@
-CampaignTests requested 11/13/2026 4:28:49 AM
-04:29:21 run started: 241 test(s)
-04:29:21 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
-04:29:46 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (25.1s)
-04:29:46 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
-04:30:12 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (25.3s)
-04:30:12 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
-04:30:44 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (32.8s)
-04:30:44 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
-04:33:00 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (135.7s)
-04:33:00 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
-04:33:29 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (28.4s)
-04:33:29 RUN FINISHED Passed passed=5 failed=0 skipped=0 inconclusive=0 duration=247.6s
+CampaignTests requested 11/14/2026 1:37:15 AM
+01:37:48 run started: 242 test(s)
+01:37:48 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+01:38:26 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (38.0s)
+01:38:26 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+01:38:44 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (18.1s)
+01:38:44 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+01:39:10 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (25.7s)
+01:39:10 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+01:39:44 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (33.9s)
+01:39:44 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+01:42:06 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (142.2s)
+01:42:06 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+01:42:36 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (29.9s)
+01:42:36 RUN FINISHED Passed passed=6 failed=0 skipped=0 inconclusive=0 duration=288.1s
+13:01:44 run started: 243 test(s)
+13:01:44 start IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch
+13:01:51 FAILED IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch (7.0s)
+    Expected: 1
+      But was:  2
+13:01:51 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=7.2s
+13:05:50 run started: 243 test(s)
+13:05:50 start IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch
+13:06:18 PASSED IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch (28.5s)
+13:06:18 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=28.7s
+13:13:11 run started: 243 test(s)
+13:13:11 start IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch
+13:13:35 PASSED IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch (23.8s)
+13:13:35 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=24.0s
+13:18:20 run started: 243 test(s)
+13:18:20 start IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch
+13:18:43 PASSED IronRequiem.Tests.MainMenuRestoreTests.CapsuleOptionsBackgroundAndSingleLaunch (23.3s)
+13:18:43 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=23.4s
+19:39:54 run started: 19 test(s)
+19:39:55 start IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose
+19:39:55 PASSED IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose (0.1s)
+19:39:55 start IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale
+19:39:55 PASSED IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale (0.0s)
+19:39:55 RUN FINISHED Passed passed=2 failed=0 skipped=0 inconclusive=0 duration=0.7s
+20:23:50 run started: 20 test(s)
+20:23:51 start IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose
+20:23:51 PASSED IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose (0.1s)
+20:23:51 start IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale
+20:23:51 PASSED IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale (0.0s)
+20:23:51 start IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose
+20:23:51 PASSED IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose (0.0s)
+20:23:51 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=0.8s
+20:51:03 run started: 245 test(s)
+20:51:04 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+20:51:29 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (25.3s)
+20:51:29 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+20:51:43 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (14.7s)
+20:51:43 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+20:52:05 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (21.0s)
+20:52:05 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+20:52:30 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (25.7s)
+20:52:30 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+20:52:55 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (24.7s)
+20:52:55 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+20:54:38 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (103.0s)
+20:54:38 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+20:55:02 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (24.2s)
+20:55:02 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+20:55:44 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (41.9s)
+20:55:44 RUN FINISHED Passed passed=8 failed=0 skipped=0 inconclusive=0 duration=280.7s
+21:07:09 run started: 20 test(s)
+21:07:09 start IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose
+21:07:09 PASSED IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose (0.0s)
+21:07:09 start IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale
+21:07:09 PASSED IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale (0.0s)
+21:07:09 start IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose
+21:07:09 PASSED IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose (0.0s)
+21:07:09 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=0.2s
+21:08:22 run started: 245 test(s)
+21:08:22 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+21:08:54 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (31.7s)
+21:08:54 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=31.8s
+21:22:15 run started: 245 test(s)
+21:22:15 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+21:22:35 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (19.3s)
+21:22:35 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+21:22:50 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (14.8s)
+21:22:50 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+21:23:09 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (20.0s)
+21:23:09 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+21:23:36 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (26.6s)
+21:23:36 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+21:24:13 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (36.5s)
+21:24:13 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+21:26:54 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (161.6s)
+21:26:54 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+21:27:19 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (24.9s)
+21:27:19 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+21:28:02 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (43.2s)
+21:28:02 RUN FINISHED Passed passed=8 failed=0 skipped=0 inconclusive=0 duration=347.1s
+01:15:42 run started: 249 test(s)
+01:15:42 run started: 249 test(s)
+01:15:42 start IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences
+01:15:42 start IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences
+01:15:42 start IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences
+01:15:52 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences (9.3s)
+01:15:52 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences (9.3s)
+01:15:52 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences (9.3s)
+01:15:52 start IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind
+01:15:52 start IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind
+01:15:52 start IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind
+01:15:56 PASSED IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind (3.9s)
+01:15:56 PASSED IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind (3.9s)
+01:15:56 PASSED IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind (3.9s)
+01:15:56 start IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority
+01:15:56 start IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority
+01:15:56 start IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority
+01:15:59 FAILED IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority (3.7s)
+    UnityEngine.MissingComponentException : There is no 'Rigidbody' attached to the "T07_Module(Clone)" game object, but a script is trying to access it.
+    You probably need to add a Rigidbody to the game object "T07_Module(Clone)". Or your script needs to check if the component is attached before using it.
+01:15:59 FAILED IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority (3.7s)
+    UnityEngine.MissingComponentException : There is no 'Rigidbody' attached to the "T07_Module(Clone)" game object, but a script is trying to access it.
+    You probably need to add a Rigidbody to the game object "T07_Module(Clone)". Or your script needs to check if the component is attached before using it.
+01:15:59 FAILED IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority (3.7s)
+    UnityEngine.MissingComponentException : There is no 'Rigidbody' attached to the "T07_Module(Clone)" game object, but a script is trying to access it.
+    You probably need to add a Rigidbody to the game object "T07_Module(Clone)". Or your script needs to check if the component is attached before using it.
+01:15:59 start IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot
+01:15:59 start IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot
+01:15:59 start IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot
+01:16:02 PASSED IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot (2.4s)
+01:16:02 PASSED IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot (2.4s)
+01:16:02 PASSED IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot (2.4s)
+01:16:02 RUN FINISHED Failed(Child) passed=3 failed=1 skipped=0 inconclusive=0 duration=19.8s
+01:16:02 RUN FINISHED Failed(Child) passed=3 failed=1 skipped=0 inconclusive=0 duration=19.8s
+01:16:02 RUN FINISHED Failed(Child) passed=3 failed=1 skipped=0 inconclusive=0 duration=19.8s
+01:20:10 run started: 249 test(s)
+01:20:11 start IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences
+01:20:18 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences (7.3s)
+01:20:18 start IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind
+01:20:21 PASSED IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind (3.0s)
+01:20:21 start IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority
+01:20:25 PASSED IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority (4.0s)
+01:20:25 start IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot
+01:20:26 PASSED IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot (1.6s)
+01:20:26 RUN FINISHED Passed passed=4 failed=0 skipped=0 inconclusive=0 duration=16.0s
+01:22:32 run started: 249 test(s)
+01:22:32 start IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences
+01:22:39 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsIdleSequenceAndStableReferences (7.1s)
+01:22:39 start IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind
+01:22:42 PASSED IronRequiem.Tests.RobotPortraitTests.B_DamageCriticalHealingPauseDeathAndRebind (3.5s)
+01:22:42 start IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority
+01:22:47 PASSED IronRequiem.Tests.RobotPortraitTests.C_AcceptedShotsExecutionAndOverdrivePriority (4.8s)
+01:22:47 start IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot
+01:22:49 PASSED IronRequiem.Tests.RobotPortraitTests.D_ConfirmedMeleeCollisionReactsButMissDoesNot (2.0s)
+01:22:49 RUN FINISHED Passed passed=4 failed=0 skipped=0 inconclusive=0 duration=17.6s
+08:19:11 run started: 253 test(s)
+08:19:11 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+08:19:17 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (6.3s)
+08:19:17 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+08:19:24 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (6.6s)
+08:19:24 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+08:19:31 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (6.9s)
+08:19:31 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+08:19:33 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.0s)
+08:19:33 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+08:19:37 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (4.2s)
+08:19:37 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+08:20:28 run started: 253 test(s)
+08:20:28 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+08:20:32 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (4.0s)
+08:20:32 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+08:20:39 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (6.5s)
+08:20:39 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+08:20:45 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (6.3s)
+08:20:45 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+08:20:47 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.0s)
+08:20:47 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+08:20:51 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (4.6s)
+08:20:51 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+08:21:03 PASSED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (12.0s)
+08:21:03 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+08:21:14 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (10.4s)
+08:21:14 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+08:21:16 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (1.7s)
+08:21:16 RUN FINISHED Passed passed=8 failed=0 skipped=0 inconclusive=0 duration=47.7s
+08:28:55 run started: 254 test(s)
+08:28:55 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+08:28:55 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+08:29:00 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (4.4s)
+08:29:00 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (4.4s)
+08:29:00 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+08:29:00 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+08:29:06 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (6.7s)
+08:29:06 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (6.7s)
+08:29:06 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+08:29:06 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+08:29:13 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (6.4s)
+08:29:13 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (6.4s)
+08:29:13 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+08:29:13 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+08:29:15 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.1s)
+08:29:15 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.1s)
+08:29:15 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+08:29:15 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+08:29:19 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (4.5s)
+08:29:20 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (4.5s)
+08:29:20 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+08:29:20 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+08:29:30 PASSED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (10.7s)
+08:29:30 PASSED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (10.7s)
+08:29:30 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+08:29:30 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+08:29:41 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (10.5s)
+08:29:41 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (10.5s)
+08:29:41 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+08:29:41 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+08:29:42 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (1.7s)
+08:29:42 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (1.7s)
+08:29:42 start IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+08:29:42 start IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+08:29:47 PASSED IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad (4.5s)
+08:29:47 PASSED IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad (4.5s)
+08:29:47 RUN FINISHED Passed passed=9 failed=0 skipped=0 inconclusive=0 duration=51.8s
+08:29:47 RUN FINISHED Passed passed=9 failed=0 skipped=0 inconclusive=0 duration=51.8s
+08:34:17 run started: 254 test(s)
+08:34:17 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+08:34:21 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (4.2s)
+08:34:21 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+08:34:28 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (6.8s)
+08:34:28 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+08:34:36 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (7.2s)
+08:34:36 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+08:34:37 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.0s)
+08:34:37 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+08:34:42 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (4.4s)
+08:34:42 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+08:34:53 PASSED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (11.5s)
+08:34:53 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+08:35:04 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (10.7s)
+08:35:04 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+08:35:06 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (1.7s)
+08:35:06 start IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+08:35:11 PASSED IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad (4.8s)
+08:35:11 RUN FINISHED Passed passed=9 failed=0 skipped=0 inconclusive=0 duration=53.7s
+11:17:30 run started: 254 test(s)
+11:17:30 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+11:17:40 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (9.4s)
+11:17:40 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+11:17:51 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (10.8s)
+11:17:51 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+11:17:56 FAILED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (5.4s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+11:17:56 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+11:17:59 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.4s)
+11:17:59 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+11:18:05 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (6.4s)
+11:18:05 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+11:18:11 FAILED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (6.0s)
+    Expected: greater than 0.600000024f
+      But was:  0.0f
+11:18:11 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+11:18:24 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (13.1s)
+11:18:24 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+11:18:26 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (2.1s)
+11:18:26 start IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+11:18:32 PASSED IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad (6.2s)
+11:18:33 RUN FINISHED Failed(Child) passed=7 failed=2 skipped=0 inconclusive=0 duration=62.4s
+11:19:52 run started: 254 test(s)
+11:19:52 start IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment
+11:19:59 PASSED IronRequiem.Tests.RobotPortraitTests.A_ImportsAll23AndChecksAlphaResolutionAndAlignment (6.9s)
+11:19:59 start IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier
+11:20:10 PASSED IronRequiem.Tests.RobotPortraitTests.B_HealthThresholdsImpactsAndHealingUseResultingDamageTier (10.9s)
+11:20:10 start IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil
+11:20:20 PASSED IronRequiem.Tests.RobotPortraitTests.C_GameplayYawDirectionsWrapCenterHysteresisAndRecoil (9.3s)
+11:20:20 start IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample
+11:20:23 PASSED IronRequiem.Tests.RobotPortraitTests.D_PauseTeleportCameraSwapAndCinematicResetLookSample (2.9s)
+11:20:23 start IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused
+11:20:28 PASSED IronRequiem.Tests.RobotPortraitTests.E_SparksAreAnimatedBoundedPoseAlignedAndStopWhenHealedOrPaused (5.9s)
+11:20:28 start IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage
+11:20:43 PASSED IronRequiem.Tests.RobotPortraitTests.F_RealFistChargeTurnsCancellationAndConfirmedHeavyImpactPreserveDamage (14.2s)
+11:20:43 start IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage
+11:20:56 PASSED IronRequiem.Tests.RobotPortraitTests.G_ShotsExecutionOverdriveDeathAndRespawnNeverRepairDamage (13.3s)
+11:20:56 start IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations
+11:20:58 PASSED IronRequiem.Tests.RobotPortraitTests.H_SubscriptionsOverlayReuseAndManagedAllocations (2.0s)
+11:20:58 start IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad
+11:21:04 PASSED IronRequiem.Tests.RobotPortraitTests.I_RealLookInputSupportsInversionSensitivityAndVirtualGamepad (6.2s)
+11:21:04 RUN FINISHED Passed passed=9 failed=0 skipped=0 inconclusive=0 duration=72.0s
+13:01:59 run started: 22 test(s)
+13:02:00 start IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose
+13:02:00 PASSED IronRequiem.Tests.HandPoseControllerTests.AnimatedWritesCannotAccumulateIntoTheAbsolutePose (0.1s)
+13:02:00 start IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale
+13:02:00 PASSED IronRequiem.Tests.HandPoseControllerTests.ReversingTheBlendReturnsToNamedPosesWithoutChangingScale (0.0s)
+13:02:00 start IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose
+13:02:00 PASSED IronRequiem.Tests.HandPoseControllerTests.TimelineSamplingDoesNotDependOnFrameTimeOrThePreviousPose (0.0s)
+13:02:00 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=0.8s
+13:03:21 run started: 254 test(s)
+13:03:21 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+13:03:42 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (20.9s)
+13:03:42 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+13:03:55 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (13.0s)
+13:03:55 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:04:10 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (15.0s)
+13:04:10 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+13:04:35 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (24.8s)
+13:04:35 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+13:05:09 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (34.3s)
+13:05:09 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:07:42 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (152.7s)
+13:07:42 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+13:08:03 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (21.1s)
+13:08:03 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+13:09:31 run started: 22 test(s)
+13:09:32 start IronRequiem.Tests.WeaponPivotAssetTests.CannonVisualKeepsThreeLodsAndSharedUrpMaterials
+13:09:32 PASSED IronRequiem.Tests.WeaponPivotAssetTests.CannonVisualKeepsThreeLodsAndSharedUrpMaterials (0.1s)
+13:09:32 start IronRequiem.Tests.WeaponPivotAssetTests.CannonVisualPivotSitsOnRearAttachmentAndFiresAlongPositiveZ
+13:09:32 PASSED IronRequiem.Tests.WeaponPivotAssetTests.CannonVisualPivotSitsOnRearAttachmentAndFiresAlongPositiveZ (0.0s)
+13:09:32 RUN FINISHED Passed passed=2 failed=0 skipped=0 inconclusive=0 duration=0.2s
+13:28:40 run started: 254 test(s)
+13:28:40 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+13:29:01 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (20.7s)
+13:29:01 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+13:29:13 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (11.8s)
+13:29:13 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:29:27 FAILED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (14.2s)
+    SetUp : Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:29:27 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+13:29:56 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (28.8s)
+13:29:56 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+13:30:32 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (36.4s)
+13:30:32 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:30:48 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (15.3s)
+    SetUp : Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:30:48 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+13:31:12 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (24.1s)
+13:31:12 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+13:36:38 run started: 254 test(s)
+13:36:39 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:36:39 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:37:00 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (21.4s)
+13:37:00 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (21.4s)
+13:37:00 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:37:00 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:38:05 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (65.1s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:38:05 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (65.1s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:38:05 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=86.8s
+13:38:05 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=86.8s
+13:44:33 run started: 254 test(s)
+13:44:34 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+13:44:52 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (18.6s)
+13:44:52 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+13:45:03 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (11.1s)
+13:45:03 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:45:24 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (20.4s)
+13:45:24 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+13:45:54 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (30.0s)
+13:45:54 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+13:46:28 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (34.4s)
+13:46:28 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:47:39 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (71.2s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:47:39 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+13:48:03 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (24.0s)
+13:48:03 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+13:48:49 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (45.9s)
+13:48:49 RUN FINISHED Failed(Child) passed=7 failed=1 skipped=0 inconclusive=0 duration=255.8s
+13:50:11 run started: 254 test(s)
+13:50:12 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+13:50:29 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (16.9s)
+13:50:29 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+13:50:44 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (15.2s)
+13:50:44 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+13:51:06 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (22.7s)
+13:51:06 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+13:51:35 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (28.1s)
+13:51:35 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+13:52:06 FAILED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (31.5s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:52:06 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+13:52:46 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (40.1s)
+    Unhandled log message: '[Exception] IOException: Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\VisualOverhaul\heartbeat.txt'. Use UnityEngine.TestTools.LogAssert.Expect
+13:52:46 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+13:53:07 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (21.4s)
+13:53:08 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+13:53:47 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (39.1s)
+13:53:47 RUN FINISHED Failed(Child) passed=6 failed=2 skipped=0 inconclusive=0 duration=215.4s
+13:59:25 run started: 254 test(s)
+13:59:25 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+13:59:46 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (21.1s)
+13:59:46 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+13:59:58 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (12.3s)
+13:59:58 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+14:00:15 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (17.0s)
+14:00:15 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+14:00:42 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (26.6s)
+14:00:42 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+14:01:12 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (30.0s)
+14:01:12 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+14:12:29 run started: 254 test(s)
+14:12:29 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+14:13:02 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (33.2s)
+14:13:02 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+14:13:16 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (13.4s)
+14:13:16 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+14:13:41 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (24.7s)
+14:13:41 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+14:14:09 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (28.2s)
+14:14:09 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+14:14:35 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (26.5s)
+14:14:35 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+14:17:11 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (156.0s)
+14:17:11 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+14:17:34 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (22.9s)
+14:17:34 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+14:18:14 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (39.5s)
+14:18:14 RUN FINISHED Passed passed=8 failed=0 skipped=0 inconclusive=0 duration=344.7s
+14:39:02 run started: 254 test(s)
+14:39:02 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+14:39:24 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (21.5s)
+14:39:24 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+14:39:40 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (16.1s)
+14:39:40 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+14:40:01 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (21.4s)
+14:40:01 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+14:40:28 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (26.7s)
+14:40:28 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+14:40:58 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (30.0s)
+14:40:58 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+14:43:25 FAILED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (147.2s)
+    Approach shifted pursuit gap stage=6 player=(0.00, 8.00, 264.25)
+      Expected: True
+      But was:  False
+14:43:25 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+14:43:48 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (23.1s)
+14:43:48 start IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge
+14:44:27 PASSED IronRequiem.Tests.HangarIntroPresentationTests.FullCinematicAndKeyboardSkipsConverge (39.2s)
+14:44:27 RUN FINISHED Failed(Child) passed=7 failed=1 skipped=0 inconclusive=0 duration=325.7s
+17:57:14 run started: 254 test(s)
+17:57:14 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+17:57:14 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+18:00:02 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (167.8s)
+18:00:02 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (167.8s)
+18:00:02 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=168.2s
+18:00:02 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=168.2s
+18:01:07 run started: 254 test(s)
+18:01:08 start IronRequiem.Tests.ThermalHudRepairTests.AllCombatLabsHaveVisibleBoundHud
+18:01:26 PASSED IronRequiem.Tests.ThermalHudRepairTests.AllCombatLabsHaveVisibleBoundHud (17.8s)
+18:01:26 start IronRequiem.Tests.ThermalHudRepairTests.AutomaticFireHeatCoolingAndWeaponSwitch
+18:01:40 PASSED IronRequiem.Tests.ThermalHudRepairTests.AutomaticFireHeatCoolingAndWeaponSwitch (14.3s)
+18:01:40 start IronRequiem.Tests.ThermalHudRepairTests.ExtendedHeatAndShotgunWithoutAmmo
+18:02:02 PASSED IronRequiem.Tests.ThermalHudRepairTests.ExtendedHeatAndShotgunWithoutAmmo (22.3s)
+18:02:02 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=54.8s
+23:48:21 run started: 256 test(s)
+23:48:21 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+23:48:41 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (20.0s)
+23:48:41 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+23:48:44 FAILED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (3.5s)
+    System.NullReferenceException : Object reference not set to an instance of an object
+23:48:44 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=23.8s
+23:49:19 run started: 256 test(s)
+23:49:19 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+23:49:32 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (12.8s)
+23:49:32 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+23:49:36 FAILED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (3.9s)
+    System.NullReferenceException : Object reference not set to an instance of an object
+23:49:36 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=16.9s
+23:55:50 run started: 256 test(s)
+23:55:50 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+23:56:02 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (11.5s)
+23:56:02 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+23:56:05 FAILED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (3.1s)
+    System.NullReferenceException : Object reference not set to an instance of an object
+23:56:05 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=14.9s
+23:56:35 run started: 256 test(s)
+23:56:35 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+23:56:48 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (12.4s)
+23:56:48 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+23:56:51 FAILED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (3.3s)
+    System.NullReferenceException : Object reference not set to an instance of an object
+23:56:51 RUN FINISHED Failed(Child) passed=1 failed=1 skipped=0 inconclusive=0 duration=15.9s
+00:25:50 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (16.9s)
+00:25:50 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+00:25:59 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (9.4s)
+00:25:59 RUN FINISHED Passed passed=2 failed=0 skipped=0 inconclusive=0 duration=27.3s
+00:30:35 run started: 257 test(s)
+00:30:36 start IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch
+00:30:48 PASSED IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch (11.4s)
+00:30:48 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+00:30:57 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (9.4s)
+00:30:57 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+00:31:07 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (10.0s)
+00:31:07 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=31.4s
+00:32:31 run started: 257 test(s)
+00:32:32 start IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch
+00:32:43 PASSED IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch (10.9s)
+00:32:43 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+00:32:53 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (10.4s)
+00:32:53 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+00:33:02 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (9.0s)
+00:33:02 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=30.7s
+01:09:41 run started: 257 test(s)
+01:09:41 start IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch
+01:09:53 PASSED IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch (11.6s)
+01:09:53 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+01:10:01 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (8.7s)
+01:10:01 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+01:10:09 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (7.9s)
+01:10:09 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=28.7s
+01:12:50 run started: 257 test(s)
+01:12:51 start IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch
+01:13:04 PASSED IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch (12.7s)
+01:13:04 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+01:13:13 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (9.1s)
+01:13:13 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+01:13:21 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (8.1s)
+01:13:21 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=30.3s
+02:24:58 run started: 257 test(s)
+02:24:59 start IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch
+02:25:15 PASSED IronRequiem.Tests.ProtagonistV02Tests.V02HandsUseRigidMeshesPoseLibrariesAndPunch (15.8s)
+02:25:15 start IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment
+02:25:23 PASSED IronRequiem.Tests.WeaponsRedesignTests.ArmCannonAndPrimaryRedesignMountByAttachment (8.7s)
+02:25:23 start IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges
+02:25:32 PASSED IronRequiem.Tests.WeaponsRedesignTests.T07RedesignCannonSeatsOnSocketAndCharges (8.5s)
+02:25:32 RUN FINISHED Passed passed=3 failed=0 skipped=0 inconclusive=0 duration=33.4s
+02:45:16 run started: 260 test(s)
+02:45:17 start IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks
+02:46:50 FAILED IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks (93.3s)
+    r02-breach round1 stage=3 player=(0.00, 8.00, -4.00)
+02:46:50 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=93.5s
+02:48:24 run started: 260 test(s)
+02:48:25 start IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks
+02:50:55 FAILED IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks (150.4s)
+    Rounds complete stage=3 player=(0.00, 8.00, 7.68)
+02:50:55 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=150.6s
+02:52:27 run started: 260 test(s)
+02:52:27 start IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks
+02:54:57 PASSED IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks (150.4s)
+02:54:57 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=150.6s
+02:55:38 run started: 260 test(s)
+02:55:38 start IronRequiem.Tests.MapFxAudit.B_FightEffectsAndProfiler
+02:56:28 PASSED IronRequiem.Tests.MapFxAudit.B_FightEffectsAndProfiler (49.8s)
+02:56:28 start IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03
+02:57:43 PASSED IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03 (75.4s)
+02:57:43 RUN FINISHED Passed passed=2 failed=0 skipped=0 inconclusive=0 duration=125.5s
+02:59:46 run started: 261 test(s)
+02:59:46 start IronRequiem.Tests.MapFxAudit.D_SectorVolumeWeightOverTime
+03:00:27 PASSED IronRequiem.Tests.MapFxAudit.D_SectorVolumeWeightOverTime (40.6s)
+03:00:27 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=40.9s
+03:31:25 run started: 261 test(s)
+03:31:25 start IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons
+03:31:47 PASSED IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons (21.8s)
+03:31:47 start IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks
+03:32:02 PASSED IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks (14.7s)
+03:32:02 start IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom
+03:32:24 PASSED IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom (22.5s)
+03:32:24 start IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+03:32:51 PASSED IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne (26.5s)
+03:32:51 start IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud
+03:33:22 PASSED IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud (31.2s)
+03:33:22 start IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit
+03:35:40 PASSED IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit (138.2s)
+03:35:40 start IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast
+03:36:02 PASSED IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast (21.7s)
+03:36:02 start IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks
+03:37:34 FAILED IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks (92.2s)
+    r02-breach round3 stage=3 player=(0.00, 8.00, 7.61)
+03:37:34 start IronRequiem.Tests.MapFxAudit.B_FightEffectsAndProfiler
+03:38:17 PASSED IronRequiem.Tests.MapFxAudit.B_FightEffectsAndProfiler (42.6s)
+03:38:17 start IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03
+03:39:32 PASSED IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03 (75.0s)
+03:39:32 start IronRequiem.Tests.MapFxAudit.D_SectorVolumeWeightOverTime
+03:40:08 PASSED IronRequiem.Tests.MapFxAudit.D_SectorVolumeWeightOverTime (36.2s)
+03:40:08 start IronRequiem.Tests.MenuWeaponRegressionTests.BaselineCapture
+03:40:12 PASSED IronRequiem.Tests.MenuWeaponRegressionTests.BaselineCapture (3.4s)
+03:40:12 start IronRequiem.Tests.MenuWeaponRegressionTests.BigBotThrowVisibleLodsAndRecollect
+03:40:16 PASSED IronRequiem.Tests.MenuWeaponRegressionTests.BigBotThrowVisibleLodsAndRecollect (4.6s)
+03:40:16 start IronRequiem.Tests.MenuWeaponRegressionTests.MenuMusicSensitivityAndPauseFit
+03:40:21 PASSED IronRequiem.Tests.MenuWeaponRegressionTests.MenuMusicSensitivityAndPauseFit (5.0s)
+03:40:21 start IronRequiem.Tests.ThermalMenuTests.EscapePauseInputAndSettings
+03:40:25 FAILED IronRequiem.Tests.ThermalMenuTests.EscapePauseInputAndSettings (3.8s)
+    Expected: False
+      But was:  True
+03:40:25 start IronRequiem.Tests.ThermalMenuTests.HeatAcceptedShotsLockAndRecovery
+03:40:37 PASSED IronRequiem.Tests.ThermalMenuTests.HeatAcceptedShotsLockAndRecovery (12.3s)
+03:40:37 start IronRequiem.Tests.ThermalMenuTests.IndependentHeatAndHudAcrossSwitches
+03:40:44 PASSED IronRequiem.Tests.ThermalMenuTests.IndependentHeatAndHudAcrossSwitches (6.8s)
+03:40:44 start IronRequiem.Tests.ThermalMenuTests.IntroNavigationPersistenceAndPlayFlow
+03:40:48 FAILED IronRequiem.Tests.ThermalMenuTests.IntroNavigationPersistenceAndPlayFlow (4.0s)
+    Expected string length 18 but was 9. Strings differ at index 0.
+      Expected: "CombatTwoFloorsLab"
+      But was:  "IntroMenu"
+      -----------^
+03:40:48 start IronRequiem.Tests.ThermalMenuTests.NativeChargePelletsAndAutomaticInput
+03:40:51 PASSED IronRequiem.Tests.ThermalMenuTests.NativeChargePelletsAndAutomaticInput (2.6s)
+03:40:51 start IronRequiem.Tests.ThermalMenuTests.TwoFloorsLabOpenedDirectlyKeepsItsMenu
+03:40:56 PASSED IronRequiem.Tests.ThermalMenuTests.TwoFloorsLabOpenedDirectlyKeepsItsMenu (5.2s)
+03:40:56 RUN FINISHED Failed(Child) passed=17 failed=3 skipped=0 inconclusive=0 duration=570.7s
+03:42:43 run started: 261 test(s)
+03:42:44 start IronRequiem.Tests.ThermalMenuTests.EscapePauseInputAndSettings
+03:42:50 FAILED IronRequiem.Tests.ThermalMenuTests.EscapePauseInputAndSettings (6.1s)
+    Expected: False
+      But was:  True
+03:42:50 start IronRequiem.Tests.ThermalMenuTests.IntroNavigationPersistenceAndPlayFlow
+03:42:54 FAILED IronRequiem.Tests.ThermalMenuTests.IntroNavigationPersistenceAndPlayFlow (4.5s)
+    Expected string length 18 but was 9. Strings differ at index 0.
+      Expected: "CombatTwoFloorsLab"
+      But was:  "IntroMenu"
+      -----------^
+03:42:54 RUN FINISHED Failed(Child) passed=0 failed=2 skipped=0 inconclusive=0 duration=10.8s
+03:45:38 run started: 261 test(s)
+03:45:38 start IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks
+03:48:08 PASSED IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks (149.5s)
+03:48:08 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=149.8s
+10:54:11 run started: 262 test(s)
+10:54:11 start IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay
+10:54:21 PASSED IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay (9.8s)
+10:54:21 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=9.9s
+10:54:52 run started: 262 test(s)
+10:54:52 start IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay
+10:55:02 PASSED IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay (9.4s)
+10:55:02 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=9.6s
+11:00:36 run started: 263 test(s)
+11:00:36 start IronRequiem.Tests.MapFxAudit.E_DoorStatesAndInventory
+11:01:36 PASSED IronRequiem.Tests.MapFxAudit.E_DoorStatesAndInventory (59.6s)
+11:01:36 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=59.7s
+11:18:48 run started: 264 test(s)
+11:18:48 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:19:25 FAILED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (37.5s)
+    load Room01_Foundry stage=0 player=(0.00, -0.02, -31.00)
+11:19:25 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=37.6s
+11:21:02 run started: 264 test(s)
+11:21:03 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:21:40 FAILED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (37.1s)
+    load Room01_Foundry stage=0 player=(-0.78, 0.00, -107.93)
+11:21:40 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=37.3s
+11:23:21 run started: 264 test(s)
+11:23:21 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:23:31 PASSED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (10.0s)
+11:23:31 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=10.2s
+11:24:34 run started: 264 test(s)
+11:24:34 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:24:43 PASSED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (8.6s)
+11:24:43 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=8.7s
+11:25:42 run started: 264 test(s)
+11:25:42 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:25:51 PASSED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (8.8s)
+11:25:51 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=8.9s
+11:26:49 run started: 264 test(s)
+11:26:49 start IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay
+11:27:02 PASSED IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay (12.3s)
+11:27:02 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=12.5s
+11:30:57 run started: 264 test(s)
+11:30:57 start IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay
+11:31:10 PASSED IronRequiem.Tests.ProtectedMenuReference.MenuConveyorExplosionAndPlay (12.6s)
+11:31:10 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=12.7s
+11:51:34 run started: 264 test(s)
+11:51:34 PASSED ProyectoGameFinal (0.0s)
+11:51:34 RUN FINISHED Passed passed=0 failed=0 skipped=0 inconclusive=0 duration=0.0s
+11:54:09 run started: 264 test(s)
+11:54:09 start IronRequiem.Tests.MapFxAudit.F_CollisionSuspects
+11:54:20 PASSED IronRequiem.Tests.MapFxAudit.F_CollisionSuspects (10.2s)
+11:54:20 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=10.4s
+12:01:25 run started: 265 test(s)
+12:01:25 start IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter
+12:02:05 PASSED IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter (39.8s)
+12:02:05 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=40.0s
+12:03:18 run started: 265 test(s)
+12:03:18 start IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter
+12:06:19 FAILED IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter (180.4s)
+    Timeout value of 180000 ms was exceeded. If this is intended, increase the timeout value using a TimeoutAttribute.
+12:06:19 RUN FINISHED Failed(Child) passed=0 failed=1 skipped=0 inconclusive=0 duration=180.6s
+12:07:42 run started: 265 test(s)
+12:07:42 start IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter
+12:14:45 run started: 265 test(s)
+12:14:46 start IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter
+12:15:39 PASSED IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter (53.3s)
+12:15:39 RUN FINISHED Passed passed=1 failed=0 skipped=0 inconclusive=0 duration=53.6s
+12:17:42 run started: 267 test(s)
+12:17:42 PASSED ProyectoGameFinal (0.0s)
+12:17:42 RUN FINISHED Passed passed=0 failed=0 skipped=0 inconclusive=0 duration=0.0s
+12:20:28 run started: 267 test(s)
+12:20:28 start IronRequiem.Tests.MapFxAudit.H_HangarPostAfterCinematic
+12:20:38 PASSED IronRequiem.Tests.MapFxAudit.H_HangarPostAfterCinematic (9.8s)
+12:20:38 start IronRequiem.Tests.MapFxAudit.I_BurstPoolPerPrefab
+12:20:44 PASSED IronRequiem.Tests.MapFxAudit.I_BurstPoolPerPrefab (6.6s)
+12:20:44 RUN FINISHED Passed passed=2 failed=0 skipped=0 inconclusive=0 duration=16.5s
+12:21:32 run started: 267 test(s)
+12:21:32 start IronRequiem.Tests.BigBotDestructionTests.CloseCameraRendersEveryApproachAngle
+12:21:38 PASSED IronRequiem.Tests.BigBotDestructionTests.CloseCameraRendersEveryApproachAngle (6.3s)
+12:21:38 start IronRequiem.Tests.BigBotDestructionTests.EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence
+12:21:48 PASSED IronRequiem.Tests.BigBotDestructionTests.EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence (10.1s)
+12:21:48 start IronRequiem.Tests.BigBotDestructionTests.EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack
+12:21:53 PASSED IronRequiem.Tests.BigBotDestructionTests.EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack (4.2s)
+12:21:53 start IronRequiem.Tests.BigBotDestructionTests.GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods
+12:21:54 PASSED IronRequiem.Tests.BigBotDestructionTests.GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods (1.8s)
+12:21:54 start IronRequiem.Tests.BigBotDestructionTests.HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup
+12:21:59 PASSED IronRequiem.Tests.BigBotDestructionTests.HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup (4.7s)
+12:21:59 start IronRequiem.Tests.BigBotDestructionTests.LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion
+12:22:01 FAILED IronRequiem.Tests.BigBotDestructionTests.LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion (2.1s)
+    Expected: 0
+      But was:  1
+12:22:01 start IronRequiem.Tests.BigBotDestructionTests.MassiveDamageCrossesThreeStagesWithoutDuplicateDrop
+12:22:03 PASSED IronRequiem.Tests.BigBotDestructionTests.MassiveDamageCrossesThreeStagesWithoutDuplicateDrop (1.8s)
+12:22:03 start IronRequiem.Tests.BigBotDestructionTests.MountsStayAttachedAndCriticalSparksAreVisible
+12:22:07 PASSED IronRequiem.Tests.BigBotDestructionTests.MountsStayAttachedAndCriticalSparksAreVisible (3.9s)
+12:22:07 start IronRequiem.Tests.BigBotDestructionTests.SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse
+12:22:09 FAILED IronRequiem.Tests.BigBotDestructionTests.SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse (2.5s)
+    System.NullReferenceException : Object reference not set to an instance of an object
+12:22:09 start IronRequiem.Tests.BigBotDestructionTests.TurnStepsFollowAngularDistance
+12:22:18 PASSED IronRequiem.Tests.BigBotDestructionTests.TurnStepsFollowAngularDistance (8.6s)
+12:22:18 start IronRequiem.Tests.CombatPolishTests.BigBotDeathVisualSequence
+12:22:22 PASSED IronRequiem.Tests.CombatPolishTests.BigBotDeathVisualSequence (4.1s)
+12:22:22 start IronRequiem.Tests.CombatPolishTests.ConcurrentInventoryDiagnosis

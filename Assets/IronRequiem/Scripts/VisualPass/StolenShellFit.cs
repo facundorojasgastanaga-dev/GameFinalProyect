@@ -18,6 +18,9 @@ namespace IronRequiem
         [SerializeField] Vector3 startOffset = new Vector3(.06f, .14f, .38f);
         [SerializeField] Vector3 startEuler = new Vector3(-28f, 18f, 45f);
         [SerializeField] Material sparkMaterial;
+        [Tooltip("Optional IR-ACOPLE-01 rear socket (the module's 'Attachment'). When set it replaces the bounds-based rear and uses socketOverlap.")]
+        [SerializeField] Transform rearSocket;
+        [SerializeField, Min(0)] float socketOverlap = .003f;
         ProtagonistHandsPresentation hands;
         Vector3 rearLocal; bool measured; Vector3 baseScale;
         float t = 1; bool locked = true;
@@ -45,6 +48,7 @@ namespace IronRequiem
         // Rear-centre of all shell meshes in shell-local space (one-time).
         void Measure()
         {
+            if (rearSocket) { rearLocal = transform.InverseTransformPoint(rearSocket.position); overlap = socketOverlap; measured = true; return; }
             bool any = false; var b = new Bounds();
             foreach (var mf in GetComponentsInChildren<MeshFilter>(true))
             {

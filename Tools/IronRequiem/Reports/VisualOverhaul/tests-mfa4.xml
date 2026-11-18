@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.6073278">
+  <test-suite type="TestSuite" id="1319" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="260" result="Failed" site="Child" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.607328" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1313" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="260" result="Failed" site="Child" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.488040" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="21268" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1314" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="260" result="Failed" site="Child" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.481608" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="260" result="Failed" site="Child" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.475189" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.452083" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1130" name="A_RouteCapturesAndMapChecks" fullname="IronRequiem.Tests.MapFxAudit.A_RouteCapturesAndMapChecks" methodname="A_RouteCapturesAndMapChecks" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="400397807" result="Failed" start-time="2026-11-17 06:48:25Z" end-time="2026-11-17 06:50:55Z" duration="150.362378" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Rounds complete stage=3 player=(0.00, 8.00, 7.68)]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MapFxAudit+<Until>d__33.MoveNext () [0x000a9] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MapFxAudit.cs:358
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 3641.0 ms · door+preload 0 / activate 3641 / unload 0 / settle 327 · peak at frame 2/5 load 0.90
+Error after 4 attempt(s): Unknown -  -- Result type: PointsBalanceResult -- Url: https://generators.ai.unity.com -- Trace Id b7236c0f-f8f6-47fc-8129-c191168c8cbe => 
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 245.4 ms · door+preload 245 / activate 31 / unload 63 / settle 18 · peak at frame 65/181 load 0.90
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 65.6 ms · door+preload 20 / activate 26 / unload 66 / settle 15 · peak at frame 176/280 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 197.8 ms · door+preload 198 / activate 30 / unload 114 / settle 14 · peak at frame 1/321 load 0.90
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Failed A_RouteCapturesAndMapChecks
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

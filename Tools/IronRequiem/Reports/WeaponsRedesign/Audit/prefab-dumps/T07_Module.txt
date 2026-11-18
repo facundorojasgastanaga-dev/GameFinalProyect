@@ -1,0 +1,65 @@
+﻿## Assets/IronRequiem/Prefabs/FastCombat/T07_Module.prefab
+GO 193162640952293477 "LOD2" active=1
+  TR 8677284845515298803 of "LOD2" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7250931027529661127
+  MeshFilter on "LOD2" enabled=- mesh=T07_LOD2.fbx:-152258326040024105
+  MeshRenderer on "LOD2" enabled=1 mats=Hit_T07_URP_f8f0f1.mat
+GO 774616307481994916 "LOD1" active=1
+  TR 2845412357819384751 of "LOD1" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7250931027529661127
+  MeshFilter on "LOD1" enabled=- mesh=T07_LOD1.fbx:-3359157635121927426
+  MeshRenderer on "LOD1" enabled=1 mats=Hit_T07_URP_f8f0f1.mat
+GO 4280095565955400352 "CriticalSmoke" active=1
+  TR 7471033823550628348 of "CriticalSmoke" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 1, y: 1, z: 1} father=7250931027529661127
+GO 4602903935376961691 "T07_Module" active=1
+  TR 7250931027529661127 of "T07_Module" pos={x: 0, y: 0, z: 0} rot={x: 0, y: 0, z: 0, w: 1} scale={x: 100, y: 99.999985, z: 99.999985} father=0
+  MeshFilter on "T07_Module" enabled=- mesh=T07_LOD0.fbx:3142104124961020913
+  MeshRenderer on "T07_Module" enabled=1 mats=Hit_T07_URP_f8f0f1.mat
+  MB CannonAmmo on "T07_Module"
+     capacity: 100
+  MB CannonOverdrive on "T07_Module"
+     criticalThreshold: 0.2
+     criticalGraceDuration: 5
+     smoke: {fileID: 8176607729430713317}
+     activationSound: {fileID: 8300000, guid: 25722734eeccba042a18e26e376ca542, type: 3}
+     warningColor: {r: 1, g: 0.16, b: 0.025, a: 1}
+  MB DamageArea on "T07_Module"
+     AreaOfEffectDistance: 4.5
+     DamageRatioOverDistance:
+     serializedVersion: 2
+     m_Curve:
+     - serializedVersion: 3
+     time: 0
+     value: 1
+     inSlope: 0
+     outSlope: -0.75
+     tangentMode: 0
+     weightedMode: 0
+     inWeight: 0
+     outWeight: 0
+     - serializedVersion: 3
+     time: 1
+     value: 0.25
+     inSlope: -0.75
+     outSlope: 0
+     tangentMode: 0
+     weightedMode: 0
+     inWeight: 0
+     outWeight: 0
+     m_PreInfinity: 2
+     m_PostInfinity: 2
+     m_RotationOrder: 4
+     RespectObstacles: 0
+     IgnoreOwner: 0
+     IgnoreSameAffiliation: 0
+     ObstructionLayers:
+     serializedVersion: 2
+     m_Bits: 4294967295
+     AreaOfEffectColor: {r: 0.5, g: 0, b: 0, a: 0.5}
+  MB CannonExplosion on "T07_Module"
+     damage: 100
+     backupFuse: 6
+     impactEffect: {fileID: 5642977348784074747, guid: 00ee1e781abfa524284fb43e2d802733,
+     type: 3}
+  MB StolenCannon on "T07_Module"
+     weaponPrefab: {fileID: 5207751266837051423, guid: 94fdc33a2ae1e6347ad9c2303d2d6b82,
+     type: 3}
+     pickupDelay: 0.3

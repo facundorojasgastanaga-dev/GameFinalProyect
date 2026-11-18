@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.626731">
+  <test-suite type="TestSuite" id="1325" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="265" result="Failed" site="Child" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.626731" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1319" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="265" result="Failed" site="Child" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.576231" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="45896" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1320" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="265" result="Failed" site="Child" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.559568" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="265" result="Failed" site="Child" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.543914" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1129" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.514167" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1136" name="G_RoomFixesBeforeAfter" fullname="IronRequiem.Tests.MapFxAudit.G_RoomFixesBeforeAfter" methodname="G_RoomFixesBeforeAfter" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1377003148" result="Failed" start-time="2026-11-17 16:03:18Z" end-time="2026-11-17 16:06:19Z" duration="180.432499" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Timeout value of 180000 ms was exceeded. If this is intended, increase the timeout value using a TimeoutAttribute.]]></message>
+                <stack-trace><![CDATA[]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 3413.2 ms · door+preload 0 / activate 3413 / unload 0 / settle 471 · peak at frame 2/5 load 0.90
+[CampaignTests] Failed G_RoomFixesBeforeAfter
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

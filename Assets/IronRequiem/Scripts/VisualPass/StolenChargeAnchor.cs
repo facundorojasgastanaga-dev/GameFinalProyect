@@ -14,6 +14,8 @@ namespace IronRequiem
     {
         [SerializeField] Transform shell;
         [SerializeField] Transform muzzle;
+        [Tooltip("Optional IR-ACOPLE-01 mouth socket of the shell (the module's 'Muzzle'). When set it replaces the bounds-based front.")]
+        [SerializeField] Transform mouthSocket;
         [SerializeField, Min(0)] float forwardOffset = .015f;
         [SerializeField, Min(0)] float vibration = .0035f;
         [SerializeField, Range(0, .2f)] float swell = .05f;
@@ -34,6 +36,7 @@ namespace IronRequiem
         // Front-centre of the shell meshes in shell-local space (one-time).
         void Measure()
         {
+            if (mouthSocket) { mouthLocal = shell.InverseTransformPoint(mouthSocket.position); measured = true; return; }
             bool any = false; var b = new Bounds();
             foreach (var mf in shell.GetComponentsInChildren<MeshFilter>(true))
             {
