@@ -1,0 +1,147 @@
+{
+  "id": "C05",
+  "from": "R05",
+  "to": "R06",
+  "class": "Z",
+  "axis": "+x",
+  "worldCenter": [
+    119.5,
+    -12,
+    133
+  ],
+  "aabbSize": [
+    15,
+    9,
+    14
+  ],
+  "chamberInterior": [
+    12,
+    8,
+    10
+  ],
+  "floorY": -12,
+  "sourceDoor": {
+    "center": [
+      112.0,
+      -12,
+      133
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "destinationDoor": {
+    "center": [
+      127.0,
+      -12,
+      133
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "trigger": {
+    "center": [
+      119.5,
+      -8.0,
+      133
+    ],
+    "size": [
+      10,
+      8,
+      10
+    ]
+  },
+  "lightAnchors": [
+    {
+      "id": "C05.CY1",
+      "kind": "ceiling",
+      "pos": [
+        116.5,
+        -4.2,
+        133
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Doors"
+    },
+    {
+      "id": "C05.CY2",
+      "kind": "ceiling",
+      "pos": [
+        122.5,
+        -4.2,
+        133
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Doors"
+    },
+    {
+      "id": "C05.FILL",
+      "kind": "wall",
+      "pos": [
+        119.5,
+        -7.5,
+        128.1
+      ],
+      "normal": [
+        0.0,
+        0,
+        1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "steamVents": [
+    {
+      "id": "C05.SV1",
+      "pos": [
+        117.5,
+        -11.5,
+        137.9
+      ]
+    },
+    {
+      "id": "C05.SV2",
+      "pos": [
+        121.5,
+        -11.5,
+        128.1
+      ]
+    }
+  ],
+  "sessionStart": {
+    "station": {
+      "min": [
+        117.5,
+        -12,
+        134
+      ],
+      "max": [
+        121.5,
+        -9,
+        138
+      ]
+    },
+    "playerStart": [
+      115.5,
+      -12,
+      131
+    ],
+    "playerYaw": 90
+  }
+}

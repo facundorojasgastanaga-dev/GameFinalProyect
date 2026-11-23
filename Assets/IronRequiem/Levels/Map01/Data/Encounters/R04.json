@@ -1,0 +1,79 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R04",
+  "kind": "rounds",
+  "archetype": "E2",
+  "title": "R04 · COMEDOR · 3 RONDAS",
+  "arenaTitle": "COMEDOR",
+  "seed": 404,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "SawBot solo",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Motosierra contra horda",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Mixta",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -8,
+        0,
+        -12
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        -18,
+        4.5,
+        18
+      ]
+    }
+  ],
+  "notes": "B1.2. Presentación del SAW con bucle alrededor de la isla."
+}

@@ -26,7 +26,9 @@ namespace IronRequiem
             var cam = Camera.main;
             float near = cam ? Mathf.Clamp01(1 - Vector3.Distance(cam.transform.position, transform.position) / shakeRadius) : 0;
             if (near <= 0) return;
-            GameFeel.HitStop(hitStop * Mathf.Lerp(.5f, 1, near));
+            // Executions v02: an executed robot dies inside the execution's own hit-stop budget (the player side owns it).
+            var execution = GetComponent<EnemyExecutionSource>();
+            if (!(execution && (execution.Delivered || execution.InExecution))) GameFeel.HitStop(hitStop * Mathf.Lerp(.5f, 1, near));
             DistanceCameraImpulse.Emit(transform.position, shakeRadius, shakeStrength, shakeSeconds);
             DistanceCameraImpulse.Kick(cam, kick * near, new Vector3(0, -.03f * near, 0));
         }

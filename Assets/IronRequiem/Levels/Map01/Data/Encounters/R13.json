@@ -1,0 +1,50 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R13",
+  "kind": "respite",
+  "archetype": "E0",
+  "title": "R13 · SALA DE BOMBAS · ZONA SEGURA",
+  "release": {
+    "mode": "OnEnterVolume",
+    "volume": {
+      "min": [
+        -4,
+        0,
+        8
+      ],
+      "max": [
+        4,
+        4,
+        14
+      ]
+    },
+    "delay": 0
+  },
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        13,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        13,
+        3,
+        -4
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        2,
+        0,
+        -8
+      ]
+    }
+  ],
+  "notes": "Respiro, fin de S2 (Map01SessionHandoff de R4 en C13)."
+}

@@ -1,0 +1,51 @@
+<!doctype html><meta charset="utf-8"><title>Controles A</title><style>:root{--cyan:#1fd1e8;--orange:#ff9933;--steel:#d1dbe5;--text:#e0f0f0;--dim:#8fa8b0;--danger:#ff4d33;--bg:#020406;--panel:#081019;--rim:#1a6b7a;--rest:#050a0d;--restrim:#1a474f}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(#0b1620,#020406);color:var(--text);font:14px/1.3 Consolas,"Courier New",monospace;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.panel{width:1100px;background:var(--panel);border:2px solid var(--rim);box-shadow:0 0 0 1px #000,inset 0 0 40px #000a;position:relative;padding:22px 26px}
+.panel:before,.panel:after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--orange)}
+.panel:before{top:-2px;left:-2px;border-right:0;border-bottom:0}
+.panel:after{bottom:-2px;right:-2px;border-left:0;border-top:0}
+h1{margin:0 0 4px;font-size:22px;letter-spacing:.2em;color:var(--steel)}
+.sub{color:var(--dim);font-size:12px;margin-bottom:14px}
+.tabs{display:flex;gap:6px;margin-bottom:14px}
+.tab{padding:6px 16px;background:var(--rest);border:1px solid var(--restrim);color:var(--dim);letter-spacing:.12em}
+.tab.on{border-color:var(--orange);color:#ffe6c7;background:#170a03}
+.key{display:inline-block;min-width:46px;text-align:center;padding:5px 10px;background:#04080b;border:1px solid var(--restrim);color:var(--cyan);letter-spacing:.06em;border-radius:2px}
+.key.wait{border-color:var(--orange);color:var(--orange);animation:b 1s infinite}
+.key.fix{color:var(--dim);border-style:dashed}
+@keyframes b{50%{opacity:.4}}
+.row{display:flex;align-items:center;gap:10px;padding:6px 8px;border:1px solid transparent;border-bottom-color:#0f2a30}
+.row.sel{border-color:var(--orange);background:#120904}
+.row .n{flex:1;color:var(--text)}
+.row .n small{display:block;color:var(--dim);font-size:11px}
+.cat{color:var(--orange);letter-spacing:.2em;font-size:12px;margin:12px 0 4px}
+.btn{padding:7px 16px;background:var(--rest);border:1px solid var(--restrim);color:#c7dbe0;letter-spacing:.14em}
+.btn.hot{border-color:var(--orange);background:#170a03;color:#ffe6c7}
+.bar{display:flex;gap:10px;justify-content:space-between;margin-top:16px;align-items:center}
+.warn{border:1px solid var(--danger);background:#1a0804;color:#ffb3a6;padding:8px 12px;margin:10px 0}
+.foot{color:var(--dim);font-size:11px}
+</style>
+<style>.cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 36px}</style>
+<div class="panel"><h1>CONTROLES</h1><div class="sub">Clic en una casilla y pulsa la nueva tecla · Esc cancela · Esc y P (pausa) son fijas</div>
+<div class="tabs"><div class="tab on">TECLADO Y RATÓN</div><div class="tab">MANDO</div><div class="tab">AJUSTES</div></div>
+<div class="cols">
+<div><div class="cat">MOVIMIENTO</div>
+<div class="row"><div class="n">Avanzar</div><span class="key">W</span><span class="key">↑</span></div>
+<div class="row"><div class="n">Retroceder</div><span class="key">S</span><span class="key">↓</span></div>
+<div class="row"><div class="n">Izquierda</div><span class="key">A</span><span class="key">←</span></div>
+<div class="row"><div class="n">Derecha</div><span class="key">D</span><span class="key">→</span></div>
+<div class="row"><div class="n">Saltar</div><span class="key">ESPACIO</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Dash <small>en el aire; comparte tecla con Saltar</small></div><span class="key">ESPACIO</span><span class="key">M5</span></div>
+<div class="row"><div class="n">Sprint</div><span class="key">SHIFT</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Agacharse / Slide</div><span class="key">C</span><span class="key">M4</span></div></div>
+<div><div class="cat">COMBATE</div>
+<div class="row"><div class="n">Disparar</div><span class="key">CLIC IZQ.</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Apuntar</div><span class="key">CLIC DER.</span><span class="key fix">—</span></div>
+<div class="row sel"><div class="n">Golpe / carga</div><span class="key wait">PULSA UNA TECLA…</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Interactuar <small>ejecutar · recoger · estación</small></div><span class="key">E</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Expulsar arma</div><span class="key">G</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Arma siguiente</div><span class="key">RUEDA ↓</span><span class="key fix">—</span></div>
+<div class="row"><div class="n">Arma anterior</div><span class="key">Q</span><span class="key">RUEDA ↑</span></div>
+<div class="row"><div class="n">Armas 1–9</div><span class="key">1</span><span class="key">…</span></div>
+<div class="row"><div class="n">Recargar</div><span class="key">R</span><span class="key fix">—</span></div></div></div>
+<div class="bar"><div class="btn">RESTABLECER TODO</div><div class="foot">Los cambios se guardan al instante</div><div class="btn hot">VOLVER</div></div></div>

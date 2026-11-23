@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.9799354">
+  <test-suite type="TestSuite" id="1474" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.979935" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1468" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.936476" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1469" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.922704" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1175" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.906310" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1331" name="SlidePistolMainTests" fullname="IronRequiem.Tests.SlidePistolMainTests" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:49:05Z" duration="20.872133" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1332" name="OriginalPistolModelShootsThroughNativeInput" fullname="IronRequiem.Tests.SlidePistolMainTests.OriginalPistolModelShootsThroughNativeInput" methodname="OriginalPistolModelShootsThroughNativeInput" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="25190353" result="Passed" start-time="2026-11-23 06:48:44Z" end-time="2026-11-23 06:48:50Z" duration="5.467529" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed OriginalPistolModelShootsThroughNativeInput
+]]></output>
+            </test-case>
+            <test-case id="1333" name="PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" fullname="IronRequiem.Tests.SlidePistolMainTests.PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" methodname="PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="58983942" result="Passed" start-time="2026-11-23 06:48:50Z" end-time="2026-11-23 06:48:56Z" duration="5.923541" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PistolHasNoTemplateEnergyLoopsBeforeAndAfterFire
+]]></output>
+            </test-case>
+            <test-case id="1335" name="ShiftAndCStartsSlideMovesAndReturnsToStanding" fullname="IronRequiem.Tests.SlidePistolMainTests.ShiftAndCStartsSlideMovesAndReturnsToStanding" methodname="ShiftAndCStartsSlideMovesAndReturnsToStanding" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="337973093" result="Passed" start-time="2026-11-23 06:48:56Z" end-time="2026-11-23 06:48:59Z" duration="3.254166" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ShiftAndCStartsSlideMovesAndReturnsToStanding
+]]></output>
+            </test-case>
+            <test-case id="1334" name="SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" fullname="IronRequiem.Tests.SlidePistolMainTests.SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" methodname="SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="1027482078" result="Failed" start-time="2026-11-23 06:48:59Z" end-time="2026-11-23 06:49:03Z" duration="3.616091" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.SlidePistolMainTests+<SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob>d__12.MoveNext () [0x002ae] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\SlidePistolMainTests.cs:90
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed SlideKeepsWeaponSteadyAllowsAimAndFireThenRestoresWalkingBob
+]]></output>
+            </test-case>
+            <test-case id="1336" name="StationaryCrouchAndJumpDuringSlideKeepNativeControls" fullname="IronRequiem.Tests.SlidePistolMainTests.StationaryCrouchAndJumpDuringSlideKeepNativeControls" methodname="StationaryCrouchAndJumpDuringSlideKeepNativeControls" classname="IronRequiem.Tests.SlidePistolMainTests" runstate="Runnable" seed="1032384271" result="Passed" start-time="2026-11-23 06:49:03Z" end-time="2026-11-23 06:49:05Z" duration="2.529300" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed StationaryCrouchAndJumpDuringSlideKeepNativeControls
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

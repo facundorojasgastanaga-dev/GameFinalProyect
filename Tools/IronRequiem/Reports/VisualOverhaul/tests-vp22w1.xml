@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.7500168">
+  <test-suite type="TestSuite" id="1433" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.750017" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1427" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.704018" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1428" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.694193" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.677516" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1139" name="Map01F2Tests" fullname="IronRequiem.Tests.Map01F2Tests" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.648524" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Category" value="Map01F2" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1144" name="SessionTraversal" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:30:34Z" duration="158.640246" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="1500000" />
+              </properties>
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1140" name="SessionTraversal(0)" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal(0)" methodname="SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="15691189" result="Failed" start-time="2026-11-21 06:27:55Z" end-time="2026-11-21 06:27:59Z" duration="4.461686" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Room00_Hangar: respite without Map01StageRelease (soft-lock)
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at IronRequiem.Tests.Map01F2Tests+<SessionTraversal>d__6.MoveNext () [0x00768] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\Map01F2Tests.cs:84
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Map01Test] Map01_Campaign_S1: 6 etapas, 5 esclusas
+[Campaign] transition to Room00_Hangar (preload) peak frame 3143.4 ms · door+preload 0 / activate 3143 / unload 0 / settle 416 · peak at frame 2/5 load 0.90
+[CampaignTests] Failed SessionTraversal(0)
+]]></output>
+              </test-case>
+              <test-case id="1141" name="SessionTraversal(1)" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal(1)" methodname="SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="369615529" result="Passed" start-time="2026-11-21 06:27:59Z" end-time="2026-11-21 06:29:29Z" duration="89.092022" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[[Map01Test] Map01_Campaign_S2: 8 etapas, 7 esclusas
+[Campaign] transition to Map01_R06_Armeria (preload) peak frame 2048.1 ms · door+preload 0 / activate 2048 / unload 0 / settle 62 · peak at frame 2/53 load 0.90
+[Map01Test]   Map01_R06_Armeria: rondas completadas, 17 bajas, 4.4 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R07_Comunicaciones (preload) peak frame 75.5 ms · door+preload 21 / activate 30 / unload 75 / settle 17 · peak at frame 148/403 load 1.00
+[Map01Test]   esclusa C06: transición en 5.4 s
+[Map01Test]   Map01_R07_Comunicaciones: rondas completadas, 33 bajas, 10.0 s, reposicionamientos por espera 0
+[Map01Test]     5 persianas abiertas al terminar
+[Campaign] transition to Map01_R08_Almacenes (preload) peak frame 71.0 ms · door+preload 20 / activate 26 / unload 71 / settle 17 · peak at frame 132/622 load 1.00
+[Map01Test]   esclusa C07: transición en 8.9 s
+[Map01Test]   Map01_R08_Almacenes: rondas completadas, 16 bajas, 10.0 s, reposicionamientos por espera 5
+[Map01Test]     1 persianas abiertas al terminar
+[Campaign] transition to Map01_R09_Taquillas (preload) peak frame 44.2 ms · door+preload 20 / activate 36 / unload 44 / settle 14 · peak at frame 159/394 load 1.00
+[Map01Test]   esclusa C08: transición en 4.9 s
+[Map01Test]   Map01_R09_Taquillas: respiro liberado
+[Campaign] transition to Map01_R10_TunelTrituradora (preload) peak frame 63.9 ms · door+preload 20 / activate 26 / unload 64 / settle 22 · peak at frame 206/353 load 1.00
+[Map01Test]   esclusa C09: transición en 3.1 s
+[Map01Test]   Map01_R10_TunelTrituradora: persecución completada
+[Campaign] transition to Map01_R11_Decantadores (preload) peak frame 59.7 ms · door+preload 20 / activate 30 / unload 60 / settle 25 · peak at frame 161/293 load 1.00
+[Map01Test]   esclusa C10: transición en 3.1 s
+[Map01Test]   Map01_R11_Decantadores: rondas completadas, 26 bajas, 6.5 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R12_Colector (preload) peak frame 63.9 ms · door+preload 20 / activate 30 / unload 64 / settle 14 · peak at frame 163/626 load 1.00
+[Map01Test]   esclusa C11: transición en 8.9 s
+[Map01Test]   Map01_R12_Colector: rondas completadas, 23 bajas, 6.8 s, reposicionamientos por espera 0
+[Map01Test]     1 persianas abiertas al terminar
+[Campaign] transition to Map01_R13_SalaBombas (preload) peak frame 42.2 ms · door+preload 20 / activate 27 / unload 42 / settle 14 · peak at frame 182/559 load 1.00
+[Map01Test]   esclusa C12: transición en 7.2 s
+[Map01Test]   Map01_R13_SalaBombas: respiro liberado
+[Map01Test]   → Map01_Campaign_S3 cargada
+[CampaignTests] Passed SessionTraversal(1)
+]]></output>
+              </test-case>
+              <test-case id="1142" name="SessionTraversal(2)" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal(2)" methodname="SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="1357291540" result="Passed" start-time="2026-11-21 06:29:29Z" end-time="2026-11-21 06:30:19Z" duration="50.247904" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[[Map01Test] Map01_Campaign_S3: 4 etapas, 3 esclusas
+[Campaign] transition to Map01_R14_Fundicion (preload) peak frame 2536.0 ms · door+preload 0 / activate 2536 / unload 0 / settle 60 · peak at frame 2/95 load 0.90
+[Map01Test]   Map01_R14_Fundicion: rondas completadas, 22 bajas, 5.6 s, reposicionamientos por espera 0
+[Map01Test]     1 persianas abiertas al terminar
+[Campaign] transition to Map01_R15_Ensamblaje (preload) peak frame 67.4 ms · door+preload 20 / activate 28 / unload 67 / settle 13 · peak at frame 170/520 load 1.00
+[Map01Test]   esclusa C14: transición en 7.3 s
+[Map01Test]   Map01_R15_Ensamblaje: rondas completadas, 26 bajas, 7.1 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R16_Reactor (preload) peak frame 62.6 ms · door+preload 20 / activate 28 / unload 63 / settle 12 · peak at frame 162/571 load 1.00
+[Map01Test]   esclusa C15: transición en 8.0 s
+[Map01Test]   Map01_R16_Reactor: rondas completadas, 21 bajas, 5.5 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R17_CentroMando (preload) peak frame 47.4 ms · door+preload 20 / activate 36 / unload 47 / settle 14 · peak at frame 171/452 load 1.00
+[Map01Test]   esclusa C16: transición en 6.0 s
+[Map01Test]   Map01_R17_CentroMando: respiro liberado
+[Map01Test]     1 persianas abiertas al terminar
+[Map01Test]   → Map01_Campaign_S4 cargada
+[CampaignTests] Passed SessionTraversal(2)
+]]></output>
+              </test-case>
+              <test-case id="1143" name="SessionTraversal(3)" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal(3)" methodname="SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="543191950" result="Passed" start-time="2026-11-21 06:30:19Z" end-time="2026-11-21 06:30:34Z" duration="14.778438" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[[Map01Test] Map01_Campaign_S4: 1 etapas, 0 esclusas
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Map01_R18_Boveda (preload) peak frame 2023.2 ms · door+preload 0 / activate 2023 / unload 0 / settle 82 · peak at frame 2/90 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Map01Test]   Map01_R18_Boveda: rondas completadas, 14 bajas, 3.7 s, reposicionamientos por espera 0
+[Map01Test]     1 persianas abiertas al terminar
+[Map01Test]   → WinScene cargada
+[CampaignTests] Passed SessionTraversal(3)
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

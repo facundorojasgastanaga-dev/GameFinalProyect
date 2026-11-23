@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 22:38:38Z" end-time="2026-11-22 22:38:53Z" duration="14.9218433">
+  <test-suite type="TestSuite" id="1464" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="383" result="Failed" site="Child" start-time="2026-11-22 22:38:38Z" end-time="2026-11-22 22:38:53Z" duration="14.921843" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1458" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="383" result="Failed" site="Child" start-time="2026-11-22 22:38:39Z" end-time="2026-11-22 22:38:53Z" duration="14.659890" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1459" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="383" result="Failed" site="Child" start-time="2026-11-22 22:38:39Z" end-time="2026-11-22 22:38:53Z" duration="14.646504" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+        <test-suite type="SetUpFixture" id="1167" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="383" result="Failed" site="Child" start-time="2026-11-22 22:38:39Z" end-time="2026-11-22 22:38:53Z" duration="14.624601" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1148" name="ExecutionsV02Tests" fullname="IronRequiem.Tests.ExecutionsV02Tests" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-22 22:38:39Z" end-time="2026-11-22 22:38:53Z" duration="14.592436" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1154" name="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" fullname="IronRequiem.Tests.ExecutionsV02Tests.BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" methodname="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="2118245307" result="Failed" start-time="2026-11-22 22:38:39Z" end-time="2026-11-22 22:38:53Z" duration="14.401158" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  no forced camera turn
+  Expected: less than or equal to 1.5f
+  But was:  1.5050298f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests+<BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn>d__54.MoveNext () [0x0019e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:314
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+ExecutionReaction bones -> BigBot BigBot_Current: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction diag BigBot_Current(Clone): chestApplied=8.17 deg, weight=1.00, lean=1.52, arm=10.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Current: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Failed BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

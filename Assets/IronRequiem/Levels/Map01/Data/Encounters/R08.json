@@ -1,0 +1,181 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R08",
+  "kind": "rounds",
+  "archetype": "E3",
+  "title": "R08 · ALMACENES · 3 RONDAS",
+  "arenaTitle": "ALMACENES",
+  "seed": 808,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "BS2",
+    "BS3",
+    "BS4"
+  ],
+  "waves": [
+    {
+      "name": "Yunque",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1,
+          "fixed": {
+            "zone": "BS1"
+          }
+        },
+        {
+          "enemy": "T07",
+          "count": 1,
+          "fixed": {
+            "zone": "G1",
+            "near": [
+              -21,
+              4,
+              -6
+            ]
+          }
+        },
+        {
+          "enemy": "T07",
+          "count": 1,
+          "fixed": {
+            "zone": "G4",
+            "near": [
+              11,
+              0,
+              14
+            ]
+          }
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Blindados",
+      "groups": [
+        {
+          "enemy": "T07M",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Tanque y apoyo",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ],
+      "variations": [
+        {
+          "name": "Apoyo",
+          "groups": [
+            {
+              "enemy": "BIG",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Blindado",
+          "groups": [
+            {
+              "enemy": "BIG",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "T07M",
+              "count": 1
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        5,
+        4,
+        24
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        -2,
+        0,
+        8
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -12,
+        0,
+        -14
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        20,
+        0,
+        -10
+      ]
+    }
+  ],
+  "notes": "B1.2. Presentación del BIG (BS1, a 46 m de la llegada) y del T07M. [R0] precalentar FX_BigBot_Blast_v4."
+}

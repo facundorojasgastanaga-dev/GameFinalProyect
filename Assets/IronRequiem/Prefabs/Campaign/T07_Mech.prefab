@@ -14670,6 +14670,13 @@ GameObject:
   - component: {fileID: 4911746529617071719}
   - component: {fileID: 4212692887596507700}
   - component: {fileID: 2687639242784211553}
+  - component: {fileID: 2334977962139691190}
+  - component: {fileID: 427002563063638685}
+  - component: {fileID: 431682081156848257}
+  - component: {fileID: 2514423064591717047}
+  - component: {fileID: 7257619528143136198}
+  - component: {fileID: 3149301646495478402}
+  - component: {fileID: 3198424638978434284}
   m_Layer: 0
   m_Name: T07_Mech
   m_TagString: Untagged
@@ -15551,6 +15558,122 @@ MonoBehaviour:
   shakeStrength: 0.9
   shakeSeconds: 0.45
   kick: {x: -2.2, y: 0, z: 1.2}
+--- !u!114 &2334977962139691190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516e2b25c225b4d44a4571636a9c6018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionPullIn
+  probeRadius: 0.35
+  wallMargin: 0.05
+  playerMargin: 0.25
+  footReleaseSeconds: 0.25
+--- !u!114 &427002563063638685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ab320ad34f3d34696b25391cffa2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionReaction
+  defaultStiffness: 22
+  defaultDamping: 0.5
+--- !u!114 &431682081156848257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d952f2778a8ee66448582301e000e5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionWeaponDetach
+--- !u!114 &2514423064591717047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddabd26fefa04c34f82591480ca33f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionLocalFlash
+  pulseSeconds: 0.09
+  intensity: 2.5
+  pulseColor: {r: 1, g: 0.62, b: 0.25, a: 1}
+  radius: 0.45
+--- !u!114 &7257619528143136198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04535d650a670a4a99274b202f45cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionHealthBarHider
+--- !u!114 &3149301646495478402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdcb16351e82e34bb88ee60f00cbcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionRobotAudio
+  clamp: {fileID: 8300000, guid: 1e3902dcf4cd936428b81d5888084209, type: 3}
+  mountLock: {fileID: 8300000, guid: ba800dd29b20a2c448867153b98f7501, type: 3}
+  fistImpact: {fileID: 8300000, guid: 088b867dc162b00438e57d4e357d6ba6, type: 3}
+  deflect: {fileID: 8300000, guid: bb02aac734ff1c04e8604829240f25f0, type: 3}
+  blast: {fileID: 8300000, guid: 6fee8a1072b4e2f48b6f37adfd1f2ceb, type: 3}
+  tear: {fileID: 8300000, guid: d16000a95e82a10459b37291c63075ee, type: 3}
+  spark: {fileID: 8300000, guid: 54fe84651e7b23e45912353e55899ec3, type: 3}
+  footMetal: {fileID: 8300000, guid: a6fe0231bbc040844aed01051fae9bb1, type: 3}
+  hydraulic: {fileID: 8300000, guid: b0b3806b083474e41afb507d1c7a6dc7, type: 3}
+  cannonArm: {fileID: 8300000, guid: 8eae77e03d48c0f45b9f678677ee93c1, type: 3}
+  creak: {fileID: 8300000, guid: bbc3aee2f458d224fbe1130e70ea47fa, type: 3}
+  subBoom: {fileID: 8300000, guid: 384837044338977498ed4c0a489c4c26, type: 3}
+  motorLoop: {fileID: 8300000, guid: 91c8c0f494e6783409590c575ef663e7, type: 3}
+  jump: {fileID: 8300000, guid: 13b59a14d34add64d84a623867546ff1, type: 3}
+  land: {fileID: 8300000, guid: d0f1afed8fa916244af6ca73579ded67, type: 3}
+  masterVolume: 1
+  robotMinDistance: 3
+--- !u!114 &3198424638978434284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141836593533486647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29210ec6a2ea17542b9ea1d4fe641d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: IronRequiem.Runtime::IronRequiem.ExecutionDebrisGuard
+  windowSeconds: 0.45
+  searchRadius: 8
+  minimumDistance: 1.2
+  outwardPush: 1.2
+  downwardPush: 0.5
 --- !u!1 &4157682168198080854
 GameObject:
   m_ObjectHideFlags: 0

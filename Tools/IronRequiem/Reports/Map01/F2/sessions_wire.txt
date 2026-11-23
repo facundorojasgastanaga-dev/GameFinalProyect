@@ -1,0 +1,35 @@
+Map01 Sessions/2 Wire sessions · 2026-11-18 17:09
+  a0 reactivada: PersistentAirlocks/HangarTransit/ConnectionChamber (0 hermanos desactivados uno a uno; el resto sigue inactivo)
+  airlocks[0] = a0/ChamberAirlock (sourceStage 0): ChamberHangarDoor → ChamberCorridorDoor + extras [VestibuleShutter, S00/DestinationDoor]
+  airlocks[1] = C01 (sourceStage 1)
+  airlocks[2] = C02 (sourceStage 2)
+  airlocks[3] = C03 (sourceStage 3)
+  airlocks[4] = C04 (sourceStage 4)
+  player en (1.50, 0.03, -67.00) mirando a DestinationDoor (yaw 352)
+  S1: espera la cinemática en S00; HangarIntroCinematic lo lleva al StandPoint al terminar
+  estación en (-4.00, 0.00, -64.00) (rotación del marcador Station)
+  handoff C05 → Map01_Campaign_S2
+== Map01_Campaign_S1: stageScenes = [Room00_Hangar, Map01_R01_ControlAcceso, Map01_R02_PozoMontacargas, Map01_R03_Dormitorios, Map01_R04_Comedor, Map01_R05_Enfermeria] · airlocks = 5 · prologueStages = 1 · initialDoor = null (lo libera la cinemática del hangar)
+  airlocks[0] = C06 (sourceStage 0)
+  airlocks[1] = C07 (sourceStage 1)
+  airlocks[2] = C08 (sourceStage 2)
+  airlocks[3] = C09 (sourceStage 3)
+  airlocks[4] = C10 (sourceStage 4)
+  airlocks[5] = C11 (sourceStage 5)
+  airlocks[6] = C12 (sourceStage 6)
+  player en (115.50, -11.97, 131.00) mirando a DestinationDoor (yaw 79)
+  estación en (119.50, -12.00, 136.00) (rotación del marcador Station)
+  handoff C13 → Map01_Campaign_S3
+== Map01_Campaign_S2: stageScenes = [Map01_R06_Armeria, Map01_R07_Comunicaciones, Map01_R08_Almacenes, Map01_R09_Taquillas, Map01_R10_TunelTrituradora, Map01_R11_Decantadores, Map01_R12_Colector, Map01_R13_SalaBombas] · airlocks = 7 · prologueStages = 0 · initialDoor = C05/DestinationDoor
+  airlocks[0] = C14 (sourceStage 0)
+  airlocks[1] = C15 (sourceStage 1)
+  airlocks[2] = C16 (sourceStage 2)
+  player en (233.00, -27.97, 406.50) mirando a DestinationDoor (yaw 11)
+  estación en (238.00, -28.00, 410.50) (rotación del marcador Station)
+  handoff C17 → Map01_Campaign_S4
+== Map01_Campaign_S3: stageScenes = [Map01_R14_Fundicion, Map01_R15_Ensamblaje, Map01_R16_Reactor, Map01_R17_CentroMando] · airlocks = 3 · prologueStages = 0 · initialDoor = C13/DestinationDoor
+  player en (255.00, -36.97, 674.50) mirando a DestinationDoor (yaw 11)
+  estación en (260.00, -37.00, 678.50) (rotación del marcador Station)
+  fin de mapa: Map01_SessionEnd → WinScene a los 5 s
+== Map01_Campaign_S4: stageScenes = [Map01_R18_Boveda] · airlocks = 0 · prologueStages = 0 · initialDoor = C17/DestinationDoor
+OK

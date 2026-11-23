@@ -1,0 +1,14 @@
+T07 (Assets/IronRequiem/Prefabs/Campaign/T07_Current_Repaired.prefab) executed with real E; 60 Hz fixed; frames every 2 (144 sampled).
+impacts 2, deaths 1 at 0.750 s (game time); grip (-0.02, 31.52, -6.30); robot root moved destroyed
+busy (M1/F/1/2/G locked) ends at frame 49 = 0.817 s real; hands disarm ends at 1.167 s; scripted move / Big Bot sequence ends at 0.017 s real
+hand beats: yank 0.340 s, wind-up 0.520 s, strike 0.732 s
+events:
+  0.017 audio Wind Ambience vol 1.00 group Ambient
+  0.017 audio IR_Combat01_Loop vol 0.00 group Music
+  0.017 audio IR_Combat01_Explore vol 0.80 group Music
+  0.017 audio Hoverbot_Movement vol 0.75 group EnemyMovement
+  0.367 impact #1 at (-0.02, 31.52, -6.30)
+  0.367 audio Damage_Tick2 vol 1.00 group DamageTick
+  0.750 impact #2 at (0.00, 31.25, -5.98)
+  0.750 death #1
+  1.033 audio Hoverbot_Death vol 0.80 group EnemyDeath

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Passed" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.8990356">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.899036" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.421748" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.384419" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.371047" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1025" name="BigBotCombatTests" fullname="IronRequiem.Tests.BigBotCombatTests" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-23 01:45:49Z" end-time="2026-11-23 01:46:42Z" duration="52.336885" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1034" name="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" fullname="IronRequiem.Tests.BigBotCombatTests.DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" methodname="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1038037321" result="Passed" start-time="2026-11-23 01:45:50Z" end-time="2026-11-23 01:45:58Z" duration="8.398903" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce
+]]></output>
+            </test-case>
+            <test-case id="1030" name="DetectsPursuesAndRespectsLargeBodyAroundCover" fullname="IronRequiem.Tests.BigBotCombatTests.DetectsPursuesAndRespectsLargeBodyAroundCover" methodname="DetectsPursuesAndRespectsLargeBodyAroundCover" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="75631963" result="Passed" start-time="2026-11-23 01:45:58Z" end-time="2026-11-23 01:46:09Z" duration="11.293038" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DetectsPursuesAndRespectsLargeBodyAroundCover
+]]></output>
+            </test-case>
+            <test-case id="1028" name="HealthBarTracksDamageAndPlayerBlocksMovingBody" fullname="IronRequiem.Tests.BigBotCombatTests.HealthBarTracksDamageAndPlayerBlocksMovingBody" methodname="HealthBarTracksDamageAndPlayerBlocksMovingBody" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="766267383" result="Passed" start-time="2026-11-23 01:46:09Z" end-time="2026-11-23 01:46:14Z" duration="4.822722" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed HealthBarTracksDamageAndPlayerBlocksMovingBody
+]]></output>
+            </test-case>
+            <test-case id="1031" name="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" fullname="IronRequiem.Tests.BigBotCombatTests.LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" methodname="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="544447344" result="Passed" start-time="2026-11-23 01:46:14Z" end-time="2026-11-23 01:46:17Z" duration="2.673578" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind
+]]></output>
+            </test-case>
+            <test-case id="1029" name="OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" fullname="IronRequiem.Tests.BigBotCombatTests.OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" methodname="OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="440300502" result="Passed" start-time="2026-11-23 01:46:17Z" end-time="2026-11-23 01:46:25Z" duration="8.494889" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist
+]]></output>
+            </test-case>
+            <test-case id="1032" name="PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" fullname="IronRequiem.Tests.BigBotCombatTests.PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" methodname="PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="51665060" result="Passed" start-time="2026-11-23 01:46:25Z" end-time="2026-11-23 01:46:28Z" duration="2.603545" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner
+]]></output>
+            </test-case>
+            <test-case id="1026" name="PlayerContactRegressionProbe" fullname="IronRequiem.Tests.BigBotCombatTests.PlayerContactRegressionProbe" methodname="PlayerContactRegressionProbe" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="226211668" result="Passed" start-time="2026-11-23 01:46:28Z" end-time="2026-11-23 01:46:31Z" duration="3.373850" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PlayerContactRegressionProbe
+]]></output>
+            </test-case>
+            <test-case id="1035" name="PlayerProjectileCanDamageBigBotThroughExistingDamageable" fullname="IronRequiem.Tests.BigBotCombatTests.PlayerProjectileCanDamageBigBotThroughExistingDamageable" methodname="PlayerProjectileCanDamageBigBotThroughExistingDamageable" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="966731817" result="Passed" start-time="2026-11-23 01:46:31Z" end-time="2026-11-23 01:46:33Z" duration="1.319323" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PlayerProjectileCanDamageBigBotThroughExistingDamageable
+]]></output>
+            </test-case>
+            <test-case id="1033" name="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" fullname="IronRequiem.Tests.BigBotCombatTests.ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" methodname="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="954751726" result="Passed" start-time="2026-11-23 01:46:33Z" end-time="2026-11-23 01:46:40Z" duration="6.948172" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge
+]]></output>
+            </test-case>
+            <test-case id="1027" name="VariantReferencesLargeNavigationAndBlockedDetection" fullname="IronRequiem.Tests.BigBotCombatTests.VariantReferencesLargeNavigationAndBlockedDetection" methodname="VariantReferencesLargeNavigationAndBlockedDetection" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="521359452" result="Passed" start-time="2026-11-23 01:46:40Z" end-time="2026-11-23 01:46:42Z" duration="2.007747" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed VariantReferencesLargeNavigationAndBlockedDetection
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,207 @@
+{
+  "room": "R18",
+  "zone": "Boveda",
+  "tramo": 3,
+  "exposureEV": 0.6,
+  "environment": {
+    "sky": [
+      0.702,
+      0.756,
+      0.864
+    ],
+    "equator": [
+      0.486,
+      0.513,
+      0.594
+    ],
+    "ground": [
+      0.297,
+      0.27,
+      0.27
+    ],
+    "ambientIntensity": 1,
+    "reflectionIntensity": 1.1,
+    "fogColor": [
+      0.12,
+      0.13,
+      0.16
+    ],
+    "fogDensity": 0.0049
+  },
+  "lights": [
+    {
+      "anchor": "R18.A1",
+      "lum": "LUM-16",
+      "kind": "P",
+      "color": [
+        0.75,
+        0.82,
+        1
+      ],
+      "intensity": 171,
+      "range": 32,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "arena",
+      "role": "ambient",
+      "expectPos": [
+        -18,
+        22,
+        11.5
+      ]
+    },
+    {
+      "anchor": "R18.A2",
+      "lum": "LUM-16",
+      "kind": "P",
+      "color": [
+        0.75,
+        0.82,
+        1
+      ],
+      "intensity": 171,
+      "range": 32,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "arena",
+      "role": "ambient",
+      "expectPos": [
+        18,
+        22,
+        11.5
+      ]
+    },
+    {
+      "anchor": "R18.A3",
+      "lum": "LUM-16",
+      "kind": "S",
+      "color": [
+        0.75,
+        0.82,
+        1
+      ],
+      "intensity": 180.5,
+      "range": 36,
+      "shadow": true,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "arena",
+      "role": "ambient",
+      "spot": 80,
+      "expectPos": [
+        0,
+        22,
+        -6
+      ]
+    },
+    {
+      "anchor": "R18.A4",
+      "lum": "LUM-16",
+      "kind": "S",
+      "color": [
+        0.75,
+        0.82,
+        1
+      ],
+      "intensity": 180.5,
+      "range": 36,
+      "shadow": true,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "arena",
+      "role": "ambient",
+      "spot": 80,
+      "expectPos": [
+        0,
+        22,
+        29
+      ]
+    },
+    {
+      "anchor": "R18.A5",
+      "lum": "LUM-05",
+      "kind": "P",
+      "color": [
+        1,
+        0.08,
+        0.04
+      ],
+      "intensity": 0,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "red",
+      "group": "fase",
+      "role": "phase"
+    },
+    {
+      "anchor": "R18.A6",
+      "lum": "LUM-05",
+      "kind": "P",
+      "color": [
+        1,
+        0.08,
+        0.04
+      ],
+      "intensity": 0,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "red",
+      "group": "fase",
+      "role": "phase"
+    },
+    {
+      "anchor": "R18.A7",
+      "lum": "LUM-06",
+      "kind": "P",
+      "color": [
+        0.75,
+        0.85,
+        1
+      ],
+      "intensity": 76,
+      "range": 22,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "jefe",
+      "role": "landmark"
+    }
+  ],
+  "probes": [
+    {
+      "center": [
+        0,
+        6,
+        -37.5
+      ],
+      "size": [
+        18,
+        14,
+        22
+      ]
+    },
+    {
+      "center": [
+        0,
+        10,
+        11.5
+      ],
+      "size": [
+        74,
+        24,
+        74
+      ]
+    }
+  ]
+}

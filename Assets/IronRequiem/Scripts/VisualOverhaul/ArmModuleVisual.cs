@@ -59,6 +59,12 @@ namespace IronRequiem
         Vector3[] followerBasePos, cellBase, followerWrittenPos, cellWritten; Quaternion[] followerBaseRot, followerWrittenRot;
         bool following;
         PlayerWeaponsManager.WeaponSwitchState lastState = PlayerWeaponsManager.WeaponSwitchState.Down;
+        // Arms-fix (19/11/2026): PlayerWeaponsManager now reverses a switch that is interrupted (e.g. E pickup while this
+        // module docks) instead of restarting it. A module that never docked does not replay unlock/vent/steam, and
+        // the pose it had is carried into the reversed phase and faded out, so it never jumps.
+        bool wasMine, carryPending; float carryStart = -1;
+        Vector3 carryPos, carryDeltaPos; Quaternion carryRot = Quaternion.identity, carryDeltaRot = Quaternion.identity;
+        const float CarrySpan = .3f; // phase progress over which the carried pose fades out
 
         public void Configure(Transform root, Transform[] jointPlates, Renderer[] lights, Renderer[] rings, AudioSource source, AudioClip unlock, AudioClip dock, AudioClip vent, ParticleSystem steam)
         { moduleRoot = root; joints = jointPlates; sequenceLights = lights; firingRings = rings; audioSource = source; unlockClip = unlock; dockClip = dock; ventClip = vent; unlockSteam = steam; }
@@ -112,11 +118,39 @@ namespace IronRequiem
             if (!manager || !moduleRoot) { ApplyRings(); return; }
             var state = manager.SwitchState; float t = manager.SwitchPhaseProgress;
             bool mine = manager.GetActiveWeapon() == weapon;
-            if (state != lastState) { if (state == PlayerWeaponsManager.WeaponSwitchState.PutDownPrevious) unlocked = false; if (state == PlayerWeaponsManager.WeaponSwitchState.PutUpNew) docked = false; lastState = state; }
+            if (state != lastState)
+            {
+                // reversed on this module (same weapon, phase flipped): carry the current pose into the new phase
+                bool reversed = mine && wasMine && posed && IsPhase(state) && IsPhase(lastState);
+                if (state == PlayerWeaponsManager.WeaponSwitchState.PutDownPrevious)
+                    unlocked = reversed && lastState == PlayerWeaponsManager.WeaponSwitchState.PutUpNew && !docked; // never locked: nothing to unlock
+                if (state == PlayerWeaponsManager.WeaponSwitchState.PutUpNew) docked = false;
+                if (reversed) { carryPos = moduleRoot.localPosition; carryRot = moduleRoot.localRotation; carryStart = t; carryPending = true; }
+                else carryStart = -1;
+                lastState = state;
+            }
+            wasMine = mine;
             if (mine && state == PlayerWeaponsManager.WeaponSwitchState.PutDownPrevious) Eject(t);
             else if (mine && state == PlayerWeaponsManager.WeaponSwitchState.PutUpNew) Dock(t);
-            else if (posed) Rest();
+            else if (posed) { carryStart = -1; Rest(); }
             ApplyRings();
+        }
+
+        static bool IsPhase(PlayerWeaponsManager.WeaponSwitchState s) =>
+            s == PlayerWeaponsManager.WeaponSwitchState.PutDownPrevious || s == PlayerWeaponsManager.WeaponSwitchState.PutUpNew;
+
+        // Writes the phase pose, plus the fading difference to the pose the module had when its phase was reversed.
+        void PoseModule(Vector3 position, Quaternion rotation, float t)
+        {
+            if (carryStart >= 0)
+            {
+                if (carryPending) { carryPending = false; carryDeltaPos = carryPos - position; carryDeltaRot = carryRot * Quaternion.Inverse(rotation); }
+                float span = Mathf.Max(.001f, Mathf.Min(CarrySpan, 1 - carryStart)); // always faded out by the phase end
+                float w = 1 - Smooth(Mathf.Clamp01((t - carryStart) / span));
+                position += carryDeltaPos * w; rotation = Quaternion.Slerp(Quaternion.identity, carryDeltaRot, w) * rotation;
+                if (w <= 0) carryStart = -1;
+            }
+            moduleRoot.localPosition = position; moduleRoot.localRotation = rotation;
         }
 
         void Eject(float t)
@@ -129,8 +163,8 @@ namespace IronRequiem
             // Lock: a short shudder in place; then a small pull off the port followed by the exit arc.
             float shudder = lockT < 1 ? Mathf.Sin(lockT * 60f) * .0025f * (1 - lockT) : 0;
             var pull = new Vector3(0, -.015f, -.04f) * Smooth(Mathf.Clamp01(u * 3));
-            moduleRoot.localPosition = restPosition + new Vector3(shudder, 0, 0) + pull + ejectOffset * e;
-            moduleRoot.localRotation = restRotation * Quaternion.Slerp(Quaternion.identity, Quaternion.Euler(ejectEuler), e);
+            PoseModule(restPosition + new Vector3(shudder, 0, 0) + pull + ejectOffset * e,
+                restRotation * Quaternion.Slerp(Quaternion.identity, Quaternion.Euler(ejectEuler), e), t);
             Follow(Smooth(lockT));                                       // tubes retract into the body during the lock
         }
 
@@ -138,8 +172,8 @@ namespace IronRequiem
         {
             posed = true;
             float u = Mathf.Clamp01(t / .7f), k = EaseOutBack(u);
-            moduleRoot.localPosition = restPosition + insertOffset * (1 - k);
-            moduleRoot.localRotation = restRotation * Quaternion.SlerpUnclamped(Quaternion.Euler(insertEuler), Quaternion.identity, k);
+            PoseModule(restPosition + insertOffset * (1 - k),
+                restRotation * Quaternion.SlerpUnclamped(Quaternion.Euler(insertEuler), Quaternion.identity, k), t);
             Follow(1 - Smooth(Mathf.Clamp01((t - .62f) / .3f)));         // tubes come out as the module docks
             SetJoints(t < .7f ? 1 : 1 - Smooth(Mathf.Clamp01((t - .7f) / .12f)));
             if (t >= .7f && !docked)

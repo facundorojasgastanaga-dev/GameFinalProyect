@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 01:05:20Z" end-time="2026-11-23 01:05:36Z" duration="15.4979493">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 01:05:20Z" end-time="2026-11-23 01:05:36Z" duration="15.497949" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 01:05:21Z" end-time="2026-11-23 01:05:36Z" duration="15.165931" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 01:05:21Z" end-time="2026-11-23 01:05:36Z" duration="15.152894" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 01:05:21Z" end-time="2026-11-23 01:05:36Z" duration="15.144031" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1152" name="ExecutionsV02Tests" fullname="IronRequiem.Tests.ExecutionsV02Tests" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-23 01:05:21Z" end-time="2026-11-23 01:05:36Z" duration="15.115386" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1158" name="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" fullname="IronRequiem.Tests.ExecutionsV02Tests.BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" methodname="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="812581306" result="Failed" start-time="2026-11-23 01:05:21Z" end-time="2026-11-23 01:05:36Z" duration="14.868633" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  no forced camera turn
+  Expected: less than or equal to 1.5f
+  But was:  1.66173124f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests+<BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn>d__61.MoveNext () [0x00744] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:377
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Failed BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

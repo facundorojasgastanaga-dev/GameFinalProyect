@@ -98,9 +98,15 @@ namespace IronRequiem
             if(stage>1){var main=smoke.main;main.startSize=stage==2?.22f:.34f;main.startColor=new Color(.15f,.16f,.17f,stage==2?.22f:.36f);var emission=smoke.emission;emission.rateOverTime=stage==2?2:5;smoke.Play(true);}
         }
         void OnCannonLost(int index){if(index==0)DetachCannon();}
+        // Executions v02 (round 3): the execution tore the cannon off and the player holds it. The death flow (stage 3 -> DetachCannon)
+        // then only marks it lost: no second cannon (debris or collectible) is thrown out of the dead robot. Cleared on Cancel.
+        public bool CannonTakenByExecution {get;private set;}
+        public void MarkCannonTakenByExecution(bool taken){if(!CannonDetached)CannonTakenByExecution=taken;}
         public bool DetachCannon()
         {
-            if(CannonDetached)return false;CannonDetached=true;CannonDropCount++;
+            if(CannonDetached)return false;
+            if(CannonTakenByExecution){CannonDetached=true;combat.LoseCannon(0);foreach(var view in cannonViews)if(view)view.gameObject.SetActive(false);return true;}
+            CannonDetached=true;CannonDropCount++;
             combat.LoseCannon(0);
             FallenCannon=!executionOnly&&collectibleCannonPrefab
                 ?BigBotCannonDebris.SpawnCollectible(collectibleCannonPrefab,cannonPivot,GetComponentsInChildren<Collider>(),cannonFrontPivot)

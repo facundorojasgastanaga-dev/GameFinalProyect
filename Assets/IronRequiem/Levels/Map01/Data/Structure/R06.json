@@ -1,0 +1,930 @@
+{
+  "id": "R06",
+  "name": "Armería",
+  "scene": "Map01_R06_Armeria",
+  "zone": "Armeria",
+  "function": "combat",
+  "archetype": "E4",
+  "worldOrigin": [
+    152,
+    -18,
+    143
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -25,
+      -1,
+      -29
+    ],
+    "max": [
+      25,
+      15,
+      29
+    ]
+  },
+  "interior": {
+    "min": [
+      -24,
+      0,
+      -28
+    ],
+    "max": [
+      24,
+      14,
+      28
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    },
+    {
+      "id": "mezzanine",
+      "y": 6
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -24,
+          0,
+          -28
+        ],
+        "max": [
+          24,
+          14,
+          28
+        ]
+      },
+      "y": 14
+    }
+  ],
+  "doors": [
+    {
+      "id": "R06_in",
+      "role": "entry",
+      "class": "Z",
+      "center": [
+        -24,
+        6,
+        -10
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -24,
+          6,
+          -15.0
+        ],
+        "max": [
+          -18,
+          12,
+          -5.0
+        ]
+      },
+      "airlock": "C05"
+    },
+    {
+      "id": "R06_out",
+      "role": "exit",
+      "class": "Z",
+      "center": [
+        14,
+        0,
+        -28
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          9.0,
+          0,
+          -28
+        ],
+        "max": [
+          19.0,
+          6,
+          -22
+        ]
+      },
+      "airlock": "C06"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "mezzW",
+      "type": "solid",
+      "center": [
+        -20.5,
+        3.0,
+        0.0
+      ],
+      "size": [
+        7,
+        6,
+        56
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "catwalkN",
+      "type": "catwalkOnPillars",
+      "center": [
+        -0.5,
+        5.75,
+        25.0
+      ],
+      "size": [
+        33,
+        0.5,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "nest",
+      "type": "catwalkOnPillars",
+      "center": [
+        20.0,
+        5.75,
+        23.0
+      ],
+      "size": [
+        8,
+        0.5,
+        10
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "nestRamp",
+      "type": "ramp",
+      "center": [
+        21.0,
+        3.0,
+        10.0
+      ],
+      "size": [
+        6,
+        6,
+        16
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "rampSW",
+      "type": "ramp",
+      "center": [
+        -6.0,
+        3.0,
+        -25.0
+      ],
+      "size": [
+        22,
+        6,
+        6
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-x"
+    },
+    {
+      "id": "vault",
+      "type": "solid",
+      "center": [
+        4.0,
+        2.5,
+        0.0
+      ],
+      "size": [
+        12,
+        5,
+        12
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "H1",
+      "type": "coverHigh",
+      "center": [
+        -10.0,
+        1.5,
+        -14.0
+      ],
+      "size": [
+        4,
+        3,
+        4
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "H2",
+      "type": "coverHigh",
+      "center": [
+        -10.0,
+        1.5,
+        12.0
+      ],
+      "size": [
+        4,
+        3,
+        4
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "H3",
+      "type": "coverHigh",
+      "center": [
+        12.0,
+        1.5,
+        -8.0
+      ],
+      "size": [
+        4,
+        3,
+        4
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "b1",
+      "type": "coverLow",
+      "center": [
+        -2.0,
+        0.6,
+        -13.4
+      ],
+      "size": [
+        4,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "b2",
+      "type": "coverLow",
+      "center": [
+        4.0,
+        0.6,
+        14.6
+      ],
+      "size": [
+        4,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "b3",
+      "type": "coverLow",
+      "center": [
+        -11.0,
+        0.6,
+        0.6
+      ],
+      "size": [
+        4,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "pilNest",
+      "type": "pillar",
+      "center": [
+        17.6,
+        2.75,
+        18.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "pilNestE",
+      "type": "pillar",
+      "center": [
+        23.6,
+        2.75,
+        18.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "pilN0",
+      "type": "pillar",
+      "center": [
+        -13.0,
+        2.75,
+        22.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "pilN1",
+      "type": "pillar",
+      "center": [
+        -5.0,
+        2.75,
+        22.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "pilN2",
+      "type": "pillar",
+      "center": [
+        3.0,
+        2.75,
+        22.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "pilN3",
+      "type": "pillar",
+      "center": [
+        11.0,
+        2.75,
+        22.4
+      ],
+      "size": [
+        0.8,
+        5.5,
+        0.8
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "jambP1",
+      "type": "wall",
+      "center": [
+        -17.3,
+        9.6,
+        -17.0
+      ],
+      "size": [
+        0.6,
+        7.2,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "lintelP1",
+      "type": "wall",
+      "center": [
+        -20.5,
+        13.0,
+        -17.0
+      ],
+      "size": [
+        7,
+        2,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "jambP2",
+      "type": "wall",
+      "center": [
+        -17.3,
+        9.6,
+        -3.0
+      ],
+      "size": [
+        0.6,
+        7.2,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "lintelP2",
+      "type": "wall",
+      "center": [
+        -20.5,
+        13.0,
+        -3.0
+      ],
+      "size": [
+        7,
+        2,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R06_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -24,
+        6,
+        -15.0
+      ],
+      "max": [
+        -18,
+        12,
+        -5.0
+      ]
+    },
+    {
+      "id": "R06_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        9.0,
+        0,
+        -28
+      ],
+      "max": [
+        19.0,
+        6,
+        -22
+      ]
+    },
+    {
+      "id": "slideS",
+      "kind": "slideLane",
+      "min": [
+        -17,
+        0,
+        -21.5
+      ],
+      "max": [
+        24,
+        2,
+        -16.5
+      ]
+    }
+  ],
+  "spawnZones": [
+    {
+      "id": "TUR",
+      "min": [
+        20,
+        6,
+        23
+      ],
+      "max": [
+        20,
+        6,
+        23
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "both",
+      "points": [
+        [
+          20.0,
+          6,
+          23.0
+        ]
+      ]
+    },
+    {
+      "id": "G1",
+      "min": [
+        14,
+        0,
+        -21
+      ],
+      "max": [
+        20,
+        0,
+        -16
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          17.0,
+          0,
+          -18.5
+        ],
+        [
+          14.0,
+          0,
+          -21.0
+        ],
+        [
+          14.0,
+          0,
+          -16.0
+        ]
+      ]
+    },
+    {
+      "id": "G2",
+      "min": [
+        -15,
+        0,
+        4
+      ],
+      "max": [
+        -11,
+        0,
+        8
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -13.0,
+          0,
+          6.0
+        ],
+        [
+          -15.0,
+          0,
+          4.0
+        ],
+        [
+          -15.0,
+          0,
+          8.0
+        ]
+      ]
+    },
+    {
+      "id": "G3",
+      "min": [
+        -8,
+        0,
+        24.5
+      ],
+      "max": [
+        6,
+        0,
+        25
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -8,
+          0,
+          24.5
+        ],
+        [
+          -1,
+          0,
+          24.5
+        ],
+        [
+          6,
+          0,
+          25
+        ]
+      ]
+    },
+    {
+      "id": "G4",
+      "min": [
+        12,
+        0,
+        0
+      ],
+      "max": [
+        16,
+        0,
+        6
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          14.0,
+          0,
+          3.0
+        ],
+        [
+          12.0,
+          0,
+          0.0
+        ],
+        [
+          12.0,
+          0,
+          6.0
+        ]
+      ]
+    }
+  ],
+  "lightAnchors": [
+    {
+      "id": "R06.A1",
+      "kind": "ceiling",
+      "pos": [
+        -10,
+        13.5,
+        -12
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A2",
+      "kind": "ceiling",
+      "pos": [
+        10,
+        13.5,
+        -12
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A3",
+      "kind": "ceiling",
+      "pos": [
+        -10,
+        13.5,
+        12
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": true,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A4",
+      "kind": "ceiling",
+      "pos": [
+        10,
+        13.5,
+        12
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A5",
+      "kind": "wall",
+      "pos": [
+        -2.5,
+        5.5,
+        -4
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A6",
+      "kind": "wall",
+      "pos": [
+        -2.5,
+        5.5,
+        4
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A7",
+      "kind": "hanging",
+      "pos": [
+        -20,
+        13,
+        -10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R06.A8",
+      "kind": "wall",
+      "pos": [
+        14,
+        9,
+        -27.5
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 8,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [
+    {
+      "id": "R06-P1",
+      "class": "P",
+      "center": [
+        -20.6,
+        6,
+        -17
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "vano": [
+        6,
+        6
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    },
+    {
+      "id": "R06-P2",
+      "class": "P",
+      "center": [
+        -20.6,
+        6,
+        -3
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        6,
+        6
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": ""
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": [
+      "vault",
+      "catwalkN"
+    ]
+  },
+  "arena": {
+    "firstRoom": {
+      "center": [
+        3.5,
+        6.75,
+        0.0
+      ],
+      "size": [
+        41,
+        14.5,
+        56
+      ]
+    },
+    "secondRoom": {
+      "center": [
+        3.5,
+        6.75,
+        0.0
+      ],
+      "size": [
+        41,
+        14.5,
+        56
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -4,
+      0,
+      -8
+    ],
+    "max": [
+      12,
+      8,
+      8
+    ],
+    "note": "Cámara acorazada ARMERÍA 7"
+  },
+  "portal": null,
+  "release": null,
+  "chase": null
+}

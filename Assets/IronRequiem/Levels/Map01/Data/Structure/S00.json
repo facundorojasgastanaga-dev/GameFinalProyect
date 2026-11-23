@@ -1,0 +1,103 @@
+{
+  "id": "S00",
+  "to": "R01",
+  "class": "Z",
+  "axis": "+z",
+  "worldCenter": [
+    0,
+    0,
+    -62.5
+  ],
+  "aabbSize": [
+    14,
+    9,
+    15
+  ],
+  "chamberInterior": [
+    12,
+    8,
+    12
+  ],
+  "floorY": 0,
+  "sourceDoor": {
+    "center": [
+      0,
+      0,
+      -70
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "destinationDoor": {
+    "center": [
+      0,
+      0,
+      -55
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "trigger": null,
+  "lightAnchors": [
+    {
+      "id": "S00.A1",
+      "kind": "wall",
+      "pos": [
+        -5.6,
+        4,
+        -60
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "S00.A2",
+      "kind": "wall",
+      "pos": [
+        5.6,
+        4,
+        -64
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "steamVents": [],
+  "sessionStart": {
+    "station": {
+      "min": [
+        -6,
+        0,
+        -66
+      ],
+      "max": [
+        -2,
+        3,
+        -62
+      ]
+    },
+    "playerStart": [
+      1.5,
+      0,
+      -67
+    ],
+    "playerYaw": 0
+  },
+  "from": null
+}

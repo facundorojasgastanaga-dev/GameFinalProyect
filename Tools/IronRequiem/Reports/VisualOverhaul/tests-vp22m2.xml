@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.5114295">
+  <test-suite type="TestSuite" id="1433" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.511430" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1427" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.464288" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1428" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.453396" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="359" result="Failed" site="Child" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.442045" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1342" name="VisualPassCarroneroTests" fullname="IronRequiem.Tests.VisualPassCarroneroTests" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.416876" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1353" name="Z_Cost_HordeOf24_NewAnimationAgainstLegacy" fullname="IronRequiem.Tests.VisualPassCarroneroTests.Z_Cost_HordeOf24_NewAnimationAgainstLegacy" methodname="Z_Cost_HordeOf24_NewAnimationAgainstLegacy" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1364550331" result="Failed" start-time="2026-11-21 05:56:09Z" end-time="2026-11-21 05:56:28Z" duration="18.374156" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  the new animation must cost the same as the legacy one or less (10 % and 0.03 ms of measurement noise allowed)
+  Expected: less than or equal to 0.46713495833333318d
+  But was:  0.49014583333333389d
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.VisualPassCarroneroTests+<Z_Cost_HordeOf24_NewAnimationAgainstLegacy>d__55.MoveNext () [0x006c3] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\VisualPassCarroneroTests.cs:645
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2826.9 ms · door+preload 0 / activate 2827 / unload 0 / settle 358 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] 24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+[VisualPassCarronero] new (CarroneroCombatMotion)    LateBehaviourUpdate=0.820 ms | frame=14.67 ms
+[VisualPassCarronero] none                           LateBehaviourUpdate=0.330 ms | frame=13.60 ms
+[VisualPassCarronero] legacy (CarroneroMotion)       LateBehaviourUpdate=0.727 ms | frame=13.87 ms
+[VisualPassCarronero] animation cost for 24: new 0.490 ms, legacy 0.397 ms (per bot 20.4 vs 16.6 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+[CampaignTests] Failed Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

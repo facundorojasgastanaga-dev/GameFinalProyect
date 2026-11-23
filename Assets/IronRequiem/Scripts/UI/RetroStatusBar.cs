@@ -123,7 +123,7 @@ namespace IronRequiem
                 var digit=digitRect.gameObject.AddComponent<RetroDigitsGraphic>();digit.raycastTarget=false;digit.SetValue(i+1);digit.color=text;
             }
             // energy / heat and OVERDRIVE are anchored to the bottom of the column; the gap between grows with height
-            Label(Bottom("ExpelHint",column,14,18,pad),"[G] EXPULSAR",12,textDim,false,TextAlignmentOptions.Left);
+            expelHint=Label(Bottom("ExpelHint",column,14,18,pad),"",12,textDim,false,TextAlignmentOptions.Left);
             drive=Label(Bottom("OverdriveState",column,34,30,pad),OverdriveLabels[0],22,textDim,false,TextAlignmentOptions.Left);
             Label(Bottom("OverdriveTitle",column,66,24,pad),"OVERDRIVE",18,text,true,TextAlignmentOptions.Left);
             Bar("MetalBevel",Bottom("Rule",column,96,2,pad),steel);
@@ -166,7 +166,7 @@ namespace IronRequiem
             var fit=ring.gameObject.AddComponent<AspectRatioFitter>();fit.aspectMode=AspectRatioFitter.AspectMode.FitInParent;fit.aspectRatio=1;
             radial=ring.gameObject.AddComponent<FistChargeRadialGraphic>();radial.raycastTarget=false;radial.color=cyan;
             charge=Number(Bottom("ChargeValue",content,26,20,pad),cyan);
-            Label(Bottom("ChargeHint",content,8,16,pad),"[F] MANTENER",12,textDim,false,TextAlignmentOptions.Center);
+            chargeHint=Label(Bottom("ChargeHint",content,8,16,pad),"",12,textDim,false,TextAlignmentOptions.Center);
         }
 
         // ------------------------------------------------------------------ bottom centre: UNIDAD 01
@@ -234,8 +234,16 @@ namespace IronRequiem
             r.anchorMin=r.anchorMax=anchor;r.pivot=new Vector2(anchor.x,0);r.anchoredPosition=position;r.sizeDelta=size;
         }
 
+        // Key names come from the live bindings (ControlHints), so a rebound key or a gamepad shows the right text.
+        TMP_Text expelHint,chargeHint;int shownHints=-1;
         void LateUpdate()
         {
+            if(shownHints!=ControlHints.Version)
+            {
+                shownHints=ControlHints.Version;
+                if(expelHint)expelHint.text=ControlHints.Resolve("[{ThrowWeapon}] EXPULSAR");
+                if(chargeHint)chargeHint.text=ControlHints.Resolve("[{Melee}] MANTENER");
+            }
             if(!health||!inventory)return;
             var active=inventory.GetActiveWeapon();var module=carrier?carrier.Held:null;
             if(!weaponShown||!ReferenceEquals(active,shownWeapon))

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Failed(Child)" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.4750283">
+  <test-suite type="TestSuite" id="1437" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.475028" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1431" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.357011" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1432" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.346986" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1140" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.337819" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1127" name="ExecutionsF0Capture" fullname="IronRequiem.Tests.ExecutionsF0Capture" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:28Z" duration="34.311607" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1130" name="BigBot" fullname="IronRequiem.Tests.ExecutionsF0Capture.BigBot" methodname="BigBot" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" seed="1454066353" result="Failed" start-time="2026-11-22 19:24:54Z" end-time="2026-11-22 19:25:05Z" duration="11.053649" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  BigBot below 75 %
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsF0Capture+<Record>d__25.MoveNext () [0x003f2] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsF0Capture.cs:93
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Failed BigBot
+]]></output>
+            </test-case>
+            <test-case id="1129" name="SawBot" fullname="IronRequiem.Tests.ExecutionsF0Capture.SawBot" methodname="SawBot" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" seed="1652566405" result="Failed" start-time="2026-11-22 19:25:05Z" end-time="2026-11-22 19:25:17Z" duration="12.459476" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] NullReferenceException: Object reference not set to an instance of an object'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[Unity.FPS.AI.EnemyController.OnDetectedTarget () (at Assets/FPS/Scripts/AI/EnemyController.cs:299)
+Unity.FPS.AI.DetectionModule.OnDetect () (at Assets/FPS/Scripts/AI/DetectionModule.cs:175)
+Unity.FPS.AI.DetectionModule.HandleTargetDetectionInternal (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:160)
+Unity.FPS.AI.DetectionModule.HandleTargetDetection (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:70)
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.OnDetectedTarget () (at Assets/FPS/Scripts/AI/EnemyController.cs:299)
+Unity.FPS.AI.DetectionModule.OnDetect () (at Assets/FPS/Scripts/AI/DetectionModule.cs:175)
+Unity.FPS.AI.DetectionModule.HandleTargetDetectionInternal (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:160)
+Unity.FPS.AI.DetectionModule.HandleTargetDetection (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:70)
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+[CampaignTests] Failed SawBot
+]]></output>
+            </test-case>
+            <test-case id="1128" name="T07" fullname="IronRequiem.Tests.ExecutionsF0Capture.T07" methodname="T07" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" seed="229215663" result="Passed" start-time="2026-11-22 19:25:17Z" end-time="2026-11-22 19:25:28Z" duration="10.679314" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,930 @@
+{
+  "id": "R08",
+  "name": "Almacenes",
+  "scene": "Map01_R08_Almacenes",
+  "zone": "Almacenes",
+  "function": "combat",
+  "archetype": "E3",
+  "worldOrigin": [
+    176,
+    -22,
+    1
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -25,
+      -1,
+      -29
+    ],
+    "max": [
+      25,
+      15,
+      29
+    ]
+  },
+  "interior": {
+    "min": [
+      -24,
+      0,
+      -28
+    ],
+    "max": [
+      24,
+      14,
+      28
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    },
+    {
+      "id": "deck",
+      "y": 4
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -24,
+          0,
+          -28
+        ],
+        "max": [
+          24,
+          14,
+          28
+        ]
+      },
+      "y": 14
+    }
+  ],
+  "doors": [
+    {
+      "id": "R08_in",
+      "role": "entry",
+      "class": "Z",
+      "center": [
+        -10,
+        4,
+        28
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -15.0,
+          4,
+          22
+        ],
+        "max": [
+          -5.0,
+          10,
+          28
+        ]
+      },
+      "airlock": "C07"
+    },
+    {
+      "id": "R08_out",
+      "role": "exit",
+      "class": "Z",
+      "center": [
+        24,
+        0,
+        -20
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          18,
+          0,
+          -25.0
+        ],
+        "max": [
+          24,
+          6,
+          -15.0
+        ]
+      },
+      "airlock": "C08"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "deckN",
+      "type": "solid",
+      "center": [
+        0.0,
+        2.0,
+        23.0
+      ],
+      "size": [
+        48,
+        4,
+        10
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "balconyW",
+      "type": "solid",
+      "center": [
+        -21.0,
+        2.0,
+        4.0
+      ],
+      "size": [
+        6,
+        4,
+        28
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "rampNE",
+      "type": "ramp",
+      "center": [
+        21.5,
+        2.0,
+        10.0
+      ],
+      "size": [
+        5,
+        4,
+        16
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "rampWS",
+      "type": "ramp",
+      "center": [
+        -21.5,
+        2.0,
+        -18.0
+      ],
+      "size": [
+        5,
+        4,
+        16
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "landingW",
+      "type": "wall",
+      "center": [
+        -15.3,
+        7.6,
+        25.0
+      ],
+      "size": [
+        0.6,
+        7.2,
+        6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "landingE",
+      "type": "wall",
+      "center": [
+        -4.7,
+        7.6,
+        25.0
+      ],
+      "size": [
+        0.6,
+        7.2,
+        6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "centralBlock",
+      "type": "solid",
+      "center": [
+        2.0,
+        3.0,
+        -5.0
+      ],
+      "size": [
+        12,
+        6,
+        14
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "lowDeck",
+      "type": "coverLow",
+      "center": [
+        0.0,
+        0.6,
+        17.4
+      ],
+      "size": [
+        4,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "PW1",
+      "type": "pillar",
+      "center": [
+        -11.5,
+        4.0,
+        -7.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PW2",
+      "type": "pillar",
+      "center": [
+        -11.5,
+        4.0,
+        3.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PN",
+      "type": "pillar",
+      "center": [
+        1.5,
+        4.0,
+        9.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PE1",
+      "type": "pillar",
+      "center": [
+        15.5,
+        4.0,
+        -7.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PE2",
+      "type": "pillar",
+      "center": [
+        15.5,
+        4.0,
+        -18.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PS1",
+      "type": "pillar",
+      "center": [
+        -4.5,
+        4.0,
+        -19.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "PS2",
+      "type": "pillar",
+      "center": [
+        9.5,
+        4.0,
+        -19.5
+      ],
+      "size": [
+        3,
+        8,
+        3
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R08_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -15.0,
+        4,
+        22
+      ],
+      "max": [
+        -5.0,
+        10,
+        28
+      ]
+    },
+    {
+      "id": "R08_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        18,
+        0,
+        -25.0
+      ],
+      "max": [
+        24,
+        6,
+        -15.0
+      ]
+    },
+    {
+      "id": "ringS",
+      "kind": "ring",
+      "min": [
+        -10,
+        0,
+        -16.5
+      ],
+      "max": [
+        14,
+        2,
+        -12
+      ]
+    }
+  ],
+  "spawnZones": [
+    {
+      "id": "G1",
+      "min": [
+        -21,
+        4,
+        -6
+      ],
+      "max": [
+        -21,
+        4,
+        14
+      ],
+      "slots": 4,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -21.0,
+          4,
+          4.0
+        ],
+        [
+          -21.0,
+          4,
+          -6.0
+        ],
+        [
+          -21.0,
+          4,
+          14.0
+        ],
+        [
+          -21.0,
+          4,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "id": "G2",
+      "min": [
+        -18,
+        0,
+        -27
+      ],
+      "max": [
+        -14,
+        0,
+        -22
+      ],
+      "slots": 5,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -16.0,
+          0,
+          -24.5
+        ],
+        [
+          -18.0,
+          0,
+          -27.0
+        ],
+        [
+          -18.0,
+          0,
+          -22.0
+        ],
+        [
+          -14.0,
+          0,
+          -27.0
+        ],
+        [
+          -14.0,
+          0,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "G3",
+      "min": [
+        2,
+        0,
+        -27
+      ],
+      "max": [
+        8,
+        0,
+        -22
+      ],
+      "slots": 5,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          5.0,
+          0,
+          -24.5
+        ],
+        [
+          2.0,
+          0,
+          -27.0
+        ],
+        [
+          2.0,
+          0,
+          -22.0
+        ],
+        [
+          8.0,
+          0,
+          -27.0
+        ],
+        [
+          8.0,
+          0,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "G4",
+      "min": [
+        6,
+        0,
+        12
+      ],
+      "max": [
+        16,
+        0,
+        16
+      ],
+      "slots": 4,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          11.0,
+          0,
+          14.0
+        ],
+        [
+          6.0,
+          0,
+          12.0
+        ],
+        [
+          16.0,
+          0,
+          12.0
+        ],
+        [
+          7.0,
+          0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "id": "BS1",
+      "min": [
+        -10,
+        0,
+        -24
+      ],
+      "max": [
+        -10,
+        0,
+        -24
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          -10.0,
+          0,
+          -24.0
+        ]
+      ]
+    },
+    {
+      "id": "BS2",
+      "min": [
+        14,
+        0,
+        -24
+      ],
+      "max": [
+        14,
+        0,
+        -24
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          14.0,
+          0,
+          -24.0
+        ]
+      ]
+    },
+    {
+      "id": "BS3",
+      "min": [
+        -13,
+        0,
+        12
+      ],
+      "max": [
+        -13,
+        0,
+        12
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          -13.0,
+          0,
+          12.0
+        ]
+      ]
+    },
+    {
+      "id": "BS4",
+      "min": [
+        20,
+        0,
+        -2
+      ],
+      "max": [
+        20,
+        0,
+        -2
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          20.0,
+          0,
+          -2.0
+        ]
+      ]
+    }
+  ],
+  "lightAnchors": [
+    {
+      "id": "R08.A1",
+      "kind": "ceiling",
+      "pos": [
+        -12,
+        13.5,
+        -16
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A2",
+      "kind": "ceiling",
+      "pos": [
+        12,
+        13.5,
+        -16
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A3",
+      "kind": "ceiling",
+      "pos": [
+        -12,
+        13.5,
+        8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A4",
+      "kind": "ceiling",
+      "pos": [
+        12,
+        13.5,
+        8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A5",
+      "kind": "ceilingSpot",
+      "pos": [
+        2,
+        12,
+        -5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": true,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A6",
+      "kind": "hanging",
+      "pos": [
+        -10,
+        12,
+        24
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A7",
+      "kind": "wall",
+      "pos": [
+        23.6,
+        9,
+        -20
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R08.A8",
+      "kind": "wall",
+      "pos": [
+        -21,
+        9,
+        4
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 8,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [
+    {
+      "id": "R08-P1",
+      "class": "P",
+      "center": [
+        -10,
+        4,
+        22
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "vano": [
+        10,
+        6
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [
+      {
+        "min": [
+          19,
+          0,
+          2
+        ],
+        "max": [
+          24,
+          5,
+          18
+        ]
+      },
+      {
+        "min": [
+          -24,
+          0,
+          -26
+        ],
+        "max": [
+          -19,
+          5,
+          -10
+        ]
+      }
+    ],
+    "notes": "Rampas de refugio NE y WS marcadas Jump (D-U6): el Big Bot Map01 no sube"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": [
+      "centralBlock"
+    ]
+  },
+  "portal": {
+    "plane": 22,
+    "axis": "z",
+    "vano": [
+      10,
+      6
+    ],
+    "shutter": true
+  },
+  "arena": {
+    "firstRoom": {
+      "center": [
+        0.0,
+        6.75,
+        -5.0
+      ],
+      "size": [
+        48,
+        14.5,
+        46
+      ]
+    },
+    "secondRoom": {
+      "center": [
+        0.0,
+        6.75,
+        -5.0
+      ],
+      "size": [
+        48,
+        14.5,
+        46
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -5,
+      0,
+      -13
+    ],
+    "max": [
+      9,
+      12,
+      3
+    ],
+    "note": "Estantería de 8 m volcada sobre la pila de contenedores"
+  },
+  "release": null,
+  "chase": null
+}

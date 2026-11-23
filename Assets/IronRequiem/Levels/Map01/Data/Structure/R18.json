@@ -1,0 +1,1421 @@
+{
+  "id": "R18",
+  "name": "Bóveda",
+  "scene": "Map01_R18_Boveda",
+  "zone": "Boveda",
+  "function": "boss",
+  "archetype": "E9",
+  "worldOrigin": [
+    257,
+    -37,
+    734.5
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -37,
+      -1,
+      -48.5
+    ],
+    "max": [
+      37,
+      25,
+      48.5
+    ]
+  },
+  "interior": {
+    "min": [
+      -36,
+      0,
+      -47.5
+    ],
+    "max": [
+      36,
+      24,
+      47.5
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    },
+    {
+      "id": "gallery",
+      "y": 6
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -36,
+          0,
+          -47.5
+        ],
+        "max": [
+          36,
+          24,
+          47.5
+        ]
+      },
+      "y": 24
+    },
+    {
+      "region": {
+        "min": [
+          -11,
+          0,
+          -47.5
+        ],
+        "max": [
+          11,
+          14,
+          -27.5
+        ]
+      },
+      "y": 14
+    }
+  ],
+  "doors": [
+    {
+      "id": "R18_in",
+      "role": "entry",
+      "class": "Z",
+      "center": [
+        0,
+        0,
+        -47.5
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -5.0,
+          0,
+          -47.5
+        ],
+        "max": [
+          5.0,
+          6,
+          -41.5
+        ]
+      },
+      "airlock": "C17"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "anteW",
+      "type": "wall",
+      "center": [
+        -11.5,
+        7.0,
+        -37.5
+      ],
+      "size": [
+        1,
+        14,
+        20.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "anteE",
+      "type": "wall",
+      "center": [
+        11.5,
+        7.0,
+        -37.5
+      ],
+      "size": [
+        1,
+        14,
+        20.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "bandW",
+      "type": "wall",
+      "center": [
+        -21.5,
+        12.0,
+        -26.0
+      ],
+      "size": [
+        29,
+        24,
+        3.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "bandE",
+      "type": "wall",
+      "center": [
+        21.5,
+        12.0,
+        -26.0
+      ],
+      "size": [
+        29,
+        24,
+        3.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "bandLintel",
+      "type": "wall",
+      "center": [
+        0.0,
+        17.0,
+        -26.0
+      ],
+      "size": [
+        14,
+        14,
+        3.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galW_S",
+      "type": "solid",
+      "center": [
+        -32.0,
+        3.0,
+        -8.0
+      ],
+      "size": [
+        8,
+        6,
+        33.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galW_AWback",
+      "type": "solid",
+      "center": [
+        -35.0,
+        3.0,
+        11.5
+      ],
+      "size": [
+        2,
+        6,
+        6.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galW_AWslab",
+      "type": "catwalkOnPillars",
+      "center": [
+        -31.0,
+        5.75,
+        11.5
+      ],
+      "size": [
+        6,
+        0.5,
+        6.0
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "galW_N",
+      "type": "solid",
+      "center": [
+        -32.0,
+        3.0,
+        31.0
+      ],
+      "size": [
+        8,
+        6,
+        33.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galE_S",
+      "type": "solid",
+      "center": [
+        32.0,
+        3.0,
+        -8.0
+      ],
+      "size": [
+        8,
+        6,
+        33.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galE_AEback",
+      "type": "solid",
+      "center": [
+        35.0,
+        3.0,
+        11.5
+      ],
+      "size": [
+        2,
+        6,
+        6.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galE_AEslab",
+      "type": "catwalkOnPillars",
+      "center": [
+        31.0,
+        5.75,
+        11.5
+      ],
+      "size": [
+        6,
+        0.5,
+        6.0
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "galE_N",
+      "type": "solid",
+      "center": [
+        32.0,
+        3.0,
+        31.0
+      ],
+      "size": [
+        8,
+        6,
+        33.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galN_W",
+      "type": "solid",
+      "center": [
+        -24.0,
+        3.0,
+        43.5
+      ],
+      "size": [
+        8,
+        6,
+        8.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galN_ANWback",
+      "type": "solid",
+      "center": [
+        -17.0,
+        3.0,
+        46.5
+      ],
+      "size": [
+        6,
+        6,
+        2.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galN_ANWslab",
+      "type": "catwalkOnPillars",
+      "center": [
+        -17.0,
+        5.75,
+        42.5
+      ],
+      "size": [
+        6,
+        0.5,
+        6.0
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "galN_C",
+      "type": "solid",
+      "center": [
+        0.0,
+        3.0,
+        43.5
+      ],
+      "size": [
+        28,
+        6,
+        8.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galN_ANEback",
+      "type": "solid",
+      "center": [
+        17.0,
+        3.0,
+        46.5
+      ],
+      "size": [
+        6,
+        6,
+        2.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galN_ANEslab",
+      "type": "catwalkOnPillars",
+      "center": [
+        17.0,
+        5.75,
+        42.5
+      ],
+      "size": [
+        6,
+        0.5,
+        6.0
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "galN_E",
+      "type": "solid",
+      "center": [
+        24.0,
+        3.0,
+        43.5
+      ],
+      "size": [
+        8,
+        6,
+        8.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galS_W",
+      "type": "solid",
+      "center": [
+        -19.5,
+        3.0,
+        -20.5
+      ],
+      "size": [
+        17,
+        6,
+        8.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "galS_E",
+      "type": "solid",
+      "center": [
+        19.5,
+        3.0,
+        -20.5
+      ],
+      "size": [
+        17,
+        6,
+        8.0
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "rampNW",
+      "type": "ramp",
+      "center": [
+        -25.5,
+        3.0,
+        28.25
+      ],
+      "size": [
+        5,
+        6,
+        22.5
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "rampNE",
+      "type": "ramp",
+      "center": [
+        25.5,
+        3.0,
+        28.25
+      ],
+      "size": [
+        5,
+        6,
+        22.5
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "rampSW",
+      "type": "ramp",
+      "center": [
+        -25.5,
+        3.0,
+        -5.5
+      ],
+      "size": [
+        5,
+        6,
+        22.0
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-z"
+    },
+    {
+      "id": "rampSE",
+      "type": "ramp",
+      "center": [
+        25.5,
+        3.0,
+        -5.5
+      ],
+      "size": [
+        5,
+        6,
+        22.0
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-z"
+    },
+    {
+      "id": "pillarA0",
+      "type": "cylinder",
+      "center": [
+        12.1,
+        12.0,
+        18.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    },
+    {
+      "id": "pillarA1",
+      "type": "cylinder",
+      "center": [
+        0.0,
+        12.0,
+        25.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    },
+    {
+      "id": "pillarA2",
+      "type": "cylinder",
+      "center": [
+        -12.1,
+        12.0,
+        18.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    },
+    {
+      "id": "pillarA3",
+      "type": "cylinder",
+      "center": [
+        -12.1,
+        12.0,
+        4.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    },
+    {
+      "id": "pillarA4",
+      "type": "cylinder",
+      "center": [
+        0.0,
+        12.0,
+        -2.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    },
+    {
+      "id": "pillarA5",
+      "type": "cylinder",
+      "center": [
+        12.1,
+        12.0,
+        4.5
+      ],
+      "size": [
+        3.5,
+        24,
+        3.5
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "dependsOnBoss:A"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R18_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -5.0,
+        0,
+        -47.5
+      ],
+      "max": [
+        5.0,
+        6,
+        -41.5
+      ]
+    },
+    {
+      "id": "apron",
+      "kind": "doorApproach",
+      "min": [
+        -8,
+        0,
+        -24.5
+      ],
+      "max": [
+        8,
+        10,
+        -16.5
+      ]
+    },
+    {
+      "id": "commit",
+      "kind": "doorApproach",
+      "min": [
+        -3,
+        0,
+        -40.5
+      ],
+      "max": [
+        3,
+        4,
+        -34.5
+      ]
+    }
+  ],
+  "spawnZones": [
+    {
+      "id": "AW",
+      "min": [
+        -31,
+        0,
+        9.5
+      ],
+      "max": [
+        -31,
+        0,
+        13.5
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -31,
+          0,
+          9.5
+        ],
+        [
+          -31,
+          0,
+          11.5
+        ],
+        [
+          -31,
+          0,
+          13.5
+        ]
+      ]
+    },
+    {
+      "id": "AE",
+      "min": [
+        31,
+        0,
+        9.5
+      ],
+      "max": [
+        31,
+        0,
+        13.5
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          31,
+          0,
+          9.5
+        ],
+        [
+          31,
+          0,
+          11.5
+        ],
+        [
+          31,
+          0,
+          13.5
+        ]
+      ]
+    },
+    {
+      "id": "ANW",
+      "min": [
+        -19,
+        0,
+        42.5
+      ],
+      "max": [
+        -15,
+        0,
+        42.5
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -19,
+          0,
+          42.5
+        ],
+        [
+          -17,
+          0,
+          42.5
+        ],
+        [
+          -15,
+          0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "id": "ANE",
+      "min": [
+        15,
+        0,
+        42.5
+      ],
+      "max": [
+        19,
+        0,
+        42.5
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          15,
+          0,
+          42.5
+        ],
+        [
+          17,
+          0,
+          42.5
+        ],
+        [
+          19,
+          0,
+          42.5
+        ]
+      ]
+    },
+    {
+      "id": "GW",
+      "min": [
+        -32,
+        6,
+        -4
+      ],
+      "max": [
+        -32,
+        6,
+        -4
+      ],
+      "slots": 1,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -32.0,
+          6,
+          -4.0
+        ]
+      ]
+    },
+    {
+      "id": "GE",
+      "min": [
+        32,
+        6,
+        -4
+      ],
+      "max": [
+        32,
+        6,
+        -4
+      ],
+      "slots": 1,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          32.0,
+          6,
+          -4.0
+        ]
+      ]
+    },
+    {
+      "id": "GN",
+      "min": [
+        8,
+        6,
+        43.5
+      ],
+      "max": [
+        8,
+        6,
+        43.5
+      ],
+      "slots": 1,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          8.0,
+          6,
+          43.5
+        ]
+      ]
+    },
+    {
+      "id": "GS",
+      "min": [
+        24,
+        6,
+        -20
+      ],
+      "max": [
+        24,
+        6,
+        -20
+      ],
+      "slots": 1,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          24.0,
+          6,
+          -20.0
+        ]
+      ]
+    },
+    {
+      "id": "C0",
+      "min": [
+        0,
+        0,
+        11.5
+      ],
+      "max": [
+        0,
+        0,
+        11.5
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          0.0,
+          0,
+          11.5
+        ]
+      ]
+    },
+    {
+      "id": "BG1",
+      "min": [
+        -22,
+        0,
+        11.5
+      ],
+      "max": [
+        -22,
+        0,
+        11.5
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          -22.0,
+          0,
+          11.5
+        ]
+      ]
+    },
+    {
+      "id": "BG2",
+      "min": [
+        22,
+        0,
+        11.5
+      ],
+      "max": [
+        22,
+        0,
+        11.5
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          22.0,
+          0,
+          11.5
+        ]
+      ]
+    },
+    {
+      "id": "BG3",
+      "min": [
+        -15.5,
+        0,
+        27
+      ],
+      "max": [
+        -15.5,
+        0,
+        27
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          -15.5,
+          0,
+          27.0
+        ]
+      ]
+    },
+    {
+      "id": "BG4",
+      "min": [
+        15.5,
+        0,
+        27
+      ],
+      "max": [
+        15.5,
+        0,
+        27
+      ],
+      "slots": 1,
+      "kind": "big",
+      "rounds": "both",
+      "points": [
+        [
+          15.5,
+          0,
+          27.0
+        ]
+      ]
+    },
+    {
+      "id": "TB1",
+      "min": [
+        -8,
+        6,
+        43.5
+      ],
+      "max": [
+        -8,
+        6,
+        43.5
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "conceptB",
+      "points": [
+        [
+          -8.0,
+          6,
+          43.5
+        ]
+      ]
+    },
+    {
+      "id": "TB2",
+      "min": [
+        16,
+        6,
+        43.5
+      ],
+      "max": [
+        16,
+        6,
+        43.5
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "conceptB",
+      "points": [
+        [
+          16.0,
+          6,
+          43.5
+        ]
+      ]
+    },
+    {
+      "id": "TC1",
+      "min": [
+        -12,
+        0,
+        11.5
+      ],
+      "max": [
+        -12,
+        0,
+        11.5
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "conceptC",
+      "points": [
+        [
+          -12.0,
+          0,
+          11.5
+        ]
+      ]
+    },
+    {
+      "id": "TC2",
+      "min": [
+        12,
+        0,
+        11.5
+      ],
+      "max": [
+        12,
+        0,
+        11.5
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "conceptC",
+      "points": [
+        [
+          12.0,
+          0,
+          11.5
+        ]
+      ]
+    },
+    {
+      "id": "TC3",
+      "min": [
+        -18,
+        6,
+        -19
+      ],
+      "max": [
+        -18,
+        6,
+        -19
+      ],
+      "slots": 1,
+      "kind": "turretFixed",
+      "rounds": "conceptC",
+      "points": [
+        [
+          -18.0,
+          6,
+          -19.0
+        ]
+      ]
+    }
+  ],
+  "lightAnchors": [
+    {
+      "id": "R18.A1",
+      "kind": "ceiling",
+      "pos": [
+        -18,
+        22,
+        11.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": true,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A2",
+      "kind": "ceiling",
+      "pos": [
+        18,
+        22,
+        11.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A3",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        22,
+        -6
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A4",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        22,
+        29
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A5",
+      "kind": "wall",
+      "pos": [
+        -35.6,
+        10,
+        11.5
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A6",
+      "kind": "wall",
+      "pos": [
+        35.6,
+        10,
+        11.5
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A7",
+      "kind": "hanging",
+      "pos": [
+        0,
+        20,
+        11.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A8",
+      "kind": "wall",
+      "pos": [
+        0,
+        15,
+        -23
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R18.A9",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        13,
+        -37.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 9,
+    "shadow": 2,
+    "transient": 3
+  },
+  "internalDoors": [
+    {
+      "id": "R18-B",
+      "class": "B",
+      "center": [
+        0,
+        0,
+        -26
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        14,
+        10
+      ],
+      "behaviour": "bossGate"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [
+      {
+        "min": [
+          -28,
+          0,
+          17
+        ],
+        "max": [
+          -23,
+          7,
+          39.5
+        ]
+      },
+      {
+        "min": [
+          23,
+          0,
+          17
+        ],
+        "max": [
+          28,
+          7,
+          39.5
+        ]
+      },
+      {
+        "min": [
+          -28,
+          0,
+          -16.5
+        ],
+        "max": [
+          -23,
+          7,
+          5.5
+        ]
+      },
+      {
+        "min": [
+          23,
+          0,
+          -16.5
+        ],
+        "max": [
+          28,
+          7,
+          5.5
+        ]
+      }
+    ],
+    "notes": "Rampas de la galería marcadas Jump: el jefe y el Big Bot no suben. Pilares pillarA* solo para el concepto A"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 2,
+    "occluders": [
+      "bandW",
+      "bandE",
+      "bandLintel"
+    ]
+  },
+  "arena": {
+    "firstRoom": {
+      "center": [
+        0.0,
+        11.75,
+        13.5
+      ],
+      "size": [
+        72,
+        24.5,
+        68.0
+      ]
+    },
+    "secondRoom": {
+      "center": [
+        0.0,
+        11.75,
+        13.5
+      ],
+      "size": [
+        72,
+        24.5,
+        68.0
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -10,
+      0,
+      1.5
+    ],
+    "max": [
+      10,
+      24,
+      21.5
+    ],
+    "note": "Estructura central según el jefe (A: centro libre Ø 20 + 6 pilares)"
+  },
+  "portal": null,
+  "release": null,
+  "chase": null
+}

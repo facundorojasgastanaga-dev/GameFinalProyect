@@ -104,23 +104,23 @@ namespace IronRequiem.Tests
         {
             Teleport(new Vector3(0,3,-10));yield return null;yield return null;
             Assert.That(player.IsGrounded,Is.False);var start=player.transform.position;
-            yield return Tap(Key.LeftCtrl);
+            yield return Tap(Key.Space);
             Assert.That(motion.IsDashing,Is.True);Assert.That(motion.DashAvailable,Is.False);
             yield return new WaitForSeconds(.22f);
             Assert.That(motion.IsDashing,Is.False);Assert.That(player.transform.position.z-start.z,Is.GreaterThan(2));
             Assert.That(player.CharacterVelocity.y,Is.LessThan(0));
-            yield return Tap(Key.LeftCtrl);Assert.That(motion.IsDashing,Is.False);Assert.That(motion.DashAvailable,Is.False);
+            yield return Tap(Key.Space);Assert.That(motion.IsDashing,Is.False);Assert.That(motion.DashAvailable,Is.False);
             yield return new WaitForSeconds(1);Assert.That(player.IsGrounded,Is.True);Assert.That(motion.DashAvailable,Is.True);
         }
 
         [UnityTest] public IEnumerator AirDashUsesMovementDirectionAndCannotCrossWall()
         {
             Teleport(new Vector3(0,3,-10));yield return null;yield return null;
-            Keys(Key.D,Key.LeftCtrl);yield return new WaitForSeconds(.09f);Keys();
+            Keys(Key.D,Key.Space);yield return new WaitForSeconds(.09f);Keys();
             Assert.That(player.transform.position.x,Is.GreaterThan(1));Assert.That(Mathf.Abs(player.transform.position.z+10),Is.LessThan(.5f));
             yield return new WaitForSeconds(1);Assert.That(motion.DashAvailable,Is.True);
             var wall=new GameObject("DashWall");wall.transform.position=new Vector3(0,3,-8);wall.AddComponent<BoxCollider>().size=new Vector3(10,8,.4f);
-            Teleport(new Vector3(0,3,-10));yield return null;yield return null;yield return Tap(Key.LeftCtrl);
+            Teleport(new Vector3(0,3,-10));yield return null;yield return null;yield return Tap(Key.Space);
             yield return new WaitForSeconds(.25f);
             Assert.That(player.transform.position.z,Is.LessThan(-8.4f));Assert.That(motion.IsDashing,Is.False);Assert.That(motion.DashAvailable,Is.False);
         }
@@ -140,7 +140,7 @@ namespace IronRequiem.Tests
             Keys(Key.W,Key.LeftShift);yield return new WaitForSeconds(.15f);Keys(Key.W,Key.LeftShift,Key.C);yield return null;
             Assert.That(motion.IsSliding,Is.True);Keys(Key.W,Key.Space);yield return null;Keys();yield return null;
             Assert.That(motion.IsSliding,Is.False);Assert.That(player.IsGrounded,Is.False);
-            yield return Tap(Key.LeftCtrl);Assert.That(motion.IsDashing,Is.True);
+            yield return Tap(Key.Space);Assert.That(motion.IsDashing,Is.True);
         }
 
         [UnityTest] public IEnumerator SlideFollowsFifteenDegreeRampWithoutTunneling()
@@ -460,13 +460,13 @@ namespace IronRequiem.Tests
         {
             var module=DetachAndPlace();yield return Pickup(module);
             Teleport(new Vector3(0,3,-10));yield return null;yield return null;Assert.That(player.IsGrounded,Is.False);Assert.That(motion.DashAvailable,Is.True);
-            Time.timeScale=0;Keys(Key.X,Key.G,Key.LeftCtrl,Key.E);yield return null;Keys();yield return null;
+            Time.timeScale=0;Keys(Key.X,Key.G,Key.Space,Key.E);yield return null;Keys();yield return null;
             Assert.That(carrier.Held,Is.EqualTo(module));Assert.That(module.Overdrive.IsArmed,Is.False);Assert.That(motion.IsDashing,Is.False);Time.timeScale=1;
             EventManager.Broadcast(Events.AllObjectivesCompletedEvent);yield return null;
-            Keys(Key.X,Key.G,Key.LeftCtrl);yield return null;Keys();Assert.That(carrier.Held,Is.EqualTo(module));Assert.That(module.Overdrive.IsArmed,Is.False);Assert.That(motion.IsDashing,Is.False);
+            Keys(Key.X,Key.G,Key.Space);yield return null;Keys();Assert.That(carrier.Held,Is.EqualTo(module));Assert.That(module.Overdrive.IsArmed,Is.False);Assert.That(motion.IsDashing,Is.False);
             player.GetComponent<Health>().Invincible=false;player.GetComponent<Health>().Kill();yield return null;
             Assert.That(player.IsDead,Is.True);Assert.That(carrier.Held,Is.Null);Assert.That(module.State,Is.EqualTo(StolenCannonState.Available));
-            Keys(Key.E,Key.LeftCtrl,Key.X,Key.G);yield return null;Keys();Assert.That(carrier.Held,Is.Null);Assert.That(motion.IsDashing,Is.False);
+            Keys(Key.E,Key.Space,Key.X,Key.G);yield return null;Keys();Assert.That(carrier.Held,Is.Null);Assert.That(motion.IsDashing,Is.False);
         }
     }
 }

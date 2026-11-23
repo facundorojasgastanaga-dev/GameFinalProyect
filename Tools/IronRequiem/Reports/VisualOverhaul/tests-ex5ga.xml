@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 02:07:26Z" end-time="2026-11-23 02:09:24Z" duration="118.0037227">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 02:07:26Z" end-time="2026-11-23 02:09:24Z" duration="118.003723" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 02:07:27Z" end-time="2026-11-23 02:09:24Z" duration="117.399708" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 02:07:27Z" end-time="2026-11-23 02:09:24Z" duration="117.343634" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 02:07:27Z" end-time="2026-11-23 02:09:24Z" duration="117.329280" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1056" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-23 02:07:27Z" end-time="2026-11-23 02:09:24Z" duration="117.300578" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1057" name="TwelveRoundsAirlocksInventoryAndPursuit" fullname="IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit" methodname="TwelveRoundsAirlocksInventoryAndPursuit" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="710707455" result="Passed" start-time="2026-11-23 02:07:27Z" end-time="2026-11-23 02:09:24Z" duration="116.987877" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 9313.0 ms · door+preload 0 / activate 9313 / unload 0 / settle 715 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 53.4 ms · door+preload 35 / activate 19 / unload 53 / settle 22 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 74.5 ms · door+preload 14 / activate 17 / unload 74 / settle 16 · peak at frame 99/210 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 78.3 ms · door+preload 24 / activate 34 / unload 78 / settle 17 · peak at frame 99/296 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 85.2 ms · door+preload 19 / activate 32 / unload 85 / settle 19 · peak at frame 99/501 load 1.00
+[Campaign] transition to Room04_Reactor (preload) peak frame 80.9 ms · door+preload 29 / activate 32 / unload 81 / settle 22 · peak at frame 99/661 load 1.00
+[Campaign] transition to Pursuit05 (preload) peak frame 82.9 ms · door+preload 19 / activate 33 / unload 83 / settle 16 · peak at frame 99/770 load 1.00
+[CampaignTests] Passed TwelveRoundsAirlocksInventoryAndPursuit
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

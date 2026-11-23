@@ -54,8 +54,10 @@ namespace IronRequiem
             if (transform.Find(ContainerName)) return;
             var root = Rect(ContainerName, transform, new Vector2(HousingW, HousingH), new Vector2(0, CenterY));
             housing = root.gameObject.AddComponent<IndustrialPanelGraphic>(); housing.raycastTarget = false;
+            housing.SetStyle(IndustrialPanelGraphic.PanelStyle.Label); // same tape plate as the menu buttons
             var lampRect = Rect("Lamp", root, new Vector2(20, 20), new Vector2(0, 36));
             lamp = lampRect.gameObject.AddComponent<Image>(); lamp.sprite = theme ? theme.Lamp : null; lamp.raycastTarget = false;
+            lampRect.gameObject.AddComponent<MenuLampFx>().Configure(MenuLampFx.Mode.Follow); // halo that follows the ON colour
             // recessed track
             trackRim = Box("TrackRim", root, new Vector2(TrackW + 4, TrackH + 4), new Vector2(0, -4), RimIdle);
             trackFill = Box("TrackFill", root, new Vector2(TrackW, TrackH), new Vector2(0, -4), TrackOff);

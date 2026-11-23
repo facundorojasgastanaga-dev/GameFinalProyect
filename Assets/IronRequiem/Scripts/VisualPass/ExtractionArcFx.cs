@@ -17,7 +17,7 @@ namespace IronRequiem
         sealed class Rig
         {
             public Transform root; public LineRenderer a, b; public ParticleSystem sparks, debris;
-            public Vector3 from, to; public float start = -1, fire = -1;
+            public Vector3 from, to; public float start = -1, fire = -1, scale = 1;
         }
         readonly Rig[] rigs = new Rig[Pool];
         readonly Vector3[] buffer = new Vector3[Points];
@@ -34,9 +34,34 @@ namespace IronRequiem
         void OnEnable() { if (carrier) carrier.Executed += OnExecuted; }
         void OnDisable() { if (carrier) carrier.Executed -= OnExecuted; }
 
+        ExecutionDirector director;
+
+        /// executions-v02: ExecutionDirector fires the arc exactly on the Rip beat (YankTime), from the real joint.
+        public void Trigger(Vector3 from, Vector3 to)
+        {
+            var r = rigs[next]; next = (next + 1) % Pool;
+            if ((to - from).sqrMagnitude < .04f) to = from + Vector3.up * .6f;
+            r.from = from; r.to = to; r.fire = -1;
+            Fire(r);
+        }
+
+        void Fire(Rig r)
+        {
+            // executions-v02: born close to the camera (< 1 m) the effect shrinks so it never fills the frame
+            var cam = Camera.main; float near = cam ? Vector3.Distance(cam.transform.position, r.from) : 1f;
+            r.scale = Mathf.Clamp(near, .2f, 1f);
+            r.sparks.transform.localScale = r.debris.transform.localScale = Vector3.one * r.scale;
+            r.start = Time.time; r.root.position = r.from;
+            r.root.rotation = Quaternion.LookRotation((r.from - r.to).normalized + Vector3.up * .3f);
+            r.sparks.Play(); r.debris.Play(); r.a.enabled = r.b.enabled = true;
+            GameFeel.HitStop(.06f); // ignored inside an execution budget (the director owns the hit-stop there)
+        }
+
         void OnExecuted(EnemyExecutionSource target, Vector3 grip)
         {
             if (!target) return;
+            if (!director) director = GetComponent<ExecutionDirector>();
+            if (director) return; // executions-v02: the director triggers the arc on the Rip beat
             var r = rigs[next]; next = (next + 1) % Pool;
             r.from = grip; r.to = target.transform.position + Vector3.up * 1.1f;
             if ((r.to - r.from).sqrMagnitude < .04f) r.to = r.from + target.transform.up * .6f;
@@ -50,16 +75,13 @@ namespace IronRequiem
                 var r = rigs[i];
                 if (r.fire > 0 && Time.time >= r.fire)
                 {
-                    r.fire = -1; r.start = Time.time; r.root.position = r.from;
-                    r.root.rotation = Quaternion.LookRotation((r.from - r.to).normalized + Vector3.up * .3f);
-                    r.sparks.Play(); r.debris.Play(); r.a.enabled = r.b.enabled = true;
-                    GameFeel.HitStop(.06f);
+                    r.fire = -1; Fire(r);
                 }
                 if (r.start < 0) continue;
                 float age = (Time.time - r.start) / arcSeconds;
                 if (age >= 1) { r.start = -1; r.a.enabled = r.b.enabled = false; continue; }
-                float width = .045f * (1 - age);
-                Zap(r.a, r.from, r.to, .16f, width); Zap(r.b, r.from, Vector3.Lerp(r.from, r.to, .55f) + Random.insideUnitSphere * .25f, .12f, width * .6f);
+                float width = .045f * (1 - age) * r.scale;
+                Zap(r.a, r.from, r.to, .16f * r.scale, width); Zap(r.b, r.from, Vector3.Lerp(r.from, r.to, .55f) + Random.insideUnitSphere * .25f * r.scale, .12f * r.scale, width * .6f);
             }
         }
 

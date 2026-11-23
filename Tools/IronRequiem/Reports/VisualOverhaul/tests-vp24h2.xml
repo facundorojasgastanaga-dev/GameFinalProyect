@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="25" result="Passed" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.3714195">
+  <test-suite type="TestSuite" id="1433" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.371420" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1427" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.295551" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1428" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.274974" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.257656" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1384" name="VisualPassF0" fullname="IronRequiem.Tests.VisualPassF0" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" testcasecount="35" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.226694" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="ParameterizedMethod" id="1410" name="A_Zone" fullname="IronRequiem.Tests.VisualPassF0.A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:20:04Z" duration="137.216395" total="25" passed="25" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="600000" />
+              </properties>
+              <test-case id="1385" name="A_Zone(&quot;Map01_R01_ControlAcceso&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R01_ControlAcceso&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1839044748" result="Passed" start-time="2026-11-21 11:17:47Z" end-time="2026-11-21 11:17:55Z" duration="7.682737" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2998.9 ms · door+preload 0 / activate 2999 / unload 0 / settle 435 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R01_ControlAcceso")
+]]></output>
+              </test-case>
+              <test-case id="1386" name="A_Zone(&quot;Map01_R02_PozoMontacargas&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R02_PozoMontacargas&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1802624578" result="Passed" start-time="2026-11-21 11:17:55Z" end-time="2026-11-21 11:18:00Z" duration="5.174373" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1677.0 ms · door+preload 0 / activate 1677 / unload 0 / settle 203 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R02_PozoMontacargas")
+]]></output>
+              </test-case>
+              <test-case id="1387" name="A_Zone(&quot;Map01_R03_Dormitorios&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R03_Dormitorios&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="651362000" result="Passed" start-time="2026-11-21 11:18:00Z" end-time="2026-11-21 11:18:05Z" duration="5.639528" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 2124.0 ms · door+preload 0 / activate 2124 / unload 0 / settle 219 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R03_Dormitorios")
+]]></output>
+              </test-case>
+              <test-case id="1388" name="A_Zone(&quot;Map01_R04_Comedor&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R04_Comedor&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="624270619" result="Passed" start-time="2026-11-21 11:18:05Z" end-time="2026-11-21 11:18:10Z" duration="5.103338" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1773.6 ms · door+preload 0 / activate 1774 / unload 0 / settle 224 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R04_Comedor")
+]]></output>
+              </test-case>
+              <test-case id="1389" name="A_Zone(&quot;Map01_R05_Enfermeria&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R05_Enfermeria&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1453020195" result="Passed" start-time="2026-11-21 11:18:10Z" end-time="2026-11-21 11:18:15Z" duration="4.829552" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1702.3 ms · door+preload 0 / activate 1702 / unload 0 / settle 216 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R05_Enfermeria")
+]]></output>
+              </test-case>
+              <test-case id="1390" name="A_Zone(&quot;Map01_R06_Armeria&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R06_Armeria&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="647018631" result="Passed" start-time="2026-11-21 11:18:15Z" end-time="2026-11-21 11:18:20Z" duration="5.155255" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1531.8 ms · door+preload 0 / activate 1532 / unload 0 / settle 217 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R06_Armeria")
+]]></output>
+              </test-case>
+              <test-case id="1391" name="A_Zone(&quot;Map01_R07_Comunicaciones&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R07_Comunicaciones&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="123723170" result="Passed" start-time="2026-11-21 11:18:20Z" end-time="2026-11-21 11:18:26Z" duration="5.056973" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1572.5 ms · door+preload 0 / activate 1572 / unload 0 / settle 221 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R07_Comunicaciones")
+]]></output>
+              </test-case>
+              <test-case id="1392" name="A_Zone(&quot;Map01_R08_Almacenes&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R08_Almacenes&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="647898595" result="Passed" start-time="2026-11-21 11:18:26Z" end-time="2026-11-21 11:18:31Z" duration="5.716628" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1547.0 ms · door+preload 0 / activate 1547 / unload 0 / settle 237 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R08_Almacenes")
+]]></output>
+              </test-case>
+              <test-case id="1393" name="A_Zone(&quot;Map01_R09_Taquillas&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R09_Taquillas&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1683151839" result="Passed" start-time="2026-11-21 11:18:31Z" end-time="2026-11-21 11:18:36Z" duration="4.711659" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1522.0 ms · door+preload 0 / activate 1522 / unload 0 / settle 215 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R09_Taquillas")
+]]></output>
+              </test-case>
+              <test-case id="1394" name="A_Zone(&quot;Map01_R10_TunelTrituradora&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R10_TunelTrituradora&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="95964575" result="Passed" start-time="2026-11-21 11:18:36Z" end-time="2026-11-21 11:18:41Z" duration="4.793805" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1541.3 ms · door+preload 0 / activate 1541 / unload 0 / settle 208 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R10_TunelTrituradora")
+]]></output>
+              </test-case>
+              <test-case id="1395" name="A_Zone(&quot;Map01_R11_Decantadores&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R11_Decantadores&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="889948453" result="Passed" start-time="2026-11-21 11:18:41Z" end-time="2026-11-21 11:18:46Z" duration="5.248577" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1704.5 ms · door+preload 0 / activate 1704 / unload 0 / settle 215 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R11_Decantadores")
+]]></output>
+              </test-case>
+              <test-case id="1396" name="A_Zone(&quot;Map01_R12_Colector&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R12_Colector&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1005660645" result="Passed" start-time="2026-11-21 11:18:46Z" end-time="2026-11-21 11:18:52Z" duration="5.786683" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1542.5 ms · door+preload 0 / activate 1542 / unload 0 / settle 198 · peak at frame 2/12 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R12_Colector")
+]]></output>
+              </test-case>
+              <test-case id="1397" name="A_Zone(&quot;Map01_R13_SalaBombas&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R13_SalaBombas&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="288912464" result="Passed" start-time="2026-11-21 11:18:52Z" end-time="2026-11-21 11:18:57Z" duration="4.879970" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1500.8 ms · door+preload 0 / activate 1501 / unload 0 / settle 209 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R13_SalaBombas")
+]]></output>
+              </test-case>
+              <test-case id="1398" name="A_Zone(&quot;Map01_R14_Fundicion&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R14_Fundicion&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="980246679" result="Passed" start-time="2026-11-21 11:18:57Z" end-time="2026-11-21 11:19:03Z" duration="5.867750" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1714.0 ms · door+preload 0 / activate 1714 / unload 0 / settle 191 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R14_Fundicion")
+]]></output>
+              </test-case>
+              <test-case id="1399" name="A_Zone(&quot;Map01_R15_Ensamblaje&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R15_Ensamblaje&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1797449752" result="Passed" start-time="2026-11-21 11:19:03Z" end-time="2026-11-21 11:19:08Z" duration="5.161901" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1566.5 ms · door+preload 0 / activate 1566 / unload 0 / settle 210 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R15_Ensamblaje")
+]]></output>
+              </test-case>
+              <test-case id="1400" name="A_Zone(&quot;Map01_R16_Reactor&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R16_Reactor&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="882103405" result="Passed" start-time="2026-11-21 11:19:08Z" end-time="2026-11-21 11:19:14Z" duration="5.933887" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1609.4 ms · door+preload 0 / activate 1609 / unload 0 / settle 251 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R16_Reactor")
+]]></output>
+              </test-case>
+              <test-case id="1401" name="A_Zone(&quot;Map01_R17_CentroMando&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R17_CentroMando&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="55226372" result="Passed" start-time="2026-11-21 11:19:14Z" end-time="2026-11-21 11:19:19Z" duration="4.727749" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1521.7 ms · door+preload 0 / activate 1522 / unload 0 / settle 208 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Map01_R17_CentroMando")
+]]></output>
+              </test-case>
+              <test-case id="1402" name="A_Zone(&quot;Map01_R18_Boveda&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Map01_R18_Boveda&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="88901539" result="Passed" start-time="2026-11-21 11:19:19Z" end-time="2026-11-21 11:19:24Z" duration="5.691979" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1647.7 ms · door+preload 0 / activate 1648 / unload 0 / settle 209 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed A_Zone("Map01_R18_Boveda")
+]]></output>
+              </test-case>
+              <test-case id="1403" name="A_Zone(&quot;Room00_Hangar&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room00_Hangar&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="926433981" result="Passed" start-time="2026-11-21 11:19:24Z" end-time="2026-11-21 11:19:29Z" duration="5.227216" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1533.7 ms · door+preload 0 / activate 1534 / unload 0 / settle 211 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed A_Zone("Room00_Hangar")
+]]></output>
+              </test-case>
+              <test-case id="1404" name="A_Zone(&quot;Room00b_AlarmCorridor&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room00b_AlarmCorridor&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1115791987" result="Passed" start-time="2026-11-21 11:19:29Z" end-time="2026-11-21 11:19:34Z" duration="4.840971" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1581.0 ms · door+preload 0 / activate 1581 / unload 0 / settle 198 · peak at frame 2/16 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Room00b_AlarmCorridor")
+]]></output>
+              </test-case>
+              <test-case id="1405" name="A_Zone(&quot;Room01_Foundry&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room01_Foundry&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="730891533" result="Passed" start-time="2026-11-21 11:19:34Z" end-time="2026-11-21 11:19:40Z" duration="6.156737" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1611.2 ms · door+preload 0 / activate 1611 / unload 0 / settle 247 · peak at frame 2/21 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Room01_Foundry")
+]]></output>
+              </test-case>
+              <test-case id="1406" name="A_Zone(&quot;Room02_Breach&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room02_Breach&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1653400126" result="Passed" start-time="2026-11-21 11:19:40Z" end-time="2026-11-21 11:19:46Z" duration="5.925550" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1695.6 ms · door+preload 0 / activate 1696 / unload 0 / settle 219 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Room02_Breach")
+]]></output>
+              </test-case>
+              <test-case id="1407" name="A_Zone(&quot;Room03_Assembly&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room03_Assembly&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="1057873329" result="Passed" start-time="2026-11-21 11:19:46Z" end-time="2026-11-21 11:19:52Z" duration="5.760189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1622.4 ms · door+preload 0 / activate 1622 / unload 0 / settle 202 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Room03_Assembly")
+]]></output>
+              </test-case>
+              <test-case id="1408" name="A_Zone(&quot;Room04_Reactor&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Room04_Reactor&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="2009998803" result="Passed" start-time="2026-11-21 11:19:52Z" end-time="2026-11-21 11:19:59Z" duration="6.835011" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 2174.9 ms · door+preload 0 / activate 2175 / unload 0 / settle 258 · peak at frame 2/20 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Room04_Reactor")
+]]></output>
+              </test-case>
+              <test-case id="1409" name="A_Zone(&quot;Pursuit05&quot;)" fullname="IronRequiem.Tests.VisualPassF0.A_Zone(&quot;Pursuit05&quot;)" methodname="A_Zone" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="89219701" result="Passed" start-time="2026-11-21 11:19:59Z" end-time="2026-11-21 11:20:04Z" duration="4.965909" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1613.9 ms · door+preload 0 / activate 1614 / unload 0 / settle 219 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed A_Zone("Pursuit05")
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

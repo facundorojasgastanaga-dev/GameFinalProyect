@@ -7,6 +7,9 @@ namespace IronRequiem
     ///   centred on the forearm axis, so it reads as part of the arm (no gap).
     /// - On equip, plays an absorb animation: the stolen piece floats ahead, is pulled into the forearm and locks
     ///   with sparks, a short camera kick and a scale punch.
+    /// Arms-fix (19/11/2026): the absorb plays once per equip, on the first show after StolenWeaponCarrier calls
+    /// PlayAbsorbOnNextShow (pickup or execution). Every other show (switching back with 1/2) appears seated: no
+    /// shrink, sparks, kick or hit-stop. Before, OnEnable replayed the whole absorb on every switch back.
     /// Runs after ProtagonistHandsPresentation (order 110). Built once; zero alloc per frame.
     [DefaultExecutionOrder(200)]
     public sealed class StolenShellFit : MonoBehaviour
@@ -23,11 +26,19 @@ namespace IronRequiem
         [SerializeField, Min(0)] float socketOverlap = .003f;
         ProtagonistHandsPresentation hands;
         Vector3 rearLocal; bool measured; Vector3 baseScale;
-        float t = 1; bool locked = true;
+        float t = 1; bool locked = true, absorbPending;
         ParticleSystem sparks;
 
         public void Configure(Vector3 position, Quaternion rotation) { socketToShellPosition = position; socketToShellRotation = rotation; }
         public void ConfigureSparks(Material material) => sparkMaterial = material;
+        public bool Absorbing => t < 1;
+
+        /// The next show of this weapon (or the current one, if already shown) plays the absorb. Once per equip.
+        public void PlayAbsorbOnNextShow()
+        {
+            if (isActiveAndEnabled) { t = 0; locked = false; absorbPending = false; }
+            else absorbPending = true;
+        }
 
         void Awake()
         {
@@ -67,7 +78,8 @@ namespace IronRequiem
         void OnEnable()
         {
             if (!hands) hands = FindAnyObjectByType<ProtagonistHandsPresentation>();
-            t = 0; locked = false;
+            if (absorbPending) { absorbPending = false; t = 0; locked = false; }
+            else { t = 1; locked = true; transform.localScale = baseScale; }   // re-show: seated, no lock effects
         }
 
         void LateUpdate()
@@ -95,6 +107,11 @@ namespace IronRequiem
         void Lock(Transform socket)
         {
             locked = true; transform.localScale = baseScale;
+            // arms-fix: during an execution the wrench and the punch are the only two hits; the seat lands silently there
+            // (sparks, camera kick and hit-stop read as a third blow next to the kill)
+            // executions-v02: also silent inside the execution hit-stop budget and for 0.6 s after the disarm (the seat can now land
+            // just after the hands finish, since the weapon is shown at 0.52 s and Recover is shorter).
+            if (GameFeel.ExecutionBudgetActive || (hands && (hands.IsDisarming || Time.time - hands.DisarmEndedAt < .6f))) return;
             if (sparks) { sparks.transform.SetPositionAndRotation(socket.position, socket.rotation); sparks.Play(); }
             var cam = Camera.main; if (cam) DistanceCameraImpulse.Kick(cam, new Vector3(1.4f, -.6f, .8f), new Vector3(0, -.006f, -.02f));
             GameFeel.HitStop(.035f);

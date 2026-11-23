@@ -13,20 +13,23 @@ namespace IronRequiem
         [SerializeField, Range(.2f,1.2f)] float kickDamping=.7f;
         [SerializeField, Min(0)] float maximumKickRotation=6f;
         [SerializeField, Min(0)] float maximumKickTranslation=.08f;
+        [Tooltip("executions-v02: cap of the kick's angular speed (degrees per second); 0 = uncapped. 90 deg/s = 1.5 deg per frame at 60 FPS.")]
+        [SerializeField, Min(0)] float maxKickDegreesPerSecond=90f;
         static readonly List<DistanceCameraImpulse> Cameras=new List<DistanceCameraImpulse>(2);
         Vector3 basePosition;
         Quaternion baseRotation;
         bool applied;
         float remaining,duration,strength;
         Vector3 kickAngle,kickAngleVelocity,kickOffset,kickOffsetVelocity;
+        Vector3 appliedKick; // executions-v02: the kick as shown (angular-speed capped); the spring itself is untouched
         public bool IsShaking => remaining>0;
         // Directional kicks are reported separately so distance-shake checks keep their meaning.
-        public bool IsKicking => kickAngle.sqrMagnitude>1e-4f||kickAngleVelocity.sqrMagnitude>1e-3f||kickOffset.sqrMagnitude>1e-8f;
-        public Vector3 KickAngle => kickAngle;
+        public bool IsKicking => appliedKick.sqrMagnitude>1e-4f||kickAngle.sqrMagnitude>1e-4f||kickAngleVelocity.sqrMagnitude>1e-3f||kickOffset.sqrMagnitude>1e-8f;
+        public Vector3 KickAngle => appliedKick;
         public Vector3 CurrentOffset {get;private set;}
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)] static void ResetRegistry()=>Cameras.Clear();
         void OnEnable(){if(!Cameras.Contains(this))Cameras.Add(this);}
-        void OnDisable(){Restore();Cameras.Remove(this);remaining=0;kickAngle=kickAngleVelocity=kickOffset=kickOffsetVelocity=Vector3.zero;}
+        void OnDisable(){Restore();Cameras.Remove(this);remaining=0;kickAngle=kickAngleVelocity=kickOffset=kickOffsetVelocity=appliedKick=Vector3.zero;}
         void Update()=>Restore();
         public static void Emit(Vector3 position,float radius,float amplitude,float seconds)
         {
@@ -77,7 +80,11 @@ namespace IronRequiem
                 if(remaining==0)strength=0;
             }
             StepKick(Time.deltaTime);
-            translation+=kickOffset;rotation+=kickAngle;
+            // executions-v02: slew-limit the shown rotation (maxKickDegreesPerSecond), so no kick turns the view faster than 1.5 deg/frame at 60 FPS.
+            var shown=kickAngle;
+            if(maxKickDegreesPerSecond>0&&Time.deltaTime>0){var delta=kickAngle-appliedKick;float cap=maxKickDegreesPerSecond*Time.deltaTime;if(delta.magnitude>cap)shown=appliedKick+delta.normalized*cap;}
+            appliedKick=shown;
+            translation+=kickOffset;rotation+=shown;
             // F4: player option (Opciones > Temblor de pantalla), 0 = off.
             float feel=GameFeel.ShakeScale;translation*=feel;rotation*=feel;
             CurrentOffset=translation;
@@ -96,7 +103,7 @@ namespace IronRequiem
                 kickOffsetVelocity+=(-kickOffset*k-kickOffsetVelocity*c)*h;kickOffset+=kickOffsetVelocity*h;
             }
             kickAngle=Vector3.ClampMagnitude(kickAngle,maximumKickRotation);kickOffset=Vector3.ClampMagnitude(kickOffset,maximumKickTranslation);
-            if(!IsKicking){kickAngle=kickAngleVelocity=kickOffset=kickOffsetVelocity=Vector3.zero;}
+            if(!IsKicking){kickAngle=kickAngleVelocity=kickOffset=kickOffsetVelocity=appliedKick=Vector3.zero;}
         }
         void Restore()
         {

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Failed(Child)" total="10" passed="1" failed="9" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:55Z" duration="53.7037504">
+  <test-suite type="TestSuite" id="1333" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="271" result="Failed" site="Child" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:55Z" duration="53.703750" total="10" passed="1" failed="9" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1327" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="271" result="Failed" site="Child" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:55Z" duration="53.671272" total="10" passed="1" failed="9" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="22364" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1328" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="271" result="Failed" site="Child" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:55Z" duration="53.662681" total="10" passed="1" failed="9" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="271" result="Failed" site="Child" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:55Z" duration="53.652342" total="10" passed="1" failed="9" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1042" name="BunkerPolishTests" fullname="IronRequiem.Tests.BunkerPolishTests" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:11Z" duration="9.409584" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1047" name="ShotgunReloadsBankOfFourWithVent" fullname="IronRequiem.Tests.BunkerPolishTests.ShotgunReloadsBankOfFourWithVent" methodname="ShotgunReloadsBankOfFourWithVent" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="51086462" result="Failed" start-time="2026-11-19 04:18:02Z" end-time="2026-11-19 04:18:11Z" duration="9.363168" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  no trickle regeneration
+  Expected: 3
+  But was:  4
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.BunkerPolishTests+<ShotgunReloadsBankOfFourWithVent>d__35.MoveNext () [0x0011e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BunkerPolishTests.cs:183
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Failed ShotgunReloadsBankOfFourWithVent
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1051" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-19 04:18:11Z" end-time="2026-11-19 04:18:26Z" duration="15.264655" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1054" name="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" fullname="IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne" methodname="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="27656913" result="Failed" start-time="2026-11-19 04:18:11Z" end-time="2026-11-19 04:18:26Z" duration="15.246596" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 15 but was 17. Strings differ at index 0.
+  Expected: "RequiemCampaign"
+  But was:  "Map01_Campaign_S1"
+  -----------^
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<IntroMenuStartsCampaignAndRestartReturnsToRoomOne>d__26.MoveNext () [0x00166] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:250
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1930.9 ms · door+preload 0 / activate 1931 / unload 0 / settle 337 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 62.9 ms · door+preload 22 / activate 36 / unload 63 / settle 19 · peak at frame 99/136 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 68.9 ms · door+preload 17 / activate 29 / unload 69 / settle 24 · peak at frame 99/204 load 1.00
+[CampaignTests] Failed IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1073" name="CombatFollowupTests" fullname="IronRequiem.Tests.CombatFollowupTests" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-19 04:18:26Z" end-time="2026-11-19 04:18:30Z" duration="3.713821" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1075" name="ExecutionProtectsT07AndExpiresWithoutChangingGodMode" fullname="IronRequiem.Tests.CombatFollowupTests.ExecutionProtectsT07AndExpiresWithoutChangingGodMode" methodname="ExecutionProtectsT07AndExpiresWithoutChangingGodMode" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="426157201" result="Passed" start-time="2026-11-19 04:18:26Z" end-time="2026-11-19 04:18:30Z" duration="3.696560" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ExecutionProtectsT07AndExpiresWithoutChangingGodMode
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1095" name="CombatV03Coverage" fullname="IronRequiem.Tests.CombatV03Coverage" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-19 04:18:30Z" end-time="2026-11-19 04:18:35Z" duration="4.553214" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1102" name="CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" fullname="IronRequiem.Tests.CombatV03Coverage.CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" methodname="CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1582889088" result="Failed" start-time="2026-11-19 04:18:30Z" end-time="2026-11-19 04:18:35Z" duration="4.537945" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatV03Coverage+<CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon>d__22.MoveNext () [0x00298] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatV03Coverage.cs:179
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1117" name="FastCombatTests" fullname="IronRequiem.Tests.FastCombatTests" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-19 04:18:35Z" end-time="2026-11-19 04:18:37Z" duration="1.835794" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1119" name="T07ThresholdWallsRangeInventoryAndUniqueDelivery" fullname="IronRequiem.Tests.FastCombatTests.T07ThresholdWallsRangeInventoryAndUniqueDelivery" methodname="T07ThresholdWallsRangeInventoryAndUniqueDelivery" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1729637892" result="Failed" start-time="2026-11-19 04:18:35Z" end-time="2026-11-19 04:18:37Z" duration="1.822652" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  95.9000015f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.FastCombatTests+<T07ThresholdWallsRangeInventoryAndUniqueDelivery>d__19.MoveNext () [0x00582] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\FastCombatTests.cs:42
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed T07ThresholdWallsRangeInventoryAndUniqueDelivery
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1145" name="MechanicsBehaviorTests" fullname="IronRequiem.Tests.MechanicsBehaviorTests" classname="IronRequiem.Tests.MechanicsBehaviorTests" runstate="Runnable" testcasecount="18" result="Failed" site="Child" start-time="2026-11-19 04:18:37Z" end-time="2026-11-19 04:18:43Z" duration="6.873229" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1156" name="FullChargeUsesItsLargerRadiusForAnActualOffsetHit" fullname="IronRequiem.Tests.MechanicsBehaviorTests.FullChargeUsesItsLargerRadiusForAnActualOffsetHit" methodname="FullChargeUsesItsLargerRadiusForAnActualOffsetHit" classname="IronRequiem.Tests.MechanicsBehaviorTests" runstate="Runnable" seed="1627487360" result="Failed" start-time="2026-11-19 04:18:37Z" end-time="2026-11-19 04:18:41Z" duration="4.303459" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Full 14cm radius must hit with its charged damage
+  Expected: 935.0f +/- 0.00999999978f
+  But was:  1000.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MechanicsBehaviorTests+<FullChargeUsesItsLargerRadiusForAnActualOffsetHit>d__28.MoveNext () [0x0021d] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MechanicsBehaviorTests.cs:341
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[CampaignTests] Failed FullChargeUsesItsLargerRadiusForAnActualOffsetHit
+]]></output>
+            </test-case>
+            <test-case id="1161" name="SlideContactParticlesFollowAndStopWithSlideAndCAloneCrouches" fullname="IronRequiem.Tests.MechanicsBehaviorTests.SlideContactParticlesFollowAndStopWithSlideAndCAloneCrouches" methodname="SlideContactParticlesFollowAndStopWithSlideAndCAloneCrouches" classname="IronRequiem.Tests.MechanicsBehaviorTests" runstate="Runnable" seed="115293006" result="Failed" start-time="2026-11-19 04:18:41Z" end-time="2026-11-19 04:18:43Z" duration="2.543034" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: less than 0.200000003f
+  But was:  0.650222361f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.MechanicsBehaviorTests+<SlideContactParticlesFollowAndStopWithSlideAndCAloneCrouches>d__33.MoveNext () [0x002d7] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MechanicsBehaviorTests.cs:422
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD0' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD1' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+Renderer 'Body_LOD2' is registered with more than one LODGroup ('Body' and 'AnimatedRig').
+[CampaignTests] Failed SlideContactParticlesFollowAndStopWithSlideAndCAloneCrouches
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1196" name="ProtagonistActionsTests" fullname="IronRequiem.Tests.ProtagonistActionsTests" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-11-19 04:18:43Z" end-time="2026-11-19 04:18:55Z" duration="11.970749" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1198" name="FArticulatesFistHitsOneHealthOnceAndRecovers" fullname="IronRequiem.Tests.ProtagonistActionsTests.FArticulatesFistHitsOneHealthOnceAndRecovers" methodname="FArticulatesFistHitsOneHealthOnceAndRecovers" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="322441362" result="Failed" start-time="2026-11-19 04:18:43Z" end-time="2026-11-19 04:18:46Z" duration="3.025942" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistActionsTests+<FArticulatesFistHitsOneHealthOnceAndRecovers>d__25.MoveNext () [0x00175] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistActionsTests.cs:78
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed FArticulatesFistHitsOneHealthOnceAndRecovers
+]]></output>
+            </test-case>
+            <test-case id="1199" name="MeleeRespectsWallRangeHoldAndRecovery" fullname="IronRequiem.Tests.ProtagonistActionsTests.MeleeRespectsWallRangeHoldAndRecovery" methodname="MeleeRespectsWallRangeHoldAndRecovery" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="1027041532" result="Failed" start-time="2026-11-19 04:18:46Z" end-time="2026-11-19 04:18:52Z" duration="5.547524" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 75.0f
+  But was:  100.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistActionsTests+<MeleeRespectsWallRangeHoldAndRecovery>d__26.MoveNext () [0x00293] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistActionsTests.cs:87
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed MeleeRespectsWallRangeHoldAndRecovery
+]]></output>
+            </test-case>
+            <test-case id="1203" name="SlideDirectionStaysFixedAndTorsoCannotTurnBehind" fullname="IronRequiem.Tests.ProtagonistActionsTests.SlideDirectionStaysFixedAndTorsoCannotTurnBehind" methodname="SlideDirectionStaysFixedAndTorsoCannotTurnBehind" classname="IronRequiem.Tests.ProtagonistActionsTests" runstate="Runnable" seed="621964063" result="Failed" start-time="2026-11-19 04:18:52Z" end-time="2026-11-19 04:18:55Z" duration="3.367715" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Camera yaw must not rotate the legs
+  Expected: less than 0.00999999978f
+  But was:  0.808182538f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ProtagonistActionsTests+<SlideDirectionStaysFixedAndTorsoCannotTurnBehind>d__31.MoveNext () [0x002e8] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ProtagonistActionsTests.cs:138
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed SlideDirectionStaysFixedAndTorsoCannotTurnBehind
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

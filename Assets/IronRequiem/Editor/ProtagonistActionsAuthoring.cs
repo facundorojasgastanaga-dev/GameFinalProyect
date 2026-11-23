@@ -62,7 +62,7 @@ namespace IronRequiem.Editor
             const string path="Assets/FPS/InputSystem_Actions.inputactions";var source=AssetDatabase.LoadAssetAtPath<InputActionAsset>(path);var asset=InputActionAsset.FromJson(source.ToJson());
             var map=asset.FindActionMap("Player",true);var collect=map.FindAction("CollectWeapon",true);
             for(int i=0;i<collect.bindings.Count;i++)if(collect.bindings[i].path=="<Keyboard>/f")collect.ChangeBinding(i).WithPath("<Keyboard>/e");
-            var cycle=map.FindAction("NextWeapon",true);for(int i=cycle.bindings.Count-1;i>=0;i--)if(cycle.bindings[i].path=="<Keyboard>/e")cycle.ChangeBinding(i).Erase();
+            var cycle=map.FindAction("NextWeapon");if(cycle!=null)for(int i=cycle.bindings.Count-1;i>=0;i--)if(cycle.bindings[i].path=="<Keyboard>/e")cycle.ChangeBinding(i).Erase(); // v8: NextWeapon was split into WeaponNext/WeaponPrevious
             var punch=map.FindAction("Melee");if(punch==null){punch=map.AddAction("Melee",InputActionType.Button);punch.expectedControlType="Button";punch.AddBinding("<Keyboard>/f",groups:"Keyboard&Mouse");}
             File.WriteAllText(path,asset.ToJson());Object.DestroyImmediate(asset);AssetDatabase.ImportAsset(path,ImportAssetOptions.ForceUpdate);
         }

@@ -1,0 +1,183 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R11",
+  "kind": "rounds",
+  "archetype": "E6",
+  "title": "R11 · DECANTADORES · 3 RONDAS",
+  "arenaTitle": "DECANTADORES",
+  "seed": 1111,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "Avanzada",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ],
+      "variations": [
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "HOV",
+              "count": 1
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "Sierra",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 1
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marea",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "name": "Resaca",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ],
+      "variations": [
+        {
+          "name": "Sierras",
+          "groups": [
+            {
+              "enemy": "SAW",
+              "count": 2
+            },
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -22,
+        1.2,
+        8
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        12,
+        0,
+        -14
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -6,
+        0,
+        22
+      ]
+    }
+  ],
+  "notes": "B1.2. Horda; ningún botiquín en el rellano (lo cierran las P)."
+}

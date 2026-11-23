@@ -1,0 +1,95 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R02",
+  "kind": "rounds",
+  "archetype": "E2",
+  "title": "R02 · POZO DEL MONTACARGAS · 3 RONDAS",
+  "arenaTitle": "POZO DEL MONTACARGAS",
+  "seed": 202,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "Francotiradores",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 1,
+          "fixed": {
+            "zone": "G3",
+            "near": [
+              -19,
+              6,
+              10
+            ]
+          }
+        },
+        {
+          "enemy": "T07",
+          "count": 1,
+          "fixed": {
+            "zone": "G1",
+            "near": [
+              -11,
+              0,
+              21
+            ]
+          }
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Presión",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Cornisas",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 3
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        -18,
+        6,
+        20
+      ]
+    }
+  ],
+  "notes": "B1.2. Primer OVERDRIVE y primer lanzamiento. Ronda 1: un T07 en la cornisa W y otro al fondo N, lejos de la llegada por la terraza E."
+}

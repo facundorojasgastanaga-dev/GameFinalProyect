@@ -301,6 +301,16 @@ namespace IronRequiem
             if (spine1) spine1.rotation = bendRot * spine1.rotation;
             if (spine2) spine2.rotation = bendRot * spine2.rotation;
 
+            // 20/11: the torso winds back before each blow and drives the shoulder into it
+            float twist = PunchTwist(t);
+            if (Mathf.Abs(twist) > .01f)
+            {
+                var twistRot = Quaternion.AngleAxis(twist / 3f, cq * pod.up);
+                if (spine) spine.rotation = twistRot * spine.rotation;
+                if (spine1) spine1.rotation = twistRot * spine1.rotation;
+                if (spine2) spine2.rotation = twistRot * spine2.rotation;
+            }
+
             // arms: from the capsule's bind (A) pose to hanging relaxed once the robot starts to leave
             float relax = Smooth(T.leave - .2f, T.leave + 2.0f, t);
             if (relax > 0)
@@ -332,16 +342,28 @@ namespace IronRequiem
             if (rArm && rFore && rHand && spine2)
             {
                 var chest = spine2.position;
-                Vector3 target = rHand.position; float w = 0;
+                Vector3 target = rHand.position; float w = 0, punching = 0;
                 if (glassImpact)
                 {
-                    var wound = chest + bodyFwd * .1f + bodyRight * .22f - up * .02f;
+                    // 20/11: each blow is cocked beside the chest (elbow back), held a beat, snapped into the glass and left
+                    // pressed for an instant before the recoil; the second one is wound deeper and goes through the pane
                     var hit = glassImpact.position; var start = rHand.position;
-                    float d1 = T.punch1 - .65f, d2 = T.punch2 - .35f;
-                    if (t >= d1 && t < T.punch1) { float k = Mathf.InverseLerp(d1, T.punch1, t); target = Vector3.Lerp(start, hit, k * k); w = 1; }
-                    else if (t >= T.punch1 && t < d2) { target = Vector3.Lerp(hit, wound, Smooth(T.punch1, T.punch1 + .6f, t)); w = 1; }
-                    else if (t >= d2 && t < T.punch2) { float k = Mathf.InverseLerp(d2, T.punch2, t); target = Vector3.Lerp(wound, hit, k * k); w = 1; }
-                    else if (t >= T.punch2) { target = Vector3.Lerp(hit, wound, Smooth(T.punch2, T.punch2 + .7f, t)); w = 1 - Smooth(T.releaseAt + .6f, T.leave + .2f, t); }
+                    var cock1 = chest + bodyRight * .27f - bodyFwd * .03f;
+                    var cock2 = chest + bodyRight * .30f - bodyFwd * .09f + up * .05f;
+                    var lowered = chest + bodyFwd * .1f + bodyRight * .22f - up * .02f;
+                    var through = hit + (hit - cock2).normalized * .17f;
+                    float p1 = T.punch1, p2 = T.punch2, c1 = p1 - .85f, s1 = p1 - .13f, s2 = p2 - .15f;
+                    if (t >= c1 && t < s1) { target = Vector3.Lerp(start, cock1, Smooth(c1, s1 - .2f, t)) - bodyFwd * (.035f * Smooth(s1 - .22f, s1, t)); w = Smooth(c1, c1 + .25f, t); }
+                    else if (t >= s1 && t < p1) { float k = Mathf.InverseLerp(s1, p1, t); target = Vector3.Lerp(cock1 - bodyFwd * .035f, hit, k * k); w = 1; }
+                    else if (t >= p1 && t < s2)
+                    {
+                        float back = Smooth(p1 + .09f, p1 + .7f, t);                       // pressed on the glass, then recoil
+                        float gather = Smooth(s2 - .3f, s2, t);                             // last pull before the second blow
+                        target = Vector3.Lerp(hit, cock2, back) - bodyFwd * (.04f * gather) + up * (.004f * Mathf.Sin(t * 31f) * back); w = 1;
+                    }
+                    else if (t >= s2 && t < p2 + .07f) { float k = Mathf.InverseLerp(s2, p2 + .07f, t); target = Vector3.Lerp(cock2 - bodyFwd * .04f, through, k * k); w = 1; }
+                    else if (t >= p2 + .07f) { target = Vector3.Lerp(through, lowered, Smooth(p2 + .3f, p2 + 1.15f, t)); w = 1 - Smooth(T.releaseAt + .6f, T.leave + .2f, t); }
+                    punching = t >= c1 ? w : 0;
                 }
                 float handW = Smooth(T.handStart, T.handStart + 1.1f, t) * (1 - Smooth(T.handEnd - .8f, T.handEnd + .2f, t));
                 if (handW > 0 && head)
@@ -349,7 +371,9 @@ namespace IronRequiem
                     var study = head.position + bodyFwd * .42f - up * .16f + bodyRight * .12f + up * (.02f * Mathf.Sin(t * .9f));
                     target = Vector3.Lerp(target, study, handW); w = Mathf.Max(w, handW);
                 }
-                if (w > 0) TwoBone(rArm, rFore, rHand, Vector3.Lerp(rHand.position, target, w), (rArm.position + target) * .5f + bodyRight * .35f - up * .4f - bodyFwd * .1f, armLength);
+                // a straight punch keeps the elbow behind the fist; the study pose lets it hang lower
+                var pole = (rArm.position + target) * .5f + Vector3.Lerp(bodyRight * .35f - up * .4f - bodyFwd * .1f, bodyRight * .4f - up * .2f - bodyFwd * .3f, punching * (1 - handW));
+                if (w > 0) TwoBone(rArm, rFore, rHand, Vector3.Lerp(rHand.position, target, w), pole, armLength);
                 // palm and back: only the hand bone rolls about the forearm axis (the hand is a separate rigid piece)
                 if (handW > 0 && rFore)
                 {
@@ -360,6 +384,9 @@ namespace IronRequiem
                 }
                 Curiosity = handW;
             }
+            // 20/11: the head looks at the hand only now, with the arm already raised (it used to aim at where the hand
+            // hung before the arm IK ran, so the visor pointed below the hand)
+            LookAtHand(t);
 
             // fingers: twitch, fist for the punches, open/close while studying; the left hand closes on the rail
             float curl = Curl(t);
@@ -439,14 +466,7 @@ namespace IronRequiem
                 if (neck) neck.rotation = Quaternion.AngleAxis(nod * .3f, right) * neck.rotation;
                 head.rotation = Quaternion.AngleAxis(nod * .7f, right) * head.rotation;
             }
-            // hand study: look at it with a curious head tilt
-            float handW = Smooth(T.handStart + .2f, T.handStart + 1.2f, t) * (1 - Smooth(T.handEnd - .6f, T.handEnd + .1f, t));
-            if (handW > 0 && rHand)
-            {
-                AimChain(rHand.position, .85f * handW, 70);
-                var fwd = head.rotation * headFwdLocal;
-                head.rotation = Quaternion.AngleAxis(13f * handW * Mathf.Sin((t - T.handStart) * .75f), fwd) * head.rotation;
-            }
+            // (hand study: see LookAtHand, which runs after the arm IK)
             // conveyor: head leads, then the chest, while the body turns on re-planted feet
             float beltW = Smooth(T.beltLook, T.beltLook + .9f, t) * (1 - Smooth(T.turnBackStart - .2f, T.turnBackStart + .7f, t));
             if (beltW > 0 && beltTarget)
@@ -461,6 +481,42 @@ namespace IronRequiem
                 if (spine2) AimBone(spine2, chestFwdLocal, lookTarget.position, .25f * scavW, 25);
                 AimChain(lookTarget.position, .8f * scavW, 60);
             }
+            ClampNeck();
+        }
+
+        /// Torso twist (degrees about the body's up axis) for the two blows: positive winds the right shoulder back.
+        float PunchTwist(float t)
+        {
+            var T = timing; float p1 = T.punch1, p2 = T.punch2, c1 = p1 - .85f, s1 = p1 - .13f, s2 = p2 - .15f;
+            if (t < c1 || t > p2 + 1.2f) return 0;
+            float wind1 = 9 * Smooth(c1, s1 - .15f, t) * (1 - Smooth(s1, p1, t));
+            float drive1 = -11 * Smooth(s1, p1, t) * (1 - Smooth(p1 + .1f, p1 + .6f, t));
+            float wind2 = 13 * Smooth(p1 + .15f, p1 + .75f, t) * (1 - Smooth(s2, p2, t));
+            float drive2 = -16 * Smooth(s2, p2 + .05f, t) * (1 - Smooth(p2 + .3f, p2 + 1.15f, t));
+            return wind1 + drive1 + wind2 + drive2;
+        }
+
+        /// Hand study: neck and head turn to the palm (not the wrist bone) with a curious tilt. Runs after the arm IK and
+        /// leaves the chest alone, so the raised hand does not move.
+        void LookAtHand(float t)
+        {
+            if (!head || !rHand) return;
+            var T = timing;
+            float handW = Smooth(T.handStart + .2f, T.handStart + 1.2f, t) * (1 - Smooth(T.handEnd - .6f, T.handEnd + .1f, t));
+            if (handW <= 0) return;
+            var knuckle = rFingers != null && rFingers.Length > 6 && rFingers[6] ? rFingers[6].position : rHand.position;
+            var palm = Vector3.Lerp(rHand.position, knuckle, .75f);
+            var cur = head.rotation * headFwdLocal; var want = palm - head.position;
+            if (want.sqrMagnitude < 1e-4f) return;
+            var limited = Vector3.RotateTowards(cur, want.normalized, 75 * Mathf.Deg2Rad, 0);
+            var full = Quaternion.Slerp(Quaternion.identity, Quaternion.FromToRotation(cur, limited), handW);
+            if (neck) neck.rotation = Quaternion.Slerp(Quaternion.identity, full, .28f) * neck.rotation;
+            // the neck moved the head: finish the aim exactly from the new pose
+            cur = head.rotation * headFwdLocal; want = palm - head.position;
+            limited = Vector3.RotateTowards(cur, want.normalized, 75 * Mathf.Deg2Rad, 0);
+            head.rotation = Quaternion.Slerp(Quaternion.identity, Quaternion.FromToRotation(cur, limited), handW) * head.rotation;
+            var fwd = head.rotation * headFwdLocal;
+            head.rotation = Quaternion.AngleAxis(9f * handW * Mathf.Sin((t - T.handStart) * .75f), fwd) * head.rotation;
             ClampNeck();
         }
 

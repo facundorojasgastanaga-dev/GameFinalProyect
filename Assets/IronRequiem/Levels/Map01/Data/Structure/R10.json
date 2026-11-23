@@ -1,0 +1,1232 @@
+{
+  "id": "R10",
+  "name": "Túnel de la trituradora",
+  "scene": "Map01_R10_TunelTrituradora",
+  "zone": "Tuneles",
+  "function": "chase",
+  "archetype": "E7",
+  "worldOrigin": [
+    237,
+    -22,
+    113
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -9,
+      -11,
+      -101
+    ],
+    "max": [
+      9,
+      11,
+      101
+    ]
+  },
+  "interior": {
+    "min": [
+      -8,
+      -10,
+      -100
+    ],
+    "max": [
+      8,
+      10,
+      100
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -8,
+          0,
+          -100
+        ],
+        "max": [
+          8,
+          10,
+          100
+        ]
+      },
+      "y": 10
+    }
+  ],
+  "doors": [
+    {
+      "id": "R10_in",
+      "role": "entry",
+      "class": "A",
+      "center": [
+        0,
+        0,
+        -100
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          -3.5,
+          0,
+          -100
+        ],
+        "max": [
+          3.5,
+          4.5,
+          -96
+        ]
+      },
+      "airlock": "C09"
+    },
+    {
+      "id": "R10_out",
+      "role": "exit",
+      "class": "Z",
+      "center": [
+        0,
+        0,
+        100
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -5.0,
+          0,
+          94
+        ],
+        "max": [
+          5.0,
+          6,
+          100
+        ]
+      },
+      "airlock": "C10"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pitG1",
+      "type": "pit",
+      "center": [
+        0.0,
+        -5.0,
+        -38.0
+      ],
+      "size": [
+        16,
+        10,
+        4
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pitG2",
+      "type": "pit",
+      "center": [
+        0.0,
+        -5.0,
+        6.0
+      ],
+      "size": [
+        16,
+        10,
+        4
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pitG3",
+      "type": "pit",
+      "center": [
+        0.0,
+        -5.0,
+        46.0
+      ],
+      "size": [
+        16,
+        10,
+        4
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-90",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -90.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-90",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -90.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-80",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -80.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-80",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -80.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-70",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -70.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-70",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -70.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-60",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -60.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-60",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -60.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-50",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -50.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-50",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -50.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-30",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -30.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-30",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -30.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-20",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -20.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-20",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -20.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW-10",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        -10.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE-10",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        -10.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW0",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        0.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE0",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        0.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW10",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        10.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE10",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        10.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW20",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        20.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE20",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        20.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW30",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        30.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE30",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        30.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW40",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        40.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE40",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        40.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW50",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        50.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE50",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        50.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW60",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        60.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE60",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        60.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW70",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        70.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE70",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        70.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW80",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        80.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE80",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        80.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilW90",
+      "type": "pillar",
+      "center": [
+        -7.5,
+        5.0,
+        90.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "pilE90",
+      "type": "pillar",
+      "center": [
+        7.5,
+        5.0,
+        90.0
+      ],
+      "size": [
+        1,
+        10,
+        2
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R10_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -3.5,
+        0,
+        -100
+      ],
+      "max": [
+        3.5,
+        4.5,
+        -96
+      ]
+    },
+    {
+      "id": "R10_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        -5.0,
+        0,
+        94
+      ],
+      "max": [
+        5.0,
+        6,
+        100
+      ]
+    },
+    {
+      "id": "headerS",
+      "kind": "doorApproach",
+      "min": [
+        -8,
+        8,
+        -86.5
+      ],
+      "max": [
+        8,
+        10,
+        -85.5
+      ]
+    },
+    {
+      "id": "headerN",
+      "kind": "doorApproach",
+      "min": [
+        -8,
+        8,
+        85.5
+      ],
+      "max": [
+        8,
+        10,
+        86.5
+      ]
+    },
+    {
+      "id": "run",
+      "kind": "criticalPath",
+      "min": [
+        -7,
+        0,
+        -86
+      ],
+      "max": [
+        7,
+        4.5,
+        86
+      ]
+    }
+  ],
+  "spawnZones": [],
+  "lightAnchors": [
+    {
+      "id": "R10.A1",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        9.5,
+        -93
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A2",
+      "kind": "floor",
+      "pos": [
+        0,
+        -6,
+        -38
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A3",
+      "kind": "floor",
+      "pos": [
+        0,
+        -6,
+        6
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A4",
+      "kind": "floor",
+      "pos": [
+        0,
+        -6,
+        46
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A5",
+      "kind": "wall",
+      "pos": [
+        -7.4,
+        6,
+        -23
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A6",
+      "kind": "wall",
+      "pos": [
+        7.4,
+        6,
+        21
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A7",
+      "kind": "wall",
+      "pos": [
+        -7.4,
+        6,
+        61
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R10.A8",
+      "kind": "wall",
+      "pos": [
+        0,
+        8.8,
+        99.6
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 8,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [],
+  "hazards": [
+    {
+      "type": "gap",
+      "id": "G1",
+      "zNear": 73,
+      "zFar": 77,
+      "xMin": -8,
+      "xMax": 8,
+      "depth": -10,
+      "upperFloorY": -22,
+      "halfWidth": 250,
+      "returnsNear": [
+        [
+          -4,
+          0,
+          -44
+        ],
+        [
+          0,
+          0,
+          -44
+        ],
+        [
+          4,
+          0,
+          -44
+        ]
+      ],
+      "returnsFar": [
+        [
+          -4,
+          0,
+          -32
+        ],
+        [
+          0,
+          0,
+          -32
+        ],
+        [
+          4,
+          0,
+          -32
+        ]
+      ]
+    },
+    {
+      "type": "gap",
+      "id": "G2",
+      "zNear": 117,
+      "zFar": 121,
+      "xMin": -8,
+      "xMax": 8,
+      "depth": -10,
+      "upperFloorY": -22,
+      "halfWidth": 250,
+      "returnsNear": [
+        [
+          -4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "returnsFar": [
+        [
+          -4,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          12
+        ],
+        [
+          4,
+          0,
+          12
+        ]
+      ]
+    },
+    {
+      "type": "gap",
+      "id": "G3",
+      "zNear": 157,
+      "zFar": 161,
+      "xMin": -8,
+      "xMax": 8,
+      "depth": -10,
+      "upperFloorY": -22,
+      "halfWidth": 250,
+      "returnsNear": [
+        [
+          -4,
+          0,
+          40
+        ],
+        [
+          0,
+          0,
+          40
+        ],
+        [
+          4,
+          0,
+          40
+        ]
+      ],
+      "returnsFar": [
+        [
+          -4,
+          0,
+          52
+        ],
+        [
+          0,
+          0,
+          52
+        ],
+        [
+          4,
+          0,
+          52
+        ]
+      ]
+    }
+  ],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": "Grietas sin NavMesh entre tramos (la persecución no usa rondas). Coordenadas: chase.courseOffset/finishZ/activationZ y hazards.zNear/zFar/upperFloorY/halfWidth en MUNDO; el resto local"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": []
+  },
+  "chase": {
+    "courseOffset": [
+      237,
+      -22,
+      0
+    ],
+    "halfWidth": 8,
+    "finishZ": 195,
+    "sawSpawn": [
+      0,
+      0,
+      -84.5
+    ],
+    "trigger": {
+      "center": [
+        0,
+        5,
+        -73
+      ],
+      "size": [
+        16,
+        10,
+        4
+      ]
+    },
+    "entranceDoor": {
+      "center": [
+        0,
+        5,
+        -86
+      ],
+      "size": [
+        16,
+        10,
+        0.6
+      ]
+    },
+    "exitDoor": {
+      "center": [
+        0,
+        5,
+        86
+      ],
+      "size": [
+        16,
+        10,
+        0.6
+      ]
+    },
+    "ambushes": [
+      {
+        "activationZ": 58,
+        "points": [
+          [
+            -4.5,
+            0,
+            -26
+          ],
+          [
+            4.5,
+            0,
+            -20
+          ]
+        ]
+      },
+      {
+        "activationZ": 103,
+        "points": [
+          [
+            4.5,
+            0,
+            24
+          ],
+          [
+            -4.5,
+            0,
+            18
+          ]
+        ]
+      },
+      {
+        "activationZ": 143,
+        "points": [
+          [
+            -4.5,
+            0,
+            64
+          ],
+          [
+            4.5,
+            0,
+            58
+          ]
+        ]
+      }
+    ]
+  },
+  "landmark": {
+    "min": [
+      -8,
+      0,
+      -90
+    ],
+    "max": [
+      8,
+      8,
+      -80
+    ],
+    "note": "Trituradora de mantenimiento (aparece en z −84,5) y brillo rojo de las grietas"
+  },
+  "arena": null,
+  "portal": null,
+  "release": null
+}

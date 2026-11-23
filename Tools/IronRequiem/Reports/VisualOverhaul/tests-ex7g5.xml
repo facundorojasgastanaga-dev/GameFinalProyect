@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.6966446">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.696645" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.666798" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.656480" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.644933" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1056" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:55:13Z" duration="178.611980" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1062" name="CurrentRobotsEyesAndExecutionOnlyWeapons" fullname="IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons" methodname="CurrentRobotsEyesAndExecutionOnlyWeapons" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1730892826" result="Passed" start-time="2026-11-23 05:52:15Z" end-time="2026-11-23 05:52:38Z" duration="23.874194" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 6639.1 ms · door+preload 0 / activate 6639 / unload 0 / settle 479 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 50.6 ms · door+preload 48 / activate 21 / unload 51 / settle 30 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 104.9 ms · door+preload 21 / activate 18 / unload 105 / settle 20 · peak at frame 99/205 load 1.00
+[CampaignTests] Passed CurrentRobotsEyesAndExecutionOnlyWeapons
+]]></output>
+            </test-case>
+            <test-case id="1060" name="DeathScreenButtonsReceiveClicks" fullname="IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks" methodname="DeathScreenButtonsReceiveClicks" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1593255618" result="Passed" start-time="2026-11-23 05:52:39Z" end-time="2026-11-23 05:52:50Z" duration="11.355612" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Account API did not become accessible within 30 seconds. This may be due to network issues or editor focus.
+[Campaign] transition to Room00_Hangar (preload) peak frame 1424.1 ms · door+preload 0 / activate 1424 / unload 0 / settle 220 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 38.1 ms · door+preload 16 / activate 20 / unload 38 / settle 16 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 55.9 ms · door+preload 15 / activate 18 / unload 56 / settle 14 · peak at frame 99/213 load 1.00
+[CampaignTests] Passed DeathScreenButtonsReceiveClicks
+]]></output>
+            </test-case>
+            <test-case id="1061" name="EquippedExplosionCleansInventoryInAdditiveRoom" fullname="IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom" methodname="EquippedExplosionCleansInventoryInAdditiveRoom" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="688637817" result="Passed" start-time="2026-11-23 05:52:50Z" end-time="2026-11-23 05:53:05Z" duration="15.076129" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1668.5 ms · door+preload 0 / activate 1668 / unload 0 / settle 206 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 40.8 ms · door+preload 16 / activate 19 / unload 41 / settle 17 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 58.0 ms · door+preload 15 / activate 18 / unload 58 / settle 17 · peak at frame 99/204 load 1.00
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+]]></output>
+            </test-case>
+            <test-case id="1059" name="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" fullname="IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne" methodname="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="914436539" result="Failed" start-time="2026-11-23 05:53:05Z" end-time="2026-11-23 05:53:17Z" duration="11.908273" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 15 but was 17. Strings differ at index 0.
+  Expected: "RequiemCampaign"
+  But was:  "Map01_Campaign_S1"
+  -----------^
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<IntroMenuStartsCampaignAndRestartReturnsToRoomOne>d__26.MoveNext () [0x00166] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:250
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1696.9 ms · door+preload 0 / activate 1697 / unload 0 / settle 213 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 37.7 ms · door+preload 16 / activate 19 / unload 38 / settle 15 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 61.1 ms · door+preload 15 / activate 17 / unload 61 / settle 15 · peak at frame 99/209 load 1.00
+[CampaignTests] Failed IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+]]></output>
+            </test-case>
+            <test-case id="1058" name="PresentationHandsMountedArmsAndOverdriveHud" fullname="IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud" methodname="PresentationHandsMountedArmsAndOverdriveHud" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="279652063" result="Failed" start-time="2026-11-23 05:53:17Z" end-time="2026-11-23 05:53:30Z" duration="12.955209" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Unarmed F charge stage=2 player=(0.00, -0.02, -30.50)
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<Until>d__19.MoveNext () [0x000ab] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:132
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1506.6 ms · door+preload 0 / activate 1507 / unload 0 / settle 226 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 46.7 ms · door+preload 16 / activate 16 / unload 47 / settle 16 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 59.6 ms · door+preload 17 / activate 16 / unload 60 / settle 15 · peak at frame 99/211 load 1.00
+[CampaignTests] Failed PresentationHandsMountedArmsAndOverdriveHud
+]]></output>
+            </test-case>
+            <test-case id="1057" name="TwelveRoundsAirlocksInventoryAndPursuit" fullname="IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit" methodname="TwelveRoundsAirlocksInventoryAndPursuit" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1828329372" result="Passed" start-time="2026-11-23 05:53:30Z" end-time="2026-11-23 05:55:00Z" duration="90.282605" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1518.1 ms · door+preload 0 / activate 1518 / unload 0 / settle 234 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 42.8 ms · door+preload 15 / activate 19 / unload 43 / settle 17 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 55.0 ms · door+preload 15 / activate 20 / unload 55 / settle 16 · peak at frame 99/204 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 57.2 ms · door+preload 17 / activate 22 / unload 57 / settle 19 · peak at frame 99/296 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 66.6 ms · door+preload 19 / activate 22 / unload 67 / settle 15 · peak at frame 99/504 load 1.00
+[Campaign] transition to Room04_Reactor (preload) peak frame 62.8 ms · door+preload 17 / activate 18 / unload 63 / settle 18 · peak at frame 99/661 load 1.00
+[Campaign] transition to Pursuit05 (preload) peak frame 53.8 ms · door+preload 16 / activate 16 / unload 54 / settle 17 · peak at frame 99/770 load 1.00
+[CampaignTests] Passed TwelveRoundsAirlocksInventoryAndPursuit
+]]></output>
+            </test-case>
+            <test-case id="1063" name="V4FistChargeSlideGuardAndBigBotBlast" fullname="IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast" methodname="V4FistChargeSlideGuardAndBigBotBlast" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="236521794" result="Failed" start-time="2026-11-23 05:55:00Z" end-time="2026-11-23 05:55:13Z" duration="13.077400" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  F starts the charge stage=2 player=(16.46, 0.00, 3.53)
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<Until>d__19.MoveNext () [0x000ab] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:132
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1365.0 ms · door+preload 0 / activate 1365 / unload 0 / settle 230 · peak at frame 2/9 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 41.2 ms · door+preload 15 / activate 17 / unload 41 / settle 15 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 57.8 ms · door+preload 15 / activate 18 / unload 58 / settle 15 · peak at frame 99/212 load 1.00
+[CampaignTests] Failed V4FistChargeSlideGuardAndBigBotBlast
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

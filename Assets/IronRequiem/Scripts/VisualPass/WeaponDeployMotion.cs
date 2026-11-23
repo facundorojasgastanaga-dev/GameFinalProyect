@@ -8,6 +8,10 @@ namespace IronRequiem
     /// (fuel-cell tubes, their steam) stayed visible on their own and "loaded" before the weapon.
     /// This keeps every renderer outside WeaponRoot in sync with it, and plays the deploy each time the weapon is
     /// shown: the whole module (cells included) comes out retracted along its barrel and expands as one piece.
+    /// Arms-fix (19/11/2026): a weapon whose IWeaponSwitchMotion animates its own switch (ArmModuleVisual: unlock,
+    /// eject, dock) is shown at full size. Scaling it as well stacked two animations and, since this runs after
+    /// ProtagonistHandsPresentation (110), left the forearm fitted to last frame's scale (2-4 cm gap while docking).
+    /// Renderer sync and SkipNextDeploy are unchanged.
     /// Zero alloc per frame.
     [RequireComponent(typeof(WeaponController))]
     [DefaultExecutionOrder(150)]
@@ -19,10 +23,13 @@ namespace IronRequiem
         [SerializeField] float twistDegrees = -18f;
         GameObject weaponRoot; Renderer[] outside; bool[] outsideEnabled;
         Vector3 baseScale; Quaternion baseRotation; float t = 1; bool shown;
+        IWeaponSwitchMotion switchMotion;
+        bool SwitchAnimatedElsewhere => switchMotion is Object owner && owner && switchMotion.OverridesSwitchMotion;
 
         void Awake()
         {
             var weapon = GetComponent<WeaponController>();
+            TryGetComponent(out switchMotion);
             weaponRoot = weapon.WeaponRoot;
             baseScale = transform.localScale; baseRotation = transform.localRotation;
             var all = GetComponentsInChildren<Renderer>(true);
@@ -45,13 +52,15 @@ namespace IronRequiem
             bool now = IsShown();
             if (now != shown) Sync(now);
             if (t >= 1) return;
+            // a deploy started before the switch-motion component was enabled (same-frame instantiate + show)
+            if (SwitchAnimatedElsewhere) { t = 1; Apply(1); return; }
             t = Mathf.Min(1, t + Time.deltaTime / seconds);
             Apply(t);
         }
 
         void Sync(bool visible)
         {
-            if (visible && !shown) { if (skipNext) { skipNext = false; t = 1; Apply(1); } else { t = 0; Apply(0); } }
+            if (visible && !shown) { if (skipNext || SwitchAnimatedElsewhere) { skipNext = false; t = 1; Apply(1); } else { t = 0; Apply(0); } }
             if (!visible) { transform.localScale = baseScale; transform.localRotation = baseRotation; t = 1; }
             shown = visible;
             for (int i = 0; i < outside.Length; i++)

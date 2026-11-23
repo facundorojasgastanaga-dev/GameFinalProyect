@@ -1,0 +1,60 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R05",
+  "kind": "respite",
+  "archetype": "E0",
+  "title": "R05 · ENFERMERÍA · ZONA SEGURA",
+  "release": {
+    "mode": "OnEnterVolume",
+    "volume": {
+      "min": [
+        8,
+        0,
+        -12
+      ],
+      "max": [
+        16,
+        4,
+        0
+      ]
+    },
+    "delay": 0
+  },
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        1,
+        1.2,
+        -1
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        -10,
+        0,
+        7
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        2,
+        0,
+        -13
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        -14,
+        0,
+        -12
+      ],
+      "optional": true,
+      "note": "depósito tras la escotilla E"
+    }
+  ],
+  "notes": "Respiro, fin de S1 (Map01SessionHandoff de R4 en C05). El volumen release de Estructura manda; este es de reserva."
+}

@@ -32,6 +32,8 @@ Shader "IronRequiem/HardSurface"
         _DirtColor("Dirt Color", Color) = (0.12,0.1,0.08,1)
         _DirtAmount("Dirt Amount", Range(0,1)) = 0.45
         _DirtScale("Dirt Metres Per Tile", Float) = 2.5
+        [Toggle(_DIRTBREAKUP)] _UseDirtBreakup("Dirt Breakup (hides the noise tile on big surfaces)", Float) = 0
+        _DirtBreakup("Dirt Breakup Amount", Range(0,1)) = 0.8
         _DirtFloorHeight("Dirt Floor Fade Height (m above _DirtFloorY)", Float) = 1.2
         _DirtFloorY("Floor Height", Float) = 0
 
@@ -76,7 +78,7 @@ Shader "IronRequiem/HardSurface"
             half4 _BaseColor;
             half _Metallic, _Smoothness, _BumpScale;
             float _TriplanarScale, _TriplanarSharpness;
-            half4 _DirtColor; half _DirtAmount; float _DirtScale, _DirtFloorHeight, _DirtFloorY;
+            half4 _DirtColor; half _DirtAmount; float _DirtScale, _DirtFloorHeight, _DirtFloorY; half _DirtBreakup;
             half4 _WearColor; half _WearAmount, _WearCurvature, _WearFromMask;
             half4 _RimColor; half _RimPower;
             half4 _EmissionColor; float _PulseSpeed; half _PulseAmount, _PanelBoost;
@@ -106,6 +108,7 @@ Shader "IronRequiem/HardSurface"
             #pragma shader_feature_local _NORMALMAP
             #pragma shader_feature_local _TRIPLANAR
             #pragma shader_feature_local_fragment _DIRT
+            #pragma shader_feature_local_fragment _DIRTBREAKUP
             #pragma shader_feature_local_fragment _EDGEWEAR
             #pragma shader_feature_local_fragment _RIM
             #pragma shader_feature_local_fragment _PANELS
@@ -191,6 +194,30 @@ Shader "IronRequiem/HardSurface"
                 return SampleTri(TEXTURE2D_ARGS(_NoiseMap, sampler_NoiseMap), pos, w, scale).r;
             }
 
+            // Procedural value noise in world space: no texture, so it never tiles.
+            float Hash31(float3 p)
+            {
+                p = frac(p * 0.1031);
+                p += dot(p, p.yzx + 33.33);
+                return frac((p.x + p.y) * p.z);
+            }
+            float ValueNoise(float3 p)
+            {
+                float3 i = floor(p), f = frac(p);
+                f = f * f * (3.0 - 2.0 * f);
+                float a = lerp(lerp(Hash31(i), Hash31(i + float3(1, 0, 0)), f.x), lerp(Hash31(i + float3(0, 1, 0)), Hash31(i + float3(1, 1, 0)), f.x), f.y);
+                float b = lerp(lerp(Hash31(i + float3(0, 0, 1)), Hash31(i + float3(1, 0, 1)), f.x), lerp(Hash31(i + float3(0, 1, 1)), Hash31(i + float3(1, 1, 1)), f.x), f.y);
+                return lerp(a, b, f.z);
+            }
+            float Fbm(float3 p)
+            {
+                float v = ValueNoise(p) * 0.5;
+                v += ValueNoise(p * 2.03 + 17.3) * 0.26;
+                v += ValueNoise(p * 4.11 + 41.7) * 0.15;
+                v += ValueNoise(p * 8.27 + 73.1) * 0.09;
+                return v;
+            }
+
             half4 Frag(Varyings input) : SV_Target
             {
                 UNITY_SETUP_INSTANCE_ID(input);
@@ -249,7 +276,16 @@ Shader "IronRequiem/HardSurface"
                 #if defined(_DIRT)
                     half floorBand = saturate(1.0h - (input.positionWS.y - _DirtFloorY) / max(_DirtFloorHeight, 1e-3));
                     half upFacing = saturate(geomN.y) * 0.35h;
-                    half dirt = saturate((n1 - (1.0h - _DirtAmount)) * 2.5h + floorBand * _DirtAmount * 0.8h + mask.b * 0.5h + upFacing * _DirtAmount);
+                    half dirtN = n1;
+                    #if defined(_DIRTBREAKUP)
+                        // Procedural fbm instead of the tiled noise texture: large stains with no period. A little of the
+                        // texture stays for fine grain only.
+                        float3 dp3 = input.positionWS / max(_DirtScale * 1.6, 1e-3);
+                        dp3 += (ValueNoise(dp3 * 0.5 + 9.1) - 0.5) * 1.2; // warp: stains stop looking like round blobs
+                        half fb = saturate((Fbm(dp3) - 0.5) * 2.1 + 0.5);
+                        dirtN = lerp(n1, saturate(fb * 0.85h + n1 * 0.15h), _DirtBreakup);
+                    #endif
+                    half dirt = saturate((dirtN - (1.0h - _DirtAmount)) * 2.5h + floorBand * _DirtAmount * 0.8h + mask.b * 0.5h + upFacing * _DirtAmount);
                     albedo = lerp(albedo, _DirtColor.rgb, dirt * 0.85h);
                     smoothness *= 1.0h - dirt * 0.7h;
                     metallic *= 1.0h - dirt * 0.6h;

@@ -1,0 +1,80 @@
+Map01 Hangar · Build cinematic soundscape · 2026-11-18 20:23:42
+respaldo Tools/IronRequiem/Backups/20261118/hangar-soundscape-202342 (escena + .meta de los WAV v2)
+---- importación Assets/IronRequiem/Audio/SFX/HangarIntro_v2 (≤1.5 s: ADPCM + Decompress On Load · ≤12 s: Vorbis 0.70 + Compressed In Memory · >12 s: Vorbis 0.60 + Streaming en segundo plano · mono salvo las 3 capas 2D estéreo)
+  IR2_Amb_HangarTone_Loop    20.00 s 48000 Hz 2 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.60 Streaming estéreo fondo]
+  IR2_Amb_Drip_Loop          11.00 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Amb_MachineFar_Loop    12.00 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Amb_ElecHum_Loop        6.00 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Robot_Boot              3.40 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Robot_Heart_Loop        1.50 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+  IR2_Robot_Blip              0.25 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+  IR2_Robot_Scan              1.60 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Robot_StepWeight        0.70 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+  IR2_Capsule_Steam           3.60 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Capsule_Clamp           1.10 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+  IR2_Capsule_Creak           2.40 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Impact_SubBoom          2.40 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Impact_PreSuck          0.62 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+  IR2_Impact_GlassDebris      2.60 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory mono precarga]
+  IR2_Reveal_Sting            5.00 s 48000 Hz 2 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory estéreo precarga]
+  IR2_Trans_Whoosh            3.00 s 48000 Hz 2 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [Vorbis q0.70 CompressedInMemory estéreo precarga]
+  IR2_Trans_HudOnline         0.90 s 48000 Hz 1 ch · antes [Vorbis q1.00 DecompressOnLoad estéreo] · ahora [ADPCM q1.00 DecompressOnLoad mono precarga]
+reutilizados (sin tocar su importación): IR_Fist_HeavyImpact, IR_Mount_Lock, IR_Hangar_Clatter, IR_Hangar_Tear, IR_Hangar_Rummage2
+mezclador Assets/FPS/Audio/MainAudioMixer.mixer (sin modificar): camas -> Ambient · robot/cápsula/revelación/transición -> General · impactos y pisadas -> Impact
+abierta Assets/IronRequiem/Scenes/Campaign/Room00_Hangar.unity (Single)
+línea de tiempo Assets/IronRequiem/Art/Levels/Campaign/Room00_WakeUp.playable · duración 27.800 s
+hash cinemática ANTES   DB04C7E17249DBF1
+---- HG_CinematicSoundscape · emisores (posición mundo, solo leída de la escena)
+  Emit_CapsuleGlass     (-1.77; 1.85; -109.47)
+  Emit_CapsuleClamps    (-1.75; 1.22; -109.60)
+  Emit_ScavengerScrap   (1.78; 1.05; -94.32)
+  Bed_RoomTone          (0.00; 0.00; 0.00)
+  Bed_LampHum           (-0.87; 5.08; -108.87)
+  Bed_Drip              (4.40; 1.20; -112.20)
+  Bed_Machinery         (-2.00; 4.30; -128.20)
+  Bed_ReactorHeart      (0.00; 0.00; 0.00)
+---- camas (cinemática: curva · juego / combate)
+  Bed_RoomTone       IR2_Amb_HangarTone_Loop    2D grupo Ambient  juego 0.30 combate 0.10 · ducking · claves 0:0 0.6:0.08 3.6:0.42 18:0.42 21.5:0.4 25:0.32 27.8:0.2
+  Bed_LampHum        IR2_Amb_ElecHum_Loop       3D grupo Ambient  juego 0.50 combate 0.20 · ducking · claves 0:0.25 0.9:0.35 3.6:0.6 25:0.55 27.8:0.35
+  Bed_Drip           IR2_Amb_Drip_Loop          3D grupo Ambient  juego 0.55 combate 0.20 · ducking · claves 0:0 1.5:0 3.6:0.6 27.8:0.6
+  Bed_Machinery      IR2_Amb_MachineFar_Loop    3D grupo Ambient  juego 0.60 combate 0.20 · ducking · claves 0:0 3:0 6:0.55 18:0.7 21.5:0.6 27.8:0.45
+  Bed_ReactorHeart   IR2_Robot_Heart_Loop       2D grupo General  juego 0.00 combate 0.00 · claves 0:0 1:0 2.6:0.32 4.9:0.42 5.45:0.12 6.3:0.45 13.8:0.5 14.5:0.62 18:0.45 21.7:0.45 23.2:0.75 24.6:0.6 25.6:0.3 26.6:0
+---- cues (30)
+    0.85 s  R01_arranque           Robot      IR2_Robot_Boot           vol 0.75 pitch 1.00 2D
+    2.45 s  R02_dedos_blip         Robot      IR2_Robot_Blip           vol 0.30 pitch 1.00 2D
+    3.20 s  R03_dedos_blip         Robot      IR2_Robot_Blip           vol 0.26 pitch 0.84 2D
+    4.00 s  I01_puño_grieta        Impact     IR_Fist_HeavyImpact      vol 0.65 pitch 0.90 3D Emit_CapsuleGlass
+    4.00 s  I02_sub_grieta         Impact     IR2_Impact_SubBoom       vol 0.40 pitch 1.30 2D · ducking -5 dB
+    4.98 s  I03_succión            Impact     IR2_Impact_PreSuck       vol 0.75 pitch 1.00 2D
+    5.60 s  I04_sub_estallido      Impact     IR2_Impact_SubBoom       vol 1.00 pitch 1.00 2D · ducking -9 dB +música
+    5.60 s  I05_puño_estallido     Impact     IR_Fist_HeavyImpact      vol 0.85 pitch 0.76 3D Emit_CapsuleGlass
+    5.68 s  I06_lluvia_cristal     Impact     IR2_Impact_GlassDebris   vol 0.85 pitch 1.00 3D Emit_CapsuleGlass
+    5.95 s  I07_chatarra_cae       Impact     IR_Hangar_Clatter        vol 0.45 pitch 0.90 3D Emit_CapsuleGlass
+    6.30 s  C01_anclaje            Capsule    IR2_Capsule_Clamp        vol 0.90 pitch 1.00 3D Emit_CapsuleClamps · ducking -3 dB
+    6.30 s  C02_cerrojo            Capsule    IR_Mount_Lock            vol 0.45 pitch 0.80 3D Emit_CapsuleClamps
+    6.30 s  C03_vapor_corto        Capsule    IR2_Capsule_Steam        vol 0.40 pitch 1.20 3D Emit_CapsuleClamps
+    6.46 s  C04_anclaje            Capsule    IR2_Capsule_Clamp        vol 0.75 pitch 0.92 3D Emit_CapsuleClamps
+    6.55 s  C05_cables             Capsule    IR_Hangar_Tear           vol 0.40 pitch 1.15 3D Emit_CapsuleClamps
+    6.62 s  C06_anclaje            Capsule    IR2_Capsule_Clamp        vol 0.62 pitch 1.06 3D Emit_CapsuleClamps
+    6.90 s  C07_cuna_cruje         Capsule    IR2_Capsule_Creak        vol 0.65 pitch 1.00 3D Emit_CapsuleClamps
+    7.88 s  C08_vapor              Capsule    IR2_Capsule_Steam        vol 0.90 pitch 1.00 3D Emit_CapsuleClamps · ducking -3 dB
+    8.20 s  C09_cuna_tope          Capsule    IR_Hangar_Clatter        vol 0.50 pitch 0.70 3D Emit_CapsuleClamps
+    8.20 s  C10_cuna_peso          Impact     IR2_Robot_StepWeight     vol 0.60 pitch 0.80 3D Emit_CapsuleClamps
+   14.15 s  R04_mano_blip          Robot      IR2_Robot_Blip           vol 0.35 pitch 1.00 2D
+   14.50 s  R05_mano_escaneo       Robot      IR2_Robot_Scan           vol 0.50 pitch 1.00 2D
+   16.25 s  R06_mano_escaneo2      Robot      IR2_Robot_Scan           vol 0.38 pitch 1.12 2D
+   17.70 s  R07_mano_fin           Robot      IR2_Robot_Blip           vol 0.32 pitch 1.19 2D
+   21.70 s  V01_acento             Reveal     IR2_Reveal_Sting         vol 0.80 pitch 1.00 2D · ducking -6 dB +música
+   22.95 s  V02_rebusque           Reveal     IR_Hangar_Rummage2       vol 0.90 pitch 0.95 3D Emit_ScavengerScrap
+   23.20 s  V03_fijar              Reveal     IR2_Robot_Blip           vol 0.40 pitch 0.75 2D
+   23.42 s  V04_fijar              Reveal     IR2_Robot_Blip           vol 0.40 pitch 0.75 2D
+   23.65 s  V05_arranque_chapa     Reveal     IR_Hangar_Tear           vol 0.70 pitch 0.85 3D Emit_ScavengerScrap
+   25.00 s  T01_entrada_cabeza     Transition IR2_Trans_Whoosh         vol 0.85 pitch 1.00 2D · ducking -8 dB +música
+---- ventanas de dinámica
+  D1_antes_grieta              3.60 s  a 0.30 h 0.10 r 0.50  -6 dB
+  D2_vacío_antes_estallido     4.95 s  a 0.50 h 0.15 r 1.90  -14 dB +música
+  D3_mano_intimo               13.80 s  a 1.00 h 3.00 r 1.20  -4 dB
+zona del hangar (juego) centro (0.00; 2.50; -112.00) tamaño (34.00; 10.00; 56.00)
+hash cinemática DESPUÉS DB04C7E17249DBF1  (iguales)
+guardado Assets/IronRequiem/Scenes/Campaign/Room00_Hangar.unity
+pendiente: escuchar en Play Mode (Room00 desde JUGAR), con salto (E/Espacio mantenido) y tras morir (reinicio).

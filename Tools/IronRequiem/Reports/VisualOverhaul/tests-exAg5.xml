@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.1182966">
+  <test-suite type="TestSuite" id="1476" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="391" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.118297" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1470" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="391" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.082453" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1471" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="391" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.066894" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1177" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="391" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.054855" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1116" name="ControlsRebindPlayTests" fullname="IronRequiem.Tests.ControlsRebindPlayTests" classname="IronRequiem.Tests.ControlsRebindPlayTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:20:08Z" duration="17.014927" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1118" name="EscapeCancelsTheCaptureWithoutChangingTheBinding" fullname="IronRequiem.Tests.ControlsRebindPlayTests.EscapeCancelsTheCaptureWithoutChangingTheBinding" methodname="EscapeCancelsTheCaptureWithoutChangingTheBinding" classname="IronRequiem.Tests.ControlsRebindPlayTests" runstate="Runnable" seed="22917371" result="Passed" start-time="2026-11-23 08:19:51Z" end-time="2026-11-23 08:19:56Z" duration="5.046632" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed EscapeCancelsTheCaptureWithoutChangingTheBinding
+]]></output>
+            </test-case>
+            <test-case id="1119" name="InputLockStillBlocksTheReassignedKey" fullname="IronRequiem.Tests.ControlsRebindPlayTests.InputLockStillBlocksTheReassignedKey" methodname="InputLockStillBlocksTheReassignedKey" classname="IronRequiem.Tests.ControlsRebindPlayTests" runstate="Runnable" seed="1170478876" result="Passed" start-time="2026-11-23 08:19:56Z" end-time="2026-11-23 08:20:00Z" duration="3.572938" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed InputLockStillBlocksTheReassignedKey
+]]></output>
+            </test-case>
+            <test-case id="1117" name="RebindMeleeToVMakesVStrikeNotFAndHelpTextAndPersistence" fullname="IronRequiem.Tests.ControlsRebindPlayTests.RebindMeleeToVMakesVStrikeNotFAndHelpTextAndPersistence" methodname="RebindMeleeToVMakesVStrikeNotFAndHelpTextAndPersistence" classname="IronRequiem.Tests.ControlsRebindPlayTests" runstate="Runnable" seed="312968891" result="Passed" start-time="2026-11-23 08:20:00Z" end-time="2026-11-23 08:20:05Z" duration="5.085519" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed RebindMeleeToVMakesVStrikeNotFAndHelpTextAndPersistence
+]]></output>
+            </test-case>
+            <test-case id="1120" name="SpaceStillJumpsOnTheGroundWhileSharedWithDash" fullname="IronRequiem.Tests.ControlsRebindPlayTests.SpaceStillJumpsOnTheGroundWhileSharedWithDash" methodname="SpaceStillJumpsOnTheGroundWhileSharedWithDash" classname="IronRequiem.Tests.ControlsRebindPlayTests" runstate="Runnable" seed="1548684586" result="Passed" start-time="2026-11-23 08:20:05Z" end-time="2026-11-23 08:20:08Z" duration="3.241639" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed SpaceStillJumpsOnTheGroundWhileSharedWithDash
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

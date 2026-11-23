@@ -1,0 +1,83 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R03",
+  "kind": "rounds",
+  "archetype": "E2",
+  "title": "R03 · DORMITORIOS · 3 RONDAS",
+  "arenaTitle": "DORMITORIOS",
+  "seed": 303,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "Drones",
+      "groups": [
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Drones y horda",
+      "groups": [
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Mixta",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -16,
+        3.5,
+        -6
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        16,
+        3.5,
+        6
+      ]
+    }
+  ],
+  "notes": "B1.2. Presentación del HOV."
+}

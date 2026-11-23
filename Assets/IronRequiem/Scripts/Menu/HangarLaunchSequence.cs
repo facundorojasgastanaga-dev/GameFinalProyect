@@ -87,7 +87,7 @@ namespace IronRequiem
             if (status) status.Lock("INICIANDO", new Color(1f, .55f, .12f), 6f, "CÁPSULA C-04 · DESBLOQUEO DE SELLOS");
             if (vent) vent.Play(true);
             if (audioSource && openClip) audioSource.PlayOneShot(openClip, .8f);
-            float t = 0; bool woke = false, online = false;
+            float t = 0; bool online = false;
             while (t < launchSeconds)
             {
                 t += Mathf.Min(Time.unscaledDeltaTime, .05f);
@@ -106,7 +106,8 @@ namespace IronRequiem
                     cameraRig.Dolly(pushTarget.position, look, Mathf.Clamp01((t - .1f) / 1.7f));
                 }
                 // The menu's existing power-up plays before handing off to the unchanged level flow.
-                if (!woke && t>=1.8f) { woke = true; if (protagonist) protagonist.Reboot(); }
+                // 20/11: no power-up here any more. The robot stays dark during the whole approach; it switches on at the
+                // start of the wake-up cinematic, in the level.
                 if (!online && t >= 2.4f) { online = true; if (status) status.Lock("EN LÍNEA", new Color(.25f, .9f, 1f), 0f, "UNIDAD C-04 · DESPLIEGUE AUTORIZADO"); }
                 SetFade(Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - 2.9f) / .55f)));
                 yield return null;

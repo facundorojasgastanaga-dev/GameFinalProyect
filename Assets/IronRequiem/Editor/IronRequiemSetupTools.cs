@@ -174,8 +174,13 @@ namespace IronRequiem.Editor
                     .FirstOrDefault(p => p.EndsWith("/DOTweenSettings.asset", StringComparison.Ordinal)) ?? ""
             };
             Directory.CreateDirectory(Reports);
-            File.WriteAllText(Path.Combine(Reports, "unity-audit.json"), JsonUtility.ToJson(report, true));
-            Debug.Log("IRON REQUIEM: read-only audit written to Tools/IronRequiem/Reports/unity-audit.json");
+            // Another program may hold the report open (Win32 1224 = file mapped by a viewer or editor): that is not an Editor error.
+            try
+            {
+                File.WriteAllText(Path.Combine(Reports, "unity-audit.json"), JsonUtility.ToJson(report, true));
+                Debug.Log("IRON REQUIEM: read-only audit written to Tools/IronRequiem/Reports/unity-audit.json");
+            }
+            catch (IOException e) { Debug.LogWarning("IRON REQUIEM: audit not written, unity-audit.json is open in another program (" + e.Message + ")"); }
         }
     }
 }

@@ -93,7 +93,12 @@ namespace IronRequiem
         GameObject Target=>controller?controller.KnownDetectedTarget:null;
         Actor TargetActor=>Target?Target.GetComponentInParent<Actor>():null;
         bool Visible=>!dead&&detection&&detection.IsSeeingTarget&&TargetActor&&CanSeeSource(TargetActor.gameObject);
-        public Vector3 AimPosition=>pending||(alternatingBursts&&burstRemaining>0)?lockedAim:Visible?Target.transform.position:lastSeen;
+        public Vector3 AimPosition=>aimHeld?heldAim:pending||(alternatingBursts&&burstRemaining>0)?lockedAim:Visible?Target.transform.position:lastSeen;
+        // Executions v02 (Big Bot round 2): while the player leaps to its cannon, the arms and torso keep the aim they had at E instead
+        // of tracking the leaping player (that swung the cannon 0.6 m away from the grabbing hand). Presentation only.
+        bool aimHeld,heldTrack;Vector3 heldAim;
+        public void HoldAim(bool hold){if(hold&&!aimHeld){heldAim=AimPosition;heldTrack=Visible||pending;}aimHeld=hold;}
+        bool Tracking=>aimHeld?heldTrack:Visible||pending;
         public bool CanAttack=>Visible&&Vector3.Distance(transform.position,Target.transform.position)<=attackDistance&&Vector3.Angle(transform.forward,Vector3.ProjectOnPlane(Target.transform.position-transform.position,Vector3.up))<30&&BothGunsClear(Target.transform.position);
         public Vector3 PursuitDestination
         {
@@ -215,8 +220,8 @@ namespace IronRequiem
         {
             if(dead)return;
             AlignToFloor();
-            AimPresentation(AimPosition,Visible||pending);
-            if(Visible||pending)controller.OrientWeaponsTowards(AimPosition);
+            AimPresentation(AimPosition,Tracking);
+            if(Tracking)controller.OrientWeaponsTowards(AimPosition);
             if(burstRemaining>0){UpdateBurst();return;}
             if(!pending)return;
             if(!Visible){CancelPreparation();return;}

@@ -87,11 +87,41 @@ namespace IronRequiem
         [SerializeField] DisarmMotion disarm=new DisarmMotion();
         [SerializeField] Vector3 yankCameraKick=new Vector3(-1.6f,-.8f,2.2f);
         [SerializeField] Vector3 shoveCameraKick=new Vector3(2.4f,.6f,-1.8f);
-        int disarmKicks;
+        // executions-v02: camera kicks, hit-stops and beats now belong to ExecutionDirector (one clock per execution); the two
+        // kick vectors above are kept only so serialized values are not lost.
+        EnemyExecutionSource disarmTarget;Transform disarmJoint;Renderer[] gripViews;
+        // executions-v02: the hand closes on the closest point of the mounted weapon surface (set by ExecutionDirector before the disarm begins).
+        public void SetGripViews(Renderer[] views){gripViews=views;}
+        // Big Bot (round 2): its cannon parts' surface from ExecutionBodyProxy, else the cannon arm bones; its skinned bounds span the robot.
+        bool BigBotGrip(Vector3 camera,out Vector3 point)
+        {
+            point=camera;
+            if(!disarmTarget||disarmTarget.Kind!=ExecutionKind.BigBot)return false;
+            if(disarmProxy&&disarmProxy.WeaponPoint(camera,out point))return true;
+            return ExecutionReachResolver.CannonArmPoint(disarmJoint,camera,out point);
+        }
+        ExecutionBodyProxy disarmProxy;
+        Vector3 GripWorld(Vector3 camera,Vector3 fallback)=>BigBotGrip(camera,out var arm)?arm:gripViews!=null&&gripViews.Length>0?ExecutionReachResolver.ClosestWeaponPoint(camera,gripViews,disarmJoint):(disarmJoint?disarmJoint.position:fallback);
+        Quaternion weaponAimOffset=Quaternion.identity;bool weaponAimActive;
         public bool IsDisarming=>disarm!=null&&disarm.Active;
+        public float DisarmElapsed=>disarm!=null?disarm.Elapsed:-1; // executions-v02
+        public float DisarmReachEndTime=>disarm!=null?disarm.ReachEndTime:.18f;
+        public float DisarmHandoffStartTime=>disarm!=null?disarm.handoffStartV4:.44f;
+        public float DisarmImpactEndTime=>disarm!=null?disarm.ImpactEndTime:.83f;
+        public float DisarmDuration=>disarm!=null?disarm.Duration:1.07f;
+        public Vector3 DisarmHandoffPoint=>disarm!=null?disarm.handoffPointV4:new Vector3(.22f,-.20f,.42f);
+        public float DisarmMaxGripReach=>disarm!=null?disarm.maxGripReachV3:.55f;
+        // Time.time when the last disarm ended or was cancelled (the stolen shell seat stays silent shortly after it).
+        public float DisarmEndedAt {get;private set;}=-100;
+        // executions-v02: Big Bot aim offset of the weapon (world-space rotation on top of the camera forward). Clear removes it.
+        public void SetWeaponAimOffset(Quaternion worldDelta){weaponAimOffset=worldDelta;weaponAimActive=true;}
+        public void ClearWeaponAimOffset(){weaponAimActive=false;weaponAimOffset=Quaternion.identity;}
         // Seconds from the start of the disarm until the fist lands (robot knockback timing).
         public float DisarmStrikeTime=>disarm!=null?disarm.StrikeTime:.26f;
         public float DisarmYankTime=>disarm!=null?disarm.YankTime:.1f;
+        // Arms-fix: first moment of the disarm in which the left hand is a fist (wind-up of the punch).
+        public float DisarmWindUpTime=>disarm!=null?disarm.WindUpTime:.2f;
+        public DisarmMotion.Beat DisarmBeat=>disarm!=null?disarm.Current:DisarmMotion.Beat.None;
         Vector3 moduleSocketBindPosition;Quaternion socketBindRotation=Quaternion.identity;
         Quaternion moduleSocketBindRotation;
         Renderer[] actionRightForearm;
@@ -182,34 +212,50 @@ namespace IronRequiem
         void OnExecuted(EnemyExecutionSource target,Vector3 grip)
         {
             if(disarm==null||!player)return;
-            disarm.Begin(player.PlayerCamera.transform.InverseTransformPoint(grip));disarmKicks=0;
-            DistanceCameraImpulse.Kick(player.PlayerCamera,new Vector3(.6f,-.4f,.6f),new Vector3(0,0,.01f));
+            // executions-v02: the grab goes to the real weapon joint and follows it live (clamped to maxGripReachV3 in DisarmMotion).
+            disarmTarget=target;disarmJoint=target?target.WeaponJoint:null;disarmProxy=target?target.GetComponent<ExecutionBodyProxy>():null;
+            var camera=player.PlayerCamera.transform;
+            disarm.Begin(camera.InverseTransformPoint(GripWorld(camera.position,grip)),target&&target.Kind==ExecutionKind.BigBot?DisarmMotion.Profile.RipOnly:DisarmMotion.Profile.Punch);
+            TrackDisarm();
+        }
+        void TrackDisarm()
+        {
+            if(!disarmTarget)return;
+            var camera=player.PlayerCamera.transform;
+            var cam=player.PlayerCamera;float tanV=Mathf.Tan(cam.fieldOfView*.5f*Mathf.Deg2Rad);disarm.SetViewLimits(tanV*cam.aspect,tanV); // keep the grip inside the frame
+            if(disarmJoint||(gripViews!=null&&gripViews.Length>0))disarm.UpdateGrip(camera.InverseTransformPoint(GripWorld(camera.position,camera.position)));
+            disarm.SetChestDepth(camera.InverseTransformPoint(disarmTarget.transform.position+Vector3.up*1.2f).z);
         }
         void StepDisarm()
         {
             if(!IsDisarming)return;
-            if(player.IsDead||health.CurrentHealth<=0){disarm.Cancel();return;}
+            if(player.IsDead||health.CurrentHealth<=0){disarm.Cancel();DisarmEndedAt=Time.time;return;}
+            TrackDisarm();
             var beat=disarm.Step(Time.deltaTime);
-            if(beat==DisarmMotion.Beat.None||beat==DisarmMotion.Beat.Done)return;
-            // Strain: a small tug of the view towards the joint; yank: pulled back; impact: punch lands.
-            if(beat>=DisarmMotion.Beat.Strain&&disarmKicks<1){disarmKicks=1;DistanceCameraImpulse.Kick(player.PlayerCamera,new Vector3(.7f,-.3f,.8f),new Vector3(0,0,.012f));}
-            if(beat>=DisarmMotion.Beat.Yank&&disarmKicks<2){disarmKicks=2;DistanceCameraImpulse.Kick(player.PlayerCamera,yankCameraKick,new Vector3(0,-.004f,-.024f));}
-            if(beat>=DisarmMotion.Beat.WindUp&&disarmKicks<3){disarmKicks=3;DistanceCameraImpulse.Kick(player.PlayerCamera,new Vector3(-.8f,-.9f,1.4f),new Vector3(0,.003f,-.01f));}
-            if(beat>=DisarmMotion.Beat.Impact&&disarmKicks<4){disarmKicks=4;DistanceCameraImpulse.Kick(player.PlayerCamera,shoveCameraKick,new Vector3(0,-.006f,.032f));}
+            // executions-v02: kicks moved to ExecutionDirector (single clock, one kick per beat).
+            if(beat==DisarmMotion.Beat.Done)DisarmEndedAt=Time.time;
         }
         void Update()
         {
             StepDisarm();
-            active=weapons.GetActiveWeapon();
-            CurrentRepresentation=active&&carrier.Held&&carrier.Held.EquippedWeapon==active?Representation.StolenCannon:
-                active&&active.SourcePrefab==pistolPrefab.gameObject?Representation.Pistol:
-                IsMounted(active)?Representation.Mounted:Representation.Normal;
+            RefreshActive();
             // v6: the right hand is a closed fist (NormalFist, HandPose 0) at rest and for the whole strike: tap, charge and
             // release. Only a module in hand switches to the grip pose. (v5 wrongly opened the grip during the strike.)
             poseAnimator.SetInteger(HandPose,CurrentRepresentation==Representation.Normal?0:1);
         }
+        // Arms-fix (19/11/2026): also run at the start of LateUpdate. PlayerWeaponsManager (order 0) hides the old weapon
+        // and shows the new one in its LateUpdate; with the value cached in Update, the old (now hidden) weapon made the
+        // whole FPS rig switch off for that frame and the forearm was fitted to the wrong Attachment.
+        void RefreshActive()
+        {
+            active=weapons.GetActiveWeapon();
+            CurrentRepresentation=active&&carrier.Held&&carrier.Held.EquippedWeapon==active?Representation.StolenCannon:
+                active&&active.SourcePrefab==pistolPrefab.gameObject?Representation.Pistol:
+                IsMounted(active)?Representation.Mounted:Representation.Normal;
+        }
         void LateUpdate()
         {
+            RefreshActive();
             bool disarming=IsDisarming;
             bool visible=!player.IsDead&&health.CurrentHealth>0&&(!active||active.IsWeaponActive||disarming||armOverride||(actionsEnabled&&melee&&melee.IsAttacking));
             if(fpsRoot.gameObject.activeSelf!=visible)fpsRoot.gameObject.SetActive(visible);
@@ -220,13 +266,17 @@ namespace IronRequiem
                 foreach(var renderer in rightArmReceiverViews)if(renderer)renderer.enabled=replaced; // v6: a bare wrist shows only the collar cap
             foreach(var renderer in rightHandRenderers)renderer.enabled=!replaced&&!detached;
             bool punching=actionsEnabled&&melee&&melee.IsAttacking&&!disarming;
-            bool leftStrike=(punching&&melee.LeftStrike)||(previewLeftFist&&!disarming);bool disarmClosed=false;
+            bool leftStrike=(punching&&melee.LeftStrike)||(previewLeftFist&&!disarming);
+            // Arms-fix: the disarm hand is a fist only for the punch (WindUp -> Impact); grip while grabbing and wrenching.
+            // (same rigs as before: only the action variant with its punch clip closes the left hand at all)
+            bool disarmClosed=actionsEnabled&&leftPunchClip&&disarming&&disarm.FistClosed;
             if(actionsEnabled)
             {
                 // v7: F strikes with the left hand (armed or not); the left hand also appears for the disarm.
                 foreach(var renderer in leftRenderers)renderer.enabled=disarming||leftStrike;
                 foreach(var renderer in actionRightForearm)if(renderer.name=="Forearm_R_FPS")renderer.enabled=(!active||active.IsWeaponActive||punching||armOverride)&&!RightForearmReplaced;
-                if(disarming&&leftPunchClip){disarm.Evaluate(out _,out _,out _,out bool closed);disarmClosed=closed;leftPunchClip.SampleAnimation(fpsRoot.gameObject,closed?.24f:0);}
+                // the punch-contact frame of the clip is sampled only during the punch, never while grabbing
+                if(disarming&&leftPunchClip)leftPunchClip.SampleAnimation(fpsRoot.gameObject,disarmClosed?.24f:0);
                 if(mountedWeapon!=active)
                 {
                     mountedWeapon=active;nativeAttachment=null;
@@ -239,6 +289,11 @@ namespace IronRequiem
             // rewrites the socket position every LateUpdate (bob + recoil), so the offset is additive and never accumulates.
             if(punching&&melee.ArmedStrike&&active){BashPose(out var bashPos,out var bashEuler);frame.localPosition+=bashPos;frame.localRotation=socketBindRotation*Quaternion.Euler(bashEuler);}
             else frame.localRotation=socketBindRotation;
+            // executions-v02: the right arm (and the weapon it carries) drops 4 cm while the left hand grabs. Additive on the
+            // socket, which PlayerWeaponsManager rewrites every LateUpdate, so it never accumulates.
+            if(disarming)frame.localPosition+=Vector3.down*disarm.rightArmDropV4*disarm.RightDrop;
+            // executions-v02 (Big Bot): the weapon, not the camera, turns to the core (offset capped by the caller, <= 35 deg).
+            if(weaponAimActive&&frame.parent){var parentRotation=frame.parent.rotation;frame.localRotation=Quaternion.Inverse(parentRotation)*weaponAimOffset*parentRotation*frame.localRotation;}
             Vector3 leftWrist,rightWrist;
             if(replaced&&active)
             {
@@ -291,7 +346,9 @@ namespace IronRequiem
             if(previewRightFist&&!punching&&!replaced){rightWrist=camera.TransformPoint(Mirror(ChargeW));rightElbowHint=camera.TransformPoint(Mirror(ChargeE));}
             if(disarming)
             {
-                disarm.Evaluate(out var wrist,out var elbow,out float weight,out _);
+                // arms-fix: with actions the left hand is hidden outside them, so it enters and leaves out of view in camera
+                // space (weight 1); it no longer blends with a pose that rides the weapon socket during a switch.
+                disarm.Evaluate(actionsEnabled,out var wrist,out var elbow,out float weight);
                 leftWrist=Vector3.Lerp(leftWrist,camera.TransformPoint(wrist),weight);leftElbow=Vector3.Lerp(leftElbow,camera.TransformPoint(elbow),weight);
             }
             FitArm(leftForearm,leftHand,leftAxis,leftHandBind,leftLength,leftWrist,leftElbow);
@@ -301,15 +358,18 @@ namespace IronRequiem
             // v7: the striking hand is a real fist from the first frame of the tap / charge until it reopens after the strike
             if(handPoses)
             {
-                bool rightClosed=closedFist&&rightJab&&!detached,leftClosed=closedFist&&(leftStrike||(disarming&&disarmClosed));
+                bool rightClosed=closedFist&&rightJab&&!detached,leftClosed=closedFist&&(leftStrike||disarmClosed);
                 handPoses.RequestRight(rightClosed?HandPoseLibrary.Pose.Fist:replaced?HandPoseLibrary.Pose.Grip:HandPoseLibrary.Pose.Relaxed,rightClosed?.06f:.15f);
-                handPoses.RequestLeft(leftClosed?HandPoseLibrary.Pose.Fist:HandPoseLibrary.Pose.Relaxed,leftClosed?.06f:.15f);
+                // arms-fix: disarm = grip (grab, strain, wrench) -> fist (wind-up, strike, impact) -> relaxed (recover)
+                var disarmShape=disarming?disarm.HandShape:HandPoseLibrary.Pose.Relaxed;
+                var leftPose=leftClosed?HandPoseLibrary.Pose.Fist:disarmShape!=HandPoseLibrary.Pose.Fist?disarmShape:HandPoseLibrary.Pose.Relaxed;
+                handPoses.RequestLeft(leftPose,leftClosed?.06f:leftPose==HandPoseLibrary.Pose.Grip||leftPose==HandPoseLibrary.Pose.Open?.05f:.15f); // executions-v02: grip/open in 0.05 s
             }
             else
             {
                 // Legacy lab scenes retain their serialized rig until explicitly migrated; only one branch writes fingers.
                 rightFist.Apply(closedFist&&rightJab&&!detached);
-                leftFist.Apply(closedFist&&(leftStrike||(disarming&&disarmClosed)));
+                leftFist.Apply(closedFist&&(leftStrike||disarmClosed));
                 if(leftFist.Weight>0&&leftFistWristEuler!=Vector3.zero)leftHand.rotation=leftHand.rotation*Quaternion.Slerp(Quaternion.identity,Quaternion.Euler(leftFistWristEuler),leftFist.Weight);
                 if(rightFist.Weight>0&&rightFistWristEuler!=Vector3.zero)rightHand.rotation=rightHand.rotation*Quaternion.Slerp(Quaternion.identity,Quaternion.Euler(rightFistWristEuler),rightFist.Weight);
             }
@@ -363,6 +423,6 @@ namespace IronRequiem
             forearm.position=wrist-direction*length;
             hand.SetPositionAndRotation(wrist,forearm.rotation*bind);
         }
-        void OnDisable(){if(carrier)carrier.Executed-=OnExecuted;if(disarm!=null)disarm.Cancel();if(fpsRoot)fpsRoot.gameObject.SetActive(false);}
+        void OnDisable(){if(carrier)carrier.Executed-=OnExecuted;if(disarm!=null)disarm.Cancel();weaponAimActive=false;if(fpsRoot)fpsRoot.gameObject.SetActive(false);}
     }
 }

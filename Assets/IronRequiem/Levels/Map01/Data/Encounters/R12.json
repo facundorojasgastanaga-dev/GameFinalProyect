@@ -1,0 +1,168 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R12",
+  "kind": "rounds",
+  "archetype": "E3",
+  "title": "R12 · COLECTOR DERRUMBADO · 3 RONDAS",
+  "arenaTitle": "COLECTOR DERRUMBADO",
+  "seed": 1212,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "BS1",
+    "BS2"
+  ],
+  "waves": [
+    {
+      "name": "Blindados",
+      "groups": [
+        {
+          "enemy": "T07M",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Martillo y yunque",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Cierre",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ],
+      "variations": [
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "Blindados",
+          "groups": [
+            {
+              "enemy": "T07M",
+              "count": 2
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "Grieta",
+      "zNear": -3.5,
+      "zFar": 3.5,
+      "xMin": -15,
+      "xMax": 14,
+      "triggerYMin": -8,
+      "triggerYMax": -3,
+      "upperFloorLocalY": 0,
+      "halfWidth": 260,
+      "returnOffset": 3.5,
+      "returnXs": [
+        -10,
+        0,
+        8
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -18,
+        0,
+        -12
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        18,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        8,
+        0,
+        8
+      ]
+    }
+  ],
+  "notes": "B1.2 y B2.3. Un solo BIG por ronda; sus dos slots grandes están en la orilla lejana."
+}

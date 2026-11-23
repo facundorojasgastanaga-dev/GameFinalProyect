@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.3628677">
+  <test-suite type="TestSuite" id="1437" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.362868" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1431" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.227861" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1432" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.215498" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1140" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="362" result="Failed" site="Child" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.202502" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1127" name="ExecutionsF0Capture" fullname="IronRequiem.Tests.ExecutionsF0Capture" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.172173" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1130" name="BigBot" fullname="IronRequiem.Tests.ExecutionsF0Capture.BigBot" methodname="BigBot" classname="IronRequiem.Tests.ExecutionsF0Capture" runstate="Runnable" seed="909997090" result="Failed" start-time="2026-11-22 19:28:45Z" end-time="2026-11-22 19:28:55Z" duration="10.029597" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  BigBot: execution started by E
+  Expected: greater than or equal to 0.0f
+  But was:  -1.0f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsF0Capture+<Record>d__25.MoveNext () [0x008f4] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsF0Capture.cs:122
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Failed BigBot
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

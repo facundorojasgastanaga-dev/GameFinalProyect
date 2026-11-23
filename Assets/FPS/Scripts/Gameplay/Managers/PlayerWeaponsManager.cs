@@ -99,6 +99,12 @@ namespace Unity.FPS.Gameplay
         float m_TimeStartedWeaponSwitch;
         WeaponSwitchState m_WeaponSwitchState;
         int m_WeaponSwitchNewWeaponIndex;
+        // IRON REQUIEM arms-fix (19/11/2026): each switch phase moves the socket from where it is when the phase starts
+        // (no snap to Default/Down), and a phase reversed half-way continues from its progress (RetargetSwitch).
+        Vector3 m_SwitchPhaseStartLocalPosition;
+        float m_SwitchPhaseStartProgress;
+        // Optional player-side gate for switch/fire input (IronRequiem.IWeaponSwitchGate); null keeps the template.
+        IronRequiem.IWeaponSwitchGate m_SwitchGate;
 
         void Start()
         {
@@ -114,6 +120,7 @@ namespace Unity.FPS.Gameplay
                 m_PlayerCharacterController, this, gameObject);
 
             m_MotionExtension = GetComponent<IPlayerMotionExtension>();
+            m_SwitchGate = GetComponent<IronRequiem.IWeaponSwitchGate>();
 
             SetFov(DefaultFov);
 
@@ -136,7 +143,11 @@ namespace Unity.FPS.Gameplay
             if (activeWeapon != null && activeWeapon.IsReloading)
                 return;
 
-            if (activeWeapon != null && m_WeaponSwitchState == WeaponSwitchState.Up)
+            // IRON REQUIEM arms-fix: no fire input to a weapon that a scripted hand-over is about to put away (and no
+            // aim-down-sights left on from before the hand-over).
+            if (m_SwitchGate != null && !m_SwitchGate.CanFireActiveWeapon) IsAiming = false;
+            if (activeWeapon != null && m_WeaponSwitchState == WeaponSwitchState.Up &&
+                (m_SwitchGate == null || m_SwitchGate.CanFireActiveWeapon))
             {
                 if (!activeWeapon.AutomaticReload && activeWeapon.HasPhysicalBullets && m_InputHandler.GetReloadButtonDown() && activeWeapon.CurrentAmmoRatio < 1.0f)
                 {
@@ -162,9 +173,11 @@ namespace Unity.FPS.Gameplay
             }
 
             // weapon switch handling
+            // IRON REQUIEM arms-fix: the optional gate refuses switch input while the hands are busy (execution).
             if (!IsAiming &&
                 (activeWeapon == null || !activeWeapon.IsCharging) &&
-                (m_WeaponSwitchState == WeaponSwitchState.Up || m_WeaponSwitchState == WeaponSwitchState.Down))
+                (m_WeaponSwitchState == WeaponSwitchState.Up || m_WeaponSwitchState == WeaponSwitchState.Down) &&
+                (m_SwitchGate == null || m_SwitchGate.CanSwitchWeapon))
             {
                 int switchWeaponInput = m_InputHandler.GetSwitchWeaponInput();
                 if (switchWeaponInput != 0)
@@ -249,15 +262,27 @@ namespace Unity.FPS.Gameplay
         {
             if (force || (newWeaponIndex != ActiveWeaponIndex && newWeaponIndex >= 0))
             {
+                // IRON REQUIEM arms-fix: a request during a switch retargets or reverses it instead of restarting it.
+                if (RetargetSwitch(newWeaponIndex))
+                    return;
+
                 GetActiveWeapon()?.CancelPendingShot();
                 // Store data related to weapon switching animation
                 m_WeaponSwitchNewWeaponIndex = newWeaponIndex;
                 m_TimeStartedWeaponSwitch = Time.time;
+                m_SwitchPhaseStartProgress = 0f;
 
                 // Handle case of switching to a valid weapon for the first time (simply put it up without putting anything down first)
                 if (GetActiveWeapon() == null)
                 {
-                    m_WeaponMainLocalPosition = DownWeaponPosition.localPosition;
+                    // IRON REQUIEM arms-fix: only the first weapon (nothing up yet) rises from the Down position. A weapon
+                    // replacing one that was just removed (thrown, destroyed) starts where the socket already is.
+                    // A template weapon (no self-animated switch) still rises from Down, so it never pops in at rest.
+                    var incoming = GetWeaponAtSlotIndex(m_WeaponSwitchNewWeaponIndex);
+                    bool selfAnimated = incoming && incoming.TryGetComponent(out IWeaponSwitchMotion incomingMotion) && incomingMotion.OverridesSwitchMotion;
+                    if (m_WeaponSwitchState == WeaponSwitchState.Down || !selfAnimated)
+                        m_WeaponMainLocalPosition = DownWeaponPosition.localPosition;
+                    m_SwitchPhaseStartLocalPosition = m_WeaponMainLocalPosition;
                     m_WeaponSwitchState = WeaponSwitchState.PutUpNew;
                     ActiveWeaponIndex = m_WeaponSwitchNewWeaponIndex;
 
@@ -270,9 +295,52 @@ namespace Unity.FPS.Gameplay
                 // otherwise, remember we are putting down our current weapon for switching to the next one
                 else
                 {
+                    m_SwitchPhaseStartLocalPosition = m_WeaponMainLocalPosition;
                     m_WeaponSwitchState = WeaponSwitchState.PutDownPrevious;
                 }
             }
+        }
+
+        // IRON REQUIEM arms-fix (19/11/2026): a (forced) request that arrives while a weapon is being put down or brought
+        // up keeps the motion going instead of restarting it from the start of a phase (the old restart snapped the
+        // socket back and made a forearm module replay its unlock). Returns false when no switch is in progress.
+        bool RetargetSwitch(int newWeaponIndex)
+        {
+            if (GetActiveWeapon() == null)
+                return false;
+            if (m_WeaponSwitchState == WeaponSwitchState.PutDownPrevious)
+            {
+                // back to the weapon still in hand: bring it up again from where it is; otherwise only the destination changes
+                if (newWeaponIndex == ActiveWeaponIndex)
+                    ReverseSwitchPhase(WeaponSwitchState.PutUpNew);
+                else
+                    m_WeaponSwitchNewWeaponIndex = newWeaponIndex;
+                return true;
+            }
+            if (m_WeaponSwitchState == WeaponSwitchState.PutUpNew)
+            {
+                // already coming up: nothing to restart
+                if (newWeaponIndex == ActiveWeaponIndex)
+                    return true;
+                GetActiveWeapon().CancelPendingShot();
+                m_WeaponSwitchNewWeaponIndex = newWeaponIndex;
+                ReverseSwitchPhase(WeaponSwitchState.PutDownPrevious);
+                return true;
+            }
+            return false;
+        }
+
+        // Same weapon, opposite phase: what remained of the current phase becomes what is done of the reversed one, and
+        // the socket moves on from its current position.
+        void ReverseSwitchPhase(WeaponSwitchState reversed)
+        {
+            float phaseSeconds = PhaseSeconds();
+            float progress = phaseSeconds > 0f ? Mathf.Clamp01((Time.time - m_TimeStartedWeaponSwitch) / phaseSeconds) : 1f;
+            m_WeaponSwitchState = reversed;
+            m_SwitchPhaseStartProgress = 1f - progress;
+            m_SwitchPhaseStartLocalPosition = m_WeaponMainLocalPosition;
+            m_TimeStartedWeaponSwitch = Time.time - m_SwitchPhaseStartProgress * phaseSeconds;
+            SwitchPhaseProgress = m_SwitchPhaseStartProgress;
         }
 
         // IRON REQUIEM v5: finishes the current switch instantly (weapon already in hand, e.g. mounted by a station
@@ -284,8 +352,11 @@ namespace Unity.FPS.Gameplay
             {
                 var previous = GetActiveWeapon(); if (previous) previous.ShowWeapon(false);
                 ActiveWeaponIndex = m_WeaponSwitchNewWeaponIndex;
-                var next = GetWeaponAtSlotIndex(ActiveWeaponIndex); if (next) next.ShowWeapon(true);
+                var next = GetWeaponAtSlotIndex(ActiveWeaponIndex);
+                // arms-fix: one OnSwitchedToWeapon (verified) whose OnWeaponSwitched listener shows the weapon; showing it
+                // here as well played ChangeWeaponSfx twice. Shown directly only if no listener did it.
                 OnSwitchedToWeapon?.Invoke(next);
+                if (next && !next.IsWeaponActive) next.ShowWeapon(true);
             }
             m_WeaponMainLocalPosition = DefaultWeaponPosition.localPosition;
             m_WeaponSwitchState = WeaponSwitchState.Up;
@@ -433,6 +504,10 @@ namespace Unity.FPS.Gameplay
                     {
                         m_TimeStartedWeaponSwitch = Time.time;
                         m_WeaponSwitchState = WeaponSwitchState.PutUpNew;
+                        // arms-fix: the new weapon rises from where the put-down left the socket (Down for the template
+                        // motion, the resting pose after a module that animated its own put-down)
+                        m_SwitchPhaseStartLocalPosition = m_WeaponMainLocalPosition;
+                        m_SwitchPhaseStartProgress = 0f;
                     }
                     else
                     {
@@ -455,17 +530,23 @@ namespace Unity.FPS.Gameplay
             }
 
             // Handle moving the weapon socket position for the animated weapon switching
+            // IRON REQUIEM arms-fix: from the socket position at the start of the phase instead of a hard Default/Down
+            // (a template weapon following a self-animated module no longer jumps to Down; a reversed phase goes on
+            // from where it was). Identical to the template when a phase starts at Default/Down.
+            float phaseFactor = m_SwitchPhaseStartProgress < 1f
+                ? Mathf.Clamp01((switchingTimeFactor - m_SwitchPhaseStartProgress) / (1f - m_SwitchPhaseStartProgress))
+                : 1f;
             if (SmoothWeaponSwitch)
-                switchingTimeFactor = switchingTimeFactor * switchingTimeFactor * (3f - 2f * switchingTimeFactor);
+                phaseFactor = phaseFactor * phaseFactor * (3f - 2f * phaseFactor);
             if (m_WeaponSwitchState == WeaponSwitchState.PutDownPrevious)
             {
-                m_WeaponMainLocalPosition = Vector3.Lerp(DefaultWeaponPosition.localPosition,
-                    DownWeaponPosition.localPosition, switchingTimeFactor);
+                m_WeaponMainLocalPosition = Vector3.Lerp(m_SwitchPhaseStartLocalPosition,
+                    DownWeaponPosition.localPosition, phaseFactor);
             }
             else if (m_WeaponSwitchState == WeaponSwitchState.PutUpNew)
             {
-                m_WeaponMainLocalPosition = Vector3.Lerp(DownWeaponPosition.localPosition,
-                    DefaultWeaponPosition.localPosition, switchingTimeFactor);
+                m_WeaponMainLocalPosition = Vector3.Lerp(m_SwitchPhaseStartLocalPosition,
+                    DefaultWeaponPosition.localPosition, phaseFactor);
             }
         }
 
@@ -538,7 +619,12 @@ namespace Unity.FPS.Gameplay
             return false;
         }
 
-        public bool RemoveWeapon(WeaponController weaponInstance)
+        public bool RemoveWeapon(WeaponController weaponInstance) => RemoveWeapon(weaponInstance, -1);
+
+        // IRON REQUIEM arms-fix (19/11/2026): switchToIndex >= 0 names the weapon that takes over when the removed one was
+        // active (one switch, one OnSwitchedToWeapon), instead of the template auto-switch to the next slot followed by
+        // a second, forced switch from the caller. -1 keeps the template behaviour.
+        public bool RemoveWeapon(WeaponController weaponInstance, int switchToIndex)
         {
             // IRON REQUIEM v4: the permanent fist can never be lost or thrown.
             if (weaponInstance && weaponInstance.PermanentMelee) return false;
@@ -560,7 +646,16 @@ namespace Unity.FPS.Gameplay
                     // Handle case of removing active weapon (switch to next weapon)
                     if (i == ActiveWeaponIndex)
                     {
-                        SwitchWeapon(true);
+                        if (switchToIndex >= 0 && switchToIndex != i && GetWeaponAtSlotIndex(switchToIndex) != null)
+                            SwitchToWeaponIndex(switchToIndex);
+                        else
+                            SwitchWeapon(true);
+                    }
+                    // IRON REQUIEM arms-fix: the weapon being switched to was removed half-way: go to the requested
+                    // weapon, or bring back the one still in hand, instead of finishing the switch on an empty slot.
+                    else if (i == m_WeaponSwitchNewWeaponIndex && m_WeaponSwitchState == WeaponSwitchState.PutDownPrevious)
+                    {
+                        SwitchToWeaponIndex(switchToIndex >= 0 && GetWeaponAtSlotIndex(switchToIndex) != null ? switchToIndex : ActiveWeaponIndex, true);
                     }
 
                     return true;

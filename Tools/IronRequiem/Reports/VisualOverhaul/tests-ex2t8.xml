@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.8820564">
+  <test-suite type="TestSuite" id="1451" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.882056" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1445" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.728510" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1446" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.713960" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1154" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.702216" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1005" name="ArmsFixPassTests" fullname="IronRequiem.Tests.ArmsFixPassTests" classname="IronRequiem.Tests.ArmsFixPassTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:42Z" duration="28.662016" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1007" name="Digit1And2SwitchCannonAndStolenWeaponWithoutRigBlinkDoubleSwitchOrDeployScale" fullname="IronRequiem.Tests.ArmsFixPassTests.Digit1And2SwitchCannonAndStolenWeaponWithoutRigBlinkDoubleSwitchOrDeployScale" methodname="Digit1And2SwitchCannonAndStolenWeaponWithoutRigBlinkDoubleSwitchOrDeployScale" classname="IronRequiem.Tests.ArmsFixPassTests" runstate="Runnable" seed="1458078361" result="Passed" start-time="2026-11-22 21:16:13Z" end-time="2026-11-22 21:16:26Z" duration="12.144734" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction bones -> T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_Mech(Clone): chestApplied=8.53 deg, weight=1.00, lean=7.92, arm=4.00, animator=False/Normal/AlwaysAnimate, T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed Digit1And2SwitchCannonAndStolenWeaponWithoutRigBlinkDoubleSwitchOrDeployScale
+]]></output>
+            </test-case>
+            <test-case id="1008" name="ForcedSwitchWhileCannonDocksReversesWithoutReplayingUnlock" fullname="IronRequiem.Tests.ArmsFixPassTests.ForcedSwitchWhileCannonDocksReversesWithoutReplayingUnlock" methodname="ForcedSwitchWhileCannonDocksReversesWithoutReplayingUnlock" classname="IronRequiem.Tests.ArmsFixPassTests" runstate="Runnable" seed="2013848461" result="Passed" start-time="2026-11-22 21:16:26Z" end-time="2026-11-22 21:16:31Z" duration="5.259585" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_Mech(Clone): chestApplied=8.36 deg, weight=1.00, lean=7.88, arm=4.00, animator=False/Normal/AlwaysAnimate, T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed ForcedSwitchWhileCannonDocksReversesWithoutReplayingUnlock
+]]></output>
+            </test-case>
+            <test-case id="1009" name="GThrowHandsOverToTheCannonWithASingleSwitch" fullname="IronRequiem.Tests.ArmsFixPassTests.GThrowHandsOverToTheCannonWithASingleSwitch" methodname="GThrowHandsOverToTheCannonWithASingleSwitch" classname="IronRequiem.Tests.ArmsFixPassTests" runstate="Runnable" seed="916776744" result="Passed" start-time="2026-11-22 21:16:31Z" end-time="2026-11-22 21:16:37Z" duration="6.217086" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_Mech(Clone): chestApplied=8.55 deg, weight=1.00, lean=7.92, arm=4.00, animator=False/Normal/AlwaysAnimate, T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed GThrowHandsOverToTheCannonWithASingleSwitch
+]]></output>
+            </test-case>
+            <test-case id="1006" name="T07ExecutionWithRealE_TwoBlowsGripNotPunchDeferredSwitchAndBusyHandsIgnoreKeys" fullname="IronRequiem.Tests.ArmsFixPassTests.T07ExecutionWithRealE_TwoBlowsGripNotPunchDeferredSwitchAndBusyHandsIgnoreKeys" methodname="T07ExecutionWithRealE_TwoBlowsGripNotPunchDeferredSwitchAndBusyHandsIgnoreKeys" classname="IronRequiem.Tests.ArmsFixPassTests" runstate="Runnable" seed="846836528" result="Failed" start-time="2026-11-22 21:16:37Z" end-time="2026-11-22 21:16:42Z" duration="4.891049" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  F works once the execution is over
+  Expected: 1
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ArmsFixPassTests+<T07ExecutionWithRealE_TwoBlowsGripNotPunchDeferredSwitchAndBusyHandsIgnoreKeys>d__39.MoveNext () [0x00ebf] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ArmsFixPassTests.cs:229
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_Mech(Clone): chestApplied=8.68 deg, weight=1.00, lean=7.92, arm=4.00, animator=False/Normal/AlwaysAnimate, T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Failed T07ExecutionWithRealE_TwoBlowsGripNotPunchDeferredSwitchAndBusyHandsIgnoreKeys
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -42,6 +42,9 @@ namespace IronRequiem
         [SerializeField] string disarmedDeathState="";
         [SerializeField,Min(0)] float deathBurstDelay=.85f;
         bool executionHeld;
+        // Executions v02: >=0 forces the chain's visual vibration amplitude (0 = stopped, 2 = struggling); <0 = normal behaviour.
+        float executionChain=-1;
+        public void SetExecutionChain(float amplitude){executionChain=amplitude;}
         public void SetExecutionReserved(bool value){executionHeld=value;if(value){CancelAttack();if(agent&&agent.enabled&&agent.isOnNavMesh){agent.isStopped=true;agent.velocity=Vector3.zero;}}}
         [SerializeField, Min(.1f)] float moveSpeed=7.2f;
         [SerializeField, Min(.1f)] float acceleration=24;
@@ -129,7 +132,7 @@ namespace IronRequiem
                 rightWheel.localRotation=rightBind*Quaternion.AngleAxis(rightAngle*wheelAxisSign,Vector3.right);
             }
             previousLeft=left;previousRight=right;previousRotation=transform.rotation;
-            float amplitude=dead?0:attacking?1:.2f;
+            float amplitude=dead?0:executionChain>=0?executionChain:attacking?1:.2f;
             leftChain.localPosition=leftChainBind+Vector3.up*(Mathf.Sin(Time.time*130)*.0008f*amplitude);
             rightChain.localPosition=rightChainBind+Vector3.up*(Mathf.Sin(Time.time*130+2)*.0008f*amplitude);
         }
@@ -200,7 +203,7 @@ namespace IronRequiem
             var delta=transform.position-previousPosition;float travel=Vector3.Dot(delta,transform.forward);float yaw=Mathf.DeltaAngle(previousYaw,transform.eulerAngles.y)*Mathf.Deg2Rad;previousPosition=transform.position;previousYaw=transform.eulerAngles.y;
             if(!dead){leftAngle+=(travel-yaw*.4f)/wheelRadius*Mathf.Rad2Deg;rightAngle+=(travel+yaw*.4f)/wheelRadius*Mathf.Rad2Deg;}
             leftWheel.localRotation=leftBind*Quaternion.AngleAxis(leftAngle*wheelAxisSign,Vector3.right);rightWheel.localRotation=rightBind*Quaternion.AngleAxis(rightAngle*wheelAxisSign,Vector3.right);
-            float amplitude=dead?Mathf.Max(0,1-(Time.time-deathAt)*4):attacking?1:.2f;leftChain.localPosition=leftChainBind+Vector3.up*(Mathf.Sin(Time.time*130)*.0008f*amplitude);rightChain.localPosition=rightChainBind+Vector3.up*(Mathf.Sin(Time.time*130+2)*.0008f*amplitude);
+            float amplitude=dead?Mathf.Max(0,1-(Time.time-deathAt)*4):executionChain>=0?executionChain:attacking?1:.2f;leftChain.localPosition=leftChainBind+Vector3.up*(Mathf.Sin(Time.time*130)*.0008f*amplitude);rightChain.localPosition=rightChainBind+Vector3.up*(Mathf.Sin(Time.time*130+2)*.0008f*amplitude);
         }
     }
 }

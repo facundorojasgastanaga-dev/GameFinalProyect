@@ -104,7 +104,7 @@ namespace IronRequiem.Tests
             Keys(Key.W,Key.LeftShift,Key.C);yield return null;yield return null;Assert.That(player.GetComponent<AdvancedPlayerMovement>().IsSliding,Is.True);
             Keys(Key.W,Key.LeftShift);Mouse(false,true,new Vector2(6,0));yield return new WaitForSeconds(.1f);Assert.That(weapons.IsAiming,Is.True);yield return new WaitForEndOfFrame();CheckPistol();CheckMeshes();Capture("fps-slide-aim");
             Mouse();Keys();yield return new WaitForSeconds(1);
-            yield return Tap(Key.Space);yield return new WaitForSeconds(.08f);yield return Tap(Key.LeftCtrl);Assert.That(player.GetComponent<AdvancedPlayerMovement>().DashAvailable,Is.False);
+            yield return Tap(Key.Space);yield return new WaitForSeconds(.08f);yield return Tap(Key.Space);Assert.That(player.GetComponent<AdvancedPlayerMovement>().DashAvailable,Is.False);
             Mouse(false,true);yield return new WaitForSeconds(.3f);var weapon=weapons.GetActiveWeapon();int shots=0;weapon.OnShootProcessed+=()=>shots++;Mouse(true,true);yield return null;yield return null;Mouse();Assert.That(shots,Is.EqualTo(1));yield return new WaitForEndOfFrame();CheckPistol();
         }
         [UnityTest]public IEnumerator EmptyInventoryRestoresNormalHandsWithoutAddingMelee()
@@ -133,8 +133,8 @@ namespace IronRequiem.Tests
         }
         [UnityTest]public IEnumerator PauseAndDeathDoNotDuplicateHandsOrConsumeHeldModule()
         {
-            var module=Detached();yield return Pickup(module);yield return Tap(Key.Tab);Assert.That(Time.timeScale,Is.Zero);var energy=module.Ammo.Remaining;yield return new WaitForSecondsRealtime(.25f);Assert.That(hands.CurrentRepresentation,Is.EqualTo(ProtagonistHandsPresentation.Representation.StolenCannon));Assert.That(hands.RightHandVisible,Is.False);Assert.That(module.Ammo.Remaining,Is.EqualTo(energy));
-            yield return Tap(Key.Tab);Assert.That(Time.timeScale,Is.EqualTo(1));Cursor.lockState=CursorLockMode.Locked;
+            var module=Detached();yield return Pickup(module);yield return Tap(Key.Escape);Assert.That(Time.timeScale,Is.Zero);var energy=module.Ammo.Remaining;yield return new WaitForSecondsRealtime(.25f);Assert.That(hands.CurrentRepresentation,Is.EqualTo(ProtagonistHandsPresentation.Representation.StolenCannon));Assert.That(hands.RightHandVisible,Is.False);Assert.That(module.Ammo.Remaining,Is.EqualTo(energy));
+            yield return Tap(Key.Escape);Assert.That(Time.timeScale,Is.EqualTo(1));Cursor.lockState=CursorLockMode.Locked;
             health.Invincible=false;health.TakeDamage(health.MaxHealth+1,null);yield return null;yield return null;Assert.That(hands.FpsRoot.gameObject.activeInHierarchy,Is.False);Assert.That(carrier.Held,Is.Null);Assert.That(module,Is.Not.Null);Assert.That(module.State,Is.EqualTo(StolenCannonState.Available));
         }
     }

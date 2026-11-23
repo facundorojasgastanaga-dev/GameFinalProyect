@@ -755,6 +755,8 @@ MonoBehaviour:
   melee: {fileID: 922907309}
   health: {fileID: 922907310}
   labelFont: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  clusterWidth: 0.53
+  barHeight: 180
 --- !u!1 &51689418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1380,7 +1382,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1594,6 +1596,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &84659053
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2489,7 +2492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7549,7 +7552,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7938,7 +7941,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8312,7 +8315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 478be5ff5b974944eaefbe777cc89351, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12054,6 +12057,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.62, g: 0.3, b: 0.07, a: 1}
   cut: 8
+  style: 0
 --- !u!222 &343029326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12805,6 +12809,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &406186610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16020,7 +16025,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 478be5ff5b974944eaefbe777cc89351, type: 2}
+  - {fileID: 2100000, guid: f55d3baf6ca9e0942b0ce35d68a7bf07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16710,6 +16715,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.62, g: 0.3, b: 0.07, a: 1}
   cut: 8
+  style: 0
 --- !u!222 &652088763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17460,7 +17466,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18632,7 +18638,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19157,6 +19163,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.1, g: 0.42, b: 0.48, a: 1}
   cut: 14
+  style: 0
 --- !u!222 &818090439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24168,6 +24175,7 @@ MonoBehaviour:
   fullFlash: {fileID: 432205965}
   chargeColor: {r: 0.12, g: 0.82, b: 0.91, a: 0.92}
   fullColor: {r: 0.88, g: 1, b: 1, a: 1}
+  radial: {fileID: 0}
 --- !u!225 &974364123
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -24267,6 +24275,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!114 &976858343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35812,7 +35821,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 478be5ff5b974944eaefbe777cc89351, type: 2}
+  - {fileID: 2100000, guid: f55d3baf6ca9e0942b0ce35d68a7bf07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35909,6 +35918,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.16, g: 0.28, b: 0.31, a: 1}
   cut: 40
+  style: 0
 --- !u!222 &1097521296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36263,7 +36273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37405,7 +37415,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 478be5ff5b974944eaefbe777cc89351, type: 2}
+  - {fileID: 2100000, guid: f55d3baf6ca9e0942b0ce35d68a7bf07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39977,7 +39987,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa53d93702c16964587bc3386d256b1a, type: 2}
+  - {fileID: 2100000, guid: 77d805dd37e45f7409d7c44ea836d36d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47266,6 +47276,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &1480546647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52051,6 +52062,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &1693568969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54050,6 +54062,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.1, g: 0.42, b: 0.48, a: 1}
   cut: 10
+  style: 0
 --- !u!222 &1868577752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54732,6 +54745,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &1914262310
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -56047,6 +56061,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.12, g: 0.82, b: 0.91, a: 1}
   cut: 18
+  style: 0
 --- !u!222 &1969499519
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -56901,6 +56916,7 @@ MonoBehaviour:
       m_Calls: []
   rim: {r: 0.55, g: 0.16, b: 0.1, a: 1}
   cut: 22
+  style: 0
 --- !u!222 &2009634766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -60011,7 +60027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 478be5ff5b974944eaefbe777cc89351, type: 2}
+  - {fileID: 2100000, guid: f55d3baf6ca9e0942b0ce35d68a7bf07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

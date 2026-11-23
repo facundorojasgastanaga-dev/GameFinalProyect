@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.7118065">
+  <test-suite type="TestSuite" id="1451" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.711807" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1445" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.576296" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1446" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.551637" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1154" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.537655" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1136" name="ExecutionsV02Tests" fullname="IronRequiem.Tests.ExecutionsV02Tests" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:01:05Z" duration="17.506393" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1139" name="SawBot_TwoBlowsTimingReachSawContinuityAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.SawBot_TwoBlowsTimingReachSawContinuityAndLocks" methodname="SawBot_TwoBlowsTimingReachSawContinuityAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="633828991" result="Failed" start-time="2026-11-22 21:00:48Z" end-time="2026-11-22 21:00:59Z" duration="11.502635" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  SawBot: the hand closes on the real joint while struggling
+  Expected: less than or equal to 0.0799999982f
+  But was:  0.534440756f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests.AssertShort (IronRequiem.Tests.ExecutionsV02Tests+Run run, System.String label) [0x001d5] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:197
+at IronRequiem.Tests.ExecutionsV02Tests+<ShortCase>d__46.MoveNext () [0x000f5] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:220
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.OnDetectedTarget () (at Assets/FPS/Scripts/AI/EnemyController.cs:299)
+Unity.FPS.AI.DetectionModule.OnDetect () (at Assets/FPS/Scripts/AI/DetectionModule.cs:175)
+Unity.FPS.AI.DetectionModule.HandleTargetDetectionInternal (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:160)
+Unity.FPS.AI.DetectionModule.HandleTargetDetection (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:70)
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+[CampaignTests] Failed SawBot_TwoBlowsTimingReachSawContinuityAndLocks
+]]></output>
+            </test-case>
+            <test-case id="1137" name="T07_TwoBlowsTimingReachRobotReactionAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_TwoBlowsTimingReachRobotReactionAndLocks" methodname="T07_TwoBlowsTimingReachRobotReactionAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="1948898098" result="Failed" start-time="2026-11-22 21:00:59Z" end-time="2026-11-22 21:01:05Z" duration="5.854148" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  T07: the hand closes on the real joint while struggling
+  Expected: less than or equal to 0.0799999982f
+  But was:  0.365679473f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests.AssertShort (IronRequiem.Tests.ExecutionsV02Tests+Run run, System.String label) [0x001d5] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:197
+at IronRequiem.Tests.ExecutionsV02Tests+<ShortCase>d__46.MoveNext () [0x000f5] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:220
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Failed T07_TwoBlowsTimingReachRobotReactionAndLocks
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

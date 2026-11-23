@@ -1,0 +1,38 @@
+{
+  "id": "R15",
+  "notes": "Pórtico de la entrada Z (x −10) y jaula de suministros opcional que se abre con la ronda de índice 2. Coordenadas locales del cuarto. Defaults por kind en DoorAuthoring.KindDefaults.",
+  "sealedVolumes": [
+    {
+      "id": "vestibulo",
+      "kind": "portal",
+      "min": [
+        -16,
+        -1,
+        -25
+      ],
+      "max": [
+        -4,
+        14,
+        -19
+      ]
+    },
+    {
+      "id": "jaula",
+      "kind": "cage",
+      "min": [
+        -26,
+        -1,
+        -25
+      ],
+      "max": [
+        -20,
+        14,
+        -19
+      ],
+      "startClosed": true,
+      "closeOnWave": -1,
+      "openOnWave": 2,
+      "klaxon": false
+    }
+  ]
+}

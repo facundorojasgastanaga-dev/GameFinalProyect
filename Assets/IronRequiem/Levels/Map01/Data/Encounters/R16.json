@@ -1,0 +1,167 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R16",
+  "kind": "rounds",
+  "archetype": "E3+E4",
+  "title": "R16 · REACTOR · 3 RONDAS",
+  "arenaTitle": "REACTOR",
+  "seed": 1616,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "BS1",
+    "BS2",
+    "BS3",
+    "BS4"
+  ],
+  "waves": [
+    {
+      "name": "Fuego cruzado",
+      "groups": [
+        {
+          "enemy": "TUR",
+          "count": 1,
+          "fixed": {
+            "zone": "TUR"
+          }
+        },
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Presión",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ],
+      "variations": [
+        {
+          "name": "Sierras",
+          "groups": [
+            {
+              "enemy": "SAW",
+              "count": 2
+            },
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "Blindado",
+          "groups": [
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "T07M",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Doble tanque",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 3
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -23,
+        6,
+        -14
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        23,
+        6,
+        -14
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -7,
+        0,
+        -13
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        20,
+        0,
+        8
+      ]
+    }
+  ],
+  "notes": "B1.2. Cuarto más cargado: uno de los que se miden en Release."
+}

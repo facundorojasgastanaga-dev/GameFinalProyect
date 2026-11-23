@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="81" result="Failed(Child)" total="81" passed="70" failed="11" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:41:54Z" duration="651.8898214">
+  <test-suite type="TestSuite" id="1452" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="374" result="Failed" site="Child" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:41:54Z" duration="651.889821" total="81" passed="70" failed="11" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1446" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="374" result="Failed" site="Child" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:41:54Z" duration="651.717498" total="81" passed="70" failed="11" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1447" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="374" result="Failed" site="Child" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:41:54Z" duration="651.694350" total="81" passed="70" failed="11" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1155" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="374" result="Failed" site="Child" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:41:54Z" duration="651.676201" total="81" passed="70" failed="11" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+          <test-suite type="TestFixture" id="1025" name="BigBotCombatTests" fullname="IronRequiem.Tests.BigBotCombatTests" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:31:52Z" duration="48.710873" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1034" name="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" fullname="IronRequiem.Tests.BigBotCombatTests.DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" methodname="DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="239706947" result="Passed" start-time="2026-11-22 21:31:03Z" end-time="2026-11-22 21:31:09Z" duration="5.657778" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DeathDuringPreparationStopsAiEffectsAndProcessesKillOnce
+]]></output>
+            </test-case>
+            <test-case id="1030" name="DetectsPursuesAndRespectsLargeBodyAroundCover" fullname="IronRequiem.Tests.BigBotCombatTests.DetectsPursuesAndRespectsLargeBodyAroundCover" methodname="DetectsPursuesAndRespectsLargeBodyAroundCover" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="912983921" result="Passed" start-time="2026-11-22 21:31:09Z" end-time="2026-11-22 21:31:20Z" duration="11.050872" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DetectsPursuesAndRespectsLargeBodyAroundCover
+]]></output>
+            </test-case>
+            <test-case id="1028" name="HealthBarTracksDamageAndPlayerBlocksMovingBody" fullname="IronRequiem.Tests.BigBotCombatTests.HealthBarTracksDamageAndPlayerBlocksMovingBody" methodname="HealthBarTracksDamageAndPlayerBlocksMovingBody" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1634075675" result="Passed" start-time="2026-11-22 21:31:20Z" end-time="2026-11-22 21:31:24Z" duration="4.410397" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed HealthBarTracksDamageAndPlayerBlocksMovingBody
+]]></output>
+            </test-case>
+            <test-case id="1031" name="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" fullname="IronRequiem.Tests.BigBotCombatTests.LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" methodname="LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1883337237" result="Passed" start-time="2026-11-22 21:31:24Z" end-time="2026-11-22 21:31:27Z" duration="2.653838" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed LosLossCancelsWarningAndPursuesLastSeenInsteadOfFiringBlind
+]]></output>
+            </test-case>
+            <test-case id="1029" name="OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" fullname="IronRequiem.Tests.BigBotCombatTests.OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" methodname="OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1295749684" result="Passed" start-time="2026-11-22 21:31:27Z" end-time="2026-11-22 21:31:35Z" duration="8.501560" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed OrbitUsesBoundedAnimatedTurnAndDoesNotAccumulateArmTwist
+]]></output>
+            </test-case>
+            <test-case id="1032" name="PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" fullname="IronRequiem.Tests.BigBotCombatTests.PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" methodname="PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="600156512" result="Passed" start-time="2026-11-22 21:31:35Z" end-time="2026-11-22 21:31:38Z" duration="2.593177" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PairedProjectilesLeaveBothMouthsDamagePlayerAndIgnoreOwner
+]]></output>
+            </test-case>
+            <test-case id="1026" name="PlayerContactRegressionProbe" fullname="IronRequiem.Tests.BigBotCombatTests.PlayerContactRegressionProbe" methodname="PlayerContactRegressionProbe" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1564102764" result="Passed" start-time="2026-11-22 21:31:38Z" end-time="2026-11-22 21:31:41Z" duration="3.357867" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PlayerContactRegressionProbe
+]]></output>
+            </test-case>
+            <test-case id="1035" name="PlayerProjectileCanDamageBigBotThroughExistingDamageable" fullname="IronRequiem.Tests.BigBotCombatTests.PlayerProjectileCanDamageBigBotThroughExistingDamageable" methodname="PlayerProjectileCanDamageBigBotThroughExistingDamageable" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="1708614150" result="Passed" start-time="2026-11-22 21:31:41Z" end-time="2026-11-22 21:31:43Z" duration="1.522380" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PlayerProjectileCanDamageBigBotThroughExistingDamageable
+]]></output>
+            </test-case>
+            <test-case id="1033" name="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" fullname="IronRequiem.Tests.BigBotCombatTests.ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" methodname="ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="2021139961" result="Passed" start-time="2026-11-22 21:31:43Z" end-time="2026-11-22 21:31:50Z" duration="6.870504" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ProjectileCanBeDodgedAndMuzzleObstructionPreventsDischarge
+]]></output>
+            </test-case>
+            <test-case id="1027" name="VariantReferencesLargeNavigationAndBlockedDetection" fullname="IronRequiem.Tests.BigBotCombatTests.VariantReferencesLargeNavigationAndBlockedDetection" methodname="VariantReferencesLargeNavigationAndBlockedDetection" classname="IronRequiem.Tests.BigBotCombatTests" runstate="Runnable" seed="501024038" result="Passed" start-time="2026-11-22 21:31:50Z" end-time="2026-11-22 21:31:52Z" duration="1.899253" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed VariantReferencesLargeNavigationAndBlockedDetection
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1036" name="BigBotDestructionTests" fullname="IronRequiem.Tests.BigBotDestructionTests" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-11-22 21:31:52Z" end-time="2026-11-22 21:32:32Z" duration="40.663397" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1038" name="CloseCameraRendersEveryApproachAngle" fullname="IronRequiem.Tests.BigBotDestructionTests.CloseCameraRendersEveryApproachAngle" methodname="CloseCameraRendersEveryApproachAngle" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1288039549" result="Passed" start-time="2026-11-22 21:31:52Z" end-time="2026-11-22 21:31:55Z" duration="3.511255" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed CloseCameraRendersEveryApproachAngle
+]]></output>
+            </test-case>
+            <test-case id="1043" name="EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" fullname="IronRequiem.Tests.BigBotDestructionTests.EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" methodname="EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="514155626" result="Passed" start-time="2026-11-22 21:31:55Z" end-time="2026-11-22 21:32:05Z" duration="9.931686" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence
+]]></output>
+            </test-case>
+            <test-case id="1044" name="EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" fullname="IronRequiem.Tests.BigBotDestructionTests.EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" methodname="EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1086881730" result="Passed" start-time="2026-11-22 21:32:05Z" end-time="2026-11-22 21:32:09Z" duration="3.755758" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack
+]]></output>
+            </test-case>
+            <test-case id="1040" name="GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" fullname="IronRequiem.Tests.BigBotDestructionTests.GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" methodname="GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1064492423" result="Passed" start-time="2026-11-22 21:32:09Z" end-time="2026-11-22 21:32:10Z" duration="1.460994" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods
+]]></output>
+            </test-case>
+            <test-case id="1045" name="HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" fullname="IronRequiem.Tests.BigBotDestructionTests.HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" methodname="HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="906273724" result="Passed" start-time="2026-11-22 21:32:10Z" end-time="2026-11-22 21:32:15Z" duration="4.396190" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup
+]]></output>
+            </test-case>
+            <test-case id="1042" name="LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" fullname="IronRequiem.Tests.BigBotDestructionTests.LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" methodname="LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="957614744" result="Failed" start-time="2026-11-22 21:32:15Z" end-time="2026-11-22 21:32:17Z" duration="1.818773" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.BigBotDestructionTests+<LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion>d__21.MoveNext () [0x001b2] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotDestructionTests.cs:99
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion
+]]></output>
+            </test-case>
+            <test-case id="1041" name="MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" fullname="IronRequiem.Tests.BigBotDestructionTests.MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" methodname="MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="663600486" result="Passed" start-time="2026-11-22 21:32:17Z" end-time="2026-11-22 21:32:18Z" duration="1.424015" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed MassiveDamageCrossesThreeStagesWithoutDuplicateDrop
+]]></output>
+            </test-case>
+            <test-case id="1037" name="MountsStayAttachedAndCriticalSparksAreVisible" fullname="IronRequiem.Tests.BigBotDestructionTests.MountsStayAttachedAndCriticalSparksAreVisible" methodname="MountsStayAttachedAndCriticalSparksAreVisible" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1463018280" result="Passed" start-time="2026-11-22 21:32:18Z" end-time="2026-11-22 21:32:22Z" duration="3.639365" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed MountsStayAttachedAndCriticalSparksAreVisible
+]]></output>
+            </test-case>
+            <test-case id="1046" name="SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" fullname="IronRequiem.Tests.BigBotDestructionTests.SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" methodname="SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="92525872" result="Failed" label="Error" start-time="2026-11-22 21:32:22Z" end-time="2026-11-22 21:32:24Z" duration="2.112118" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                <stack-trace><![CDATA[  at IronRequiem.Tests.BigBotDestructionTests+<SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse>d__25.MoveNext () [0x00214] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotDestructionTests.cs:132 
+  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse
+]]></output>
+            </test-case>
+            <test-case id="1039" name="TurnStepsFollowAngularDistance" fullname="IronRequiem.Tests.BigBotDestructionTests.TurnStepsFollowAngularDistance" methodname="TurnStepsFollowAngularDistance" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="528262685" result="Passed" start-time="2026-11-22 21:32:24Z" end-time="2026-11-22 21:32:32Z" duration="8.500399" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed TurnStepsFollowAngularDistance
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1047" name="BunkerPolishTests" fullname="IronRequiem.Tests.BunkerPolishTests" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-22 21:32:32Z" end-time="2026-11-22 21:33:57Z" duration="85.148374" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1053" name="BunkerIsClosedLitAndNavigable" fullname="IronRequiem.Tests.BunkerPolishTests.BunkerIsClosedLitAndNavigable" methodname="BunkerIsClosedLitAndNavigable" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="222819001" result="Passed" start-time="2026-11-22 21:32:32Z" end-time="2026-11-22 21:32:43Z" duration="10.320694" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed BunkerIsClosedLitAndNavigable
+]]></output>
+            </test-case>
+            <test-case id="1048" name="DiagnoseArmsAndCapture" fullname="IronRequiem.Tests.BunkerPolishTests.DiagnoseArmsAndCapture" methodname="DiagnoseArmsAndCapture" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="1642194626" result="Passed" start-time="2026-11-22 21:32:43Z" end-time="2026-11-22 21:32:54Z" duration="11.449029" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction bones -> T07 T07_HitFeedback_v04_NavThrottle: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_HitFeedback_v04_NavThrottle(Clone): chestApplied=8.49 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04_NavThrottle: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction bones -> BigBot BigBot_Burst_v10_NavThrottle: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction diag BigBot_Burst_v10_NavThrottle(Clone): chestApplied=10.06 deg, weight=1.00, lean=0.60, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10_NavThrottle: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed DiagnoseArmsAndCapture
+]]></output>
+            </test-case>
+            <test-case id="1049" name="DiagnoseHealthBars" fullname="IronRequiem.Tests.BunkerPolishTests.DiagnoseHealthBars" methodname="DiagnoseHealthBars" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="860927843" result="Passed" start-time="2026-11-22 21:32:54Z" end-time="2026-11-22 21:32:56Z" duration="2.094969" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed DiagnoseHealthBars
+]]></output>
+            </test-case>
+            <test-case id="1054" name="DiagnoseShotsDirectVsQueue" fullname="IronRequiem.Tests.BunkerPolishTests.DiagnoseShotsDirectVsQueue" methodname="DiagnoseShotsDirectVsQueue" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="1274013400" result="Passed" start-time="2026-11-22 21:32:56Z" end-time="2026-11-22 21:33:41Z" duration="44.622755" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed DiagnoseShotsDirectVsQueue
+]]></output>
+            </test-case>
+            <test-case id="1050" name="ExecutionBelow75PercentForAllEnemies" fullname="IronRequiem.Tests.BunkerPolishTests.ExecutionBelow75PercentForAllEnemies" methodname="ExecutionBelow75PercentForAllEnemies" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="689890999" result="Passed" start-time="2026-11-22 21:33:41Z" end-time="2026-11-22 21:33:43Z" duration="2.152096" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed ExecutionBelow75PercentForAllEnemies
+]]></output>
+            </test-case>
+            <test-case id="1052" name="ShotgunReloadsBankOfFourWithVent" fullname="IronRequiem.Tests.BunkerPolishTests.ShotgunReloadsBankOfFourWithVent" methodname="ShotgunReloadsBankOfFourWithVent" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="1406225089" result="Failed" start-time="2026-11-22 21:33:43Z" end-time="2026-11-22 21:33:49Z" duration="5.991166" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  no trickle regeneration
+  Expected: 3
+  But was:  4
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.BunkerPolishTests+<ShotgunReloadsBankOfFourWithVent>d__35.MoveNext () [0x0011e] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BunkerPolishTests.cs:183
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Failed ShotgunReloadsBankOfFourWithVent
+]]></output>
+            </test-case>
+            <test-case id="1051" name="T07DiesOnSecondBlowWithTwoImpacts" fullname="IronRequiem.Tests.BunkerPolishTests.T07DiesOnSecondBlowWithTwoImpacts" methodname="T07DiesOnSecondBlowWithTwoImpacts" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="399140001" result="Passed" start-time="2026-11-22 21:33:49Z" end-time="2026-11-22 21:33:54Z" duration="4.754207" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_HitFeedback_v04_NavThrottle(Clone): chestApplied=8.06 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04_NavThrottle: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed T07DiesOnSecondBlowWithTwoImpacts
+]]></output>
+            </test-case>
+            <test-case id="1055" name="WaveEnemiesArriveOnePerFrameFromPrewarm" fullname="IronRequiem.Tests.BunkerPolishTests.WaveEnemiesArriveOnePerFrameFromPrewarm" methodname="WaveEnemiesArriveOnePerFrameFromPrewarm" classname="IronRequiem.Tests.BunkerPolishTests" runstate="Runnable" seed="606709625" result="Passed" start-time="2026-11-22 21:33:54Z" end-time="2026-11-22 21:33:57Z" duration="3.697602" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+ExecutionReaction bones -> SawBot SawBot_SawPolish_v04: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed WaveEnemiesArriveOnePerFrameFromPrewarm
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1056" name="CampaignTests" fullname="IronRequiem.Tests.CampaignTests" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2026-11-22 21:33:57Z" end-time="2026-11-22 21:37:04Z" duration="186.536592" total="7" passed="4" failed="3" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1062" name="CurrentRobotsEyesAndExecutionOnlyWeapons" fullname="IronRequiem.Tests.CampaignTests.CurrentRobotsEyesAndExecutionOnlyWeapons" methodname="CurrentRobotsEyesAndExecutionOnlyWeapons" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="2101881750" result="Passed" start-time="2026-11-22 21:33:57Z" end-time="2026-11-22 21:34:20Z" duration="22.206662" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 3747.1 ms · door+preload 0 / activate 3747 / unload 0 / settle 506 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 57.6 ms · door+preload 34 / activate 23 / unload 58 / settle 28 · peak at frame 99/138 load 1.00
+ExecutionReaction bones -> T07 T07_Current_Repaired: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 77.9 ms · door+preload 15 / activate 15 / unload 78 / settle 19 · peak at frame 99/204 load 1.00
+ExecutionReaction bones -> BigBot BigBot_Current: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction bones -> SawBot SawBot_Current: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed CurrentRobotsEyesAndExecutionOnlyWeapons
+]]></output>
+            </test-case>
+            <test-case id="1060" name="DeathScreenButtonsReceiveClicks" fullname="IronRequiem.Tests.CampaignTests.DeathScreenButtonsReceiveClicks" methodname="DeathScreenButtonsReceiveClicks" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1681205834" result="Passed" start-time="2026-11-22 21:34:20Z" end-time="2026-11-22 21:34:33Z" duration="13.479968" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 2935.6 ms · door+preload 0 / activate 2936 / unload 0 / settle 208 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 42.8 ms · door+preload 16 / activate 21 / unload 43 / settle 16 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 65.4 ms · door+preload 16 / activate 19 / unload 65 / settle 19 · peak at frame 99/204 load 1.00
+[CampaignTests] Passed DeathScreenButtonsReceiveClicks
+]]></output>
+            </test-case>
+            <test-case id="1061" name="EquippedExplosionCleansInventoryInAdditiveRoom" fullname="IronRequiem.Tests.CampaignTests.EquippedExplosionCleansInventoryInAdditiveRoom" methodname="EquippedExplosionCleansInventoryInAdditiveRoom" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="711961673" result="Passed" start-time="2026-11-22 21:34:33Z" end-time="2026-11-22 21:34:49Z" duration="15.421693" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1451.5 ms · door+preload 0 / activate 1452 / unload 0 / settle 228 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 44.8 ms · door+preload 18 / activate 20 / unload 45 / settle 15 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 61.6 ms · door+preload 16 / activate 21 / unload 62 / settle 16 · peak at frame 99/209 load 1.00
+ExecutionReaction diag T07_Current_Repaired: chestApplied=9.38 deg, weight=1.00, lean=7.92, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_Current_Repaired: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed EquippedExplosionCleansInventoryInAdditiveRoom
+]]></output>
+            </test-case>
+            <test-case id="1059" name="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" fullname="IronRequiem.Tests.CampaignTests.IntroMenuStartsCampaignAndRestartReturnsToRoomOne" methodname="IntroMenuStartsCampaignAndRestartReturnsToRoomOne" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1947302555" result="Failed" start-time="2026-11-22 21:34:49Z" end-time="2026-11-22 21:35:02Z" duration="12.986167" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected string length 15 but was 17. Strings differ at index 0.
+  Expected: "RequiemCampaign"
+  But was:  "Map01_Campaign_S1"
+  -----------^
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<IntroMenuStartsCampaignAndRestartReturnsToRoomOne>d__26.MoveNext () [0x00166] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:250
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1751.0 ms · door+preload 0 / activate 1751 / unload 0 / settle 227 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 44.7 ms · door+preload 17 / activate 21 / unload 45 / settle 17 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 61.6 ms · door+preload 16 / activate 19 / unload 62 / settle 16 · peak at frame 99/204 load 1.00
+[CampaignTests] Failed IntroMenuStartsCampaignAndRestartReturnsToRoomOne
+]]></output>
+            </test-case>
+            <test-case id="1058" name="PresentationHandsMountedArmsAndOverdriveHud" fullname="IronRequiem.Tests.CampaignTests.PresentationHandsMountedArmsAndOverdriveHud" methodname="PresentationHandsMountedArmsAndOverdriveHud" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1654522910" result="Failed" start-time="2026-11-22 21:35:02Z" end-time="2026-11-22 21:35:16Z" duration="14.030690" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Unarmed F charge stage=2 player=(0.00, -0.02, -30.50)
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<Until>d__19.MoveNext () [0x000ab] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:132
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1601.6 ms · door+preload 0 / activate 1602 / unload 0 / settle 250 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 54.4 ms · door+preload 17 / activate 20 / unload 54 / settle 18 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 62.2 ms · door+preload 16 / activate 19 / unload 62 / settle 17 · peak at frame 99/204 load 1.00
+[CampaignTests] Failed PresentationHandsMountedArmsAndOverdriveHud
+]]></output>
+            </test-case>
+            <test-case id="1057" name="TwelveRoundsAirlocksInventoryAndPursuit" fullname="IronRequiem.Tests.CampaignTests.TwelveRoundsAirlocksInventoryAndPursuit" methodname="TwelveRoundsAirlocksInventoryAndPursuit" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1435554318" result="Passed" start-time="2026-11-22 21:35:16Z" end-time="2026-11-22 21:36:50Z" duration="94.411742" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1686.5 ms · door+preload 0 / activate 1686 / unload 0 / settle 232 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 50.9 ms · door+preload 16 / activate 19 / unload 51 / settle 17 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 62.2 ms · door+preload 15 / activate 19 / unload 62 / settle 16 · peak at frame 99/204 load 1.00
+ExecutionReaction diag T07_Current_Repaired: chestApplied=9.41 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_Current_Repaired: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction bones -> T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[Campaign] transition to Room02_Breach (preload) peak frame 63.6 ms · door+preload 19 / activate 21 / unload 64 / settle 15 · peak at frame 99/296 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 71.6 ms · door+preload 17 / activate 21 / unload 72 / settle 16 · peak at frame 99/501 load 1.00
+[Campaign] transition to Room04_Reactor (preload) peak frame 70.5 ms · door+preload 23 / activate 25 / unload 71 / settle 17 · peak at frame 99/661 load 1.00
+[Campaign] transition to Pursuit05 (preload) peak frame 61.4 ms · door+preload 16 / activate 19 / unload 61 / settle 17 · peak at frame 99/770 load 1.00
+[CampaignTests] Passed TwelveRoundsAirlocksInventoryAndPursuit
+]]></output>
+            </test-case>
+            <test-case id="1063" name="V4FistChargeSlideGuardAndBigBotBlast" fullname="IronRequiem.Tests.CampaignTests.V4FistChargeSlideGuardAndBigBotBlast" methodname="V4FistChargeSlideGuardAndBigBotBlast" classname="IronRequiem.Tests.CampaignTests" runstate="Runnable" seed="1707291912" result="Failed" start-time="2026-11-22 21:36:50Z" end-time="2026-11-22 21:37:04Z" duration="13.922792" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  F starts the charge stage=2 player=(16.52, 0.00, 3.56)
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CampaignTests+<Until>d__19.MoveNext () [0x000ab] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CampaignTests.cs:132
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 1454.2 ms · door+preload 0 / activate 1454 / unload 0 / settle 252 · peak at frame 2/9 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 47.5 ms · door+preload 16 / activate 18 / unload 47 / settle 14 · peak at frame 99/138 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 48.2 ms · door+preload 16 / activate 17 / unload 48 / settle 16 · peak at frame 99/204 load 1.00
+[CampaignTests] Failed V4FistChargeSlideGuardAndBigBotBlast
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1078" name="CombatFollowupTests" fullname="IronRequiem.Tests.CombatFollowupTests" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-22 21:37:04Z" end-time="2026-11-22 21:37:42Z" duration="38.177420" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1081" name="BigExecutionProtectsThenStolenRocketMatchesEnemy" fullname="IronRequiem.Tests.CombatFollowupTests.BigExecutionProtectsThenStolenRocketMatchesEnemy" methodname="BigExecutionProtectsThenStolenRocketMatchesEnemy" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="103752020" result="Passed" start-time="2026-11-22 21:37:04Z" end-time="2026-11-22 21:37:09Z" duration="4.653994" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[ExecutionReaction bones -> BigBot BigBot_Burst_v10: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction diag BigBot_Burst_v10(Clone): chestApplied=8.37 deg, weight=1.00, lean=0.87, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed BigExecutionProtectsThenStolenRocketMatchesEnemy
+]]></output>
+            </test-case>
+            <test-case id="1079" name="CapturePerformance" fullname="IronRequiem.Tests.CombatFollowupTests.CapturePerformance" methodname="CapturePerformance" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="1652324923" result="Passed" start-time="2026-11-22 21:37:09Z" end-time="2026-11-22 21:37:33Z" duration="24.554368" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[ExecutionReaction bones -> BigBot BigBot_Burst_v10_Fast_Range: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction bones -> T07 T07_HitFeedback_v04_Fast_Range: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed CapturePerformance
+]]></output>
+            </test-case>
+            <test-case id="1080" name="ExecutionProtectsT07AndExpiresWithoutChangingGodMode" fullname="IronRequiem.Tests.CombatFollowupTests.ExecutionProtectsT07AndExpiresWithoutChangingGodMode" methodname="ExecutionProtectsT07AndExpiresWithoutChangingGodMode" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="22217520" result="Passed" start-time="2026-11-22 21:37:33Z" end-time="2026-11-22 21:37:37Z" duration="3.655648" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[ExecutionReaction bones -> T07 T07_HitFeedback_v04: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_HitFeedback_v04(Clone): chestApplied=8.59 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed ExecutionProtectsT07AndExpiresWithoutChangingGodMode
+]]></output>
+            </test-case>
+            <test-case id="1083" name="MixerCacheRetainsRoutingAndNullClipIsSafe" fullname="IronRequiem.Tests.CombatFollowupTests.MixerCacheRetainsRoutingAndNullClipIsSafe" methodname="MixerCacheRetainsRoutingAndNullClipIsSafe" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="1599670110" result="Passed" start-time="2026-11-22 21:37:37Z" end-time="2026-11-22 21:37:38Z" duration="1.191255" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed MixerCacheRetainsRoutingAndNullClipIsSafe
+]]></output>
+            </test-case>
+            <test-case id="1082" name="T07ChargesReleasesAndCancelsAtWallAndDeath" fullname="IronRequiem.Tests.CombatFollowupTests.T07ChargesReleasesAndCancelsAtWallAndDeath" methodname="T07ChargesReleasesAndCancelsAtWallAndDeath" classname="IronRequiem.Tests.CombatFollowupTests" runstate="Runnable" seed="142036911" result="Passed" start-time="2026-11-22 21:37:38Z" end-time="2026-11-22 21:37:42Z" duration="4.080059" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed T07ChargesReleasesAndCancelsAtWallAndDeath
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1100" name="CombatV03Coverage" fullname="IronRequiem.Tests.CombatV03Coverage" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-22 21:37:42Z" end-time="2026-11-22 21:38:14Z" duration="31.842262" total="9" passed="8" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1105" name="ChargedShotCriticalSmokeThrowAndExplosionStillWork" fullname="IronRequiem.Tests.CombatV03Coverage.ChargedShotCriticalSmokeThrowAndExplosionStillWork" methodname="ChargedShotCriticalSmokeThrowAndExplosionStillWork" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1041421138" result="Passed" start-time="2026-11-22 21:37:42Z" end-time="2026-11-22 21:37:47Z" duration="4.999721" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ChargedShotCriticalSmokeThrowAndExplosionStillWork
+]]></output>
+            </test-case>
+            <test-case id="1107" name="CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" fullname="IronRequiem.Tests.CombatV03Coverage.CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" methodname="CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1878801261" result="Failed" start-time="2026-11-22 21:37:47Z" end-time="2026-11-22 21:37:52Z" duration="4.871734" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.CombatV03Coverage+<CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon>d__22.MoveNext () [0x00298] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\CombatV03Coverage.cs:179
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed CriticalRightArmFallsOnceAcrossEveryLodWithoutLosingCannon
+]]></output>
+            </test-case>
+            <test-case id="1108" name="DetectionNonAllocMatchesOriginalWhenBufferIsFull" fullname="IronRequiem.Tests.CombatV03Coverage.DetectionNonAllocMatchesOriginalWhenBufferIsFull" methodname="DetectionNonAllocMatchesOriginalWhenBufferIsFull" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1190955454" result="Passed" start-time="2026-11-22 21:37:52Z" end-time="2026-11-22 21:37:53Z" duration="1.129790" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DetectionNonAllocMatchesOriginalWhenBufferIsFull
+]]></output>
+            </test-case>
+            <test-case id="1106" name="EquippedExhaustionExplodesOnceAndRemovesInventoryEntry" fullname="IronRequiem.Tests.CombatV03Coverage.EquippedExhaustionExplodesOnceAndRemovesInventoryEntry" methodname="EquippedExhaustionExplodesOnceAndRemovesInventoryEntry" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1846602791" result="Passed" start-time="2026-11-22 21:37:53Z" end-time="2026-11-22 21:37:56Z" duration="2.619331" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EquippedExhaustionExplodesOnceAndRemovesInventoryEntry
+]]></output>
+            </test-case>
+            <test-case id="1103" name="FullInventoryExplainsFailureAndFreeSlotEnablesPickup" fullname="IronRequiem.Tests.CombatV03Coverage.FullInventoryExplainsFailureAndFreeSlotEnablesPickup" methodname="FullInventoryExplainsFailureAndFreeSlotEnablesPickup" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1695956688" result="Passed" start-time="2026-11-22 21:37:56Z" end-time="2026-11-22 21:37:58Z" duration="2.140987" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed FullInventoryExplainsFailureAndFreeSlotEnablesPickup
+]]></output>
+            </test-case>
+            <test-case id="1101" name="GroundAnglesRepeatedInputSwitchAndThrowKeepEnergy" fullname="IronRequiem.Tests.CombatV03Coverage.GroundAnglesRepeatedInputSwitchAndThrowKeepEnergy" methodname="GroundAnglesRepeatedInputSwitchAndThrowKeepEnergy" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="45509767" result="Passed" start-time="2026-11-22 21:37:58Z" end-time="2026-11-22 21:38:07Z" duration="8.998991" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed GroundAnglesRepeatedInputSwitchAndThrowKeepEnergy
+]]></output>
+            </test-case>
+            <test-case id="1104" name="NearestOfTwoCannonsIsTheOnlyOneEquipped" fullname="IronRequiem.Tests.CombatV03Coverage.NearestOfTwoCannonsIsTheOnlyOneEquipped" methodname="NearestOfTwoCannonsIsTheOnlyOneEquipped" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1370694035" result="Passed" start-time="2026-11-22 21:38:07Z" end-time="2026-11-22 21:38:09Z" duration="2.491075" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed NearestOfTwoCannonsIsTheOnlyOneEquipped
+]]></output>
+            </test-case>
+            <test-case id="1102" name="RangeCooldownAndSolidObstaclesGiveCorrectPickupState" fullname="IronRequiem.Tests.CombatV03Coverage.RangeCooldownAndSolidObstaclesGiveCorrectPickupState" methodname="RangeCooldownAndSolidObstaclesGiveCorrectPickupState" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1026970654" result="Passed" start-time="2026-11-22 21:38:09Z" end-time="2026-11-22 21:38:11Z" duration="1.669862" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed RangeCooldownAndSolidObstaclesGiveCorrectPickupState
+]]></output>
+            </test-case>
+            <test-case id="1109" name="ZZ_CaptureClarityAtIdenticalCameraAndTurn" fullname="IronRequiem.Tests.CombatV03Coverage.ZZ_CaptureClarityAtIdenticalCameraAndTurn" methodname="ZZ_CaptureClarityAtIdenticalCameraAndTurn" classname="IronRequiem.Tests.CombatV03Coverage" runstate="Runnable" seed="1107989553" result="Passed" start-time="2026-11-22 21:38:11Z" end-time="2026-11-22 21:38:14Z" duration="2.833701" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ZZ_CaptureClarityAtIdenticalCameraAndTurn
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1146" name="FastCombatTests" fullname="IronRequiem.Tests.FastCombatTests" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-22 21:38:14Z" end-time="2026-11-22 21:38:32Z" duration="18.271390" total="6" passed="4" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1150" name="BigBotExecuteBurstEnergyThrowAndOverdrive" fullname="IronRequiem.Tests.FastCombatTests.BigBotExecuteBurstEnergyThrowAndOverdrive" methodname="BigBotExecuteBurstEnergyThrowAndOverdrive" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="151780113" result="Passed" start-time="2026-11-22 21:38:14Z" end-time="2026-11-22 21:38:22Z" duration="7.971569" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[ExecutionReaction bones -> BigBot BigBot_Burst_v10_Fast: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction bones -> T07 T07_HitFeedback_v04_Fast: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag BigBot_Burst_v10_Fast(Clone): chestApplied=7.63 deg, weight=1.00, lean=0.87, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10_Fast: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed BigBotExecuteBurstEnergyThrowAndOverdrive
+]]></output>
+            </test-case>
+            <test-case id="1151" name="BigBotExecutionLeapsRipsShootsAndLandsBack" fullname="IronRequiem.Tests.FastCombatTests.BigBotExecutionLeapsRipsShootsAndLandsBack" methodname="BigBotExecutionLeapsRipsShootsAndLandsBack" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1744342808" result="Failed" start-time="2026-11-22 21:38:22Z" end-time="2026-11-22 21:38:24Z" duration="2.483468" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Sequence lasts long enough to read
+  Expected: greater than 1.5f
+  But was:  1.46333277f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.FastCombatTests+<BigBotExecutionLeapsRipsShootsAndLandsBack>d__22.MoveNext () [0x0040d] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\FastCombatTests.cs:62
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[ExecutionReaction diag BigBot_Burst_v10_Fast(Clone): chestApplied=8.38 deg, weight=1.00, lean=0.87, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10_Fast: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Failed BigBotExecutionLeapsRipsShootsAndLandsBack
+]]></output>
+            </test-case>
+            <test-case id="1149" name="NormalDeathsNoModulesAndBigBotLossStaysDecorative" fullname="IronRequiem.Tests.FastCombatTests.NormalDeathsNoModulesAndBigBotLossStaysDecorative" methodname="NormalDeathsNoModulesAndBigBotLossStaysDecorative" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="422033727" result="Passed" start-time="2026-11-22 21:38:24Z" end-time="2026-11-22 21:38:28Z" duration="3.035206" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed NormalDeathsNoModulesAndBigBotLossStaysDecorative
+]]></output>
+            </test-case>
+            <test-case id="1152" name="RuntimeProjectileAndDamageableUseReducedDamage" fullname="IronRequiem.Tests.FastCombatTests.RuntimeProjectileAndDamageableUseReducedDamage" methodname="RuntimeProjectileAndDamageableUseReducedDamage" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="939045337" result="Passed" start-time="2026-11-22 21:38:28Z" end-time="2026-11-22 21:38:29Z" duration="1.420988" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed RuntimeProjectileAndDamageableUseReducedDamage
+]]></output>
+            </test-case>
+            <test-case id="1148" name="T07ThresholdWallsRangeInventoryAndUniqueDelivery" fullname="IronRequiem.Tests.FastCombatTests.T07ThresholdWallsRangeInventoryAndUniqueDelivery" methodname="T07ThresholdWallsRangeInventoryAndUniqueDelivery" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="245460616" result="Failed" start-time="2026-11-22 21:38:29Z" end-time="2026-11-22 21:38:30Z" duration="1.551121" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  95.9000015f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.FastCombatTests+<T07ThresholdWallsRangeInventoryAndUniqueDelivery>d__19.MoveNext () [0x00582] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\FastCombatTests.cs:42
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed T07ThresholdWallsRangeInventoryAndUniqueDelivery
+]]></output>
+            </test-case>
+            <test-case id="1147" name="ValuesAndMovement" fullname="IronRequiem.Tests.FastCombatTests.ValuesAndMovement" methodname="ValuesAndMovement" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="919134931" result="Passed" start-time="2026-11-22 21:38:31Z" end-time="2026-11-22 21:38:32Z" duration="1.766968" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ValuesAndMovement
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1204" name="ModularArmTests" fullname="IronRequiem.Tests.ModularArmTests" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2026-11-22 21:38:32Z" end-time="2026-11-22 21:39:04Z" duration="32.187150" total="5" passed="4" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1207" name="BigBotDropCanBeCollectedFiredThrownAndExploded" fullname="IronRequiem.Tests.ModularArmTests.BigBotDropCanBeCollectedFiredThrownAndExploded" methodname="BigBotDropCanBeCollectedFiredThrownAndExploded" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" seed="1647179729" result="Passed" start-time="2026-11-22 21:38:32Z" end-time="2026-11-22 21:38:45Z" duration="12.221715" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed BigBotDropCanBeCollectedFiredThrownAndExploded
+]]></output>
+            </test-case>
+            <test-case id="1205" name="CompactModuleKeepsMovementAndRestoresNormalForearm" fullname="IronRequiem.Tests.ModularArmTests.CompactModuleKeepsMovementAndRestoresNormalForearm" methodname="CompactModuleKeepsMovementAndRestoresNormalForearm" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" seed="375947461" result="Failed" start-time="2026-11-22 21:38:45Z" end-time="2026-11-22 21:38:49Z" duration="4.456426" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Receiver proximal cut must remain outside the FPS frame during motion and ADS
+  Expected: 0
+  But was:  1023
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ModularArmTests+<CompactModuleKeepsMovementAndRestoresNormalForearm>d__20.MoveNext () [0x00553] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ModularArmTests.cs:119
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed CompactModuleKeepsMovementAndRestoresNormalForearm
+]]></output>
+            </test-case>
+            <test-case id="1209" name="DeathReleasesBigBotModuleWithoutDeletingItsEnergy" fullname="IronRequiem.Tests.ModularArmTests.DeathReleasesBigBotModuleWithoutDeletingItsEnergy" methodname="DeathReleasesBigBotModuleWithoutDeletingItsEnergy" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" seed="70442324" result="Passed" start-time="2026-11-22 21:38:49Z" end-time="2026-11-22 21:38:52Z" duration="2.720747" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DeathReleasesBigBotModuleWithoutDeletingItsEnergy
+]]></output>
+            </test-case>
+            <test-case id="1206" name="SustainedFireTurnsCapsulesRedAndCoolsBack" fullname="IronRequiem.Tests.ModularArmTests.SustainedFireTurnsCapsulesRedAndCoolsBack" methodname="SustainedFireTurnsCapsulesRedAndCoolsBack" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" seed="432993254" result="Passed" start-time="2026-11-22 21:38:52Z" end-time="2026-11-22 21:38:59Z" duration="7.061530" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed SustainedFireTurnsCapsulesRedAndCoolsBack
+]]></output>
+            </test-case>
+            <test-case id="1208" name="T07PickupRespectsWallsRangeAndSeparateMeleeKey" fullname="IronRequiem.Tests.ModularArmTests.T07PickupRespectsWallsRangeAndSeparateMeleeKey" methodname="T07PickupRespectsWallsRangeAndSeparateMeleeKey" classname="IronRequiem.Tests.ModularArmTests" runstate="Runnable" seed="1186437221" result="Passed" start-time="2026-11-22 21:38:59Z" end-time="2026-11-22 21:39:04Z" duration="5.667978" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed T07PickupRespectsWallsRangeAndSeparateMeleeKey
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1289" name="SawBotWeaponDeathTests" fullname="IronRequiem.Tests.SawBotWeaponDeathTests" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-22 21:39:04Z" end-time="2026-11-22 21:39:36Z" duration="31.685834" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1291" name="DeathFromContactAndNormalKillDoesNotDropWeapon" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.DeathFromContactAndNormalKillDoesNotDropWeapon" methodname="DeathFromContactAndNormalKillDoesNotDropWeapon" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="873407488" result="Passed" start-time="2026-11-22 21:39:04Z" end-time="2026-11-22 21:39:08Z" duration="3.549294" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+ExecutionReaction bones -> SawBot SawBot_Arsenal_v03: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed DeathFromContactAndNormalKillDoesNotDropWeapon
+]]></output>
+            </test-case>
+            <test-case id="1292" name="ExecutionSingleDeliveryAndHiddenArmAcrossLods" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.ExecutionSingleDeliveryAndHiddenArmAcrossLods" methodname="ExecutionSingleDeliveryAndHiddenArmAcrossLods" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="1258285258" result="Passed" start-time="2026-11-22 21:39:08Z" end-time="2026-11-22 21:39:11Z" duration="3.099871" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+ExecutionReaction diag SawBot_Arsenal_v03(Clone): chestApplied=8.95 deg, weight=1.00, lean=7.92, arm=4.00, animator=True/Normal/AlwaysAnimate, SawBot SawBot_Arsenal_v03: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed ExecutionSingleDeliveryAndHiddenArmAcrossLods
+]]></output>
+            </test-case>
+            <test-case id="1290" name="HeavyDeathAndFloorAcrossLods" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.HeavyDeathAndFloorAcrossLods" methodname="HeavyDeathAndFloorAcrossLods" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="994034446" result="Passed" start-time="2026-11-22 21:39:11Z" end-time="2026-11-22 21:39:18Z" duration="6.970318" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed HeavyDeathAndFloorAcrossLods
+]]></output>
+            </test-case>
+            <test-case id="1293" name="HeldSawDamageEnergyWallAndCancellation" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.HeldSawDamageEnergyWallAndCancellation" methodname="HeldSawDamageEnergyWallAndCancellation" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="1913552337" result="Passed" start-time="2026-11-22 21:39:18Z" end-time="2026-11-22 21:39:23Z" duration="4.457792" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+ExecutionReaction diag SawBot_Arsenal_v03(Clone): chestApplied=8.82 deg, weight=1.00, lean=7.92, arm=4.00, animator=True/Normal/AlwaysAnimate, SawBot SawBot_Arsenal_v03: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed HeldSawDamageEnergyWallAndCancellation
+]]></output>
+            </test-case>
+            <test-case id="1295" name="LegacyChargeAndBurstStillBind" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.LegacyChargeAndBurstStillBind" methodname="LegacyChargeAndBurstStillBind" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="1389880941" result="Passed" start-time="2026-11-22 21:39:23Z" end-time="2026-11-22 21:39:27Z" duration="4.324614" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed LegacyChargeAndBurstStillBind
+]]></output>
+            </test-case>
+            <test-case id="1294" name="SwitchThrowRecollectCriticalAndPause" fullname="IronRequiem.Tests.SawBotWeaponDeathTests.SwitchThrowRecollectCriticalAndPause" methodname="SwitchThrowRecollectCriticalAndPause" classname="IronRequiem.Tests.SawBotWeaponDeathTests" runstate="Runnable" seed="1586480192" result="Passed" start-time="2026-11-22 21:39:27Z" end-time="2026-11-22 21:39:36Z" duration="9.236396" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+ExecutionReaction diag SawBot_Arsenal_v03(Clone): chestApplied=8.87 deg, weight=1.00, lean=7.92, arm=4.00, animator=True/Normal/AlwaysAnimate, SawBot SawBot_Arsenal_v03: chest=Presentation/Rig/Body head=- weaponArm=Presentation/Rig/Body/UpperArm_R guardArm=Presentation/Rig/Body/UpperArm_L hips=-
+[CampaignTests] Passed SwitchThrowRecollectCriticalAndPause
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1296" name="SecondaryShotgunTests" fullname="IronRequiem.Tests.SecondaryShotgunTests" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-22 21:39:36Z" end-time="2026-11-22 21:40:40Z" duration="63.783938" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1303" name="CaptureAnimationPoses" fullname="IronRequiem.Tests.SecondaryShotgunTests.CaptureAnimationPoses" methodname="CaptureAnimationPoses" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1405859486" result="Passed" start-time="2026-11-22 21:39:36Z" end-time="2026-11-22 21:39:51Z" duration="14.602668" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_HitFeedback_v04(Clone): chestApplied=8.19 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed CaptureAnimationPoses
+]]></output>
+            </test-case>
+            <test-case id="1301" name="ExecutionRequiresStrictlyBelow75PercentBigBot" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentBigBot" methodname="ExecutionRequiresStrictlyBelow75PercentBigBot" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1805331438" result="Passed" start-time="2026-11-22 21:39:51Z" end-time="2026-11-22 21:39:56Z" duration="4.849463" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[ExecutionReaction diag BigBot_Burst_v10(Clone): chestApplied=6.98 deg, weight=1.00, lean=1.02, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed ExecutionRequiresStrictlyBelow75PercentBigBot
+]]></output>
+            </test-case>
+            <test-case id="1300" name="ExecutionRequiresStrictlyBelow75PercentT07" fullname="IronRequiem.Tests.SecondaryShotgunTests.ExecutionRequiresStrictlyBelow75PercentT07" methodname="ExecutionRequiresStrictlyBelow75PercentT07" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="434294553" result="Passed" start-time="2026-11-22 21:39:56Z" end-time="2026-11-22 21:40:00Z" duration="4.360575" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_HitFeedback_v04(Clone): chestApplied=8.49 deg, weight=1.00, lean=7.82, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed ExecutionRequiresStrictlyBelow75PercentT07
+]]></output>
+            </test-case>
+            <test-case id="1298" name="ShotgunDamageFallsOffWithDistanceAndRange" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunDamageFallsOffWithDistanceAndRange" methodname="ShotgunDamageFallsOffWithDistanceAndRange" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1145872385" result="Passed" start-time="2026-11-22 21:40:00Z" end-time="2026-11-22 21:40:21Z" duration="21.267536" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed ShotgunDamageFallsOffWithDistanceAndRange
+]]></output>
+            </test-case>
+            <test-case id="1297" name="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" fullname="IronRequiem.Tests.SecondaryShotgunTests.ShotgunIsSecondaryAndCoexistsWithStolenWeapon" methodname="ShotgunIsSecondaryAndCoexistsWithStolenWeapon" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1002176543" result="Passed" start-time="2026-11-22 21:40:21Z" end-time="2026-11-22 21:40:27Z" duration="5.836446" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_HitFeedback_v04(Clone): chestApplied=8.65 deg, weight=1.00, lean=7.85, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Passed ShotgunIsSecondaryAndCoexistsWithStolenWeapon
+]]></output>
+            </test-case>
+            <test-case id="1299" name="SlideCooldownStartsAtEndAndNeedsNewPress" fullname="IronRequiem.Tests.SecondaryShotgunTests.SlideCooldownStartsAtEndAndNeedsNewPress" methodname="SlideCooldownStartsAtEndAndNeedsNewPress" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="790267264" result="Passed" start-time="2026-11-22 21:40:27Z" end-time="2026-11-22 21:40:37Z" duration="9.868795" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed SlideCooldownStartsAtEndAndNeedsNewPress
+]]></output>
+            </test-case>
+            <test-case id="1302" name="ThrottledNavigationStillPursuesMovingPlayer" fullname="IronRequiem.Tests.SecondaryShotgunTests.ThrottledNavigationStillPursuesMovingPlayer" methodname="ThrottledNavigationStillPursuesMovingPlayer" classname="IronRequiem.Tests.SecondaryShotgunTests" runstate="Runnable" seed="1935722719" result="Passed" start-time="2026-11-22 21:40:37Z" end-time="2026-11-22 21:40:40Z" duration="2.938905" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ThrottledNavigationStillPursuesMovingPlayer
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1352" name="VisualOverhaulTests" fullname="IronRequiem.Tests.VisualOverhaulTests" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-22 21:40:40Z" end-time="2026-11-22 21:41:54Z" duration="74.490281" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1360" name="ArmsAfter" fullname="IronRequiem.Tests.VisualOverhaulTests.ArmsAfter" methodname="ArmsAfter" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="739908715" result="Passed" start-time="2026-11-22 21:40:40Z" end-time="2026-11-22 21:40:51Z" duration="11.509423" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction bones -> T07 T07_HitFeedback_v04_NavThrottle_VO: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_HitFeedback_v04_NavThrottle_VO(Clone): chestApplied=8.43 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04_NavThrottle_VO: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction bones -> BigBot BigBot_Burst_v10_NavThrottle_VO: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+ExecutionReaction diag BigBot_Burst_v10_NavThrottle_VO(Clone): chestApplied=8.51 deg, weight=1.00, lean=0.87, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10_NavThrottle_VO: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed ArmsAfter
+]]></output>
+            </test-case>
+            <test-case id="1359" name="ArmsBefore" fullname="IronRequiem.Tests.VisualOverhaulTests.ArmsBefore" methodname="ArmsBefore" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="1052793520" result="Passed" start-time="2026-11-22 21:40:51Z" end-time="2026-11-22 21:41:01Z" duration="9.771759" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 4 to make 6 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction diag T07_HitFeedback_v04_NavThrottle(Clone): chestApplied=8.25 deg, weight=1.00, lean=7.88, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_HitFeedback_v04_NavThrottle: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag BigBot_Burst_v10_NavThrottle(Clone): chestApplied=10.44 deg, weight=1.00, lean=0.60, arm=4.00, animator=True/Normal/AlwaysAnimate, BigBot BigBot_Burst_v10_NavThrottle: chest=Presentation/NewRobotRig/Root/Pelvis/Torso head=Presentation/NewRobotRig/Root/Pelvis/Torso weaponArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R guardArm=Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_L hips=Presentation/NewRobotRig/Root/Pelvis
+[CampaignTests] Passed ArmsBefore
+]]></output>
+            </test-case>
+            <test-case id="1356" name="EnemyLightsFollowStatesWarnAndGoOutOnDeath" fullname="IronRequiem.Tests.VisualOverhaulTests.EnemyLightsFollowStatesWarnAndGoOutOnDeath" methodname="EnemyLightsFollowStatesWarnAndGoOutOnDeath" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="1232496238" result="Passed" start-time="2026-11-22 21:41:01Z" end-time="2026-11-22 21:41:05Z" duration="3.708336" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EnemyLightsFollowStatesWarnAndGoOutOnDeath
+]]></output>
+            </test-case>
+            <test-case id="1353" name="LabLoadsCleanAndIsDressed" fullname="IronRequiem.Tests.VisualOverhaulTests.LabLoadsCleanAndIsDressed" methodname="LabLoadsCleanAndIsDressed" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="725972066" result="Passed" start-time="2026-11-22 21:41:05Z" end-time="2026-11-22 21:41:10Z" duration="4.536664" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed LabLoadsCleanAndIsDressed
+]]></output>
+            </test-case>
+            <test-case id="1354" name="ModuleSwitchAnimatesBlocksFireAndWorksWithAdsAndSlide" fullname="IronRequiem.Tests.VisualOverhaulTests.ModuleSwitchAnimatesBlocksFireAndWorksWithAdsAndSlide" methodname="ModuleSwitchAnimatesBlocksFireAndWorksWithAdsAndSlide" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="634100312" result="Failed" start-time="2026-11-22 21:41:10Z" end-time="2026-11-22 21:41:17Z" duration="7.298856" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  ADS after the switch
+  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.VisualOverhaulTests+<ModuleSwitchAnimatesBlocksFireAndWorksWithAdsAndSlide>d__25.MoveNext () [0x00550] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\VisualOverhaulTests.cs:110
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed ModuleSwitchAnimatesBlocksFireAndWorksWithAdsAndSlide
+]]></output>
+            </test-case>
+            <test-case id="1358" name="PatrolSurvivalLab" fullname="IronRequiem.Tests.VisualOverhaulTests.PatrolSurvivalLab" methodname="PatrolSurvivalLab" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="1523932847" result="Passed" start-time="2026-11-22 21:41:17Z" end-time="2026-11-22 21:41:33Z" duration="16.169584" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed PatrolSurvivalLab
+]]></output>
+            </test-case>
+            <test-case id="1357" name="PatrolSurvivalMain" fullname="IronRequiem.Tests.VisualOverhaulTests.PatrolSurvivalMain" methodname="PatrolSurvivalMain" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="1334625530" result="Passed" start-time="2026-11-22 21:41:33Z" end-time="2026-11-22 21:41:46Z" duration="13.452748" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed PatrolSurvivalMain
+]]></output>
+            </test-case>
+            <test-case id="1355" name="ShotgunKeepsFourChargesAndBankReload" fullname="IronRequiem.Tests.VisualOverhaulTests.ShotgunKeepsFourChargesAndBankReload" methodname="ShotgunKeepsFourChargesAndBankReload" classname="IronRequiem.Tests.VisualOverhaulTests" runstate="Runnable" seed="1127634459" result="Passed" start-time="2026-11-22 21:41:46Z" end-time="2026-11-22 21:41:54Z" duration="7.966443" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ShotgunKeepsFourChargesAndBankReload
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

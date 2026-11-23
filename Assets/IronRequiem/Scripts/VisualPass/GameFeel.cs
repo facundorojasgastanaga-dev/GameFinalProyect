@@ -17,11 +17,36 @@ namespace IronRequiem
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static void Reset() { shake = -1; until = 0; saved = -1; applied = 0; slowSeconds = 0; runner = null; }
+        static void Reset() { shake = -1; until = 0; saved = -1; applied = 0; slowSeconds = 0; runner = null; budget = 0; }
+
+        // executions-v02: execution hit-stop budget. While at least one execution holds it, ordinary HitStop calls
+        // (HeavyDeathFeel, ExtractionArcFx, StolenShellFit, melee) are ignored; only ExecutionHitStop applies.
+        static int budget;
+        public static bool ExecutionBudgetActive => budget > 0;
+        public static void BeginExecutionBudget() { budget++; }
+        public static void EndExecutionBudget() { budget = Mathf.Max(0, budget - 1); }
+        /// The execution's own hit-stop (the two that the budget allows). Same safety rules as HitStop.
+        public static void ExecutionHitStop(float seconds, float scale)
+        {
+            if (seconds <= 0) return;
+            Apply(seconds, scale);
+        }
+        /// Cancels a running hit-stop now: timeScale returns to what it was, unless the game was paused meanwhile.
+        public static void ReleaseHitStop()
+        {
+            if (saved < 0) return;
+            if (Mathf.Approximately(Time.timeScale, applied)) Time.timeScale = saved;
+            saved = -1; until = 0; slowSeconds = 0;
+        }
 
         public static void HitStop(float seconds, float scale = .06f)
         {
-            if (seconds <= 0) return;
+            if (seconds <= 0 || budget > 0) return;
+            Apply(seconds, scale);
+        }
+
+        static void Apply(float seconds, float scale)
+        {
             if (saved < 0)
             {
                 if (Time.timeScale < .99f) return; // paused, slowed or already scripted

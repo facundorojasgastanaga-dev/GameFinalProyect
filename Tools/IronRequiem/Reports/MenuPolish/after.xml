@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 15:17:33Z" end-time="2026-11-20 15:18:11Z" duration="38.3473984">
+  <test-suite type="TestSuite" id="1353" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="287" result="Passed" start-time="2026-11-20 15:17:33Z" end-time="2026-11-20 15:18:11Z" duration="38.347398" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1347" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="287" result="Passed" start-time="2026-11-20 15:17:33Z" end-time="2026-11-20 15:18:11Z" duration="38.227203" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18036" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1348" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="287" result="Passed" start-time="2026-11-20 15:17:33Z" end-time="2026-11-20 15:18:11Z" duration="38.110890" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="287" result="Passed" start-time="2026-11-20 15:17:34Z" end-time="2026-11-20 15:18:11Z" duration="37.947193" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+          <test-suite type="TestFixture" id="1174" name="MenuPolishTests" fullname="IronRequiem.Tests.MenuPolishTests" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-20 15:17:34Z" end-time="2026-11-20 15:18:11Z" duration="37.848558" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1176" name="B_LayoutAndExistingAnimatedBackground" fullname="IronRequiem.Tests.MenuPolishTests.B_LayoutAndExistingAnimatedBackground" methodname="B_LayoutAndExistingAnimatedBackground" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" seed="1286820127" result="Passed" start-time="2026-11-20 15:17:34Z" end-time="2026-11-20 15:17:46Z" duration="12.358717" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[CampaignTests] Passed B_LayoutAndExistingAnimatedBackground
+]]></output>
+            </test-case>
+            <test-case id="1177" name="C_KeyboardAndGamepadNavigateSubmitCancelWithoutLostFocus" fullname="IronRequiem.Tests.MenuPolishTests.C_KeyboardAndGamepadNavigateSubmitCancelWithoutLostFocus" methodname="C_KeyboardAndGamepadNavigateSubmitCancelWithoutLostFocus" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" seed="1325871362" result="Passed" start-time="2026-11-20 15:17:46Z" end-time="2026-11-20 15:17:50Z" duration="4.389947" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed C_KeyboardAndGamepadNavigateSubmitCancelWithoutLostFocus
+]]></output>
+            </test-case>
+            <test-case id="1178" name="D_PointerOptionsBackQuitAndSettings" fullname="IronRequiem.Tests.MenuPolishTests.D_PointerOptionsBackQuitAndSettings" methodname="D_PointerOptionsBackQuitAndSettings" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" seed="1678012592" result="Passed" start-time="2026-11-20 15:17:50Z" end-time="2026-11-20 15:17:55Z" duration="4.079177" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+SALIR: cierre de aplicación omitido en el Editor.
+[CampaignTests] Passed D_PointerOptionsBackQuitAndSettings
+]]></output>
+            </test-case>
+            <test-case id="1179" name="E_PlayLoadsConfiguredSceneExactlyOnce" fullname="IronRequiem.Tests.MenuPolishTests.E_PlayLoadsConfiguredSceneExactlyOnce" methodname="E_PlayLoadsConfiguredSceneExactlyOnce" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" seed="168314895" result="Passed" start-time="2026-11-20 15:17:55Z" end-time="2026-11-20 15:18:07Z" duration="12.173474" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+[CampaignTests] Passed E_PlayLoadsConfiguredSceneExactlyOnce
+]]></output>
+            </test-case>
+            <test-case id="1180" name="F_ButtonStatesKeepHitRectangleAndSettledPresentationAllocatesNothing" fullname="IronRequiem.Tests.MenuPolishTests.F_ButtonStatesKeepHitRectangleAndSettledPresentationAllocatesNothing" methodname="F_ButtonStatesKeepHitRectangleAndSettledPresentationAllocatesNothing" classname="IronRequiem.Tests.MenuPolishTests" runstate="Runnable" seed="2010007275" result="Passed" start-time="2026-11-20 15:18:07Z" end-time="2026-11-20 15:18:11Z" duration="4.700081" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed F_ButtonStatesKeepHitRectangleAndSettledPresentationAllocatesNothing
+Saving results to: Tools/IronRequiem/Reports/MenuPolish/after.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

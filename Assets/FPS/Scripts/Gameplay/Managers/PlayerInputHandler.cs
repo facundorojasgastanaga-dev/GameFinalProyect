@@ -33,11 +33,14 @@ namespace Unity.FPS.Gameplay
         private InputAction m_SprintAction;
         private InputAction m_CrouchAction;
         private InputAction m_ReloadAction;
-        private InputAction m_NextWeaponAction;
+        private InputAction m_WeaponNextAction;
+        private InputAction m_WeaponPreviousAction;
+        private readonly InputAction[] m_SelectWeaponActions = new InputAction[9];
 
         void Start()
         {
             LookSensitivity = IronRequiem.RequiemSettings.Sensitivity(LookSensitivity);
+            InvertYAxis = IronRequiem.RequiemSettings.InvertY(InvertYAxis);
             m_PlayerCharacterController = GetComponent<PlayerCharacterController>();
             DebugUtility.HandleErrorIfNullGetComponent<PlayerCharacterController, PlayerInputHandler>(
                 m_PlayerCharacterController, this, gameObject);
@@ -55,7 +58,10 @@ namespace Unity.FPS.Gameplay
             m_SprintAction = InputSystem.actions.FindAction("Player/Sprint");
             m_CrouchAction = InputSystem.actions.FindAction("Player/Crouch");
             m_ReloadAction = InputSystem.actions.FindAction("Player/Reload");
-            m_NextWeaponAction = InputSystem.actions.FindAction("Player/NextWeapon");
+            m_WeaponNextAction = InputSystem.actions.FindAction("Player/WeaponNext");
+            m_WeaponPreviousAction = InputSystem.actions.FindAction("Player/WeaponPrevious");
+            for (int i = 0; i < m_SelectWeaponActions.Length; i++)
+                m_SelectWeaponActions[i] = InputSystem.actions.FindAction("Player/SelectWeapon" + (i + 1));
             
             m_MoveAction.Enable();
             m_LookAction.Enable();
@@ -65,7 +71,10 @@ namespace Unity.FPS.Gameplay
             m_SprintAction.Enable();
             m_CrouchAction.Enable();
             m_ReloadAction.Enable();
-            m_NextWeaponAction.Enable();
+            m_WeaponNextAction.Enable();
+            m_WeaponPreviousAction.Enable();
+            foreach (var select in m_SelectWeaponActions)
+                select.Enable();
         }
 
         void LateUpdate()
@@ -184,15 +193,9 @@ namespace Unity.FPS.Gameplay
             return false;
         }
 
-        public bool GetSprintInputHeld()
-        {
-            if (CanProcessInput())
-            {
-                return m_SprintAction.IsPressed();
-            }
-
-            return false;
-        }
+        // IRON REQUIEM (23/11/2026): sprint removed at the user's request. The player always moves at MaxSpeedOnGround and
+        // Shift does nothing (the Sprint action stays in the asset, unused). The slide no longer needs it (AdvancedPlayerMovement).
+        public bool GetSprintInputHeld() => false;
 
         public bool GetCrouchInputDown()
         {
@@ -228,12 +231,11 @@ namespace Unity.FPS.Gameplay
         {
             if (CanProcessInput())
             {
-                var input = m_NextWeaponAction.ReadValue<float>();
-
-                if (input > 0f)
+                // Previous keeps the old sign convention (Q / wheel up used to return -1).
+                if (m_WeaponPreviousAction.WasPressedThisFrame())
                     return -1;
-                
-                if (input < 0f)
+
+                if (m_WeaponNextAction.WasPressedThisFrame())
                     return 1;
             }
 
@@ -244,24 +246,11 @@ namespace Unity.FPS.Gameplay
         {
             if (CanProcessInput())
             {
-                if (Keyboard.current.digit1Key.wasPressedThisFrame)
-                    return 1;
-                if (Keyboard.current.digit2Key.wasPressedThisFrame)
-                    return 2;
-                if (Keyboard.current.digit3Key.wasPressedThisFrame)
-                    return 3;
-                if (Keyboard.current.digit4Key.wasPressedThisFrame)
-                    return 4;
-                if (Keyboard.current.digit5Key.wasPressedThisFrame)
-                    return 5;
-                if (Keyboard.current.digit6Key.wasPressedThisFrame)
-                    return 6;
-                if (Keyboard.current.digit7Key.wasPressedThisFrame)
-                    return 7;
-                if (Keyboard.current.digit8Key.wasPressedThisFrame)
-                    return 8;
-                if (Keyboard.current.digit9Key.wasPressedThisFrame)
-                    return 9;
+                for (int i = 0; i < m_SelectWeaponActions.Length; i++)
+                {
+                    if (m_SelectWeaponActions[i].WasPressedThisFrame())
+                        return i + 1;
+                }
             }
 
             return 0;

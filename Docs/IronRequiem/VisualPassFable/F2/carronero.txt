@@ -1,0 +1,10 @@
+VisualPass F0 Carronero sequences 2026-11-21T02:26:23 (60 fps fixed capture step)
+deteccion: rango=22 objetivo conocido=AimPoint distancia al jugador=14.34
+01_correr: 24 frames. persecucion real, velocidad del agente 5.62 m/s (speed 7.2), 1 celda = 1 frame (1/60 s) | velocidad horizontal media del pie de apoyo = 1.95 m/s (0 = sin patinar)
+02_atacar: 32 frames. desde 4,5 m del jugador, vista lateral; 1 celda = 2 frames (1/30 s). IsAttacking pasa a true a los 0.5 s del inicio de la tira; distancia final 0.94 m
+03_dano: 16 frames. TakeDamage(4) en la celda 4; 1 celda = 1 frame. Vida 22/26
+04_girar: 24 frames. el jugador aparece 7 m detras; 1 celda = 2 frames. Giro total 180 grados en 0,8 s
+05_morir: 32 frames. Kill() en la celda 5; 1 celda = 2 frames
+06_andar: 32 frames. velocidad forzada a 1,8 m/s solo para esta captura (medida 5.92 m/s); 1 celda = 2 frames | velocidad horizontal media del pie de apoyo = 4.58 m/s (0 = sin patinar)
+07_reposo: 16 frames. IA apagada; 1 celda = 4 frames
+08_hurgar: 24 frames. CrouchTarget, DigTarget y ReachTarget a 1 (lo que hace ScavengerBehaviour); 1 celda = 4 frames

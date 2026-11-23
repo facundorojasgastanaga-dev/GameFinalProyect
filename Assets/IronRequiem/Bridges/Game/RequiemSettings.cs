@@ -5,6 +5,27 @@ namespace IronRequiem
     public static class RequiemSettings
     {
         public const string VolumeKey = "IronRequiem.MasterVolume", SensitivityKey = "IronRequiem.LookSensitivity", FullscreenKey = "IronRequiem.Fullscreen";
+        public const string SprintToggleGamepadKey = "IronRequiem.SprintToggleGamepad", SprintToggleKeyboardKey = "IronRequiem.SprintToggleKeyboard";
+        // Sprint mode: gamepad toggles by default (holding L3 blocks the thumb), keyboard holds.
+        public static bool SprintToggleGamepad => PlayerPrefs.GetInt(SprintToggleGamepadKey, 1) != 0;
+        public static bool SprintToggleKeyboard => PlayerPrefs.GetInt(SprintToggleKeyboardKey, 0) != 0;
+        public static void SetSprintToggle(bool gamepad, bool value)
+        {
+            PlayerPrefs.SetInt(gamepad ? SprintToggleGamepadKey : SprintToggleKeyboardKey, value ? 1 : 0); PlayerPrefs.Save();
+        }
+        public const string InvertYKey = "IronRequiem.InvertY";
+        public static bool InvertY(bool fallback = false) => PlayerPrefs.GetInt(InvertYKey, fallback ? 1 : 0) != 0;
+        public static void SetInvertY(bool value) { PlayerPrefs.SetInt(InvertYKey, value ? 1 : 0); PlayerPrefs.Save(); }
+        // Chat 11 · passive enemy readability in the dark (EnemyDarkReadability). Intensity 0 = off, 1 = normal, up to 1.5.
+        public const string VisionIntensityKey = "IronRequiem.VisionIntensity", VisionAlwaysKey = "IronRequiem.VisionOutlinesAlways";
+        /// Default 0 (pase visual 12): with the rooms lit and the red eyes the body rim is off unless the player turns it on in the options.
+        public static float VisionIntensity => Mathf.Clamp(PlayerPrefs.GetFloat(VisionIntensityKey, 0), 0, 1.5f);
+        public static void SetVisionIntensity(float value) { PlayerPrefs.SetFloat(VisionIntensityKey, Mathf.Clamp(value, 0, 1.5f)); PlayerPrefs.Save(); VisionVersion++; }
+        /// Bumped by every vision setter: readers re-read the PlayerPrefs only when it changes.
+        public static int VisionVersion { get; private set; } = 1;
+        /// Accessibility: outlines at full strength everywhere, not only in the dark.
+        public static bool VisionOutlinesAlways => PlayerPrefs.GetInt(VisionAlwaysKey, 0) != 0;
+        public static void SetVisionOutlinesAlways(bool value) { PlayerPrefs.SetInt(VisionAlwaysKey, value ? 1 : 0); PlayerPrefs.Save(); VisionVersion++; }
         public static float Volume => PlayerPrefs.GetFloat(VolumeKey, 1);
         public static float Sensitivity(float fallback = 1) => PlayerPrefs.GetFloat(SensitivityKey, fallback);
         public static bool Fullscreen => PlayerPrefs.GetInt(FullscreenKey, Screen.fullScreen ? 1 : 0) != 0;

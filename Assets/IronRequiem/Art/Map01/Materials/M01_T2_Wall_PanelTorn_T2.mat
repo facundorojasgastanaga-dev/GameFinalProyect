@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M01_T2_Wall_PanelTorn_T2
+  m_Shader: {fileID: 4800000, guid: 20aba464369adfd4e800688c83c02a4a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DIRT
+  - _DIRTBREAKUP
+  - _EDGEWEAR
+  - _NORMALMAP
+  - _TRIPLANAR
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 996924b99b3f6a045b1d2ca3a67b53d9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 51418562f7aff4b4993c982d8c887f57, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: 3305035890b4b3a4088e21c1d0c03c6a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Damage: 0
+    - _DamagePulseSpeed: 2.2
+    - _DirtAmount: 0.468
+    - _DirtBreakup: 1
+    - _DirtFloorHeight: 1
+    - _DirtFloorY: -100000
+    - _DirtScale: 2.2
+    - _Metallic: 0.5
+    - _PanelBoost: 0
+    - _PulseAmount: 0.35
+    - _PulseSpeed: 0.6
+    - _RimPower: 3.5
+    - _Smoothness: 0.19500001
+    - _TriplanarScale: 2
+    - _TriplanarSharpness: 8
+    - _UseDirt: 1
+    - _UseDirtBreakup: 1
+    - _UseEdgeWear: 1
+    - _UseNormalMap: 1
+    - _UsePanels: 0
+    - _UseRim: 0
+    - _UseTriplanar: 1
+    - _WearAmount: 0.65
+    - _WearCurvature: 6
+    - _WearFromMask: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DamageColor: {r: 2.4, g: 0.12, b: 0.04, a: 1}
+    - _DirtColor: {r: 0.1, g: 0.075, b: 0.055, a: 1}
+    - _EmissionColor: {r: 0, g: 0.8, b: 1.2, a: 1}
+    - _RimColor: {r: 0.25, g: 0.5, b: 0.7, a: 1}
+    - _WearColor: {r: 0.62, g: 0.6, b: 0.56, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

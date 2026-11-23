@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Passed" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.2724437">
+  <test-suite type="TestSuite" id="1433" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.272444" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1427" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.227130" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1428" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.209202" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="359" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.190396" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1342" name="VisualPassCarroneroTests" fullname="IronRequiem.Tests.VisualPassCarroneroTests" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:09:11Z" duration="63.157742" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1343" name="A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed" fullname="IronRequiem.Tests.VisualPassCarroneroTests.A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed" methodname="A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1900996739" result="Passed" start-time="2026-11-21 06:08:08Z" end-time="2026-11-21 06:08:16Z" duration="7.928735" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2548.5 ms · door+preload 0 / activate 2548 / unload 0 / settle 367 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] control (Carronero.prefab, CarroneroMotion): frames=108 speed=7.118 m/s | F0 support-foot speed=6.463 m/s | a foot still (<=2 cm) in 25.926 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+[VisualPassCarronero] Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.076 m/s | a foot still (<=2 cm) in 72.222 % of frames | flagged planted 70.37 % | max planted slip=0.722 cm/frame | stances=16 shortest=4 frames | cadence=4.516 Hz | worst LOD=0
+[CampaignTests] Passed A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+]]></output>
+            </test-case>
+            <test-case id="1345" name="B_Attack_AnticipationReadsBeforeContact_AndRecovers" fullname="IronRequiem.Tests.VisualPassCarroneroTests.B_Attack_AnticipationReadsBeforeContact_AndRecovers" methodname="B_Attack_AnticipationReadsBeforeContact_AndRecovers" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="2068137074" result="Passed" start-time="2026-11-21 06:08:16Z" end-time="2026-11-21 06:08:21Z" duration="4.874737" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1563.7 ms · door+preload 0 / activate 1564 / unload 0 / settle 234 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 112.443 deg from the run pose | first contact tick at 0.35 s | saw tip travel in 0.36 s of sustain=87.138 cm | stage=Sustain
+[VisualPassCarronero] recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+[CampaignTests] Passed B_Attack_AnticipationReadsBeforeContact_AndRecovers
+]]></output>
+            </test-case>
+            <test-case id="1346" name="B_ContactVolume_MatchesLegacyFromTheEndOfPreparation" fullname="IronRequiem.Tests.VisualPassCarroneroTests.B_ContactVolume_MatchesLegacyFromTheEndOfPreparation" methodname="B_ContactVolume_MatchesLegacyFromTheEndOfPreparation" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="697976636" result="Passed" start-time="2026-11-21 06:08:21Z" end-time="2026-11-21 06:08:26Z" duration="4.571393" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1437.2 ms · door+preload 0 / activate 1437 / unload 0 / settle 197 · peak at frame 2/16 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] bladeStart swept box, root space: legacy (-0.414, 0.375, 0.606) .. (-0.414, 0.870, 0.676) | new (-0.414, 0.376, 0.610) .. (-0.414, 0.871, 0.675)
+[VisualPassCarronero] bladeEnd swept box, root space: legacy (-0.414, 0.546, 0.498) .. (-0.414, 0.962, 0.569) | new (-0.414, 0.546, 0.494) .. (-0.414, 0.963, 0.570)
+[CampaignTests] Passed B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+]]></output>
+            </test-case>
+            <test-case id="1347" name="C_HitReaction_ShowsInThreeFrames_AndReturns" fullname="IronRequiem.Tests.VisualPassCarroneroTests.C_HitReaction_ShowsInThreeFrames_AndReturns" methodname="C_HitReaction_ShowsInThreeFrames_AndReturns" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1872412570" result="Passed" start-time="2026-11-21 06:08:26Z" end-time="2026-11-21 06:08:30Z" duration="4.788913" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1703.3 ms · door+preload 0 / activate 1703 / unload 0 / settle 156 · peak at frame 2/13 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.006 deg | Spine2 0.27 s later: new 0 deg
+[CampaignTests] Passed C_HitReaction_ShowsInThreeFrames_AndReturns
+]]></output>
+            </test-case>
+            <test-case id="1348" name="D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop" fullname="IronRequiem.Tests.VisualPassCarroneroTests.D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop" methodname="D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1823410992" result="Passed" start-time="2026-11-21 06:08:30Z" end-time="2026-11-21 06:08:34Z" duration="3.997474" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1529.6 ms · door+preload 0 / activate 1530 / unload 0 / settle 196 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] hidden by disabling every camera
+[VisualPassCarronero] first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 83.836 deg away from the stale one | blend=1
+[CampaignTests] Passed D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+]]></output>
+            </test-case>
+            <test-case id="1349" name="E_BasePrefab_KeepsCarroneroMotion_AndTheVariantChangesNoGameplay" fullname="IronRequiem.Tests.VisualPassCarroneroTests.E_BasePrefab_KeepsCarroneroMotion_AndTheVariantChangesNoGameplay" methodname="E_BasePrefab_KeepsCarroneroMotion_AndTheVariantChangesNoGameplay" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1452889623" result="Passed" start-time="2026-11-21 06:08:34Z" end-time="2026-11-21 06:08:38Z" duration="4.050949" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1389.4 ms · door+preload 0 / activate 1389 / unload 0 / settle 220 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed E_BasePrefab_KeepsCarroneroMotion_AndTheVariantChangesNoGameplay
+]]></output>
+            </test-case>
+            <test-case id="1350" name="F_TwoIndividuals_NeverShareThePhase" fullname="IronRequiem.Tests.VisualPassCarroneroTests.F_TwoIndividuals_NeverShareThePhase" methodname="F_TwoIndividuals_NeverShareThePhase" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1709173581" result="Passed" start-time="2026-11-21 06:08:38Z" end-time="2026-11-21 06:08:41Z" duration="3.037136" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1092.7 ms · door+preload 0 / activate 1093 / unload 0 / settle 214 · peak at frame 2/6 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] phase: two created together are 0.423 of a cycle apart | closest pair of 24: 0.003 | stride per cycle at rest 0.559 .. 1.335 m
+[CampaignTests] Passed F_TwoIndividuals_NeverShareThePhase
+]]></output>
+            </test-case>
+            <test-case id="1344" name="G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep" fullname="IronRequiem.Tests.VisualPassCarroneroTests.G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep" methodname="G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="524212379" result="Passed" start-time="2026-11-21 06:08:41Z" end-time="2026-11-21 06:08:46Z" duration="4.409919" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1476.6 ms · door+preload 0 / activate 1477 / unload 0 / settle 202 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] 7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.333 m/s | a foot still (<=2 cm) in 68.75 % of frames | flagged planted 67.5 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.762 Hz | worst LOD=0 | component cadence=4.763 Hz cycle=1.512 m
+[CampaignTests] Passed G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+]]></output>
+            </test-case>
+            <test-case id="1351" name="H_Turns_BankInwards_AndStraightRunsStayUpright" fullname="IronRequiem.Tests.VisualPassCarroneroTests.H_Turns_BankInwards_AndStraightRunsStayUpright" methodname="H_Turns_BankInwards_AndStraightRunsStayUpright" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="834617619" result="Passed" start-time="2026-11-21 06:08:46Z" end-time="2026-11-21 06:08:51Z" duration="4.982609" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1346.2 ms · door+preload 0 / activate 1346 / unload 0 / settle 183 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 18.747 deg | straight afterwards: 0 deg
+[CampaignTests] Passed H_Turns_BankInwards_AndStraightRunsStayUpright
+]]></output>
+            </test-case>
+            <test-case id="1352" name="I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk" fullname="IronRequiem.Tests.VisualPassCarroneroTests.I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk" methodname="I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1760260113" result="Passed" start-time="2026-11-21 06:08:51Z" end-time="2026-11-21 06:08:56Z" duration="5.462891" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1603.8 ms · door+preload 0 / activate 1604 / unload 0 / settle 175 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 16, 0, 0, 0
+[CampaignTests] Passed I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+]]></output>
+            </test-case>
+            <test-case id="1353" name="Z_Cost_HordeOf24_NewAnimationAgainstLegacy" fullname="IronRequiem.Tests.VisualPassCarroneroTests.Z_Cost_HordeOf24_NewAnimationAgainstLegacy" methodname="Z_Cost_HordeOf24_NewAnimationAgainstLegacy" classname="IronRequiem.Tests.VisualPassCarroneroTests" runstate="Runnable" seed="1569357154" result="Passed" start-time="2026-11-21 06:08:56Z" end-time="2026-11-21 06:09:11Z" duration="14.949460" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1380.7 ms · door+preload 0 / activate 1381 / unload 0 / settle 191 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[VisualPassCarronero] 24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+[VisualPassCarronero] new (CarroneroCombatMotion)    LateBehaviourUpdate=0.621 ms | frame=12.47 ms
+[VisualPassCarronero] none                           LateBehaviourUpdate=0.305 ms | frame=11.86 ms
+[VisualPassCarronero] legacy (CarroneroMotion)       LateBehaviourUpdate=0.734 ms | frame=14.52 ms
+[VisualPassCarronero] animation cost for 24: new 0.317 ms, legacy 0.430 ms (per bot 13.2 vs 17.9 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+[CampaignTests] Passed Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.8538391">
+  <test-suite type="TestSuite" id="1333" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="271" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.853839" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1327" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="271" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.822178" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="10052" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1328" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="271" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.813345" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1126" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="271" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.801733" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1129" name="Map01F2Tests" fullname="IronRequiem.Tests.Map01F2Tests" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.779760" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Category" value="Map01F2" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="1134" name="SessionTraversal" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.771089" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="1500000" />
+              </properties>
+              <test-case id="1131" name="SessionTraversal(1)" fullname="IronRequiem.Tests.Map01F2Tests.SessionTraversal(1)" methodname="SessionTraversal" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="304606983" result="Passed" start-time="2026-11-18 17:34:10Z" end-time="2026-11-18 17:35:40Z" duration="89.727869" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Map01Test] Map01_Campaign_S2: 8 etapas, 7 esclusas
+[Campaign] transition to Map01_R06_Armeria (preload) peak frame 3682.2 ms · door+preload 0 / activate 3682 / unload 0 / settle 78 · peak at frame 2/20 load 0.90
+[Map01Test]   Map01_R06_Armeria: rondas completadas, 17 bajas, 4.4 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R07_Comunicaciones (preload) peak frame 65.5 ms · door+preload 20 / activate 25 / unload 66 / settle 13 · peak at frame 208/463 load 1.00
+[Map01Test]   esclusa C06: transición en 5.1 s
+[Map01Test]   Map01_R07_Comunicaciones: rondas completadas, 33 bajas, 9.9 s, reposicionamientos por espera 0
+[Map01Test]     5 persianas abiertas al terminar
+[Campaign] transition to Map01_R08_Almacenes (preload) peak frame 53.9 ms · door+preload 20 / activate 23 / unload 54 / settle 37 · peak at frame 176/666 load 1.00
+[Map01Test]   esclusa C07: transición en 8.1 s
+[Map01Test]   Map01_R08_Almacenes: rondas completadas, 16 bajas, 8.5 s, reposicionamientos por espera 5
+[Map01Test]     1 persianas abiertas al terminar
+[Campaign] transition to Map01_R09_Taquillas (preload) peak frame 49.0 ms · door+preload 20 / activate 24 / unload 49 / settle 14 · peak at frame 215/450 load 1.00
+[Map01Test]   esclusa C08: transición en 4.4 s
+[Map01Test]   Map01_R09_Taquillas: respiro liberado
+[Campaign] transition to Map01_R10_TunelTrituradora (preload) peak frame 54.6 ms · door+preload 20 / activate 24 / unload 55 / settle 18 · peak at frame 206/369 load 1.00
+[Map01Test]   esclusa C09: transición en 3.1 s
+[Map01Test]   Map01_R10_TunelTrituradora: persecución completada
+[Campaign] transition to Map01_R11_Decantadores (preload) peak frame 47.0 ms · door+preload 20 / activate 25 / unload 47 / settle 29 · peak at frame 206/350 load 1.00
+[Map01Test]   esclusa C10: transición en 3.1 s
+[Map01Test]   Map01_R11_Decantadores: rondas completadas, 26 bajas, 6.6 s, reposicionamientos por espera 0
+[Map01Test]     2 persianas abiertas al terminar
+[Campaign] transition to Map01_R12_Colector (preload) peak frame 64.8 ms · door+preload 29 / activate 46 / unload 65 / settle 21 · peak at frame 112/575 load 1.00
+[Map01Test]   esclusa C11: transición en 8.6 s
+[Map01Test]   Map01_R12_Colector: rondas completadas, 23 bajas, 6.6 s, reposicionamientos por espera 0
+[Map01Test]     1 persianas abiertas al terminar
+[Campaign] transition to Map01_R13_SalaBombas (preload) peak frame 45.3 ms · door+preload 25 / activate 29 / unload 45 / settle 15 · peak at frame 131/508 load 1.00
+[Map01Test]   esclusa C12: transición en 9.0 s
+[Map01Test]   Map01_R13_SalaBombas: respiro liberado
+[Map01Test]   → Map01_Campaign_S3 cargada
+[CampaignTests] Passed SessionTraversal(1)
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

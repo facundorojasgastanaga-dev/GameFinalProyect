@@ -35,8 +35,9 @@ plain f34 t=0.567 state=PutUpNew p=0.78 lights=0.11 offset=(0.000, -0.530, -0.12
 plain f35 t=0.583 state=PutUpNew p=0.83 lights=0.33 offset=(0.000, -0.530, -0.128) shots=0
 plain f36 t=0.600 state=PutUpNew p=0.89 lights=0.56 offset=(0.000, -0.530, -0.128) shots=0
 plain f37 t=0.617 state=PutUpNew p=0.94 lights=0.78 offset=(0.000, -0.530, -0.128) shots=0
-plain f38 t=0.633 state=Up p=1.00 lights=1.00 offset=(0.000, -0.530, -0.128) shots=0
-plain: duration 0.633 s, shots while switching 0, unlocks +1, docks +1, slide during switch False
+plain f38 t=0.633 state=PutUpNew p=1.00 lights=1.00 offset=(0.000, -0.530, -0.128) shots=0
+plain f39 t=0.650 state=Up p=1.00 lights=1.00 offset=(0.000, -0.530, -0.128) shots=0
+plain: duration 0.650 s, shots while switching 0, unlocks +1, docks +1, slide during switch False
 ads f1 t=0.017 state=PutDownPrevious p=0.00 lights=1.00 offset=(0.000, -0.530, -0.128) shots=0
 ads f2 t=0.033 state=PutDownPrevious p=0.06 lights=1.00 offset=(-0.002, -0.530, -0.128) shots=0
 ads f3 t=0.050 state=PutDownPrevious p=0.11 lights=1.00 offset=(0.000, -0.530, -0.128) shots=0
@@ -55,28 +56,27 @@ ads f15 t=0.250 state=PutDownPrevious p=0.78 lights=1.00 offset=(0.149, -0.801, 
 ads f16 t=0.267 state=PutDownPrevious p=0.83 lights=1.00 offset=(0.186, -0.864, -0.197) shots=0
 ads f17 t=0.283 state=PutDownPrevious p=0.89 lights=1.00 offset=(0.226, -0.934, -0.203) shots=0
 ads f18 t=0.300 state=PutDownPrevious p=0.94 lights=1.00 offset=(0.271, -1.011, -0.210) shots=0
-ads f19 t=0.317 state=PutDownPrevious p=1.00 lights=1.00 offset=(0.320, -1.095, -0.217) shots=0
-ads f20 t=0.333 state=PutUpNew p=0.00 lights=0.00 offset=(0.280, -0.500, -0.120) shots=0
-ads f21 t=0.350 state=PutUpNew p=0.06 lights=0.00 offset=(0.186, -0.333, -0.080) shots=0
-ads f22 t=0.367 state=PutUpNew p=0.11 lights=0.00 offset=(0.113, -0.202, -0.049) shots=0
-ads f23 t=0.383 state=PutUpNew p=0.17 lights=0.00 offset=(0.058, -0.104, -0.025) shots=0
-ads f24 t=0.400 state=PutUpNew p=0.22 lights=0.00 offset=(0.019, -0.033, -0.008) shots=0
-ads f25 t=0.417 state=PutUpNew p=0.28 lights=0.00 offset=(-0.007, 0.013, 0.003) shots=0
-ads f26 t=0.433 state=PutUpNew p=0.33 lights=0.00 offset=(-0.022, 0.039, 0.009) shots=0
-ads f27 t=0.450 state=PutUpNew p=0.39 lights=0.00 offset=(-0.028, 0.049, 0.012) shots=0
-ads f28 t=0.467 state=PutUpNew p=0.44 lights=0.00 offset=(-0.027, 0.048, 0.011) shots=0
-ads f29 t=0.483 state=PutUpNew p=0.50 lights=0.00 offset=(-0.021, 0.038, 0.009) shots=0
-ads f30 t=0.500 state=PutUpNew p=0.56 lights=0.00 offset=(-0.014, 0.024, 0.006) shots=0
-ads f31 t=0.517 state=PutUpNew p=0.61 lights=0.00 offset=(-0.006, 0.011, 0.003) shots=0
-ads f32 t=0.533 state=PutUpNew p=0.67 lights=0.00 offset=(-0.001, 0.002, 0.000) shots=0
-ads f33 t=0.550 state=PutUpNew p=0.72 lights=0.00 offset=(0.000, 0.000, 0.000) shots=0
-ads f34 t=0.567 state=PutUpNew p=0.78 lights=0.11 offset=(0.000, 0.000, 0.000) shots=0
-ads f35 t=0.583 state=PutUpNew p=0.83 lights=0.33 offset=(0.000, 0.000, 0.000) shots=0
-ads f36 t=0.600 state=PutUpNew p=0.89 lights=0.56 offset=(0.000, 0.000, 0.000) shots=0
-ads f37 t=0.617 state=PutUpNew p=0.94 lights=0.78 offset=(0.000, 0.000, 0.000) shots=0
-ads f38 t=0.633 state=PutUpNew p=1.00 lights=1.00 offset=(0.000, 0.000, 0.000) shots=0
-ads f39 t=0.650 state=Up p=1.00 lights=1.00 offset=(0.000, 0.000, 0.000) shots=1
-ads: duration 0.650 s, shots while switching 0, unlocks +1, docks +1, slide during switch False
+ads f19 t=0.317 state=PutUpNew p=0.00 lights=0.00 offset=(0.280, -0.500, -0.120) shots=0
+ads f20 t=0.333 state=PutUpNew p=0.06 lights=0.00 offset=(0.186, -0.333, -0.080) shots=0
+ads f21 t=0.350 state=PutUpNew p=0.11 lights=0.00 offset=(0.113, -0.202, -0.049) shots=0
+ads f22 t=0.367 state=PutUpNew p=0.17 lights=0.00 offset=(0.058, -0.104, -0.025) shots=0
+ads f23 t=0.383 state=PutUpNew p=0.22 lights=0.00 offset=(0.019, -0.033, -0.008) shots=0
+ads f24 t=0.400 state=PutUpNew p=0.28 lights=0.00 offset=(-0.007, 0.013, 0.003) shots=0
+ads f25 t=0.417 state=PutUpNew p=0.33 lights=0.00 offset=(-0.022, 0.039, 0.009) shots=0
+ads f26 t=0.433 state=PutUpNew p=0.39 lights=0.00 offset=(-0.028, 0.049, 0.012) shots=0
+ads f27 t=0.450 state=PutUpNew p=0.44 lights=0.00 offset=(-0.027, 0.048, 0.011) shots=0
+ads f28 t=0.467 state=PutUpNew p=0.50 lights=0.00 offset=(-0.021, 0.038, 0.009) shots=0
+ads f29 t=0.483 state=PutUpNew p=0.56 lights=0.00 offset=(-0.014, 0.024, 0.006) shots=0
+ads f30 t=0.500 state=PutUpNew p=0.61 lights=0.00 offset=(-0.006, 0.011, 0.003) shots=0
+ads f31 t=0.517 state=PutUpNew p=0.67 lights=0.00 offset=(-0.001, 0.002, 0.000) shots=0
+ads f32 t=0.533 state=PutUpNew p=0.72 lights=0.00 offset=(0.000, 0.000, 0.000) shots=0
+ads f33 t=0.550 state=PutUpNew p=0.78 lights=0.11 offset=(0.000, 0.000, 0.000) shots=0
+ads f34 t=0.567 state=PutUpNew p=0.83 lights=0.33 offset=(0.000, 0.000, 0.000) shots=0
+ads f35 t=0.583 state=PutUpNew p=0.89 lights=0.56 offset=(0.000, 0.000, 0.000) shots=0
+ads f36 t=0.600 state=PutUpNew p=0.94 lights=0.78 offset=(0.000, 0.000, 0.000) shots=0
+ads f37 t=0.617 state=PutUpNew p=1.00 lights=1.00 offset=(0.000, 0.000, 0.000) shots=0
+ads f38 t=0.633 state=Up p=1.00 lights=1.00 offset=(0.000, 0.000, 0.000) shots=1
+ads: duration 0.633 s, shots while switching 0, unlocks +1, docks +1, slide during switch False
 slide f1 t=0.017 state=PutDownPrevious p=0.00 lights=1.00 offset=(0.000, 0.000, 0.000) shots=0
 slide f2 t=0.033 state=PutDownPrevious p=0.06 lights=1.00 offset=(-0.002, 0.000, 0.000) shots=0
 slide f3 t=0.050 state=PutDownPrevious p=0.11 lights=1.00 offset=(0.000, 0.000, 0.000) shots=0
@@ -99,7 +99,7 @@ slide f19 t=0.317 state=PutDownPrevious p=1.00 lights=1.00 offset=(0.320, -0.565
 slide f20 t=0.333 state=PutUpNew p=0.00 lights=0.00 offset=(0.280, -1.030, -0.248) shots=0
 slide f21 t=0.350 state=PutUpNew p=0.06 lights=0.00 offset=(0.186, -0.863, -0.207) shots=0
 slide f22 t=0.367 state=PutUpNew p=0.11 lights=0.00 offset=(0.113, -0.732, -0.176) shots=0
-slide f23 t=0.383 state=PutUpNew p=0.17 lights=0.00 offset=(0.058, -0.634, -0.152) shots=0
+slide f23 t=0.383 state=PutUpNew p=0.17 lights=0.00 offset=(0.058, -0.633, -0.152) shots=0
 slide f24 t=0.400 state=PutUpNew p=0.22 lights=0.00 offset=(0.019, -0.563, -0.135) shots=0
 slide f25 t=0.417 state=PutUpNew p=0.28 lights=0.00 offset=(-0.007, -0.517, -0.124) shots=0
 slide f26 t=0.433 state=PutUpNew p=0.33 lights=0.00 offset=(-0.022, -0.491, -0.118) shots=0

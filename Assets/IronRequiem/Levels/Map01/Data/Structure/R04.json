@@ -1,0 +1,738 @@
+{
+  "id": "R04",
+  "name": "Comedor",
+  "scene": "Map01_R04_Comedor",
+  "zone": "Habitaculo",
+  "function": "combat",
+  "archetype": "E2",
+  "worldOrigin": [
+    43,
+    -12,
+    139
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -21,
+      -1,
+      -21
+    ],
+    "max": [
+      21,
+      10,
+      21
+    ]
+  },
+  "interior": {
+    "min": [
+      -20,
+      0,
+      -20
+    ],
+    "max": [
+      20,
+      9,
+      20
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    },
+    {
+      "id": "kitchen",
+      "y": 4.5
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -20,
+          0,
+          -20
+        ],
+        "max": [
+          20,
+          9,
+          20
+        ]
+      },
+      "y": 9
+    }
+  ],
+  "doors": [
+    {
+      "id": "R04_in",
+      "role": "entry",
+      "class": "A",
+      "center": [
+        -10,
+        0,
+        -20
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          -13.5,
+          0,
+          -20
+        ],
+        "max": [
+          -6.5,
+          4.5,
+          -16
+        ]
+      },
+      "airlock": "C03"
+    },
+    {
+      "id": "R04_out",
+      "role": "exit",
+      "class": "A",
+      "center": [
+        20,
+        0,
+        8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          16,
+          0,
+          4.5
+        ],
+        "max": [
+          20,
+          4.5,
+          11.5
+        ]
+      },
+      "airlock": "C04"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "kitchen",
+      "type": "solid",
+      "center": [
+        -8.0,
+        2.25,
+        16.0
+      ],
+      "size": [
+        24,
+        4.5,
+        8
+      ],
+      "material": "Bunker_Floor",
+      "collision": "box"
+    },
+    {
+      "id": "stairW",
+      "type": "stair",
+      "center": [
+        -17.0,
+        2.25,
+        6.0
+      ],
+      "size": [
+        6,
+        4.5,
+        12
+      ],
+      "material": "Bunker_Floor",
+      "collision": "box",
+      "rise": "+z"
+    },
+    {
+      "id": "rampE",
+      "type": "ramp",
+      "center": [
+        10.0,
+        2.25,
+        17.0
+      ],
+      "size": [
+        12,
+        4.5,
+        6
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-x"
+    },
+    {
+      "id": "island",
+      "type": "coverHigh",
+      "center": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "size": [
+        8,
+        2.4,
+        6
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmarkLoop"
+    },
+    {
+      "id": "tablesW",
+      "type": "coverLow",
+      "center": [
+        -11.5,
+        0.55,
+        -8.0
+      ],
+      "size": [
+        9,
+        1.1,
+        1.2
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "tablesE",
+      "type": "coverLow",
+      "center": [
+        11.5,
+        0.55,
+        -8.0
+      ],
+      "size": [
+        9,
+        1.1,
+        1.2
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "barricadeS",
+      "type": "coverLow",
+      "center": [
+        9.0,
+        0.6,
+        1.0
+      ],
+      "size": [
+        2,
+        1.2,
+        6
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "barricadeN",
+      "type": "coverLow",
+      "center": [
+        9.0,
+        0.6,
+        12.0
+      ],
+      "size": [
+        2,
+        1.2,
+        4
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "vestW",
+      "type": "wall",
+      "center": [
+        -14.5,
+        4.5,
+        -17.7
+      ],
+      "size": [
+        1,
+        9,
+        4.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "vestE",
+      "type": "wall",
+      "center": [
+        -5.5,
+        4.5,
+        -17.7
+      ],
+      "size": [
+        1,
+        9,
+        4.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "portalJW",
+      "type": "wall",
+      "center": [
+        -13.5,
+        4.5,
+        -15.7
+      ],
+      "size": [
+        1,
+        9,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "portalJE",
+      "type": "wall",
+      "center": [
+        -6.5,
+        4.5,
+        -15.7
+      ],
+      "size": [
+        1,
+        9,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "portalLintel",
+      "type": "wall",
+      "center": [
+        -10.0,
+        6.75,
+        -15.7
+      ],
+      "size": [
+        6,
+        4.5,
+        0.6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R04_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -13.5,
+        0,
+        -20
+      ],
+      "max": [
+        -6.5,
+        4.5,
+        -16
+      ]
+    },
+    {
+      "id": "R04_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        16,
+        0,
+        4.5
+      ],
+      "max": [
+        20,
+        4.5,
+        11.5
+      ]
+    },
+    {
+      "id": "slideS",
+      "kind": "slideLane",
+      "min": [
+        -18,
+        0,
+        -12.5
+      ],
+      "max": [
+        18,
+        2,
+        -10
+      ]
+    }
+  ],
+  "spawnZones": [
+    {
+      "id": "G1",
+      "min": [
+        -12,
+        4.5,
+        14
+      ],
+      "max": [
+        -4,
+        4.5,
+        18
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -8.0,
+          4.5,
+          16.0
+        ],
+        [
+          -12.0,
+          4.5,
+          14.0
+        ],
+        [
+          -4.0,
+          4.5,
+          14.0
+        ]
+      ]
+    },
+    {
+      "id": "G2",
+      "min": [
+        12,
+        0,
+        -13
+      ],
+      "max": [
+        18,
+        0,
+        -10
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          15.0,
+          0,
+          -11.5
+        ],
+        [
+          12.0,
+          0,
+          -13.0
+        ],
+        [
+          18.0,
+          0,
+          -13.0
+        ]
+      ]
+    },
+    {
+      "id": "G3",
+      "min": [
+        -19,
+        0,
+        -5
+      ],
+      "max": [
+        -15,
+        0,
+        -1
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -17.0,
+          0,
+          -3.0
+        ],
+        [
+          -19.0,
+          0,
+          -5.0
+        ],
+        [
+          -19.0,
+          0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "id": "G4",
+      "min": [
+        17,
+        0,
+        14
+      ],
+      "max": [
+        19,
+        0,
+        19
+      ],
+      "slots": 3,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          18.0,
+          0,
+          16.5
+        ],
+        [
+          17.0,
+          0,
+          14.0
+        ],
+        [
+          17.0,
+          0,
+          19.0
+        ]
+      ]
+    }
+  ],
+  "lightAnchors": [
+    {
+      "id": "R04.A1",
+      "kind": "ceiling",
+      "pos": [
+        -10,
+        8.6,
+        -8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A2",
+      "kind": "ceiling",
+      "pos": [
+        10,
+        8.6,
+        -8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A3",
+      "kind": "ceiling",
+      "pos": [
+        -10,
+        8.6,
+        6
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A4",
+      "kind": "ceiling",
+      "pos": [
+        10,
+        8.6,
+        6
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A5",
+      "kind": "ceiling",
+      "pos": [
+        -8,
+        8.6,
+        16
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A6",
+      "kind": "floor",
+      "pos": [
+        9,
+        1.5,
+        12
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R04.A7",
+      "kind": "wall",
+      "pos": [
+        19.6,
+        6.6,
+        8
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 8,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [
+    {
+      "id": "R04-P1",
+      "class": "P",
+      "center": [
+        -10,
+        0,
+        -15.7
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        6,
+        4.5
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": ""
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": [
+      "island",
+      "kitchen"
+    ]
+  },
+  "portal": {
+    "plane": -15.7,
+    "axis": "z",
+    "vano": [
+      6,
+      4.5
+    ],
+    "shutter": true
+  },
+  "arena": {
+    "firstRoom": {
+      "center": [
+        0.0,
+        4.25,
+        3.0
+      ],
+      "size": [
+        40,
+        9.5,
+        34
+      ]
+    },
+    "secondRoom": {
+      "center": [
+        0.0,
+        4.25,
+        3.0
+      ],
+      "size": [
+        40,
+        9.5,
+        34
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      6,
+      0,
+      -4
+    ],
+    "max": [
+      14,
+      4,
+      16
+    ],
+    "note": "Barricada «NO PASARÁN» con restos de T-07"
+  },
+  "release": null,
+  "chase": null
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Failed(Child)" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.2730978">
+  <test-suite type="TestSuite" id="1474" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.273098" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1468" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.228920" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1469" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.216006" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1175" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="390" result="Failed" site="Child" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.200097" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1166" name="FastCombatTests" fullname="IronRequiem.Tests.FastCombatTests" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:57Z" duration="22.154039" total="6" passed="5" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1170" name="BigBotExecuteBurstEnergyThrowAndOverdrive" fullname="IronRequiem.Tests.FastCombatTests.BigBotExecuteBurstEnergyThrowAndOverdrive" methodname="BigBotExecuteBurstEnergyThrowAndOverdrive" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="62418439" result="Passed" start-time="2026-11-23 06:51:35Z" end-time="2026-11-23 06:51:47Z" duration="11.641164" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed BigBotExecuteBurstEnergyThrowAndOverdrive
+]]></output>
+            </test-case>
+            <test-case id="1171" name="BigBotExecutionLeapsRipsShootsAndLandsBack" fullname="IronRequiem.Tests.FastCombatTests.BigBotExecutionLeapsRipsShootsAndLandsBack" methodname="BigBotExecutionLeapsRipsShootsAndLandsBack" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1837758265" result="Passed" start-time="2026-11-23 06:51:47Z" end-time="2026-11-23 06:51:49Z" duration="2.664357" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed BigBotExecutionLeapsRipsShootsAndLandsBack
+]]></output>
+            </test-case>
+            <test-case id="1169" name="NormalDeathsNoModulesAndBigBotLossStaysDecorative" fullname="IronRequiem.Tests.FastCombatTests.NormalDeathsNoModulesAndBigBotLossStaysDecorative" methodname="NormalDeathsNoModulesAndBigBotLossStaysDecorative" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1867842303" result="Passed" start-time="2026-11-23 06:51:49Z" end-time="2026-11-23 06:51:52Z" duration="2.837162" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed NormalDeathsNoModulesAndBigBotLossStaysDecorative
+]]></output>
+            </test-case>
+            <test-case id="1172" name="RuntimeProjectileAndDamageableUseReducedDamage" fullname="IronRequiem.Tests.FastCombatTests.RuntimeProjectileAndDamageableUseReducedDamage" methodname="RuntimeProjectileAndDamageableUseReducedDamage" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1739801790" result="Passed" start-time="2026-11-23 06:51:52Z" end-time="2026-11-23 06:51:54Z" duration="1.487841" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed RuntimeProjectileAndDamageableUseReducedDamage
+]]></output>
+            </test-case>
+            <test-case id="1168" name="T07ThresholdWallsRangeInventoryAndUniqueDelivery" fullname="IronRequiem.Tests.FastCombatTests.T07ThresholdWallsRangeInventoryAndUniqueDelivery" methodname="T07ThresholdWallsRangeInventoryAndUniqueDelivery" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="1263199237" result="Failed" start-time="2026-11-23 06:51:54Z" end-time="2026-11-23 06:51:55Z" duration="1.706381" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  95.9000015f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.FastCombatTests+<T07ThresholdWallsRangeInventoryAndUniqueDelivery>d__19.MoveNext () [0x00582] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\FastCombatTests.cs:42
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed T07ThresholdWallsRangeInventoryAndUniqueDelivery
+]]></output>
+            </test-case>
+            <test-case id="1167" name="ValuesAndMovement" fullname="IronRequiem.Tests.FastCombatTests.ValuesAndMovement" methodname="ValuesAndMovement" classname="IronRequiem.Tests.FastCombatTests" runstate="Runnable" seed="450248797" result="Passed" start-time="2026-11-23 06:51:55Z" end-time="2026-11-23 06:51:57Z" duration="1.730275" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ValuesAndMovement
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

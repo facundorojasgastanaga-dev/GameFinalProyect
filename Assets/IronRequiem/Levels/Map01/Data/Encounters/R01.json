@@ -1,0 +1,53 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R01",
+  "kind": "rounds",
+  "archetype": "E1",
+  "title": "R01 · CONTROL DE ACCESO · 2 RONDAS",
+  "arenaTitle": "CONTROL DE ACCESO",
+  "seed": 101,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "waves": [
+    {
+      "name": "Carroñeros",
+      "groups": [
+        {
+          "enemy": "CAR",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "Tutorial de ejecución",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -13,
+        0,
+        6
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        13,
+        3.5,
+        -4
+      ]
+    }
+  ],
+  "notes": "B1.2. Ronda 1 sin fuente: única excepción a R-E8 (antes del tutorial). El cañón ganado pasa a R02."
+}

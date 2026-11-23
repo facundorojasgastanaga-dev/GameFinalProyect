@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="26" result="Failed(Child)" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 05:48:21Z" end-time="2026-11-21 05:49:46Z" duration="84.9699564">
+  <test-suite type="TestSuite" id="1421" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="348" result="Failed" site="Child" start-time="2026-11-21 05:48:21Z" end-time="2026-11-21 05:49:46Z" duration="84.969956" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1415" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="348" result="Failed" site="Child" start-time="2026-11-21 05:48:21Z" end-time="2026-11-21 05:49:46Z" duration="84.939248" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1416" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="348" result="Failed" site="Child" start-time="2026-11-21 05:48:21Z" end-time="2026-11-21 05:49:46Z" duration="84.926803" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="348" result="Failed" site="Child" start-time="2026-11-21 05:48:21Z" end-time="2026-11-21 05:49:46Z" duration="84.913866" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1342" name="VisualPassEyesTests" fullname="IronRequiem.Tests.VisualPassEyesTests" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" testcasecount="26" result="Failed" site="Child" start-time="2026-11-21 05:48:22Z" end-time="2026-11-21 05:49:46Z" duration="84.888406" total="26" passed="25" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1368" name="Eyes_AnchoredOnTheBody" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-21 05:48:22Z" end-time="2026-11-21 05:48:45Z" duration="23.348586" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+              </properties>
+              <test-case id="1361" name="Eyes_AnchoredOnTheBody(&quot;T07_Current_Repaired&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;T07_Current_Repaired&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="906503203" result="Passed" start-time="2026-11-21 05:48:22Z" end-time="2026-11-21 05:48:27Z" duration="5.064217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2656.1 ms · door+preload 0 / activate 2656 / unload 0 / settle 367 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("T07_Current_Repaired")
+]]></output>
+              </test-case>
+              <test-case id="1362" name="Eyes_AnchoredOnTheBody(&quot;T07_Mech&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;T07_Mech&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1220677816" result="Passed" start-time="2026-11-21 05:48:27Z" end-time="2026-11-21 05:48:30Z" duration="3.256505" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1430.6 ms · door+preload 0 / activate 1431 / unload 0 / settle 222 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("T07_Mech")
+]]></output>
+              </test-case>
+              <test-case id="1363" name="Eyes_AnchoredOnTheBody(&quot;SawBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;SawBot_Current&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1446610425" result="Passed" start-time="2026-11-21 05:48:30Z" end-time="2026-11-21 05:48:33Z" duration="2.889983" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1501.5 ms · door+preload 0 / activate 1501 / unload 0 / settle 179 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("SawBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1364" name="Eyes_AnchoredOnTheBody(&quot;BigBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;BigBot_Current&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="327657149" result="Passed" start-time="2026-11-21 05:48:33Z" end-time="2026-11-21 05:48:36Z" duration="3.152765" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1475.8 ms · door+preload 0 / activate 1476 / unload 0 / settle 171 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("BigBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1365" name="Eyes_AnchoredOnTheBody(&quot;HoverBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;HoverBot_Current&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1172772469" result="Passed" start-time="2026-11-21 05:48:36Z" end-time="2026-11-21 05:48:39Z" duration="2.907951" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1393.6 ms · door+preload 0 / activate 1394 / unload 0 / settle 180 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("HoverBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1366" name="Eyes_AnchoredOnTheBody(&quot;Turret_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;Turret_Current&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1927600142" result="Passed" start-time="2026-11-21 05:48:39Z" end-time="2026-11-21 05:48:42Z" duration="2.925298" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1348.1 ms · door+preload 0 / activate 1348 / unload 0 / settle 171 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("Turret_Current")
+]]></output>
+              </test-case>
+              <test-case id="1367" name="Eyes_AnchoredOnTheBody(&quot;Carronero&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_AnchoredOnTheBody(&quot;Carronero&quot;)" methodname="Eyes_AnchoredOnTheBody" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1426840497" result="Passed" start-time="2026-11-21 05:48:42Z" end-time="2026-11-21 05:48:45Z" duration="3.086885" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1511.0 ms · door+preload 0 / activate 1511 / unload 0 / settle 181 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_AnchoredOnTheBody("Carronero")
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-case id="1351" name="Eyes_NaturalStateIsPatrolWithoutTarget" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_NaturalStateIsPatrolWithoutTarget" methodname="Eyes_NaturalStateIsPatrolWithoutTarget" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="752881947" result="Passed" start-time="2026-11-21 05:48:45Z" end-time="2026-11-21 05:48:48Z" duration="2.996538" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1424.3 ms · door+preload 0 / activate 1424 / unload 0 / settle 206 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_NaturalStateIsPatrolWithoutTarget
+]]></output>
+            </test-case>
+            <test-case id="1352" name="Eyes_OffWhenTheEnemyDies" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_OffWhenTheEnemyDies" methodname="Eyes_OffWhenTheEnemyDies" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1088471861" result="Passed" start-time="2026-11-21 05:48:48Z" end-time="2026-11-21 05:48:51Z" duration="2.924486" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1295.6 ms · door+preload 0 / activate 1296 / unload 0 / settle 191 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_OffWhenTheEnemyDies
+]]></output>
+            </test-case>
+            <test-case id="1370" name="Eyes_OneRendererForManyEnemies" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_OneRendererForManyEnemies" methodname="Eyes_OneRendererForManyEnemies" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="674639494" result="Failed" start-time="2026-11-21 05:48:51Z" end-time="2026-11-21 05:48:54Z" duration="3.106845" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  no renderer added to enemy 0
+  Expected: 18
+  But was:  19
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.VisualPassEyesTests+<Eyes_OneRendererForManyEnemies>d__20.MoveNext () [0x00174] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\VisualPassEyesTests.cs:193
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1448.9 ms · door+preload 0 / activate 1449 / unload 0 / settle 177 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Failed Eyes_OneRendererForManyEnemies
+]]></output>
+            </test-case>
+            <test-case id="1369" name="Eyes_ProtectedScavengerGetsNoEyes" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_ProtectedScavengerGetsNoEyes" methodname="Eyes_ProtectedScavengerGetsNoEyes" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1655458656" result="Passed" start-time="2026-11-21 05:48:54Z" end-time="2026-11-21 05:48:57Z" duration="2.914815" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1388.0 ms · door+preload 0 / activate 1388 / unload 0 / settle 207 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+[CampaignTests] Passed Eyes_ProtectedScavengerGetsNoEyes
+]]></output>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1350" name="Eyes_RedInThreeStates_IntensityGrows" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-21 05:48:57Z" end-time="2026-11-21 05:49:18Z" duration="21.612732" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+              </properties>
+              <test-case id="1343" name="Eyes_RedInThreeStates_IntensityGrows(&quot;T07_Current_Repaired&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;T07_Current_Repaired&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1682567226" result="Passed" start-time="2026-11-21 05:48:57Z" end-time="2026-11-21 05:49:00Z" duration="3.095816" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1488.3 ms · door+preload 0 / activate 1488 / unload 0 / settle 180 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("T07_Current_Repaired")
+]]></output>
+              </test-case>
+              <test-case id="1344" name="Eyes_RedInThreeStates_IntensityGrows(&quot;T07_Mech&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;T07_Mech&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="145246096" result="Passed" start-time="2026-11-21 05:49:00Z" end-time="2026-11-21 05:49:03Z" duration="3.302229" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1465.0 ms · door+preload 0 / activate 1465 / unload 0 / settle 191 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("T07_Mech")
+]]></output>
+              </test-case>
+              <test-case id="1345" name="Eyes_RedInThreeStates_IntensityGrows(&quot;SawBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;SawBot_Current&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="607778724" result="Passed" start-time="2026-11-21 05:49:03Z" end-time="2026-11-21 05:49:06Z" duration="3.060657" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1490.0 ms · door+preload 0 / activate 1490 / unload 0 / settle 201 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("SawBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1346" name="Eyes_RedInThreeStates_IntensityGrows(&quot;BigBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;BigBot_Current&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="648449595" result="Passed" start-time="2026-11-21 05:49:06Z" end-time="2026-11-21 05:49:09Z" duration="3.024672" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1449.7 ms · door+preload 0 / activate 1450 / unload 0 / settle 149 · peak at frame 2/12 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("BigBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1347" name="Eyes_RedInThreeStates_IntensityGrows(&quot;HoverBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;HoverBot_Current&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1012975824" result="Passed" start-time="2026-11-21 05:49:09Z" end-time="2026-11-21 05:49:12Z" duration="2.980527" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1387.1 ms · door+preload 0 / activate 1387 / unload 0 / settle 157 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("HoverBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1348" name="Eyes_RedInThreeStates_IntensityGrows(&quot;Turret_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;Turret_Current&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1547190602" result="Passed" start-time="2026-11-21 05:49:12Z" end-time="2026-11-21 05:49:15Z" duration="3.028055" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1443.4 ms · door+preload 0 / activate 1443 / unload 0 / settle 201 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("Turret_Current")
+]]></output>
+              </test-case>
+              <test-case id="1349" name="Eyes_RedInThreeStates_IntensityGrows(&quot;Carronero&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_RedInThreeStates_IntensityGrows(&quot;Carronero&quot;)" methodname="Eyes_RedInThreeStates_IntensityGrows" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="397522288" result="Passed" start-time="2026-11-21 05:49:15Z" end-time="2026-11-21 05:49:18Z" duration="3.067981" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1471.0 ms · door+preload 0 / activate 1471 / unload 0 / settle 217 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_RedInThreeStates_IntensityGrows("Carronero")
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1360" name="Eyes_SizesNeverExceedTheCaps" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-21 05:49:18Z" end-time="2026-11-21 05:49:43Z" duration="24.987061" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+              </properties>
+              <test-case id="1353" name="Eyes_SizesNeverExceedTheCaps(&quot;T07_Current_Repaired&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;T07_Current_Repaired&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1103517725" result="Passed" start-time="2026-11-21 05:49:18Z" end-time="2026-11-21 05:49:22Z" duration="3.495450" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1348.9 ms · door+preload 0 / activate 1349 / unload 0 / settle 207 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("T07_Current_Repaired")
+]]></output>
+              </test-case>
+              <test-case id="1354" name="Eyes_SizesNeverExceedTheCaps(&quot;T07_Mech&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;T07_Mech&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1913583724" result="Passed" start-time="2026-11-21 05:49:22Z" end-time="2026-11-21 05:49:26Z" duration="3.761038" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1428.4 ms · door+preload 0 / activate 1428 / unload 0 / settle 204 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("T07_Mech")
+]]></output>
+              </test-case>
+              <test-case id="1355" name="Eyes_SizesNeverExceedTheCaps(&quot;SawBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;SawBot_Current&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="819628544" result="Passed" start-time="2026-11-21 05:49:26Z" end-time="2026-11-21 05:49:29Z" duration="3.532331" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1298.4 ms · door+preload 0 / activate 1298 / unload 0 / settle 211 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("SawBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1356" name="Eyes_SizesNeverExceedTheCaps(&quot;BigBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;BigBot_Current&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="547486508" result="Passed" start-time="2026-11-21 05:49:29Z" end-time="2026-11-21 05:49:33Z" duration="3.699056" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1386.5 ms · door+preload 0 / activate 1387 / unload 0 / settle 196 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("BigBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1357" name="Eyes_SizesNeverExceedTheCaps(&quot;HoverBot_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;HoverBot_Current&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1626295734" result="Passed" start-time="2026-11-21 05:49:33Z" end-time="2026-11-21 05:49:37Z" duration="3.732352" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1672.8 ms · door+preload 0 / activate 1673 / unload 0 / settle 204 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("HoverBot_Current")
+]]></output>
+              </test-case>
+              <test-case id="1358" name="Eyes_SizesNeverExceedTheCaps(&quot;Turret_Current&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;Turret_Current&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="793854025" result="Passed" start-time="2026-11-21 05:49:37Z" end-time="2026-11-21 05:49:40Z" duration="3.352258" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1458.1 ms · door+preload 0 / activate 1458 / unload 0 / settle 178 · peak at frame 2/16 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+Failed to create agent because there is no valid NavMesh
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("Turret_Current")
+]]></output>
+              </test-case>
+              <test-case id="1359" name="Eyes_SizesNeverExceedTheCaps(&quot;Carronero&quot;)" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_SizesNeverExceedTheCaps(&quot;Carronero&quot;)" methodname="Eyes_SizesNeverExceedTheCaps" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="2034368623" result="Passed" start-time="2026-11-21 05:49:40Z" end-time="2026-11-21 05:49:43Z" duration="3.371285" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1351.8 ms · door+preload 0 / activate 1352 / unload 0 / settle 184 · peak at frame 2/15 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_SizesNeverExceedTheCaps("Carronero")
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-case id="1371" name="Eyes_StateLightsAreSuspendedAndRestored" fullname="IronRequiem.Tests.VisualPassEyesTests.Eyes_StateLightsAreSuspendedAndRestored" methodname="Eyes_StateLightsAreSuspendedAndRestored" classname="IronRequiem.Tests.VisualPassEyesTests" runstate="Runnable" seed="1660710620" result="Passed" start-time="2026-11-21 05:49:43Z" end-time="2026-11-21 05:49:46Z" duration="2.946849" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="120000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+[Campaign] transition to Room00_Hangar (preload) peak frame 1475.8 ms · door+preload 0 / activate 1476 / unload 0 / settle 176 · peak at frame 2/14 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Passed Eyes_StateLightsAreSuspendedAndRestored
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

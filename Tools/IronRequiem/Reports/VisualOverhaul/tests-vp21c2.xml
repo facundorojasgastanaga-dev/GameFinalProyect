@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 04:09:09Z" end-time="2026-11-21 04:09:24Z" duration="14.899473">
+  <test-suite type="TestSuite" id="1381" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="313" result="Passed" start-time="2026-11-21 04:09:09Z" end-time="2026-11-21 04:09:24Z" duration="14.899473" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1375" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="313" result="Passed" start-time="2026-11-21 04:09:10Z" end-time="2026-11-21 04:09:24Z" duration="14.868500" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1376" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="313" result="Passed" start-time="2026-11-21 04:09:10Z" end-time="2026-11-21 04:09:24Z" duration="14.854571" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="313" result="Passed" start-time="2026-11-21 04:09:10Z" end-time="2026-11-21 04:09:24Z" duration="14.839446" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1342" name="VisualPassF0" fullname="IronRequiem.Tests.VisualPassF0" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" testcasecount="26" result="Passed" start-time="2026-11-21 04:09:10Z" end-time="2026-11-21 04:09:24Z" duration="14.809303" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1369" name="B_RobotLightCatalog" fullname="IronRequiem.Tests.VisualPassF0.B_RobotLightCatalog" methodname="B_RobotLightCatalog" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="2099674228" result="Passed" start-time="2026-11-21 04:09:10Z" end-time="2026-11-21 04:09:24Z" duration="14.764577" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="1200000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 2917.1 ms · door+preload 0 / activate 2917 / unload 0 / settle 440 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.T07CannonSocket.AimArm () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:48)
+IronRequiem.T07CannonSocket.LateUpdate () (at Assets/IronRequiem/Scripts/Enemies/T07CannonSocket.cs:41)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.EnemyMuzzleAnchor.LateUpdate () (at Assets/IronRequiem/Scripts/VisualPass/EnemyMuzzleAnchor.cs:70)
+
+[CampaignTests] Passed B_RobotLightCatalog
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

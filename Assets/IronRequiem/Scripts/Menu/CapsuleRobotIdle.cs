@@ -24,6 +24,8 @@ namespace IronRequiem
         public bool IsDark => wakeT < 0 && (holdDark || pulse <= 0);
         public void HoldDark() { holdDark = true; pulse = 0; wakeT = -1; Apply(0); }
         public bool IsAwake => wakeT >= 0;
+        /// 0 while powered off, then the power-up stutter and 1 once lit (the cinematic dims the body's own lights with it).
+        public float Power => wakeT < 0 ? 0 : Mathf.Clamp01(power);
         // Hangar intro (12/11/2026): the cinematic poses the rig itself and dims/sweeps the armour lines.
         public bool PoseDriven { get; set; }
         public float GlowScale { get; set; } = 1;

@@ -88,7 +88,7 @@ namespace IronRequiem.Tests
         }
         [UnityTest]public IEnumerator ECollectsFOnlyPunchesAndSimultaneousKeysPreferPickup()
         {
-            Assert.That(InputSystem.actions.FindAction("Player/CollectWeapon").bindings.Any(b=>b.effectivePath=="<Keyboard>/e"),Is.True);Assert.That(InputSystem.actions.FindAction("Player/NextWeapon").bindings.Any(b=>b.effectivePath=="<Keyboard>/e"),Is.False);
+            Assert.That(InputSystem.actions.FindAction("Player/CollectWeapon").bindings.Any(b=>b.effectivePath=="<Keyboard>/e"),Is.True);Assert.That(InputSystem.actions.FindAction("Player/WeaponPrevious").bindings.Any(b=>b.effectivePath=="<Keyboard>/e"),Is.False);
             var module=Module();yield return new WaitForSeconds(.4f);yield return Tap(Key.F);yield return new WaitForSeconds(.65f);Assert.That(carrier.Held,Is.Null);Assert.That(melee.AttackSerial,Is.EqualTo(1));
             yield return Pickup(module);yield return Tap(Key.G);yield return new WaitForSeconds(1.4f);Place(module);yield return new WaitForSeconds(.4f);int count=melee.AttackSerial;yield return Tap(Key.E,Key.F);yield return new WaitForSeconds(2.1f);Assert.That(carrier.Held,Is.SameAs(module));Assert.That(melee.AttackSerial,Is.EqualTo(count));
         }
@@ -150,7 +150,7 @@ namespace IronRequiem.Tests
         }
         [UnityTest]public IEnumerator PauseDeathAndWeaponChangesLeaveNoPresentationResidue()
         {
-            yield return Tap(Key.F);yield return Tap(Key.Tab);Assert.That(Time.timeScale,Is.Zero);yield return null;yield return new WaitForEndOfFrame();Assert.That(melee.IsAttacking,Is.False,"Melee cancelled on pause");Assert.That(hands.LeftHandVisible,Is.False,"Left arm hidden on pause");Assert.That(legs.IsVisible,Is.False,"Legs hidden on pause");Assert.That(sparks.ContactParticles.particleCount,Is.Zero);yield return Tap(Key.Tab);
+            yield return Tap(Key.F);yield return Tap(Key.Escape);Assert.That(Time.timeScale,Is.Zero);yield return null;yield return new WaitForEndOfFrame();Assert.That(melee.IsAttacking,Is.False,"Melee cancelled on pause");Assert.That(hands.LeftHandVisible,Is.False,"Left arm hidden on pause");Assert.That(legs.IsVisible,Is.False,"Legs hidden on pause");Assert.That(sparks.ContactParticles.particleCount,Is.Zero);yield return Tap(Key.Escape);
             var module=Module();yield return Pickup(module);yield return Tap(Key.F);player.GetComponent<Health>().Invincible=false;player.GetComponent<Health>().TakeDamage(player.GetComponent<Health>().MaxHealth+1,null);yield return null;yield return new WaitForEndOfFrame();Assert.That(hands.FpsRoot.gameObject.activeInHierarchy,Is.False,"FPS root hidden on death");Assert.That(melee.IsAttacking,Is.False,"Melee cancelled on death");Assert.That(legs.IsVisible,Is.False,"Legs hidden on death");Assert.That(carrier.Held,Is.Null);Assert.That(module,Is.Not.Null);
         }
         [UnityTest]public IEnumerator StolenCannonChargeSwitchThrowAndExhaustionRemainFunctional()

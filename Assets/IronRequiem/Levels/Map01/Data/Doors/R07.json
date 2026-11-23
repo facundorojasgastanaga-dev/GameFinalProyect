@@ -1,0 +1,51 @@
+{
+  "id": "R07",
+  "notes": "Pórtico N y alas de racks. Sin klaxon: suena CorridorAlarm al empezar la ronda 1. Coordenadas locales del cuarto. Defaults por kind en DoorAuthoring.KindDefaults.",
+  "sealedVolumes": [
+    {
+      "id": "vestibuloN",
+      "kind": "portal",
+      "min": [
+        -18,
+        -1,
+        20
+      ],
+      "max": [
+        18,
+        11,
+        26
+      ],
+      "klaxon": false
+    },
+    {
+      "id": "alaW",
+      "kind": "wing",
+      "min": [
+        -26,
+        -1,
+        -26
+      ],
+      "max": [
+        -19,
+        11,
+        26
+      ],
+      "klaxon": false
+    },
+    {
+      "id": "alaE",
+      "kind": "wing",
+      "min": [
+        19,
+        -1,
+        -26
+      ],
+      "max": [
+        26,
+        11,
+        26
+      ],
+      "klaxon": false
+    }
+  ]
+}

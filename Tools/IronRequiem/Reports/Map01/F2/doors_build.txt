@@ -1,0 +1,68 @@
+Map01 Doors/Build all · 2026-11-18 14:16
+== Map01_Campaign_S1
+  S00 [Z] SessionStart · arranque: DestinationDoor = initialDoor
+  C01 [A] Normal · CampaignAirlock sourceStage=0
+  C02 [Z] Normal · CampaignAirlock sourceStage=1
+  C03 [A] Normal · CampaignAirlock sourceStage=2
+  C04 [A] Normal · CampaignAirlock sourceStage=3
+  C05 [Z] Departure · Map01SessionHandoff → Map01_Campaign_S2
+== Map01_Campaign_S2
+  C05 [Z] SessionStart · arranque: DestinationDoor = initialDoor; SourceDoor sellada
+  C06 [Z] Normal · CampaignAirlock sourceStage=0
+  C07 [Z] Normal · CampaignAirlock sourceStage=1
+  C08 [Z] Normal · CampaignAirlock sourceStage=2
+  C09 [A] Normal · CampaignAirlock sourceStage=3
+  C10 [Z] Normal · CampaignAirlock sourceStage=4
+  C11 [A] Normal · CampaignAirlock sourceStage=5
+  C12 [A] Normal · CampaignAirlock sourceStage=6
+  C13 [Z] Departure · Map01SessionHandoff → Map01_Campaign_S3
+== Map01_Campaign_S3
+  C13 [Z] SessionStart · arranque: DestinationDoor = initialDoor; SourceDoor sellada
+  C14 [Z] Normal · CampaignAirlock sourceStage=0
+  C15 [Z] Normal · CampaignAirlock sourceStage=1
+  C16 [Z] Normal · CampaignAirlock sourceStage=2
+  C17 [Z] Departure · Map01SessionHandoff → Map01_Campaign_S4
+== Map01_Campaign_S4
+  C17 [Z] SessionStart · arranque: DestinationDoor = initialDoor; SourceDoor sellada
+== R01 (Map01_R01_ControlAcceso) · 1 puertas internas · 10 slots de Estructura
+  R01-P1 [P] portal · volumen vestibulo (Doors/R01.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R02 (Map01_R02_PozoMontacargas) · 1 puertas internas · 12 slots de Estructura
+  R02-P1 [P] portal · volumen rellano (Doors/R02.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R03 (Map01_R03_Dormitorios) · 1 puertas internas · 12 slots de Estructura
+  R03-P1 [P] portal · volumen vestibulo (Doors/R03.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R04 (Map01_R04_Comedor) · 1 puertas internas · 12 slots de Estructura
+  R04-P1 [P] portal · volumen vestibulo (Doors/R04.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R05 (Map01_R05_Enfermeria) · 1 puertas internas · 0 slots de Estructura
+  R05-E1 [E] no se construye en F2 (HatchDoor es de F3)
+== R06 (Map01_R06_Armeria) · 2 puertas internas · 13 slots de Estructura
+  R06-P1 [P] portal · volumen rellano (Doors/R06.json) · cierra W0 · abre Completed · aviso 0.5 s
+  R06-P2 [P] portal · volumen rellano (Doors/R06.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R07 (Map01_R07_Comunicaciones) · 5 puertas internas · 18 slots de Estructura
+  R07-P0 [P] portal · volumen vestibuloN (Doors/R07.json) · cierra W0 · abre Completed · aviso 0.5 s
+  R07-PW1 [P] wing · volumen alaW (Doors/R07.json) · cierra W0 · abre Completed · aviso 1 s
+  R07-PW2 [P] wing · volumen alaW (Doors/R07.json) · cierra W0 · abre Completed · aviso 1 s
+  R07-PE1 [P] wing · volumen alaE (Doors/R07.json) · cierra W0 · abre Completed · aviso 1 s
+  R07-PE2 [P] wing · volumen alaE (Doors/R07.json) · cierra W0 · abre Completed · aviso 1 s
+== R08 (Map01_R08_Almacenes) · 1 puertas internas · 22 slots de Estructura
+  R08-P1 [P] portal · volumen rellano (Doors/R08.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R09 (Map01_R09_Taquillas) · 0 puertas internas · 0 slots de Estructura
+== R10 (Map01_R10_TunelTrituradora) · 0 puertas internas · 0 slots de Estructura
+== R11 (Map01_R11_Decantadores) · 2 puertas internas · 18 slots de Estructura
+  R11-P1 [P] portal · volumen rellano (Doors/R11.json) · cierra W0 · abre Completed · aviso 0.5 s
+  R11-P2 [P] portal · volumen rellano (Doors/R11.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R12 (Map01_R12_Colector) · 1 puertas internas · 20 slots de Estructura
+  R12-P1 [P] portal · volumen vestibulo (Doors/R12.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R13 (Map01_R13_SalaBombas) · 0 puertas internas · 0 slots de Estructura
+== R14 (Map01_R14_Fundicion) · 1 puertas internas · 22 slots de Estructura
+  R14-P1 [P] portal · volumen vestibulo (Doors/R14.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R15 (Map01_R15_Ensamblaje) · 2 puertas internas · 18 slots de Estructura
+  R15-P1 [P] portal · volumen vestibulo (Doors/R15.json) · cierra W0 · abre Completed · aviso 0.5 s
+  R15-PJ [P] cage · volumen jaula (Doors/R15.json) · cierra W-1 · abre W2 · empieza cerrada · aviso 0 s
+== R16 (Map01_R16_Reactor) · 2 puertas internas · 23 slots de Estructura
+  R16-P1 [P] portal · volumen rellano (Doors/R16.json) · cierra W0 · abre Completed · aviso 0.5 s
+  R16-P2 [P] portal · volumen rellano (Doors/R16.json) · cierra W0 · abre Completed · aviso 0.5 s
+== R17 (Map01_R17_CentroMando) · 1 puertas internas · 12 slots de Estructura
+  R17-P1 [P] portal · volumen auto (behaviour de Structure (sin volumen en Doors/R17.json)) · cierra W0 · abre Completed · aviso 0.5 s
+== R18 (Map01_R18_Boveda) · 1 puertas internas · 26 slots de Estructura
+  R18-B [B] boss · volumen antecamara (Doors/R18.json) · cierra W0 · abre Completed · aviso 1 s
+OK

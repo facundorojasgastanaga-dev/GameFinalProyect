@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.9397768">
+  <test-suite type="TestSuite" id="1451" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.939777" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1445" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.765011" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1446" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.748585" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1154" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="373" result="Failed" site="Child" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.736592" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1136" name="ExecutionsV02Tests" fullname="IronRequiem.Tests.ExecutionsV02Tests" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:34Z" duration="18.704350" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1137" name="T07_TwoBlowsTimingReachRobotReactionAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_TwoBlowsTimingReachRobotReactionAndLocks" methodname="T07_TwoBlowsTimingReachRobotReactionAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="1399087430" result="Failed" start-time="2026-11-22 21:22:15Z" end-time="2026-11-22 21:22:28Z" duration="12.436006" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  T07: F works once the execution is over (canAct True, meleeBusy False, execBusy False, disarming False, bigRunning False, attacking False, timeScale 1)
+  Expected: 1
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests+<ShortCase>d__48.MoveNext () [0x00372] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:254
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction bones -> T07 T07_Current_Repaired: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_Current_Repaired(Clone): chestApplied=8.22 deg, weight=1.00, lean=7.92, arm=4.00, animator=True/Normal/AlwaysAnimate, T07 T07_Current_Repaired: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Failed T07_TwoBlowsTimingReachRobotReactionAndLocks
+]]></output>
+            </test-case>
+            <test-case id="1138" name="T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" methodname="T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="1043782724" result="Failed" start-time="2026-11-22 21:22:28Z" end-time="2026-11-22 21:22:34Z" duration="6.111772" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  T07Mech: robot reacts (frozen frames while alive)
+  Expected: less than or equal to 6
+  But was:  16
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ExecutionsV02Tests.AssertShort (IronRequiem.Tests.ExecutionsV02Tests+Run run, System.String label) [0x00204] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:223
+at IronRequiem.Tests.ExecutionsV02Tests+<ShortCase>d__48.MoveNext () [0x000f1] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ExecutionsV02Tests.cs:245
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+ExecutionReaction bones -> T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+ExecutionReaction diag T07_Mech(Clone): chestApplied=8.27 deg, weight=1.00, lean=7.88, arm=4.00, animator=False/Normal/AlwaysAnimate, T07 T07_Mech: chest=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest head=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head weaponArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_L guardArm=Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/UpperArm_R hips=Body/AnimatedRig/T07Rig/Root/Hips
+[CampaignTests] Failed T07Mech_TwoBlowsTimingReachRobotReactionAndLocks
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

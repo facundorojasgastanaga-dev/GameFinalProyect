@@ -1,0 +1,18 @@
+SawBot (Assets/IronRequiem/Prefabs/Campaign/SawBot_Current.prefab) executed with real E; 60 Hz fixed; frames every 2 (144 sampled).
+impacts 2, deaths 1 at 0.735 s (game time); grip (0.00, 31.24, -6.45); robot root moved (0.01, 0.00, 0.90)
+busy (M1/F/1/2/G locked) ends at frame 51 = 0.850 s real; hands disarm ends at 1.100 s; scripted move / Big Bot sequence ends at 0.017 s real
+hand beats: yank 0.340 s, wind-up 0.520 s, strike 0.732 s
+events:
+  0.017 audio Wind Ambience vol 1.00 group Ambient
+  0.017 audio IR_Combat01_Loop vol 0.00 group Music
+  0.017 audio IR_Combat01_Explore vol 0.80 group Music
+  0.183 audio SawMotor_Attack_Loop vol 0.50 group EnemyAttack
+  0.200 audio IR_Mount_Clamp vol 0.70 group Impact
+  0.350 impact #1 at (0.07, 31.55, -6.61)
+  0.350 audio IR_Slide_Deflect vol 0.70 group Impact
+  0.350 audio IR_Hangar_Tear vol 1.00 group Impact
+  0.535 audio IR_Mount_Lock vol 0.60 group Pickup
+  0.735 impact #2 at (0.00, 31.25, -6.00)
+  0.735 death #1
+  0.735 audio IR_Fist_HeavyImpact vol 1.00 group Impact
+  2.370 audio Hoverbot_Death vol 0.80 group EnemyDeath

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Failed(Child)" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.7764898">
+  <test-suite type="TestSuite" id="1472" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="389" result="Failed" site="Child" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.776490" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1466" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="389" result="Failed" site="Child" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.736721" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1467" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="389" result="Failed" site="Child" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.726575" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1175" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="389" result="Failed" site="Child" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.714417" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1036" name="BigBotDestructionTests" fullname="IronRequiem.Tests.BigBotDestructionTests" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:02:23Z" duration="40.669869" total="10" passed="8" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1038" name="CloseCameraRendersEveryApproachAngle" fullname="IronRequiem.Tests.BigBotDestructionTests.CloseCameraRendersEveryApproachAngle" methodname="CloseCameraRendersEveryApproachAngle" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="838458210" result="Passed" start-time="2026-11-23 06:01:43Z" end-time="2026-11-23 06:01:47Z" duration="4.346718" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed CloseCameraRendersEveryApproachAngle
+]]></output>
+            </test-case>
+            <test-case id="1043" name="EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" fullname="IronRequiem.Tests.BigBotDestructionTests.EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" methodname="EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="2122265322" result="Passed" start-time="2026-11-23 06:01:47Z" end-time="2026-11-23 06:01:57Z" duration="9.911037" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EarlyCannonLossKeepsRemainingWeaponAndIncreasesMeasuredCadence
+]]></output>
+            </test-case>
+            <test-case id="1044" name="EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" fullname="IronRequiem.Tests.BigBotDestructionTests.EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" methodname="EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1730828895" result="Passed" start-time="2026-11-23 06:01:57Z" end-time="2026-11-23 06:02:01Z" duration="3.617904" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed EmergencyPreservesLosAndDeathInterruptsTheRemainingAttack
+]]></output>
+            </test-case>
+            <test-case id="1040" name="GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" fullname="IronRequiem.Tests.BigBotDestructionTests.GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" methodname="GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="897154082" result="Passed" start-time="2026-11-23 06:02:01Z" end-time="2026-11-23 06:02:02Z" duration="1.406453" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed GradualThresholdsAreOnceOnlyAndPersistAcrossAllLods
+]]></output>
+            </test-case>
+            <test-case id="1045" name="HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" fullname="IronRequiem.Tests.BigBotDestructionTests.HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" methodname="HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="898686531" result="Passed" start-time="2026-11-23 06:02:02Z" end-time="2026-11-23 06:02:06Z" duration="4.252079" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed HeavyDeathArticulatesStaysAboveFloorAndUsesExistingCleanup
+]]></output>
+            </test-case>
+            <test-case id="1042" name="LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" fullname="IronRequiem.Tests.BigBotDestructionTests.LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" methodname="LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1969594377" result="Failed" start-time="2026-11-23 06:02:06Z" end-time="2026-11-23 06:02:08Z" duration="1.845278" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: 0
+  But was:  1
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.BigBotDestructionTests+<LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion>d__21.MoveNext () [0x001b2] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotDestructionTests.cs:99
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Account API did not become accessible within 30 seconds. This may be due to network issues or editor focus.
+[CampaignTests] Failed LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion
+]]></output>
+            </test-case>
+            <test-case id="1041" name="MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" fullname="IronRequiem.Tests.BigBotDestructionTests.MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" methodname="MassiveDamageCrossesThreeStagesWithoutDuplicateDrop" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="696295024" result="Passed" start-time="2026-11-23 06:02:08Z" end-time="2026-11-23 06:02:09Z" duration="1.331665" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed MassiveDamageCrossesThreeStagesWithoutDuplicateDrop
+]]></output>
+            </test-case>
+            <test-case id="1037" name="MountsStayAttachedAndCriticalSparksAreVisible" fullname="IronRequiem.Tests.BigBotDestructionTests.MountsStayAttachedAndCriticalSparksAreVisible" methodname="MountsStayAttachedAndCriticalSparksAreVisible" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="2027644390" result="Passed" start-time="2026-11-23 06:02:09Z" end-time="2026-11-23 06:02:13Z" duration="3.648321" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed MountsStayAttachedAndCriticalSparksAreVisible
+]]></output>
+            </test-case>
+            <test-case id="1046" name="SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" fullname="IronRequiem.Tests.BigBotDestructionTests.SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" methodname="SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="1313758337" result="Failed" label="Error" start-time="2026-11-23 06:02:13Z" end-time="2026-11-23 06:02:15Z" duration="1.955061" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object]]></message>
+                <stack-trace><![CDATA[  at IronRequiem.Tests.BigBotDestructionTests+<SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse>d__25.MoveNext () [0x00214] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotDestructionTests.cs:132 
+  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse
+]]></output>
+            </test-case>
+            <test-case id="1039" name="TurnStepsFollowAngularDistance" fullname="IronRequiem.Tests.BigBotDestructionTests.TurnStepsFollowAngularDistance" methodname="TurnStepsFollowAngularDistance" classname="IronRequiem.Tests.BigBotDestructionTests" runstate="Runnable" seed="70989273" result="Passed" start-time="2026-11-23 06:02:15Z" end-time="2026-11-23 06:02:23Z" duration="8.235508" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed TurnStepsFollowAngularDistance
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

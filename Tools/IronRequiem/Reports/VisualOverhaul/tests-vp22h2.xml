@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Passed" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.2666209">
+  <test-suite type="TestSuite" id="1000" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.266621" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1074" name="IronRequiem.EditModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.EditModeTests.dll" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.228281" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1075" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.222716" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1076" name="Tests" fullname="IronRequiem.Tests" runstate="Runnable" testcasecount="59" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.215635" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1055" name="VisualPassEyesEditTests" fullname="IronRequiem.Tests.VisualPassEyesEditTests" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.208609" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1060" name="AlertPulse_IsSlow" fullname="IronRequiem.Tests.VisualPassEyesEditTests.AlertPulse_IsSlow" methodname="AlertPulse_IsSlow" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="519949303" result="Passed" start-time="2026-11-21 05:52:10Z" end-time="2026-11-21 05:52:11Z" duration="0.034876" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed AlertPulse_IsSlow
+]]></output>
+            </test-case>
+            <test-case id="1057" name="BaseColor_DiffersFromEveryDoorColour" fullname="IronRequiem.Tests.VisualPassEyesEditTests.BaseColor_DiffersFromEveryDoorColour" methodname="BaseColor_DiffersFromEveryDoorColour" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="1881008620" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.007741" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed BaseColor_DiffersFromEveryDoorColour
+]]></output>
+            </test-case>
+            <test-case id="1056" name="BaseColor_IsTheApprovedCrimson" fullname="IronRequiem.Tests.VisualPassEyesEditTests.BaseColor_IsTheApprovedCrimson" methodname="BaseColor_IsTheApprovedCrimson" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="1529589052" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.000764" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed BaseColor_IsTheApprovedCrimson
+]]></output>
+            </test-case>
+            <test-case id="1062" name="FarEye_KeepsAMinimumAngularSize_AtTwentyFiveMetres" fullname="IronRequiem.Tests.VisualPassEyesEditTests.FarEye_KeepsAMinimumAngularSize_AtTwentyFiveMetres" methodname="FarEye_KeepsAMinimumAngularSize_AtTwentyFiveMetres" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="548271461" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.002582" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed FarEye_KeepsAMinimumAngularSize_AtTwentyFiveMetres
+]]></output>
+            </test-case>
+            <test-case id="1058" name="Hdr_NeverExceedsFour_ForAnyStateAndTime" fullname="IronRequiem.Tests.VisualPassEyesEditTests.Hdr_NeverExceedsFour_ForAnyStateAndTime" methodname="Hdr_NeverExceedsFour_ForAnyStateAndTime" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="1099948366" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.051870" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed Hdr_NeverExceedsFour_ForAnyStateAndTime
+]]></output>
+            </test-case>
+            <test-case id="1064" name="HotCentre_CappedSmallerThanTheRedCore_AndAtLeastThreePixelsUpTo25m" fullname="IronRequiem.Tests.VisualPassEyesEditTests.HotCentre_CappedSmallerThanTheRedCore_AndAtLeastThreePixelsUpTo25m" methodname="HotCentre_CappedSmallerThanTheRedCore_AndAtLeastThreePixelsUpTo25m" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="502791350" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.011089" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed HotCentre_CappedSmallerThanTheRedCore_AndAtLeastThreePixelsUpTo25m
+]]></output>
+            </test-case>
+            <test-case id="1059" name="Intensity_GrowsPatrolAlertAttack_AndDeadIsOff" fullname="IronRequiem.Tests.VisualPassEyesEditTests.Intensity_GrowsPatrolAlertAttack_AndDeadIsOff" methodname="Intensity_GrowsPatrolAlertAttack_AndDeadIsOff" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="811347192" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.000775" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed Intensity_GrowsPatrolAlertAttack_AndDeadIsOff
+]]></output>
+            </test-case>
+            <test-case id="1065" name="Sane_RemovesNaNAndInfinity" fullname="IronRequiem.Tests.VisualPassEyesEditTests.Sane_RemovesNaNAndInfinity" methodname="Sane_RemovesNaNAndInfinity" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="1956957001" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.000946" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed Sane_RemovesNaNAndInfinity
+]]></output>
+            </test-case>
+            <test-case id="1063" name="ShotWarning_IsTwoFlashesInTheLastThirdOfASecond" fullname="IronRequiem.Tests.VisualPassEyesEditTests.ShotWarning_IsTwoFlashesInTheLastThirdOfASecond" methodname="ShotWarning_IsTwoFlashesInTheLastThirdOfASecond" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="1327471405" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.001366" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed ShotWarning_IsTwoFlashesInTheLastThirdOfASecond
+]]></output>
+            </test-case>
+            <test-case id="1061" name="Sizes_AreCapped_AtAnyDistance" fullname="IronRequiem.Tests.VisualPassEyesEditTests.Sizes_AreCapped_AtAnyDistance" methodname="Sizes_AreCapped_AtAnyDistance" classname="IronRequiem.Tests.VisualPassEyesEditTests" runstate="Runnable" seed="518083674" result="Passed" start-time="2026-11-21 05:52:11Z" end-time="2026-11-21 05:52:11Z" duration="0.002176" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed Sizes_AreCapped_AtAnyDistance
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

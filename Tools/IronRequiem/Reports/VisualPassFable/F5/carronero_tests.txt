@@ -1,0 +1,362 @@
+2026-11-21T01:54:36 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=108 speed=7.101 m/s | F0 support-foot speed=3.096 m/s | a foot still (<=2 cm) in 27.778 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.333 m/s | a foot still (<=2 cm) in 69.444 % of frames | flagged planted 66.667 % | max planted slip=0.722 cm/frame | stances=15 shortest=4 frames | cadence=4.2 Hz | worst LOD=0
+
+2026-11-21T01:54:41 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 111.672 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=92.062 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T01:54:45 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.367, 0.606) .. (-0.414, 0.861, 0.675) | new (-0.414, 0.374, 0.610) .. (-0.414, 0.869, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.538, 0.497) .. (-0.414, 0.953, 0.568) | new (-0.414, 0.544, 0.494) .. (-0.414, 0.961, 0.570)
+
+2026-11-21T01:54:50 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.009 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T01:54:54 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 32.818 deg away from the stale one | blend=1
+
+2026-11-21T01:55:00 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.393 of a cycle apart | closest pair of 24: 0.006 | stride per cycle at rest 0.556 .. 1.307 m
+
+2026-11-21T01:55:05 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.296 m/s | a foot still (<=2 cm) in 70 % of frames | flagged planted 66.25 % | max planted slip=0 cm/frame | stances=11 shortest=4 frames | cadence=4.478 Hz | worst LOD=0 | component cadence=4.445 Hz cycle=1.62 m
+
+2026-11-21T01:55:10 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 19.569 deg | straight afterwards: 0 deg
+
+2026-11-21T01:55:16 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 16, 17, 0, 0
+
+2026-11-21T01:55:31 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.748 ms | frame=13.22 ms
+  none                           LateBehaviourUpdate=0.338 ms | frame=13.12 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.631 ms | frame=12.37 ms
+  animation cost for 24: new 0.411 ms, legacy 0.294 ms (per bot 17.1 vs 12.2 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T01:56:27 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.820 ms | frame=14.67 ms
+  none                           LateBehaviourUpdate=0.330 ms | frame=13.60 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.727 ms | frame=13.87 ms
+  animation cost for 24: new 0.490 ms, legacy 0.397 ms (per bot 20.4 vs 16.6 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T01:57:19 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.672 ms | frame=14.09 ms
+  none                           LateBehaviourUpdate=0.363 ms | frame=12.83 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.847 ms | frame=15.67 ms
+  animation cost for 24: new 0.310 ms, legacy 0.484 ms (per bot 12.9 vs 20.2 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T01:58:01 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.693 ms | frame=13.28 ms
+  none                           LateBehaviourUpdate=0.380 ms | frame=14.15 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.713 ms | frame=14.14 ms
+  animation cost for 24: new 0.312 ms, legacy 0.332 ms (per bot 13.0 vs 13.9 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T01:59:22 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=109 speed=7.069 m/s | F0 support-foot speed=6.257 m/s | a foot still (<=2 cm) in 25.688 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.253 m/s | a foot still (<=2 cm) in 71.296 % of frames | flagged planted 68.519 % | max planted slip=0.722 cm/frame | stances=16 shortest=3 frames | cadence=4.848 Hz | worst LOD=0
+
+2026-11-21T01:59:27 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 120.897 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=90.822 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T01:59:31 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.376, 0.606) .. (-0.414, 0.871, 0.676) | new (-0.414, 0.366, 0.609) .. (-0.414, 0.861, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.547, 0.498) .. (-0.414, 0.963, 0.569) | new (-0.414, 0.536, 0.494) .. (-0.414, 0.953, 0.570)
+
+2026-11-21T01:59:36 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.008 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T01:59:40 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 29.275 deg away from the stale one | blend=1
+
+2026-11-21T01:59:46 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.39 of a cycle apart | closest pair of 24: 0.003 | stride per cycle at rest 0.557 .. 1.293 m
+
+2026-11-21T01:59:51 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.281 m/s | a foot still (<=2 cm) in 72.5 % of frames | flagged planted 67.5 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.687 Hz | worst LOD=0 | component cadence=4.737 Hz cycle=1.52 m
+
+2026-11-21T01:59:55 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 9.154 deg | straight afterwards: 0 deg
+
+2026-11-21T02:00:01 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 15, 0, 0, 0
+
+2026-11-21T02:00:15 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.567 ms | frame=11.34 ms
+  none                           LateBehaviourUpdate=0.277 ms | frame=11.26 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.563 ms | frame=11.18 ms
+  animation cost for 24: new 0.290 ms, legacy 0.286 ms (per bot 12.1 vs 11.9 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T02:03:23 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=109 speed=7.08 m/s | F0 support-foot speed=6.207 m/s | a foot still (<=2 cm) in 22.936 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.313 m/s | a foot still (<=2 cm) in 71.296 % of frames | flagged planted 66.667 % | max planted slip=0.722 cm/frame | stances=17 shortest=3 frames | cadence=4.719 Hz | worst LOD=0
+
+2026-11-21T02:03:28 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 120.882 deg from the run pose | first contact tick at 0.4 s | saw tip travel in 0.36 s of sustain=92.574 cm | stage=Sustain
+
+2026-11-21T02:03:32 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.367, 0.606) .. (-0.414, 0.869, 0.676) | new (-0.414, 0.375, 0.610) .. (-0.414, 0.870, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.538, 0.498) .. (-0.414, 0.961, 0.569) | new (-0.414, 0.545, 0.494) .. (-0.414, 0.962, 0.570)
+
+2026-11-21T02:03:37 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.003 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T02:03:42 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 80.668 deg away from the stale one | blend=1
+
+2026-11-21T02:03:49 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.363 of a cycle apart | closest pair of 24: 0.001 | stride per cycle at rest 0.558 .. 1.349 m
+
+2026-11-21T02:03:54 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.041 m/s | a foot still (<=2 cm) in 72.5 % of frames | flagged planted 72.5 % | max planted slip=0 cm/frame | stances=10 shortest=5 frames | cadence=4.286 Hz | worst LOD=0 | component cadence=4.257 Hz cycle=1.691 m
+
+2026-11-21T02:03:59 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 20.039 deg | straight afterwards: 0 deg
+
+2026-11-21T02:04:05 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 18, 0, 0, 0
+
+2026-11-21T02:04:19 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.555 ms | frame=11.43 ms
+  none                           LateBehaviourUpdate=0.294 ms | frame=11.55 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.618 ms | frame=12.74 ms
+  animation cost for 24: new 0.260 ms, legacy 0.323 ms (per bot 10.8 vs 13.5 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T02:06:51 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=109 speed=7.057 m/s | F0 support-foot speed=6.425 m/s | a foot still (<=2 cm) in 29.358 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.275 m/s | a foot still (<=2 cm) in 70.37 % of frames | flagged planted 68.519 % | max planted slip=0.722 cm/frame | stances=15 shortest=4 frames | cadence=4.242 Hz | worst LOD=0
+
+2026-11-21T02:06:56 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 120.307 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=89.277 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T02:07:00 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.373, 0.606) .. (-0.414, 0.871, 0.675) | new (-0.414, 0.366, 0.610) .. (-0.414, 0.860, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.543, 0.497) .. (-0.414, 0.963, 0.569) | new (-0.414, 0.536, 0.494) .. (-0.414, 0.952, 0.570)
+
+2026-11-21T02:07:04 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.009 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T02:07:09 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 29.017 deg away from the stale one | blend=1
+
+2026-11-21T02:07:16 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.339 of a cycle apart | closest pair of 24: 0 | stride per cycle at rest 0.561 .. 1.226 m
+
+2026-11-21T02:07:20 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.142 m/s | a foot still (<=2 cm) in 71.25 % of frames | flagged planted 68.75 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.615 Hz | worst LOD=0 | component cadence=4.63 Hz cycle=1.555 m
+
+2026-11-21T02:07:26 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 20.192 deg | straight afterwards: 0 deg
+
+2026-11-21T02:07:31 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 18, 0, 0, 0
+
+2026-11-21T02:07:45 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.581 ms | frame=12.33 ms
+  none                           LateBehaviourUpdate=0.300 ms | frame=11.52 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.644 ms | frame=12.58 ms
+  animation cost for 24: new 0.281 ms, legacy 0.344 ms (per bot 11.7 vs 14.3 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T02:08:16 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=108 speed=7.118 m/s | F0 support-foot speed=6.463 m/s | a foot still (<=2 cm) in 25.926 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.076 m/s | a foot still (<=2 cm) in 72.222 % of frames | flagged planted 70.37 % | max planted slip=0.722 cm/frame | stances=16 shortest=4 frames | cadence=4.516 Hz | worst LOD=0
+
+2026-11-21T02:08:21 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 112.443 deg from the run pose | first contact tick at 0.35 s | saw tip travel in 0.36 s of sustain=87.138 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T02:08:25 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.375, 0.606) .. (-0.414, 0.870, 0.676) | new (-0.414, 0.376, 0.610) .. (-0.414, 0.871, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.546, 0.498) .. (-0.414, 0.962, 0.569) | new (-0.414, 0.546, 0.494) .. (-0.414, 0.963, 0.570)
+
+2026-11-21T02:08:30 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.006 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T02:08:34 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 83.836 deg away from the stale one | blend=1
+
+2026-11-21T02:08:41 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.423 of a cycle apart | closest pair of 24: 0.003 | stride per cycle at rest 0.559 .. 1.335 m
+
+2026-11-21T02:08:46 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.333 m/s | a foot still (<=2 cm) in 68.75 % of frames | flagged planted 67.5 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.762 Hz | worst LOD=0 | component cadence=4.763 Hz cycle=1.512 m
+
+2026-11-21T02:08:51 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 18.747 deg | straight afterwards: 0 deg
+
+2026-11-21T02:08:56 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 16, 0, 0, 0
+
+2026-11-21T02:09:11 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.621 ms | frame=12.47 ms
+  none                           LateBehaviourUpdate=0.305 ms | frame=11.86 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.734 ms | frame=14.52 ms
+  animation cost for 24: new 0.317 ms, legacy 0.430 ms (per bot 13.2 vs 17.9 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T07:23:14 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=109 speed=7.069 m/s | F0 support-foot speed=6.257 m/s | a foot still (<=2 cm) in 25.688 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.171 m/s | a foot still (<=2 cm) in 71.296 % of frames | flagged planted 69.444 % | max planted slip=0.722 cm/frame | stances=17 shortest=4 frames | cadence=4.752 Hz | worst LOD=0
+
+2026-11-21T07:23:19 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 114.523 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=92.511 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T07:23:24 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.368, 0.606) .. (-0.414, 0.865, 0.676) | new (-0.414, 0.365, 0.609) .. (-0.414, 0.860, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.539, 0.497) .. (-0.414, 0.957, 0.569) | new (-0.414, 0.536, 0.494) .. (-0.414, 0.952, 0.570)
+
+2026-11-21T07:23:30 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.001 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T07:23:35 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 45.273 deg away from the stale one | blend=1
+
+2026-11-21T07:23:42 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.383 of a cycle apart | closest pair of 24: 0.002 | stride per cycle at rest 0.557 .. 1.314 m
+
+2026-11-21T07:23:47 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.329 m/s | a foot still (<=2 cm) in 70 % of frames | flagged planted 68.75 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.839 Hz | worst LOD=0 | component cadence=4.83 Hz cycle=1.491 m
+
+2026-11-21T07:23:52 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.8 .. 8.8 deg (component -8.8) | head leads by up to 16.06 deg | straight afterwards: 0 deg
+
+2026-11-21T07:23:59 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 17, 0, 0, 0
+
+2026-11-21T07:24:15 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.645 ms | frame=13.37 ms
+  none                           LateBehaviourUpdate=0.361 ms | frame=14.10 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.730 ms | frame=14.76 ms
+  animation cost for 24: new 0.284 ms, legacy 0.369 ms (per bot 11.8 vs 15.4 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T09:29:10 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=109 speed=7.069 m/s | F0 support-foot speed=6.257 m/s | a foot still (<=2 cm) in 25.688 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.133 m/s | a foot still (<=2 cm) in 73.148 % of frames | flagged planted 68.519 % | max planted slip=0.722 cm/frame | stances=16 shortest=4 frames | cadence=4.375 Hz | worst LOD=0
+
+2026-11-21T09:29:15 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 118.023 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=90.955 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T09:29:20 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.376, 0.606) .. (-0.414, 0.870, 0.676) | new (-0.414, 0.367, 0.610) .. (-0.414, 0.866, 0.674)
+  bladeEnd swept box, root space: legacy (-0.414, 0.546, 0.498) .. (-0.414, 0.962, 0.569) | new (-0.414, 0.537, 0.494) .. (-0.414, 0.958, 0.570)
+
+2026-11-21T09:29:25 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.001 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T09:29:29 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 29.744 deg away from the stale one | blend=1
+
+2026-11-21T09:29:37 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.383 of a cycle apart | closest pair of 24: 0.005 | stride per cycle at rest 0.561 .. 1.342 m
+
+2026-11-21T09:29:41 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.305 m/s | a foot still (<=2 cm) in 70 % of frames | flagged planted 67.5 % | max planted slip=0 cm/frame | stances=11 shortest=4 frames | cadence=4.478 Hz | worst LOD=0 | component cadence=4.452 Hz cycle=1.617 m
+
+2026-11-21T09:29:47 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.753 .. 8.8 deg (component -8.8) | head leads by up to 9.277 deg | straight afterwards: 0.118 deg
+
+2026-11-21T09:29:53 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 17, 0, 0, 0
+
+2026-11-21T09:30:08 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.646 ms | frame=13.01 ms
+  none                           LateBehaviourUpdate=0.388 ms | frame=13.80 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.646 ms | frame=12.51 ms
+  animation cost for 24: new 0.258 ms, legacy 0.258 ms (per bot 10.7 vs 10.8 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T10:18:00 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=108 speed=7.118 m/s | F0 support-foot speed=6.463 m/s | a foot still (<=2 cm) in 25.926 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.057 m/s | a foot still (<=2 cm) in 73.148 % of frames | flagged planted 69.444 % | max planted slip=0.722 cm/frame | stances=16 shortest=4 frames | cadence=4.565 Hz | worst LOD=0
+
+2026-11-21T10:18:07 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 109.179 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=88.067 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T10:18:11 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.368, 0.606) .. (-0.414, 0.865, 0.676) | new (-0.414, 0.375, 0.609) .. (-0.414, 0.869, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.539, 0.498) .. (-0.414, 0.957, 0.569) | new (-0.414, 0.545, 0.494) .. (-0.414, 0.961, 0.570)
+
+2026-11-21T10:18:16 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.009 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T10:18:21 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 79.121 deg away from the stale one | blend=1
+
+2026-11-21T10:18:30 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.434 of a cycle apart | closest pair of 24: 0.002 | stride per cycle at rest 0.557 .. 1.388 m
+
+2026-11-21T10:18:36 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.167 m/s | a foot still (<=2 cm) in 71.25 % of frames | flagged planted 67.5 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.545 Hz | worst LOD=0 | component cadence=4.595 Hz cycle=1.567 m
+
+2026-11-21T10:18:42 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.755 .. 8.802 deg (component -8.8) | head leads by up to 9.138 deg | straight afterwards: 0.119 deg
+
+2026-11-21T10:18:48 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 17, 0, 0, 0
+
+2026-11-21T10:19:05 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.646 ms | frame=13.45 ms
+  none                           LateBehaviourUpdate=0.351 ms | frame=14.48 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.673 ms | frame=14.34 ms
+  animation cost for 24: new 0.295 ms, legacy 0.321 ms (per bot 12.3 vs 13.4 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+
+2026-11-21T10:33:04 A_PlantedFoot_DoesNotSlide_AtRealChaseSpeed
+  control (Carronero.prefab, CarroneroMotion): frames=108 speed=7.09 m/s | F0 support-foot speed=6.19 m/s | a foot still (<=2 cm) in 25 % of frames | flagged planted 0 % | max planted slip=0 cm/frame | stances=0 shortest=- frames | cadence=0 Hz | worst LOD=0
+  Carronero_Map01 (CarroneroCombatMotion): frames=108 speed=7.147 m/s | F0 support-foot speed=2.167 m/s | a foot still (<=2 cm) in 70.37 % of frames | flagged planted 69.444 % | max planted slip=0.722 cm/frame | stances=17 shortest=4 frames | cadence=4.752 Hz | worst LOD=0
+
+2026-11-21T10:33:10 B_Attack_AnticipationReadsBeforeContact_AndRecovers
+  attack: preparation=0.35 s | saw behind the shoulder from 0.033 s to 0.3 s | arm at 0.10 s differs 119.56 deg from the run pose | first contact tick at 0.367 s | saw tip travel in 0.36 s of sustain=90.406 cm | stage=Sustain
+  recovery: arm 0 deg from its bind pose 0.25 s after the attack ended (run swing is +-6 deg) | stage=None
+
+2026-11-21T10:33:16 B_ContactVolume_MatchesLegacyFromTheEndOfPreparation
+  bladeStart swept box, root space: legacy (-0.414, 0.373, 0.606) .. (-0.414, 0.871, 0.676) | new (-0.414, 0.376, 0.610) .. (-0.414, 0.871, 0.675)
+  bladeEnd swept box, root space: legacy (-0.414, 0.544, 0.497) .. (-0.414, 0.963, 0.569) | new (-0.414, 0.547, 0.494) .. (-0.414, 0.963, 0.570)
+
+2026-11-21T10:33:22 C_HitReaction_ShowsInThreeFrames_AndReturns
+  hit: Spine2 peak in 3 frames: legacy 0 deg, new 12 deg | head peak new 14.005 deg | Spine2 0.27 s later: new 0 deg
+
+2026-11-21T10:33:27 D_OffCamera_NothingIsPosed_AndTheReturnDoesNotPop
+  hidden by disabling every camera
+  first frame back on camera: largest bone jump 0 deg (limit 8) | 0.33 s later the pose is 27.83 deg away from the stale one | blend=1
+
+2026-11-21T10:33:35 F_TwoIndividuals_NeverShareThePhase
+  phase: two created together are 0.421 of a cycle apart | closest pair of 24: 0.001 | stride per cycle at rest 0.556 .. 1.245 m
+
+2026-11-21T10:33:41 G_TopSpeed_CadenceUnder5Hz_AndThreePlantedFramesPerStep
+  7.2 m/s fixed: frames=80 speed=7.197 m/s | F0 support-foot speed=2.18 m/s | a foot still (<=2 cm) in 71.25 % of frames | flagged planted 66.25 % | max planted slip=0 cm/frame | stances=12 shortest=4 frames | cadence=4.615 Hz | worst LOD=0 | component cadence=4.59 Hz cycle=1.569 m
+
+2026-11-21T10:33:48 H_Turns_BankInwards_AndStraightRunsStayUpright
+  turn right at 220 deg/s and 4 m/s: hips lean inwards 8.753 .. 8.8 deg (component -8.8) | head leads by up to 20.367 deg | straight afterwards: 0.118 deg
+
+2026-11-21T10:33:55 I_LodTier_FollowsTheLodGroup_AndFarLevelsSkipTheFootIk
+  forced LOD -> tier read by the component: 0, 1, 2, 3 | frames with a planted foot (of 25): 17, 0, 0, 0
+
+2026-11-21T10:34:16 Z_Cost_HordeOf24_NewAnimationAgainstLegacy
+  24 bots at 5.6 m/s, 240 frames per state, Editor. LOD tiers of the new animation (off camera, 0, 1, 2, 3): 0, 20, 28, 0, 0
+  new (CarroneroCombatMotion)    LateBehaviourUpdate=0.684 ms | frame=19.79 ms
+  none                           LateBehaviourUpdate=0.314 ms | frame=18.48 ms
+  legacy (CarroneroMotion)       LateBehaviourUpdate=0.743 ms | frame=19.68 ms
+  animation cost for 24: new 0.370 ms, legacy 0.429 ms (per bot 15.4 vs 17.9 us). If the new one is higher: VisualOverhaulCarronero.Tune ikMaxLod=0, then halfRateFromLod=1
+

@@ -6,6 +6,13 @@ namespace IronRequiem
     [RequireComponent(typeof(PlayerCharacterController),typeof(MechanicInput))]
     public sealed class AdvancedPlayerMovement : MonoBehaviour, IPlayerMotionExtension
     {
+        [Header("Ground response (23/11/2026)")]
+        [Tooltip("Replaces the template's MovementSharpnessOnGround (15 in Assets/FPS/Prefabs/Player.prefab, left untouched) at Awake. "+
+                 "15 took ~140 ms to reach 90 % of the walk speed and read as input lag; 35 takes ~50 ms at 60 FPS. Also governs stopping. 0 = keep the prefab value.")]
+        [SerializeField,Min(0)] float groundSharpness=35;
+        [Tooltip("Replaces the template's AimingRotationMultiplier (0.4, look speed while aiming) at Awake. 0.4 made the camera feel very heavy "+
+                 "as soon as the first module was equipped (23/11/2026, user request: no brake). 1 = same look speed aiming or not; 0 = keep the prefab value.")]
+        [SerializeField,Range(0,1)] float aimLookMultiplier=1;
         [Header("Air dash")]
         [SerializeField,Min(1)] float dashSpeed=24;
         [SerializeField,Min(.02f)] float dashDuration=.18f;
@@ -78,14 +85,17 @@ namespace IronRequiem
 
         // Scripted motion (executions). Still applied through PlayerCharacterController.Move: this only
         // supplies the velocity, so collisions, grounding and the single movement authority are preserved.
-        Vector3 scriptedFrom,scriptedTo;float scriptedTime,scriptedDuration,scriptedArc;bool scripted;
+        Vector3 scriptedFrom,scriptedTo,scriptedBend;float scriptedTime,scriptedDuration,scriptedArc;bool scripted;
         bool aimOverride;Vector3 aimPoint;float aimSharpness;
         public bool IsScripted => scripted;
         public bool ScriptedArrived => scripted && scriptedTime>=scriptedDuration;
-        public void BeginScriptedMove(Vector3 target,float duration,float arcHeight)
+        public void BeginScriptedMove(Vector3 target,float duration,float arcHeight)=>BeginScriptedMove(target,duration,arcHeight,Vector3.zero);
+        // horizontalBend: the path bulges sideways by this vector at its middle (sin profile, zero at both ends), e.g. around a body.
+        public void BeginScriptedMove(Vector3 target,float duration,float arcHeight,Vector3 horizontalBend)
         {
             EndDash();EndSlide(false);EndLunge();
             scriptedFrom=transform.position;scriptedTo=target;scriptedDuration=Mathf.Max(.01f,duration);scriptedArc=arcHeight;scriptedTime=0;scripted=true;
+            scriptedBend=Vector3.ProjectOnPlane(horizontalBend,Vector3.up);
         }
         public void EndScriptedMove()
         {
@@ -105,6 +115,8 @@ namespace IronRequiem
         {
             player=GetComponent<PlayerCharacterController>();original=GetComponent<PlayerInputHandler>();input=GetComponent<MechanicInput>();
             health=GetComponent<Unity.FPS.Game.Health>();
+            if(player&&groundSharpness>0)player.MovementSharpnessOnGround=groundSharpness;
+            if(player&&aimLookMultiplier>0)player.AimingRotationMultiplier=aimLookMultiplier;
         }
 
         // The controller applies this delta once; no second camera/transform rotation authority.
@@ -186,7 +198,8 @@ namespace IronRequiem
             if(!enabled || !input.CanAct)return false;
             if(IsSliding){EndSlide(false);return true;}
             float speed=Vector3.ProjectOnPlane(player.CharacterVelocity,Vector3.up).magnitude;
-            if(!player.IsGrounded || player.IsCrouching || !original.GetSprintInputHeld() || original.GetMoveInput().sqrMagnitude<.01f || speed<slideMinimumSpeed || IsDashing)return false;
+            // 23/11/2026: no sprint any more; C while moving at (near) full walk speed starts the slide.
+            if(!player.IsGrounded || player.IsCrouching || original.GetMoveInput().sqrMagnitude<.01f || speed<slideMinimumSpeed || IsDashing)return false;
             // Every other requirement is met: a press during the cooldown (or without releasing C) is consumed,
             // so repeated taps never chain a slide nor toggle crouch in the middle of a sprint.
             if(!SlideReady)return true;
@@ -208,7 +221,7 @@ namespace IronRequiem
                 // Horizontal: smooth in/out. Vertical: ease-out plus an arc, so the first frame already leaves the
                 // ground-snap distance (like a real jump) and the landing arrives slowly (no fall-damage speed).
                 float s=Mathf.Clamp01(scriptedTime/scriptedDuration);float e=s*s*(3-2*s);float v=1-(1-s)*(1-s)*(1-s);
-                var flat=Vector3.Lerp(new Vector3(scriptedFrom.x,0,scriptedFrom.z),new Vector3(scriptedTo.x,0,scriptedTo.z),e);
+                var flat=Vector3.Lerp(new Vector3(scriptedFrom.x,0,scriptedFrom.z),new Vector3(scriptedTo.x,0,scriptedTo.z),e)+scriptedBend*Mathf.Sin(Mathf.PI*s);
                 var wanted=flat+Vector3.up*(Mathf.Lerp(scriptedFrom.y,scriptedTo.y,v)+scriptedArc*Mathf.Sin(Mathf.PI*s));
                 velocity=(wanted-transform.position)/Mathf.Max(Time.deltaTime,1e-4f);
                 velocity=Vector3.ClampMagnitude(velocity,40);return true;

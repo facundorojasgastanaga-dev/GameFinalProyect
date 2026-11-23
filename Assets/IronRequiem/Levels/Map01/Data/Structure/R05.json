@@ -1,0 +1,547 @@
+{
+  "id": "R05",
+  "name": "Enfermería",
+  "scene": "Map01_R05_Enfermeria",
+  "zone": "Habitaculo",
+  "function": "respite",
+  "archetype": "E0",
+  "worldOrigin": [
+    93,
+    -12,
+    139
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -19,
+      -1,
+      -16
+    ],
+    "max": [
+      19,
+      9,
+      16
+    ]
+  },
+  "interior": {
+    "min": [
+      -18,
+      0,
+      -15
+    ],
+    "max": [
+      18,
+      8,
+      15
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -18,
+          0,
+          -15
+        ],
+        "max": [
+          18,
+          8,
+          15
+        ]
+      },
+      "y": 8
+    }
+  ],
+  "doors": [
+    {
+      "id": "R05_in",
+      "role": "entry",
+      "class": "A",
+      "center": [
+        -18,
+        0,
+        8
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          -18,
+          0,
+          4.5
+        ],
+        "max": [
+          -14,
+          4.5,
+          11.5
+        ]
+      },
+      "airlock": "C04"
+    },
+    {
+      "id": "R05_out",
+      "role": "exit",
+      "class": "Z",
+      "center": [
+        18,
+        0,
+        -6
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          12,
+          0,
+          -11.0
+        ],
+        "max": [
+          18,
+          6,
+          -1.0
+        ]
+      },
+      "airlock": "C05"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "glass0",
+      "type": "coverHigh",
+      "center": [
+        -12.0,
+        1.2,
+        12.0
+      ],
+      "size": [
+        0.2,
+        2.4,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "glass1",
+      "type": "coverHigh",
+      "center": [
+        -6.0,
+        1.2,
+        12.0
+      ],
+      "size": [
+        0.2,
+        2.4,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "glass2",
+      "type": "coverHigh",
+      "center": [
+        0.0,
+        1.2,
+        12.0
+      ],
+      "size": [
+        0.2,
+        2.4,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "glass3",
+      "type": "coverHigh",
+      "center": [
+        6.0,
+        1.2,
+        12.0
+      ],
+      "size": [
+        0.2,
+        2.4,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "glass4",
+      "type": "coverHigh",
+      "center": [
+        12.0,
+        1.2,
+        12.0
+      ],
+      "size": [
+        0.2,
+        2.4,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "theatre",
+      "type": "platform",
+      "center": [
+        1.0,
+        0.6,
+        -1.0
+      ],
+      "size": [
+        10,
+        1.2,
+        10
+      ],
+      "material": "Bunker_Floor",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "theatreW",
+      "type": "ramp",
+      "center": [
+        -5.75,
+        0.6,
+        -1.0
+      ],
+      "size": [
+        3.5,
+        1.2,
+        4
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+x"
+    },
+    {
+      "id": "theatreE",
+      "type": "ramp",
+      "center": [
+        7.75,
+        0.6,
+        -1.0
+      ],
+      "size": [
+        3.5,
+        1.2,
+        4
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-x"
+    },
+    {
+      "id": "vaultN_W",
+      "type": "wall",
+      "center": [
+        -16.2,
+        4.0,
+        -9.25
+      ],
+      "size": [
+        3.6,
+        8,
+        0.5
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "vaultN_E",
+      "type": "wall",
+      "center": [
+        -10.4,
+        4.0,
+        -9.25
+      ],
+      "size": [
+        0.8,
+        8,
+        0.5
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "vaultN_Lintel",
+      "type": "wall",
+      "center": [
+        -12.6,
+        5.55,
+        -9.25
+      ],
+      "size": [
+        3.6,
+        4.9,
+        0.5
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "vaultE",
+      "type": "wall",
+      "center": [
+        -10.25,
+        4.0,
+        -12.25
+      ],
+      "size": [
+        0.5,
+        8,
+        5.5
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "desk",
+      "type": "coverLow",
+      "center": [
+        -17.4,
+        0.55,
+        -3.0
+      ],
+      "size": [
+        1.2,
+        1.1,
+        6
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R05_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -18,
+        0,
+        4.5
+      ],
+      "max": [
+        -14,
+        4.5,
+        11.5
+      ]
+    },
+    {
+      "id": "R05_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        12,
+        0,
+        -11.0
+      ],
+      "max": [
+        18,
+        6,
+        -1.0
+      ]
+    }
+  ],
+  "spawnZones": [],
+  "lightAnchors": [
+    {
+      "id": "R05.A1",
+      "kind": "ceiling",
+      "pos": [
+        -8,
+        7.6,
+        6
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R05.A2",
+      "kind": "ceiling",
+      "pos": [
+        8,
+        7.6,
+        6
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R05.A3",
+      "kind": "ceiling",
+      "pos": [
+        -8,
+        7.6,
+        -7
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R05.A4",
+      "kind": "ceiling",
+      "pos": [
+        8,
+        7.6,
+        -7
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R05.A5",
+      "kind": "hanging",
+      "pos": [
+        1,
+        6,
+        -1
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R05.A6",
+      "kind": "wall",
+      "pos": [
+        17.6,
+        5.5,
+        3
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 6,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [
+    {
+      "id": "R05-E1",
+      "class": "E",
+      "center": [
+        -12.6,
+        0,
+        -9
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "vano": [
+        3.6,
+        3.1
+      ],
+      "behaviour": "openOnProximity_once"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": "Respiro: NavMesh no obligatorio"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": []
+  },
+  "release": {
+    "mode": "OnEnterVolume",
+    "volume": {
+      "min": [
+        8,
+        0,
+        -12
+      ],
+      "max": [
+        16,
+        4,
+        0
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -5,
+      0,
+      -7
+    ],
+    "max": [
+      7,
+      7,
+      5
+    ],
+    "note": "Lámpara quirúrgica sobre el quirófano"
+  },
+  "arena": null,
+  "portal": null,
+  "chase": null
+}

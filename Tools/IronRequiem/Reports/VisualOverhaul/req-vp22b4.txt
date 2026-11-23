@@ -1,0 +1,84 @@
+ok
+2026-11-21T01:33:03.3844504-04:00
+VisualOverhaulLuminosity.Report
+perfil T1: postExposure 0.60 (override)
+perfil T2: postExposure 0.60 (override)
+perfil T3: postExposure 0.80 (override)
+room | tramo | EV json | EV perfil | ambiente sky / equator / ground | niebla | luces (encendidas) | intensidad min-max | alcance min-max
+R01 | T1 | 0.60 | 0.60 | (0.75,0.62,0.48) / (0.48,0.44,0.42) / (0.35,0.26,0.20) | 0.0096 | 6 (6) | 21-27 | 10-17.5
+R02 | T1 | 0.60 | 0.60 | (0.75,0.62,0.48) / (0.48,0.44,0.42) / (0.35,0.26,0.20) | 0.0112 | 7 (7) | 15-82.5 | 10-25
+R03 | T1 | 0.60 | 0.60 | (0.62,0.70,0.84) / (0.44,0.48,0.55) / (0.31,0.29,0.26) | 0.0080 | 8 (8) | 16.5-27 | 10-16.3
+R04 | T1 | 0.60 | 0.60 | (0.62,0.70,0.84) / (0.44,0.48,0.55) / (0.31,0.29,0.26) | 0.0080 | 7 (7) | 21-36 | 10-17.5
+R05 | T1 | 0.60 | 0.60 | (0.62,0.70,0.84) / (0.44,0.48,0.55) / (0.31,0.29,0.26) | 0.0080 | 6 (6) | 18-60 | 10-17.5
+R06 | T2 | 0.60 | 0.60 | (0.66,0.53,0.40) / (0.44,0.37,0.33) / (0.31,0.22,0.15) | 0.0088 | 8 (8) | 17-61.2 | 10.4-26
+R07 | T2 | 0.60 | 0.60 | (0.48,0.62,0.66) / (0.35,0.44,0.44) / (0.22,0.26,0.24) | 0.0080 | 8 (5) | 30.6-30.6 | 10.4-20.8
+R08 | T2 | 0.60 | 0.60 | (0.53,0.44,0.35) / (0.37,0.33,0.29) / (0.24,0.20,0.15) | 0.0104 | 8 (7) | 23.8-76.5 | 10.4-31.2
+R09 | T2 | 0.60 | 0.60 | (0.48,0.37,0.37) / (0.37,0.31,0.31) / (0.26,0.20,0.20) | 0.0096 | 5 (5) | 17-30.6 | 10.4-15.6
+R10 | T2 | 0.60 | 0.60 | (0.48,0.37,0.37) / (0.37,0.31,0.31) / (0.26,0.20,0.20) | 0.0112 | 8 (8) | 27.2-51 | 10.4-18.2
+R11 | T2 | 0.60 | 0.60 | (0.44,0.66,0.66) / (0.31,0.46,0.46) / (0.20,0.29,0.26) | 0.0112 | 8 (8) | 20.4-51 | 10.4-23.4
+R12 | T2 | 0.60 | 0.60 | (0.44,0.66,0.66) / (0.31,0.46,0.46) / (0.20,0.29,0.26) | 0.0112 | 8 (8) | 23.8-51 | 10.4-23.4
+R13 | T2 | 0.60 | 0.60 | (0.44,0.66,0.66) / (0.31,0.46,0.46) / (0.20,0.29,0.26) | 0.0112 | 7 (7) | 6.8-30.6 | 5.2-18.2
+R14 | T3 | 0.80 | 0.80 | (0.86,0.59,0.43) / (0.57,0.46,0.38) / (0.54,0.27,0.14) | 0.0084 | 8 (8) | 32.4-72 | 10.8-27
+R15 | T3 | 0.80 | 0.80 | (0.81,0.89,1.00) / (0.59,0.65,0.73) / (0.35,0.35,0.35) | 0.0063 | 8 (8) | 32.4-57.6 | 10.8-27
+R16 | T3 | 0.80 | 0.80 | (0.49,0.76,0.92) / (0.35,0.51,0.62) / (0.32,0.27,0.22) | 0.0091 | 8 (8) | 32.4-108 | 10.8-35.1
+R17 | T3 | 0.80 | 0.80 | (0.41,0.54,0.65) / (0.30,0.38,0.46) / (0.22,0.24,0.27) | 0.0070 | 8 (8) | 14.4-54 | 10.8-18.9
+R18 | T3 | 0.80 | 0.80 | (0.70,0.76,0.86) / (0.49,0.51,0.59) / (0.30,0.27,0.27) | 0.0049 | 7 (5) | 72-171 | 29.7-48.6
+
+--- validador de iluminacion (Tools/IronRequiem/Reports/Map01/F2/lighting_validate.txt) ---
+Map01 Lighting: Validate all
+R01: luces 6, encendidas 6, sombra 0, probes 1, máx. candidatas por objeto 6, objetos > 4: 15 (duros 9)
+R02: luces 7, encendidas 7, sombra 0, probes 1, máx. candidatas por objeto 6, objetos > 4: 34 (duros 14)
+R03: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 6, objetos > 4: 10 (duros 1)
+R04: luces 7, encendidas 7, sombra 0, probes 1, máx. candidatas por objeto 7, objetos > 4: 6 (duros 4)
+R05: luces 6, encendidas 6, sombra 0, probes 1, máx. candidatas por objeto 6, objetos > 4: 21 (duros 12)
+R06: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 7, objetos > 4: 22 (duros 12)
+R07: luces 10, encendidas 7, sombra 0, probes 1, máx. candidatas por objeto 4, objetos > 4: 0 (duros 0)
+R08: luces 8, encendidas 7, sombra 1, probes 1, máx. candidatas por objeto 5, objetos > 4: 19 (duros 10)
+R09: luces 5, encendidas 5, sombra 0, probes 1, máx. candidatas por objeto 5, objetos > 4: 6 (duros 0)
+R10: luces 8, encendidas 8, sombra 0, probes 2, máx. candidatas por objeto 3, objetos > 4: 0 (duros 0)
+R11: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 7, objetos > 4: 20 (duros 11)
+R12: luces 8, encendidas 8, sombra 0, probes 2, máx. candidatas por objeto 6, objetos > 4: 12 (duros 0)
+R13: luces 7, encendidas 7, sombra 0, probes 1, máx. candidatas por objeto 4, objetos > 4: 0 (duros 0)
+R14: luces 8, encendidas 8, sombra 1, probes 1, máx. candidatas por objeto 7, objetos > 4: 56 (duros 39)
+R15: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 7, objetos > 4: 36 (duros 21)
+R16: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 7, objetos > 4: 18 (duros 8)
+R17: luces 8, encendidas 8, sombra 0, probes 1, máx. candidatas por objeto 6, objetos > 4: 21 (duros 3)
+R18: luces 9, encendidas 7, sombra 2, probes 2, máx. candidatas por objeto 6, objetos > 4: 81 (duros 50)
+session 1 revisada
+session 2 revisada
+session 3 revisada
+session 4 revisada
+
+ERRORES: 13
+  ERROR R01: 9 objetos con más de 4 luces efectivas: Floor_0_1_0_2 (5 efectivas, 5 candidatas); Floor_0_2_0_2 (5 efectivas, 5 candidatas); Ceiling_0_1_0_1 (5 efectivas, 5 candidatas); Ceiling_0_1_0_2 (5 efectivas, 5 candidatas); Ceiling_0_1_0_3 (5 efectivas, 6 candidatas); Ceiling_0_2_0_1 (5 efectivas, 5 candidatas); Ceiling_0_2_0_2 (5 efectivas, 6 candidatas); Ceiling_0_2_0_3 (5 efectivas, 6 candidatas)
+  ERROR R02: 14 objetos con más de 4 luces efectivas: Floor_0_1_0_3 (5 efectivas, 5 candidatas); Floor_0_2_0_3 (5 efectivas, 5 candidatas); Ceiling_0_1_0_2 (5 efectivas, 5 candidatas); Ceiling_0_1_0_3 (5 efectivas, 5 candidatas); Ceiling_0_1_0_4 (5 efectivas, 5 candidatas); Ceiling_0_2_0_2 (5 efectivas, 5 candidatas); Ceiling_0_2_0_3 (5 efectivas, 5 candidatas); Ceiling_0_2_0_4 (5 efectivas, 5 candidatas)
+  ERROR R03: 1 objetos con más de 4 luces efectivas: Ceiling_0_2_0_4 (5 efectivas, 5 candidatas)
+  ERROR R04: 4 objetos con más de 4 luces efectivas: Floor_0_1_0_2 (5 efectivas, 6 candidatas); Ceiling_0_1_0_2 (5 efectivas, 6 candidatas); Ceiling_0_2_0_2 (6 efectivas, 7 candidatas); island (5 efectivas, 5 candidatas)
+  ERROR R05: 12 objetos con más de 4 luces efectivas: Floor_0_1_0_1 (5 efectivas, 5 candidatas); Floor_0_2_0_1 (5 efectivas, 5 candidatas); Ceiling_0_1_0_0 (5 efectivas, 5 candidatas); Ceiling_0_1_0_1 (5 efectivas, 5 candidatas); Ceiling_0_1_0_2 (5 efectivas, 5 candidatas); Ceiling_0_2_0_0 (5 efectivas, 5 candidatas); Ceiling_0_2_0_1 (5 efectivas, 6 candidatas); Ceiling_0_2_0_2 (5 efectivas, 6 candidatas)
+  ERROR R06: 12 objetos con más de 4 luces efectivas: Floor_0_1_0_2 (5 efectivas, 6 candidatas); Floor_0_1_0_3 (5 efectivas, 6 candidatas); Floor_0_2_0_2 (6 efectivas, 6 candidatas); Floor_0_2_0_3 (6 efectivas, 6 candidatas); Ceiling_0_1_0_2 (6 efectivas, 7 candidatas); Ceiling_0_1_0_3 (5 efectivas, 7 candidatas); Ceiling_0_2_0_2 (5 efectivas, 6 candidatas); Ceiling_0_2_0_3 (5 efectivas, 6 candidatas)
+  ERROR R08: 10 objetos con más de 4 luces efectivas: Floor_0_2_0_2 (5 efectivas, 5 candidatas); Ceiling_0_1_0_2 (5 efectivas, 5 candidatas); Ceiling_0_2_0_1 (5 efectivas, 5 candidatas); Ceiling_0_2_0_2 (5 efectivas, 5 candidatas); Ceiling_0_2_0_3 (5 efectivas, 5 candidatas); Ceiling_0_3_0_2 (5 efectivas, 5 candidatas); centralBlock_0_0_0 (5 efectivas, 5 candidatas); centralBlock_0_0_1 (5 efectivas, 5 candidatas)
+  ERROR R11: 11 objetos con más de 4 luces efectivas: Floor_0_2_0_2 (7 efectivas, 7 candidatas); Floor_0_2_0_3 (7 efectivas, 7 candidatas); Ceiling_0_1_0_2 (5 efectivas, 5 candidatas); Ceiling_0_1_0_3 (5 efectivas, 5 candidatas); Ceiling_0_2_0_2 (5 efectivas, 5 candidatas); Ceiling_0_2_0_3 (5 efectivas, 5 candidatas); Ceiling_0_3_0_3 (5 efectivas, 5 candidatas); T1 (5 efectivas, 7 candidatas)
+  ERROR R14: 39 objetos con más de 4 luces efectivas: Floor_0_1_0_5 (5 efectivas, 6 candidatas); Floor_0_2_0_4 (7 efectivas, 7 candidatas); Floor_0_2_0_5 (6 efectivas, 7 candidatas); Floor_0_2_0_6 (5 efectivas, 5 candidatas); Floor_0_3_0_4 (7 efectivas, 7 candidatas); Floor_0_3_0_5 (6 efectivas, 7 candidatas); Floor_0_3_0_6 (5 efectivas, 5 candidatas); Floor_0_4_0_5 (5 efectivas, 6 candidatas)
+  ERROR R15: 21 objetos con más de 4 luces efectivas: Floor_0_2_0_2 (6 efectivas, 7 candidatas); Floor_0_3_0_1 (5 efectivas, 7 candidatas); Floor_0_3_0_2 (7 efectivas, 7 candidatas); Floor_0_3_0_3 (5 efectivas, 7 candidatas); Floor_0_4_0_2 (5 efectivas, 7 candidatas); Ceiling_0_1_0_1 (5 efectivas, 6 candidatas); Ceiling_0_1_0_2 (6 efectivas, 6 candidatas); Ceiling_0_1_0_3 (5 efectivas, 6 candidatas)
+  ERROR R16: 8 objetos con más de 4 luces efectivas: Wall_N_1_0_0_0 (5 efectivas, 5 candidatas); Wall_N_1_0_1_0 (5 efectivas, 5 candidatas); Ceiling_0_2_0_2 (5 efectivas, 6 candidatas); Ceiling_0_2_0_3 (6 efectivas, 6 candidatas); Ceiling_0_2_0_4 (5 efectivas, 5 candidatas); Ceiling_0_3_0_2 (5 efectivas, 6 candidatas); Ceiling_0_3_0_3 (6 efectivas, 6 candidatas); core (7 efectivas, 7 candidatas)
+  ERROR R17: 3 objetos con más de 4 luces efectivas: Floor_0_2_0_1 (5 efectivas, 6 candidatas); Ceiling_0_1_0_2 (6 efectivas, 6 candidatas); Ceiling_0_2_0_2 (6 efectivas, 6 candidatas)
+  ERROR R18: 50 objetos con más de 4 luces efectivas: Floor_0_2_0_4 (5 efectivas, 5 candidatas); Floor_0_2_0_5 (5 efectivas, 5 candidatas); Floor_0_2_0_6 (5 efectivas, 5 candidatas); Floor_0_2_0_7 (5 efectivas, 5 candidatas); Floor_0_3_0_4 (5 efectivas, 5 candidatas); Floor_0_3_0_5 (5 efectivas, 5 candidatas); Floor_0_3_0_6 (5 efectivas, 5 candidatas); Floor_0_3_0_7 (5 efectivas, 5 candidatas)
+AVISOS: 15
+  aviso R01: 6 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R02: 20 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R03: 9 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R04: 2 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R05: 9 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R06: 10 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R08: 9 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R09: 6 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R11: 9 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R12: 12 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R14: 17 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R15: 15 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R16: 10 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R17: 18 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+  aviso R18: 31 objetos con 5+ luces candidatas pero ≤ 4 efectivas (aportan en el borde del alcance)
+
+
+seconds=52.5

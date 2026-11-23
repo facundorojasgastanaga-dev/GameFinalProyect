@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="66.099368">
+  <test-suite type="TestSuite" id="1346" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="281" result="Failed" site="Child" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="66.099368" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1340" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="281" result="Failed" site="Child" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="66.038930" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18036" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1341" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="281" result="Failed" site="Child" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="66.027523" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="281" result="Failed" site="Child" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="66.015300" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1145" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="65.985863" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1148" name="C_HordeProfilerRoom03" fullname="IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03" methodname="C_HordeProfilerRoom03" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="160304537" result="Failed" label="Error" start-time="2026-11-20 13:30:52Z" end-time="2026-11-20 13:31:58Z" duration="65.852457" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.IO.IOException : Win32 IO returned 1224. Path: C:\Users\gehbd\ProyectoGameFinal\Tools\IronRequiem\Reports\MapFxAudit\seq-room03-round2-live-2.png]]></message>
+                <stack-trace><![CDATA[  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  at System.IO.File.InternalWriteAllBytes (System.String path, System.Byte[] bytes) [0x00000] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at System.IO.File.WriteAllBytes (System.String path, System.Byte[] bytes) [0x00039] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at IronRequiem.Tests.MapFxAudit.Shot (System.String name, System.Boolean keep) [0x00079] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MapFxAudit.cs:339 
+  at IronRequiem.Tests.MapFxAudit+<Sample>d__20.MoveNext () [0x003b6] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\MapFxAudit.cs:298 
+  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44 ]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 7466.0 ms · door+preload 0 / activate 7466 / unload 0 / settle 482 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 87.4 ms · door+preload 44 / activate 37 / unload 87 / settle 27 · peak at frame 99/136 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 175.8 ms · door+preload 98 / activate 130 / unload 176 / settle 24 · peak at frame 58/163 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 77.8 ms · door+preload 36 / activate 52 / unload 78 / settle 29 · peak at frame 94/281 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 70.1 ms · door+preload 20 / activate 33 / unload 70 / settle 18 · peak at frame 133/529 load 1.00
+[CampaignTests] Failed C_HordeProfilerRoom03
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

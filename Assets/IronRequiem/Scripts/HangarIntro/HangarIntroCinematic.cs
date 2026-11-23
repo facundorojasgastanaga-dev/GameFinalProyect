@@ -118,6 +118,9 @@ namespace IronRequiem
             state = State.Waiting;
         }
 
+        /// Cinematic time at which the visor starts its power-up stutter.
+        public float WakeAt => .8f;
+
         bool SessionPlaying => !flow || !flow.Menu || flow.Menu.IsPlaying;
 
         void Update()
@@ -169,7 +172,8 @@ namespace IronRequiem
                 fade.alpha = t < fadeInSeconds ? 1 - Mathf.SmoothStep(0, 1, t / fadeInSeconds) : Mathf.SmoothStep(0, 1, Mathf.InverseLerp(duration - fadeOutSeconds, duration, t));
             SetLetterbox(Mathf.SmoothStep(0, 1, Mathf.Clamp01(t / .8f)) * (1 - Mathf.SmoothStep(0, 1, Mathf.InverseLerp(duration - 1.4f, duration - .5f, t))));
             var T = pose ? pose.Times : default;
-            if (!woke && t >= .8f) { woke = true; if (robotPower) robotPower.Wake(); }   // v3: a longer dark beat before the visor stutters on
+            // the visor stutters on first (after a short dark beat), and only then does the robot start to move
+            if (!woke && t >= WakeAt) { woke = true; if (robotPower) robotPower.Wake(); }
             // armour lines: dim while booting, then sweep to full once standing
             if (robotPower)
             {

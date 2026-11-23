@@ -17,11 +17,11 @@ namespace IronRequiem.Tests
             string[] names={"Dash","CollectWeapon","ThrowWeapon","Overdrive"};
             foreach(string name in names)
             {
-                var action=map.FindAction(name,true);Assert.That(action.type,Is.EqualTo(InputActionType.Button));Assert.That(action.bindings.Count,Is.EqualTo(1));
-                string path=action.bindings[0].path;
-                Assert.That(map.bindings.Count(b=>b.path==path),Is.EqualTo(1),name+" must not conflict with an existing action");
+                // v8 (controls Ágil): bindings are audited by ControlsSchemeTests; here the actions only have to exist as buttons
+                var action=map.FindAction(name,true);Assert.That(action.type,Is.EqualTo(InputActionType.Button));
             }
-            Assert.That(map.FindAction("NextWeapon").bindings.Any(b=>b.path=="<Keyboard>/e"),Is.True);
+            Assert.That(map.FindAction("NextWeapon"),Is.Null,"NextWeapon was split into WeaponNext/WeaponPrevious");
+            Assert.That(map.FindAction("Overdrive").bindings.Count,Is.Zero,"Overdrive is automatic and stays unbound");
         }
         [Test] public void PlayerHasOnlyOneMovementAuthorityAndCannonConfigurationIsPersistent()
         {

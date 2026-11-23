@@ -68,6 +68,11 @@ namespace IronRequiem
         float CurRadius=>Mathf.Lerp(radius,heavyRadius,Power);
         AdvancedPlayerMovement movement;
         Unity.FPS.Gameplay.PlayerInputHandler fpsInput;Unity.FPS.Gameplay.PlayerWeaponsManager weapons;
+        // Arms-fix (19/11/2026): an execution owns both hands (T-07 / SawBot wrench + punch, Big Bot sequence) until its
+        // presentation ends. No punch, charge or armed bash starts then, and one already running is cancelled, so the
+        // execution keeps exactly its two blows and no bash appears mid-swing after the kill.
+        StolenWeaponCarrier carrier;
+        bool HandsBusy=>carrier&&carrier.MeleeBusy;
         // F uses the left hand while unarmed and the mounted right forearm while armed. Unarmed M1 is a right quick strike.
         // ArmedStrike selects the existing mechanical bash presentation without changing inventory or weapon heat.
         public bool LeftStrike {get;private set;}
@@ -81,7 +86,7 @@ namespace IronRequiem
         // Fist weapon: M1 pressed. Starts the wind-up and holds the chambered pose while charging.
         public bool BeginCharge()
         {
-            if(IsAttacking||!input.CanAct)return false;
+            if(IsAttacking||!input.CanAct||HandsBusy)return false;
             StartAttack(true);IsCharging=true;chargeElapsed=0;fullAnnounced=false;ChargeStarted?.Invoke();return true;
         }
         // Fist weapon: M1 released. Tap = quick punch, hold = heavy punch scaled by charge.
@@ -116,12 +121,13 @@ namespace IronRequiem
         static float EaseIn(float t)=>t*t*t;
         static float EaseOut(float t)=>1-(1-t)*(1-t);
         static float EaseInOut(float t)=>t*t*(3-2*t);
-        void Awake(){input=GetComponent<MechanicInput>();health=GetComponent<Health>();movement=GetComponent<AdvancedPlayerMovement>();fpsInput=GetComponent<Unity.FPS.Gameplay.PlayerInputHandler>();weapons=GetComponent<Unity.FPS.Gameplay.PlayerWeaponsManager>();aimCamera=GetComponent<Unity.FPS.Gameplay.PlayerCharacterController>().PlayerCamera;}
+        void Awake(){input=GetComponent<MechanicInput>();health=GetComponent<Health>();movement=GetComponent<AdvancedPlayerMovement>();fpsInput=GetComponent<Unity.FPS.Gameplay.PlayerInputHandler>();weapons=GetComponent<Unity.FPS.Gameplay.PlayerWeaponsManager>();aimCamera=GetComponent<Unity.FPS.Gameplay.PlayerCharacterController>().PlayerCamera;carrier=GetComponent<StolenWeaponCarrier>();}
         void OnEnable(){if(health)health.OnDie+=Cancel;}
         void OnDisable(){if(health)health.OnDie-=Cancel;Cancel();}
         void Update()
         {
             if(!input.CanAct){if(IsCharging)CancelCharge();else Cancel();return;}
+            if(HandsBusy){if(IsCharging)CancelCharge();else if(IsAttacking)Cancel();return;} // arms-fix: execution owns the hands
             // Separate explicit bindings: E collects, F punches. Simultaneous input favours pickup.
             // v7: F tap = left quick strike, F held = left charge (released on button up). Unarmed, M1 throws a right quick strike.
             if(!IsAttacking&&!input.InteractPressed)

@@ -1,0 +1,146 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R18",
+  "kind": "rounds",
+  "archetype": "E9",
+  "title": "R18 · BÓVEDA · EL CUSTODIO (PROVISIONAL)",
+  "arenaTitle": "BÓVEDA",
+  "seed": 1818,
+  "slotZones": [
+    "AW",
+    "AE",
+    "ANW",
+    "ANE",
+    "GW",
+    "GE",
+    "GN",
+    "GS",
+    "BG1",
+    "BG2",
+    "BG3",
+    "BG4"
+  ],
+  "waves": [
+    {
+      "name": "Custodio · fase 1",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1,
+          "fixed": {
+            "zone": "C0"
+          }
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Custodio · fase 2",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Custodio · fase 3",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -9,
+        0,
+        -44
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        9,
+        0,
+        -44
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -9,
+        0,
+        -34
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        9,
+        0,
+        -34
+      ]
+    },
+    {
+      "id": "H5",
+      "pos": [
+        -32,
+        6,
+        11.5
+      ]
+    },
+    {
+      "id": "H6",
+      "pos": [
+        32,
+        6,
+        11.5
+      ]
+    },
+    {
+      "id": "H7",
+      "pos": [
+        0,
+        6,
+        43.5
+      ]
+    },
+    {
+      "id": "H8",
+      "pos": [
+        -24,
+        6,
+        -20
+      ]
+    }
+  ],
+  "notes": "B5, concepto A en F2: stand-in por rondas con BigBot_Map01 (sin cañones recogibles). F4: Map01BossEncounter."
+}

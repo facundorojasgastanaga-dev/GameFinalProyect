@@ -1,0 +1,214 @@
+{
+  "room": "R12",
+  "zone": "Agua",
+  "tramo": 2,
+  "exposureEV": 0.4,
+  "environment": {
+    "sky": [
+      0.44,
+      0.66,
+      0.66
+    ],
+    "equator": [
+      0.308,
+      0.462,
+      0.462
+    ],
+    "ground": [
+      0.198,
+      0.286,
+      0.264
+    ],
+    "ambientIntensity": 1,
+    "reflectionIntensity": 1.1,
+    "fogColor": [
+      0.08,
+      0.17,
+      0.16
+    ],
+    "fogDensity": 0.0112
+  },
+  "lights": [
+    {
+      "anchor": "R12.A1",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.6,
+        0.9,
+        0.9
+      ],
+      "intensity": 54,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R12.A2",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.6,
+        0.9,
+        0.9
+      ],
+      "intensity": 54,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R12.A3",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.6,
+        0.9,
+        0.9
+      ],
+      "intensity": 54,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R12.A4",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.6,
+        0.9,
+        0.9
+      ],
+      "intensity": 54,
+      "range": 18,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R12.A5",
+      "lum": "LUM-17",
+      "kind": "P",
+      "color": [
+        1,
+        0.55,
+        0.15
+      ],
+      "intensity": 45,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "foso",
+      "role": "hazard",
+      "expectPos": [
+        -8,
+        -6,
+        0
+      ]
+    },
+    {
+      "anchor": "R12.A6",
+      "lum": "LUM-17",
+      "kind": "P",
+      "color": [
+        1,
+        0.55,
+        0.15
+      ],
+      "intensity": 45,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "foso",
+      "role": "hazard",
+      "expectPos": [
+        8,
+        -6,
+        0
+      ]
+    },
+    {
+      "anchor": "R12.A7",
+      "lum": "LUM-04",
+      "kind": "P",
+      "color": [
+        1,
+        0.95,
+        0.85
+      ],
+      "intensity": 25.2,
+      "range": 10,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "cold",
+      "group": "ruta",
+      "role": "route"
+    },
+    {
+      "anchor": "R12.A8",
+      "lum": "LUM-15",
+      "kind": "S",
+      "color": [
+        1,
+        0.92,
+        0.8
+      ],
+      "intensity": 32.4,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "salida",
+      "role": "exit",
+      "spot": 80
+    }
+  ],
+  "probes": [
+    {
+      "center": [
+        0,
+        6,
+        -14
+      ],
+      "size": [
+        46,
+        14,
+        30
+      ]
+    },
+    {
+      "center": [
+        0,
+        6,
+        14
+      ],
+      "size": [
+        46,
+        14,
+        30
+      ]
+    }
+  ]
+}

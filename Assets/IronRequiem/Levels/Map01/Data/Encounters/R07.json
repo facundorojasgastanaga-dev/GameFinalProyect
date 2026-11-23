@@ -1,0 +1,242 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R07",
+  "kind": "rounds",
+  "archetype": "E8",
+  "title": "R07 · COMUNICACIONES · ACCESO RESTRINGIDO",
+  "arenaTitle": "COMUNICACIONES",
+  "seed": 707,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "Alarma",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Drones",
+      "groups": [
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Escalada",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ],
+      "variations": [
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Sierras",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "SAW",
+              "count": 2
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Horda",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 3
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "name": "Apagón",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 2
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "alarm": {
+    "lightAnchors": [
+      "R07.A6",
+      "R07.A7"
+    ],
+    "beacons": [
+      [
+        -17.6,
+        6.2,
+        2.5
+      ],
+      [
+        17.6,
+        6.2,
+        2.5
+      ]
+    ],
+    "screens": [
+      {
+        "pos": [
+          -17.8,
+          3.2,
+          -4
+        ],
+        "yaw": -90,
+        "text": "COMUNICACIONES"
+      },
+      {
+        "pos": [
+          17.8,
+          3.2,
+          -4
+        ],
+        "yaw": 90,
+        "text": "COMUNICACIONES"
+      }
+    ],
+    "siren": [
+      0,
+      6,
+      0
+    ],
+    "sirenClip": "Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Corridor_Siren.wav",
+    "klaxonClip": "Assets/IronRequiem/Audio/SFX/HangarIntro/IR_Corridor_Klaxon.wav",
+    "alertText": "ALERTA · INTRUSIÓN EN COMUNICACIONES",
+    "clearText": "ZONA DESPEJADA · ESCLUSA ABIERTA"
+  },
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        0,
+        1.2,
+        6
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        -12,
+        0,
+        -2
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        12,
+        0,
+        -2
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        -22,
+        0,
+        0
+      ],
+      "note": "ala W, recompensa tras Completed"
+    },
+    {
+      "id": "H5",
+      "pos": [
+        22,
+        0,
+        0
+      ],
+      "note": "ala E, recompensa tras Completed"
+    }
+  ],
+  "notes": "B3. 5 rondas: las 4 y 5 usan secondRoom = arena y los mismos slots. Persianas de ala y pórtico: ArenaShutter de R4."
+}

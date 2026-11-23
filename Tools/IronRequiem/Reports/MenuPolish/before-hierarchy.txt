@@ -1,0 +1,477 @@
+Main Camera [Transform,Camera,AudioListener,UniversalAdditionalCameraData,MenuCameraRig]
+Canvas [RectTransform,Canvas,CanvasScaler,GraphicRaycaster,RequiemMenuView,MainMenuPanelPresentation] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(495.00, 266.50) size=(1962.53, 1056.60) scale=(0.50, 0.50, 0.50)
+  BackgroundImage [off] [RectTransform,CanvasRenderer,RawImage] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+    VignetteImage [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+  TitleText [off] [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(935.65, 175.00) scale=(1.00, 1.00, 1.00) text= font=Roboto-Black SDF size=72
+  ControlsButton [off] [RectTransform,CanvasRenderer,Image,Button,ToggleGameObjectButton,HangarButtonFx] anchors=(0.50, 0.00)/(0.50, 0.00) pos=(0.00, 105.00) size=(380.00, 30.00) scale=(1.00, 1.00, 1.00)
+    IndustrialButtonFace [RectTransform,CanvasRenderer,IndustrialPanelGraphic] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+    HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+    HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+    Text (TMP) [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=Controls font=Roboto-Black SDF size=25
+  ControlsImage [off] [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 27.50) size=(-100.00, -155.00) scale=(1.00, 1.00, 1.00)
+    ContentImage [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+    CloseButton [RectTransform,CanvasRenderer,Image,Button,ToggleGameObjectButton] anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-15.00, -15.00) size=(20.00, 20.00) scale=(1.00, 1.00, 1.00)
+      Image [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+  IndustrialShell [RectTransform,CanvasRenderer,Image,MenuShellMotion] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+    HG_LeftShade [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 1.00) pos=(0.00, 0.00) size=(1250.00, 0.00) scale=(1.00, 1.00, 1.00)
+    HullSeam0 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-1100.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam1 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-790.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam2 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-480.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam3 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-170.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam4 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(140.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam5 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(450.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam6 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(760.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam7 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(1070.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    HullSeam8 [off] [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(1380.00, 0.00) size=(3.00, 1800.00) scale=(1.00, 1.00, 1.00)
+    ConsoleFrame [RectTransform,CanvasRenderer,IndustrialPanelGraphic,CanvasGroup] anchors=(0.00, 0.50)/(0.00, 0.50) pos=(70.00, -40.00) size=(600.00, 760.00) scale=(1.00, 1.00, 1.00)
+      SectorLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 340.00) size=(520.00, 28.00) scale=(1.00, 1.00, 1.00) text=// UNIDAD C-04  ·  PROTOCOLO REQUIEM font=LiberationSans SDF size=15
+      Title [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 222.00) size=(520.00, 200.00) scale=(1.00, 1.00, 1.00) text=IRON|REQUIEM<color=#FF8A1E>/</color> font=Roboto-Black SDF size=92
+      Subtitle [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 104.00) size=(520.00, 28.00) scale=(1.00, 1.00, 1.00) text=HIERRO. RUIDO. SUPERVIVENCIA. font=Roboto-Black SDF size=17
+      Footer [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -352.00) size=(520.00, 24.00) scale=(1.00, 1.00, 1.00) text=IRON REQUIEM  ·  INTERFAZ V2 font=LiberationSans SDF size=13
+      Home [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -120.00) size=(520.00, 380.00) scale=(1.00, 1.00, 1.00)
+        StartButton [RectTransform,CanvasRenderer,Image,Button,LoadSceneButton,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 135.00) size=(520.00, 64.00) scale=(1.00, 1.00, 1.00)
+          IndustrialButtonFace [RectTransform,CanvasRenderer,IndustrialPanelGraphic] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Text (TMP) [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=JUGAR font=Roboto-Black SDF size=25
+        Options [RectTransform,Button,CanvasRenderer,IndustrialPanelGraphic,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 55.00) size=(520.00, 64.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=OPCIONES font=Roboto-Black SDF size=25
+        Credits [RectTransform,Button,CanvasRenderer,IndustrialPanelGraphic,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -25.00) size=(520.00, 64.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=CRÉDITOS font=Roboto-Black SDF size=25
+        Quit [RectTransform,Button,CanvasRenderer,IndustrialPanelGraphic,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -105.00) size=(520.00, 64.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=SALIR font=Roboto-Black SDF size=25
+      CreditsPanel [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -110.00) size=(940.00, 450.00) scale=(0.60, 0.60, 0.60)
+        CreditsTitle [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 100.00) size=(850.00, 50.00) scale=(1.00, 1.00, 1.00) text=CRÉDITOS font=Roboto-Black SDF size=25
+        CreditsText [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(800.00, 160.00) scale=(1.00, 1.00, 1.00) text=Créditos pendientes de completar. font=LiberationSans SDF size=24
+        CreditsBack [RectTransform,Button,CanvasRenderer,IndustrialPanelGraphic,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -175.00) size=(650.00, 68.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=VOLVER font=Roboto-Black SDF size=25
+      HG_Divider [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 80.00) size=(520.00, 2.00) scale=(1.00, 1.00, 1.00)
+      HG_DividerAccent [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-228.00, 80.00) size=(64.00, 4.00) scale=(1.00, 1.00, 1.00)
+    HG_StatusTag [RectTransform,HangarStatusTag] anchors=(1.00, 0.00)/(1.00, 0.00) pos=(-60.00, 60.00) size=(360.00, 100.00) scale=(1.00, 1.00, 1.00)
+      Plate [RectTransform,CanvasRenderer,IndustrialPanelGraphic] anchors=(1.00, 0.00)/(1.00, 0.00) pos=(0.00, 0.00) size=(250.00, 60.00) scale=(1.00, 1.00, 1.00)
+        Icon [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.50)/(0.00, 0.50) pos=(28.00, 0.00) size=(14.00, 14.00) scale=(1.00, 1.00, 1.00)
+        State [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.50)/(0.00, 0.50) pos=(50.00, 0.00) size=(200.00, 50.00) scale=(1.00, 1.00, 1.00) text=EN ESPERA font=LiberationSans SDF size=24
+      Detail [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(1.00, 0.00)/(1.00, 0.00) pos=(0.00, 66.00) size=(360.00, 24.00) scale=(1.00, 1.00, 1.00) text=CÁPSULA C-04 · SOPORTE VITAL ESTABLE font=LiberationSans SDF size=13
+    HG_KillCounter [RectTransform,CanvasRenderer,TextMeshProUGUI,CanvasGroup] anchors=(1.00, 1.00)/(1.00, 1.00) pos=(-60.00, -48.00) size=(560.00, 40.00) scale=(1.00, 1.00, 1.00) text= font=LiberationSans SDF size=20
+    HG_Reticle [RectTransform,CanvasGroup] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(56.00, 56.00) scale=(1.00, 1.00, 1.00)
+      T [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 22.00) size=(3.00, 14.00) scale=(1.00, 1.00, 1.00)
+      B [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -22.00) size=(3.00, 14.00) scale=(1.00, 1.00, 1.00)
+      L [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-22.00, 0.00) size=(14.00, 3.00) scale=(1.00, 1.00, 1.00)
+      R [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(22.00, 0.00) size=(14.00, 3.00) scale=(1.00, 1.00, 1.00)
+      Dot [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(4.00, 4.00) scale=(1.00, 1.00, 1.00)
+      Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -44.00) size=(220.00, 22.00) scale=(1.00, 1.00, 1.00) text=HOSTIL font=LiberationSans SDF size=13
+    OptionsPanel [off] [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+      OptionsBackdrop [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(240.00, 240.00) scale=(1.00, 1.00, 1.00)
+      OptionsConsole [RectTransform,ScreenFitPanel] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1060.00, 520.00) scale=(1.58, 1.58, 1.58)
+        IndustrialConsole [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          HazardStrip [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 236.00) size=(980.00, 14.00) scale=(1.00, 1.00, 1.00)
+          ControlsPlate [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-240.00, -18.00) size=(500.00, 300.00) scale=(1.00, 1.00, 1.00)
+            PlateLabel [off] [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 130.00) size=(460.00, 18.00) scale=(1.00, 1.00, 1.00) text=CANAL A · AUDIO / SERVO / VIDEO font=LiberationSans SDF size=12
+          LampPWR [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-470.00, 170.00) size=(22.00, 22.00) scale=(1.00, 1.00, 1.00)
+            LampLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -20.00) size=(40.00, 16.00) scale=(1.00, 1.00, 1.00) text=PWR font=LiberationSans SDF size=11
+          LampSRV [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-410.00, 170.00) size=(22.00, 22.00) scale=(1.00, 1.00, 1.00)
+            LampLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -20.00) size=(40.00, 16.00) scale=(1.00, 1.00, 1.00) text=SRV font=LiberationSans SDF size=11
+          LampNET [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-350.00, 170.00) size=(22.00, 22.00) scale=(1.00, 1.00, 1.00)
+            LampLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -20.00) size=(40.00, 16.00) scale=(1.00, 1.00, 1.00) text=NET font=LiberationSans SDF size=11
+          CctvMonitor [RectTransform,CctvMonitor] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(255.00, 10.00) size=(440.00, 300.00) scale=(1.00, 1.00, 1.00)
+            Screen [RectTransform,CanvasRenderer,RawImage] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(372.00, 232.00) scale=(1.00, 1.00, 1.00)
+            Bezel [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(440.00, 300.00) scale=(1.00, 1.00, 1.00)
+            CamLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-55.00, 98.00) size=(240.00, 20.00) scale=(1.00, 1.00, 1.00) text=CAM 04 · HANGAR C-04 font=LiberationSans SDF size=13
+            Clock [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(118.00, 98.00) size=(110.00, 20.00) scale=(1.00, 1.00, 1.00) text=00:00:00 font=LiberationSans SDF size=13
+            Rec [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(140.00, -98.00) size=(80.00, 18.00) scale=(1.00, 1.00, 1.00) text=● REC font=LiberationSans SDF size=12
+          MonitorPlate [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(255.00, -160.00) size=(400.00, 20.00) scale=(1.00, 1.00, 1.00) text=SEGURIDAD · CIRCUITO CERRADO font=LiberationSans SDF size=13
+        OptionsHeading [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-190.00, 205.00) size=(620.00, 34.00) scale=(1.00, 1.00, 1.00) text=CONSOLA DE PLANTA · C-04 / CONFIGURACIÓN font=LiberationSans SDF size=19
+        MasterVolume [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-420.00, -18.00) size=(120.00, 300.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -132.00) size=(124.00, 26.00) scale=(1.00, 1.00, 1.00) text=VOLUMEN font=LiberationSans SDF size=14
+          Track [RectTransform,Slider] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 210.00) scale=(1.00, 1.00, 1.00)
+            Background [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(60.00, 226.00) scale=(1.00, 1.00, 1.00)
+            FillArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(8.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Fill [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+            HandleArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Handle [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(20.00, 44.00) scale=(1.00, 1.00, 1.00)
+          Value [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(96.00, 30.00) scale=(1.00, 1.00, 1.00) text= font=LiberationSans SDF size=18
+          ValueLcd [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(100.00, 34.00) scale=(1.00, 1.00, 1.00)
+        LookSensitivity [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-300.00, -18.00) size=(120.00, 300.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -132.00) size=(124.00, 26.00) scale=(1.00, 1.00, 1.00) text=SENSIBILIDAD font=LiberationSans SDF size=14
+          Track [RectTransform,Slider] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 210.00) scale=(1.00, 1.00, 1.00)
+            Background [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(60.00, 226.00) scale=(1.00, 1.00, 1.00)
+            FillArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(8.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Fill [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+            HandleArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Handle [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(20.00, 44.00) scale=(1.00, 1.00, 1.00)
+          Value [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(96.00, 30.00) scale=(1.00, 1.00, 1.00) text= font=LiberationSans SDF size=18
+          ValueLcd [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(100.00, 34.00) scale=(1.00, 1.00, 1.00)
+        Fullscreen [RectTransform,Toggle] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-60.00, -18.00) size=(130.00, 260.00) scale=(1.00, 1.00, 1.00)
+          Box [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 26.00) size=(108.00, 144.00) scale=(1.00, 1.00, 1.00)
+            Check [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          FullscreenLabel [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -95.00) size=(150.00, 50.00) scale=(1.00, 1.00, 1.00) text=PANTALLA|COMPLETA font=LiberationSans SDF size=15
+        OptionsBack [RectTransform,Button,CanvasRenderer,IndustrialPanelGraphic,HangarButtonFx] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-240.00, -204.00) size=(380.00, 72.00) scale=(1.00, 1.00, 1.00)
+          HG_Glow [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          BackLamp [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-160.00, 0.00) size=(20.00, 20.00) scale=(1.00, 1.00, 1.00)
+          HG_Accent [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.14)/(0.00, 0.86) pos=(4.00, 0.00) size=(6.00, 0.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyLamp [RectTransform,CanvasRenderer,Image] anchors=(1.00, 0.50)/(1.00, 0.50) pos=(-20.00, 0.00) size=(12.00, 12.00) scale=(1.00, 1.00, 1.00)
+          MenuOnlyMetal [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00) text=VOLVER font=Roboto-Black SDF size=30
+        ScreenShake [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(-180.00, -18.00) size=(120.00, 300.00) scale=(1.00, 1.00, 1.00)
+          Label [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -132.00) size=(124.00, 26.00) scale=(1.00, 1.00, 1.00) text=TEMBLOR font=LiberationSans SDF size=14
+          Track [RectTransform,Slider,ShakeSliderBinding] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 210.00) scale=(1.00, 1.00, 1.00)
+            Background [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(60.00, 226.00) scale=(1.00, 1.00, 1.00)
+            FillArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(8.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Fill [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+            HandleArea [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(64.00, 180.00) scale=(1.00, 1.00, 1.00)
+              Handle [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(0.00, 0.00) pos=(0.00, 0.00) size=(20.00, 44.00) scale=(1.00, 1.00, 1.00)
+          ValueLcd [RectTransform,CanvasRenderer,Image] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(100.00, 34.00) scale=(1.00, 1.00, 1.00)
+          Value [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 132.00) size=(96.00, 30.00) scale=(1.00, 1.00, 1.00) text= font=LiberationSans SDF size=18
+        ControlsHelp [RectTransform,CanvasRenderer,IndustrialPanelGraphic] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(255.00, -212.00) size=(440.00, 84.00) scale=(1.00, 1.00, 1.00)
+          Title [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 28.00) size=(410.00, 18.00) scale=(1.00, 1.00, 1.00) text=CONTROLES · MÓDULO DE COMBATE font=Roboto-Black SDF size=12
+          Body [RectTransform,CanvasRenderer,TextMeshProUGUI] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, -10.00) size=(410.00, 56.00) scale=(1.00, 1.00, 1.00) text=<color=#FF9933>[F]</color> GOLPE   <color=#FF9933>MANTENER [F]</color> CARGAR|<color=#FF9933>[M1]</color> GOLPE SIN ARMA   <color=#FF9933>[E]</color> INTERACTUAR|<color=#FF9933>[ESC]</color> VOLVER font=LiberationSans SDF size=14
+    HG_Fade [RectTransform,CanvasRenderer,Image] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+MenuNavigation [Transform,MenuNavigation]
+EventSystem [Transform,EventSystem,BaseInput,InputSystemUIInputModule]
+MenuMusic [Transform,AudioSource,MenuMusic]
+MenuAudioSettings [Transform,AudioManager]
+HangarCctv [Transform]
+  CctvCarronero [Transform,LODGroup,CarroneroMotion,CctvActor]
+    Presentation [Transform,Animator]
+    Navigation [Transform]
+    Detection [Transform]
+    HitSparks [Transform]
+    SawAttackOrigin [Transform]
+    HealthBar [Transform]
+      Canvas [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+        ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+        ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    SawAttackMotor [Transform]
+    Carronero_Visual [Transform,LODGroup]
+    VPD_Center [Transform]
+  CctvKey [Transform,Light]
+CctvFeed [Transform,Camera,UniversalAdditionalCameraData,CctvFeed,MenuCameraRig]
+HangarSet [Transform,HangarLaunchSequence,AudioSource]
+  HG_PostVolume [Transform,Volume]
+  Environment [Transform]
+    Floor [Transform,MeshFilter,MeshRenderer]
+    WallLeft [Transform,MeshFilter,MeshRenderer]
+    WallRight [Transform,MeshFilter,MeshRenderer]
+    ColumnL0 [Transform,MeshFilter,MeshRenderer]
+    ColumnR0 [Transform,MeshFilter,MeshRenderer]
+    Girder0 [Transform,MeshFilter,MeshRenderer]
+    ColumnL1 [Transform,MeshFilter,MeshRenderer]
+    ColumnR1 [Transform,MeshFilter,MeshRenderer]
+    Girder1 [Transform,MeshFilter,MeshRenderer]
+    ColumnL2 [Transform,MeshFilter,MeshRenderer]
+    ColumnR2 [Transform,MeshFilter,MeshRenderer]
+    Girder2 [Transform,MeshFilter,MeshRenderer]
+    ColumnL3 [Transform,MeshFilter,MeshRenderer]
+    ColumnR3 [Transform,MeshFilter,MeshRenderer]
+    Girder3 [Transform,MeshFilter,MeshRenderer]
+    ColumnL4 [Transform,MeshFilter,MeshRenderer]
+    ColumnR4 [Transform,MeshFilter,MeshRenderer]
+    Girder4 [Transform,MeshFilter,MeshRenderer]
+    ColumnL5 [Transform,MeshFilter,MeshRenderer]
+    ColumnR5 [Transform,MeshFilter,MeshRenderer]
+    Girder5 [Transform,MeshFilter,MeshRenderer]
+    CeilingSpine [Transform,MeshFilter,MeshRenderer]
+    Clutter [Transform]
+    FloorCollider [Transform,BoxCollider]
+  Bridge [Transform,ConveyorBelt]
+    Deck [Transform,MeshFilter,MeshRenderer]
+    BeamFront [Transform,MeshFilter,MeshRenderer]
+    BeamBack [Transform,MeshFilter,MeshRenderer]
+    RailTop-1.55 [Transform,MeshFilter,MeshRenderer]
+    RailMid-1.55 [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    RailTop1.55 [Transform,MeshFilter,MeshRenderer]
+    RailMid1.55 [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    Post [Transform,MeshFilter,MeshRenderer]
+    BeltBody [Transform,MeshFilter,MeshRenderer]
+    BeltSurface [Transform,MeshFilter,MeshRenderer]
+    ChevronStrip [Transform,MeshFilter,MeshRenderer]
+    RobotWash [Transform,Light]
+    RobotWash [Transform,Light]
+    RobotWash [Transform,Light]
+    BeltGuard-1.25 [Transform,MeshFilter,MeshRenderer]
+    BeltGuard1.25 [Transform,MeshFilter,MeshRenderer]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Roller [Transform,MeshFilter,MeshRenderer,MenuSpin]
+    Truss0 [Transform,MeshFilter,MeshRenderer]
+    Truss1 [Transform,MeshFilter,MeshRenderer]
+    Truss2 [Transform,MeshFilter,MeshRenderer]
+    Truss3 [Transform,MeshFilter,MeshRenderer]
+    Truss4 [Transform,MeshFilter,MeshRenderer]
+    Truss5 [Transform,MeshFilter,MeshRenderer]
+    Truss6 [Transform,MeshFilter,MeshRenderer]
+    Truss7 [Transform,MeshFilter,MeshRenderer]
+    Truss8 [Transform,MeshFilter,MeshRenderer]
+    Pillar [Transform,MeshFilter,MeshRenderer]
+    Pillar [Transform,MeshFilter,MeshRenderer]
+    Pillar [Transform,MeshFilter,MeshRenderer]
+    DeckCollider [Transform,BoxCollider]
+    BridgeLamp [Transform,MenuFlicker]
+    BridgeLamp [Transform,MenuFlicker]
+    BridgeLamp [Transform,MenuFlicker]
+    BridgeLamp [Transform,MenuFlicker]
+    Banner [Transform,MeshFilter,MeshRenderer]
+    BannerRod [Transform,MeshFilter,MeshRenderer]
+    BannerCable [Transform,MeshFilter,MeshRenderer]
+    Banner [Transform,MeshFilter,MeshRenderer]
+    BannerRod [Transform,MeshFilter,MeshRenderer]
+    BannerCable [Transform,MeshFilter,MeshRenderer]
+    BannerWash [Transform,Light]
+  City [Transform]
+    Tower0 [Transform,MeshFilter,MeshRenderer]
+    Tower1 [Transform,MeshFilter,MeshRenderer]
+    Tower2 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower3 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower4 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower5 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower6 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower7 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower8 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower9 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower10 [Transform,MeshFilter,MeshRenderer]
+    Tower11 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower12 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower13 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower14 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower15 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower16 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower17 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower18 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower19 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower20 [Transform,MeshFilter,MeshRenderer]
+    Tower21 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower22 [Transform,MeshFilter,MeshRenderer]
+    Tower23 [Transform,MeshFilter,MeshRenderer]
+    Tower24 [Transform,MeshFilter,MeshRenderer]
+    Win [Transform,MeshFilter,MeshRenderer]
+    Tower25 [Transform,MeshFilter,MeshRenderer]
+  Lights [Transform]
+    Moon [Transform,Light]
+    WarmFill [Transform,Light]
+    BridgeBounce [Transform,Light]
+    HallTube0 [Transform,MenuFlicker]
+    HallTube1 [Transform,MenuFlicker]
+    HallTube2 [Transform,MenuFlicker]
+    Beacon [Transform,MenuSpin]
+  Capsule_C04 [Transform,MenuFlicker]
+    BackShell [Transform,MeshFilter,MeshRenderer]
+    Bed [Transform,MeshFilter,MeshRenderer]
+    Rail-1 [Transform,MeshFilter,MeshRenderer]
+    RailLip-1 [Transform,MeshFilter,MeshRenderer]
+    RailBolt-1 [Transform,MeshFilter,MeshRenderer]
+    Rail1 [Transform,MeshFilter,MeshRenderer]
+    RailLip1 [Transform,MeshFilter,MeshRenderer]
+    RailBolt1 [Transform,MeshFilter,MeshRenderer]
+    HeadCap [Transform,MeshFilter,MeshRenderer]
+    HeadVisor [Transform,MeshFilter,MeshRenderer]
+    FootCap [Transform,MeshFilter,MeshRenderer]
+    Hazard [Transform,MeshFilter,MeshRenderer]
+    Strip-1 [Transform,MeshFilter,MeshRenderer]
+    Strip1 [Transform,MeshFilter,MeshRenderer]
+    StripHead [Transform,MeshFilter,MeshRenderer]
+    StripFoot [Transform,MeshFilter,MeshRenderer]
+    Led0 [Transform,MeshFilter,MeshRenderer]
+    Led1 [Transform,MeshFilter,MeshRenderer]
+    Led2 [Transform,MeshFilter,MeshRenderer]
+    Led3 [Transform,MeshFilter,MeshRenderer]
+    PlateC04 [RectTransform,MeshRenderer,TextMeshPro,MeshFilter] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.86, -0.60) size=(0.60, 0.20) scale=(1.00, 1.00, 1.00) text=C-04 font=Roboto-Black SDF size=0.9
+    Canopy [Transform,MeshFilter,MeshRenderer]
+    CanopyFrameTop [Transform,MeshFilter,MeshRenderer]
+    Hose0 [Transform,MeshFilter,MeshRenderer]
+    Hose1 [Transform,MeshFilter,MeshRenderer]
+    Hose2 [Transform,MeshFilter,MeshRenderer]
+    Spine [Transform,MeshFilter,MeshRenderer]
+    Protagonist [Transform,CapsuleRobotIdle]
+    VisorGlow [Transform,Light]
+    PodCyan [Transform,Light]
+    Indicators [Transform,MenuFlicker]
+    VentSteam [Transform,ParticleSystem,ParticleSystemRenderer]
+    CameraPushTarget [Transform]
+    CameraLookTarget [Transform]
+  PodBase [Transform,MeshFilter,MeshRenderer]
+  PodStrut [Transform,MeshFilter,MeshRenderer]
+  OverheadLamp [Transform,MenuFlicker]
+    Housing [Transform,MeshFilter,MeshRenderer]
+    Tube [Transform,MeshFilter,MeshRenderer]
+    Chain [Transform,MeshFilter,MeshRenderer]
+    KeySpot [Transform,Light]
+  PodRim [Transform,Light]
+  Fx [Transform]
+    Dust [Transform,ParticleSystem,ParticleSystemRenderer]
+    FloorSteam [Transform,ParticleSystem,ParticleSystemRenderer]
+    Explosion0 [Transform,AudioSource,MenuExplosionFx]
+    Explosion1 [Transform,AudioSource,MenuExplosionFx]
+  BridgePatrol [Transform,BridgePatrol]
+    LaneLeft [Transform]
+    LaneRight [Transform]
+    MenuWalker_T07_0 [Transform,Animator,BoxCollider,BridgeWalker]
+        Canvas [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_T07_1 [Transform,Animator,BoxCollider,BridgeWalker]
+        Canvas [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_T07_2 [Transform,Animator,BoxCollider,BridgeWalker]
+        Canvas [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_T07_3 [Transform,Animator,BoxCollider,BridgeWalker]
+        Canvas [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_Carronero_0 [Transform,LODGroup,CarroneroMotion,BoxCollider,BridgeWalker]
+        Canvas [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_Carronero_1 [Transform,LODGroup,CarroneroMotion,BoxCollider,BridgeWalker]
+        Canvas [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_Carronero_2 [Transform,LODGroup,CarroneroMotion,BoxCollider,BridgeWalker]
+        Canvas [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)
+    MenuWalker_Carronero_3 [Transform,LODGroup,CarroneroMotion,BoxCollider,BridgeWalker]
+        Canvas [off] [RectTransform] anchors=(0.50, 0.50)/(0.50, 0.50) pos=(0.00, 0.00) size=(1.00, 0.10) scale=(1.00, 1.00, 1.00)
+          ImageBackground [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(0.00, 0.00) scale=(1.00, 1.00, 1.00)
+          ImageFill [RectTransform] anchors=(0.00, 0.00)/(1.00, 1.00) pos=(0.00, 0.00) size=(-0.02, -0.02) scale=(1.00, 1.00, 1.00)

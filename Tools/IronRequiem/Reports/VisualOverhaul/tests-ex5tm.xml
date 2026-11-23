@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Passed" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 01:39:41Z" end-time="2026-11-23 01:40:50Z" duration="68.4533191">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:39:41Z" end-time="2026-11-23 01:40:50Z" duration="68.453319" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:39:41Z" end-time="2026-11-23 01:40:50Z" duration="68.073484" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:39:41Z" end-time="2026-11-23 01:40:50Z" duration="68.060128" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Passed" start-time="2026-11-23 01:39:41Z" end-time="2026-11-23 01:40:50Z" duration="68.048643" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1152" name="ExecutionsV02Tests" fullname="IronRequiem.Tests.ExecutionsV02Tests" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-23 01:39:42Z" end-time="2026-11-23 01:40:50Z" duration="68.016017" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1153" name="Baseline_FStartsMeleeWithoutExecution" fullname="IronRequiem.Tests.ExecutionsV02Tests.Baseline_FStartsMeleeWithoutExecution" methodname="Baseline_FStartsMeleeWithoutExecution" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="1779558667" result="Passed" start-time="2026-11-23 01:39:42Z" end-time="2026-11-23 01:39:53Z" duration="11.092712" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[CampaignTests] Passed Baseline_FStartsMeleeWithoutExecution
+]]></output>
+            </test-case>
+            <test-case id="1160" name="BigBot_PlayerDiesMidSequence_NoResidue" fullname="IronRequiem.Tests.ExecutionsV02Tests.BigBot_PlayerDiesMidSequence_NoResidue" methodname="BigBot_PlayerDiesMidSequence_NoResidue" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="944966430" result="Passed" start-time="2026-11-23 01:39:53Z" end-time="2026-11-23 01:40:01Z" duration="7.865746" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed BigBot_PlayerDiesMidSequence_NoResidue
+]]></output>
+            </test-case>
+            <test-case id="1158" name="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" fullname="IronRequiem.Tests.ExecutionsV02Tests.BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" methodname="BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="1202566325" result="Passed" start-time="2026-11-23 01:40:01Z" end-time="2026-11-23 01:40:08Z" duration="7.774832" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+[CampaignTests] Passed BigBot_RipAndShotWithinTwoSecondsNoForcedCameraTurn
+]]></output>
+            </test-case>
+            <test-case id="1156" name="SawBot_TwoBlowsTimingReachSawContinuityAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.SawBot_TwoBlowsTimingReachSawContinuityAndLocks" methodname="SawBot_TwoBlowsTimingReachSawContinuityAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="84741329" result="Passed" start-time="2026-11-23 01:40:08Z" end-time="2026-11-23 01:40:16Z" duration="7.071142" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.OnDetectedTarget () (at Assets/FPS/Scripts/AI/EnemyController.cs:299)
+Unity.FPS.AI.DetectionModule.OnDetect () (at Assets/FPS/Scripts/AI/DetectionModule.cs:175)
+Unity.FPS.AI.DetectionModule.HandleTargetDetectionInternal (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:160)
+Unity.FPS.AI.DetectionModule.HandleTargetDetection (Unity.FPS.Game.Actor actor, UnityEngine.Collider[] selfColliders) (at Assets/FPS/Scripts/AI/DetectionModule.cs:70)
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+[CampaignTests] Passed SawBot_TwoBlowsTimingReachSawContinuityAndLocks
+]]></output>
+            </test-case>
+            <test-case id="1161" name="T07_PauseMidExecution_ResumesWithoutResidue" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_PauseMidExecution_ResumesWithoutResidue" methodname="T07_PauseMidExecution_ResumesWithoutResidue" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="18708860" result="Passed" start-time="2026-11-23 01:40:16Z" end-time="2026-11-23 01:40:23Z" duration="7.015677" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07_PauseMidExecution_ResumesWithoutResidue
+]]></output>
+            </test-case>
+            <test-case id="1159" name="T07_PlayerDiesMidExecution_NoResidue" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_PlayerDiesMidExecution_NoResidue" methodname="T07_PlayerDiesMidExecution_NoResidue" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="438635936" result="Passed" start-time="2026-11-23 01:40:23Z" end-time="2026-11-23 01:40:29Z" duration="6.493875" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07_PlayerDiesMidExecution_NoResidue
+]]></output>
+            </test-case>
+            <test-case id="1154" name="T07_TwoBlowsTimingReachRobotReactionAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_TwoBlowsTimingReachRobotReactionAndLocks" methodname="T07_TwoBlowsTimingReachRobotReactionAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="550351345" result="Passed" start-time="2026-11-23 01:40:29Z" end-time="2026-11-23 01:40:36Z" duration="6.925400" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07_TwoBlowsTimingReachRobotReactionAndLocks
+]]></output>
+            </test-case>
+            <test-case id="1157" name="T07_WallBehindRobot_PullAndShoveStopAtTheWall" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07_WallBehindRobot_PullAndShoveStopAtTheWall" methodname="T07_WallBehindRobot_PullAndShoveStopAtTheWall" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="152276709" result="Passed" start-time="2026-11-23 01:40:36Z" end-time="2026-11-23 01:40:43Z" duration="6.570651" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07_WallBehindRobot_PullAndShoveStopAtTheWall
+]]></output>
+            </test-case>
+            <test-case id="1155" name="T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" fullname="IronRequiem.Tests.ExecutionsV02Tests.T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" methodname="T07Mech_TwoBlowsTimingReachRobotReactionAndLocks" classname="IronRequiem.Tests.ExecutionsV02Tests" runstate="Runnable" seed="946655831" result="Passed" start-time="2026-11-23 01:40:43Z" end-time="2026-11-23 01:40:50Z" duration="6.938059" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Reduced additional punctual light shadows resolution by 4 to make 12 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+
+IgnoreFailingMessages:true
+Failed to create agent because it is not close enough to the NavMesh
+[CampaignTests] Passed T07Mech_TwoBlowsTimingReachRobotReactionAndLocks
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

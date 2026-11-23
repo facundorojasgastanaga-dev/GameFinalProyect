@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.5327674">
+  <test-suite type="TestSuite" id="1346" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.532767" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1340" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.468601" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18036" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1341" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.457580" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.446950" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1145" name="MapFxAudit" fullname="IronRequiem.Tests.MapFxAudit" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.418657" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1148" name="C_HordeProfilerRoom03" fullname="IronRequiem.Tests.MapFxAudit.C_HordeProfilerRoom03" methodname="C_HordeProfilerRoom03" classname="IronRequiem.Tests.MapFxAudit" runstate="Runnable" seed="1459640207" result="Passed" start-time="2026-11-20 13:09:04Z" end-time="2026-11-20 13:10:32Z" duration="87.344159" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 4749.1 ms · door+preload 0 / activate 4749 / unload 0 / settle 456 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 85.3 ms · door+preload 41 / activate 62 / unload 85 / settle 27 · peak at frame 133/170 load 1.00
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 79.9 ms · door+preload 29 / activate 33 / unload 80 / settle 19 · peak at frame 162/269 load 1.00
+[Campaign] transition to Room02_Breach (preload) peak frame 72.0 ms · door+preload 20 / activate 27 / unload 72 / settle 16 · peak at frame 142/336 load 1.00
+[Campaign] transition to Room03_Assembly (preload) peak frame 84.3 ms · door+preload 20 / activate 51 / unload 84 / settle 20 · peak at frame 156/552 load 1.00
+[CampaignTests] Passed C_HordeProfilerRoom03
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

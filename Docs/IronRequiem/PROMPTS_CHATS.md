@@ -384,7 +384,370 @@ Skills: unity:urp-postprocessing, unity:validate-urp-render-graph-renderer-featu
 - Verificación separada en compilación, tests PlayMode y recorrido manual completo. Registrar en CHECKLIST_TRABAJO.md (nuevo ID para Map01 y otro para la IA del boss).
 ```
 
+## 10. Controles cómodos + menú de reasignación
+
+Seleccionar Opus en este chat: actúa como coordinador.
+
+```
+Lee primero Docs/IronRequiem/PROMPTS_CHATS.md (reglas comunes, subagentes y política de skills) y aplícalo.
+Lee también DESIGN_V02_UPDATE.md (controles vigentes; OVERDRIVE es automático), MECHANICS_V02.md (solo histórico), MODULAR_ARM_AND_PICKUP.md, ARMS_FIX_20261119.md (bloqueos de entrada durante ejecución y estación), CHECKLIST_TRABAJO.md y Map01/MAP01_DESIGN.md (por si algún cuarto depende de un control).
+
+# CONTROLES MÁS CÓMODOS Y MENÚ PARA REASIGNARLOS
+
+Objetivo: (A) un esquema de controles por defecto más cómodo para un FPS rápido (teclado+ratón y mando), sin conflictos, y (B) una interfaz en el juego para cambiar cada control, guardarla y restaurarla. No cambies balance, daño, tiempos de armas ni el Input System (1.19.0, entrada activa = Input System). No instales paquetes.
+
+## Lo que hay hoy (verifícalo, no lo des por cierto)
+Acciones en Assets/FPS/InputSystem_Actions.inputactions (mapa Player), leídas por PlayerInputHandler vía InputSystem.actions:
+Move WASD/flechas · Look ratón · Fire M1 · Aim M2 · Jump Espacio · Sprint Shift izq. · Crouch C · Dash Ctrl izq. · Reload R · Previous 1 · Next 2 · NextWeapon Q/rueda · Interact E · CollectWeapon E · ThrowWeapon G · Melee F · Overdrive X (sin uso: OVERDRIVE es automático) · Attack M1 y Enter. Mapa UI: Menu = P, Tab, Start, Select.
+Problemas ya vistos que debes confirmar:
+- E está en Interact y en CollectWeapon a la vez; además la estación de montaje y la ejecución del T-07 usan E.
+- En mando, buttonWest está en Attack y Reload, buttonNorth en Interact y NextWeapon, y el dpad arriba y abajo en NextWeapon.
+- Dash en Ctrl izquierdo (estira el meñique) junto a Shift (sprint) y C (agacharse).
+- Hay teclas leídas a mano con Keyboard.current/Mouse.current, que no responderán a la reasignación: WeaponMountStation.cs (mantener E/Espacio para saltar), HangarIntroCinematic.cs y Scripts/Menu (zona protegida: anótalo, no lo toques).
+- Los textos en pantalla llevan la tecla escrita a mano ("[E] ACOPLAR…", "[F] GOLPE…", ayudas del HUD), así que quedarán mal al reasignar.
+- No hay código de reasignación. RequiemSettings (Bridges/Game) ya guarda volumen, sensibilidad y pantalla completa en PlayerPrefs. InGameMenuManager (plantilla) es el menú de pausa.
+
+## Fases y paradas
+- F0 Inventario (solo lectura): todas las acciones y bindings por dispositivo; cada lectura directa de teclas (grep de Keyboard.current, Mouse.current, Gamepad.current, wasPressedThisFrame, GetKey); cada texto en pantalla que nombra una tecla (prefabs, escenas, TMP y strings en código); quién consume cada acción y en qué contexto (gameplay, estación, ejecución, cinemática, menús). Tabla de conflictos por contexto.
+- F1 Propuesta de esquema → PARADA. Entre 2 y 3 esquemas por defecto (por ejemplo "Clásico" y "Ágil") para teclado+ratón y mando:
+  - tabla de acción → tecla, con la razón de cada cambio;
+  - mapa de calor de la mano izquierda (qué dedo pulsa qué);
+  - conflictos resueltos;
+  - qué acciones se unifican o desaparecen (por ejemplo, Interact y CollectWeapon como una E contextual con prioridad clara);
+  - opciones de mantener o alternar (toggle) para sprint, agacharse y apuntar.
+  Criterios:
+  - lo frecuente bajo los dedos en reposo (WASD, Espacio, Shift, Q, E, F, botones del ratón);
+  - nada que obligue a soltar el movimiento para una acción de combate;
+  - mismas teclas para el mismo verbo en toda la partida;
+  - mando jugable de principio a fin.
+  Espero mi elección antes de tocar el .inputactions.
+- F2 Esquema elegido: cambia los bindings por defecto en el asset (con respaldo), elimina duplicados, migra las lecturas directas de tecla fuera de la zona protegida a acciones, y haz que todos los textos de ayuda muestren la tecla real con GetBindingDisplayString (un único helper reutilizable, con iconos o texto para teclado y mando).
+- F3 Diseño de la interfaz → PARADA. 2 maquetas (capturas o imágenes) del panel "CONTROLES" con el estilo de IronRequiemUiTheme y del HUD nuevo. Contenido:
+  - lista por categorías (Movimiento, Combate, Armas, Interacción, Sistema);
+  - columnas Principal, Secundaria y Mando;
+  - estado "Pulsa una tecla… (Esc cancela)";
+  - aviso de conflicto con opción de intercambiar;
+  - restablecer la acción y restablecer todo;
+  - sensibilidad del ratón y del mando, invertir Y, mantener o alternar;
+  - navegable entera con ratón, teclado y mando.
+- F4 Implementación tras aprobar la maqueta:
+  - reasignación interactiva con PerformInteractiveRebinding (excluir Esc, ratón X/Y y lo que el inventario marque; soportar las partes del compuesto WASD);
+  - guardado con SaveBindingOverridesAsJson/LoadBindingOverridesFromJson sobre el MISMO asset que usa PlayerInputHandler, cargado al arrancar antes del primer frame de juego;
+  - integrado en RequiemSettings, sin crear un segundo sistema de ajustes;
+  - el panel se abre desde la pausa (InGameMenuManager);
+  - añadir la entrada al menú principal (IntroMenu) es zona protegida: propónlo y hazlo solo si lo apruebo, con un cambio mínimo y hashes del resto iguales;
+  - durante la reasignación, el gameplay no recibe la tecla.
+- F5 Verificación y revisión independiente.
+
+## Skills por tarea
+- Acciones, bindings, reasignación y guardado: gamedev:unity-input-system, gamedev:input-systems (verifica cada API en Input System 1.19.0).
+- Esquema cómodo para FPS rápido y mando: gamedev:fps-shooter, gamedev:game-feel, iron-requiem-fps.
+- Diseño del panel y navegación (ratón, teclado y mando): gamedev:game-ui-ux, unity:ui → unity:ui-ugui.
+- Persistencia de ajustes: gamedev:save-systems.
+- Código: gamedev:unity-csharp-scripting.
+- Textos y fuentes TMP: unity:optimize-text-mesh-pro.
+- Búsqueda de textos y referencias en prefabs/escenas: unity:generate-editor-search-query.
+
+## Subagentes (model por rol)
+1. INVENTARIO (haiku, solo lectura, en paralelo): A acciones y bindings; B lecturas directas de teclas; C textos con teclas en prefabs, escenas y código.
+2. DISEÑADOR DE ESQUEMA (opus): F1. Escribe solo Docs/IronRequiem/CONTROLS_V01.md.
+3. DISEÑADOR DE UI (opus): maquetas de F3 en Docs/IronRequiem/Concepts/UI/Controls/.
+4. IMPLEMENTADOR INPUT (sonnet): .inputactions, migración de lecturas directas, helper de textos y servicio de reasignación (Assets/IronRequiem/Scripts/Input/). Archivos exclusivos.
+5. IMPLEMENTADOR UI (sonnet): panel, prefab y su script de autoría (Assets/IronRequiem/Scripts/UI/Controls/, Prefabs/UI/, Editor/Controls/). Archivos exclusivos.
+6. REVISOR (opus, independiente): juega con el esquema nuevo y busca conflictos, textos desactualizados y regresiones.
+Solo tú controlas el Editor (compilar, Play Mode, guardar).
+
+## Reglas
+- Respaldo en Tools/IronRequiem/Backups/<fecha>/ (.inputactions, scripts y prefabs tocados).
+- No guardes escenas de campaña ni de Map01 con cambios de Play.
+- Zona protegida intacta salvo lo que yo apruebe: IntroMenu, Scripts/Menu, Scripts/HangarIntro, Editor/HangarIntro, cinta y pasarela.
+- Los bloqueos de entrada de ARMS_FIX (ejecución, estación y cambio de arma) deben seguir funcionando con cualquier tecla asignada.
+- La acción Overdrive (sin uso) no se borra sin mi aprobación: proponlo.
+
+## Entrega
+- CONTROLS_V01.md con esquema final, razones, tabla teclado/ratón y mando, y la lista de cambios con archivo:línea.
+- Capturas del panel (lista, esperando tecla, conflicto y restablecer) y de las ayudas del HUD con una tecla reasignada.
+- Tests:
+  - EditMode: conflictos e intercambio; guardar y cargar overrides; restablecer.
+  - PlayMode con dispositivos virtuales: reasignar Melee a V, que V golpee y que F ya no lo haga; que el texto de ayuda muestre V; que persista tras reiniciar la escena; que los bloqueos de ejecución y de estación sigan activos.
+- Verificación separada en compilación / tests / prueba manual con teclado, ratón y mando.
+- Registro en CHECKLIST_TRABAJO.md.
+```
+
 ---
+
+## 11. Linterna y lectura de enemigos en zonas oscuras
+
+```text
+Lee primero Docs/IronRequiem/PROMPTS_CHATS.md (reglas comunes, subagentes y política de skills) y aplícalo.
+Lee también DESIGN_V02_UPDATE.md, Map01/MAP01_DESIGN.md, Map01/05_ILUMINACION.md (presupuesto de luces, ambiente mínimo y colores reservados), Map01/02_DECORACION.md (D1.8 emisivos y restos de robot), Map01/04_PUERTAS.md (rojo/ámbar/verde reservados al estado de puertas), Map01/00_INVENTARIO.md (shader HardSurface: _RIM, _PANELS, _PanelBoost), CHECKLIST_TRABAJO.md (entrada "Visibilidad" de BigBot/T07/HoverBot/Turret) y, si existe, Docs/IronRequiem/CONTROLS_V01.md.
+
+# LINTERNA Y FORMA DE VER A LOS ENEMIGOS EN LA OSCURIDAD
+
+Objetivo: que en las zonas oscuras el jugador siempre pueda localizar y leer a los enemigos (dónde están, hacia dónde miran, si van a atacar) sin que el mapa pierda su ambiente y sin romper el rendimiento. No cambies el render pipeline ni el asset URP, ni el balance, la IA o los tiempos de armas sin mi aprobación. No instales paquetes.
+
+## Lo que hay hoy (verifícalo, no lo des por cierto)
+- No existe linterna del jugador ni modo de visión.
+- Los enemigos (BigBot, T07, HoverBot, Turret) ya tienen emisivos compartidos y ojos/indicadores visibles sin luces.
+- El shader IronRequiemHardSurface tiene _RIM (borde fresnel para siluetas en la oscuridad, _RimPower) y _PANELS con _PanelBoost en runtime.
+- Map01: URP Forward, ≤ 8 anclajes de luz por cuarto y ≤ 4 por objeto; sombras solo en Spot; bloom con umbral 1,0 y emisivos ≤ 4 HDR; el ambiente nunca baja de ≈ 40 % de la ruta.
+- Zonas oscuras conocidas: túneles de mantenimiento (R10, rojo de emergencia y franjas), esclusas Transfer antiguas (lum 0,011–0,040) y lo que marque 05_ILUMINACION.
+- Rojo, ámbar y verde están reservados a las puertas. Los restos de robot no llevan emisivo ni rim para no confundirse con enemigos vivos.
+- MapFxAudit ya mide activePointSpotLights, batches y SetPass por cuarto.
+
+## Fases y paradas
+- F0 Inventario (solo lectura):
+  - medir la luminancia en el lugar donde aparece cada enemigo, cuarto por cuarto en Map01 y en la campaña actual, y listar los puntos donde un enemigo a 10–25 m no se distingue del fondo (captura + valor);
+  - registrar los materiales y emisivos de cada enemigo y si usan _RIM, y anotar cómo se aplican: material compartido o MaterialPropertyBlock;
+  - anotar cuántas luces activas hay por cuarto contra el presupuesto, y si las luces adicionales del URP proyectan sombras;
+  - ver cómo se renderizan la WeaponCamera y las manos/armas, y si la luz de una linterna las quemaría;
+  - revisar las acciones libres en InputSystem_Actions y el estado del chat 10 (controles).
+- F1 Propuestas → PARADA. Entre 2 y 3 soluciones, con captura de prueba de cada una en el mismo punto oscuro. Por ejemplo:
+  - A, linterna de hombro o casco: Spot con cookie de lente, alternar con una tecla, alcance y ángulo de FPS rápido, y sombra solo si el presupuesto lo permite;
+  - B, pulso de escáner: un eco que recorre el cuarto y resalta los contornos de los enemigos unos segundos (_RIM o _PanelBoost por MaterialPropertyBlock), con recarga;
+  - C, lectura pasiva: el rim y los ojos del enemigo suben de forma automática según la oscuridad local, sin acción del jugador;
+  - o una combinación, como A + C.
+  Para cada una, compara:
+  - qué tan bien se lee un enemigo a 5, 15 y 25 m;
+  - el coste en luces, SetPass y ms de GPU;
+  - si encaja con un FPS rápido tipo DOOM/ULTRAKILL;
+  - si necesita un recurso nuevo (batería o energía): solo con mi aprobación;
+  - si los enemigos deberían notar la linterna: solo como propuesta, la IA es del chat 8.
+  Espero mi elección antes de implementar.
+- F2 Implementación de lo elegido:
+  - componente propio bajo Assets/IronRequiem/Scripts/Player/Vision/ (o el dominio que encaje);
+  - acción nueva en el Input System integrada en el sistema de reasignación del chat 10 si ya existe, y su ayuda en pantalla con la tecla real (helper de GetBindingDisplayString);
+  - sonido de encendido/apagado o del pulso por el mixer existente;
+  - indicador mínimo en el HUD solo si hace falta, con el estilo de IronRequiemUiTheme;
+  - la luz o el resaltado no usan rojo, ámbar ni verde; los restos de robot y la decoración nunca se resaltan;
+  - opción en RequiemSettings si procede (por ejemplo, intensidad del resaltado o accesibilidad "contornos siempre activos").
+- F3 Ajuste por zona: en los cuartos donde F0 detectó enemigos ilegibles, corrige con lo elegido y, solo si no basta, propón (no apliques) ajustes de luz en 05_ILUMINACION respetando el presupuesto.
+- F4 Verificación y revisión independiente.
+
+## Skills por tarea
+- Diseño de visibilidad en FPS rápido y sensación: gamedev:fps-shooter, gamedev:game-feel, iron-requiem-fps.
+- Lectura de enemigos, telegrafía y (si se aprueba) reacción a la luz: iron-requiem-enemy-ai, gamedev:game-ai.
+- Luz, cookie, rim y pulso sin editar el shader: gamedev:shader-programming; post-proceso solo si la opción lo usa: unity:urp-postprocessing.
+- Zonas oscuras y presupuesto de luces por cuarto: gamedev:level-design, iron-requiem-performance, gamedev:performance-optimization.
+- Entrada nueva y su texto: gamedev:unity-input-system, gamedev:input-systems.
+- Indicador de HUD: gamedev:game-ui-ux, unity:ui → unity:ui-ugui.
+- Sonido del encendido o pulso: gamedev:audio-design, unity:audio-setup-mixers.
+- Código: gamedev:unity-csharp-scripting.
+
+## Subagentes (model por rol)
+1. INVENTARIO (haiku, solo lectura, en paralelo): A luminancia y luces por cuarto; B materiales, emisivos y rim de enemigos; C entrada, WeaponCamera y HUD.
+2. DISEÑADOR (opus): F1. Escribe solo Docs/IronRequiem/VISION_V01.md con propuestas, capturas y números.
+3. ARTISTA DE LUZ (sonnet): prefab de la linterna o del pulso, cookie, VFX y sonido (Assets/IronRequiem/Prefabs/Player/Vision/, Art/Vision/, Audio/SFX/Vision/). Archivos exclusivos.
+4. IMPLEMENTADOR (sonnet): scripts, acción de entrada y opción de ajustes (Assets/IronRequiem/Scripts/Player/Vision/, Editor/Vision/). Archivos exclusivos.
+5. REVISOR (opus, independiente): juega las zonas oscuras con y sin la mecánica y busca enemigos ilegibles, deslumbramiento, falsos resaltados y caídas de rendimiento.
+Solo tú controlas el Editor (compilar, Play Mode, guardar).
+
+## Reglas
+- Respaldo en Tools/IronRequiem/Backups/<fecha>/ de todo lo que toques.
+- No modifiques materiales compartidos de enemigos: usa MaterialPropertyBlock o variantes nuevas.
+- No guardes escenas de campaña ni de Map01 con cambios de Play.
+- Zona protegida intacta: IntroMenu, Scripts/Menu, Scripts/HangarIntro, Editor/HangarIntro, cinta y pasarela.
+- La linterna cuenta en el presupuesto de luces: con ella encendida, ningún cuarto supera su límite (verifícalo con MapFxAudit).
+- No subas el ambiente global para "arreglar" la oscuridad.
+
+## Entrega
+- VISION_V01.md con la opción elegida, parámetros finales, coste medido y la lista de cambios con archivo:línea.
+- Capturas antes/después en al menos 4 puntos oscuros (incluidos R10 y una esclusa), con enemigos a 5, 15 y 25 m, y una con el arma disparando para comprobar que no deslumbra.
+- Tests:
+  - EditMode: la acción existe y tiene binding en teclado y mando; los colores no usan rojo/ámbar/verde reservados; los restos de robot no reciben resaltado.
+  - PlayMode con entrada virtual: encender y apagar (o lanzar el pulso) con la tecla; el enemigo recibe el resaltado y lo pierde al terminar o al morir; las luces activas del cuarto no superan el presupuesto; sin errores al cambiar de escena.
+- Rendimiento medido con MapFxAudit en el peor cuarto, con la mecánica activa y sin ella.
+- Verificación separada en compilación / tests / prueba manual.
+- Registro en CHECKLIST_TRABAJO.md.
+```
+
+## 12. Pase visual con Fable: decoración, luminosidad, luces de robots y animación del Carroñero
+
+Para ejecutar con **Fable** (claude-fable-5-2). Sustituye al prompt 11 en lo de la linterna: si el 11 no se ha corrido, no lo corras.
+
+```text
+Lee primero Docs/IronRequiem/PROMPTS_CHATS.md (reglas comunes, subagentes y política de skills) y aplícalo. El prompt 11 de ese archivo es la especificación de referencia para la linterna; este chat lo sustituye.
+Lee también AGENTS.md, DESIGN_V02_UPDATE.md, CHECKLIST_TRABAJO.md (entradas "Visibilidad", "T07 resplandor excesivo y ojos rojos", "Pase visual F0/F1", "v25 Carroñero"), VISUAL_AUDIT_F0.md, Map01/MAP01_DESIGN.md, Map01/02_DECORACION.md, Map01/05_ILUMINACION.md, Map01/04_PUERTAS.md y, si existe, CONTROLS_V01.md.
+
+# PASE VISUAL: MAPA MÁS LEGIBLE, DECORACIÓN NUEVA, LUCES DE ROBOTS Y CARROÑERO
+
+## Contexto del mundo (guía toda la dirección de arte)
+- El jugador es un robot: un experimento militar que fue abandonado. Despierta en las profundidades de un búnker militar abandonado y lo recorre luchando contra los robots que ahora lo dominan.
+- El mapa es una subida: poco a poco salimos hacia la superficie. Cada zona está algo más cerca del exterior que la anterior.
+- La decoración y la luz deben contar esa subida:
+  - abajo, laboratorios y zonas de experimentación (cápsulas, bancos de pruebas, registros del proyecto), aislamiento, luz artificial de emergencia y tecnología militar intacta pero muerta;
+  - en medio, infraestructura del búnker (armerías, almacenes, mantenimiento, agua, energía), cada vez más dañada y tomada por los robots;
+  - arriba, señales del exterior (polvo y escombros que entran, grietas, aire y luz natural fría que se filtran, tierra y restos de la guerra en la superficie) hasta la salida.
+- La luminosidad puede seguir esa misma progresión: un poco más de luz real a medida que subimos, sin que ninguna zona baje del mínimo legible.
+- Los robots enemigos han ocupado el búnker: marcas de su presencia (chatarra apilada, cables arrancados, piezas canibalizadas, nidos de reparación) en lugar de decoración militar ordenada.
+- El protagonista es un robot entre robots: la decoración nunca debe parecer un refugio humano habitado. Los humanos solo aparecen como rastro del pasado: carteles, estarcidos, equipo militar, registros.
+- Si un documento existente contradice este contexto (zonas, orden o temática), señálalo en F0 y pregúntame; no lo cambies por tu cuenta.
+
+Quejas reales del jugador (yo), en orden de prioridad:
+1. El juego sigue demasiado oscuro: quiero más luminosidad o una linterna (o las dos).
+2. Las luces de los robots se ven raras.
+3. Quiero luz roja en los ojos de los robots.
+4. La decoración del mapa necesita un rediseño: hoy no transmite un búnker militar abandonado, tomado por los robots, del que vamos subiendo hacia la superficie.
+5. Las animaciones del Carroñero son pobres.
+No cambies balance, daño, IA, tiempos de armas, render pipeline, versión de URP ni Input System. No instales paquetes, no compres ni generes modelos con créditos.
+
+## Lo que hay hoy (verifícalo, no lo des por cierto)
+- Iluminación de Map01 (05_ILUMINACION): ambiente Trilight por zona, niebla exp², Volume por zona sobre Campaign_PostProfile (Bloom umbral 1,0 y clamp 12, StopNaN en las cámaras), ≤ 8 luces por cuarto y ≤ 4 por objeto, URP Forward, ambiente ≥ 40 % de la ruta (28 en oscuridad intencional) y 4 apagones dramáticos. Rojo, ámbar y verde están reservados al estado de las puertas.
+- No hay linterna.
+- Luces de robots:
+  - EnemyStateLights (Scripts/VisualOverhaul) cambia el color de ojos e indicadores según el estado de la IA: Patrulla cian, Alerta ámbar, Ataque rojo, Aviso blanco parpadeante a 14 Hz, y se apagan al morir;
+  - EnemyPowerIndicators apaga los renderers al morir;
+  - el T-07 y el SawBot ya llevan un material rojo URP Unlit sin HDR en el ojo y el CoreIndicator;
+  - BigBot, HoverBot y Turret usan emisivos compartidos;
+  - al Carroñero se le quitaron EnemyStateLights y otros extras por rendimiento;
+  - hubo fallos de resplandor gigante por NaN, HDR y escalas heredadas: no los reintroduzcas.
+- Carroñero: Prefabs/Campaign/Carronero.prefab, malla Tripo de 22 huesos con 4 LOD, todo procedural en Scripts/Enemies/CarroneroMotion.cs (105 líneas, sin Animator, no posa fuera de cámara): paso, brazo de sierra, agacharse y hurgar. Va en hordas de hasta 20–24, con LateUpdate de ≈ 1,25 ms para 24 en el Editor.
+  - CarroneroMotion también lo usan ScavengerBehaviour (Scripts/HangarIntro), BridgeWalker (Scripts/Menu) y CctvActor: son zona protegida y no deben cambiar de aspecto sin mi aprobación.
+- Decoración de Map01: lo definen 02_DECORACION (kits IR_*, presupuesto por arena: ≤ 60 DC, ≤ 10 SetPass y ≤ 80 k triángulos; restos de robot oscuros y tumbados) y los scripts de autoría de Editor/Map01. El chat 9 (Mapa 1) puede seguir activo.
+
+## Fases y paradas
+- F0 Diagnóstico (solo lectura; Play Mode sin guardar):
+  - capturas a 1920×1080 desde puntos fijos y reproducibles (≥ 2 por zona de Map01 y de la campaña actual), con enemigos a 5, 15 y 25 m;
+  - luminancia media y de los enemigos frente al fondo en cada captura;
+  - catálogo de cada luz de robot (renderer, material, color e intensidad por estado, si tiene halo o bloom, si flota separada de la malla, si parpadea) con una captura por estado; marca qué puede ser lo "raro";
+  - el Carroñero grabado en secuencias de frames: andar, correr, girar, atacar, recibir daño, hurgar y morir, con los defectos (patinaje de pies, rigidez, falta de anticipación, brazo que atraviesa la malla, giros bruscos…);
+  - la decoración por zona: qué se repite, qué está vacío, qué tapa el combate.
+  Entrega Docs/IronRequiem/VisualPassFable/00_DIAGNOSTICO.md con las capturas.
+- F1 Dirección de arte → PARADA. Un documento con imágenes (paintovers o mockups sobre las capturas de F0) que proponga:
+  - a) Luminosidad: 2 niveles (por ejemplo "+ legible" y "+ luminoso") con valores concretos de ambiente, relleno, exposición y Volume por zona, sin perder la identidad de cada zona; y si va con linterna, la opción de linterna (prompt 11: linterna de hombro, pulso o lectura pasiva) y cómo convive con el nuevo nivel.
+  - b) Luces de robots: qué se corrige de lo "raro", con antes y después.
+  - c) Ojos rojos: cómo quedan los ojos rojos sin perder la lectura del estado (hoy el color indica el estado). Propón 2 opciones, por ejemplo: ojos siempre rojos y el estado por intensidad y pulso; o ojos rojos e indicador corporal con el color de estado. El rojo de los ojos no debe confundirse con el de las puertas cerradas, y sin Light dinámica por robot en las hordas (emisivo y halo o flare con tope de HDR); como mucho, una luz real solo en el BigBot o los jefes, si el presupuesto lo permite.
+  - d) Decoración: concepto por zona que muestre la subida hacia la superficie (moodboard sobre capturas, lenguaje de formas, paleta, 3 landmarks clave, qué se quita y qué se añade, y qué señal del exterior aparece en esa zona), respetando el presupuesto de 02_DECORACION. Incluye un esquema de toda la ruta, de las profundidades a la salida, con la evolución de luz, color y deterioro.
+  - e) Carroñero: lista de animaciones nuevas o mejoradas con referencia de timing (por ejemplo, anticipación del ataque ≥ 0,25 s para que se lea).
+  Espero mi elección de cada punto antes de implementar.
+- F2 Luminosidad y linterna (lo elegido en a). Cambios por zona en los datos de 05_ILUMINACION y en sus scripts de autoría, no a mano en el YAML; la linterna según el prompt 11 (acción nueva integrada con la reasignación del chat 10 si existe).
+- F3 Luces de robots y ojos rojos (b y c): por MaterialPropertyBlock o con variantes nuevas de material, sin tocar los materiales compartidos que usan otros. Que el ojo se apague al morir y que no haya resplandor gigante (comprobar con Bloom activo).
+- F4 Decoración (d), una zona cada vez: captura antes/después y presupuesto medido antes de pasar a la siguiente. Usar los kits y scripts de autoría existentes, o ampliarlos. Sin piezas flotantes ni que tapen spawns, puertas o la ruta.
+- F5 Carroñero (e):
+  - mejora con un componente nuevo o una ampliación compatible de CarroneroMotion: si cambias la API o el aspecto que ven HangarIntro, Menu o CctvActor, para y pide aprobación; si no, que la mejora solo se active en los prefabs de combate;
+  - incluye: pies que no patinen (paso sincronizado con la velocidad real del NavMeshAgent, plantado con raycast si cabe en el presupuesto), cambio de peso, inclinación en giros y aceleración, anticipación y recuperación del ataque, reacción al impacto, arranque y frenada, respiración en reposo y mejor muerte si cabe;
+  - mismo coste o menor: medir 24 Carroñeros con HordeCostProbe; no posa fuera de cámara; LOD bajo con una animación más simple.
+- F6 Verificación y revisión independiente.
+
+## Skills por tarea
+- Dirección de arte, look final y puntuación de capturas: unity:craft-game-floors, gamedev:create-game-assets.
+- Decoración y composición de zonas: gamedev:level-design, iron-requiem-fps.
+- Luminosidad, Volume y bloom: unity:urp-postprocessing; presupuesto de luces y rendimiento: iron-requiem-performance, gamedev:performance-optimization.
+- Linterna, entrada y texto de ayuda: gamedev:fps-shooter, gamedev:unity-input-system, gamedev:input-systems.
+- Ojos, halos, emisivos y pulso sin editar el shader: gamedev:shader-programming.
+- Lectura de estados del enemigo y telegrafía: iron-requiem-enemy-ai, tune-enemy-ai.
+- Animación procedural del Carroñero: game-dev-combat-animation (estándar, pruebas por frame y críticos ciegos), gamedev:unity-animation, gamedev:game-feel, build-rigged-game-assets (huesos y sockets).
+- Código: gamedev:unity-csharp-scripting.
+
+## Subagentes (model por rol)
+1. INVENTARIO (haiku, solo lectura, en paralelo): A capturas y luminancia por zona; B catálogo de luces de robots; C decoración y presupuesto por zona; D secuencias del Carroñero.
+2. DIRECTOR DE ARTE (fable): F1, el documento y los mockups en Docs/IronRequiem/VisualPassFable/. No toca Assets.
+3. ILUMINACIÓN Y LINTERNA (sonnet): F2, datos y autoría de luz y Scripts/Player/Vision/. Archivos exclusivos.
+4. LUCES DE ROBOTS (sonnet): F3, Scripts/VisualOverhaul/ y variantes de materiales de enemigos. Archivos exclusivos.
+5. DECORADOR (sonnet): F4, scripts y prefabs de decoración de Editor/Map01/ y Prefabs/Map01/. Archivos exclusivos.
+6. ANIMADOR (fable): F5, Scripts/Enemies/ del Carroñero y sus tests. Archivos exclusivos.
+7. REVISOR (opus, independiente; no vio la propuesta al hacerse): juega las zonas con capturas antes/después y puntúa legibilidad, ambiente, ojos, decoración y Carroñero del 1 al 10, con defectos concretos. Lo que baje de 8 vuelve a su rol.
+Solo tú controlas el Editor (compilar, Play Mode, guardar). Un rol cada vez en Play Mode.
+
+## Reglas
+- Respaldo en Tools/IronRequiem/Backups/<fecha>/ de todo lo que toques.
+- Escenas: usa las APIs del Editor y los scripts de autoría; no guardes escenas con cambios de Play ni escenas que ya estaban modificadas por mí sin avisar. Coordina con el chat 9: si está activo en Map01, para y pregúntame.
+- Zona protegida intacta: IntroMenu, Scripts/Menu, Scripts/HangarIntro, Editor/HangarIntro, cinta y pasarela, ScavengerBehaviour, BridgeWalker y CctvActor.
+- Rojo, ámbar y verde siguen reservados a las puertas en la decoración y las luces del mapa; los ojos de los enemigos son la única excepción aprobada, y no usan el mismo patrón que las balizas de puerta.
+- Presupuestos: luces por cuarto (con la linterna encendida), DC, SetPass y triángulos de 02_DECORACION, y coste del Carroñero. Mide antes y después con MapFxAudit y HordeCostProbe.
+- Si algo es IA generativa (texturas o modelos), anótalo para la declaración de Steam; no se gastan créditos.
+
+## Entrega
+- Docs/IronRequiem/VisualPassFable/ con 00_DIAGNOSTICO, 01_DIRECCION (lo aprobado) y 02_RESULTADO (parámetros finales y lista de cambios con archivo:línea).
+- Capturas antes/después desde los mismos puntos de F0, con enemigos a 5, 15 y 25 m, y un vídeo o secuencia de frames del Carroñero (andar, girar, atacar, impacto, muerte) antes/después.
+- Tests:
+  - EditMode: luces por cuarto ≤ presupuesto; sin rojo, ámbar ni verde en la decoración a ≤ 12 m de una puerta; los ojos usan el color aprobado y HDR ≤ al tope; la acción de la linterna tiene binding.
+  - PlayMode: los ojos cambian según la solución elegida y se apagan al morir; sin resplandor con Bloom; la linterna enciende y apaga; el Carroñero no patina (desplazamiento del pie plantado ≤ tolerancia), ataca con anticipación medida y sigue sin posar fuera de cámara; la intro y el menú siguen idénticos (hash o captura).
+- Rendimiento: peor cuarto y horda de 24 Carroñeros, antes/después.
+- Verificación separada en compilación / tests / prueba manual, y registro en CHECKLIST_TRABAJO.md.
+```
+
+## 13. Animaciones de ejecución de los robots
+
+```text
+Lee primero Docs/IronRequiem/PROMPTS_CHATS.md (reglas comunes, subagentes y política de skills) y aplícalo.
+Lee también ARMS_FIX_20261119.md (reglas vigentes de la ejecución del T-07: 2 golpes, bloqueos de entrada), SECONDARY_SHOTGUN_SLIDE_EXECUTION.md, T07_ROBOT_ANIM_20261118.md, SAWBOT_ROBOT_ANIM_20261118.md, MODULAR_ARM_AND_PICKUP.md, DESIGN_V02_UPDATE.md, CONTROLS_V01.md y CHECKLIST_TRABAJO.md.
+
+# EJECUCIONES DE ROBOTS MÁS BRUTALES Y LEGIBLES
+
+Contexto: somos un robot, experimento militar abandonado, que arranca las armas a los robots que dominan el búnker. La ejecución es el momento estrella del juego (estilo DOOM glory kill, pero rápida, sin cortar el ritmo de ULTRAKILL). Hoy se siente pobre: el robot casi no reacciona y la secuencia no tiene peso.
+Objetivo: mejorar la animación de TODAS las ejecuciones (lo que hace el robot ejecutado, los brazos del protagonista, la cámara, el impacto, el sonido y los efectos) sin cambiar la regla de ejecución, el daño, el balance, la IA ni los controles.
+
+## Lo que hay hoy (verifícalo, no lo des por cierto)
+- Regla: un robot es ejecutable con vida < 75 % (EnemyExecutionSource). Se inicia con la acción de interactuar (E por defecto; mira CONTROLS_V01).
+- T-07: DisarmMotion (Scripts/Player, guiado por ProtagonistHandsPresentation): agarre, arranque del cañón (YankTime) y puñetazo (StrikeTime). Exactamente 2 golpes; la muerte llega con el segundo. ExecutionShove empuja al robot hacia atrás tras el golpe.
+- SawBot: SawBotWeaponSource (arrancar la sierra) sobre la misma reserva de ejecución.
+- Big Bot: BigBotExecutionSequence: salto encima, arranca el cañón, le dispara con él y salto atrás, con el movimiento por AdvancedPlayerMovement.
+- Carroñero: sin ejecución (no se añade sin mi aprobación).
+- Durante la ejecución el robot se congela: se desactivan EnemyMobile y la IA y se para el NavMeshAgent (StolenWeaponCarrier, BigBotExecutionSequence). Casi no hay animación de reacción del robot.
+- Ya existen: RobotHitFeedback, RobotMotionAccents, RobotDamageProgression, T07AnimationDriver, T07FootPlacement, BigBotTurnFootPlant, DetachableCannon, ExecutionProtection (invulnerabilidad), StolenWeaponCarrier y StolenShellFit (absorción del arma, sin un tercer golpe durante la ejecución), y el sacudido de cámara y el hit-stop existentes.
+- Bloqueos de entrada de ARMS_FIX: M1, F, 1, 2 y G se ignoran durante la ejecución. Deben seguir funcionando.
+
+## Fases y paradas
+- F0 Diagnóstico (solo lectura; Play Mode sin guardar): graba cada ejecución (T-07, SawBot y Big Bot) desde la cámara del jugador y desde una cámara lateral de prueba, como secuencia de frames con tiempos. Anota los defectos: robot rígido o congelado, poses que atraviesan la malla, brazo estirado o roto, mano que no coincide con la unión, saltos de pose, falta de anticipación, golpe sin peso, cámara que marea, tiempos muertos y duración total. Mide la duración de cada ejecución y cuánto tiempo el jugador no controla nada.
+- F1 Propuesta → PARADA. Para cada robot, un guion por beats con tiempos (por ejemplo: entrada 0–0,15 s, agarre, forcejeo, arranque, golpe, remate y salida) que describa:
+  - qué hace el robot en cada beat (retroceso, intento de soltarse, chispas en la unión, la pieza que cede, caída o derrumbe al morir, sin flotar);
+  - qué hacen los brazos y la cámara del jugador;
+  - el hit-stop, la sacudida, los efectos y el sonido en cada impacto.
+  Muéstralo con storyboard (capturas anotadas o dibujos simples). Criterios:
+  - ejecución corta: ≤ 1,2 s en T-07 y SawBot y ≤ 2,0 s en Big Bot, salvo que yo apruebe más;
+  - el jugador recupera el control enseguida;
+  - legible a 60 FPS y con FOV alto;
+  - sin mareo: nada de giros de cámara bruscos fuera del jugador.
+  Si propones cambiar el número de golpes o la duración actual, dilo aparte: necesita mi aprobación. Opcional: 1 o 2 variantes por robot según el ángulo de entrada (frente, espalda, lado), solo como propuesta.
+  Espero mi elección antes de implementar.
+- F2 Implementación del robot ejecutado:
+  - capa de reacción por código en los huesos existentes (sin cambiar el Animator de base ni los clips importados): forcejeo, arranque, impacto y derrumbe;
+  - la muerte reutiliza el flujo y la destrucción existentes (RobotDamageProgression, BigBotDestruction, la muerte por piezas);
+  - el robot sigue sin moverse por su cuenta y el NavMeshAgent no se descontrola; nada termina dentro de muros ni flotando.
+- F3 Jugador: brazos (DisarmMotion, ProtagonistHandsPresentation y BigBotExecutionSequence), cámara, hit-stop y sonido:
+  - la mano se cierra sobre la unión real y el arma arrancada sigue a la mano sin saltos;
+  - mantener el estándar de brazos de ARMS_FIX: sin estirar el brazo, sin corte del hombro visible y el agarre no pasa del alcance máximo;
+  - sonido: los clips del proyecto por el mixer existente, sin descargas.
+- F4 Verificación y revisión independiente.
+
+## Skills por tarea
+- Estándar de animación de combate, pruebas por frame y críticos ciegos: game-dev-combat-animation.
+- Huesos, Animator y capas por código: gamedev:unity-animation, build-rigged-game-assets.
+- Peso del impacto, hit-stop, sacudida y tiempos: gamedev:game-feel, design-action-combat, gamedev:fps-shooter.
+- Reglas del juego y de los enemigos: iron-requiem-fps, iron-requiem-enemy-ai, iron-requiem-modular-weapons.
+- Efectos de chispas y piezas: create-game-vfx; sonido: gamedev:audio-design, unity:audio-setup-mixers.
+- Código: gamedev:unity-csharp-scripting. Rendimiento: iron-requiem-performance.
+
+## Subagentes (model por rol)
+1. INVENTARIO (haiku, solo lectura, en paralelo): A T-07; B SawBot; C Big Bot. Grabación de frames y lista de defectos.
+2. DIRECTOR DE ANIMACIÓN (opus): F1, guiones y storyboard en Docs/IronRequiem/Executions/. No toca Assets.
+3. ANIMADOR DE ROBOTS (sonnet): F2, reacciones del robot en Assets/IronRequiem/Scripts/Enemies/Execution/. Archivos exclusivos.
+4. ANIMADOR DEL JUGADOR (sonnet): F3, brazos, cámara y sonido (DisarmMotion, ProtagonistHandsPresentation, BigBotExecutionSequence y lo nuevo en Scripts/Player/Execution/). Archivos exclusivos.
+5. REVISOR (opus, independiente): mira las secuencias antes/después sin conocer el guion y puntúa del 1 al 10 el peso, la legibilidad, los brazos, la reacción del robot y el mareo, con defectos concretos. Lo que baje de 8 vuelve a su rol.
+Solo tú controlas el Editor (compilar, Play Mode, guardar).
+
+## Reglas
+- Respaldo en Tools/IronRequiem/Backups/<fecha>/ de todo lo que toques.
+- No cambies la regla de < 75 %, el daño, la vida, la IA, el inventario ni los controles.
+- No guardes escenas con cambios de Play.
+- Zona protegida intacta: IntroMenu, Scripts/Menu, Scripts/HangarIntro, Editor/HangarIntro, cinta y pasarela.
+- Bloqueos de ARMS_FIX y la invulnerabilidad (ExecutionProtection) intactos; cancelar la ejecución (muerte del jugador, pausa, cambio de escena) no deja residuos.
+- No edites los FBX fuente ni los clips importados: usa copias o capas por código.
+- Coste: mismo presupuesto de partículas y luces que hoy (sin Light nueva por ejecución, salvo un flash breve aprobado).
+
+## Entrega
+- Docs/IronRequiem/Executions/EXECUTIONS_V02.md: guion final por robot, tiempos, parámetros y lista de cambios con archivo:línea.
+- Secuencias de frames antes/después de cada ejecución (vista del jugador y lateral).
+- Tests PlayMode con entrada real del Input System:
+  - en cada robot: la ejecución empieza con la tecla, número de golpes y muerte en el tiempo del guion (±0,05 s), una sola muerte y ningún golpe extra;
+  - duración ≤ al límite aprobado y el jugador recupera el control;
+  - el robot no termina dentro de un muro ni flotando, y la mano no pasa del alcance máximo;
+  - M1, F, 1, 2 y G siguen ignorados durante la ejecución;
+  - cancelar a mitad (muerte o pausa) no deja residuos.
+- Además, los tests existentes de ARMS_FIX y de ejecución siguen en verde.
+- Verificación separada en compilación / tests / prueba manual, y registro en CHECKLIST_TRABAJO.md.
+```
 
 ## Conflictos entre chats
 
@@ -396,4 +759,11 @@ Skills: unity:urp-postprocessing, unity:validate-urp-render-graph-renderer-featu
 | 7 y 5/8 | Escenas de campaña, NavMesh | No a la vez |
 | 9 y 7 | Mapa y puertas | 9 sustituye a 7 para mapa y puertas; usar 7 solo para auditar efectos |
 | 9 y 5/8 | Encuentros, NavMesh, sistemas de campaña | No a la vez; 8 y 5 después de F2 de 9 |
+| 10 y 4/5 | Textos de ayuda del HUD, InputSystem_Actions, PlayerInputHandler | No a la vez; 10 después de que 4 cierre el HUD nuevo |
+| 11 y 10 | InputSystem_Actions, ayudas con tecla, RequiemSettings | 11 después de que 10 cierre (o reservar la acción con 10) |
+| 11 y 9/8 | Luces de Map01, materiales de enemigos | 11 no cambia la iluminación de 9 ni la IA de 8: solo propone |
+| 12 y 11 | Linterna | 12 sustituye a 11: no correr los dos |
+| 12 y 9 | Decoración e iluminación de Map01 | No a la vez; 12 después de que 9 cierre su fase de decoración e iluminación |
+| 12 y 8/2 | Carroñero, luces de estado de enemigos | 12 no toca la IA; no a la vez que 8 |
+| 13 y 2/1/12 | Brazos del protagonista, DisarmMotion, animación de robots | No a la vez |
 | Cualquiera | Editor de Unity | Un solo chat con Play Mode/guardado a la vez |

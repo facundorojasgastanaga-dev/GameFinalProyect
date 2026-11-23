@@ -1,0 +1,160 @@
+{
+  "room": "R13",
+  "zone": "Agua",
+  "tramo": 2,
+  "exposureEV": 0.4,
+  "environment": {
+    "sky": [
+      0.44,
+      0.66,
+      0.66
+    ],
+    "equator": [
+      0.308,
+      0.462,
+      0.462
+    ],
+    "ground": [
+      0.198,
+      0.286,
+      0.264
+    ],
+    "ambientIntensity": 1,
+    "reflectionIntensity": 1.1,
+    "fogColor": [
+      0.08,
+      0.17,
+      0.16
+    ],
+    "fogDensity": 0.0112
+  },
+  "lights": [
+    {
+      "anchor": "R13.A1",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.75,
+        1,
+        0.95
+      ],
+      "intensity": 27,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R13.A2",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.75,
+        1,
+        0.95
+      ],
+      "intensity": 27,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R13.A3",
+      "lum": "LUM-02",
+      "kind": "P",
+      "color": [
+        0.75,
+        1,
+        0.95
+      ],
+      "intensity": 27,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "cold",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R13.A4",
+      "lum": "LUM-11",
+      "kind": "P",
+      "color": [
+        0.15,
+        1,
+        0.45
+      ],
+      "intensity": 7.2,
+      "range": 4,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "bombas",
+      "role": "landmark"
+    },
+    {
+      "anchor": "R13.A5",
+      "lum": "LUM-11",
+      "kind": "P",
+      "color": [
+        0.15,
+        1,
+        0.45
+      ],
+      "intensity": 7.2,
+      "range": 4,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "bombas",
+      "role": "landmark"
+    },
+    {
+      "anchor": "R13.A6",
+      "lum": "LUM-11",
+      "kind": "P",
+      "color": [
+        0.15,
+        1,
+        0.45
+      ],
+      "intensity": 7.2,
+      "range": 4,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "bombas",
+      "role": "landmark"
+    },
+    {
+      "anchor": "R13.A7",
+      "lum": "LUM-15",
+      "kind": "S",
+      "color": [
+        1,
+        0.92,
+        0.8
+      ],
+      "intensity": 32.4,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "salida",
+      "role": "exit",
+      "spot": 80
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 02:00:41Z" end-time="2026-11-23 02:01:11Z" duration="30.4211382">
+  <test-suite type="TestSuite" id="1468" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 02:00:41Z" end-time="2026-11-23 02:01:11Z" duration="30.421138" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1462" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 02:00:42Z" end-time="2026-11-23 02:01:11Z" duration="29.500843" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1463" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 02:00:43Z" end-time="2026-11-23 02:01:11Z" duration="28.919655" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+        <test-suite type="SetUpFixture" id="1171" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="386" result="Failed" site="Child" start-time="2026-11-23 02:00:43Z" end-time="2026-11-23 02:01:11Z" duration="28.886540" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1010" name="BigBotBazookaTests" fullname="IronRequiem.Tests.BigBotBazookaTests" classname="IronRequiem.Tests.BigBotBazookaTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-11-23 02:00:43Z" end-time="2026-11-23 02:01:11Z" duration="28.833353" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1013" name="CannonLossBurstCoverAndDeathCancelPendingShots" fullname="IronRequiem.Tests.BigBotBazookaTests.CannonLossBurstCoverAndDeathCancelPendingShots" methodname="CannonLossBurstCoverAndDeathCancelPendingShots" classname="IronRequiem.Tests.BigBotBazookaTests" runstate="Runnable" seed="1512250529" result="Passed" start-time="2026-11-23 02:00:43Z" end-time="2026-11-23 02:01:00Z" duration="16.597226" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed CannonLossBurstCoverAndDeathCancelPendingShots
+]]></output>
+            </test-case>
+            <test-case id="1011" name="DistantNormalAttackAndCover" fullname="IronRequiem.Tests.BigBotBazookaTests.DistantNormalAttackAndCover" methodname="DistantNormalAttackAndCover" classname="IronRequiem.Tests.BigBotBazookaTests" runstate="Runnable" seed="1386112956" result="Passed" start-time="2026-11-23 02:01:00Z" end-time="2026-11-23 02:01:06Z" duration="6.147501" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed DistantNormalAttackAndCover
+]]></output>
+            </test-case>
+            <test-case id="1012" name="FloorWallAndPlayerImpactsApplyAreaOnlyOnce" fullname="IronRequiem.Tests.BigBotBazookaTests.FloorWallAndPlayerImpactsApplyAreaOnlyOnce" methodname="FloorWallAndPlayerImpactsApplyAreaOnlyOnce" classname="IronRequiem.Tests.BigBotBazookaTests" runstate="Runnable" seed="189854443" result="Passed" start-time="2026-11-23 02:01:06Z" end-time="2026-11-23 02:01:08Z" duration="2.670363" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[CampaignTests] Passed FloorWallAndPlayerImpactsApplyAreaOnlyOnce
+]]></output>
+            </test-case>
+            <test-case id="1014" name="StolenBazookaFramingChargeThrowAndOverdrive" fullname="IronRequiem.Tests.BigBotBazookaTests.StolenBazookaFramingChargeThrowAndOverdrive" methodname="StolenBazookaFramingChargeThrowAndOverdrive" classname="IronRequiem.Tests.BigBotBazookaTests" runstate="Runnable" seed="659864866" result="Failed" start-time="2026-11-23 02:01:08Z" end-time="2026-11-23 02:01:11Z" duration="2.975362" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: less than 0.00100000005f
+  But was:  0.371207237f
+]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.BigBotBazookaTests+<StolenBazookaFramingChargeThrowAndOverdrive>d__28.MoveNext () [0x00354] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\BigBotBazookaTests.cs:81
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[[CampaignTests] Failed StolenBazookaFramingChargeThrowAndOverdrive
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

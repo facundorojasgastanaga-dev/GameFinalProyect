@@ -1,0 +1,172 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R14",
+  "kind": "rounds",
+  "archetype": "E3",
+  "title": "R14 · FUNDICIÓN · 3 RONDAS",
+  "arenaTitle": "FUNDICIÓN",
+  "seed": 1414,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "BS1",
+    "BS2",
+    "BS3",
+    "BS4"
+  ],
+  "waves": [
+    {
+      "name": "Yunque",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Relevo",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 3
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "Tanque blindado",
+      "groups": [
+        {
+          "enemy": "BIG",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "T07M",
+          "count": 1
+        },
+        {
+          "enemy": "HOV",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ],
+      "variations": [
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "BIG",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "T07M",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 1
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Sierra",
+          "groups": [
+            {
+              "enemy": "BIG",
+              "count": 1
+            },
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "T07M",
+              "count": 1
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        0,
+        5,
+        16
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        0,
+        0,
+        -16
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -9,
+        0,
+        12
+      ]
+    },
+    {
+      "id": "H4",
+      "pos": [
+        15,
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "B1.2. Primer cuarto de S3: la ronda 1 lleva 3 fuentes. [R0] precalentar FX_BigBot_Blast_v4."
+}

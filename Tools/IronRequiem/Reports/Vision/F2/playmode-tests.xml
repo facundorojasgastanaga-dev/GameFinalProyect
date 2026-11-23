@@ -1,0 +1,2128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.8593852">
+  <test-suite type="TestSuite" id="1346" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.859385" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1340" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.662102" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18036" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1341" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.614473" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="281" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.567478" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1323" name="VisionReadabilityTests" fullname="IronRequiem.Tests.VisionReadabilityTests" classname="IronRequiem.Tests.VisionReadabilityTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:52Z" duration="8.518134" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1325" name="PassiveRimFollowsDarknessClearsOnDeathAndAddsNoLights" fullname="IronRequiem.Tests.VisionReadabilityTests.PassiveRimFollowsDarknessClearsOnDeathAndAddsNoLights" methodname="PassiveRimFollowsDarknessClearsOnDeathAndAddsNoLights" classname="IronRequiem.Tests.VisionReadabilityTests" runstate="Runnable" seed="4910193" result="Passed" start-time="2026-11-20 13:47:44Z" end-time="2026-11-20 13:47:51Z" duration="6.610371" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+Error: Component of type Unity.FPS.UI.CompassElement on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.UI.Compass in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.CompassElement.Awake () (at Assets/FPS/Scripts/UI/CompassElement.cs:24)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+IronRequiem.Tests.<PassiveRimFollowsDarknessClearsOnDeathAndAddsNoLights>d__8:MoveNext() (at Assets/IronRequiem/Tests/PlayMode/VisionReadabilityTests.cs:131)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+Failed to create agent because there is no valid NavMesh
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.AI.EnemyManager in the scene, but none were found.
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Start () (at Assets/FPS/Scripts/AI/EnemyController.cs:173)
+
+Error: Component of type Unity.FPS.Game.Actor on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.Game.Actor.Start () (at Assets/FPS/Scripts/Game/Actor.cs:23)
+
+Error: Component of type Unity.FPS.AI.DetectionModule on GameObject DetectionModule expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+Error: Component of type Unity.FPS.Game.Actor on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.Game.Actor.Start () (at Assets/FPS/Scripts/Game/Actor.cs:23)
+
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.AI.EnemyManager in the scene, but none were found.
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Start () (at Assets/FPS/Scripts/AI/EnemyController.cs:173)
+
+Error: Component of type Unity.FPS.AI.DetectionModule on GameObject Detection expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+[VisionTest] darkRim=1.60 litRim=0.00 sawRim>1 ok, lights 0→0, afterDeath=0.26
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.CompassElement.OnDestroy () (at Assets/FPS/Scripts/UI/CompassElement.cs:29)
+
+
+IgnoreFailingMessages:false
+[CampaignTests] Passed PassiveRimFollowsDarknessClearsOnDeathAndAddsNoLights
+]]></output>
+            </test-case>
+            <test-case id="1324" name="ReleaseRestoresTheOriginalLook" fullname="IronRequiem.Tests.VisionReadabilityTests.ReleaseRestoresTheOriginalLook" methodname="ReleaseRestoresTheOriginalLook" classname="IronRequiem.Tests.VisionReadabilityTests" runstate="Runnable" seed="1994138787" result="Passed" start-time="2026-11-20 13:47:51Z" end-time="2026-11-20 13:47:52Z" duration="1.783190" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+Failed to create agent because there is no valid NavMesh
+Error: Component of type Unity.FPS.UI.CompassElement on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.UI.Compass in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.CompassElement.Awake () (at Assets/FPS/Scripts/UI/CompassElement.cs:24)
+UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+IronRequiem.Tests.<ReleaseRestoresTheOriginalLook>d__7:MoveNext() (at Assets/IronRequiem/Tests/PlayMode/VisionReadabilityTests.cs:70)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+Failed to create agent because there is no valid NavMesh
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.AI.EnemyManager in the scene, but none were found.
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Start () (at Assets/FPS/Scripts/AI/EnemyController.cs:173)
+
+Error: Component of type Unity.FPS.Game.Actor on GameObject T07_Current_Repaired(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.Game.Actor.Start () (at Assets/FPS/Scripts/Game/Actor.cs:23)
+
+Error: Component of type Unity.FPS.AI.DetectionModule on GameObject DetectionModule expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+Error: Component of type Unity.FPS.Game.Actor on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.Game.Actor.Start () (at Assets/FPS/Scripts/Game/Actor.cs:23)
+
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.AI.EnemyManager in the scene, but none were found.
+Error: Component of type Unity.FPS.AI.EnemyController on GameObject SawBot_Current(Clone) expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Start () (at Assets/FPS/Scripts/AI/EnemyController.cs:173)
+
+Error: Component of type Unity.FPS.AI.DetectionModule on GameObject Detection expected to find an object of type Unity.FPS.Game.ActorsManager in the scene, but none were found.
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+[VisionTest] release look: original=1.07 highlighted=2.36 released=1.07
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyController.Update () (at Assets/FPS/Scripts/AI/EnemyController.cs:256)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.AI.EnemyMobile.Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:73)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.WorldspaceHealthBar.Update () (at Assets/FPS/Scripts/UI/WorldspaceHealthBar.cs:26)
+
+NullReferenceException: Object reference not set to an instance of an object
+IronRequiem.SawBotCombat.get_Target () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:31)
+IronRequiem.SawBotCombat.get_TargetActor () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:32)
+IronRequiem.SawBotCombat.get_Visible () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:33)
+IronRequiem.SawBotCombat.Update () (at Assets/IronRequiem/Scripts/AI/SawBotCombat.cs:147)
+
+NullReferenceException: Object reference not set to an instance of an object
+Unity.FPS.UI.CompassElement.OnDestroy () (at Assets/FPS/Scripts/UI/CompassElement.cs:29)
+
+
+IgnoreFailingMessages:false
+[CampaignTests] Passed ReleaseRestoresTheOriginalLook
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

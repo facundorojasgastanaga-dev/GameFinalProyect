@@ -1,0 +1,198 @@
+{
+  "room": "R06",
+  "zone": "Armeria",
+  "tramo": 2,
+  "exposureEV": 0.4,
+  "environment": {
+    "sky": [
+      0.66,
+      0.528,
+      0.396
+    ],
+    "equator": [
+      0.44,
+      0.374,
+      0.33
+    ],
+    "ground": [
+      0.308,
+      0.22,
+      0.154
+    ],
+    "ambientIntensity": 1,
+    "reflectionIntensity": 1.1,
+    "fogColor": [
+      0.18,
+      0.13,
+      0.08
+    ],
+    "fogDensity": 0.0088
+  },
+  "lights": [
+    {
+      "anchor": "R06.A1",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.58,
+        0.2
+      ],
+      "intensity": 64.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R06.A2",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.58,
+        0.2
+      ],
+      "intensity": 64.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R06.A3",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.58,
+        0.2
+      ],
+      "intensity": 64.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R06.A4",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.58,
+        0.2
+      ],
+      "intensity": 64.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R06.A5",
+      "lum": "LUM-05",
+      "kind": "P",
+      "color": [
+        1,
+        0.08,
+        0.04
+      ],
+      "intensity": 25.2,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "red",
+      "group": "landmark",
+      "role": "landmark",
+      "expectPos": [
+        -2.5,
+        5.5,
+        -4
+      ]
+    },
+    {
+      "anchor": "R06.A6",
+      "lum": "LUM-05",
+      "kind": "P",
+      "color": [
+        1,
+        0.08,
+        0.04
+      ],
+      "intensity": 25.2,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "red",
+      "group": "landmark",
+      "role": "landmark",
+      "expectPos": [
+        -2.5,
+        5.5,
+        4
+      ]
+    },
+    {
+      "anchor": "R06.A7",
+      "lum": "LUM-04",
+      "kind": "P",
+      "color": [
+        1,
+        0.95,
+        0.85
+      ],
+      "intensity": 18,
+      "range": 9,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "emergency",
+      "emissive": "cold",
+      "group": "ruta",
+      "role": "route",
+      "expectPos": [
+        -20,
+        11,
+        -10
+      ]
+    },
+    {
+      "anchor": "R06.A8",
+      "lum": "LUM-15",
+      "kind": "S",
+      "color": [
+        1,
+        0.92,
+        0.8
+      ],
+      "intensity": 32.4,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "salida",
+      "role": "exit",
+      "spot": 80,
+      "expectPos": [
+        14,
+        9,
+        -27.5
+      ]
+    }
+  ]
+}

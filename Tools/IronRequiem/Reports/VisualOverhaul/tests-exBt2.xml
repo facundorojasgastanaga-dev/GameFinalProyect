@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.7897428">
+  <test-suite type="TestSuite" id="1478" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="392" result="Failed" site="Child" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.789743" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1472" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="392" result="Failed" site="Child" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.723759" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+      <test-suite type="TestSuite" id="1473" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="392" result="Failed" site="Child" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.615118" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1177" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="392" result="Failed" site="Child" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.589193" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1234" name="ModuleHeavinessProbe" fullname="IronRequiem.Tests.ModuleHeavinessProbe" classname="IronRequiem.Tests.ModuleHeavinessProbe" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.553843" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+]]></output>
+            <test-case id="1235" name="FirstModuleAndMiddleRooms" fullname="IronRequiem.Tests.ModuleHeavinessProbe.FirstModuleAndMiddleRooms" methodname="FirstModuleAndMiddleRooms" classname="IronRequiem.Tests.ModuleHeavinessProbe" runstate="Runnable" seed="1709412527" result="Failed" start-time="2026-11-23 13:13:01Z" end-time="2026-11-23 13:15:50Z" duration="168.482194" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="340000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Exit door stage=2 player=(-1.28, 0.00, -30.45)]]></message>
+                <stack-trace><![CDATA[at IronRequiem.Tests.ModuleHeavinessProbe+<Until>d__14.MoveNext () [0x00079] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Tests\PlayMode\ModuleHeavinessProbe.cs:57
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@1405238725ab\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 4613.5 ms · door+preload 0 / activate 4614 / unload 0 / settle 489 · peak at frame 2/5 load 0.90
+
+IgnoreFailingMessages:true
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+[Campaign] transition to Room00b_AlarmCorridor (preload) peak frame 252.3 ms · door+preload 252 / activate 55 / unload 101 / settle 21 · peak at frame 9/169 load 0.90
+[Campaign] montage station: sequence started
+[Campaign] montage station: Weapon_IR_ArmCannon_VO mounted
+[Campaign] transition to Room01_Foundry (preload) peak frame 100.1 ms · door+preload 26 / activate 48 / unload 100 / settle 25 · peak at frame 152/257 load 1.00
+[CampaignTests] Failed FirstModuleAndMiddleRooms
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

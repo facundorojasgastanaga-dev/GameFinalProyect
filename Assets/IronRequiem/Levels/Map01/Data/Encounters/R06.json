@@ -1,0 +1,150 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R06",
+  "kind": "rounds",
+  "archetype": "E4",
+  "title": "R06 · ARMERÍA · 3 RONDAS",
+  "arenaTitle": "ARMERÍA",
+  "seed": 606,
+  "slotZones": [
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "waves": [
+    {
+      "name": "Torre",
+      "groups": [
+        {
+          "enemy": "TUR",
+          "count": 1,
+          "fixed": {
+            "zone": "TUR"
+          }
+        },
+        {
+          "enemy": "T07",
+          "count": 1,
+          "fixed": {
+            "zone": "G4",
+            "near": [
+              14,
+              0,
+              3
+            ]
+          }
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Escolta",
+      "groups": [
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 2
+        },
+        {
+          "enemy": "CAR",
+          "count": 2
+        }
+      ],
+      "variations": [
+        {
+          "name": "Francotiradores",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 2
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "name": "Sierra",
+          "groups": [
+            {
+              "enemy": "T07",
+              "count": 1
+            },
+            {
+              "enemy": "SAW",
+              "count": 1
+            },
+            {
+              "enemy": "HOV",
+              "count": 2
+            },
+            {
+              "enemy": "CAR",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cierre",
+      "groups": [
+        {
+          "enemy": "SAW",
+          "count": 1
+        },
+        {
+          "enemy": "T07",
+          "count": 2
+        },
+        {
+          "enemy": "HOV",
+          "count": 1
+        },
+        {
+          "enemy": "CAR",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        -20,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        0,
+        0,
+        -20
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        -4,
+        6,
+        25
+      ]
+    }
+  ],
+  "notes": "B1.2. TUR solo en la ronda 1: su slot fijo no se reutiliza (A5.3)."
+}

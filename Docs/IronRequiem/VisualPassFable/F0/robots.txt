@@ -1,0 +1,164 @@
+VisualPass F0 robot light catalog 2026-11-21T00:38:38
+stage Map01_R01_ControlAcceso vp1 eye=(-6.1;1.7;-40.19) ambient=#574738 fog=0.01
+== T07_Current_Repaired bounds=(2.46, 3.83, 2.13) scale=(1.00, 1.00, 1.00)
+  EnemyStateLights=si (1 renderers) EnemyPowerIndicators=si scripts=EnemyController,EnemyMobile,Health,WorldspaceHealthBar,Actor,CompassElement,Damageable,NavigationModule,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression,EnemyPowerIndicators,RobotHitFeedback,EnemyExecutionSource,EnemyCannonChargePresentation,EnemyStateLights,MechDeathExplosion,EnemyMuzzleAnchor,RobotMotionAccents
+  LUZ BasicRobot/EyeBall[0] SkinnedMeshRenderer (inactivo) mat=HoverBot_Body_HS shader=IronRequiem/HardSurface base=(1;1;1) emission=(0;0;0)(keyword off) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.41 MPB:-
+  LUZ BasicRobot/EyeBall[1] SkinnedMeshRenderer (inactivo) mat=HoverBot_Glass shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(1;1;1)(keyword off) queue=3000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.41 MPB:-
+  LUZ BasicRobot/EyeBall[2] SkinnedMeshRenderer (inactivo) mat=HoverBot_Eye shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(23.97;6.65;0) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.41 MPB:-
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (2) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (3) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_Alert mat=ExclamationMark
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks (1) mat=Spark
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyCore/HotCoreAndHalo[0] MeshRenderer (inactivo) mat=EnergyCore shader=Universal Render Pipeline/Particles/Unlit base=(2.2;2.2;2.2) emission=(0;0;0)(keyword off) queue=3000 size=(0.06, 0.06, 0.00) distToBodyCentre=0.79 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/OuterFrame[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.09, 1.09, 0.00) distToBodyCentre=0.76 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/InnerFrame[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.09, 1.09, 0.00) distToBodyCentre=0.78 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyRays[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(0.98, 0.92, 0.08) distToBodyCentre=0.78 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergySpindle[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.00, 0.87, 1.00) distToBodyCentre=1.23 MPB:-
+  FX ParticleSystemRenderer WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual/CriticalSmoke mat=MechanicParticles
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint/JointIndicator[0] MeshRenderer mat=RescueOrange_HS shader=IronRequiem/HardSurface base=(0.95;0.23;0.04) emission=(0;0;0)(keyword off) queue=2000 size=(0.19, 0.11, 0.08) distToBodyCentre=0.3 MPB:-
+  LUZ Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/PowerIndicator[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.09, 0.02, 0.05) distToBodyCentre=0.77 MPB:-
+  LUZ Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/Sphere[0] MeshRenderer mat=RobotEye_Red shader=Universal Render Pipeline/Unlit base=(0.85;0.01;0) emission=- queue=2000 size=(0.05, 0.05, 0.05) distToBodyCentre=0.67 [EnemyStateLights] MPB:em=(0.8;0.01;0) base=(0.8;0.01;0)
+  FX ParticleSystemRenderer Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/DamageSparks mat=WarmEnergy
+  FX ParticleSystemRenderer Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/BodyDamageSmoke mat=ResidualSmoke
+  FX ParticleSystemRenderer RobotLocalizedHitSparks mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  T07_Current_Repaired spawn frente: enemy=37.73 bg=14.52 ratio=2.19 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=29
+  T07_Current_Repaired patrulla frente: enemy=37.74 bg=14.51 ratio=2.19 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=29
+  T07_Current_Repaired alerta frente: enemy=37.75 bg=14.5 ratio=2.19 eyePeak=210.21 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=28
+  T07_Current_Repaired ataque frente: enemy=37.73 bg=14.51 ratio=2.19 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=30
+  T07_Current_Repaired aviso frente: enemy=37.72 bg=14.5 ratio=2.19 eyePeak=210.21 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=27
+  T07_Current_Repaired muerto frente: enemy=37.69 bg=14.51 ratio=2.19 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=29
+  T07_Current_Repaired spawn 15m: px=1690 enemy=33.78 bg=15.13 ratio=1.93 eyePx=32 haloPx=0
+  T07_Current_Repaired patrulla 15m: px=1690 enemy=33.76 bg=15.16 ratio=1.92 eyePx=34 haloPx=0
+  T07_Current_Repaired ataque 15m: px=1690 enemy=33.73 bg=15.13 ratio=1.92 eyePx=36 haloPx=0
+== T07_Mech bounds=(1.70, 2.82, 1.75) scale=(1.00, 1.00, 1.00)
+  EnemyStateLights=si (1 renderers) EnemyPowerIndicators=si scripts=EnemyController,EnemyMobile,Health,WorldspaceHealthBar,Actor,CompassElement,Damageable,NavigationModule,DisarmedEnemyRetreat,RigBuilder,T07AnimationDriver,T07FootPlacement,T07CannonSocket,RobotDamageProgression,EnemyPowerIndicators,RobotHitFeedback,EnemyExecutionSource,EnemyCannonChargePresentation,EnemyStateLights,MechDeathExplosion,EnemyMuzzleAnchor,HeavyDeathFeel,RobotMotionAccents
+  LUZ BasicRobot/EyeBall[0] SkinnedMeshRenderer (inactivo) mat=HoverBot_Body_HS shader=IronRequiem/HardSurface base=(1;1;1) emission=(0;0;0)(keyword off) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.16 MPB:-
+  LUZ BasicRobot/EyeBall[1] SkinnedMeshRenderer (inactivo) mat=HoverBot_Glass shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(1;1;1)(keyword off) queue=3000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.16 MPB:-
+  LUZ BasicRobot/EyeBall[2] SkinnedMeshRenderer (inactivo) mat=HoverBot_Eye shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(23.97;6.65;0) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.16 MPB:-
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (2) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (3) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_Alert mat=ExclamationMark
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks (1) mat=Spark
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyCore/HotCoreAndHalo[0] MeshRenderer (inactivo) mat=EnergyCore shader=Universal Render Pipeline/Particles/Unlit base=(2.2;2.2;2.2) emission=(0;0;0)(keyword off) queue=3000 size=(0.06, 0.05, 0.04) distToBodyCentre=0.98 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/OuterFrame[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.13, 0.90, 0.68) distToBodyCentre=0.95 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/InnerFrame[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.13, 0.90, 0.68) distToBodyCentre=0.97 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergyRays[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.01, 0.80, 0.65) distToBodyCentre=0.97 MPB:-
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/Muzzle/CannonCharge_Magenta/EnergySpindle[0] MeshRenderer (inactivo) mat=EnergyFrame shader=Universal Render Pipeline/Particles/Unlit base=(2.4;0.65;3.2) emission=(0;0;0)(keyword off) queue=3000 size=(1.08, 1.28, 1.37) distToBodyCentre=1.4 MPB:-
+  FX ParticleSystemRenderer WeaponRoot/Weapon_EyeLazers/CannonMount/CannonModule_Visual/CriticalSmoke mat=MechanicParticles
+  LUZ WeaponRoot/Weapon_EyeLazers/CannonMount/CannonJoint/JointIndicator[0] MeshRenderer mat=RescueOrange_HS shader=IronRequiem/HardSurface base=(0.95;0.23;0.04) emission=(0;0;0)(keyword off) queue=2000 size=(0.19, 0.22, 0.20) distToBodyCentre=0.47 MPB:-
+  LUZ Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/PowerIndicator[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.09, 0.02, 0.05) distToBodyCentre=0.53 MPB:-
+  LUZ Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/Head/Sphere[0] MeshRenderer mat=RobotEye_Red shader=Universal Render Pipeline/Unlit base=(0.85;0.01;0) emission=- queue=2000 size=(0.05, 0.05, 0.05) distToBodyCentre=0.44 [EnemyStateLights] MPB:em=(0.8;0.01;0) base=(0.8;0.01;0)
+  FX ParticleSystemRenderer Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/DamageSparks mat=WarmEnergy
+  FX ParticleSystemRenderer Body/AnimatedRig/T07Rig/Root/Hips/Spine/Chest/BodyDamageSmoke mat=ResidualSmoke
+  FX ParticleSystemRenderer RobotLocalizedHitSparks mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  T07_Mech spawn frente: enemy=34 bg=14.05 ratio=2.05 eyePeak=212 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=143
+  T07_Mech patrulla frente: enemy=34 bg=14.05 ratio=2.05 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=140
+  T07_Mech alerta frente: enemy=34.01 bg=14.05 ratio=2.05 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=139
+  T07_Mech ataque frente: enemy=33.99 bg=14.05 ratio=2.05 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=142
+  T07_Mech aviso frente: enemy=34.01 bg=14.05 ratio=2.05 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=141
+  T07_Mech muerto frente: enemy=33.97 bg=14.05 ratio=2.05 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=144
+  T07_Mech spawn 15m: px=2701 enemy=31.74 bg=14.32 ratio=1.9 eyePx=26 haloPx=0
+  T07_Mech patrulla 15m: px=2701 enemy=31.66 bg=14.27 ratio=1.9 eyePx=24 haloPx=0
+  T07_Mech ataque 15m: px=2701 enemy=31.66 bg=14.29 ratio=1.9 eyePx=23 haloPx=0
+== SawBot_Current bounds=(3.12, 2.36, 3.34) scale=(1.00, 1.00, 1.00)
+  EnemyStateLights=si (1 renderers) EnemyPowerIndicators=si scripts=Health,Actor,Damageable,EnemyController,EnemyMobile,RobotHitFeedback,SawBotCombat,WorldspaceHealthBar,EnemyExecutionSource,SawBotWeaponSource,SawMotorPresentation,EnemyPowerIndicators,EnemyStateLights,HeavyDeathFeel,MechDeathExplosion
+  FX ParticleSystemRenderer Presentation/Rig/Body/UpperArm_L/Forearm_L/SawMotorSmoke mat=ResidualSmoke
+  FX ParticleSystemRenderer Presentation/Rig/Body/UpperArm_R/Forearm_R/SawMotorSmoke mat=ResidualSmoke
+  LUZ Presentation/Rig/Body/CoreIndicator[0] MeshRenderer mat=RobotEye_Red shader=Universal Render Pipeline/Unlit base=(0.85;0.01;0) emission=- queue=2000 size=(0.03, 0.03, 0.03) distToBodyCentre=0.64 [EnemyStateLights] MPB:em=(0.8;0.01;0) base=(0.8;0.01;0)
+  FX ParticleSystemRenderer HitSparks mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  SawBot_Current spawn frente: enemy=31.41 bg=14.6 ratio=1.86 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1015
+  SawBot_Current patrulla frente: enemy=31.41 bg=14.6 ratio=1.86 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1012
+  SawBot_Current alerta frente: enemy=31.4 bg=14.6 ratio=1.86 eyePeak=210.79 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1013
+  SawBot_Current ataque frente: enemy=31.41 bg=14.6 ratio=1.86 eyePeak=210.28 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1012
+  SawBot_Current aviso frente: enemy=31.4 bg=14.6 ratio=1.86 eyePeak=210.21 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1010
+  SawBot_Current muerto frente: enemy=31.39 bg=14.6 ratio=1.86 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=1014
+  SawBot_Current spawn 15m: px=2326 enemy=27.57 bg=15.83 ratio=1.56 eyePx=25 haloPx=1
+  SawBot_Current patrulla 15m: px=2326 enemy=27.71 bg=15.85 ratio=1.57 eyePx=28 haloPx=1
+  SawBot_Current ataque 15m: px=2326 enemy=27.64 bg=15.84 ratio=1.57 eyePx=28 haloPx=1
+== BigBot_Current bounds=(4.96, 4.31, 4.17) scale=(3.48, 3.48, 3.48)
+  EnemyStateLights=si (6 renderers) EnemyPowerIndicators=si scripts=Actor,Health,Damageable,NavigationModule,BigBotDetectionModule,EnemyController,EnemyMobile,BigBotCombat,WorldspaceHealthBar,BigBotDestruction,BigBotTurnFootPlant,EnemyPowerIndicators,RobotHitFeedback,EnemyStateLights,EnemyExecutionSource,EnemyStateLights,HeavyDeathFeel,MechDeathExplosion,RobotMotionAccents
+  FX ParticleSystemRenderer Root/Pelvis/Torso/Shoulder_L/Forearm_L/Pincer_L/WeaponMuzzle_L/BigBotCannon_L/CannonPreparation mat=MuzzleFlash
+  FX ParticleSystemRenderer Root/Pelvis/Torso/Shoulder_R/Forearm_R/Pincer_R/WeaponMuzzle_R/BigBotCannon_R/CannonPreparation mat=MuzzleFlash
+  FX ParticleSystemRenderer Presentation/NewRobotRig/Root/Pelvis/Torso/Shoulder_R/Forearm_R/CannonBreak mat=WarmEnergy
+  FX ParticleSystemRenderer Presentation/NewRobotRig/Root/Pelvis/Torso/DamageElectrical mat=WarmEnergy
+  FX ParticleSystemRenderer Presentation/NewRobotRig/Root/Pelvis/Torso/LocalizedSmoke mat=ResidualSmoke
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.15, 0.11, 0.04) distToBodyCentre=1.16 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator/VPD_PowerIndicator[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.15, 0.11, 0.04) distToBodyCentre=1.16 MPB:-
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator (1)[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.16, 0.16, 0.05) distToBodyCentre=0.8 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator (1)/VPD_PowerIndicator (1)[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.16, 0.16, 0.05) distToBodyCentre=0.8 MPB:-
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator (2)[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.15, 0.08, 0.06) distToBodyCentre=0.38 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/PowerIndicator (2)/VPD_PowerIndicator (2)[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.15, 0.08, 0.06) distToBodyCentre=0.38 MPB:-
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator (1)/PowerIndicator (1)[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.12, 0.08, 0.02) distToBodyCentre=1.27 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator (1)/PowerIndicator (1)/VPD_PowerIndicator (1)[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.12, 0.08, 0.02) distToBodyCentre=1.27 MPB:-
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator (2)/PowerIndicator (2)[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.12, 0.08, 0.02) distToBodyCentre=1.27 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator (2)/PowerIndicator (2)/VPD_PowerIndicator (2)[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.12, 0.08, 0.02) distToBodyCentre=1.27 MPB:-
+  LUZ Presentation/NewRobotRig/Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator/PowerIndicator[0] MeshRenderer mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.16, 0.15, 0.16) distToBodyCentre=1.34 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ NewRobotRig/Root/Pelvis/Torso/IndicatorCarrier_PowerIndicator/PowerIndicator/VPD_PowerIndicator[0] MeshRenderer (inactivo) mat=SharedIndicatorLens shader=Universal Render Pipeline/Lit base=(0.15;1;1) emission=(0.15;2.3;2.8)(keyword off) queue=2000 size=(0.16, 0.15, 0.16) distToBodyCentre=1.34 MPB:-
+  FX ParticleSystemRenderer RobotLocalizedHitSparks mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  BigBot_Current spawn frente: enemy=39.75 bg=14.65 ratio=2.28 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=611
+  BigBot_Current patrulla frente: enemy=39.74 bg=14.65 ratio=2.28 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=614
+  BigBot_Current alerta frente: enemy=39.86 bg=14.65 ratio=2.28 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=613
+  BigBot_Current ataque frente: enemy=39.64 bg=14.65 ratio=2.27 eyePeak=210 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=613
+  BigBot_Current aviso frente: enemy=39.86 bg=14.65 ratio=2.28 eyePeak=209 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=609
+  BigBot_Current muerto frente: enemy=39.5 bg=14.65 ratio=2.27 eyePeak=211.21 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=612
+  BigBot_Current spawn 15m: px=8280 enemy=36.5 bg=13.15 ratio=2.29 eyePx=131 haloPx=2
+  BigBot_Current patrulla 15m: px=8280 enemy=36.45 bg=13.13 ratio=2.29 eyePx=135 haloPx=1
+  BigBot_Current ataque 15m: px=8280 enemy=36.42 bg=13.15 ratio=2.28 eyePx=137 haloPx=2
+== HoverBot_Current bounds=(0.67, 0.85, 0.69) scale=(1.00, 1.00, 1.00)
+  EnemyStateLights=si (1 renderers) EnemyPowerIndicators=si scripts=EnemyController,EnemyMobile,Health,WorldspaceHealthBar,Actor,CompassElement,PooledEnemyDeathBurst,EnemyPowerIndicators,EnemyStateLights,MechDeathExplosion
+  LUZ BasicRobot/EyeBall[0] SkinnedMeshRenderer mat=SharedRobotEyes shader=Universal Render Pipeline/Unlit base=(0.15;2.3;2.8) emission=- queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ BasicRobot/EyeBall[1] SkinnedMeshRenderer mat=HoverBot_Glass shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(1;1;1)(keyword off) queue=3000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  LUZ BasicRobot/EyeBall[2] SkinnedMeshRenderer mat=HoverEye shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(0.14;0.7;1.15) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 [EnemyStateLights] MPB:em=(0.15;2.3;2.8) base=(0.15;1;1)
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (2) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Bot_Cap_C_Jnt/VFX_HitSparks (3) mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_Alert mat=ExclamationMark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VFX_EnemyMuzzleFlash mat=MuzzleFlash
+  LUZ BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VPD_EyeBall_EyeBall_C_Jnt[0] MeshRenderer (inactivo) mat=SharedRobotEyes shader=Universal Render Pipeline/Unlit base=(0.15;2.3;2.8) emission=- queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 MPB:-
+  LUZ BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VPD_EyeBall_EyeBall_C_Jnt[1] MeshRenderer (inactivo) mat=HoverBot_Glass shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(1;1;1)(keyword off) queue=3000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 MPB:-
+  LUZ BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/EyeBall_C_Jnt/VPD_EyeBall_EyeBall_C_Jnt[2] MeshRenderer (inactivo) mat=HoverEye shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(0.14;0.7;1.15) queue=2000 size=(0.34, 0.33, 0.29) distToBodyCentre=0.15 MPB:em=(0.14;0.7;1.15) base=(0;0;0)
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_L_Ear01_Jnt/Top_L_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/Top_Cap_C_Jnt/Top_R_Ear01_Jnt/Top_R_Ear02_Jnt/VFX_AngrySteam mat=SmokeAngry
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks mat=Spark
+  FX ParticleSystemRenderer BasicRobot/Robot_Root_C_Jnt/Robot_FKRoot_C_Jnt/VFX_HitSparks (1) mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  HoverBot_Current spawn frente: enemy=24.19 bg=13.68 ratio=1.56 eyePeak=190.96 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current patrulla frente: enemy=24.18 bg=13.67 ratio=1.56 eyePeak=190.89 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current alerta frente: enemy=24.68 bg=13.68 ratio=1.59 eyePeak=202.46 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current ataque frente: enemy=20.62 bg=13.67 ratio=1.37 eyePeak=96.31 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current aviso frente: enemy=25.19 bg=13.68 ratio=1.62 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current muerto frente: enemy=18.86 bg=13.67 ratio=1.28 eyePeak=96.31 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=0
+  HoverBot_Current spawn 15m: px=495 enemy=19.74 bg=6.77 ratio=2.1 eyePx=0 haloPx=0
+  HoverBot_Current patrulla 15m: px=495 enemy=19.75 bg=6.77 ratio=2.1 eyePx=0 haloPx=0
+  HoverBot_Current ataque 15m: px=495 enemy=17.13 bg=6.81 ratio=1.87 eyePx=0 haloPx=0
+== Turret_Current bounds=(3.98, 3.37, 3.98) scale=(4.00, 4.00, 4.00)
+  EnemyStateLights=no EnemyPowerIndicators=si scripts=EnemyController,Health,WorldspaceHealthBar,EnemyTurret,Actor,CompassElement,PooledEnemyDeathBurst,EnemyPowerIndicators,MechDeathExplosion
+  FX ParticleSystemRenderer Turret_Head_C_Jnt/IrisBlade_C_Jnt/WeaponRoot/Weapon_MachineGun/GunMuzzle/VFX_EnemyMuzzleFlash mat=MuzzleFlash
+  FX ParticleSystemRenderer Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks mat=Spark
+  FX ParticleSystemRenderer Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks (1) mat=Spark
+  FX ParticleSystemRenderer Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_HitSparks (2) mat=Spark
+  FX ParticleSystemRenderer Turret_Root_C_Jnt/Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_Alert mat=ExclamationMark
+  FX ParticleSystemRenderer Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VFX_AngrySteamTurret mat=SmokeAngry
+  LUZ Turret_FKRoot_C_Jnt/Turret_Pole_C_Jnt/Turret_Pivot_C_Jnt/Turret_Head_C_Jnt/VPD_TurretTop_Turret_Head_C_Jnt[2] MeshRenderer (inactivo) mat=SharedRobotEyeSlots shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(0.15;2.3;2.8) queue=2000 size=(2.47, 2.20, 2.56) distToBodyCentre=0.62 MPB:-
+  LUZ TurretRobot/TurretTop[2] SkinnedMeshRenderer mat=SharedRobotEyeSlots shader=Universal Render Pipeline/Lit base=(1;1;1) emission=(0.15;2.3;2.8) queue=2000 size=(2.47, 2.20, 2.56) distToBodyCentre=0.62 MPB:em=(0.15;2.3;2.8) base=(0;0;0)
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  Turret_Current spawn frente: enemy=19.54 bg=12.6 ratio=1.39 eyePeak=145.02 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=121
+  Turret_Current spawn 15m: px=12867 enemy=12.99 bg=12.66 ratio=1.02 eyePx=0 haloPx=0
+== Carronero bounds=(1.50, 1.50, 1.50) scale=(1.00, 1.00, 1.00)
+  EnemyStateLights=no EnemyPowerIndicators=si scripts=Health,Actor,Damageable,EnemyController,EnemyMobile,SawBotCombat,SawMotorPresentation,EnemyPowerIndicators,HeavyDeathFeel,MechDeathExplosion,CarroneroMotion
+  FX ParticleSystemRenderer Presentation/Rig/Body/UpperArm_L/Forearm_L/SawMotorSmoke mat=ResidualSmoke
+  FX ParticleSystemRenderer Presentation/Rig/Body/UpperArm_R/Forearm_R/SawMotorSmoke mat=ResidualSmoke
+  LUZ Presentation/Rig/Body/CoreIndicator[0] MeshRenderer mat=RobotEye_Red shader=Universal Render Pipeline/Unlit base=(0.85;0.01;0) emission=- queue=2000 size=(0.03, 0.03, 0.03) distToBodyCentre=0.75 MPB:-
+  FX ParticleSystemRenderer HitSparks mat=Spark
+  FX ParticleSystemRenderer VP_DeathSparks mat=Spark
+  Carronero spawn frente: enemy=46.66 bg=14.91 ratio=2.59 eyePeak=211 brightPx(>=235)=0 haloPx(outside mask, >=2x bg and >=120)=963
+  Carronero spawn 15m: px=864 enemy=60.95 bg=17.77 ratio=2.9 eyePx=35 haloPx=1

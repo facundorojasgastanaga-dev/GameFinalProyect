@@ -291,12 +291,13 @@ namespace IronRequiem.Tests
             foreach(string name in new[]{"T07_Current_Repaired","BigBot_Current","HoverBot_Current","Turret_Current","SawBot_Current"})
             {
                 var prefab=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/IronRequiem/Prefabs/Campaign/"+name+".prefab");Assert.That(prefab,Is.Not.Null);var robot=Object.Instantiate(prefab,new Vector3(0,0,12),Quaternion.identity);yield return null;yield return null;Freeze();var hp=robot.GetComponent<Health>();var eyes=robot.GetComponent<EnemyPowerIndicators>();Assert.That(eyes&&eyes.Indicators.Length>0,Is.True,name+" real eye/status geometry");Assert.That(robot.GetComponentsInChildren<Light>(true).Length,Is.Zero,"No dynamic light per enemy");var source=robot.GetComponent<EnemyExecutionSource>();
-                if(name=="BigBot_Current"){Assert.That(source&&!source.ExecutionEnabled,Is.True,"v4: Big Bot is not executable");hp.TakeDamage(hp.MaxHealth*.6f,player.gameObject);Assert.That(source.Eligible,Is.False,"v4: Big Bot never offers [E]");}
-                else if(source){hp.TakeDamage(hp.MaxHealth*.25f,player.gameObject);Assert.That(source.Eligible,Is.False,"75% exact not executable");hp.TakeDamage(.1f,player.gameObject);Assert.That(source.Eligible,Is.True,"Strictly less than75% executable");}
+                // executions-v02 (22/11/2026, user approval): the Big Bot is executable again, with the same strict 75 % rule
+                if(name=="BigBot_Current")Assert.That(source&&source.ExecutionEnabled,Is.True,"executions-v02: Big Bot executable");
+                if(source){hp.TakeDamage(hp.MaxHealth*.25f,player.gameObject);Assert.That(source.Eligible,Is.False,"75% exact not executable");hp.TakeDamage(.1f,player.gameObject);Assert.That(source.Eligible,Is.True,"Strictly less than75% executable");}
                 hp.TakeDamage(hp.CurrentHealth-hp.MaxHealth*.15f,player.gameObject);yield return null;hp.Kill();yield return null;yield return null;
                 Assert.That(eyes.IsPoweredOff,Is.True,"Eyes off after death");if(!eyes.UsesMaterialSlots)Assert.That(eyes.Indicators.All(r=>!r||!r.enabled),Is.True);Assert.That(Object.FindObjectsByType<StolenCannon>(FindObjectsInactive.Include).Any(c=>c.State==StolenCannonState.Available||c.State==StolenCannonState.Thrown),Is.False,"Normal death/critical loss never produces a collectible weapon");Object.Destroy(robot);yield return null;
             }
-            File.WriteAllText(Report+"robots.txt","All5 current prefab families: eye/status renderers exist, shared emissive colors, no native Light per robot, eyes off on Health death. T07/SawBot strict75% threshold; BigBot (v4) never executable; critical damage and normal death create no Available/Thrown modules. Drone/turret retain no invented module.");
+            File.WriteAllText(Report+"robots.txt","All5 current prefab families: eye/status renderers exist, shared emissive colors, no native Light per robot, eyes off on Health death. T07/SawBot/BigBot strict75% threshold (BigBot executable again, executions-v02); critical damage and normal death create no Available/Thrown modules. Drone/turret retain no invented module.");
         }
         [UnityTest]public IEnumerator V4FistChargeSlideGuardAndBigBotBlast()
         {
@@ -309,7 +310,7 @@ namespace IronRequiem.Tests
             Assert.That(combat.Damage,Is.EqualTo(baseCombat.Damage*1.5f).Within(.01f),"Big Bot +50% damage");Assert.That(combat.ExplosionRadius,Is.GreaterThan(baseCombat.ExplosionRadius*1.4f),"Bigger blast radius");Assert.That(combat.ExplosiveShots,Is.True);
             var cannons=(WeaponController[])typeof(BigBotCombat).GetField("cannons",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance).GetValue(combat);
             Assert.That(cannons.Length,Is.GreaterThan(0));foreach(var c in cannons)Assert.That(c.ProjectilePrefab.GetComponent<BigBotBlastFx>(),Is.Not.Null,"Big Bot shells use the heavier blast");
-            Assert.That(big.GetComponent<EnemyExecutionSource>().ExecutionEnabled,Is.False);
+            Assert.That(big.GetComponent<EnemyExecutionSource>().ExecutionEnabled,Is.True,"executions-v02: Big Bot executable again");
             log.AppendLine("BigBot damage "+baseCombat.Damage+" -> "+combat.Damage+", radius "+baseCombat.ExplosionRadius+" -> "+combat.ExplosionRadius);
             // slide guard: a real sprint + C slide opens a short window in which damage is ignored (health untouched)
             Place(new Vector3(0,.03f,-20));yield return null;int ignored=0;UnityEngine.Events.UnityAction<float,GameObject> count=(d,s)=>ignored++;health.OnDamageIgnored+=count;

@@ -1,0 +1,199 @@
+{
+  "room": "R14",
+  "zone": "Fundicion",
+  "tramo": 3,
+  "exposureEV": 0.6,
+  "environment": {
+    "sky": [
+      0.864,
+      0.594,
+      0.432
+    ],
+    "equator": [
+      0.567,
+      0.459,
+      0.378
+    ],
+    "ground": [
+      0.54,
+      0.27,
+      0.135
+    ],
+    "ambientIntensity": 1,
+    "reflectionIntensity": 1.1,
+    "fogColor": [
+      0.2,
+      0.11,
+      0.06
+    ],
+    "fogDensity": 0.0084
+  },
+  "lights": [
+    {
+      "anchor": "R14.A1",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.62,
+        0.25
+      ],
+      "intensity": 60.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R14.A2",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.62,
+        0.25
+      ],
+      "intensity": 60.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R14.A3",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.62,
+        0.25
+      ],
+      "intensity": 60.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R14.A4",
+      "lum": "LUM-03",
+      "kind": "P",
+      "color": [
+        1,
+        0.62,
+        0.25
+      ],
+      "intensity": 60.8,
+      "range": 20,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "ceiling",
+      "emissive": "amber",
+      "group": "techo",
+      "role": "ambient"
+    },
+    {
+      "anchor": "R14.A5",
+      "lum": "LUM-12",
+      "kind": "P",
+      "color": [
+        1,
+        0.4,
+        0.1
+      ],
+      "intensity": 76,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "horno",
+      "role": "landmark",
+      "expectPos": [
+        -5,
+        4,
+        30
+      ]
+    },
+    {
+      "anchor": "R14.A6",
+      "lum": "LUM-12",
+      "kind": "P",
+      "color": [
+        1,
+        0.4,
+        0.1
+      ],
+      "intensity": 76,
+      "range": 14,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "horno",
+      "role": "landmark",
+      "expectPos": [
+        5,
+        4,
+        30
+      ]
+    },
+    {
+      "anchor": "R14.A7",
+      "lum": "LUM-06",
+      "kind": "S",
+      "color": [
+        1,
+        0.8,
+        0.55
+      ],
+      "intensity": 76,
+      "range": 16,
+      "shadow": true,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "puente",
+      "role": "route",
+      "spot": 70,
+      "expectPos": [
+        0,
+        9,
+        16
+      ]
+    },
+    {
+      "anchor": "R14.A8",
+      "lum": "LUM-15",
+      "kind": "S",
+      "color": [
+        1,
+        0.92,
+        0.8
+      ],
+      "intensity": 34.2,
+      "range": 8,
+      "shadow": false,
+      "enabled": true,
+      "mesh": "none",
+      "emissive": "cold",
+      "group": "salida",
+      "role": "exit",
+      "spot": 80,
+      "expectPos": [
+        18,
+        9,
+        31.5
+      ]
+    }
+  ]
+}

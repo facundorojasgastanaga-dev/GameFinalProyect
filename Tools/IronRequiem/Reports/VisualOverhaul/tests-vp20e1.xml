@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.5925906">
+  <test-suite type="TestSuite" id="1382" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="313" result="Failed" site="Child" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.592591" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1375" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="313" result="Failed" site="Child" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.516458" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46512" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1376" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="313" result="Failed" site="Child" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.488473" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="SetUpFixture" id="1136" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="313" result="Failed" site="Child" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.468728" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1342" name="VisualPassF0" fullname="IronRequiem.Tests.VisualPassF0" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" testcasecount="26" result="Failed" site="Child" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.434131" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1369" name="B_RobotLightCatalog" fullname="IronRequiem.Tests.VisualPassF0.B_RobotLightCatalog" methodname="B_RobotLightCatalog" classname="IronRequiem.Tests.VisualPassF0" runstate="Runnable" seed="935031201" result="Failed" start-time="2026-11-21 04:00:16Z" end-time="2026-11-21 04:00:39Z" duration="23.384190" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="1200000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] "SetDestination" can only be called on an active agent that has been placed on a NavMesh.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3)
+Unity.FPS.AI.EnemyController:SetNavDestination (UnityEngine.Vector3) (at Assets/FPS/Scripts/AI/EnemyController.cs:374)
+Unity.FPS.AI.EnemyMobile:UpdateCurrentAiState () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:125)
+Unity.FPS.AI.EnemyMobile:Update () (at Assets/FPS/Scripts/AI/EnemyMobile.cs:71)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[
+IgnoreFailingMessages:true
+
+IgnoreFailingMessages:true
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+Error reason is 'NoSubscription' and no additional error information was provided (https://generators.ai.unity.com).
+[Campaign] transition to Room00_Hangar (preload) peak frame 11537.3 ms · door+preload 0 / activate 11537 / unload 0 / settle 470 · peak at frame 2/5 load 0.90
+[Campaign] transition to Room00_Hangar (preload) peak frame 11537.3 ms · door+preload 0 / activate 11537 / unload 0 / settle 470 · peak at frame 2/5 load 0.90
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+Reduced additional punctual light shadows resolution by 2 to make 2 shadow maps fit in the 1024x1024 shadow atlas. To avoid this, increase shadow atlas size, decrease big shadow resolutions, or reduce the number of shadow maps active in the same frame
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+"SetDestination" can only be called on an active agent that has been placed on a NavMesh.
+[CampaignTests] Failed B_RobotLightCatalog
+[CampaignTests] Failed B_RobotLightCatalog
+[CampaignTests] Failed B_RobotLightCatalog
+[CampaignTests] Failed B_RobotLightCatalog
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

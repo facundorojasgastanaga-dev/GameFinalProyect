@@ -1,0 +1,55 @@
+VisualOverhaulCarronero.Apply 2026-11-21T01:54:07
+añadido CarroneroCombatMotion
+CarroneroMotion desactivado en la variante (sigue en el objeto: su Awake reparte la prioridad de evasión)
+GUARDADO Assets/IronRequiem/Prefabs/Map01/Enemies/Carronero_Map01.prefab
+zona protegida:
+  Assets/IronRequiem/Prefabs/Campaign/Carronero.prefab sha256 f271171b49087ae1c490e1711a78d3dbba6be1a59f4b80b8a2a7a2c0d9f0ae76 (sin cambios en esta operación); igual que el respaldo
+  Assets/IronRequiem/Scripts/Enemies/CarroneroMotion.cs sha256 24692f0bfd6431ee3d0b560c03ae3abbce697bfce3ccf8944d2e1b69d9666fa6 (sin cambios en esta operación); igual que el respaldo
+  Assets/FPS/Scenes/IntroMenu.unity: no referencia el componente nuevo ni la variante
+  Assets/IronRequiem/Scenes/Campaign/Room00_Hangar.unity: no referencia el componente nuevo ni la variante
+  cuartos de Map01 que referencian la variante: 14; que referencian el prefab base: 0
+
+variante directa del prefab base: sí
+[Assets/IronRequiem/Prefabs/Map01/Enemies/Carronero_Map01.prefab] componentes de la raíz:
+  Transform -
+  Health activo
+  Actor activo
+  LODGroup -
+  CapsuleCollider -
+  Damageable activo
+  Rigidbody -
+  NavMeshAgent activo
+  EnemyController activo
+  AudioSource activo
+  EnemyMobile activo
+  SawBotCombat activo
+  SawMotorPresentation activo
+  EnemyPowerIndicators activo
+  HeavyDeathFeel activo
+  MechDeathExplosion activo
+  CarroneroMotion DESACTIVADO
+  CarroneroCombatMotion activo [añadido en la variante]
+CarroneroMotion en la variante: desactivado
+CarroneroCombatMotion: activo. Huesos:
+  hips        = Carronero_Visual/Rig/Hips
+  spine       = Carronero_Visual/Rig/Hips/Spine/Spine1
+  leftUpLeg   = Carronero_Visual/Rig/Hips/LeftUpLeg
+  leftLeg     = Carronero_Visual/Rig/Hips/LeftUpLeg/LeftLeg
+  rightUpLeg  = Carronero_Visual/Rig/Hips/RightUpLeg
+  rightLeg    = Carronero_Visual/Rig/Hips/RightUpLeg/RightLeg
+  sawArm      = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
+  sawForeArm  = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
+  otherArm    = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
+  head        = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/Neck/Head
+  saw         = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/SawSpin
+  spine2      = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2
+  neck        = Carronero_Visual/Rig/Hips/Spine/Spine1/Spine2/Neck
+  leftFoot    = Carronero_Visual/Rig/Hips/LeftUpLeg/LeftLeg/LeftFoot
+  rightFoot   = Carronero_Visual/Rig/Hips/RightUpLeg/RightLeg/RightFoot
+  LOD0 = Body_LOD0 (16381 v)
+  LOD1 = Body_LOD1 (3317 v)
+  LOD2 = Body_LOD2 (1563 v)
+  LOD3 = Body_LOD3 (473 v)
+  ajustes: ikMaxLod=1 fineMaxLod=0 legsOnlyFromLod=3 halfRateFromLod=3 reenterBlend=0.2 stepHeight=0.1 attackRaise=-38 attackSaw=14 sawAxisLocal=(-1.000, 0.000, 0.000)
+SawBotCombat (solo lectura): preparation=0.35 reach=1.05 damagePerSecond=4.5 damageInterval=0.12 moveSpeed=7.2
+[Assets/IronRequiem/Prefabs/Campaign/Carronero.prefab] CarroneroCombatMotion: ausente; CarroneroMotion: activo

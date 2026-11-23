@@ -1,0 +1,419 @@
+{
+  "id": "R13",
+  "name": "Sala de bombas",
+  "scene": "Map01_R13_SalaBombas",
+  "zone": "TratamientoAgua",
+  "function": "respite",
+  "archetype": "E0",
+  "worldOrigin": [
+    241,
+    -28,
+    382
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -17,
+      -1,
+      -21
+    ],
+    "max": [
+      17,
+      11,
+      21
+    ]
+  },
+  "interior": {
+    "min": [
+      -16,
+      0,
+      -20
+    ],
+    "max": [
+      16,
+      10,
+      20
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -16,
+          0,
+          -20
+        ],
+        "max": [
+          16,
+          10,
+          20
+        ]
+      },
+      "y": 10
+    }
+  ],
+  "doors": [
+    {
+      "id": "R13_in",
+      "role": "entry",
+      "class": "A",
+      "center": [
+        4,
+        0,
+        -20
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          0.5,
+          0,
+          -20
+        ],
+        "max": [
+          7.5,
+          4.5,
+          -16
+        ]
+      },
+      "airlock": "C12"
+    },
+    {
+      "id": "R13_out",
+      "role": "exit",
+      "class": "Z",
+      "center": [
+        -6,
+        0,
+        20
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -11.0,
+          0,
+          14
+        ],
+        "max": [
+          -1.0,
+          6,
+          20
+        ]
+      },
+      "airlock": "C13"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pumpS",
+      "type": "solid",
+      "center": [
+        -9.0,
+        2.5,
+        -10.0
+      ],
+      "size": [
+        6,
+        5,
+        6
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "pumpC",
+      "type": "solid",
+      "center": [
+        -9.0,
+        2.5,
+        0.0
+      ],
+      "size": [
+        6,
+        5,
+        6
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "pumpN",
+      "type": "solid",
+      "center": [
+        -9.0,
+        2.5,
+        10.0
+      ],
+      "size": [
+        6,
+        5,
+        6
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box",
+      "tag": "landmark"
+    },
+    {
+      "id": "booth",
+      "type": "platform",
+      "center": [
+        13.0,
+        1.5,
+        -2.0
+      ],
+      "size": [
+        6,
+        3,
+        12
+      ],
+      "material": "Bunker_Floor",
+      "collision": "box"
+    },
+    {
+      "id": "boothRamp",
+      "type": "ramp",
+      "center": [
+        13.0,
+        1.5,
+        -13.0
+      ],
+      "size": [
+        6,
+        3,
+        10
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "+z"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R13_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        0.5,
+        0,
+        -20
+      ],
+      "max": [
+        7.5,
+        4.5,
+        -16
+      ]
+    },
+    {
+      "id": "R13_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        -11.0,
+        0,
+        14
+      ],
+      "max": [
+        -1.0,
+        6,
+        20
+      ]
+    }
+  ],
+  "spawnZones": [],
+  "lightAnchors": [
+    {
+      "id": "R13.A1",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        9.6,
+        -10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R13.A2",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        9.6,
+        8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R13.A3",
+      "kind": "ceiling",
+      "pos": [
+        13,
+        9.6,
+        -2
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R13.A4",
+      "kind": "wall",
+      "pos": [
+        -5.5,
+        4,
+        -10
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting",
+      "maxRange": 4
+    },
+    {
+      "id": "R13.A5",
+      "kind": "wall",
+      "pos": [
+        -5.5,
+        4,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting",
+      "maxRange": 4
+    },
+    {
+      "id": "R13.A6",
+      "kind": "wall",
+      "pos": [
+        -5.5,
+        4,
+        10
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting",
+      "maxRange": 4
+    },
+    {
+      "id": "R13.A7",
+      "kind": "wall",
+      "pos": [
+        -6,
+        8.8,
+        19.6
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 7,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": "Respiro"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": []
+  },
+  "release": {
+    "mode": "OnEnterVolume",
+    "volume": {
+      "min": [
+        -4,
+        0,
+        8
+      ],
+      "max": [
+        4,
+        4,
+        14
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -13,
+      0,
+      -14
+    ],
+    "max": [
+      -5,
+      6,
+      14
+    ],
+    "note": "Tres bombas gigantes"
+  },
+  "arena": null,
+  "portal": null,
+  "chase": null
+}

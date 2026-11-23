@@ -1,0 +1,839 @@
+{
+  "id": "R11",
+  "name": "Decantadores",
+  "scene": "Map01_R11_Decantadores",
+  "zone": "TratamientoAgua",
+  "function": "combat",
+  "archetype": "E6",
+  "worldOrigin": [
+    237,
+    -28,
+    256
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -25,
+      -1,
+      -27
+    ],
+    "max": [
+      25,
+      15,
+      27
+    ]
+  },
+  "interior": {
+    "min": [
+      -24,
+      0,
+      -26
+    ],
+    "max": [
+      24,
+      14,
+      26
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    },
+    {
+      "id": "catwalk",
+      "y": 6
+    },
+    {
+      "id": "valveWalk",
+      "y": 1.2
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -24,
+          0,
+          -26
+        ],
+        "max": [
+          24,
+          14,
+          26
+        ]
+      },
+      "y": 14
+    }
+  ],
+  "doors": [
+    {
+      "id": "R11_in",
+      "role": "entry",
+      "class": "Z",
+      "center": [
+        0,
+        6,
+        -26
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -5.0,
+          6,
+          -26
+        ],
+        "max": [
+          5.0,
+          12,
+          -20
+        ]
+      },
+      "airlock": "C10"
+    },
+    {
+      "id": "R11_out",
+      "role": "exit",
+      "class": "A",
+      "center": [
+        -12,
+        0,
+        26
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          -15.5,
+          0,
+          22
+        ],
+        "max": [
+          -8.5,
+          4.5,
+          26
+        ]
+      },
+      "airlock": "C11"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "catwalkS",
+      "type": "solid",
+      "center": [
+        0.0,
+        3.0,
+        -23.0
+      ],
+      "size": [
+        48,
+        6,
+        6
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "rampW",
+      "type": "ramp",
+      "center": [
+        -21.0,
+        3.0,
+        -12.0
+      ],
+      "size": [
+        6,
+        6,
+        16
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-z"
+    },
+    {
+      "id": "rampE",
+      "type": "ramp",
+      "center": [
+        21.0,
+        3.0,
+        -12.0
+      ],
+      "size": [
+        6,
+        6,
+        16
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-z"
+    },
+    {
+      "id": "T1",
+      "type": "cylinder",
+      "center": [
+        -7.0,
+        1.2,
+        9.0
+      ],
+      "size": [
+        14.0,
+        2.4,
+        14.0
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh",
+      "tag": "landmark"
+    },
+    {
+      "id": "T2",
+      "type": "cylinder",
+      "center": [
+        8.0,
+        1.2,
+        -4.0
+      ],
+      "size": [
+        14.0,
+        2.4,
+        14.0
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "mesh"
+    },
+    {
+      "id": "M1",
+      "type": "wall",
+      "center": [
+        4.5,
+        1.5,
+        20.0
+      ],
+      "size": [
+        1,
+        3,
+        12
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "M2",
+      "type": "wall",
+      "center": [
+        -1.5,
+        1.5,
+        -15.0
+      ],
+      "size": [
+        1,
+        3,
+        10
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "valveWalk",
+      "type": "platform",
+      "center": [
+        -22.0,
+        0.6,
+        10.0
+      ],
+      "size": [
+        4,
+        1.2,
+        20
+      ],
+      "material": "Bunker_Grating",
+      "collision": "box"
+    },
+    {
+      "id": "valveRampS",
+      "type": "ramp",
+      "center": [
+        -18.0,
+        0.6,
+        2.0
+      ],
+      "size": [
+        4,
+        1.2,
+        4
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-x"
+    },
+    {
+      "id": "valveRampN",
+      "type": "ramp",
+      "center": [
+        -22.0,
+        0.6,
+        21.75
+      ],
+      "size": [
+        4,
+        1.2,
+        3.5
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box",
+      "rise": "-z"
+    },
+    {
+      "id": "pumpLowW",
+      "type": "coverLow",
+      "center": [
+        -12.5,
+        0.6,
+        -14.0
+      ],
+      "size": [
+        3,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "pumpLowE",
+      "type": "coverLow",
+      "center": [
+        14.0,
+        0.6,
+        14.0
+      ],
+      "size": [
+        3.0,
+        1.2,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    },
+    {
+      "id": "lintelP1",
+      "type": "wall",
+      "center": [
+        -7.0,
+        13.0,
+        -23.0
+      ],
+      "size": [
+        0.6,
+        2,
+        6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "lintelP2",
+      "type": "wall",
+      "center": [
+        7.0,
+        13.0,
+        -23.0
+      ],
+      "size": [
+        0.6,
+        2,
+        6
+      ],
+      "material": "Bunker_Wall",
+      "collision": "box"
+    },
+    {
+      "id": "water",
+      "type": "water",
+      "center": [
+        0.0,
+        0.225,
+        -10.0
+      ],
+      "size": [
+        36,
+        0.05,
+        20
+      ],
+      "material": "Bunker_LampCold",
+      "collision": "none"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R11_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -5.0,
+        6,
+        -26
+      ],
+      "max": [
+        5.0,
+        12,
+        -20
+      ]
+    },
+    {
+      "id": "R11_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        -15.5,
+        0,
+        22
+      ],
+      "max": [
+        -8.5,
+        4.5,
+        26
+      ]
+    },
+    {
+      "id": "slideN",
+      "kind": "slideLane",
+      "min": [
+        -18,
+        0,
+        19
+      ],
+      "max": [
+        3.5,
+        2,
+        22
+      ]
+    }
+  ],
+  "spawnZones": [
+    {
+      "id": "G1",
+      "min": [
+        -19,
+        0,
+        16
+      ],
+      "max": [
+        -17,
+        0,
+        21
+      ],
+      "slots": 5,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -19,
+          0,
+          16
+        ],
+        [
+          -19,
+          0,
+          18.5
+        ],
+        [
+          -19,
+          0,
+          21
+        ],
+        [
+          -17,
+          0,
+          17
+        ],
+        [
+          -17,
+          0,
+          19.5
+        ]
+      ]
+    },
+    {
+      "id": "G2",
+      "min": [
+        12,
+        0,
+        18
+      ],
+      "max": [
+        20,
+        0,
+        24
+      ],
+      "slots": 5,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          16.0,
+          0,
+          21.0
+        ],
+        [
+          12.0,
+          0,
+          18.0
+        ],
+        [
+          12.0,
+          0,
+          24.0
+        ],
+        [
+          20.0,
+          0,
+          18.0
+        ],
+        [
+          20.0,
+          0,
+          24.0
+        ]
+      ]
+    },
+    {
+      "id": "G3",
+      "min": [
+        17,
+        0,
+        2
+      ],
+      "max": [
+        22,
+        0,
+        10
+      ],
+      "slots": 4,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          19.5,
+          0,
+          6.0
+        ],
+        [
+          17.0,
+          0,
+          2.0
+        ],
+        [
+          17.0,
+          0,
+          10.0
+        ],
+        [
+          22.0,
+          0,
+          2.0
+        ]
+      ]
+    },
+    {
+      "id": "G4",
+      "min": [
+        -16,
+        0,
+        -8
+      ],
+      "max": [
+        -12,
+        0,
+        -2
+      ],
+      "slots": 4,
+      "kind": "normal",
+      "rounds": "both",
+      "points": [
+        [
+          -14.0,
+          0,
+          -5.0
+        ],
+        [
+          -16.0,
+          0,
+          -8.0
+        ],
+        [
+          -16.0,
+          0,
+          -2.0
+        ],
+        [
+          -12.0,
+          0,
+          -8.0
+        ]
+      ]
+    }
+  ],
+  "lightAnchors": [
+    {
+      "id": "R11.A1",
+      "kind": "ceiling",
+      "pos": [
+        -12,
+        13.5,
+        -10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A2",
+      "kind": "ceiling",
+      "pos": [
+        12,
+        13.5,
+        -10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A3",
+      "kind": "ceiling",
+      "pos": [
+        -12,
+        13.5,
+        10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A4",
+      "kind": "ceiling",
+      "pos": [
+        12,
+        13.5,
+        10
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A5",
+      "kind": "hanging",
+      "pos": [
+        -7,
+        6,
+        9
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A6",
+      "kind": "floor",
+      "pos": [
+        -7,
+        1.8,
+        9
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A7",
+      "kind": "floor",
+      "pos": [
+        8,
+        1.8,
+        -4
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R11.A8",
+      "kind": "wall",
+      "pos": [
+        -12,
+        7,
+        25.6
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 8,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [
+    {
+      "id": "R11-P1",
+      "class": "P",
+      "center": [
+        -7,
+        6,
+        -23
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "vano": [
+        6,
+        6
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    },
+    {
+      "id": "R11-P2",
+      "class": "P",
+      "center": [
+        7,
+        6,
+        -23
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        6,
+        6
+      ],
+      "behaviour": "closeOnWave0_openOnComplete"
+    }
+  ],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": ""
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": [
+      "T1",
+      "T2"
+    ]
+  },
+  "portal": {
+    "plane": 0,
+    "axis": "x",
+    "vano": [
+      6,
+      6
+    ],
+    "shutter": true
+  },
+  "arena": {
+    "firstRoom": {
+      "center": [
+        0.0,
+        6.75,
+        3.0
+      ],
+      "size": [
+        48,
+        14.5,
+        46
+      ]
+    },
+    "secondRoom": {
+      "center": [
+        0.0,
+        6.75,
+        3.0
+      ],
+      "size": [
+        48,
+        14.5,
+        46
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -15,
+      0,
+      1
+    ],
+    "max": [
+      1,
+      7,
+      17
+    ],
+    "note": "Puente giratorio del clarificador sobre T1"
+  },
+  "release": null,
+  "chase": null
+}

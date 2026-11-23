@@ -50,6 +50,8 @@ Los IDs permiten pedir, por ejemplo, «ejecuta únicamente IR-02». Esta tabla e
 | IR-07 | Pulido visual según referencias | Entregas existentes; ajustes concretos por definir | Diferencias solicitadas corregidas y comparadas |
 | IR-08 | Regresión y rendimiento final | Pendiente de los cambios que se autoricen | Mecánicas verificadas y mediciones finales documentadas |
 | IR-09 | Protagonista definitivo | Integración v02, melee y slide asimétrico verificados en laboratorio | Variante y rig compartido integrados conservando el controlador FPS |
+| IR-10 | Mapa 1 «Búnker abandonado» (Prompt 9): 17 cuartos + jefe | F0 y F1 en papel; **PARADA F1**, esperando aprobación | Recorrido completo sin soft-locks, 120 FPS a 1080p en los 3 cuartos más cargados y zona protegida intacta (PROMPTS_CHATS §9) |
+| IR-11 | IA del jefe del Mapa 1 | Pendiente; solo conceptos (Map01/03_ENCUENTROS §A7) | Jefe elegido por el usuario, con fases, ataques telegrafiados y armas robables verificados en Play |
 
 Estados que puede adoptar una tarea: **pendiente / autorizada / en curso / por verificar / completada / bloqueada por un impedimento documentado**. «Por verificar» no equivale a «completada». Antes de iniciar un ID, contrastar esta tabla con las entregas de otros chats y con la petición directa que corresponda.
 
@@ -1428,3 +1430,279 @@ Informe: `Docs/IronRequiem/SAWBOT_ROBOT_ANIM_20261118.md`. Solo variante y escen
 - [x] Controller `SawBotRobot`, variante `SawBot_RobotAnim_Test`, laboratorios Before/After y vitrina `SawBotRobotAnimShowcase`.
 - [x] Play automático antes/después: 0 errores y la misma secuencia de IA. Vitrina: 9/10 en movimiento (el que no, es el SawHold antiguo, casi estático).
 - [ ] Prueba manual; integración en `SawBot_Current.prefab` pendiente de aprobación.
+
+## IR-10 — Mapa 1 «Búnker abandonado», F0 y F1 (18/11/2026)
+Petición: Prompt 9 de `PROMPTS_CHATS.md` §9, ejecutado por el coordinador R0 con un equipo de subagentes (F0 con Haiku; R1, R3 y R4 con Opus; R2 y R5 con Sonnet). Alcance de esta ejecución: F0 y F1, y PARADA. Solo documentos en `Docs/IronRequiem/Map01/`.
+- No se abrió ni se controló Unity, no se guardaron escenas y no hubo commits.
+- Build Settings, zona protegida y sistemas existentes, sin cambios.
+- Respaldo de esta checklist: `Tools/IronRequiem/Backups/20261118-map01-f1/`.
+- [x] **F0 inventario:** `Map01/00_INVENTARIO.md`. Lo que condiciona el diseño, verificado contra el código:
+  - las armas se obtienen solo por ejecución (`executionOnly`);
+  - recorrido lineal sin teletransporte;
+  - las rondas ≥ 4 necesitan `secondRoom`;
+  - morir recarga toda la sesión;
+  - no hay soporte de jefe ni fin de campaña.
+- [x] **F1 diseño en papel:** `Map01/MAP01_DESIGN.md` más 01_ESTRUCTURA … 05_ILUMINACION.
+  - 17 cuartos + jefe en 12 zonas.
+  - Plano sin solapes, comprobado por script.
+  - Curva de ritmo, plan de encuentros (238 enemigos) y 59 puertas en 6 clases.
+  - Iluminación por zona y 22 props nuevos.
+  - 3 conceptos de jefe.
+  - Contratos v1 entre roles.
+- [ ] **PARADA F1:** decisiones U1–U16 de `MAP01_DESIGN.md` §7 (jefe, sesiones y checkpoints, obtención de armas, Build Settings…).
+- [ ] F2 greybox jugable, F3a conceptos de puertas, F3–F5 (ver `MAP01_DESIGN.md` §8).
+- [ ] Verificar en el Editor: si el Carroñero es ejecutable, las estadísticas del T-07 Mech, si la torreta es fija y el escalón de NavMesh (1,0 frente a 0,4).
+- Pendiente aparte: **IR-11**, IA del jefe (otra tarea).
+- [x] **F2 greybox (18/11/2026), construido y en Play.** El usuario aprobó U1–U16. Plan: `Map01/F2_PLAN.md`.
+  - **Escenas:** 4 sesiones `Map01_Campaign_S1…S4`, copias de `RequiemCampaign`, que no se tocó. 18 cuartos `Map01_R<NN>_*`, en `Scenes/Map01_Bunker/`, añadidos al final de Build Settings (22 escenas; no se quitó ni reordenó ninguna).
+  - **Autoría por datos:** Structure, Lighting, Doors, Encounters y Sessions, en `Editor/Map01/`.
+  - **Componentes de runtime nuevos:** `ArenaShutter`, `Map01SessionHandoff`, `Map01StageRelease`, `NavAreaMaskOnAwake`.
+  - **Compilación:** sin errores.
+  - **Validadores:** Structure OK (NavMesh y caminos de slots), Doors OK, Encounters OK. Lighting da 10 avisos de más de 4 luces por objeto (techos), que quedan para afinar en F3.
+- [x] **PlayMode automático `Map01F2Tests`.** Jugador invencible y teletransportado: comprueba el flujo, no la geometría a pie.
+  - S1 y S3 aprobadas.
+  - S2 aprobada en la segunda pasada. En la primera, R08 se quedó «en espera» con otra variación aleatoria y otra posición del jugador: **vigilar en la prueba manual**.
+  - S4: el jefe provisional por rondas se completa. La carga de WinScene no se comprobó después de corregir el test.
+- [ ] **PARADA F2:** recorrido manual del usuario (`Tools/Iron Requiem/Map01/Play/Play from S1`), revisor independiente, medición Release de R07/R11/R16/R18 y capturas por cuarto.
+- [x] **Hangar y menú (18/11/2026, por petición del usuario).**
+  - **Menú:** JUGAR de IntroMenu carga `Map01_Campaign_S1`, con permiso explícito del usuario. Solo cambia `SceneName`, más 10 líneas `style: 0` que Unity reserializa con el valor por defecto de `IndustrialPanelGraphic`. Hay respaldo en `Backups/20261118-map01-hangar/` y el menú `Sessions/5` lo revierte.
+  - **S1 empieza en Room00_Hangar:** cinemática intacta (hash igual) y esclusa a0 hacia S00/R01.
+  - **Chatarrería `HG_ScrapRoute`:** el tramo del hangar hacia la puerta, construido por `HangarRouteAuthoring`. Pasillo de ≥ 4,2 m, NavMesh del hangar rehorneado y 6 montones viejos desactivados. Las cintas y la pasarela no se tocan; el contador y las explosiones del menú ya existían y no cambian.
+  - **Verificado en Play:** menú → JUGAR → S1 → cinemática → jugador de pie en el hangar.
+  - [ ] Pendiente: el paso hangar → R01 a pie y el coste de la chatarrería (+515 k triángulos, sin LOD).
+- [x] **Sonido de la cinemática de inicio (18/11/2026, petición del usuario).**
+  - **Qué se añadió:** capas nuevas sin tocar la timeline ni los scripts de HangarIntro (hashes iguales):
+    - `HangarIntroSoundscape` (Scripts/Audio), con 30 cues por tiempo;
+    - 18 WAV sintetizados de forma reproducible en `Audio/SFX/HangarIntro_v2` (`Tools/IronRequiem/Audio/synth_hangar_intro.py`);
+    - raíz `HG_CinematicSoundscape` en Room00_Hangar, creada por `HangarIntroAudioAuthoring`.
+  - **Diseño de cues:** `Map01/AUDIO_CINEMATICA_INICIO.md`. Respaldo: `Backups/20261118-hangar-audio/`.
+  - **Verificado en Play:** menú → JUGAR → cinemática completa sin errores.
+  - [ ] Pendiente: la escucha del usuario. El acento de la revelación (23,2 s) está estimado. Durante la cinemática, la música de exploración baja a −9 dB (se puede desactivar).
+
+## Estación de montaje, cambio de arma y ejecución del T-07 (19/11/2026)
+Informe: `Docs/IronRequiem/ARMS_FIX_20261119.md`. Respaldo `Tools/IronRequiem/Backups/20261119-arms-fix/`. Evidencias `Tools/IronRequiem/Reports/ArmsFixPass/` (before/after, `station_compare_*.png`, `weapons_*_sheet.png`, `tests/`). Sin commits; ninguna escena guardada; zona protegida con 39/39 hashes iguales.
+- [x] A. Estación en 4 tiempos (aproximación, sujeción, bloqueo con golpe seco a 3,80 s, retirada) con la duración de 5,6 s. IK con el codo hacia arriba y hacia dentro, más comprobación por cápsula: los brazos ya no entran en el muro de Map01. Cobertura máxima 19,6 % en el vestíbulo y 17,6 % en Map01 (antes 24,2 % y 22,1 %). Ninguna pieza flotando al terminar. Una luz sin sombras. Solo clips existentes.
+- [x] B. Rig sin parpadeo en 1↔2, sin despliegue duplicado ni absorción repetida, G con un solo cambio, cambio forzado que se invierte, arma robada en el brazo tras el arranque. 1/2 y G bloqueados hasta el impacto (~0,83 s); melee bloqueada hasta el final de la recuperación de la mano.
+- [x] C. Ejecución con exactamente 2 golpes (arranque 0,34 s; puñetazo y muerte 0,732 s). El alcance es un agarre de 0,55 m como máximo, sin puño. YankTime y StrikeTime sin cambios (Big Bot y ExtractionArcFx intactos).
+- [x] Chirrido robótico (petición del usuario): quitados los 9 `IR_Hangar_Servo` de `Room00_WakeUp.playable` (se conservan los otros 6 sonidos); la estación tampoco usa el servo.
+- [x] Compilación: 0 errores. Tests nuevos `ArmsFixPassTests`: 4/4. Regresión final: 72/83, con 9 fallos previos confirmados por línea base con el código original y 2 inestables o de entorno, verificados aislados.
+- [ ] Prueba manual del usuario con teclado y ratón.
+- [ ] Map01: el marco fijo de la estación sigue dentro del muro lateral (S1, S3, S4). Hay que recolocarlo en `Map01SessionAuthoring` (chat 9); requiere aprobación.
+- [ ] Pendientes menores de la revisión: «[G] SOLTAR» visible durante el bloqueo (MechanicHud), sierra del SawBot ausente hasta el arranque, agarre corto frente al arco de extracción, excepción de `T07CannonSocket` al instanciar desde una corrutina, piezas de la estación aún con aspecto de cubos.
+
+## Estación de montaje con el modelo segmentado (19/11/2026, modelo entregado por el usuario)
+Informe: `Docs/IronRequiem/MOUNT_STATION_ART_20261119.md`. Respaldo en `Tools/IronRequiem/Backups/20261119-mount-station-art/` (prefab, rig, estación, arnés, checklist, FBX fuente y hashes). Evidencias en `Tools/IronRequiem/Reports/MountStationArt/`. Sin commits; ninguna escena guardada; zona protegida 39/39. Aplicado al prefab de producción con aprobación del usuario (respaldo previo en `.../apply-production/`).
+- [x] **Preparado del modelo:** FBX de Tripo (256 piezas) partido en copia por `Tools/IronRequiem/Blender/mount_station_prep.py`. Separa pórtico estático, 2 brazos de trabajo (anilla, eslabón con hombro y codo, herramienta, pinza partida en dos mitades) y 2 brazos traseros aparcados. Añade UV cúbicas y 6 materiales `IR_MS_*`. Fuente intacta (SHA-256 igual).
+- [x] **Variante de prueba `MountStation_C04_Segmented.prefab`** (retirada al aplicar; copia en el respaldo): creada por `MountStationArtBuilder`. La animación de `WeaponMountStation` no cambia; el rig se coloca sobre las articulaciones del modelo y los cubos se ocultan, conservando los colisionadores reajustados a los postes.
+- [x] **`StationArmRig`:** `hingeAligned` y `gripLength`, ambos desactivados por defecto. La estación actual no cambia.
+- [x] **Encaje:** el pórtico cabe sin tocar muros en RequiemCampaign y Map01 S1–S4. Los cubos actuales se meten en `SideW` (S1) y `SideE` (S3, S4); con este arte desaparece el pendiente de recolocar la estación.
+- [x] **Cobertura máxima (solo brazos):** 23,0 % en el vestíbulo y 19,7 % en Map01 S1, sin choques en ninguna de las dos. Con la mano soltada: 26,1 % y 22,2 %.
+- [x] **Tests:** EditMode `StationArmRigSegmentedTests` 4/4. Regresión PlayMode (campaña, hangar y armas) 11/12; el único fallo ya existía: IntroMenu arranca Map01.
+- [x] **Aplicado a `MountStation_C04.prefab`** (19/11, «Sí, aplícalo»): mismo `.meta`/GUID; escenas sin guardar y con el mismo hash. Encaje libre en las 5 escenas. En Play con la estación real: vestíbulo 23,0 % / 26,1 %, Map01 S1 19,6 % / 22,2 %, sin choques y montaje concedido. EditMode 4/4 (la prueba de producción fallaba antes de aplicar). Regresión PlayMode 11/12, con el mismo fallo previo de IntroMenu.
+- [x] **Refinamiento de la garra (19/11, tarde):** la garra ya no se ve suelta del brazo.
+  - Muñeca del modelo en `StationArmRig`: cabeza en la punta de la herramienta, codo hacia el del modelo y giro hacia la herramienta. El giro respecto a la herramienta pasa de 132-175° a 0°.
+  - Pinzas que giran sobre su pasador (tenazas) en vez de deslizarse.
+  - Reposo hacia fuera y atrás: el brazo ya no se pliega del todo.
+  - Los bloques de rayas del anillo de la muñeca pasan a ser pernos de acero con tapón naranja.
+  - Cobertura del brazo: vestíbulo 22,0 %, S1 18,4 %, sin choques y montaje concedido.
+  - EditMode 6/6; regresión 11/12 (fallo previo de IntroMenu); escenas sin guardar.
+- [x] **Puertas blindadas (19/11, aprobado):** 86 puertas de rayas pasan al material `IR_BlastDoor` en RequiemCampaign y Map01 S1–S4. Se generó por código: acero, dos hojas, refuerzos, remaches, cerradura y marco naranja.
+  - Escenas guardadas con respaldo en `Backups/20261119-doors/`; solo cambia el material.
+  - Siguen con rayas las marcas de la escalera y la cámara de tránsito del hangar.
+  - En Play: vestíbulo 22,0 %, S1 18,4 %, sin choques y montaje concedido. EditMode 6/6; regresión 11/12; zona protegida 39/39.
+- [x] **Puerta del tránsito del hangar** («TRÁNSITO C-04 · PUENTE NORTE», aprobado): cambiada en las cinco escenas, con respaldo en `Backups/20261119-transit-door/`.
+  - `ChamberHangarDoor` pasa a `IR_BlastDoor`; la puerta con ojo de buey (4 piezas), a `IR_DoorPlate` (acero remachado).
+  - Solo cambia el material; IntroMenu y los generadores, sin tocar.
+  - Play, EditMode 6/6 y regresión 11/12 (fallo previo).
+- [x] **Controles v0.1, F2 (20/11, esquema Ágil elegido):** bindings nuevos en `InputSystem_Actions.inputactions` (respaldo en `Backups/20261119-controls/`).
+  - Dash en Espacio (aire) / M5 / LB; slide en C / M4 / R3; Interactuar contextual E / X; golpe F / RB; expulsar G / B; `WeaponNext`, `WeaponPrevious` y `SelectWeapon1..9`; Esc entra en `UI/Menu` y Tab sale.
+  - Eliminadas `Attack`, `Interact`, `Previous`, `Next`, `NextWeapon`; `Overdrive` queda sin tecla (no se borra). Recargar queda solo en teclado (X es Interactuar).
+  - `PlayerInputHandler` lee acciones (sin `Keyboard.current`), sprint alterna en mando por defecto. `WeaponMountStation` e `InGameMenuManager` migrados. `ControlHints` da el nombre real de la tecla a `MechanicHud`, `RetroStatusBar` y la estación.
+  - EditMode 9/9 (`ControlsSchemeTests`, `MechanicsAssetTests`). PlayMode: regresión C 24/27 y B 42/48; los fallos ya estaban en la línea base de ARMS_FIX (solo `ModularArmTests` falló por un archivo bloqueado).
+  - Sin tocar: zona protegida, escenas, stick sin `deltaTime`, F12. Pendiente: panel de reasignación (F3/F4), textos horneados de escenas y prefab.
+- [x] **Controles v0.1, F4 (20/11):** menú de reasignación (lista A) con captura, conflictos con intercambio, restablecer y guardado en PlayerPrefs; botón CONTROLES en las opciones de la pausa (IntroMenu sin tocar).
+  - Código nuevo: `ControlsRebinder`, `ControlsPanel`, `ControlsPanelInstaller`, `BakedHintFixer`, `PauseMenuBackHook`; ajustes de sprint e invertir Y en `RequiemSettings`.
+  - EditMode 18/18 (`ControlsSchemeTests`, `ControlsRebinderTests`, `MechanicsAssetTests`); PlayMode 4/4 con teclado virtual (Golpe F→V: V golpea, F no, el HUD muestra V, persiste, el bloqueo de entrada sigue activo, Esc cancela la captura).
+  - Capturas y estado en `Docs/IronRequiem/CONTROLS_V01.md` §10. Pendiente: botón en IntroMenu (aprobación), textos horneados restantes y prueba manual con mando.
+- [ ] Prueba manual con teclado y ratón; ejecución en Play en Map01 S2–S4; medida de rendimiento (≈ 31 k vértices más).
+
+- 2026-11-20 · Controles: botón CONTROLES añadido al menú principal por instalador en ejecución (IntroMenu sin editar). Probado en Play con captura.
+
+## Chat 11 — Linterna y lectura de enemigos en la oscuridad: F0 + F1 (20/11/2026)
+
+Petición: prompt 11 de `PROMPTS_CHATS.md` (F0 inventario, F1 propuestas, **PARADA**). Detalle: `VISION_V01.md`. Respaldo de esta checklist: `Tools/IronRequiem/Backups/20261120-vision-f0f1/`. Sin cambios en escenas, materiales, luces, entrada, ajustes ni paquetes. Sin commits.
+
+- [x] F0 inventario con 3 subagentes Haiku de solo lectura (luces y zonas oscuras; materiales, emisivos y rim; entrada, cámara, HUD y ajustes). Las afirmaciones clave se comprobaron en el proyecto: URP sin light layers (`Default_PipelineAsset.asset:76`); `_RIM` como keyword de material; nadie escribe el rim en runtime; `EnemyController` reescribe su MaterialPropertyBlock cada frame.
+- [x] Herramienta de medición de solo lectura `Assets/IronRequiem/Editor/Vision/VisionF0Probe.cs` (menú `Tools/Iron Requiem/Vision`). Usa una escena vacía sin guardar y salas aditivas en Play, y reabre la escena previa. Validada contra la cámara del jugador en Map01 S1: medias 10,54 y 10,61.
+- [x] Medición: 561 casos en 24 salas (`Reports/Vision/F0`). 161 ilegibles, 134 débiles y 266 legibles. Peores: R07, R11 y R02; por enemigo, el T07 (35 %). HoverBot siempre legible.
+- [x] F1: 3 opciones más una combinación, probadas en los mismos 6 puntos oscuros a 5, 15 y 25 m (`Reports/Vision/F1`). A (linterna) 8/18, B (pulso) 17/18, C (pasivo) 17/18, A+C 17/18. Recomendada: C.
+- [ ] **PARADA F1:** elección del usuario (A, B, C o combinación). F2 a F4 sin empezar.
+- [ ] Pendientes para otros chats:
+  - Map01 oscuro de forma general (fondo 2-13 frente a ≥ 45): chat 9 y F3, sin subir el ambiente.
+  - R07 con 10 luces y R18 con 9.
+  - Prueba manual del chat 10; no hay botón de mando libre.
+  - `maxBatches=0` en MapFxAudit.
+
+## Chat 11 — F2 a F4: lectura pasiva de enemigos en la oscuridad (opción C) (20/11/2026)
+
+Petición: el usuario eligió **«C: lectura pasiva»** y después dijo «continua». Detalle completo en `VISION_V01.md` §6-§8. Respaldos: `Tools/IronRequiem/Backups/20261120-vision-f2/`. Sin cambios en escenas, luces, entrada, pipeline, paquetes ni materiales originales (hash igual). Sin commits.
+
+- [x] F2:
+  - `Scripts/Player/Vision/EnemyDarkReadability.cs`, `VisionMaterialRules.cs` y `VisionMaterialMap.cs`.
+  - 4 variantes `_Vision` nuevas en `Art/Vision/`.
+  - Ajustes «Resaltar enemigos en la oscuridad» y «Contornos siempre activos» (`RequiemSettings` y `ControlsPanel`).
+  - Herramientas en `Editor/Vision/`.
+  - Sin acción de entrada nueva, sin `Light`, sin recurso.
+- [x] Calibración con 561 puntos medidos: oscuro ≤ 0,5 (fondo ≈ 15) e iluminado ≥ 1,6 (fondo ≈ 45).
+- [x] F3:
+  - En los 6 puntos más oscuros, 0 de 18 legibles antes y 16 de 18 después. El contraste pasa de 1,0-1,5 a 2,2-3,3.
+  - Esclusa Transfer y captura disparando sin deslumbramiento.
+  - Room03 en Editor: 0 luces añadidas; tiempo de frame y GC sin cambio apreciable; **SetPass +18-25 %** (coste real, pendiente de medir en build).
+- [x] F4: revisor Opus independiente. Hallazgos 1 y 3-9 corregidos (2 descartado con evidencia).
+  - Fallo propio corregido: la liberación oscurecía al enemigo y el rim superaba 4 HDR por la conversión de espacio de color.
+- [x] Tests: EditMode **3/3** y PlayMode **2/2**, con XML en `Tools/IronRequiem/Reports/Vision/F2/`. Compilación sin errores.
+- [ ] Pendientes:
+  - Medición en build (SetPass y GPU) y, si procede, cuantizar el rim en niveles.
+  - Medir a 25 m reales.
+  - Prueba manual con teclado, ratón y menú de ajustes.
+  - Comprobar en juego BigBot, HoverBot, Turret y Carroñero.
+  - Oscuridad general de Map01 (chat 9).
+
+- 2026-11-20 · Menú: estilo unificado y luces (pedido por el usuario; zona de menú aprobada para este cambio).
+  - Hecho, todo en ejecución, sin editar ni guardar escenas (`Scripts/Menu/MenuStyleInstaller.cs`):
+    consola de opciones con la misma chapa remachada y placas de cinta del menú principal, cabecera «AJUSTES»; créditos dentro del marco del menú (antes flotaba sin panel); lecturas de volumen/sensibilidad visibles (quedaban tapadas por su pantallita); lámpara suelta de VOLVER retirada.
+  - Luces: `FaderGlowFx` (brillo según altura de la palanca), `MenuLampFx` (halo y fallos en PWR/SRV/NET y en el interruptor), `MenuButtonLightFx` (resplandor, barrido e indicador en los botones), `TitleWornFx` + `TitleWearGraphic` + `MenuSparksGraphic` (título desgastado, letras que fallan, chispas y línea de escaneo).
+  - Tocados: `MainMenuPanelPresentation` (el marco sigue visible en créditos), `MenuPolishButtonFx` (getter `IsPrimary`), `OptionsSwitchVisual` (placa de cinta + halo), `BakedHintFixer` (también en el menú principal). Respaldo: `Tools/IronRequiem/Backups/20261120-menu-style/`.
+  - Verificado en Play con capturas (`Docs/IronRequiem/Concepts/UI/MenuStyle/`): inicio, opciones y créditos del menú principal, y opciones de la pausa en Map01. Sin excepciones en consola.
+  - No verificado: interacción con ratón/mando real, secuencia de JUGAR con el título nuevo, otras resoluciones, compilación del juego. Sin tests automáticos nuevos.
+
+- 2026-11-20 · Cinemática de despertar (Room00) y pausa (pedido por el usuario; zona protegida aprobada para estos puntos).
+  - Luces: el visor arranca al final del primer acercamiento (`WakeAt` = primer golpe − 0,9 s; antes 0,8 s). El sonido de arranque `R01_arranque` se mueve con él (`HangarIntroSoundscape.RetimeCue`). La franja del visor sigue viéndose celeste pálido porque es el color de su textura, no una luz (0 materiales emisivos en el modelo).
+  - Golpes al cristal (`WakeUpRobotPose`): puño armado junto al pecho, pausa, golpe seco, queda apoyado y retrocede; el segundo se arma más y atraviesa el cristal. Torso que gira con cada golpe y codo detrás del puño.
+  - Mirada a la mano: la cabeza se orientaba antes de subir el brazo y apuntaba a donde la mano colgaba. Ahora `LookAtHand` corre después del brazo y apunta a la palma.
+  - Cristal (`CapsuleGlassBreak`): la grieta deja de ser una imagen plana; se genera una red de fracturas finas que sale del puño y sigue creciendo a saltos hasta el segundo golpe. La rotura añade esquirlas pequeñas.
+  - Pausa (`MenuStyleInstaller.Pause`): consola compacta con el estilo del menú principal (título desgastado, regla naranja, botones numerados con luz, lámparas, ayuda de teclas). `MenuButtonLightFx` funciona también sin `MenuPolishButtonFx`.
+  - Todo en ejecución, sin guardar escenas. Respaldo: `Tools/IronRequiem/Backups/20261120-intro-pausa/`.
+  - Verificado en Play con capturas fijas (`Docs/IronRequiem/Concepts/UI/IntroPausa/`). No verificado: la cinemática vista en movimiento, el sonido de arranque retrasado, `HangarIntroPresentationTests` y `CampaignTests` (no ejecutados), compilación del juego.
+
+- 2026-11-20 (corrección) · Luces del robot: lo anterior estaba al revés.
+  - Acercamiento de JUGAR en el menú (`HangarLaunchSequence`): se quitó el encendido a 1,8 s; el robot sigue apagado hasta el fundido.
+  - Cinemática de Room00: el visor vuelve a encenderse a 0,8 s, antes de moverse (`WakeAt` restaurado; se retiró `RetimeCue` y el sonido de arranque queda en su tiempo original).
+  - `TitleWornFx`: corregido el error «graphic rebuild while we are already inside a graphic rebuild loop» (el desgaste se marcaba desde el callback de TMP; ahora se marca en `Update`).
+  - `MainMenuRestoreTests`: la comprobación `robot.IsAwake` tras JUGAR pasa a esperar `false`. Test no ejecutado.
+  - Verificado en Play con capturas: `jugar_acercamiento_apagado.png` e `intro_1_visor_encendido.png`; sin el error en consola en esa pasada.
+
+## Chat 7 — Lote P-E2a + E7 + M7–M9 + P1 de la auditoría r2 (aplicado el 17/11/2026, registrado el 20/11/2026)
+Aprobado por el usuario el 17/11. El código y las copias entraron en el commit `6dbe3be` (18/11). **La verificación quedó a medias** (ver abajo). Desde el 18/11 el chat 9 (Mapa 1) sustituye a este chat en mapa y puertas.
+- [x] **P-E2a:** `ZoneEnvironment.Bind` ya no cambia el perfil de `HG_PostVolume`. `Scripts/VisualPass/HangarGameplayPost.cs` (nuevo) añade en runtime un Volume aparte (prioridad 21, HG_GameplayVolume) solo cuando `HangarIntroCinematic.Finished` es true. Test `MapFxAudit.H_HangarPostAfterCinematic` aprobado el 17/11: peso 0 durante la cinemática y 1,00 a los 1,5 s de terminar; `HG_PostVolume` sigue con HG_MenuVolume.
+- [x] **E7:** `RobotDestructionPool` guarda un juego de bursts por prefab; BigBotDestruction, SawBotCombat, PooledEnemyDeathBurst y RobotDamageProgression piden su propio prefab. Test `MapFxAudit.I_BurstPoolPerPrefab` aprobado el 17/11.
+- [ ] **E7, regresión sin diagnosticar:** el 17/11 fallaron `BigBotDestructionTests.LethalFromFullLifeProcessesDeathAndDropOnceWithoutDamageExplosion` y `SimultaneousDeathsRespectBudgetsAndCannonPoolResetsOnReuse`, y `CombatPolishTests` se colgó tras `BigBotDeathVisualSequence`. No se comprobó si también fallan con el código anterior. No se ejecutaron `T07DestructionBehaviorTests`, `SawBotTests`, `HangarIntroPresentationTests` ni `CampaignTests`.
+- [x] **M7–M9 en copias** (`Editor/MapFx/IronCampaignMapFxRooms.cs`): `Room01_Foundry_v2`, `Room02_Breach_v2` y `Room04_Reactor_v2`, cada una con su `*_v2_NavMesh.asset`. Los originales no se tocaron (hashes iguales el 17/11). Test `MapFxAudit.G_RoomFixesBeforeAfter` (`Reports/MapFxAudit/fixes/`): en Room02 el jugador ya no cae al vacío, en Room01 ningún collider de la sala toca la estación y en Room04 la rampa llega a la pasarela. Las copias **no están en Build Settings** ni en `stageScenes`; con Map01 como campaña activa quedan como referencia.
+- [x] **P1 conceptos de puertas:** `Docs/IronRequiem/Concepts/Doors/Redesign_v01/` (D-A Mandíbula, D-B Persiana telescópica, D-C Bóveda batiente). Sin elección del usuario; el chat 9 definió después su propia familia en `Map01/04_PUERTAS.md`.
+- [ ] No hechos: medición Release tras el lote, comparación final de la zona protegida y recorrido manual.
+
+## Chat 12 — Pase visual con Fable: F0 diagnóstico y F1 dirección de arte (21/11/2026)
+
+Petición: prompt 12 de `PROMPTS_CHATS.md` más el «Contexto del mundo» enviado por el usuario. Alcance de esta ejecución: F0 y F1, y **PARADA**. Entrega: `Docs/IronRequiem/VisualPassFable/` (`00_DIAGNOSTICO.md`, `01_DIRECCION.md`, `01d_DECORACION.md`, `01e_CARRONERO.md`, capturas en `F0/` y `F1/`, láminas en `concepts/`). Sin cambios en escenas, materiales, luces, ajustes, entrada ni paquetes. Sin commits. Respaldo de esta checklist: `Tools/IronRequiem/Backups/20261120-chat7-cierre/`.
+
+- [x] **Arnés de solo lectura** `Assets/IronRequiem/Tests/PlayMode/VisualPassF0.cs` (único archivo nuevo en Assets). Carga la sesión real `Map01_Campaign_S1`, detiene el flujo y carga cada sala de forma aditiva; nada se guarda.
+- [x] **F0 zonas:** 25 salas (18 de Map01 y 7 de la campaña antigua), 2 puntos de vista fijos, vacío y T-07 a 5, 15 y 25 m, a 1920×1080: 200 capturas en `Tools/IronRequiem/Reports/VisualPassFable/F0/zones/`, con `zones.csv` y `rooms.csv`. Fondo medio de 3 a 19 sobre 255 en todas; entre el 50 % y el 98 % de los píxeles por debajo de 10.
+- [x] **F0 luces de robots:** 7 enemigos, estados de `EnemyStateLights`, frente, espalda y 15 m (61 capturas y `robots.txt`). Ojos de 3–5 cm sin HDR; solo el HoverBot cambia de color con el estado; el BigBot escribe en una emisión apagada; el punto rojo del Carroñero flota; el contorno blanco de `EnemyDarkReadability` es lo más llamativo.
+- [x] **F0 Carroñero:** 8 tiras de frames (`carronero/`). Pie de apoyo a 6,2–6,6 m/s con el cuerpo a 5,6 m/s; sin andar (la IA fija 7,2 m/s); sin anticipación, reacción al daño ni pose de muerte.
+- [x] **F0 decoración:** Map01 es greybox, `[Decor]` vacío en los 18 cuartos; no existe ninguno de los 22 props previstos.
+- [x] **F1 maquetas en motor (solo en ejecución):** 5 niveles de luz en 7 salas (`F1/lum.csv`, 70 capturas) y 2 opciones de ojos rojos en 6 enemigos (144 capturas).
+- [x] **F1 d y e** (subagente director de arte, Fable): re-tematización de los 18 cuartos, esquema de la ruta, 3 láminas de tramo y 3 de antes/después con scripts de Blender; 12 mejoras de animación del Carroñero en dos niveles de alcance.
+- [x] **Zona protegida:** instantáneas `ProtectedZone/vp-before-20261120.txt` y `vp-after-20261121.txt`, 508 archivos. Única diferencia: el atlas dinámico `LiberationSans SDF - Fallback.asset`, que Unity reescribe en cada Play Mode.
+- [x] **Subagentes:** 4 inventarios Haiku de solo lectura (`Reports/VisualPassFable/inventory/`; el B no escribió su archivo y su contenido está en `robots.txt` y en el diagnóstico) y 1 director de arte Fable.
+- [ ] **PARADA F1:** elección del usuario en a) nivel de luminosidad y linterna, b) correcciones de luces, c) ojos rojos A o B, d) dirección del mapa y concepto de decoración, e) alcance del Carroñero. F2 a F6 sin empezar.
+- [ ] **Contradicciones con el contexto del mundo, sin tocar** (`00_DIAGNOSTICO.md` §6): Map01 baja de 0 a −37 m y el contexto dice que se sube; el orden temático de zonas; no hay laboratorios; el Habitáculo (Dormitorios, Comedor, Enfermería); el final en la Bóveda sin salida. Decisión del usuario y trabajo del chat 9.
+- [ ] **Solape con el chat 11:** la opción C de la linterna ya está implementada; este pase propone corregir su contorno blanco.
+- [ ] **Hallazgo para el chat 9, sin verificar en partida real:** `EnemyController.SelfDestructYHeight` vale −20 en todos los prefabs y los suelos de R08 a R18 están entre −21,95 y −36,95. En el arnés, un T-07 creado en esas salas se destruía en su primer frame.
+- [ ] No hecho en esta fase: medición en build, prueba manual, revisor independiente (son de F6) y tests EditMode/PlayMode de la entrega final. `VisualPassF0` son capturas, no comprobaciones.
+
+## Chat 12 — Pase visual: F2 luminosidad, F3 ojos rojos y F5 Carroñero (21/11/2026)
+
+El usuario aprobó «lo recomendado» de `VisualPassFable/01_DIRECCION.md`. Detalle, medidas y capturas: `Docs/IronRequiem/VisualPassFable/02_RESULTADO.md`. Respaldo: `Tools/IronRequiem/Backups/20261121-visualpass-f2f5/`. Sin commits.
+
+- [x] **F2 luminosidad por tramos** (sin linterna, sin luces nuevas): 18 JSON de `Levels/Map01/Data/Lighting`, Volume de exposición por cuarto (`Art/VisualPass12/Map01_Exposure_T1/T2/T3`), 18 escenas `Map01_R*` reconstruidas solo en `[Lighting]` y sondas rehorneadas. Fondo medio de 3–19 a 17–66 sobre 255. El validador sigue en los 10 cuartos con más de 4 luces por objeto que ya había.
+- [x] **Contorno del resaltado** (chat 11): azul acero y mitad de intensidad (`VisionMaterialRules.cs`).
+- [x] **F3 ojos rojos, opción A:** `Scripts/VisualOverhaul/EnemyEyeGlow.cs` y `EnemyEyeStyle.cs`; un solo sistema de partículas, sin `Light`, sin tocar prefabs ni materiales.
+- [x] **F5 Carroñero de combate, nivel mínimo:** `Scripts/Enemies/CarroneroCombatMotion.cs`, solo en `Prefabs/Map01/Enemies/Carronero_Map01.prefab`. Coste en Editor para 24: 0,31 ms frente a 0,33–0,48 ms.
+- [x] **Tests:** EditMode 18 de 18 (`VisualPassLightingTests`, `VisualPassEyesEditTests`, `VisionReadabilityEditTests`); PlayMode `VisualPassEyesTests` 26 de 26, `VisionReadabilityTests` 2 de 2, `VisualPassCarroneroTests` 11 de 11. `Map01F2Tests`: S2–S4 pasan; S1 falla en una comprobación del hangar anterior a estos cambios (sin confirmar con el código previo).
+- [x] **Zona protegida:** 508 archivos iguales salvo el atlas dinámico de TMP.
+- [ ] **Regresión medida:** a 25 m solo 6 de 25 casos son «legibles» con la métrica de luminancia (antes 25 de 25); a 5 y 15 m, todos. Decisión del usuario (`02_RESULTADO.md` §6).
+- [ ] Pendientes: ojo del BigBot descentrado; el rojo tira a rosa con el bloom; material de ojos creado con `Shader.Find` (comprobar en build); campaña antigua con menos contorno.
+- [ ] No hecho: F4 decoración (depende de O1 en el chat 9 y del kit de props), medición en build, prueba manual, `CampaignTests`/`HangarIntroPresentationTests`/`MainMenuRestoreTests`. El revisor independiente quedó en curso (`VisualPassFable/03_REVISION.md`, sin leer).
+
+## Chat 12 — Pase visual: ronda tras la revisión independiente (21/11/2026)
+
+- [x] Revisión independiente leída ([03_REVISION.md](VisualPassFable/03_REVISION.md)): espacio 3 → 7, enemigo 6 → 5, ambiente 4 → 6, ojos 4 → 5, Carroñero 3 → 5.
+- [x] Ojos en rojo puro, estados por tamaño, intensidad y pulso; anclajes de T-07, BigBot y torreta rehechos; indicadores del BigBot en rojo tenue.
+- [x] Contorno del resaltado más suave (`VisionMaterialRules`: potencia 2.8, 0.16 con luz, 0.6 a oscuras).
+- [x] Tests: EditMode 19 de 19; PlayMode 28 de 28 y 11 de 11. Zona protegida sin cambios (solo atlas TMP).
+- [x] Capturas finales en `Docs/IronRequiem/VisualPassFable/F2/`; detalle en la §8 de `02_RESULTADO.md`.
+- [ ] Decisión del usuario: lectura del enemigo a 25 m (4 legibles de 25 con la métrica de luminancia).
+- [ ] Segunda revisión independiente con los cambios.
+- [ ] Prueba manual con teclado y ratón, build Release (peor cuarto y horda de 24), vídeo.
+- [ ] `CampaignTests`, `HangarIntroPresentationTests`, `MainMenuRestoreTests`; confirmar si `SessionTraversal(0)` ya fallaba.
+- [ ] F4 decoración: espera a la inversión de cotas (O1) del chat 9 y al kit de props.
+- Sin commits.
+
+## Chat 13 — Ejecuciones de robots v02: F0–F4 (22/11/2026)
+
+Petición: prompt «Ejecuciones de robots más brutales y legibles»; tras F1 el usuario aprobó «Todo, Big Bot incluido». Detalle, archivo:línea y pendientes: `Docs/IronRequiem/Executions/EXECUTIONS_V02.md` (F0 y F1 en la misma carpeta). Respaldo: `Tools/IronRequiem/Backups/20261122-executions-v02/`. Sin commits, paquetes ni escenas guardadas; zona protegida intacta (hashes).
+
+- [x] F0: grabación (jugador + lateral) y telemetría de T-07, SawBot y Big Bot. Hallazgo: el Big Bot de campaña no era ejecutable (`executionEnabled=false` desde v31).
+- [x] F1: guion por beats y storyboards; aprobado todo, incluidos Big Bot ejecutable, Recover 0,24, micro-paso y destello.
+- [x] F2 robot: capa de reacción por beats, arrastre a la mano, arma oculta en el arranque, pulso local, audio por beat, barra de vida oculta, restos desviados de la cámara. Prefabs de campaña configurados por herramienta del Editor.
+- [x] F3 jugador: director de ejecución, alcance por bandas, arma continua (proxy), hit-stop con presupuesto, kicks con tope de 90°/s, Big Bot rehecho (1,52 s reales sin control; antes 2,30).
+- [x] Compilación 0 errores. Tests: `ExecutionsV02Tests` 8/9, `ArmsFixPassTests` 4/4, FastCombat Big Bot 1/1. Regresión 70/81: los 10 fallos restantes son previos y ajenos (6 comprobados con el código original restaurado).
+- [x] Revisor ciego, 2 rondas: en la final prefiere la versión nueva en los tres robots (notas 4–9, ninguna ≥8 en todo).
+- [x] Big Bot, ronda 2 (aprobada por el usuario): perchero delante del cañón, calculado sobre un proxy del cuerpo visible (`ExecutionBodyProxy`, pose renderizada). El jugador cuelga del cañón; el robot mantiene la puntería que tenía al pulsar E; tirones que levantan el cañón. `ExecutionsV02Tests` 9/9, medido contra los triángulos reales: giro 1,26°/frame, cámara a 0,97 m del cuerpo, 0 frames fuera de cuadro, 2,09 m a 1,2 s, mano a ≤0,05 m del cañón (1 frame a 0,13). Regresión sin fallos nuevos atribuibles. `BigBotBazooka.StolenBazooka…` falla; último pase el 08/11 y no se verificó con un swap. Respaldo: `Tools/IronRequiem/Backups/20261122-executions-v02-bigbot-r2/`.
+- [x] Revisor ciego, ronda 3: prefiere la ronda 2 del Big Bot (5/5/5/4/7 frente a 5/4/5/4/4).
+- [x] Big Bot, ronda 3 (aprobada): el cañón arrancado se encoge a tamaño de mano (antes 2,7 m a 0,33 m de la lente); el cañón robado es el arma activa desde 0,80 s; la muerte ya no lanza un segundo cañón; tambaleo en el arranque. `ExecutionsV02Tests` 9/9 con 3 comprobaciones nuevas; la regresión no tiene fallos nuevos. Respaldo: `Tools/IronRequiem/Backups/20261122-executions-v02-bigbot-r3/`.
+- [x] Revisor ciego, ronda 4: prefiere la ronda 3 (5/5/5/4/8 frente a 6/4/4/3/5). El mareo llega a 8.
+- [ ] Big Bot, todavía <8 en peso, legibilidad, brazos y reacción: el cañón montado no se encuadra en el disparo, el tambaleo no se lee de cerca y el cañón encogido parece un palo. Los rayos blancos de la muerte son del sistema existente.
+- [ ] T-07: el brazo arrancado tapa el centro a 0,47 s; transferencia de mano poco legible. SawBot: remate sin fogonazo (muerte existente).
+- [ ] Prueba manual del usuario con teclado y ratón. Nota: sus PlayerPrefs reasignan Melee a clic derecho y Apuntar a F.
+
+## Chat 13 — Sensación de input lag al moverse (23/11/2026)
+
+El usuario notaba «una enorme sensación de input lag» y la situó en el movimiento. Respaldo: `Tools/IronRequiem/Backups/20261123-movement-sharpness/`.
+
+- [x] Medición (`Tests/PlayMode/InputLatencyProbe.cs`, informe `Tools/IronRequiem/Reports/Controls/input-latency.txt`), en la campaña real (Map01 S1, Editor, tiempo real):
+  - ratón → cámara: 1 frame (12–16 ms), sin suavizado;
+  - W → movimiento: 10–25 ms, pero ~140 ms hasta el 90 % de la velocidad;
+  - Editor: 68 FPS de media, con picos de 32–91 ms.
+- [x] Causa: `MovementSharpnessOnGround = 15` (valor de la plantilla en `Assets/FPS/Prefabs/Player.prefab`).
+- [x] Cambio: `AdvancedPlayerMovement.groundSharpness = 35` (Inspector, sección «Ground response»), aplicado en Awake. El prefab de plantilla no se toca. Resultado: 90 % de la velocidad en 47–61 ms. También frena antes.
+- [x] Tests: `ExecutionsV02Tests` 9/9, `CharacterBehaviorTests` 3/3. Los fallos de `MechanicsBehaviorTests` ×2, `SlidePistolMainTests` ×1 y `FastCombatTests` ×1 son previos (el de SlidePistol falla igual con el ajuste desactivado).
+- [ ] Prueba del usuario con ratón y teclado reales. Si sigue pesado: subir `groundSharpness` (50 ≈ casi instantáneo) o bajar `QualitySettings.maxQueuedFrames` de 2 a 1 (ProjectSettings, pendiente de su permiso).
+
+## Chat 13 — Sin sprint: velocidad única (23/11/2026)
+
+El usuario notaba que «de repente» el movimiento se ponía «pesadísimo» tras el golpe cargado o Shift. En sus PlayerPrefs tenía el sprint en modo alternar (`IronRequiem.SprintToggleKeyboard = 1`), Melee en clic derecho y Apuntar en F. Pidió «quita la función del Shift y que tengamos siempre la misma velocidad». Respaldo: `Tools/IronRequiem/Backups/20261123-no-sprint/`.
+
+- [x] `PlayerInputHandler.GetSprintInputHeld()` devuelve siempre `false`: Shift no hace nada y se camina siempre a `MaxSpeedOnGround` (13 m/s). La acción Sprint sigue en el asset, sin uso.
+- [x] `AdvancedPlayerMovement`: el slide ya no exige sprint. C con la velocidad de marcha (≥11 m/s) lo inicia.
+- [x] Menús: se quitan los interruptores «Sprint con teclado / mando», su nota y la fila «Sprint» de reasignar teclas.
+- [x] Verificado con `Tests/PlayMode/HeavinessRepro.cs` (campaña real, con los ajustes y teclas del usuario; informe en `Tools/IronRequiem/Reports/Controls/heaviness-repro.txt`):
+  - con W se va a 13,0 m/s y con W+Shift también a 13,0;
+  - tras golpe cargado completo o corto, Shift durante la carga, slide o apuntar con F, desde el mismo punto: cámara igual (59,8°), escala de tiempo 1, ningún estado pegado, y 90 % de la velocidad en 52–58 ms.
+- [x] Causa más probable del «pesado» repentino: el sprint en modo alternar. Se apagaba solo al soltar el movimiento o pulsar C y la velocidad caía de 26 a 13 m/s. Sin sprint ya no puede pasar.
+- [x] Tests:
+  - `ControlsRebindPlayTests` 4/4;
+  - `MechanicsBehaviorTests` 15/18; incluye el slide sin sprint (`SlideRequiresSprint…` pasa con C a velocidad normal);
+  - fallos previos sin relación: FullCharge y SlideContact (fallaban antes) y ChargedEnergy (no pudo guardar una captura por archivo bloqueado);
+  - `SlidePistolMainTests` igual que antes.
+- [ ] `TwoFloorGapTests`: el Editor se bloqueó cargando `ChaseCorridorLab` (326 s de espera del hilo de carga) y el vigilante cortó la ejecución. Pendiente de repetir.
+- [ ] El nombre `SlideRequiresSprint…` del test de mecánicas ya no describe el comportamiento (el slide no requiere sprint); el test pasa igual.
+
+## Chat 13 — «Pesado» tras el primer módulo: era apuntar con F (23/11/2026)
+
+- [x] `Tests/PlayMode/ModuleHeavinessProbe.cs` (campaña real, informe en `Tools/IronRequiem/Reports/Controls/module-heaviness.txt`):
+  - antes y después del primer módulo y en Room01 y la sala 2: 76–94 FPS, nada pegado, arranque al 90 % en 40–63 ms;
+  - con las teclas del usuario (Apuntar = F, Melee = clic derecho), mantener F con el módulo activa el apuntado: la cámara gira a 0,4× (`PlayerCharacterController.AimingRotationMultiplier`);
+  - sin arma, F no hace nada: por eso empieza justo tras el primer módulo;
+  - al soltar F vuelve a 1,0× (también tras carga, golpe o cambio de arma).
+- [x] El usuario eligió «quitar freno al apuntar»: `AdvancedPlayerMovement.aimLookMultiplier = 1` sustituye en Awake el 0,4 de la plantilla (el prefab no se toca). Verificado: apuntando con el módulo, la cámara gira a 1,00×. Respaldo: `Tools/IronRequiem/Backups/20261123-no-sprint/AdvancedPlayerMovement.before-aim.cs`.

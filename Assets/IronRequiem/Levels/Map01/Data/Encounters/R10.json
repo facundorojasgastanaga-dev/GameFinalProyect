@@ -1,0 +1,213 @@
+{
+  "schema": "map01-encounters/v1",
+  "id": "R10",
+  "kind": "pursuit",
+  "archetype": "E7",
+  "title": "R10 · TÚNEL DE LA TRITURADORA · CORRE",
+  "chase": {
+    "trigger": {
+      "center": [
+        0,
+        5,
+        -73
+      ],
+      "size": [
+        16,
+        10,
+        4
+      ]
+    },
+    "entranceDoor": {
+      "center": [
+        0,
+        5,
+        -86
+      ],
+      "size": [
+        16,
+        10,
+        0.6
+      ]
+    },
+    "exitDoor": {
+      "center": [
+        0,
+        5,
+        86
+      ],
+      "size": [
+        16,
+        10,
+        0.6
+      ]
+    },
+    "carriage": [
+      0,
+      0,
+      -84.5
+    ],
+    "courseCenterLocal": [
+      0,
+      0,
+      0
+    ],
+    "finishLocalZ": 82,
+    "halfWidth": 8,
+    "sawSpeed": 8,
+    "warningSeconds": 2,
+    "bladeRpm": 240,
+    "sawContactOffset": 2.1,
+    "sawDamage": 100,
+    "damageInterval": 0.35,
+    "counterRotateBlades": true,
+    "motorClip": null,
+    "ambushes": [
+      {
+        "id": "A1",
+        "activationLocalZ": -55,
+        "spawns": [
+          {
+            "enemy": "CAR",
+            "pos": [
+              -4.5,
+              0,
+              -26
+            ]
+          },
+          {
+            "enemy": "CAR",
+            "pos": [
+              4.5,
+              0,
+              -20
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "activationLocalZ": -10,
+        "spawns": [
+          {
+            "enemy": "T07",
+            "pos": [
+              4.5,
+              0,
+              24
+            ]
+          },
+          {
+            "enemy": "HOV",
+            "pos": [
+              -4.5,
+              0,
+              18
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A3",
+        "activationLocalZ": 30,
+        "spawns": [
+          {
+            "enemy": "T07",
+            "pos": [
+              -4.5,
+              0,
+              64
+            ]
+          },
+          {
+            "enemy": "CAR",
+            "pos": [
+              4.5,
+              0,
+              58
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    {
+      "id": "G1",
+      "zNear": -40,
+      "zFar": -36,
+      "xMin": -8,
+      "xMax": 8,
+      "triggerYMin": -8,
+      "triggerYMax": -3,
+      "upperFloorLocalY": 0,
+      "halfWidth": 250,
+      "returnOffset": 4,
+      "returnXs": [
+        -4,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "G2",
+      "zNear": 4,
+      "zFar": 8,
+      "xMin": -8,
+      "xMax": 8,
+      "triggerYMin": -8,
+      "triggerYMax": -3,
+      "upperFloorLocalY": 0,
+      "halfWidth": 250,
+      "returnOffset": 4,
+      "returnXs": [
+        -4,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "G3",
+      "zNear": 44,
+      "zFar": 48,
+      "xMin": -8,
+      "xMax": 8,
+      "triggerYMin": -8,
+      "triggerYMax": -3,
+      "upperFloorLocalY": 0,
+      "halfWidth": 250,
+      "returnOffset": 4,
+      "returnXs": [
+        -4,
+        0,
+        4
+      ]
+    }
+  ],
+  "health": [
+    {
+      "id": "H1",
+      "pos": [
+        0,
+        0,
+        -93
+      ]
+    },
+    {
+      "id": "H2",
+      "pos": [
+        0,
+        0,
+        -15
+      ]
+    },
+    {
+      "id": "H3",
+      "pos": [
+        0,
+        0,
+        35
+      ]
+    }
+  ],
+  "notes": "B4. Coordenadas locales; la autoría suma el origen (237; -22; 113): finishZ 195, ActivationZ 58/103/143. Compuertas y trituradora greybox de R3 hasta F3."
+}

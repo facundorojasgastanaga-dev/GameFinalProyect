@@ -1,0 +1,364 @@
+{
+  "id": "R09",
+  "name": "Taquillas de mantenimiento",
+  "scene": "Map01_R09_Taquillas",
+  "zone": "Tuneles",
+  "function": "respite",
+  "archetype": "E0",
+  "worldOrigin": [
+    231,
+    -22,
+    -13
+  ],
+  "yaw": 0,
+  "aabbLocal": {
+    "min": [
+      -15,
+      -1,
+      -15
+    ],
+    "max": [
+      15,
+      9,
+      15
+    ]
+  },
+  "interior": {
+    "min": [
+      -14,
+      0,
+      -14
+    ],
+    "max": [
+      14,
+      8,
+      14
+    ]
+  },
+  "levels": [
+    {
+      "id": "floor",
+      "y": 0
+    }
+  ],
+  "ceilings": [
+    {
+      "region": {
+        "min": [
+          -14,
+          0,
+          -14
+        ],
+        "max": [
+          14,
+          8,
+          14
+        ]
+      },
+      "y": 8
+    }
+  ],
+  "doors": [
+    {
+      "id": "R09_in",
+      "role": "entry",
+      "class": "Z",
+      "center": [
+        -14,
+        0,
+        -6
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "vano": [
+        8,
+        6
+      ],
+      "band": [
+        14,
+        7.6,
+        1.5
+      ],
+      "freeVolume": {
+        "min": [
+          -14,
+          0,
+          -11.0
+        ],
+        "max": [
+          -8,
+          6,
+          -1.0
+        ]
+      },
+      "airlock": "C08"
+    },
+    {
+      "id": "R09_out",
+      "role": "exit",
+      "class": "A",
+      "center": [
+        6,
+        0,
+        14
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "vano": [
+        5,
+        4.5
+      ],
+      "band": [
+        7,
+        5.8,
+        1.0
+      ],
+      "freeVolume": {
+        "min": [
+          2.5,
+          0,
+          10
+        ],
+        "max": [
+          9.5,
+          4.5,
+          14
+        ]
+      },
+      "airlock": "C09"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "lockers1",
+      "type": "coverHigh",
+      "center": [
+        -2.0,
+        1.2,
+        7.0
+      ],
+      "size": [
+        8,
+        2.4,
+        1.2
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "lockers2",
+      "type": "coverHigh",
+      "center": [
+        -2.0,
+        1.2,
+        -1.0
+      ],
+      "size": [
+        8,
+        2.4,
+        1.2
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "lockers3",
+      "type": "coverHigh",
+      "center": [
+        -2.0,
+        1.2,
+        -9.0
+      ],
+      "size": [
+        8,
+        2.4,
+        1.2
+      ],
+      "material": "Bunker_RustMetal",
+      "collision": "box"
+    },
+    {
+      "id": "officeDesk",
+      "type": "coverLow",
+      "center": [
+        11.5,
+        0.55,
+        -3.4
+      ],
+      "size": [
+        3,
+        1.1,
+        1.2
+      ],
+      "material": "Bunker_Hazard",
+      "collision": "box"
+    }
+  ],
+  "freeVolumes": [
+    {
+      "id": "R09_in_approach",
+      "kind": "doorApproach",
+      "min": [
+        -14,
+        0,
+        -11.0
+      ],
+      "max": [
+        -8,
+        6,
+        -1.0
+      ]
+    },
+    {
+      "id": "R09_out_approach",
+      "kind": "doorApproach",
+      "min": [
+        2.5,
+        0,
+        10
+      ],
+      "max": [
+        9.5,
+        4.5,
+        14
+      ]
+    }
+  ],
+  "spawnZones": [],
+  "lightAnchors": [
+    {
+      "id": "R09.A1",
+      "kind": "ceiling",
+      "pos": [
+        -7,
+        7.6,
+        7
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R09.A2",
+      "kind": "ceiling",
+      "pos": [
+        7,
+        7.6,
+        7
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R09.A3",
+      "kind": "ceiling",
+      "pos": [
+        0,
+        7.6,
+        -8
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R09.A4",
+      "kind": "floor",
+      "pos": [
+        10,
+        3,
+        -2
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    },
+    {
+      "id": "R09.A5",
+      "kind": "wall",
+      "pos": [
+        6,
+        6.6,
+        13.6
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "lightBudget": {
+    "static": 5,
+    "shadow": 2,
+    "transient": 2
+  },
+  "internalDoors": [],
+  "hazards": [],
+  "nav": {
+    "agentClimb": 0.45,
+    "jumpAreaVolumes": [],
+    "notes": "Respiro"
+  },
+  "perf": {
+    "tileMax": 10,
+    "subspaces": 1,
+    "occluders": []
+  },
+  "release": {
+    "mode": "OnEnterVolume",
+    "volume": {
+      "min": [
+        6,
+        0,
+        2
+      ],
+      "max": [
+        13,
+        4,
+        10
+      ]
+    }
+  },
+  "landmark": {
+    "min": [
+      -10,
+      0,
+      12
+    ],
+    "max": [
+      2,
+      6,
+      14
+    ],
+    "note": "Esquema pintado de la trituradora T-9 (muro N)"
+  },
+  "arena": null,
+  "portal": null,
+  "chase": null
+}

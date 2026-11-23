@@ -1,0 +1,127 @@
+{
+  "id": "C06",
+  "from": "R06",
+  "to": "R07",
+  "class": "Z",
+  "axis": "-z",
+  "worldCenter": [
+    166,
+    -18,
+    106.5
+  ],
+  "aabbSize": [
+    14,
+    9,
+    15
+  ],
+  "chamberInterior": [
+    10,
+    8,
+    12
+  ],
+  "floorY": -18,
+  "sourceDoor": {
+    "center": [
+      166,
+      -18,
+      114.0
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "destinationDoor": {
+    "center": [
+      166,
+      -18,
+      99.0
+    ],
+    "band": [
+      14,
+      7.6,
+      1.5
+    ]
+  },
+  "trigger": {
+    "center": [
+      166,
+      -14.0,
+      106.5
+    ],
+    "size": [
+      10,
+      8,
+      10
+    ]
+  },
+  "lightAnchors": [
+    {
+      "id": "C06.CY1",
+      "kind": "ceiling",
+      "pos": [
+        166,
+        -10.2,
+        109.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Doors"
+    },
+    {
+      "id": "C06.CY2",
+      "kind": "ceiling",
+      "pos": [
+        166,
+        -10.2,
+        103.5
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "shadowCandidate": false,
+      "owner": "Doors"
+    },
+    {
+      "id": "C06.FILL",
+      "kind": "wall",
+      "pos": [
+        161.1,
+        -13.5,
+        106.5
+      ],
+      "normal": [
+        1,
+        0,
+        0.0
+      ],
+      "shadowCandidate": false,
+      "owner": "Lighting"
+    }
+  ],
+  "steamVents": [
+    {
+      "id": "C06.SV1",
+      "pos": [
+        170.9,
+        -17.5,
+        108.5
+      ]
+    },
+    {
+      "id": "C06.SV2",
+      "pos": [
+        161.1,
+        -17.5,
+        104.5
+      ]
+    }
+  ]
+}

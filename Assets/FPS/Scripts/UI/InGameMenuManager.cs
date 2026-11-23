@@ -97,16 +97,17 @@ namespace Unity.FPS.UI
                 Cursor.visible = false;
             }
 
-            if (!UseIndustrialMenu && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+            // Escape lives in the UI/Menu action (fixed, never rebindable), so no key is read directly here
+            if (!UseIndustrialMenu && m_MenuAction.WasPressedThisFrame())
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
 
-            if ((UseIndustrialMenu && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) || m_MenuAction.WasPressedThisFrame()
+            if (m_MenuAction.WasPressedThisFrame()
                 || (MenuRoot.activeSelf && m_CancelAction.WasPressedThisFrame()))
             {
-                if (MenuRoot.activeSelf && BackHandler != null && BackHandler())
+                if (MenuRoot.activeSelf && ((IronRequiem.PauseMenuBackHook.Override != null && IronRequiem.PauseMenuBackHook.Override()) || (BackHandler != null && BackHandler())))
                     return;
 
                 if (!UseIndustrialMenu && ControlImage && ControlImage.activeSelf)
