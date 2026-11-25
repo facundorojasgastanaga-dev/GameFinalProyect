@@ -141,6 +141,7 @@ namespace IronRequiem
             if(TeardownBudget<=0)yield break;
             teardownRoots.Clear();scene.GetRootGameObjects(teardownRoots);
             int spent=0;
+            int batchSize=TeardownBudget;
             for(int i=0;i<teardownRoots.Count;i++)
             {
                 var root=teardownRoots[i];if(!root)continue;
@@ -154,7 +155,15 @@ namespace IronRequiem
                 {
                     var item=teardownBuffer[node];if(!item)continue;
                     Destroy(item.gameObject);spent++;
-                    if(spent>=TeardownBudget){spent=0;TrackPeak();yield return null;}
+                    if(spent>=batchSize)
+                    {
+                        spent=0;TrackPeak();yield return null;
+                        // Destroy is deferred until end of frame. Use the completed frame to budget the next batch.
+                        if(Time.unscaledDeltaTime>1f/40f)
+                            batchSize=Mathf.Max(1,Mathf.Max(TeardownBudget/4,batchSize/2));
+                        else if(Time.unscaledDeltaTime<1f/60f)
+                            batchSize=Mathf.Min(TeardownBudget,batchSize+8);
+                    }
                 }
             }
             TrackPeak();yield return null;

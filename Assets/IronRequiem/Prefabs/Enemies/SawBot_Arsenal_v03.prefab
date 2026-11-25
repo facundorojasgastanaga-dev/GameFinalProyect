@@ -84,7 +84,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: a98e6c50f04f4384880ffeed07ac89ce, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 202060953051996967}
   - {fileID: 2458163847562759053}
@@ -187,7 +187,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 0bc12b44318d4974cb582d1716b03545, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 202060953051996967}
   - {fileID: 2458163847562759053}
@@ -290,7 +290,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 7f5270e78c9b3fb4c98137e0db27b38f, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 202060953051996967}
   - {fileID: 2458163847562759053}
@@ -321,7 +321,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 6063a38345e393d4cb2df844e3a78114, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 570936808057007600, guid: c94c0c5cc2d8efa42b7d228fa6f38065,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -341,7 +341,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 4ad13c902c9155b4a8656f4693838be3, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1550717965262292538, guid: c94c0c5cc2d8efa42b7d228fa6f38065,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -361,7 +361,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 76a084242aeb79c4694608fe6b1f1f99, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 4348299324136682945, guid: c94c0c5cc2d8efa42b7d228fa6f38065,
         type: 3}
       propertyPath: m_Size
@@ -621,6 +621,7 @@ MonoBehaviour:
   healthThreshold: 0.75
   modulePrefab: {fileID: 7725096214178218046, guid: 8d34734efe040ba47b4f24fd1e57604c,
     type: 3}
+  executionEnabled: 1
 --- !u!114 &6454645352230615344
 MonoBehaviour:
   m_ObjectHideFlags: 0

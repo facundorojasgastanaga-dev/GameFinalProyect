@@ -16,6 +16,15 @@ namespace IronRequiem
         [SerializeField,Range(0,1)] float guardVolume=.35f;
         float deflectFlash;
         public int IgnoredHits {get;private set;}
+        public float DashGlow => movement && movement.isActiveAndEnabled ? movement.DashFractionRemaining : 0;
+        public float CriticalGlow
+        {
+            get
+            {
+                if (!health || health.CurrentHealth <= 0 || health.GetRatio() > .2f) return 0;
+                return (.35f + .20f * Mathf.Sin(Time.time * 5f)) * Mathf.Lerp(1f, .55f, health.GetRatio() / .2f);
+            }
+        }
         public float LastIgnoredTime {get;private set;}=-10;
         /// 0..1 edge intensity for SlideGuardScreenFx: strong at the start of the window, a pulse on each deflect.
         public float EdgeIntensity

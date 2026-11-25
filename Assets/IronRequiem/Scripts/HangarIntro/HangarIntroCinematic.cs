@@ -128,7 +128,7 @@ namespace IronRequiem
             switch (state)
             {
                 case State.Waiting:
-                    if (!SessionPlaying || (flow && room && !room.Ready)) return;
+                    if (!SessionPlaying || (flow && room && (flow.Busy || flow.CurrentRoom != room || !room.Ready))) return;
                     if (CombatLabMenu.ResumedAfterRestart || !player) { WasSkipped = true; BeginHandoff(); return; }
                     Begin();
                     break;

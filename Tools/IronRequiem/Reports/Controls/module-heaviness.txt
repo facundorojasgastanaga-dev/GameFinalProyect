@@ -1,9 +1,24 @@
-aim bindings [<Keyboard>/f, <Gamepad>/leftTrigger, , ], melee [<Mouse>/rightButton, <Gamepad>/rightShoulder, , ]
-F held, no weapon yet: aiming False, rotMul 1.00, switch Down, weapon none
-F held during the mount: aiming False, rotMul 1.00, switch Down, weapon none
-after the mount, F released: aiming False, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
-F held with the module: aiming True, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
-F released: aiming False, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
-F + charged punch, F released during the charge: aiming False, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
-charge, F during the punch, all released: aiming False, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
-F + weapon switch (Q), all released: aiming False, rotMul 1.00, switch Up, weapon Weapon_IR_ArmCannon_VO(Clone)
+arm A ArmA_Hand, gripper Gripper, jaw renderers 5 [Palm, JawA, JawB, SA_ClawN, SA_ClawP]
+  t 1.01 hand cam (0.139, 0.003, 0.516) gripper cam (0.129, -0.019, 0.502) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.056 jaw cam (0.192, 0.028, 0.508) tip-wrist 0.131 shoulder-wrist 1.11 reach 1.07
+  t 1.05 hand cam (0.149, 0.018, 0.529) gripper cam (0.114, 0.005, 0.492) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.046 jaw cam (0.182, 0.045, 0.497) tip-wrist 0.141 shoulder-wrist 1.09 reach 1.07
+  t 1.09 hand cam (0.151, 0.027, 0.539) gripper cam (0.102, 0.022, 0.491) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.048 jaw cam (0.173, 0.056, 0.496) tip-wrist 0.148 shoulder-wrist 1.07 reach 1.07
+  t 1.13 hand cam (0.162, 0.041, 0.549) gripper cam (0.106, 0.042, 0.497) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.180, 0.070, 0.502) tip-wrist 0.153 shoulder-wrist 1.05 reach 1.07
+  t 1.16 hand cam (0.165, 0.048, 0.556) gripper cam (0.107, 0.054, 0.503) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.182, 0.077, 0.508) tip-wrist 0.155 shoulder-wrist 1.04 reach 1.07
+  t 1.20 hand cam (0.166, 0.054, 0.562) gripper cam (0.108, 0.064, 0.509) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.183, 0.083, 0.514) tip-wrist 0.157 shoulder-wrist 1.03 reach 1.07
+  t 1.23 hand cam (0.172, 0.061, 0.567) gripper cam (0.113, 0.073, 0.513) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.188, 0.089, 0.519) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.26 hand cam (0.173, 0.063, 0.569) gripper cam (0.114, 0.078, 0.515) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.189, 0.092, 0.521) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.28 hand cam (0.174, 0.065, 0.571) gripper cam (0.115, 0.080, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.093, 0.522) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.30 hand cam (0.174, 0.065, 0.571) gripper cam (0.116, 0.081, 0.517) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.094, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.41 hand cam (0.174, 0.066, 0.571) gripper cam (0.116, 0.082, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.094, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.43 hand cam (0.174, 0.066, 0.571) gripper cam (0.116, 0.082, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.094, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.45 hand cam (0.174, 0.066, 0.571) gripper cam (0.116, 0.082, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.094, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.47 hand cam (0.174, 0.066, 0.571) gripper cam (0.116, 0.082, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.094, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.49 hand cam (0.174, 0.066, 0.571) gripper cam (0.116, 0.082, 0.516) jaw-handRenderer bounds gap 0.000 jaw-handBone 0.000 jawCentre-wrist 0.050 jaw cam (0.190, 0.095, 0.523) tip-wrist 0.157 shoulder-wrist 1.02 reach 1.07
+  t 1.58 hand cam (0.174, 0.066, 0.571) gripper cam (0.110, 0.087, 0.526) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.051 jaw cam (0.184, 0.100, 0.533) tip-wrist 0.163 shoulder-wrist 1.02 reach 1.07
+  t 1.60 hand cam (0.174, 0.066, 0.571) gripper cam (0.106, 0.090, 0.531) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.053 jaw cam (0.180, 0.103, 0.538) tip-wrist 0.167 shoulder-wrist 1.02 reach 1.07
+  t 1.62 hand cam (0.174, 0.066, 0.571) gripper cam (0.102, 0.094, 0.537) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.056 jaw cam (0.176, 0.106, 0.545) tip-wrist 0.172 shoulder-wrist 1.02 reach 1.07
+  t 1.70 hand cam (0.174, 0.066, 0.571) gripper cam (0.091, 0.104, 0.552) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.069 jaw cam (0.165, 0.115, 0.561) tip-wrist 0.186 shoulder-wrist 1.02 reach 1.07
+  t 1.72 hand cam (0.174, 0.066, 0.571) gripper cam (0.091, 0.104, 0.553) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.070 jaw cam (0.165, 0.116, 0.562) tip-wrist 0.186 shoulder-wrist 1.02 reach 1.07
+  t 1.74 hand cam (0.174, 0.065, 0.571) gripper cam (0.093, 0.105, 0.553) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.070 jaw cam (0.167, 0.116, 0.562) tip-wrist 0.184 shoulder-wrist 1.02 reach 1.07
+  t 1.76 hand cam (0.173, 0.064, 0.570) gripper cam (0.100, 0.105, 0.553) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.071 jaw cam (0.174, 0.118, 0.562) tip-wrist 0.178 shoulder-wrist 1.02 reach 1.07
+  t 1.78 hand cam (0.173, 0.063, 0.569) gripper cam (0.110, 0.107, 0.553) jaw-handRenderer bounds gap 9.000 jaw-handBone 0.000 jawCentre-wrist 0.073 jaw cam (0.183, 0.120, 0.563) tip-wrist 0.170 shoulder-wrist 1.02 reach 1.07

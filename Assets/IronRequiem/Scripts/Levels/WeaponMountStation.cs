@@ -56,6 +56,13 @@ namespace IronRequiem
         [SerializeField] Vector3 presentOffset = new Vector3(0, 0, .04f);
         [Tooltip("v7: where arm A's gripper holds the wrist, camera space from the hand bone: right side, level with it (outside the central third).")]
         [SerializeField] Vector3 wristGrip = new Vector3(.10f, -.015f, .03f);
+        [Tooltip("24/11/2026: arm A's jaws close this far behind the hand bone, along the forearm (on the wrist / glove cuff).")]
+        [SerializeField, Min(0)] float wristContactBack = .07f;
+        [Tooltip("24/11/2026: the claw centre rests this far out from the wrist axis (on the cuff), and the jaws close only this much (0..1) so they hug the cuff instead of cutting through it.")]
+        [SerializeField, Min(0)] float cuffRadius = .05f;
+        [SerializeField, Range(0, 1)] float gripHold = .45f;
+        [Tooltip("24/11/2026: the arm's jaws close on the wrist with this much reach to spare; the offered forearm moves at most maxOffer.")]
+        [SerializeField, Min(0)] float reachMargin = .05f, maxOffer = .25f;
         [Header("v7 key light (DockLight: the only light, never casts shadows)")]
         [SerializeField, Min(0)] float keyIntensity = 1.8f, flashIntensity = 6f;
         [SerializeField, Min(.5f)] float keyRange = 3f;
@@ -95,7 +102,7 @@ namespace IronRequiem
         Vector3 clampCentre, clampSide, clampAxis, clampDrop;
         Vector3 releaseGrip, releaseFwd, releaseUp;
         float t = -1, skipHeld, lockTwist; bool inside, promptShown; int fired;
-        Vector3 handGripOffset; Quaternion handGripRotation;
+        Vector3 handGripOffset, lastGripTarget, offerOffset; Quaternion handGripRotation;
         Vector3 ringScale = Vector3.one; Color keyColor = Color.white, flashColor = new Color(.35f, .9f, 1f);
         Renderer[] proxyLights = System.Array.Empty<Renderer>(), proxyRings = System.Array.Empty<Renderer>();
         float appliedLights = float.NaN, appliedRings = float.NaN;
@@ -184,7 +191,7 @@ namespace IronRequiem
         public void Begin()
         {
             if (t >= 0 || Granted || !weapons || !hands || !CanBegin) return;
-            ShowPrompt(false); WasSkipped = false; t = 0; fired = 0; skipHeld = 0;
+            ShowPrompt(false); WasSkipped = false; t = 0; fired = 0; skipHeld = 0; lastGripTarget = Vector3.zero; offerOffset = Vector3.zero;
             PlayerInputLock.Set(true);
             var face = Vector3.ProjectOnPlane(transform.forward, Vector3.up); if (face.sqrMagnitude < 1e-4f) face = Vector3.forward;
             if (movement) movement.BeginScriptedMove(StandPoint, .45f, 0);
@@ -259,6 +266,11 @@ namespace IronRequiem
             if (t > TLocks0 && t < TLocks1) { float env = Mathf.Sin(Mathf.PI * (t - TLocks0) / (TLocks1 - TLocks0)); float s = Mathf.Sin(t * 60f) * .003f * env; wrist += new Vector3(s, s * .5f, 0); }
             // seat (small) and lock (dry, ~2.6 cm back): the forearm recoils toward the camera and springs into place
             var kick = Kick(t - TSlide, .35f) + Kick(t - TLock, 1f); wrist += kick; elbow += .4f * kick;
+            // 24/11/2026: arm A hangs 1.27 m from the presented wrist and reaches 1.07 m, so its jaws stopped ~13 cm short,
+            // above the fingers. The forearm is offered toward arm A's shoulder only as far as needed for the jaws to close
+            // on the wrist (measured every LateUpdate in PoseHandArm), faded in with the reach and out as the port turns.
+            float offer = t < TArmA0 ? 0 : t < TArmA1 ? Mathf.SmoothStep(0, 1, (t - TArmA0) / (TArmA1 - TArmA0)) : t < TDetach + TPull ? 1 : 1 - Mathf.SmoothStep(0, 1, (t - TDetach - TPull) / (TTurn1 - TDetach - TPull));
+            wrist += offerOffset * offer; elbow += offerOffset * offer;
             if (t < TRelease1) hands.SetRightArmOverride(wrist, elbow, weight, detached);
             else hands.ClearRightArmOverride();
         }
@@ -307,35 +319,61 @@ namespace IronRequiem
         void PoseHandArm(Transform cam, Vector3 hand)
         {
             if (!handArm) return;
-            var grip = hand + cam.TransformDirection(wristGrip); var side = -cam.right;
+            if (t >= TArmA0 && t < TDetach)
+            {   // shortfall of the arm toward the wrist as it would be without the offer (camera space, smoothed)
+                var baseHand = hand - cam.TransformDirection(offerOffset * (t < TArmA1 ? Mathf.SmoothStep(0, 1, (t - TArmA0) / (TArmA1 - TArmA0)) : 1));
+                var toShoulder = handArm.Shoulder - baseHand; float shortfall = toShoulder.magnitude - (handArm.Reach - reachMargin);
+                var want = shortfall > 0 ? cam.InverseTransformDirection(toShoulder.normalized * Mathf.Min(shortfall, maxOffer)) : Vector3.zero;
+                offerOffset = Vector3.Lerp(offerOffset, want, 1 - Mathf.Exp(-Time.deltaTime * 12f));
+            }
+            var grip = hand + cam.TransformDirection(wristGrip);
+            // 24/11/2026 (user: "now it goes through the hand"): the claw still comes in from the right (a vertical approach is
+            // out of the arm's reach), but it is placed by its jaw TIPS, just past the wrist, and only half closed, so the jaws
+            // straddle the cuff instead of burying the whole claw in it.
+            var side = -cam.right;
             var away = handArm.RestTarget + Vector3.up * .1f;
             Vector3 target = handArm.RestTarget, look = Vector3.down, up = cam.up; float g = 1;
             if (t < TArmA0) g = 0;
             else if (t < TArmA1)
             {
                 float k = Mathf.SmoothStep(0, 1, (t - TArmA0) / (TArmA1 - TArmA0));
-                target = Vector3.Lerp(handArm.RestTarget, grip, k); look = Vector3.Slerp(Vector3.down, side, k); g = Mathf.Clamp01((t - TArmA1 + .2f) / .2f);
+                target = Vector3.Lerp(handArm.RestTarget, grip, k); look = Vector3.Slerp(Vector3.down, side, k); g = gripHold * Mathf.Clamp01((t - TArmA1 + .2f) / .2f);
             }
-            else if (t < TDetach) { target = grip; look = side; }
+            else if (t < TDetach) { target = grip; look = side; g = gripHold; }
             else if (t < TDetach + TPull)
             {   // v6: the hand first slides straight off along the forearm axis, no twist
-                target = handGripStart + detachAxis * (PullLength * Mathf.SmoothStep(0, 1, (t - TDetach) / TPull)); look = side;
+                target = handGripStart + detachAxis * (PullLength * Mathf.SmoothStep(0, 1, (t - TDetach) / TPull)); look = side; g = gripHold;
             }
             else if (t < TAway1)
             {   // v7: then it swings out to the right before rising, so the gripper never crosses the centre of the view
                 float k = Mathf.SmoothStep(0, 1, (t - TDetach - TPull) / (TAway1 - TDetach - TPull));
                 var from = handGripStart + detachAxis * PullLength;
-                target = Bezier(from, from + cam.right * .35f + cam.up * .05f, away, k); look = Vector3.Slerp(side, Vector3.down, k);
+                target = Bezier(from, from + cam.right * .35f + cam.up * .05f, away, k); look = Vector3.Slerp(side, Vector3.down, k); g = gripHold;
             }
-            else if (t < TArmARet0) target = away;
+            else if (t < TArmARet0) { target = away; g = gripHold; }
             float stow = 0;
             if (t >= TArmARet0)
             {   // returning to rest: the carried hand is stowed (shrinks into the gripper) and the jaws open on the way,
                 // so nothing pops at Finish (review)
                 stow = Mathf.SmoothStep(0, 1, (t - TArmARet0) / (TArmARet1 - TArmARet0));
-                target = Vector3.Lerp(away, handArm.RestTarget, stow); g = 1 - stow;
+                target = Vector3.Lerp(away, handArm.RestTarget, stow); g = gripHold * (1 - stow);
             }
             handArm.Pose(target, look, g, up);
+            // 24/11/2026 (user: "the animation is fine but it never touches the hand"): the solve leaves the jaws ~10 cm above
+            // and beyond the requested point, at finger height. While reaching and holding, the target is corrected until the
+            // jaws' centre closes on the wrist (just behind the hand bone); the correction fades in with the reach.
+            if (t >= TArmA0 && t < TDetach)
+            {
+                float w = t < TArmA1 ? Mathf.SmoothStep(0, 1, (t - TArmA0) / (TArmA1 - TArmA0)) : 1;
+                var wrist = hand - (hands.RightHand.position - hands.RightForearmBone.position).normalized * wristContactBack;
+                // the claw rests ON the cuff: its centre sits cuffRadius out from the wrist axis, on the cuff's upper / near side
+                // (toward the camera, so the grip reads), instead of on the axis where the whole claw went through the forearm
+                var foreAxis = (hands.RightHand.position - hands.RightForearmBone.position).normalized;
+                var outward = Vector3.ProjectOnPlane(cam.up - cam.forward * .6f, foreAxis); outward = outward.sqrMagnitude > 1e-4f ? outward.normalized : cam.up;
+                var onCuff = wrist + outward * cuffRadius;
+                for (int i = 0; i < 3; i++) { target += Vector3.ClampMagnitude((onCuff - handArm.JawCentre) * w, .15f); handArm.Pose(target, look, g, up); }
+                lastGripTarget = target;
+            }
             if (handProxy && t >= TDetach)
             {
                 handProxy.transform.SetPositionAndRotation(handArm.Gripper.TransformPoint(handGripOffset), handArm.Gripper.rotation * handGripRotation);
@@ -731,7 +769,7 @@ namespace IronRequiem
             handProxy.SetActive(true);
             handGripOffset = handArm.Gripper.InverseTransformPoint(handProxy.transform.position);
             handGripRotation = Quaternion.Inverse(handArm.Gripper.rotation) * handProxy.transform.rotation;
-            handGripStart = handArm.Gripper.position;
+            handGripStart = lastGripTarget != Vector3.zero ? lastGripTarget : handArm.Gripper.position; // the corrected arm target held at the detach
             detachAxis = (hands.RightHand.position - hands.RightForearmBone.position).normalized;
         }
         void SetFpsLayer(bool on)

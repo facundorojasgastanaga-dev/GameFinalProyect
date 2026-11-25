@@ -1,0 +1,111 @@
+2026-11-23T13:54:29 frames 0-128 (129 valid)
+== frame 55: 42149 ms
+     42148 ms  d0  EditorLoop
+     42127 ms  d1  Application.Tick
+     41918 ms  d2  EnterPlayMode
+     34207 ms  d3  Application.Reload
+     33994 ms  d4  AssetDatabase.V2.RefreshInternal
+     22181 ms  d5  AssetDatabase.V2.ImportOutOfDateAssets
+     21686 ms  d6  FinalizeReload
+     10862 ms  d5  ReloadAssemblies
+      9518 ms  d6  ReloadAssembly
+      6240 ms  d7  BeginReloadAssembly
+      5959 ms  d7  ProcessInitializeOnLoadAttributes
+      5959 ms  d8  UnityEditor.CoreModule.dll!UnityEditor::EditorAssemblies.ProcessInitializeOnLoadAttributes() [Invoke]
+      5462 ms  d7  ProcessInitializeOnLoadMethodAttributes
+      5462 ms  d8  UnityEditor.CoreModule.dll!UnityEditor::EditorAssemblies.ProcessInitializeOnLoadMethodAttributes() [Invoke]
+      3526 ms  d9  Mono.JIT
+      3437 ms  d8  CreateAndSetChildDomain
+      3419 ms  d9  MonoUnityDomainUnload
+      3250 ms  d7  RestoreBackups
+      3250 ms  d8  RestoreManagedReferences
+      2963 ms  d3  UpdateScene
+      2530 ms  d7  AwakeInstancesAfterBackupRestoration
+      2530 ms  d8  AwakeScriptedObjects
+      2497 ms  d3  EditorSceneManager.CleanupWorld
+      2484 ms  d4  EditorSceneManager.LoadScenes
+      2480 ms  d5  Application.WaitForAsyncOperationToComplete
+      2475 ms  d6  Preload Single Step
+      2065 ms  d7  BeforeProcessingInitializeOnLoad
+      2065 ms  d8  beforeProcessingInitializeOnLoad.Invoke
+      1952 ms  d7  LoadAllAssembliesAndSetupDomain
+      1937 ms  d7  Application.LoadLevelAsync Integrate
+      1815 ms  d4  GUIView.RepaintAll.PlayerLoopController
+      1746 ms  d9  Unity.AI.Assistant.Editor.dll!Unity.AI.Assistant.Editor.RunCommand::RunCommandUtils..cctor()
+      1366 ms  d8  GC.Collect
+      1361 ms  d3  enterPlayModePreStart.Invoke
+      1280 ms  d5  MainToolbarWindow.Paint
+      1280 ms  d6  MainToolbarWindow.Repaint
+      1279 ms  d7  UnityEditor.CoreModule.dll!UnityEditor::GUIView.ProcessEvent() [Invoke]
+      1275 ms  d8  UIElementsUtility.DoDispatch(Repaint Event)
+      1219 ms  d9  Unity.InputSystem.dll!UnityEngine.InputSystem::InputSystem..cctor()
+      1217 ms  d10  InputSystem.InitializeInEditor
+      1148 ms  d4  PlayerLoop
+      1148 ms  d5  UpdateScene
+      1130 ms  d10  Unity.AI.Toolkit.Accounts.dll!Unity.AI.Toolkit.Accounts.Services::Account..cctor()
+      1116 ms  d9  UnityEditor.UIElementsModule.dll!UnityEditor.UIElements::UIElementsEditorInitialization.InitializeUIElementsEditorManaged() [Invoke]
+      1104 ms  d9  MainToolbarWindow.PrepareRepaint
+== frame 68: 13134 ms
+     13134 ms  d0  EditorLoop
+     13125 ms  d1  Application.Tick
+     13098 ms  d2  Application.UpdateScene
+     13098 ms  d3  UpdateSceneIfNeeded
+     13098 ms  d4  UpdateScene
+     13029 ms  d5  GUIView.RepaintAll.PlayerLoopController
+     13029 ms  d6  GameView.Paint
+     13029 ms  d7  GameView.Repaint
+     13028 ms  d8  UnityEditor.CoreModule.dll!UnityEditor::GUIView.ProcessEvent() [Invoke]
+     13028 ms  d9  UIElementsUtility.DoDispatch(Repaint Event)
+     13028 ms  d10  GameView.Render
+     13028 ms  d11  UIR.DrawChain
+     13028 ms  d12  IMGUIContainer
+     13011 ms  d13  EditorResources.Load
+     12976 ms  d14  Loading.LockPersistentManager
+        69 ms  d5  PlayerLoop
+        69 ms  d6  UpdateScene
+== frame 43: 6453 ms
+      6448 ms  d0  EditorLoop
+      6448 ms  d1  Application.Tick
+      6396 ms  d2  Application.TickSceneTracker
+      6396 ms  d3  UnityEditor.CoreModule.dll!UnityEditor::EditorApplication.Internal_CallUpdateFunctions() [Invoke]
+      6372 ms  d4  EditorApplication.update: UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner.ExecuteCallback
+      6372 ms  d5  TestJobRunner.ExecuteStep
+      6371 ms  d6  CreateBootstrapSceneTask.Progress
+      1739 ms  d7  AssetDatabase.SaveAssets
+      1698 ms  d8  Write asset changes to disk
+      1413 ms  d7  UnityEditor.CoreModule.dll!UnityEditor.SceneManagement::EditorSceneManager.Internal_SceneSaved() [Invoke]
+      1411 ms  d8  EditorSceneManager.sceneSaved: UnityEditor.SceneTemplate.SceneTemplateService.OnSceneSaved
+      1266 ms  d7  AssetDatabase.ImportAtPath
+      1198 ms  d8  AssetDatabase.V2.RefreshInternal
+       975 ms  d9  AssetDatabase.V2.RefreshInternal
+       877 ms  d10  AssetDatabase.V2.ImportOutOfDateAssets
+       848 ms  d9  Loading.ReadObject
+       836 ms  d9  AssetDatabase.V2.ImportOutOfDateAssets
+       695 ms  d10  AssetDatabase.V2.OnDemandSchedulerStart
+       695 ms  d11  Semaphore.WaitForSignal
+       668 ms  d11  AssetDatabase.V2.OnDemandSchedulerStart
+       668 ms  d12  Semaphore.WaitForSignal
+       566 ms  d10  Loading.ReadObjectThreaded
+       562 ms  d11  ReadObjectFromSerializedFile
+       537 ms  d12  Loading.LoadFileHeaders
+       532 ms  d7  Destroy
+       530 ms  d9  AssetDatabase.V2.PostProcessAllAssets
+       525 ms  d13  AsyncReadManager.SyncRequest
+       518 ms  d14  File.Open
+       482 ms  d10  AssetDatabase.V2.MonoPostProcessAllAssets
+       482 ms  d11  UnityEditor.CoreModule.dll!UnityEditor::AssetPostprocessingInternal.PostprocessAllAssets() [Invoke]
+       282 ms  d7  UpdateScene
+       256 ms  d8  GUIView.RepaintAll.PlayerLoopController
+       252 ms  d7  Application.WaitForAsyncOperationToComplete
+       245 ms  d8  Preload Single Step
+       245 ms  d9  GarbageCollectAssetsProfile
+       192 ms  d9  AssetDatabase.V2.CategorizeAssets
+       181 ms  d10  Loading.LoadFileHeaders
+       120 ms  d9  GameView.Paint
+       118 ms  d9  MainToolbarWindow.Paint
+       118 ms  d10  MainToolbarWindow.Repaint
+       118 ms  d11  UnityEditor.CoreModule.dll!UnityEditor::GUIView.ProcessEvent() [Invoke]
+       118 ms  d12  UIElementsUtility.DoDispatch(Repaint Event)
+       116 ms  d9  AssetDatabase.V2.Scan
+       115 ms  d11  AssetDatabase.V2.ImportManagerImport
+       109 ms  d10  GC.DeleteUnusedAssets

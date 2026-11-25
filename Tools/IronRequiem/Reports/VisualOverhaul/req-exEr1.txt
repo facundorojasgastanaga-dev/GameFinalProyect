@@ -1,0 +1,6 @@
+failed
+2026-11-24T04:31:33.5872897-04:00
+System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+  at System.String.Substring (System.Int32 startIndex, System.Int32 length) [0x00031] in <816f70bc2a9c4332b0bd119906a8d40e>:0 
+  at IronRequiem.Editor.VisualOverhaulDriver.Tick () [0x002e3] in C:\Users\gehbd\ProyectoGameFinal\Assets\IronRequiem\Editor\VisualOverhaul\VisualOverhaulDriver.cs:73 

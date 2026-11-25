@@ -73,6 +73,7 @@ namespace IronRequiem
         }
         void EndLunge(){if(lungeRemaining<=0)return;lungeRemaining=0;player.CharacterVelocity=Vector3.ClampMagnitude(Vector3.ProjectOnPlane(player.CharacterVelocity,Vector3.up),player.MaxSpeedOnGround)+Vector3.up*player.CharacterVelocity.y;}
         public bool IsDashing => dashRemaining>0;
+        public float DashFractionRemaining => Mathf.Clamp01(dashRemaining / dashDuration);
         public bool IsSliding => slideRemaining>0;
         public Vector3 SlideDirection => slideDirection;
         public float SlideLookAngle => slideLookAngle;

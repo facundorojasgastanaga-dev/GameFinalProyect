@@ -22,6 +22,8 @@ namespace IronRequiem.Editor.Map01
 
         [MenuItem(Map01Paths.MenuRoot + "Run F2 PlayMode tests")]
         public static void RunAll() => Run(null);
+        [MenuItem(Map01Paths.MenuRoot + "Test Jugar to hangar")]
+        public static void RunLaunch() => Run(new[] { "IronRequiem.Tests.Map01F2Tests.JugarStartsHangarAndReturnsControl" });
         [MenuItem(Map01Paths.MenuRoot + "Run F2 test S2 only")]
         public static void RunS2() => Run(new[] { "IronRequiem.Tests.Map01F2Tests.SessionTraversal(1)" });
 

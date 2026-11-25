@@ -53,7 +53,7 @@ namespace IronRequiem
             float t = 0;
             while (t < introSeconds)
             {
-                t += Mathf.Min(Time.unscaledDeltaTime, .05f);
+                t += Time.unscaledDeltaTime;
                 float k = t / introSeconds;
                 SetFade(1 - Mathf.SmoothStep(0, 1, Mathf.Clamp01(k * 1.25f)));
                 // Lamps catch in three stutters before settling into their own behaviour.
@@ -87,10 +87,11 @@ namespace IronRequiem
             if (status) status.Lock("INICIANDO", new Color(1f, .55f, .12f), 6f, "CÁPSULA C-04 · DESBLOQUEO DE SELLOS");
             if (vent) vent.Play(true);
             if (audioSource && openClip) audioSource.PlayOneShot(openClip, .8f);
+            double started = Time.unscaledTimeAsDouble;
             float t = 0; bool online = false;
             while (t < launchSeconds)
             {
-                t += Mathf.Min(Time.unscaledDeltaTime, .05f);
+                t = (float)(Time.unscaledTimeAsDouble - started);
                 if (menuPanel) menuPanel.alpha = 1 - Mathf.Clamp01(t / .4f);
                 float open = Mathf.SmoothStep(0, 1, Mathf.Clamp01((t - .2f) / 1f));
                 if (canopy) canopy.localPosition = canopyClosed + canopyOpenOffset * open;
@@ -113,7 +114,7 @@ namespace IronRequiem
                 yield return null;
             }
             SetFade(1);
-            yield return null; // one black frame before the synchronous load hitch
+            yield return null; // present the final frame before activating the preloaded scene
             onComplete?.Invoke();
         }
 

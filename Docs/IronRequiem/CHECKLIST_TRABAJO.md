@@ -1706,3 +1706,25 @@ El usuario notaba que «de repente» el movimiento se ponía «pesadísimo» tra
   - sin arma, F no hace nada: por eso empieza justo tras el primer módulo;
   - al soltar F vuelve a 1,0× (también tras carga, golpe o cambio de arma).
 - [x] El usuario eligió «quitar freno al apuntar»: `AdvancedPlayerMovement.aimLookMultiplier = 1` sustituye en Awake el 0,4 de la plantilla (el prefab no se toca). Verificado: apuntando con el módulo, la cámara gira a 1,00×. Respaldo: `Tools/IronRequiem/Backups/20261123-no-sprint/AdvancedPlayerMovement.before-aim.cs`.
+
+## Estación de montaje: la garra toca la mano y sin brazos de más (24/11/2026)
+
+Pedido del usuario (con capturas): la animación estaba bien, pero el brazo A no tocaba la mano al quitarla, y el modelo de la estación tenía dos brazos de más. Respaldo: `Tools/IronRequiem/Backups/20261124-station-grip/`.
+
+- [x] Medición (`ModuleHeavinessProbe.StationArmAGripsTheHand`, capturas en `Tools/IronRequiem/Reports/Controls/station-grip/`):
+  - del hombro del brazo A a la muñeca había 1,27 m y el brazo alcanza 1,07 m;
+  - estirado al máximo, sus mordazas quedaban ~13 cm por encima, a la altura de los dedos.
+- [x] `WeaponMountStation`:
+  - el antebrazo se ofrece hacia el hombro del brazo A sólo lo necesario para quedar a su alcance (`reachMargin` 0,05, `maxOffer` 0,25); entra con el alcance y sale al girar el puerto;
+  - el objetivo del brazo se corrige hasta que el centro de las mordazas (`StationArmRig.JawCentre`, nuevo) cierra sobre la muñeca, 3 cm detrás del hueso de la mano (`wristContactBack`);
+  - el arrastre de la mano parte del objetivo corregido.
+- [x] Resultado: de 1,2 a 1,5 s el centro de las mordazas está a 0,000–0,010 m de la muñeca (antes 0,185). Para llegar, el antebrazo sube unos 25 cm durante el agarre.
+- [x] Brazos de más: eran los dos brazos traseros aparcados del arte (`SA_BR_Arm`, `SA_BL_Arm`).
+  - Se quitaron de `MountStation_C04.prefab` con `VisualOverhaulStation.RemoveParkedArms` (API del Editor). Las escenas sólo tienen instancias y lo heredan.
+  - `MountStationArtBuilder` ya no los genera (`BuildParkedArms = false`).
+- [x] Tests: `StationArmRigSegmentedTests` (EditMode) 6/6. `CampaignTests` 4/7, los mismos 3 fallos de antes.
+- [ ] Queda un gancho oscuro pequeño arriba en el centro (parte del pórtico estático). Sin revisar con el usuario.
+- [x] Segunda vuelta (usuario: «ahora traspasa la mano»). Con el centro de la pinza sobre el eje de la muñeca, la garra atravesaba el antebrazo a lo largo.
+  - Bajar en vertical quedaba fuera de alcance; colocarla por las puntas la escondía detrás del antebrazo.
+  - Solución: la pinza llega de lado y su centro se apoya 5 cm por fuera del eje (`cuffRadius`), en la cara superior y cercana del puño, 7 cm detrás del hueso de la mano (`wristContactBack`). Mordazas a medio cerrar (`gripHold` 0,45), también mientras se lleva la mano.
+  - Resultado en las capturas: la garra sujeta el puño y el dorso de la mano por encima, sin meterse dentro; la mano se va con ella a 1,62 s. `StationArmRigSegmentedTests` 6/6.

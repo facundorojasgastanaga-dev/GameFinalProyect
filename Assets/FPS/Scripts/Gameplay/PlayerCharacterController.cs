@@ -182,6 +182,7 @@ namespace Unity.FPS.Gameplay
                 m_WeaponsManager, this, gameObject);
 
             m_Health = GetComponent<Health>();
+            m_Health.HasPlayerLastStand = true;
             DebugUtility.HandleErrorIfNullGetComponent<Health, PlayerCharacterController>(m_Health, this, gameObject);
 
             m_Actor = GetComponent<Actor>();

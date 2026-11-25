@@ -114,6 +114,32 @@ namespace IronRequiem.Tests
             Write();
         }
 
+        // Mount station (user, 24/11/2026: "the animation is fine but arm A never touches the hand it takes off").
+        // Samples, every frame from E to 2.6 s: the right hand bone, arm A's gripper and the gap from the hand renderers to
+        // the closest jaw renderer; saves frames at the grip, just before and just after the detach.
+        [UnityTest, Timeout(340000)] public IEnumerator StationArmAGripsTheHand()
+        {
+            LogAssert.ignoreFailingMessages = true;
+            yield return ToStation(); var station = Object.FindAnyObjectByType<WeaponMountStation>();
+            var hands = player.GetComponent<ProtagonistHandsPresentation>(); var cam = player.PlayerCamera;
+            var armA = station.GetComponentsInChildren<StationArmRig>(true).FirstOrDefault(a => a.name.Contains("ArmA") || a.transform.parent && a.transform.parent.name.Contains("ArmA")) ?? station.GetComponentsInChildren<StationArmRig>(true).First();
+            var jaws = armA.Gripper.GetComponentsInChildren<Renderer>(true).Where(r => !(r is ParticleSystemRenderer)).ToArray();
+            log.AppendLine($"arm A {armA.name}, gripper {armA.Gripper.name}, jaw renderers {jaws.Length} [{string.Join(", ", jaws.Select(j => j.name))}]");
+            Input(Key.E); yield return null; yield return null; Input(); float t0 = Time.time; yield return Until(() => station.Busy, 3, "Station starts");
+            var shots = new[] { 1.30f, 1.50f, 1.62f }; int next = 0; Directory.CreateDirectory("Tools/IronRequiem/Reports/Controls/station-grip");
+            while (Time.time - t0 < 2.6f)
+            {
+                yield return new WaitForEndOfFrame(); float t = Time.time - t0; var ct = cam.transform;
+                var hand = hands.RightHand ? hands.RightHand.position : Vector3.zero;
+                float gap = 9; foreach (var j in jaws) if (j && j.enabled && j.gameObject.activeInHierarchy) foreach (var h in hands.RightHandRenderers ?? new Renderer[0]) if (h && h.enabled) { var p = j.bounds.ClosestPoint(h.bounds.center); gap = Mathf.Min(gap, Vector3.Distance(p, h.bounds.ClosestPoint(p))); }
+                float boneGap = 9; foreach (var j in jaws) if (j && j.enabled) boneGap = Mathf.Min(boneGap, Vector3.Distance(hand, j.bounds.ClosestPoint(hand)));
+                if (t > 1.0f && t < 1.8f && Time.frameCount % 2 == 0) log.AppendLine($"  t {t:F2} hand cam {ct.InverseTransformPoint(hand).ToString("F3")} gripper cam {ct.InverseTransformPoint(armA.Gripper.position).ToString("F3")} jaw-handRenderer bounds gap {gap:F3} jaw-handBone {boneGap:F3} jawCentre-wrist {Vector3.Distance(armA.JawCentre, hand - (hand - hands.RightForearmBone.position).normalized * .03f):F3} jaw cam {ct.InverseTransformPoint(armA.JawCentre).ToString("F3")} tip-wrist {Vector3.Distance(armA.JawTip, hand - (hand - hands.RightForearmBone.position).normalized * .03f):F3} shoulder-wrist {Vector3.Distance(armA.GetComponentsInChildren<Transform>().First(x => x.name == "Upper").position, hand):F2} reach {armA.Reach:F2}");
+                if (next < shots.Length && t >= shots[next]) { FrameGrab.Save(cam, $"Tools/IronRequiem/Reports/Controls/station-grip/grip_{shots[next]:F2}.png", 960, 540); next++; }
+            }
+            yield return Until(() => !station.Busy, 15, "Station ends");
+            Write();
+        }
+
         [UnityTest, Timeout(340000)] public IEnumerator FirstModuleAndMiddleRooms()
         {
             LogAssert.ignoreFailingMessages = true;

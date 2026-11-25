@@ -5509,6 +5509,7 @@ MonoBehaviour:
   AllowWeaponlessPolicy: 1
   RequireVisibleTargetToShoot: 1
   EnemyChargeDuration: 0
+  EnemyChargeGrace: 0.45
   DelayAfterWeaponSwap: 0
   EyeColorMaterial: {fileID: 0}
   DefaultEyeColor: {r: 0, g: 0, b: 0, a: 0}
@@ -5764,6 +5765,21 @@ MonoBehaviour:
   impactSparks: {fileID: 3291909183230201578}
   impactSound: {fileID: 8300000, guid: a7fae22399a6e1d448dc0dd2210f1dac, type: 3}
   healthBar: {fileID: 1462878962751741949}
+  sustainedSaw: 0
+  contactDeathState: 
+  disarmedDeathState: 
+  deathBurstDelay: 0.85
+  moveSpeed: 7.2
+  acceleration: 24
+  exitReach: 1.4
+  damagePerSecond: 20
+  damageInterval: 0.1
+  contactRadius: 0.16
+  attackTurnSpeed: 140
+  leftBladeStart: {fileID: 0}
+  leftBladeEnd: {fileID: 0}
+  rightBladeStart: {fileID: 0}
+  rightBladeEnd: {fileID: 0}
 --- !u!114 &891756699747500091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5881,7 +5897,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b8a979e290b6a494fb291d00df9b90de, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6023,6 +6039,7 @@ MonoBehaviour:
   KnownTargetTimeout: 4
   Animator: {fileID: 1730922581048303400}
   UseExternalDamagePresentation: 1
+  DetectionInterval: 0
 --- !u!1 &4123650614501066415
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,7 +6124,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 30ebddeb6728ba543a5c9b45d19b7667, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 645503022690287349}
   - {fileID: 2892914286373279327}
@@ -6311,7 +6328,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: a7843ceda0acd9149bb1708401b9e429, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 645503022690287349}
   - {fileID: 2892914286373279327}
@@ -6518,7 +6535,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: ab153e98de63bf3409bc54772b5c2350, type: 2}
+  m_Mesh: {fileID: 0}
   m_Bones:
   - {fileID: 645503022690287349}
   - {fileID: 2892914286373279327}

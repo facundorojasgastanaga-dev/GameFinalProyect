@@ -1,0 +1,25 @@
+ok
+2026-11-23T13:48:19.9592899-04:00
+2026-11-23T13:48:19 frames 0-382 (383 valid)
+== frame 352: 29166 ms
+     29144 ms  d0  EditorLoop
+== frame 13: 13988 ms
+     13864 ms  d0  EditorLoop
+       123 ms  d0  PlayerLoop
+       114 ms  d1  UpdateScene
+        72 ms  d2  Update.ScriptRunDelayedDynamicFrameRate
+        72 ms  d3  CoroutinesDelayedCalls
+        61 ms  d4  UnityEngine.TestRunner.dll!UnityEngine.TestTools.TestRunner::PlaymodeTestsController.WrapEnumeratorForChecks() [Coroutine: MoveNext] [Invoke]
+        60 ms  d5  JugarStartsHangarAndReturnsControl
+== frame 0: 7043 ms
+      4056 ms  d0  EditorLoop
+      1527 ms  d0  PlayerLoop
+      1203 ms  d1  UpdateScene
+      1114 ms  d2  Update.ScriptRunDelayedTasks
+      1113 ms  d3  UnityEngine.CoreModule.dll!UnityEngine::UnitySynchronizationContext.ExecuteTasks() [Invoke]
+       873 ms  d4  Mono.JIT
+       324 ms  d1  RenderPlayModeViewCameras
+       321 ms  d2  UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke]
+       186 ms  d3  Mono.JIT
+
+seconds=0.4

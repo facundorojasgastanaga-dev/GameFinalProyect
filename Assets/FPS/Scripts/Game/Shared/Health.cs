@@ -19,6 +19,7 @@ namespace Unity.FPS.Game
 
         public float CurrentHealth { get; set; }
         public bool Invincible { get; set; }
+        public bool HasPlayerLastStand { get; set; }
         float invulnerableUntil;
         public bool IsInvulnerable => Invincible || Time.time < invulnerableUntil;
         public void GrantInvulnerability(float seconds) => invulnerableUntil = Mathf.Max(invulnerableUntil, Time.time + Mathf.Max(0, seconds));
@@ -59,6 +60,9 @@ namespace Unity.FPS.Game
             float healthBefore = CurrentHealth;
             CurrentHealth -= damage;
             CurrentHealth = Mathf.Clamp(CurrentHealth, 0f, MaxHealth);
+            float reserve = MaxHealth * .01f;
+            if (HasPlayerLastStand && CurrentHealth <= 0f && healthBefore > reserve)
+                CurrentHealth = reserve;
 
             // call OnDamage action
             float trueDamageAmount = healthBefore - CurrentHealth;

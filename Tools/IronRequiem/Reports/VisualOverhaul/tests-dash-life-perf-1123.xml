@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-23 15:56:53Z" end-time="2026-11-23 15:57:15Z" duration="21.6288006">
+  <test-suite type="TestSuite" id="1481" name="ProyectoGameFinal" fullname="ProyectoGameFinal" runstate="Runnable" testcasecount="395" result="Passed" start-time="2026-11-23 15:56:53Z" end-time="2026-11-23 15:57:15Z" duration="21.628801" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1475" name="IronRequiem.PlayModeTests.dll" fullname="C:/Users/gehbd/ProyectoGameFinal/Library/ScriptAssemblies/IronRequiem.PlayModeTests.dll" runstate="Runnable" testcasecount="395" result="Passed" start-time="2026-11-23 15:56:53Z" end-time="2026-11-23 15:57:15Z" duration="21.524997" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1476" name="IronRequiem" fullname="IronRequiem" runstate="Runnable" testcasecount="395" result="Passed" start-time="2026-11-23 15:56:54Z" end-time="2026-11-23 15:57:15Z" duration="21.498431" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="SetUpFixture" id="1177" name="Tests" fullname="IronRequiem.Tests.InputFocusTestScope" classname="IronRequiem.Tests.InputFocusTestScope" runstate="Runnable" testcasecount="395" result="Passed" start-time="2026-11-23 15:56:54Z" end-time="2026-11-23 15:57:15Z" duration="21.438876" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1182" name="Map01F2Tests" fullname="IronRequiem.Tests.Map01F2Tests" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-23 15:56:54Z" end-time="2026-11-23 15:57:15Z" duration="21.398868" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Category" value="Map01F2" />
+            </properties>
+            <test-case id="1183" name="HangarToControlAccessFramePeak" fullname="IronRequiem.Tests.Map01F2Tests.HangarToControlAccessFramePeak" methodname="HangarToControlAccessFramePeak" classname="IronRequiem.Tests.Map01F2Tests" runstate="Runnable" seed="768072766" result="Passed" start-time="2026-11-23 15:56:54Z" end-time="2026-11-23 15:57:15Z" duration="21.326170" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[[Campaign] transition to Room00_Hangar (preload) peak frame 4718.5 ms · door+preload 0 / activate 4719 / unload 0 / settle 642 · peak at frame 2/45 load 0.00
+[Campaign] transition to Map01_R01_ControlAcceso (preload) peak frame 119.0 ms · door+preload 73 / activate 79 / unload 119 / settle 39 · peak at frame 69/167 load 1.00
+[DashLifePerf] 990x464 Map01_R01_ControlAcceso unload peak 119.0 ms
+[CampaignTests] Passed HangarToControlAccessFramePeak
+Saving results to: C:/Users/gehbd/AppData/LocalLow/DefaultCompany/ProyectoGameFinal\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

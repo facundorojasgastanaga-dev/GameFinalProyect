@@ -88,7 +88,19 @@ namespace IronRequiem
                 bool alive = Alive(e.Enemy, e.Health);
                 if (!alive || e.Excluded || intensity <= 0) { if (e.Active) Release(e); if (!alive) { entries.RemoveAt(i); byEnemy.Remove(e.Enemy); } continue; }
                 if (!e.Active) { if (Time.frameCount - e.SeenFrame < 2) continue; Activate(e); } // after EnemyController.Start captured its renderers
-                if (Time.time >= e.NextSample) { e.NextSample = Time.time + sampleInterval; e.Target = DarknessAt(e.Enemy.transform); if (!e.Sampled) { e.Darkness = e.Target; e.Sampled = true; } }
+                if (Time.time >= e.NextSample)
+                {
+                    e.Target = DarknessAt(e.Enemy.transform);
+                    // Spread repeated light and occlusion checks across frames for enemies spawned together.
+                    float interval = sampleInterval;
+                    if (!e.Sampled)
+                    {
+                        e.Darkness = e.Target;
+                        e.Sampled = true;
+                        interval *= Mathf.Repeat((i + 1) * .618034f, 1f);
+                    }
+                    e.NextSample = Time.time + interval;
+                }
                 e.Darkness = Mathf.MoveTowards(e.Darkness, e.Target, smoothing * Time.deltaTime);
                 { float dist = Distance(e); Apply(e, VisionMaterialRules.RimFor(always ? 1 : e.Darkness, intensity, dist), VisionMaterialRules.RimPowerFor(dist)); }
             }

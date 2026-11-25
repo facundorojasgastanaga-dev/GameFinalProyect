@@ -4,6 +4,7 @@ using Unity.FPS.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 namespace IronRequiem
 {
     // View and settings binding only. Existing InGameMenuManager owns pause; LoadSceneButton owns loading.
@@ -42,7 +43,11 @@ namespace IronRequiem
             if(creditsLabel)creditsLabel.text=creditsText;
             ShowHome();
         }
-        void OnDestroy(){if(pauseOwner){pauseOwner.PauseChanged-=OnPause;if(pauseOwner.BackHandler==(System.Func<bool>)HandleBack)pauseOwner.BackHandler=null;}}
+        void OnDestroy()
+        {
+            if (campaignLoad != null) campaignLoad.allowSceneActivation = true;
+            if(pauseOwner){pauseOwner.PauseChanged-=OnPause;if(pauseOwner.BackHandler==(System.Func<bool>)HandleBack)pauseOwner.BackHandler=null;}
+        }
         // v5: Escape / VOLVER from options or credits returns to this menu's home (main menu and pause alike).
         public bool IsSubScreenOpen=>(options&&options.activeSelf)||(credits&&credits.activeSelf);
         bool HandleBack(){if(!IsSubScreenOpen)return false;ShowHome();return true;}
@@ -81,14 +86,31 @@ namespace IronRequiem
         public void Primary(){if(pauseOwner)pauseOwner.ClosePauseMenu();else if(LabFlow!=null)LabFlow.BeginGame();else BeginLaunch();}
         // 11/11/2026: the hangar intro plays its wake-up cinematic first when one is registered.
         bool launching;
+        AsyncOperation campaignLoad;
         void BeginLaunch()
         {
-            if(launching)return;launching=true;
-            var sequence=MenuLaunchRegistry.Active;
-            if(sequence!=null){foreach(var b in new[]{primary,optionsButton,creditsButton,quitButton})if(b)b.interactable=false;sequence.Play(LoadGame);}
+            if (launching) return;
+            string target = sceneLoader.SceneName;
+            if (!Application.CanStreamedLevelBeLoaded(target))
+            {
+                Debug.LogError($"No se puede cargar la escena de campaña '{target}'.", this);
+                return;
+            }
+            campaignLoad = SceneManager.LoadSceneAsync(target, LoadSceneMode.Single);
+            launching = true;
+            campaignLoad.allowSceneActivation = false;
+            foreach (var button in new[] { primary, optionsButton, creditsButton, quitButton })
+                if (button) button.interactable = false;
+            var sequence = MenuLaunchRegistry.Active;
+            if (sequence != null) sequence.Play(LoadGame);
             else LoadGame();
         }
-        void LoadGame(){ReleaseSession();MainMenuLaunch.FromMenu(gameObject.scene.name,sceneLoader.SceneName);sceneLoader.LoadTargetScene();}
+        void LoadGame()
+        {
+            ReleaseSession();
+            MainMenuLaunch.FromMenu(gameObject.scene.name, sceneLoader.SceneName);
+            campaignLoad.allowSceneActivation = true;
+        }
         public void ReturnToMenu(){if(pauseOwner)pauseOwner.ClosePauseMenu();if(LabFlow!=null){LabFlow.ReturnToMainMenu();return;}ReleaseSession();sceneLoader.LoadTargetScene();}
         public static void ReleaseSession(){Time.timeScale=1;AudioListener.pause=false;Cursor.lockState=CursorLockMode.None;Cursor.visible=true;}
         public void Quit()

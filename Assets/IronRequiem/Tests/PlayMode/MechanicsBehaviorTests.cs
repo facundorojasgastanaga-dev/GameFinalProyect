@@ -100,12 +100,23 @@ namespace IronRequiem.Tests
             Physics.SyncTransforms();return health;
         }
 
+        [Test] public void PlayerSurvivesFirstLethalHitAtOnePercent()
+        {
+            var health = player.GetComponent<Health>();
+            health.Invincible = false;
+            health.TakeDamage(health.MaxHealth, null);
+            Assert.That(health.GetRatio(), Is.EqualTo(.01f).Within(.00001f));
+            health.TakeDamage(health.MaxHealth, null);
+            Assert.That(health.CurrentHealth, Is.Zero);
+        }
+
         [UnityTest] public IEnumerator AirDashConsumesOneChargeFallsAndRechargesOnlyOnLanding()
         {
             Teleport(new Vector3(0,3,-10));yield return null;yield return null;
             Assert.That(player.IsGrounded,Is.False);var start=player.transform.position;
             yield return Tap(Key.Space);
             Assert.That(motion.IsDashing,Is.True);Assert.That(motion.DashAvailable,Is.False);
+            Assert.That(motion.DashFractionRemaining, Is.GreaterThan(0));
             yield return new WaitForSeconds(.22f);
             Assert.That(motion.IsDashing,Is.False);Assert.That(player.transform.position.z-start.z,Is.GreaterThan(2));
             Assert.That(player.CharacterVelocity.y,Is.LessThan(0));

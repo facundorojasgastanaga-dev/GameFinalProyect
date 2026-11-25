@@ -65,6 +65,47 @@ namespace IronRequiem
         Vector3 lastBend = Vector3.right;
         public Transform Gripper => gripper;
         public float Reach => upperLength + foreLength;
+        /// 24/11/2026: tip of the jaws along the gripper's forward (the farthest jaw renderer corner), level with JawCentre.
+        public Vector3 JawTip
+        {
+            get
+            {
+                var centre = JawCentre; if (!gripper || jawViews == null) return centre;
+                var f = gripper.forward; float far = float.MinValue;
+                foreach (var r in jawViews)
+                {
+                    if (!r || !r.gameObject.activeInHierarchy) continue;
+                    var b = r.bounds;
+                    for (int i = 0; i < 8; i++)
+                    {
+                        var c = b.center + Vector3.Scale(b.extents, new Vector3((i & 1) == 0 ? -1 : 1, (i & 2) == 0 ? -1 : 1, (i & 4) == 0 ? -1 : 1));
+                        far = Mathf.Max(far, Vector3.Dot(c - gripper.position, f));
+                    }
+                }
+                return far == float.MinValue ? centre : centre + f * (far - Vector3.Dot(centre - gripper.position, f));
+            }
+        }
+        /// World position of the shoulder (start of the upper segment).
+        public Vector3 Shoulder => upper ? upper.position : transform.position;
+        Renderer[] jawViews;
+        /// 24/11/2026: world centre of the jaws as last posed (mean of their renderers' bounds centres, claw art included):
+        /// the point that actually closes on what the arm holds. The gripper position itself sits well behind it.
+        public Vector3 JawCentre
+        {
+            get
+            {
+                if (jawViews == null)
+                {
+                    var list = new System.Collections.Generic.List<Renderer>();
+                    if (jawA) list.AddRange(jawA.GetComponentsInChildren<Renderer>(true));
+                    if (jawB) list.AddRange(jawB.GetComponentsInChildren<Renderer>(true));
+                    jawViews = list.ToArray();
+                }
+                Vector3 sum = Vector3.zero; int n = 0;
+                foreach (var r in jawViews) if (r && r.gameObject.activeInHierarchy) { sum += r.bounds.center; n++; }
+                return n > 0 ? sum / n : gripper ? gripper.position : transform.position;
+            }
+        }
         /// World position of the elbow joint as last posed.
         public Vector3 Elbow => fore ? fore.position : transform.position;
         public void Configure(Transform yawPivot, Transform upperArm, Transform foreArm, Transform grip, float upperLen, float foreLen, Transform a, Transform b)

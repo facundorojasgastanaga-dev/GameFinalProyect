@@ -4,7 +4,7 @@ FPS 3D rápido para PC inspirado en DOOM y ULTRAKILL, en un mundo postapocalípt
 
 ## Base que debe conservarse
 
-- Proyecto existente: Unity **6000.5.5f1**, URP **17.5.0**, Input System **1.19.0**, entrada activa `1` (Input System).
+- Proyecto existente: Unity **6000.5.5f1**, URP **17.5.0**, Input System **1.19.0**, entrada activa `2` (Both) desde el 25/11/2026, pedido por el usuario para Feel; el juego sigue usando solo Input System.
 - Escena de juego: `Assets/FPS/Scenes/MainScene.unity`. Build Settings también contiene IntroMenu, WinScene y LoseScene. Conservar jugador, enemigos, cámara y prefabs de plantilla.
 - No cambiar Editor, render pipeline ni sistema de entrada. No añadir paquetes preview, beta o experimentales. La CLI instalada es beta; no confundir su versión con permiso para instalar paquetes experimentales.
 - Fuente T-07: `Assets/IronRequiem/Art/Enemies/Exterminador/Models/Meshy_AI_Rustborn_Sentinel_20261028_texture.fbx`. Conservar FBX y meta originales. Generic no demuestra un esqueleto funcional.

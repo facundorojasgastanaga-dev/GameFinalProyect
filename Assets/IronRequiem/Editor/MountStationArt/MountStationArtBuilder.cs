@@ -150,6 +150,8 @@ namespace IronRequiem.EditorTools
             public bool Has(string n) => root.Find(n);
         }
 
+        const bool BuildParkedArms = false;
+
         static void ApplyArt(GameObject stationRoot, StringBuilder log)
         {
             var model = new Model { root = (AssetDatabase.LoadAssetAtPath<GameObject>(Fbx) ?? throw new InvalidOperationException("import the model first")).transform };
@@ -167,8 +169,9 @@ namespace IronRequiem.EditorTools
             // static frame
             var frame = Holder("SA_Frame", st);
             foreach (var n in new[] { "Static" }) Visual(model, n, frame, frameM, true);
-            // the two back arms (parked, never move) at the same scale as the working front arms
-            foreach (var b in new[] { "BR", "BL" })
+            // the two back arms (parked, never move) at the same scale as the working front arms.
+            // 24/11/2026: removed at the user's request ("the station model has two arms too many"); kept behind a switch.
+            if (BuildParkedArms) foreach (var b in new[] { "BR", "BL" })
             {
                 if (!model.Has(b + "_Arm")) continue;
                 var p0 = model.P(b + "_P0");

@@ -5004,7 +5004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93c3e550bb9a2314fbf12012926a583c, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5106,7 +5106,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3618723707293133433}
-  m_Mesh: {fileID: -1924108649506326830, guid: 2ac3055e3b5bfde4a873a80a9762f589, type: 3}
+  m_Mesh: {fileID: 0}
 --- !u!23 &2460010268450264843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5132,7 +5132,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f8f0f1d8958792a4d8b8842f58ba7a0a, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6161,6 +6161,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2262837158936016353}
     m_Modifications:
+    - target: {fileID: -8741602066620086048, guid: 2ac3055e3b5bfde4a873a80a9762f589,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ac3055e3b5bfde4a873a80a9762f589,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6220,7 +6225,12 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f8f0f1d8958792a4d8b8842f58ba7a0a, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: -3387599253219119134, guid: 2ac3055e3b5bfde4a873a80a9762f589,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: -2165571311472521024, guid: 2ac3055e3b5bfde4a873a80a9762f589,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -6250,7 +6260,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f8f0f1d8958792a4d8b8842f58ba7a0a, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

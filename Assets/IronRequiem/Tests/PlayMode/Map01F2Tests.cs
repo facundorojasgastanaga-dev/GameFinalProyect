@@ -28,6 +28,60 @@ namespace IronRequiem.Tests
 
         void OnLog(string m, string st, LogType t) { if (t == LogType.Exception) exceptions.Add(m + "\n" + st); }
 
+        [UnityTest]
+        public IEnumerator JugarStartsHangarAndReturnsControl()
+        {
+            SceneManager.LoadScene("IntroMenu");
+            yield return null;
+            yield return null;
+            var view = Object.FindAnyObjectByType<RequiemMenuView>();
+            Assert.That(view, Is.Not.Null);
+            view.Primary();
+            view.Primary(); // A second click during the transition must not queue another load.
+            Assert.That(MenuLaunchRegistry.Active.IsPlaying, Is.True);
+            float deadline = Time.realtimeSinceStartup + 120;
+            HangarIntroCinematic intro = null;
+            while ((!intro || !intro.IsPlaying) && Time.realtimeSinceStartup < deadline)
+            {
+                yield return null;
+                if (!intro) intro = Object.FindAnyObjectByType<HangarIntroCinematic>();
+            }
+            var flow = Object.FindAnyObjectByType<CampaignFlow>();
+            Assert.That(intro && intro.IsPlaying, Is.True, "Wake-up cinematic started");
+            Assert.That(flow.gameObject.scene.name, Is.EqualTo(Sessions[0]));
+            Assert.That(flow.Busy, Is.False, "Room preparation finished before playback");
+            while (!intro.Finished && Time.realtimeSinceStartup < deadline) yield return null;
+            Assert.That(intro.Finished && !intro.WasSkipped, Is.True);
+            Assert.That(flow.Player.PlayerCamera.enabled && !PlayerInputLock.Locked, Is.True);
+            yield return flow.DrainPendingLoadsForShutdown();
+        }
+
+        [UnityTest]
+        public IEnumerator HangarToControlAccessFramePeak()
+        {
+            SceneManager.LoadScene(Sessions[0]);
+            yield return null;
+            var flow = Object.FindAnyObjectByType<CampaignFlow>();
+            float deadline = Time.realtimeSinceStartup + 90f;
+            while (flow.CurrentStage < 0 && Time.realtimeSinceStartup < deadline) yield return null;
+            Assert.That(flow.CurrentStage, Is.EqualTo(0));
+            var intro = Object.FindAnyObjectByType<HangarIntroCinematic>();
+            while (!intro.IsPlaying && !intro.Finished && Time.realtimeSinceStartup < deadline) yield return null;
+            intro.RequestSkip();
+            while (!flow.CurrentRoom.Completed && Time.realtimeSinceStartup < deadline) yield return null;
+            Assert.That(flow.CurrentRoom.Completed, Is.True);
+            var chamber = flow.Airlocks[0].GetComponent<BoxCollider>();
+            deadline = Time.realtimeSinceStartup + 60f;
+            while (flow.CurrentStage == 0 && Time.realtimeSinceStartup < deadline)
+            {
+                if (!flow.Busy) Teleport(flow.Player, chamber.bounds.center, 4);
+                yield return null;
+            }
+            Assert.That(flow.CurrentStage, Is.EqualTo(1));
+            Assert.That(flow.LoadedStageCount, Is.EqualTo(1));
+            Debug.Log($"[DashLifePerf] {Screen.width}x{Screen.height} {flow.LastReport.scene} unload peak {flow.LastReport.unloadPeakMs:F1} ms");
+        }
+
         [UnityTest, Timeout(1500000)]
         public IEnumerator SessionTraversal([Values(0, 1, 2, 3)] int session)
         {
